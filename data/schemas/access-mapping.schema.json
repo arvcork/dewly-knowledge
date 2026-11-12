@@ -1,0 +1,19 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "type":"object","required":["schemaVersion","entries"],"additionalProperties":false,
+  "properties":{
+    "schemaVersion":{"const":"0.1.0"},
+    "entries":{"type":"array","items":{
+      "type":"object",
+      "required":["id","namespace","class","member","parameters","accessor","dataType","gsq","sourceRefs","version","confidence","refreshEvents","refreshTiming","snapshotComparison","historicalReconstruction","completionInterpretation","fallback","implementationVerifiedInGame"],
+      "properties":{
+        "id":{"type":"string","pattern":"^track\\."},"namespace":{"type":"string"},"class":{"type":"string"},"member":{"type":"string"},
+        "parameters":{"oneOf":[{"type":"string"},{"type":"array","items":{"type":"object","required":["name","type"],"additionalProperties":false,"properties":{"name":{"type":"string"},"type":{"type":"string"}}}}]},
+        "accessor":{"type":"string","minLength":1},"dataType":{"type":"string"},"gsq":{"type":"null"},
+        "sourceRefs":{"type":"array","minItems":1,"items":{"type":"string"}},"version":{"type":"string"},"confidence":{"type":"string"},
+        "refreshEvents":{"type":"array","minItems":1,"items":{"type":"string"}},"refreshTiming":{"type":"string"},
+        "snapshotComparison":{"type":"string"},"historicalReconstruction":{"type":"string"},"completionInterpretation":{"type":"string"},"fallback":{"type":"string"},"implementationVerifiedInGame":{"const":false}
+      }
+    }}
+  }
+}

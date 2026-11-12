@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "0.1.0",
+  "category": "farmhouse",
+  "provenance": "Supplied source assertions, not newly verified gameplay rules.",
+  "entries": [
+    {
+      "id": "moving_up",
+      "name": "Moving Up",
+      "sourceRequirement": "Upgrade the farmhouse.",
+      "sourceDefinitionRef": "data/sources/original/trophy-50-coverage.json#/trophies/16",
+      "sourceDependencyRef": "data/sources/original/trophy-dependency-graph.json#/graph/moving_up",
+      "verification": "source-import-only"
+    },
+    {
+      "id": "living_large",
+      "name": "Living Large",
+      "sourceRequirement": "Upgrade the house to maximum size.",
+      "sourceDefinitionRef": "data/sources/original/trophy-50-coverage.json#/trophies/17",
+      "sourceDependencyRef": "data/sources/original/trophy-dependency-graph.json#/graph/living_large",
+      "verification": "source-import-only"
+    }
+  ]
+}

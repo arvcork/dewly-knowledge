@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "0.1.0",
+  "category": "festivals-and-events",
+  "provenance": "Supplied source assertions, not newly verified gameplay rules.",
+  "entries": [
+    {
+      "id": "two_thumbs_up",
+      "name": "Two Thumbs Up",
+      "sourceRequirement": "See a movie.",
+      "sourceDefinitionRef": "data/sources/original/trophy-50-coverage.json#/trophies/42",
+      "sourceDependencyRef": "data/sources/original/trophy-dependency-graph.json#/graph/two_thumbs_up",
+      "verification": "source-import-only"
+    },
+    {
+      "id": "blue_ribbon",
+      "name": "Blue Ribbon",
+      "sourceRequirement": "Get first place at the Stardew Valley Fair.",
+      "sourceDefinitionRef": "data/sources/original/trophy-50-coverage.json#/trophies/43",
+      "sourceDependencyRef": "data/sources/original/trophy-dependency-graph.json#/graph/blue_ribbon",
+      "verification": "source-import-only"
+    },
+    {
+      "id": "an_unforgettable_soup",
+      "name": "An Unforgettable Soup",
+      "sourceRequirement": "Delight the Governor at the Luau.",
+      "sourceDefinitionRef": "data/sources/original/trophy-50-coverage.json#/trophies/44",
+      "sourceDependencyRef": "data/sources/original/trophy-dependency-graph.json#/graph/an_unforgettable_soup",
+      "verification": "source-import-only"
+    }
+  ]
+}

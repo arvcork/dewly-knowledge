@@ -1,0 +1,446 @@
+{
+  "schemaVersion": "0.1.0",
+  "entries": [
+    {
+      "id": "snapshot.breadth.fisherman.satisfied",
+      "fact": "breadth.fisherman.satisfied",
+      "accessMappingRef": null,
+      "status": "contract-only",
+      "source": "Stats.checkForFishingAchievements; GameLocation.getFish; FishingRod",
+      "fallback": "unknown until exact completion predicate is read; never infer from inventory",
+      "gsq": null
+    },
+    {
+      "id": "snapshot.breadth.ol_mariner.satisfied",
+      "fact": "breadth.ol_mariner.satisfied",
+      "accessMappingRef": null,
+      "status": "contract-only",
+      "source": "Stats.checkForFishingAchievements; GameLocation.getFish; FishingRod",
+      "fallback": "unknown until exact completion predicate is read; never infer from inventory",
+      "gsq": null
+    },
+    {
+      "id": "snapshot.breadth.master_angler.satisfied",
+      "fact": "breadth.master_angler.satisfied",
+      "accessMappingRef": null,
+      "status": "contract-only",
+      "source": "Stats.checkForFishingAchievements; GameLocation.getFish; FishingRod",
+      "fallback": "unknown until exact completion predicate is read; never infer from inventory",
+      "gsq": null
+    },
+    {
+      "id": "snapshot.breadth.mother_catch.satisfied",
+      "fact": "breadth.mother_catch.satisfied",
+      "accessMappingRef": null,
+      "status": "contract-only",
+      "source": "Stats.checkForFishingAchievements; GameLocation.getFish; FishingRod",
+      "fallback": "unknown until exact completion predicate is read; never infer from inventory",
+      "gsq": null
+    },
+    {
+      "id": "snapshot.breadth.polyculture.satisfied",
+      "fact": "breadth.polyculture.satisfied",
+      "accessMappingRef": null,
+      "status": "contract-only",
+      "source": "Stats.checkForShippingAchievements",
+      "fallback": "unknown until exact completion predicate is read; never infer from inventory",
+      "gsq": null
+    },
+    {
+      "id": "snapshot.breadth.monoculture.satisfied",
+      "fact": "breadth.monoculture.satisfied",
+      "accessMappingRef": null,
+      "status": "contract-only",
+      "source": "Stats.checkForShippingAchievements",
+      "fallback": "unknown until exact completion predicate is read; never infer from inventory",
+      "gsq": null
+    },
+    {
+      "id": "snapshot.breadth.greenhorn.satisfied",
+      "fact": "breadth.greenhorn.satisfied",
+      "accessMappingRef": null,
+      "status": "contract-only",
+      "source": "Stats.checkForMoneyAchievements; Utility.getFarmerItemsShippedPercent; Object.isPotentialBasicShipped",
+      "fallback": "unknown until exact completion predicate is read; never infer from inventory",
+      "gsq": null
+    },
+    {
+      "id": "snapshot.breadth.cowpoke.satisfied",
+      "fact": "breadth.cowpoke.satisfied",
+      "accessMappingRef": null,
+      "status": "contract-only",
+      "source": "Stats.checkForMoneyAchievements; Utility.getFarmerItemsShippedPercent; Object.isPotentialBasicShipped",
+      "fallback": "unknown until exact completion predicate is read; never infer from inventory",
+      "gsq": null
+    },
+    {
+      "id": "snapshot.breadth.homesteader.satisfied",
+      "fact": "breadth.homesteader.satisfied",
+      "accessMappingRef": null,
+      "status": "contract-only",
+      "source": "Stats.checkForMoneyAchievements; Utility.getFarmerItemsShippedPercent; Object.isPotentialBasicShipped",
+      "fallback": "unknown until exact completion predicate is read; never infer from inventory",
+      "gsq": null
+    },
+    {
+      "id": "snapshot.breadth.millionaire.satisfied",
+      "fact": "breadth.millionaire.satisfied",
+      "accessMappingRef": null,
+      "status": "contract-only",
+      "source": "Stats.checkForMoneyAchievements; Utility.getFarmerItemsShippedPercent; Object.isPotentialBasicShipped",
+      "fallback": "unknown until exact completion predicate is read; never infer from inventory",
+      "gsq": null
+    },
+    {
+      "id": "snapshot.breadth.legend.satisfied",
+      "fact": "breadth.legend.satisfied",
+      "accessMappingRef": null,
+      "status": "contract-only",
+      "source": "Stats.checkForMoneyAchievements; Utility.getFarmerItemsShippedPercent; Object.isPotentialBasicShipped",
+      "fallback": "unknown until exact completion predicate is read; never infer from inventory",
+      "gsq": null
+    },
+    {
+      "id": "snapshot.breadth.full_shipment.satisfied",
+      "fact": "breadth.full_shipment.satisfied",
+      "accessMappingRef": null,
+      "status": "contract-only",
+      "source": "Stats.checkForMoneyAchievements; Utility.getFarmerItemsShippedPercent; Object.isPotentialBasicShipped",
+      "fallback": "unknown until exact completion predicate is read; never infer from inventory",
+      "gsq": null
+    },
+    {
+      "id": "snapshot.breadth.a_complete_collection.satisfied",
+      "fact": "breadth.a_complete_collection.satisfied",
+      "accessMappingRef": null,
+      "status": "contract-only",
+      "source": "Stats.checkForArchaeologyAchievements; checkForBooksReadAchievement; Utility.foundAllStardrops",
+      "fallback": "unknown until exact completion predicate is read; never infer from inventory",
+      "gsq": null
+    },
+    {
+      "id": "snapshot.breadth.treasure_trove.satisfied",
+      "fact": "breadth.treasure_trove.satisfied",
+      "accessMappingRef": null,
+      "status": "contract-only",
+      "source": "Stats.checkForArchaeologyAchievements; checkForBooksReadAchievement; Utility.foundAllStardrops",
+      "fallback": "unknown until exact completion predicate is read; never infer from inventory",
+      "gsq": null
+    },
+    {
+      "id": "snapshot.breadth.mystery_of_the_stardrops.satisfied",
+      "fact": "breadth.mystery_of_the_stardrops.satisfied",
+      "accessMappingRef": null,
+      "status": "contract-only",
+      "source": "Stats.checkForArchaeologyAchievements; checkForBooksReadAchievement; Utility.foundAllStardrops",
+      "fallback": "unknown until exact completion predicate is read; never infer from inventory",
+      "gsq": null
+    },
+    {
+      "id": "snapshot.breadth.well_read.satisfied",
+      "fact": "breadth.well_read.satisfied",
+      "accessMappingRef": null,
+      "status": "contract-only",
+      "source": "Stats.checkForArchaeologyAchievements; checkForBooksReadAchievement; Utility.foundAllStardrops",
+      "fallback": "unknown until exact completion predicate is read; never infer from inventory",
+      "gsq": null
+    },
+    {
+      "id": "snapshot.breadth.a_new_friend.satisfied",
+      "fact": "breadth.a_new_friend.satisfied",
+      "accessMappingRef": null,
+      "status": "contract-only",
+      "source": "Stats.checkForFriendshipAchievements; Stats.checkForFullHouseAchievement",
+      "fallback": "unknown until exact completion predicate is read; never infer from inventory",
+      "gsq": null
+    },
+    {
+      "id": "snapshot.breadth.best_friends.satisfied",
+      "fact": "breadth.best_friends.satisfied",
+      "accessMappingRef": null,
+      "status": "contract-only",
+      "source": "Stats.checkForFriendshipAchievements; Stats.checkForFullHouseAchievement",
+      "fallback": "unknown until exact completion predicate is read; never infer from inventory",
+      "gsq": null
+    },
+    {
+      "id": "snapshot.breadth.the_beloved_farmer.satisfied",
+      "fact": "breadth.the_beloved_farmer.satisfied",
+      "accessMappingRef": null,
+      "status": "contract-only",
+      "source": "Stats.checkForFriendshipAchievements; Stats.checkForFullHouseAchievement",
+      "fallback": "unknown until exact completion predicate is read; never infer from inventory",
+      "gsq": null
+    },
+    {
+      "id": "snapshot.breadth.cliques.satisfied",
+      "fact": "breadth.cliques.satisfied",
+      "accessMappingRef": null,
+      "status": "contract-only",
+      "source": "Stats.checkForFriendshipAchievements; Stats.checkForFullHouseAchievement",
+      "fallback": "unknown until exact completion predicate is read; never infer from inventory",
+      "gsq": null
+    },
+    {
+      "id": "snapshot.breadth.networking.satisfied",
+      "fact": "breadth.networking.satisfied",
+      "accessMappingRef": null,
+      "status": "contract-only",
+      "source": "Stats.checkForFriendshipAchievements; Stats.checkForFullHouseAchievement",
+      "fallback": "unknown until exact completion predicate is read; never infer from inventory",
+      "gsq": null
+    },
+    {
+      "id": "snapshot.breadth.popular.satisfied",
+      "fact": "breadth.popular.satisfied",
+      "accessMappingRef": null,
+      "status": "contract-only",
+      "source": "Stats.checkForFriendshipAchievements; Stats.checkForFullHouseAchievement",
+      "fallback": "unknown until exact completion predicate is read; never infer from inventory",
+      "gsq": null
+    },
+    {
+      "id": "snapshot.breadth.full_house.satisfied",
+      "fact": "breadth.full_house.satisfied",
+      "accessMappingRef": null,
+      "status": "contract-only",
+      "source": "Stats.checkForFriendshipAchievements; Stats.checkForFullHouseAchievement",
+      "fallback": "unknown until exact completion predicate is read; never infer from inventory",
+      "gsq": null
+    },
+    {
+      "id": "snapshot.breadth.cook.satisfied",
+      "fact": "breadth.cook.satisfied",
+      "accessMappingRef": null,
+      "status": "contract-only",
+      "source": "Stats.checkForCookingAchievements; CraftingRecipe; CraftingPage",
+      "fallback": "unknown until exact completion predicate is read; never infer from inventory",
+      "gsq": null
+    },
+    {
+      "id": "snapshot.breadth.sous_chef.satisfied",
+      "fact": "breadth.sous_chef.satisfied",
+      "accessMappingRef": null,
+      "status": "contract-only",
+      "source": "Stats.checkForCookingAchievements; CraftingRecipe; CraftingPage",
+      "fallback": "unknown until exact completion predicate is read; never infer from inventory",
+      "gsq": null
+    },
+    {
+      "id": "snapshot.breadth.gourmet_chef.satisfied",
+      "fact": "breadth.gourmet_chef.satisfied",
+      "accessMappingRef": null,
+      "status": "contract-only",
+      "source": "Stats.checkForCookingAchievements; CraftingRecipe; CraftingPage",
+      "fallback": "unknown until exact completion predicate is read; never infer from inventory",
+      "gsq": null
+    },
+    {
+      "id": "snapshot.breadth.diy.satisfied",
+      "fact": "breadth.diy.satisfied",
+      "accessMappingRef": null,
+      "status": "contract-only",
+      "source": "Stats.checkForCraftingAchievements; CraftingRecipe; CraftingPage",
+      "fallback": "unknown until exact completion predicate is read; never infer from inventory",
+      "gsq": null
+    },
+    {
+      "id": "snapshot.breadth.artisan.satisfied",
+      "fact": "breadth.artisan.satisfied",
+      "accessMappingRef": null,
+      "status": "contract-only",
+      "source": "Stats.checkForCraftingAchievements; CraftingRecipe; CraftingPage",
+      "fallback": "unknown until exact completion predicate is read; never infer from inventory",
+      "gsq": null
+    },
+    {
+      "id": "snapshot.breadth.craft_master.satisfied",
+      "fact": "breadth.craft_master.satisfied",
+      "accessMappingRef": null,
+      "status": "contract-only",
+      "source": "Stats.checkForCraftingAchievements; CraftingRecipe; CraftingPage",
+      "fallback": "unknown until exact completion predicate is read; never infer from inventory",
+      "gsq": null
+    },
+    {
+      "id": "snapshot.breadth.moving_up.satisfied",
+      "fact": "breadth.moving_up.satisfied",
+      "accessMappingRef": null,
+      "status": "contract-only",
+      "source": "Stats.checkForBuildingUpgradeAchievements",
+      "fallback": "unknown until exact completion predicate is read; never infer from inventory",
+      "gsq": null
+    },
+    {
+      "id": "snapshot.breadth.living_large.satisfied",
+      "fact": "breadth.living_large.satisfied",
+      "accessMappingRef": null,
+      "status": "contract-only",
+      "source": "Stats.checkForBuildingUpgradeAchievements",
+      "fallback": "unknown until exact completion predicate is read; never infer from inventory",
+      "gsq": null
+    },
+    {
+      "id": "snapshot.breadth.gofer.satisfied",
+      "fact": "breadth.gofer.satisfied",
+      "accessMappingRef": null,
+      "status": "contract-only",
+      "source": "Stats.checkForQuestAchievements; Forest raccoon progression",
+      "fallback": "unknown until exact completion predicate is read; never infer from inventory",
+      "gsq": null
+    },
+    {
+      "id": "snapshot.breadth.a_big_help.satisfied",
+      "fact": "breadth.a_big_help.satisfied",
+      "accessMappingRef": null,
+      "status": "contract-only",
+      "source": "Stats.checkForQuestAchievements; Forest raccoon progression",
+      "fallback": "unknown until exact completion predicate is read; never infer from inventory",
+      "gsq": null
+    },
+    {
+      "id": "snapshot.breadth.good_neighbors.satisfied",
+      "fact": "breadth.good_neighbors.satisfied",
+      "accessMappingRef": null,
+      "status": "contract-only",
+      "source": "Stats.checkForQuestAchievements; Forest raccoon progression",
+      "fallback": "unknown until exact completion predicate is read; never infer from inventory",
+      "gsq": null
+    },
+    {
+      "id": "snapshot.breadth.local_legend.satisfied",
+      "fact": "breadth.local_legend.satisfied",
+      "accessMappingRef": null,
+      "status": "contract-only",
+      "source": "Stats.checkForCommunityCenterOrJojaAchievements",
+      "fallback": "unknown until exact completion predicate is read; never infer from inventory",
+      "gsq": null
+    },
+    {
+      "id": "snapshot.breadth.joja_co_member_of_the_year.satisfied",
+      "fact": "breadth.joja_co_member_of_the_year.satisfied",
+      "accessMappingRef": null,
+      "status": "contract-only",
+      "source": "Stats.checkForCommunityCenterOrJojaAchievements",
+      "fallback": "unknown until exact completion predicate is read; never infer from inventory",
+      "gsq": null
+    },
+    {
+      "id": "snapshot.breadth.the_bottom.satisfied",
+      "fact": "breadth.the_bottom.satisfied",
+      "accessMappingRef": null,
+      "status": "contract-only",
+      "source": "Stats.checkForMineAchievement; checkForMonsterSlayerAchievement; checkForHeldItemAchievements; MineShaft floor 120",
+      "fallback": "unknown until exact completion predicate is read; never infer from inventory",
+      "gsq": null
+    },
+    {
+      "id": "snapshot.breadth.protector_of_the_valley.satisfied",
+      "fact": "breadth.protector_of_the_valley.satisfied",
+      "accessMappingRef": null,
+      "status": "contract-only",
+      "source": "Stats.checkForMineAchievement; checkForMonsterSlayerAchievement; checkForHeldItemAchievements; MineShaft floor 120",
+      "fallback": "unknown until exact completion predicate is read; never infer from inventory",
+      "gsq": null
+    },
+    {
+      "id": "snapshot.breadth.danger_in_the_deep.satisfied",
+      "fact": "breadth.danger_in_the_deep.satisfied",
+      "accessMappingRef": null,
+      "status": "contract-only",
+      "source": "Stats.checkForMineAchievement; checkForMonsterSlayerAchievement; checkForHeldItemAchievements; MineShaft floor 120",
+      "fallback": "unknown until exact completion predicate is read; never infer from inventory",
+      "gsq": null
+    },
+    {
+      "id": "snapshot.breadth.infinite_power.satisfied",
+      "fact": "breadth.infinite_power.satisfied",
+      "accessMappingRef": null,
+      "status": "contract-only",
+      "source": "Stats.checkForMineAchievement; checkForMonsterSlayerAchievement; checkForHeldItemAchievements; MineShaft floor 120",
+      "fallback": "unknown until exact completion predicate is read; never infer from inventory",
+      "gsq": null
+    },
+    {
+      "id": "snapshot.breadth.singular_talent.satisfied",
+      "fact": "breadth.singular_talent.satisfied",
+      "accessMappingRef": null,
+      "status": "contract-only",
+      "source": "Stats.checkForSkillAchievements",
+      "fallback": "unknown until exact completion predicate is read; never infer from inventory",
+      "gsq": null
+    },
+    {
+      "id": "snapshot.breadth.master_of_the_five_ways.satisfied",
+      "fact": "breadth.master_of_the_five_ways.satisfied",
+      "accessMappingRef": null,
+      "status": "contract-only",
+      "source": "Stats.checkForSkillAchievements",
+      "fallback": "unknown until exact completion predicate is read; never infer from inventory",
+      "gsq": null
+    },
+    {
+      "id": "snapshot.breadth.prairie_king.satisfied",
+      "fact": "breadth.prairie_king.satisfied",
+      "accessMappingRef": null,
+      "status": "contract-only",
+      "source": "Stats.checkForMiniGameAchievements",
+      "fallback": "unknown until exact completion predicate is read; never infer from inventory",
+      "gsq": null
+    },
+    {
+      "id": "snapshot.breadth.fectors_challenge.satisfied",
+      "fact": "breadth.fectors_challenge.satisfied",
+      "accessMappingRef": null,
+      "status": "contract-only",
+      "source": "Stats.checkForMiniGameAchievements",
+      "fallback": "unknown until exact completion predicate is read; never infer from inventory",
+      "gsq": null
+    },
+    {
+      "id": "snapshot.breadth.two_thumbs_up.satisfied",
+      "fact": "breadth.two_thumbs_up.satisfied",
+      "accessMappingRef": null,
+      "status": "contract-only",
+      "source": "MovieTheater.resetLocalState; Event grange/Luau award branches",
+      "fallback": "unknown until exact completion predicate is read; never infer from inventory",
+      "gsq": null
+    },
+    {
+      "id": "snapshot.breadth.blue_ribbon.satisfied",
+      "fact": "breadth.blue_ribbon.satisfied",
+      "accessMappingRef": null,
+      "status": "contract-only",
+      "source": "MovieTheater.resetLocalState; Event grange/Luau award branches",
+      "fallback": "unknown until exact completion predicate is read; never infer from inventory",
+      "gsq": null
+    },
+    {
+      "id": "snapshot.breadth.an_unforgettable_soup.satisfied",
+      "fact": "breadth.an_unforgettable_soup.satisfied",
+      "accessMappingRef": null,
+      "status": "contract-only",
+      "source": "MovieTheater.resetLocalState; Event grange/Luau award branches",
+      "fallback": "unknown until exact completion predicate is read; never infer from inventory",
+      "gsq": null
+    },
+    {
+      "id": "snapshot.breadth.a_distant_shore.satisfied",
+      "fact": "breadth.a_distant_shore.satisfied",
+      "accessMappingRef": null,
+      "status": "contract-only",
+      "source": "IslandSouth.resetLocalState; Game1.UpdateFarmPerfection; Summit.resetLocalState",
+      "fallback": "unknown until exact completion predicate is read; never infer from inventory",
+      "gsq": null
+    },
+    {
+      "id": "snapshot.breadth.perfection.satisfied",
+      "fact": "breadth.perfection.satisfied",
+      "accessMappingRef": null,
+      "status": "contract-only",
+      "source": "IslandSouth.resetLocalState; Game1.UpdateFarmPerfection; Summit.resetLocalState",
+      "fallback": "unknown until exact completion predicate is read; never infer from inventory",
+      "gsq": null
+    }
+  ]
+}

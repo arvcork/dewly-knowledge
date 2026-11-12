@@ -1,0 +1,130 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "gameVersion",
+    "authority",
+    "triState",
+    "evaluationPolicy",
+    "records"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0.0"
+    },
+    "gameVersion": {
+      "type": "string"
+    },
+    "authority": {
+      "type": "string"
+    },
+    "triState": {
+      "type": "object"
+    },
+    "evaluationPolicy": {
+      "type": "object"
+    },
+    "records": {
+      "type": "array",
+      "minItems": 9,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "family",
+          "description",
+          "requiredSnapshotFacts",
+          "eligibility",
+          "quantityCalculation",
+          "targetReferences",
+          "grouping",
+          "completionCondition",
+          "priorityInputs",
+          "refreshTriggers",
+          "achievementLinks",
+          "unknownStateHandling",
+          "evidenceIds",
+          "status",
+          "instanceIdFormat",
+          "detail"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "family": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "requiredSnapshotFacts": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "uniqueItems": true
+          },
+          "eligibility": {
+            "type": "string"
+          },
+          "quantityCalculation": {
+            "type": "string"
+          },
+          "targetReferences": {
+            "type": "object"
+          },
+          "grouping": {
+            "type": "object"
+          },
+          "completionCondition": {
+            "type": "string"
+          },
+          "priorityInputs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "uniqueItems": true
+          },
+          "refreshTriggers": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "uniqueItems": true
+          },
+          "achievementLinks": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "uniqueItems": true
+          },
+          "unknownStateHandling": {
+            "type": "string"
+          },
+          "evidenceIds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "uniqueItems": true
+          },
+          "status": {
+            "type": "string"
+          },
+          "instanceIdFormat": {
+            "type": "string"
+          },
+          "detail": {
+            "type": "object"
+          }
+        }
+      }
+    }
+  }
+}

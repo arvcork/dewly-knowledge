@@ -1,0 +1,140 @@
+{
+  "schemaVersion": "0.1.0",
+  "category": "shared-breadth",
+  "nodes": [
+    {
+      "id": "breadth.acquire.item.grow",
+      "kind": "unknown",
+      "trackingRefs": [],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354"
+      ],
+      "verification": "unresolved",
+      "reason": "Parameterized grow route: select actual requested item/recipe from loaded content; verify availability, quantity, cost and prerequisites before compiling an executable branch. No generic route guarantees an item is obtainable."
+    },
+    {
+      "id": "breadth.acquire.item.purchase",
+      "kind": "unknown",
+      "trackingRefs": [],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354"
+      ],
+      "verification": "unresolved",
+      "reason": "Parameterized purchase route: select actual requested item/recipe from loaded content; verify availability, quantity, cost and prerequisites before compiling an executable branch. No generic route guarantees an item is obtainable."
+    },
+    {
+      "id": "breadth.acquire.item.forage-or-mine",
+      "kind": "unknown",
+      "trackingRefs": [],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354"
+      ],
+      "verification": "unresolved",
+      "reason": "Parameterized forage-or-mine route: select actual requested item/recipe from loaded content; verify availability, quantity, cost and prerequisites before compiling an executable branch. No generic route guarantees an item is obtainable."
+    },
+    {
+      "id": "breadth.acquire.item.animal-production",
+      "kind": "unknown",
+      "trackingRefs": [],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354"
+      ],
+      "verification": "unresolved",
+      "reason": "Parameterized animal-production route: select actual requested item/recipe from loaded content; verify availability, quantity, cost and prerequisites before compiling an executable branch. No generic route guarantees an item is obtainable."
+    },
+    {
+      "id": "breadth.acquire.item.machine-processing",
+      "kind": "unknown",
+      "trackingRefs": [],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354"
+      ],
+      "verification": "unresolved",
+      "reason": "Parameterized machine-processing route: select actual requested item/recipe from loaded content; verify availability, quantity, cost and prerequisites before compiling an executable branch. No generic route guarantees an item is obtainable."
+    },
+    {
+      "id": "breadth.acquire.item",
+      "kind": "any",
+      "requires": [
+        "breadth.acquire.item.grow",
+        "breadth.acquire.item.purchase",
+        "breadth.acquire.item.forage-or-mine",
+        "breadth.acquire.item.animal-production",
+        "breadth.acquire.item.machine-processing"
+      ],
+      "trackingRefs": [],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354"
+      ],
+      "verification": "contract-only",
+      "reason": "OR route template only; parameter binding and route eligibility remain unresolved."
+    },
+    {
+      "id": "breadth.acquire.recipe-unlock.skill",
+      "kind": "unknown",
+      "trackingRefs": [],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354"
+      ],
+      "verification": "unresolved",
+      "reason": "Parameterized skill route: select actual requested item/recipe from loaded content; verify availability, quantity, cost and prerequisites before compiling an executable branch. No generic route guarantees an item is obtainable."
+    },
+    {
+      "id": "breadth.acquire.recipe-unlock.friendship-mail",
+      "kind": "unknown",
+      "trackingRefs": [],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354"
+      ],
+      "verification": "unresolved",
+      "reason": "Parameterized friendship-mail route: select actual requested item/recipe from loaded content; verify availability, quantity, cost and prerequisites before compiling an executable branch. No generic route guarantees an item is obtainable."
+    },
+    {
+      "id": "breadth.acquire.recipe-unlock.shop",
+      "kind": "unknown",
+      "trackingRefs": [],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354"
+      ],
+      "verification": "unresolved",
+      "reason": "Parameterized shop route: select actual requested item/recipe from loaded content; verify availability, quantity, cost and prerequisites before compiling an executable branch. No generic route guarantees an item is obtainable."
+    },
+    {
+      "id": "breadth.acquire.recipe-unlock.television",
+      "kind": "unknown",
+      "trackingRefs": [],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354"
+      ],
+      "verification": "unresolved",
+      "reason": "Parameterized television route: select actual requested item/recipe from loaded content; verify availability, quantity, cost and prerequisites before compiling an executable branch. No generic route guarantees an item is obtainable."
+    },
+    {
+      "id": "breadth.acquire.recipe-unlock.quest-or-event",
+      "kind": "unknown",
+      "trackingRefs": [],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354"
+      ],
+      "verification": "unresolved",
+      "reason": "Parameterized quest-or-event route: select actual requested item/recipe from loaded content; verify availability, quantity, cost and prerequisites before compiling an executable branch. No generic route guarantees an item is obtainable."
+    },
+    {
+      "id": "breadth.acquire.recipe-unlock",
+      "kind": "any",
+      "requires": [
+        "breadth.acquire.recipe-unlock.skill",
+        "breadth.acquire.recipe-unlock.friendship-mail",
+        "breadth.acquire.recipe-unlock.shop",
+        "breadth.acquire.recipe-unlock.television",
+        "breadth.acquire.recipe-unlock.quest-or-event"
+      ],
+      "trackingRefs": [],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354"
+      ],
+      "verification": "contract-only",
+      "reason": "OR route template only; parameter binding and route eligibility remain unresolved."
+    }
+  ]
+}

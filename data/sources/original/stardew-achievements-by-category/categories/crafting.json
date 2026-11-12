@@ -1,0 +1,175 @@
+{
+  "category": "crafting",
+  "displayName": "Crafting",
+  "description": "Crafting milestones and the full crafting collection.",
+  "catalogueVersion": "ps4-npwr12196-2026-11-08",
+  "rulesVersion": "ps4-1.6-cautious-2026-11-08-r2",
+  "trophyCount": 3,
+  "trophies": [
+    {
+      "trophyId": "diy",
+      "name": "D.I.Y.",
+      "group": "base",
+      "tier": "bronze",
+      "classification": "Trackable but limited planning",
+      "requirement": "Craft 15 different items.",
+      "requirementKind": "threshold",
+      "requirementDetail": {
+        "kind": "threshold",
+        "metric": "crafted_distinct",
+        "target": 15,
+        "unit": "items"
+      },
+      "dependencies": [],
+      "evidenceRequired": "Canonical trophy evidence number: crafted_distinct; player-confirmed total or verifiable authorized activity",
+      "progressDerivation": "metricValue(crafted_distinct); unknown remains unknown; no wallet/lifetime proxy",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "craft_recipe",
+          "title": "Craft a learned recipe not yet crafted, confirming materials",
+          "effort": "medium"
+        }
+      ],
+      "knownBlockers": [
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false,
+      "dependencyRule": {
+        "trophyId": "diy",
+        "completion": {
+          "type": "FARM",
+          "condition": {
+            "type": "COUNT",
+            "metric": "crafted_distinct",
+            "target": 15
+          }
+        },
+        "strategicDependencies": []
+      }
+    },
+    {
+      "trophyId": "artisan",
+      "name": "Artisan",
+      "group": "base",
+      "tier": "silver",
+      "classification": "Trackable but limited planning",
+      "requirement": "Craft 30 different items.",
+      "requirementKind": "threshold",
+      "requirementDetail": {
+        "kind": "threshold",
+        "metric": "crafted_distinct",
+        "target": 30,
+        "unit": "items"
+      },
+      "dependencies": [
+        "diy"
+      ],
+      "evidenceRequired": "Canonical trophy evidence number: crafted_distinct; player-confirmed total or verifiable authorized activity",
+      "progressDerivation": "metricValue(crafted_distinct); unknown remains unknown; no wallet/lifetime proxy",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "craft_recipe",
+          "title": "Craft a learned recipe not yet crafted, confirming materials",
+          "effort": "medium"
+        }
+      ],
+      "knownBlockers": [
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false,
+      "dependencyRule": {
+        "trophyId": "artisan",
+        "completion": {
+          "type": "FARM",
+          "condition": {
+            "type": "COUNT",
+            "metric": "crafted_distinct",
+            "target": 30
+          }
+        },
+        "strategicDependencies": [
+          "diy"
+        ]
+      }
+    },
+    {
+      "trophyId": "craft_master",
+      "name": "Craft Master",
+      "group": "base",
+      "tier": "gold",
+      "classification": "Partially supported",
+      "requirement": "Craft every required item.",
+      "requirementKind": "collection",
+      "requirementDetail": {
+        "kind": "collection",
+        "flag": "crafting_complete"
+      },
+      "dependencies": [
+        "artisan"
+      ],
+      "evidenceRequired": "Trophy evidence boolean: crafting_complete; player confirmation of the exact outcome",
+      "progressDerivation": "evaluateCollectionEvidence or explicit flag (crafting_complete); partial count only when eligible IDs are recognized",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "craft_recipe",
+          "title": "Learn and craft eligible missing recipes, including progression unlocks",
+          "effort": "medium"
+        }
+      ],
+      "knownBlockers": [
+        "Every crafting recipe/material unlocking prerequisite needs full scenario coverage.",
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "condition_needs_review",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false,
+      "dependencyRule": {
+        "trophyId": "craft_master",
+        "completion": {
+          "type": "FARM",
+          "condition": {
+            "type": "COLLECTION",
+            "flag": "crafting_complete"
+          }
+        },
+        "strategicDependencies": [
+          "artisan"
+        ]
+      }
+    }
+  ]
+}

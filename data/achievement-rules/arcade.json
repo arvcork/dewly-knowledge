@@ -1,0 +1,210 @@
+{
+  "schemaVersion": "0.1.0",
+  "category": "arcade",
+  "nodes": [
+    {
+      "id": "breadth.unresolved.arcade",
+      "kind": "unknown",
+      "trackingRefs": [],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354"
+      ],
+      "verification": "unresolved",
+      "reason": "No automated play; run state/death evidence reader pending; cabinet interaction is not completion. Live content selector and normalized progress reader pending."
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.prairie_king.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.prairie_king.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.goal.prairie_king",
+      "kind": "all",
+      "goal": "prairie_king",
+      "requires": [
+        "breadth.requirement.prairie_king"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.prairie_king.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.prairie_king.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.requirement.prairie_king",
+      "kind": "all",
+      "requires": [
+        "breadth.action.prairie_king"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.prairie_king.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.prairie_king.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.action.prairie_king",
+      "kind": "action",
+      "requires": [
+        "breadth.unresolved.arcade"
+      ],
+      "task": {
+        "text": "Finish Prairie King."
+      },
+      "breadth": {
+        "completionLogic": "stats.Get(completedPrairieKing)!=0; platform guard applies",
+        "runtimeStatus": "reader-pending; no live verification",
+        "platformRef": "data/platform-mapping.json#prairie_king",
+        "selection": "Read completedPrairieKing and completedPrairieKingWithoutDying stats independently. Select incomplete run objective.",
+        "assets": [],
+        "limitations": "No automated play; run state/death evidence reader pending; cabinet interaction is not completion.",
+        "atomicDecomposition": {
+          "status": "complete",
+          "mode": "static",
+          "source": "local-runtime-1.6.15.24354: Stats.checkForMiniGameAchievements",
+          "eligibility": "One complete arcade run; Fector additionally requires zero deaths during that run.",
+          "resultId": "prairie_king.arcade-run",
+          "requirements": [
+            {
+              "id": "prairie_king.run",
+              "kind": "event",
+              "condition": "completedPrairieKing stat is nonzero",
+              "tracking": {
+                "value": "Stats.Get(completedPrairieKing)",
+                "dataType": "uint32",
+                "source": "local-runtime-1.6.15.24354: Stats.checkForMiniGameAchievements",
+                "status": "source-verified"
+              },
+              "routeRefs": [
+                "breadth.progress.location-access"
+              ],
+              "prerequisiteRefs": [],
+              "verification": "derived-rule"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.fectors_challenge.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.fectors_challenge.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.goal.fectors_challenge",
+      "kind": "all",
+      "goal": "fectors_challenge",
+      "requires": [
+        "breadth.requirement.fectors_challenge"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.fectors_challenge.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.fectors_challenge.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.requirement.fectors_challenge",
+      "kind": "all",
+      "requires": [
+        "breadth.action.fectors_challenge"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.fectors_challenge.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.fectors_challenge.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.action.fectors_challenge",
+      "kind": "action",
+      "requires": [
+        "breadth.unresolved.arcade"
+      ],
+      "task": {
+        "text": "Finish Prairie King without dying."
+      },
+      "breadth": {
+        "completionLogic": "stats.Get(completedPrairieKingWithoutDying)!=0; platform guard applies",
+        "runtimeStatus": "reader-pending; no live verification",
+        "platformRef": "data/platform-mapping.json#fectors_challenge",
+        "selection": "Read completedPrairieKing and completedPrairieKingWithoutDying stats independently. Select incomplete run objective.",
+        "assets": [],
+        "limitations": "No automated play; run state/death evidence reader pending; cabinet interaction is not completion.",
+        "atomicDecomposition": {
+          "status": "complete",
+          "mode": "static",
+          "source": "local-runtime-1.6.15.24354: Stats.checkForMiniGameAchievements",
+          "eligibility": "One complete arcade run; Fector additionally requires zero deaths during that run.",
+          "resultId": "fectors_challenge.arcade-run",
+          "requirements": [
+            {
+              "id": "fectors_challenge.run",
+              "kind": "event",
+              "condition": "completedPrairieKingWithoutDying stat is nonzero",
+              "tracking": {
+                "value": "Stats.Get(completedPrairieKingWithoutDying)",
+                "dataType": "uint32",
+                "source": "local-runtime-1.6.15.24354: Stats.checkForMiniGameAchievements",
+                "status": "source-verified"
+              },
+              "routeRefs": [
+                "breadth.progress.location-access"
+              ],
+              "prerequisiteRefs": [],
+              "verification": "derived-rule"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

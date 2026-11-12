@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "0.1.0",
+  "id": "local-runtime-1.6.15.24354",
+  "gameVersion": "1.6.15.24354",
+  "smapiVersion": "4.5.2.0",
+  "inspectionMethod": "Read local XML docs and ILSpyCmd 11.2.0.10050 type decompilation; compile read-only readers against these assemblies.",
+  "assemblies": [
+    {
+      "path": "C:\\XboxGames\\Stardew Valley\\Content\\Stardew Valley.dll",
+      "sha256": "2961a8a8d5716d69492bacb004e3125e7a3d8fccb41f9b2edc3971d520f98cfa"
+    },
+    {
+      "path": "C:\\XboxGames\\Stardew Valley\\Content\\StardewModdingAPI.dll",
+      "sha256": "5e4c51bb3cd6616f5adcb804769dbb7c6872b2478fab786fb4ca00c72c7456bf"
+    },
+    {
+      "path": "C:\\XboxGames\\Stardew Valley\\Content\\StardewValley.GameData.dll",
+      "sha256": "210c5d211d69c35f2041613668d32dd7a3a924725fe75a012940f0e424d4a15e"
+    }
+  ],
+  "locators": [
+    "StardewValley.Farmer",
+    "StardewValley.Game1",
+    "StardewValley.GameLocation",
+    "StardewValley.Stats",
+    "StardewValley.CraftingRecipe",
+    "StardewValley.SDKs.MicrosoftGdk.GDKHelper.GetAchievement",
+    "StardewModdingAPI.Events.IGameLoopEvents"
+  ],
+  "externalSources": [
+    "https://smapi.io/",
+    "https://github.com/Pathoschild/SMAPI/releases/tag/4.5.2"
+  ],
+  "runtimeExecution": false,
+  "privacy": "No save data or account identifiers collected."
+}

@@ -1,0 +1,230 @@
+{
+  "schemaVersion": "0.1.0",
+  "category": "exploration-and-endgame",
+  "nodes": [
+    {
+      "id": "breadth.unresolved.exploration-and-endgame",
+      "kind": "unknown",
+      "trackingRefs": [],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354"
+      ],
+      "verification": "unresolved",
+      "reason": "Exact award calls are source-verified; Data/Perfection availability, waiver planning and recursive component acquisition remain adapter work. Live content selector and normalized progress reader pending."
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.a_distant_shore.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.a_distant_shore.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.goal.a_distant_shore",
+      "kind": "all",
+      "goal": "a_distant_shore",
+      "requires": [
+        "breadth.requirement.a_distant_shore"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.a_distant_shore.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.a_distant_shore.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.requirement.a_distant_shore",
+      "kind": "all",
+      "requires": [
+        "breadth.action.a_distant_shore"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.a_distant_shore.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.a_distant_shore.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.action.a_distant_shore",
+      "kind": "action",
+      "requires": [
+        "breadth.unresolved.exploration-and-endgame"
+      ],
+      "task": {
+        "text": "Repair the boat and enter IslandSouth."
+      },
+      "breadth": {
+        "completionLogic": "IslandSouth.resetLocalState unconditionally calls getAchievement(40)",
+        "runtimeStatus": "reader-pending; no live verification",
+        "platformRef": "data/platform-mapping.json#a_distant_shore",
+        "selection": "Read actual perfection progress including waiver effects; expand remaining components through existing cooking/crafting/fishing/shipping/friendship/skill rules. Island: select unfinished boat repair and first IslandSouth entry.",
+        "assets": [
+          "Data/Perfection",
+          "Data/Locations"
+        ],
+        "limitations": "Exact award calls are source-verified; Data/Perfection availability, waiver planning and recursive component acquisition remain adapter work.",
+        "atomicDecomposition": {
+          "status": "complete",
+          "mode": "static",
+          "source": "IslandSouth.resetLocalState (local runtime)",
+          "eligibility": "Award call is unconditional on IslandSouth local-state reset; first arrival also queues Visited_Island mail.",
+          "resultId": "a_distant_shore.enter-island-south",
+          "requirements": [
+            {
+              "id": "a_distant_shore.arrive",
+              "kind": "event",
+              "condition": "IslandSouth.resetLocalState executes for player",
+              "tracking": {
+                "value": "Farmer.achievements contains 40; hasOrWillReceiveMail(\"Visited_Island\") is supporting history",
+                "dataType": "bool/set<int>",
+                "source": "IslandSouth.resetLocalState",
+                "status": "source-verified"
+              },
+              "routeRefs": [
+                "breadth.progress.location-access"
+              ],
+              "prerequisiteRefs": [],
+              "verification": "derived-rule"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.perfection.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.perfection.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.goal.perfection",
+      "kind": "all",
+      "goal": "perfection",
+      "requires": [
+        "breadth.requirement.perfection"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.perfection.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.perfection.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.requirement.perfection",
+      "kind": "all",
+      "requires": [
+        "breadth.action.perfection"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.perfection.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.perfection.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.action.perfection",
+      "kind": "action",
+      "requires": [
+        "breadth.unresolved.exploration-and-endgame"
+      ],
+      "task": {
+        "text": "Reach effective 100%, pass the overnight farmPerfect update, and enter Summit."
+      },
+      "breadth": {
+        "completionLogic": "Summit.resetLocalState calls getAchievement(44) only when team.farmPerfect is true",
+        "runtimeStatus": "reader-pending; no live verification",
+        "platformRef": "data/platform-mapping.json#perfection",
+        "selection": "Read actual perfection progress including waiver effects; expand remaining components through existing cooking/crafting/fishing/shipping/friendship/skill rules. Island: select unfinished boat repair and first IslandSouth entry.",
+        "assets": [
+          "Data/Perfection",
+          "Data/Locations"
+        ],
+        "limitations": "Exact award calls are source-verified; Data/Perfection availability, waiver planning and recursive component acquisition remain adapter work.",
+        "atomicDecomposition": {
+          "status": "complete",
+          "mode": "static",
+          "source": "Summit.resetLocalState + Game1.UpdateFarmPerfection (local runtime)",
+          "eligibility": "Award call occurs on entering Summit only when team.farmPerfect is true; reaching 100% sets farmPerfect during overnight update and unlocks summit access.",
+          "resultId": "perfection.enter-summit",
+          "requirements": [
+            {
+              "id": "perfection.score",
+              "kind": "counter",
+              "condition": "percentGameComplete + 0.01 * PerfectionWaivers >= 1 before overnight update",
+              "tracking": {
+                "value": "Utility.percentGameComplete and NetWorldState.PerfectionWaivers",
+                "dataType": "float + int32",
+                "source": "Game1.UpdateFarmPerfection",
+                "status": "source-verified"
+              },
+              "routeRefs": [],
+              "prerequisiteRefs": [],
+              "verification": "derived-rule"
+            },
+            {
+              "id": "perfection.summit",
+              "kind": "event",
+              "condition": "enter Summit with team.farmPerfect true",
+              "tracking": {
+                "value": "FarmerTeam.farmPerfect; durable Farmer.achievements contains 44",
+                "dataType": "bool/set<int>",
+                "source": "Summit.resetLocalState",
+                "status": "source-verified"
+              },
+              "routeRefs": [
+                "breadth.progress.location-access"
+              ],
+              "prerequisiteRefs": [],
+              "verification": "derived-rule"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

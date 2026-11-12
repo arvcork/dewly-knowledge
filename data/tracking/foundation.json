@@ -1,0 +1,42 @@
+{
+  "schemaVersion": "0.1.0",
+  "entries": [
+    {
+      "id": "refresh.foundation",
+      "trackingRefs": [
+        "track.date.year",
+        "track.date.day",
+        "track.date.season",
+        "track.date.time",
+        "track.weather.rain",
+        "track.location.season",
+        "track.gold.lifetime",
+        "track.gold.wallet",
+        "track.mine.depth",
+        "track.collection.cooked",
+        "track.collection.fish",
+        "track.collection.shipped",
+        "track.recipe.known",
+        "track.collection.crafted",
+        "track.skills.base",
+        "track.quests.completed",
+        "track.events.seen",
+        "track.mail.received",
+        "track.house.level",
+        "track.items.inventory",
+        "track.content.cooking",
+        "track.content.ingredients",
+        "track.achievement.ingame"
+      ],
+      "eventRole": "Invalidation signal, never proof",
+      "contentRefresh": [
+        "Content.AssetsInvalidated"
+      ],
+      "storageRefresh": [
+        "Player.InventoryChanged",
+        "World.ChestInventoryChanged"
+      ],
+      "policy": "Full snapshot on SaveLoaded/DayStarted; compare cheap player dictionaries once per second; invalidate caches on content changes; never scan world storage every tick."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schemaVersion": "0.1.0",
+  "runtime": "Stardew Valley 1.6.15.24354",
+  "verification": "source-verified from local assembly; not live-game verified",
+  "entries": [
+    {
+      "achievementId": "good_neighbors",
+      "gameToken": 39,
+      "source": "StardewValley.Locations.Forest.resetSharedState",
+      "trigger": "Compute numRaccoonBabies as TimesFedRaccoons - 1, temporarily subtract one until seven days after DaysPlayedWhenLastRaccoonBundleWasFinished, clamp at zero, and award when the result is at least 8.",
+      "action": "Finish generated raccoon requests and allow the final seven-day reveal delay to expire, then load/reset the Forest shared state.",
+      "evidence": "NetWorldState.TimesFedRaccoons, Date.TotalDays, DaysPlayedWhenLastRaccoonBundleWasFinished; durable Farmer.achievements token 39",
+      "evidenceType": "int32 tuple + set<int>",
+      "readerStatus": "candidate; no compiled reader"
+    },
+    {
+      "achievementId": "two_thumbs_up",
+      "gameToken": 36,
+      "source": "StardewValley.Locations.MovieTheater.resetLocalState",
+      "trigger": "The location reset calls getAchievement(36) unconditionally for the entering player.",
+      "action": "Unlock the theater route, obtain a ticket, and enter MovieTheater for a screening.",
+      "evidence": "Durable Farmer.achievements token 36; current MovieTheater location is transient supporting evidence",
+      "evidenceType": "set<int> + location name",
+      "readerStatus": "candidate; no compiled reader"
+    },
+    {
+      "achievementId": "blue_ribbon",
+      "gameToken": 37,
+      "source": "StardewValley.Event grange result interaction branch",
+      "trigger": "After judging, speaking to the festival host awards the achievement when grangeScore is at least 90.",
+      "action": "Submit nine eligible display items, complete judging with score >= 90, then speak to Lewis for the result.",
+      "evidence": "Event.grangeJudged and Event.grangeScore during festival; durable Farmer.achievements token 37",
+      "evidenceType": "bool + int32 + set<int>",
+      "readerStatus": "candidate; no compiled reader"
+    },
+    {
+      "achievementId": "an_unforgettable_soup",
+      "gameToken": 38,
+      "source": "StardewValley.Event Luau potluck evaluation",
+      "trigger": "The evaluated Governor reaction index must equal 4; that branch calls getAchievement(38). Multiplayer also requires enough team contributions unless the precomputed reaction is 6.",
+      "action": "Contribute an eligible ingredient whose evaluated quality/edibility result produces reaction 4, then start the soup tasting.",
+      "evidence": "Computed event reaction index during Luau; durable Farmer.achievements token 38",
+      "evidenceType": "int32 + set<int>",
+      "readerStatus": "candidate; no compiled reader"
+    },
+    {
+      "achievementId": "a_distant_shore",
+      "gameToken": 40,
+      "source": "StardewValley.Locations.IslandSouth.resetLocalState",
+      "trigger": "IslandSouth local-state reset calls getAchievement(40) unconditionally; first entry also queues Visited_Island mail.",
+      "action": "Repair Willy's boat, buy passage, and enter IslandSouth.",
+      "evidence": "Durable Farmer.achievements token 40; hasOrWillReceiveMail(Visited_Island) is supporting arrival history",
+      "evidenceType": "set<int> + bool",
+      "readerStatus": "candidate; no compiled reader"
+    },
+    {
+      "achievementId": "perfection",
+      "gameToken": 44,
+      "source": "StardewValley.Game1.UpdateFarmPerfection and StardewValley.Locations.Summit.resetLocalState",
+      "trigger": "Effective completion percent (percentGameComplete plus 1% per waiver) must reach 100% so the overnight update sets team.farmPerfect; entering Summit then awards token 44 only when farmPerfect is true.",
+      "action": "Complete or waive remaining perfection components, sleep through the farm-perfect update, unlock Summit access, and enter Summit.",
+      "evidence": "Utility.percentGameComplete, NetWorldState.PerfectionWaivers, FarmerTeam.farmPerfect; durable Farmer.achievements token 44",
+      "evidenceType": "float + int32 + bool + set<int>",
+      "readerStatus": "candidate; no compiled reader"
+    }
+  ]
+}

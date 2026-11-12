@@ -1,0 +1,439 @@
+{
+  "category": "friendships-and-family",
+  "displayName": "Friendships and family",
+  "description": "Friendship heart milestones, marriage and children.",
+  "catalogueVersion": "ps4-npwr12196-2026-11-08",
+  "rulesVersion": "ps4-1.6-cautious-2026-11-08-r2",
+  "trophyCount": 7,
+  "trophies": [
+    {
+      "trophyId": "a_new_friend",
+      "name": "A New Friend",
+      "group": "base",
+      "tier": "bronze",
+      "classification": "Trackable but limited planning",
+      "requirement": "Reach 5 hearts with one person.",
+      "requirementKind": "threshold",
+      "requirementDetail": {
+        "kind": "threshold",
+        "metric": "friendships_5",
+        "target": 1,
+        "unit": "people"
+      },
+      "dependencies": [],
+      "evidenceRequired": "Canonical trophy evidence number: friendships_5; player-confirmed total or verifiable authorized activity",
+      "progressDerivation": "metricValue(friendships_5); unknown remains unknown; no wallet/lifetime proxy",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "relationship_talk",
+          "title": "Talk to accessible villagers you are building friendship with",
+          "effort": "short"
+        },
+        {
+          "id": "relationship_gift",
+          "title": "Give a verified liked/loved gift, respecting limits and reported inventory",
+          "effort": "short"
+        }
+      ],
+      "knownBlockers": [
+        "Gift windows, affection decay and known heart-level changes are not fully automated.",
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false,
+      "dependencyRule": {
+        "trophyId": "a_new_friend",
+        "completion": {
+          "type": "FARM",
+          "condition": {
+            "type": "COUNT",
+            "metric": "friendships_5",
+            "target": 1
+          }
+        },
+        "strategicDependencies": []
+      }
+    },
+    {
+      "trophyId": "best_friends",
+      "name": "Best Friends",
+      "group": "base",
+      "tier": "bronze",
+      "classification": "Trackable but limited planning",
+      "requirement": "Reach 10 hearts with one person.",
+      "requirementKind": "threshold",
+      "requirementDetail": {
+        "kind": "threshold",
+        "metric": "friendships_10",
+        "target": 1,
+        "unit": "people"
+      },
+      "dependencies": [
+        "a_new_friend"
+      ],
+      "evidenceRequired": "Canonical trophy evidence number: friendships_10; player-confirmed total or verifiable authorized activity",
+      "progressDerivation": "metricValue(friendships_10); unknown remains unknown; no wallet/lifetime proxy",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "relationship_talk",
+          "title": "Talk to accessible villagers you are building friendship with",
+          "effort": "short"
+        },
+        {
+          "id": "relationship_gift",
+          "title": "Give a verified liked/loved gift, respecting limits and reported inventory",
+          "effort": "short"
+        }
+      ],
+      "knownBlockers": [
+        "Gift windows, affection decay and known heart-level changes are not fully automated.",
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false,
+      "dependencyRule": {
+        "trophyId": "best_friends",
+        "completion": {
+          "type": "FARM",
+          "condition": {
+            "type": "COUNT",
+            "metric": "friendships_10",
+            "target": 1
+          }
+        },
+        "strategicDependencies": [
+          "a_new_friend"
+        ]
+      }
+    },
+    {
+      "trophyId": "the_beloved_farmer",
+      "name": "The Beloved Farmer",
+      "group": "base",
+      "tier": "silver",
+      "classification": "Trackable but limited planning",
+      "requirement": "Reach 10 hearts with 8 people.",
+      "requirementKind": "threshold",
+      "requirementDetail": {
+        "kind": "threshold",
+        "metric": "friendships_10",
+        "target": 8,
+        "unit": "people"
+      },
+      "dependencies": [
+        "best_friends"
+      ],
+      "evidenceRequired": "Canonical trophy evidence number: friendships_10; player-confirmed total or verifiable authorized activity",
+      "progressDerivation": "metricValue(friendships_10); unknown remains unknown; no wallet/lifetime proxy",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "relationship_talk",
+          "title": "Talk to accessible villagers you are building friendship with",
+          "effort": "short"
+        },
+        {
+          "id": "relationship_gift",
+          "title": "Give a verified liked/loved gift, respecting limits and reported inventory",
+          "effort": "short"
+        }
+      ],
+      "knownBlockers": [
+        "Gift windows, affection decay and known heart-level changes are not fully automated.",
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false,
+      "dependencyRule": {
+        "trophyId": "the_beloved_farmer",
+        "completion": {
+          "type": "FARM",
+          "condition": {
+            "type": "COUNT",
+            "metric": "friendships_10",
+            "target": 8
+          }
+        },
+        "strategicDependencies": [
+          "best_friends"
+        ]
+      }
+    },
+    {
+      "trophyId": "cliques",
+      "name": "Cliques",
+      "group": "base",
+      "tier": "bronze",
+      "classification": "Trackable but limited planning",
+      "requirement": "Reach 5 hearts with 4 people.",
+      "requirementKind": "threshold",
+      "requirementDetail": {
+        "kind": "threshold",
+        "metric": "friendships_5",
+        "target": 4,
+        "unit": "people"
+      },
+      "dependencies": [
+        "a_new_friend"
+      ],
+      "evidenceRequired": "Canonical trophy evidence number: friendships_5; player-confirmed total or verifiable authorized activity",
+      "progressDerivation": "metricValue(friendships_5); unknown remains unknown; no wallet/lifetime proxy",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "relationship_talk",
+          "title": "Talk to accessible villagers you are building friendship with",
+          "effort": "short"
+        },
+        {
+          "id": "relationship_gift",
+          "title": "Give a verified liked/loved gift, respecting limits and reported inventory",
+          "effort": "short"
+        }
+      ],
+      "knownBlockers": [
+        "Gift windows, affection decay and known heart-level changes are not fully automated.",
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false,
+      "dependencyRule": {
+        "trophyId": "cliques",
+        "completion": {
+          "type": "FARM",
+          "condition": {
+            "type": "COUNT",
+            "metric": "friendships_5",
+            "target": 4
+          }
+        },
+        "strategicDependencies": [
+          "a_new_friend"
+        ]
+      }
+    },
+    {
+      "trophyId": "networking",
+      "name": "Networking",
+      "group": "base",
+      "tier": "bronze",
+      "classification": "Trackable but limited planning",
+      "requirement": "Reach 5 hearts with 10 people.",
+      "requirementKind": "threshold",
+      "requirementDetail": {
+        "kind": "threshold",
+        "metric": "friendships_5",
+        "target": 10,
+        "unit": "people"
+      },
+      "dependencies": [
+        "cliques"
+      ],
+      "evidenceRequired": "Canonical trophy evidence number: friendships_5; player-confirmed total or verifiable authorized activity",
+      "progressDerivation": "metricValue(friendships_5); unknown remains unknown; no wallet/lifetime proxy",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "relationship_talk",
+          "title": "Talk to accessible villagers you are building friendship with",
+          "effort": "short"
+        },
+        {
+          "id": "relationship_gift",
+          "title": "Give a verified liked/loved gift, respecting limits and reported inventory",
+          "effort": "short"
+        }
+      ],
+      "knownBlockers": [
+        "Gift windows, affection decay and known heart-level changes are not fully automated.",
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false,
+      "dependencyRule": {
+        "trophyId": "networking",
+        "completion": {
+          "type": "FARM",
+          "condition": {
+            "type": "COUNT",
+            "metric": "friendships_5",
+            "target": 10
+          }
+        },
+        "strategicDependencies": [
+          "cliques"
+        ]
+      }
+    },
+    {
+      "trophyId": "popular",
+      "name": "Popular",
+      "group": "base",
+      "tier": "bronze",
+      "classification": "Trackable but limited planning",
+      "requirement": "Reach 5 hearts with 20 people.",
+      "requirementKind": "threshold",
+      "requirementDetail": {
+        "kind": "threshold",
+        "metric": "friendships_5",
+        "target": 20,
+        "unit": "people"
+      },
+      "dependencies": [
+        "networking"
+      ],
+      "evidenceRequired": "Canonical trophy evidence number: friendships_5; player-confirmed total or verifiable authorized activity",
+      "progressDerivation": "metricValue(friendships_5); unknown remains unknown; no wallet/lifetime proxy",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "relationship_talk",
+          "title": "Talk to accessible villagers you are building friendship with",
+          "effort": "short"
+        },
+        {
+          "id": "relationship_gift",
+          "title": "Give a verified liked/loved gift, respecting limits and reported inventory",
+          "effort": "short"
+        }
+      ],
+      "knownBlockers": [
+        "Gift windows, affection decay and known heart-level changes are not fully automated.",
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false,
+      "dependencyRule": {
+        "trophyId": "popular",
+        "completion": {
+          "type": "FARM",
+          "condition": {
+            "type": "COUNT",
+            "metric": "friendships_5",
+            "target": 20
+          }
+        },
+        "strategicDependencies": [
+          "networking"
+        ]
+      }
+    },
+    {
+      "trophyId": "full_house",
+      "name": "Full House",
+      "group": "base",
+      "tier": "bronze",
+      "classification": "Partially supported",
+      "requirement": "Get married and have two children.",
+      "requirementKind": "threshold",
+      "requirementDetail": {
+        "kind": "threshold",
+        "metric": "children_count",
+        "target": 2,
+        "unit": "children"
+      },
+      "dependencies": [],
+      "evidenceRequired": "Canonical trophy evidence number: children_count; player-confirmed total or verifiable authorized activity",
+      "progressDerivation": "metricValue(children_count); unknown remains unknown; no wallet/lifetime proxy",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "marriage_prerequisites",
+          "title": "Build a relationship, secure the necessary house upgrades, then plan children after marriage",
+          "effort": "medium"
+        }
+      ],
+      "knownBlockers": [
+        "Gift windows, affection decay and known heart-level changes are not fully automated.",
+        "Marriage/house/child timeline and proposal mechanics remain manually evidenced.",
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false,
+      "dependencyRule": {
+        "trophyId": "full_house",
+        "completion": {
+          "type": "FARM",
+          "condition": {
+            "type": "COUNT",
+            "metric": "children_count",
+            "target": 2
+          }
+        },
+        "strategicDependencies": []
+      }
+    }
+  ]
+}

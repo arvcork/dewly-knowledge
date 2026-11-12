@@ -1,0 +1,225 @@
+{
+  "category": "foraging-and-collections",
+  "displayName": "Foraging and collections",
+  "description": "Museum, collectible and discovery goals. The source has no dedicated foraging-only trophy.",
+  "catalogueVersion": "ps4-npwr12196-2026-11-08",
+  "rulesVersion": "ps4-1.6-cautious-2026-11-08-r2",
+  "trophyCount": 4,
+  "trophies": [
+    {
+      "trophyId": "a_complete_collection",
+      "name": "A Complete Collection",
+      "group": "base",
+      "tier": "silver",
+      "classification": "Partially supported",
+      "requirement": "Complete the museum collection.",
+      "requirementKind": "collection",
+      "requirementDetail": {
+        "kind": "collection",
+        "flag": "museum_complete"
+      },
+      "dependencies": [],
+      "evidenceRequired": "Trophy evidence boolean: museum_complete; player confirmation of the exact outcome",
+      "progressDerivation": "evaluateCollectionEvidence or explicit flag (museum_complete); partial count only when eligible IDs are recognized",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "museum_review",
+          "title": "Assess unidentified museum donations, then seek a verified missing artifact or mineral",
+          "effort": "medium"
+        }
+      ],
+      "knownBlockers": [
+        "Museum donation completeness depends on correct artifact/mineral identity and source eligibility.",
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "condition_needs_review",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false,
+      "dependencyRule": {
+        "trophyId": "a_complete_collection",
+        "completion": {
+          "type": "FARM",
+          "condition": {
+            "type": "COLLECTION",
+            "flag": "museum_complete"
+          }
+        },
+        "strategicDependencies": []
+      }
+    },
+    {
+      "trophyId": "treasure_trove",
+      "name": "Treasure Trove",
+      "group": "base",
+      "tier": "bronze",
+      "classification": "Trackable but limited planning",
+      "requirement": "Donate 40 different museum items.",
+      "requirementKind": "threshold",
+      "requirementDetail": {
+        "kind": "threshold",
+        "metric": "museum_donations_distinct",
+        "target": 40,
+        "unit": "items"
+      },
+      "dependencies": [],
+      "evidenceRequired": "Canonical trophy evidence number: museum_donations_distinct; player-confirmed total or verifiable authorized activity",
+      "progressDerivation": "metricValue(museum_donations_distinct); unknown remains unknown; no wallet/lifetime proxy",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "museum_donate",
+          "title": "Donate a verified unsubmitted artifact or mineral to the museum",
+          "effort": "medium"
+        }
+      ],
+      "knownBlockers": [
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false,
+      "dependencyRule": {
+        "trophyId": "treasure_trove",
+        "completion": {
+          "type": "FARM",
+          "condition": {
+            "type": "COUNT",
+            "metric": "museum_donations_distinct",
+            "target": 40
+          }
+        },
+        "strategicDependencies": []
+      }
+    },
+    {
+      "trophyId": "mystery_of_the_stardrops",
+      "name": "Mystery Of The Stardrops",
+      "group": "base",
+      "tier": "gold",
+      "classification": "Partially supported",
+      "requirement": "Find every Stardrop.",
+      "requirementKind": "collection",
+      "requirementDetail": {
+        "kind": "collection",
+        "flag": "stardrops_complete"
+      },
+      "dependencies": [],
+      "evidenceRequired": "Trophy evidence boolean: stardrops_complete; player confirmation of the exact outcome",
+      "progressDerivation": "evaluateCollectionEvidence or explicit flag (stardrops_complete); partial count only when eligible IDs are recognized",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "stardrop_path",
+          "title": "Identify a missing Stardrop source and pursue its actual prerequisites",
+          "effort": "medium"
+        }
+      ],
+      "knownBlockers": [
+        "Gift windows, affection decay and known heart-level changes are not fully automated.",
+        "Stardrop sources and full collection do not have a verified exhaustive dependency graph.",
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "condition_needs_review",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false,
+      "dependencyRule": {
+        "trophyId": "mystery_of_the_stardrops",
+        "completion": {
+          "type": "FARM",
+          "condition": {
+            "type": "COLLECTION",
+            "flag": "stardrops_complete"
+          }
+        },
+        "strategicDependencies": []
+      }
+    },
+    {
+      "trophyId": "well_read",
+      "name": "Well-Read",
+      "group": "1.6",
+      "tier": "silver",
+      "classification": "Partially supported",
+      "requirement": "Read every book.",
+      "requirementKind": "collection",
+      "requirementDetail": {
+        "kind": "collection",
+        "flag": "power_books_complete"
+      },
+      "dependencies": [],
+      "evidenceRequired": "Trophy evidence boolean: power_books_complete; player confirmation of the exact outcome",
+      "progressDerivation": "evaluateCollectionEvidence or explicit flag (power_books_complete); partial count only when eligible IDs are recognized",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "m4-well_read",
+          "title": "Read each of the 19 power books individually, distinct from owning it",
+          "effort": "long"
+        },
+        {
+          "id": "power_book",
+          "title": "Identify and read a missing power book; owning is not reading",
+          "effort": "medium"
+        }
+      ],
+      "knownBlockers": [
+        "The 19 qualifying power books are individually tracked as READ, not owned; source list is version-pinned but the in-game books-read counter is not imported.",
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": {
+        "status": "partially implemented; pure engines and contract tested; actual MCP/hosted persistence NOT verified",
+        "contract": "report_gameplay_batch + milestone4Details"
+      },
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "condition_needs_review",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false,
+      "dependencyRule": {
+        "trophyId": "well_read",
+        "completion": {
+          "type": "FARM",
+          "condition": {
+            "type": "COLLECTION",
+            "flag": "power_books_complete"
+          }
+        },
+        "strategicDependencies": []
+      }
+    }
+  ]
+}

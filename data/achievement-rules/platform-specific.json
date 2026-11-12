@@ -1,0 +1,17 @@
+{
+  "schemaVersion": "0.1.0",
+  "category": "platform-specific",
+  "nodes": [
+    {
+      "id": "breadth.excluded.iridium_seal",
+      "kind": "unknown",
+      "goal": "iridium_seal",
+      "trackingRefs": [],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354"
+      ],
+      "verification": "source-verified",
+      "reason": "Excluded from Xbox planning: PlayStation-only Platinum; no Xbox task."
+    }
+  ]
+}

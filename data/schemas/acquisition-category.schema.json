@@ -1,0 +1,119 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dewly.local/schemas/acquisition-category.schema.json",
+  "title": "Symbolic category acquisition alternatives; current content membership required",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "gameVersion",
+    "scope",
+    "records",
+    "sourceFile"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0.0"
+    },
+    "gameVersion": {
+      "type": "string"
+    },
+    "scope": {
+      "type": "string"
+    },
+    "sourceFile": {
+      "type": "string"
+    },
+    "records": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "categoryId",
+          "categoryName",
+          "membershipSource",
+          "routes"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^acq\\.category\\."
+          },
+          "categoryId": {
+            "type": "integer"
+          },
+          "categoryName": {
+            "type": "string"
+          },
+          "membershipSource": {
+            "type": "string"
+          },
+          "routes": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "type",
+                "verification",
+                "evidenceIds",
+                "sourceRefs",
+                "recursivePrerequisitesResolved"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "pattern": "^acq\\.method\\."
+                },
+                "type": {
+                  "type": "string"
+                },
+                "verification": {
+                  "const": "external-research"
+                },
+                "evidenceIds": {
+                  "type": "array",
+                  "minItems": 1,
+                  "items": {
+                    "type": "string",
+                    "pattern": "^evidence\\.research\\.acquire3\\."
+                  }
+                },
+                "sourceRefs": {
+                  "type": "array",
+                  "minItems": 1,
+                  "items": {
+                    "type": "string",
+                    "format": "uri"
+                  }
+                },
+                "recursivePrerequisitesResolved": {
+                  "const": false
+                },
+                "prerequisites": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "ref"
+                    ],
+                    "properties": {
+                      "ref": {
+                        "type": "string",
+                        "pattern": "^acq\\.prereq\\."
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

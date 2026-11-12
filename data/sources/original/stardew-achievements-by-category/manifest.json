@@ -1,0 +1,375 @@
+{
+  "schemaVersion": "1.0.0",
+  "format": "category-grouped-trophy-definitions-with-dependency-rules",
+  "originalSources": {
+    "coverageFile": "trophy-50-coverage(1).json",
+    "coverageMetadata": {
+      "catalogueVersion": "ps4-npwr12196-2026-11-08",
+      "scope": "Milestone 4 offline implementation checkpoint, not production ready",
+      "total": 50,
+      "totals": {
+        "Trackable but limited planning": 26,
+        "Partially supported": 24
+      }
+    },
+    "dependencyFile": "trophy-dependency-graph(1).json",
+    "dependencyMetadata": {
+      "catalogueVersion": "ps4-npwr12196-2026-11-08",
+      "rulesVersion": "ps4-1.6-cautious-2026-11-08-r2"
+    },
+    "originalTrophyOrder": [
+      "iridium_seal",
+      "greenhorn",
+      "cowpoke",
+      "homesteader",
+      "millionaire",
+      "legend",
+      "a_complete_collection",
+      "a_new_friend",
+      "best_friends",
+      "the_beloved_farmer",
+      "cliques",
+      "networking",
+      "popular",
+      "cook",
+      "sous_chef",
+      "gourmet_chef",
+      "moving_up",
+      "living_large",
+      "diy",
+      "artisan",
+      "craft_master",
+      "fisherman",
+      "ol_mariner",
+      "master_angler",
+      "mother_catch",
+      "treasure_trove",
+      "gofer",
+      "a_big_help",
+      "polyculture",
+      "monoculture",
+      "full_shipment",
+      "prairie_king",
+      "the_bottom",
+      "local_legend",
+      "joja_co_member_of_the_year",
+      "mystery_of_the_stardrops",
+      "fectors_challenge",
+      "full_house",
+      "singular_talent",
+      "master_of_the_five_ways",
+      "protector_of_the_valley",
+      "well_read",
+      "two_thumbs_up",
+      "blue_ribbon",
+      "an_unforgettable_soup",
+      "good_neighbors",
+      "a_distant_shore",
+      "danger_in_the_deep",
+      "infinite_power",
+      "perfection"
+    ],
+    "originalGraphOrder": [
+      "iridium_seal",
+      "greenhorn",
+      "cowpoke",
+      "homesteader",
+      "millionaire",
+      "legend",
+      "a_complete_collection",
+      "a_new_friend",
+      "best_friends",
+      "the_beloved_farmer",
+      "cliques",
+      "networking",
+      "popular",
+      "cook",
+      "sous_chef",
+      "gourmet_chef",
+      "moving_up",
+      "living_large",
+      "diy",
+      "artisan",
+      "craft_master",
+      "fisherman",
+      "ol_mariner",
+      "master_angler",
+      "mother_catch",
+      "treasure_trove",
+      "gofer",
+      "a_big_help",
+      "polyculture",
+      "monoculture",
+      "full_shipment",
+      "prairie_king",
+      "the_bottom",
+      "local_legend",
+      "joja_co_member_of_the_year",
+      "mystery_of_the_stardrops",
+      "fectors_challenge",
+      "full_house",
+      "singular_talent",
+      "master_of_the_five_ways",
+      "protector_of_the_valley",
+      "well_read",
+      "two_thumbs_up",
+      "blue_ribbon",
+      "an_unforgettable_soup",
+      "good_neighbors",
+      "a_distant_shore",
+      "danger_in_the_deep",
+      "infinite_power",
+      "perfection"
+    ]
+  },
+  "categoryCount": 16,
+  "trophyCount": 50,
+  "categories": [
+    {
+      "id": "fishing",
+      "file": "categories/fishing.json",
+      "displayName": "Fishing",
+      "description": "Fish-catch counts and complete fish collections.",
+      "trophyCount": 4,
+      "trophyIds": [
+        "fisherman",
+        "ol_mariner",
+        "master_angler",
+        "mother_catch"
+      ]
+    },
+    {
+      "id": "farming",
+      "file": "categories/farming.json",
+      "displayName": "Farming and crops",
+      "description": "Crop-focused shipping targets and growing goals.",
+      "trophyCount": 2,
+      "trophyIds": [
+        "polyculture",
+        "monoculture"
+      ]
+    },
+    {
+      "id": "shipping-and-earnings",
+      "file": "categories/shipping-and-earnings.json",
+      "displayName": "Shipping and earnings",
+      "description": "Earnings milestones and the full shipping collection.",
+      "trophyCount": 6,
+      "trophyIds": [
+        "greenhorn",
+        "cowpoke",
+        "homesteader",
+        "millionaire",
+        "legend",
+        "full_shipment"
+      ]
+    },
+    {
+      "id": "foraging-and-collections",
+      "file": "categories/foraging-and-collections.json",
+      "displayName": "Foraging and collections",
+      "description": "Museum, collectible and discovery goals. The source has no dedicated foraging-only trophy.",
+      "trophyCount": 4,
+      "trophyIds": [
+        "a_complete_collection",
+        "treasure_trove",
+        "mystery_of_the_stardrops",
+        "well_read"
+      ]
+    },
+    {
+      "id": "friendships-and-family",
+      "file": "categories/friendships-and-family.json",
+      "displayName": "Friendships and family",
+      "description": "Friendship heart milestones, marriage and children.",
+      "trophyCount": 7,
+      "trophyIds": [
+        "a_new_friend",
+        "best_friends",
+        "the_beloved_farmer",
+        "cliques",
+        "networking",
+        "popular",
+        "full_house"
+      ]
+    },
+    {
+      "id": "cooking",
+      "file": "categories/cooking.json",
+      "displayName": "Cooking",
+      "description": "Distinct recipes cooked and the full cooking collection.",
+      "trophyCount": 3,
+      "trophyIds": [
+        "cook",
+        "sous_chef",
+        "gourmet_chef"
+      ]
+    },
+    {
+      "id": "crafting",
+      "file": "categories/crafting.json",
+      "displayName": "Crafting",
+      "description": "Crafting milestones and the full crafting collection.",
+      "trophyCount": 3,
+      "trophyIds": [
+        "diy",
+        "artisan",
+        "craft_master"
+      ]
+    },
+    {
+      "id": "farmhouse",
+      "file": "categories/farmhouse.json",
+      "displayName": "Farmhouse improvements",
+      "description": "Farmhouse upgrade milestones.",
+      "trophyCount": 2,
+      "trophyIds": [
+        "moving_up",
+        "living_large"
+      ]
+    },
+    {
+      "id": "requests-and-quests",
+      "file": "categories/requests-and-quests.json",
+      "displayName": "Requests and quests",
+      "description": "Help Wanted requests and the raccoon family quest.",
+      "trophyCount": 3,
+      "trophyIds": [
+        "gofer",
+        "a_big_help",
+        "good_neighbors"
+      ]
+    },
+    {
+      "id": "community-routes",
+      "file": "categories/community-routes.json",
+      "displayName": "Community Center and Joja",
+      "description": "Mutually exclusive farm-level Community Center and Joja routes.",
+      "trophyCount": 2,
+      "trophyIds": [
+        "local_legend",
+        "joja_co_member_of_the_year"
+      ]
+    },
+    {
+      "id": "mining-and-combat",
+      "file": "categories/mining-and-combat.json",
+      "displayName": "Mining and combat",
+      "description": "Mine progression, monster slaying and powerful weapons.",
+      "trophyCount": 4,
+      "trophyIds": [
+        "the_bottom",
+        "protector_of_the_valley",
+        "danger_in_the_deep",
+        "infinite_power"
+      ]
+    },
+    {
+      "id": "skills",
+      "file": "categories/skills.json",
+      "displayName": "Skills",
+      "description": "Skill-level milestones.",
+      "trophyCount": 2,
+      "trophyIds": [
+        "singular_talent",
+        "master_of_the_five_ways"
+      ]
+    },
+    {
+      "id": "arcade",
+      "file": "categories/arcade.json",
+      "displayName": "Arcade games",
+      "description": "Journey of the Prairie King milestones.",
+      "trophyCount": 2,
+      "trophyIds": [
+        "prairie_king",
+        "fectors_challenge"
+      ]
+    },
+    {
+      "id": "festivals-and-events",
+      "file": "categories/festivals-and-events.json",
+      "displayName": "Festivals and town events",
+      "description": "Stardew Valley Fair, Luau and movie attendance.",
+      "trophyCount": 3,
+      "trophyIds": [
+        "two_thumbs_up",
+        "blue_ribbon",
+        "an_unforgettable_soup"
+      ]
+    },
+    {
+      "id": "exploration-and-endgame",
+      "file": "categories/exploration-and-endgame.json",
+      "displayName": "Exploration and endgame",
+      "description": "Ginger Island and summit progression.",
+      "trophyCount": 2,
+      "trophyIds": [
+        "a_distant_shore",
+        "perfection"
+      ]
+    },
+    {
+      "id": "platform-specific",
+      "file": "categories/platform-specific.json",
+      "displayName": "Platform-specific trophies",
+      "description": "PlayStation-only Platinum requirement, retained for lossless conversion.",
+      "trophyCount": 1,
+      "trophyIds": [
+        "iridium_seal"
+      ]
+    }
+  ],
+  "trophyIndex": {
+    "fisherman": "categories/fishing.json",
+    "ol_mariner": "categories/fishing.json",
+    "master_angler": "categories/fishing.json",
+    "mother_catch": "categories/fishing.json",
+    "polyculture": "categories/farming.json",
+    "monoculture": "categories/farming.json",
+    "greenhorn": "categories/shipping-and-earnings.json",
+    "cowpoke": "categories/shipping-and-earnings.json",
+    "homesteader": "categories/shipping-and-earnings.json",
+    "millionaire": "categories/shipping-and-earnings.json",
+    "legend": "categories/shipping-and-earnings.json",
+    "full_shipment": "categories/shipping-and-earnings.json",
+    "a_complete_collection": "categories/foraging-and-collections.json",
+    "treasure_trove": "categories/foraging-and-collections.json",
+    "mystery_of_the_stardrops": "categories/foraging-and-collections.json",
+    "well_read": "categories/foraging-and-collections.json",
+    "a_new_friend": "categories/friendships-and-family.json",
+    "best_friends": "categories/friendships-and-family.json",
+    "the_beloved_farmer": "categories/friendships-and-family.json",
+    "cliques": "categories/friendships-and-family.json",
+    "networking": "categories/friendships-and-family.json",
+    "popular": "categories/friendships-and-family.json",
+    "full_house": "categories/friendships-and-family.json",
+    "cook": "categories/cooking.json",
+    "sous_chef": "categories/cooking.json",
+    "gourmet_chef": "categories/cooking.json",
+    "diy": "categories/crafting.json",
+    "artisan": "categories/crafting.json",
+    "craft_master": "categories/crafting.json",
+    "moving_up": "categories/farmhouse.json",
+    "living_large": "categories/farmhouse.json",
+    "gofer": "categories/requests-and-quests.json",
+    "a_big_help": "categories/requests-and-quests.json",
+    "good_neighbors": "categories/requests-and-quests.json",
+    "local_legend": "categories/community-routes.json",
+    "joja_co_member_of_the_year": "categories/community-routes.json",
+    "the_bottom": "categories/mining-and-combat.json",
+    "protector_of_the_valley": "categories/mining-and-combat.json",
+    "danger_in_the_deep": "categories/mining-and-combat.json",
+    "infinite_power": "categories/mining-and-combat.json",
+    "singular_talent": "categories/skills.json",
+    "master_of_the_five_ways": "categories/skills.json",
+    "prairie_king": "categories/arcade.json",
+    "fectors_challenge": "categories/arcade.json",
+    "two_thumbs_up": "categories/festivals-and-events.json",
+    "blue_ribbon": "categories/festivals-and-events.json",
+    "an_unforgettable_soup": "categories/festivals-and-events.json",
+    "a_distant_shore": "categories/exploration-and-endgame.json",
+    "perfection": "categories/exploration-and-endgame.json",
+    "iridium_seal": "categories/platform-specific.json"
+  }
+}

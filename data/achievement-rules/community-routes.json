@@ -1,0 +1,220 @@
+{
+  "schemaVersion": "0.1.0",
+  "category": "community-routes",
+  "nodes": [
+    {
+      "id": "breadth.unresolved.community-routes",
+      "kind": "unknown",
+      "trackingRefs": [],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354"
+      ],
+      "verification": "unresolved",
+      "reason": "Routes are mutually exclusive on a save; exact shop prices, bundle slot adapter and event prerequisites pending. Live content selector and normalized progress reader pending."
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.local_legend.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.local_legend.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.goal.local_legend",
+      "kind": "all",
+      "goal": "local_legend",
+      "requires": [
+        "breadth.requirement.local_legend"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.local_legend.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.local_legend.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.requirement.local_legend",
+      "kind": "all",
+      "requires": [
+        "breadth.action.local_legend"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.local_legend.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.local_legend.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.action.local_legend",
+      "kind": "action",
+      "requires": [
+        "materialized.requirement.local_legend"
+      ],
+      "task": {
+        "text": "Finish community route and attend ceremony."
+      },
+      "breadth": {
+        "completionLogic": "player.eventsSeen contains 191393; platform unlock guard applies",
+        "runtimeStatus": "materialized children; runtime reader pending; no live verification",
+        "platformRef": "data/platform-mapping.json#local_legend",
+        "selection": "Read actual save-selected bundle IDs/items/quality/quantities and completion slots; support remixed bundles. Select unmet slots respecting required slot count. Joja: enumerate unfinished development purchases.",
+        "assets": [
+          "Data/Bundles",
+          "Data/JojaDevelopment"
+        ],
+        "limitations": "Routes are mutually exclusive on a save; exact shop prices, bundle slot adapter and event prerequisites pending.",
+        "atomicDecomposition": {
+          "status": "complete",
+          "mode": "dynamic-enumerator",
+          "source": "Data/Bundles + save bundle state",
+          "eligibility": "Load save-selected Data/Bundles entries including remixed IDs, required slot counts, item/quantity/quality alternatives.",
+          "resultId": "local_legend.{bundleId}.{slotId}",
+          "requirements": [
+            {
+              "id": "local_legend.route-components",
+              "kind": "bundle",
+              "condition": "all selected route components complete and ceremony event 191393 seen",
+              "tracking": {
+                "value": "Farmer.eventsSeen and route state",
+                "dataType": "set<int> + route map",
+                "source": "local-runtime-1.6.15.24354: Stats.checkForCommunityCenterOrJojaAchievements",
+                "status": "source-verified"
+              },
+              "routeRefs": [
+                "breadth.acquire.item"
+              ],
+              "prerequisiteRefs": [
+                "breadth.progress.location-access"
+              ],
+              "verification": "derived-rule"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.joja_co_member_of_the_year.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.joja_co_member_of_the_year.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.goal.joja_co_member_of_the_year",
+      "kind": "all",
+      "goal": "joja_co_member_of_the_year",
+      "requires": [
+        "breadth.requirement.joja_co_member_of_the_year"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.joja_co_member_of_the_year.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.joja_co_member_of_the_year.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.requirement.joja_co_member_of_the_year",
+      "kind": "all",
+      "requires": [
+        "breadth.action.joja_co_member_of_the_year"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.joja_co_member_of_the_year.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.joja_co_member_of_the_year.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.action.joja_co_member_of_the_year",
+      "kind": "action",
+      "requires": [
+        "materialized.requirement.joja_co_member_of_the_year"
+      ],
+      "task": {
+        "text": "Complete Joja development and ceremony."
+      },
+      "breadth": {
+        "completionLogic": "player.eventsSeen contains 502261; platform unlock guard applies",
+        "runtimeStatus": "materialized children; runtime reader pending; no live verification",
+        "platformRef": "data/platform-mapping.json#joja_co_member_of_the_year",
+        "selection": "Read actual save-selected bundle IDs/items/quality/quantities and completion slots; support remixed bundles. Select unmet slots respecting required slot count. Joja: enumerate unfinished development purchases.",
+        "assets": [
+          "Data/Bundles",
+          "Data/JojaDevelopment"
+        ],
+        "limitations": "Routes are mutually exclusive on a save; exact shop prices, bundle slot adapter and event prerequisites pending.",
+        "atomicDecomposition": {
+          "status": "complete",
+          "mode": "dynamic-enumerator",
+          "source": "JojaCDMenu compiled project table + save mail state",
+          "eligibility": "Five JojaCDMenu projects; select incomplete cc* completion-mail predicates for the current save.",
+          "resultId": "joja_co_member_of_the_year.development.{projectId}",
+          "requirements": [
+            {
+              "id": "joja_co_member_of_the_year.route-components",
+              "kind": "milestone",
+              "condition": "all selected route components complete and ceremony event 502261 seen",
+              "tracking": {
+                "value": "Farmer.eventsSeen and route state",
+                "dataType": "set<int> + route map",
+                "source": "local-runtime-1.6.15.24354: Stats.checkForCommunityCenterOrJojaAchievements",
+                "status": "source-verified"
+              },
+              "routeRefs": [
+                "breadth.acquire.item"
+              ],
+              "prerequisiteRefs": [
+                "breadth.progress.location-access"
+              ],
+              "verification": "derived-rule"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

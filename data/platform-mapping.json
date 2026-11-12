@@ -1,0 +1,410 @@
+{
+  "schemaVersion": "0.1.0",
+  "category": "platform-mapping",
+  "scope": "Local Windows GDK adapter mapping; remote catalogue and award delivery are separate evidence.",
+  "sources": [
+    "local-runtime-1.6.15.24354",
+    "https://www.xboxachievements.com/game/stardew-valley-w10/guide/",
+    "https://forums.stardewvalley.net/threads/windows-store-version-lacking-1-6-achievement-support.38151/"
+  ],
+  "entries": [
+    {
+      "id": "greenhorn",
+      "gameToken": "0",
+      "gdkAchievementId": "1",
+      "adapterSupport": "verified-local-implementation",
+      "windowsCatalogueStatus": "published-base-catalogue",
+      "xboxAwardConfirmed": false
+    },
+    {
+      "id": "cowpoke",
+      "gameToken": "1",
+      "gdkAchievementId": "2",
+      "adapterSupport": "verified-local-implementation",
+      "windowsCatalogueStatus": "published-base-catalogue",
+      "xboxAwardConfirmed": false
+    },
+    {
+      "id": "homesteader",
+      "gameToken": "2",
+      "gdkAchievementId": "3",
+      "adapterSupport": "verified-local-implementation",
+      "windowsCatalogueStatus": "published-base-catalogue",
+      "xboxAwardConfirmed": false
+    },
+    {
+      "id": "millionaire",
+      "gameToken": "3",
+      "gdkAchievementId": "4",
+      "adapterSupport": "verified-local-implementation",
+      "windowsCatalogueStatus": "published-base-catalogue",
+      "xboxAwardConfirmed": false
+    },
+    {
+      "id": "legend",
+      "gameToken": "4",
+      "gdkAchievementId": "5",
+      "adapterSupport": "verified-local-implementation",
+      "windowsCatalogueStatus": "published-base-catalogue",
+      "xboxAwardConfirmed": false
+    },
+    {
+      "id": "a_complete_collection",
+      "gameToken": "5",
+      "gdkAchievementId": "6",
+      "adapterSupport": "verified-local-implementation",
+      "windowsCatalogueStatus": "published-base-catalogue",
+      "xboxAwardConfirmed": false
+    },
+    {
+      "id": "a_new_friend",
+      "gameToken": "6",
+      "gdkAchievementId": "7",
+      "adapterSupport": "verified-local-implementation",
+      "windowsCatalogueStatus": "published-base-catalogue",
+      "xboxAwardConfirmed": false
+    },
+    {
+      "id": "best_friends",
+      "gameToken": "7",
+      "gdkAchievementId": "8",
+      "adapterSupport": "verified-local-implementation",
+      "windowsCatalogueStatus": "published-base-catalogue",
+      "xboxAwardConfirmed": false
+    },
+    {
+      "id": "the_beloved_farmer",
+      "gameToken": "9",
+      "gdkAchievementId": "9",
+      "adapterSupport": "verified-local-implementation",
+      "windowsCatalogueStatus": "published-base-catalogue",
+      "xboxAwardConfirmed": false
+    },
+    {
+      "id": "cliques",
+      "gameToken": "11",
+      "gdkAchievementId": "10",
+      "adapterSupport": "verified-local-implementation",
+      "windowsCatalogueStatus": "published-base-catalogue",
+      "xboxAwardConfirmed": false
+    },
+    {
+      "id": "networking",
+      "gameToken": "12",
+      "gdkAchievementId": "11",
+      "adapterSupport": "verified-local-implementation",
+      "windowsCatalogueStatus": "published-base-catalogue",
+      "xboxAwardConfirmed": false
+    },
+    {
+      "id": "popular",
+      "gameToken": "13",
+      "gdkAchievementId": "12",
+      "adapterSupport": "verified-local-implementation",
+      "windowsCatalogueStatus": "published-base-catalogue",
+      "xboxAwardConfirmed": false
+    },
+    {
+      "id": "cook",
+      "gameToken": "15",
+      "gdkAchievementId": "13",
+      "adapterSupport": "verified-local-implementation",
+      "windowsCatalogueStatus": "published-base-catalogue",
+      "xboxAwardConfirmed": false
+    },
+    {
+      "id": "sous_chef",
+      "gameToken": "16",
+      "gdkAchievementId": "14",
+      "adapterSupport": "verified-local-implementation",
+      "windowsCatalogueStatus": "published-base-catalogue",
+      "xboxAwardConfirmed": false
+    },
+    {
+      "id": "gourmet_chef",
+      "gameToken": "17",
+      "gdkAchievementId": "15",
+      "adapterSupport": "verified-local-implementation",
+      "windowsCatalogueStatus": "published-base-catalogue",
+      "xboxAwardConfirmed": false
+    },
+    {
+      "id": "moving_up",
+      "gameToken": "18",
+      "gdkAchievementId": "16",
+      "adapterSupport": "verified-local-implementation",
+      "windowsCatalogueStatus": "published-base-catalogue",
+      "xboxAwardConfirmed": false
+    },
+    {
+      "id": "living_large",
+      "gameToken": "19",
+      "gdkAchievementId": "17",
+      "adapterSupport": "verified-local-implementation",
+      "windowsCatalogueStatus": "published-base-catalogue",
+      "xboxAwardConfirmed": false
+    },
+    {
+      "id": "diy",
+      "gameToken": "20",
+      "gdkAchievementId": "18",
+      "adapterSupport": "verified-local-implementation",
+      "windowsCatalogueStatus": "published-base-catalogue",
+      "xboxAwardConfirmed": false
+    },
+    {
+      "id": "artisan",
+      "gameToken": "21",
+      "gdkAchievementId": "19",
+      "adapterSupport": "verified-local-implementation",
+      "windowsCatalogueStatus": "published-base-catalogue",
+      "xboxAwardConfirmed": false
+    },
+    {
+      "id": "craft_master",
+      "gameToken": "22",
+      "gdkAchievementId": "20",
+      "adapterSupport": "verified-local-implementation",
+      "windowsCatalogueStatus": "published-base-catalogue",
+      "xboxAwardConfirmed": false
+    },
+    {
+      "id": "fisherman",
+      "gameToken": "24",
+      "gdkAchievementId": "21",
+      "adapterSupport": "verified-local-implementation",
+      "windowsCatalogueStatus": "published-base-catalogue",
+      "xboxAwardConfirmed": false
+    },
+    {
+      "id": "ol_mariner",
+      "gameToken": "25",
+      "gdkAchievementId": "22",
+      "adapterSupport": "verified-local-implementation",
+      "windowsCatalogueStatus": "published-base-catalogue",
+      "xboxAwardConfirmed": false
+    },
+    {
+      "id": "master_angler",
+      "gameToken": "26",
+      "gdkAchievementId": "23",
+      "adapterSupport": "verified-local-implementation",
+      "windowsCatalogueStatus": "published-base-catalogue",
+      "xboxAwardConfirmed": false
+    },
+    {
+      "id": "mother_catch",
+      "gameToken": "27",
+      "gdkAchievementId": "24",
+      "adapterSupport": "verified-local-implementation",
+      "windowsCatalogueStatus": "published-base-catalogue",
+      "xboxAwardConfirmed": false
+    },
+    {
+      "id": "treasure_trove",
+      "gameToken": "28",
+      "gdkAchievementId": "25",
+      "adapterSupport": "verified-local-implementation",
+      "windowsCatalogueStatus": "published-base-catalogue",
+      "xboxAwardConfirmed": false
+    },
+    {
+      "id": "gofer",
+      "gameToken": "29",
+      "gdkAchievementId": "26",
+      "adapterSupport": "verified-local-implementation",
+      "windowsCatalogueStatus": "published-base-catalogue",
+      "xboxAwardConfirmed": false
+    },
+    {
+      "id": "a_big_help",
+      "gameToken": "30",
+      "gdkAchievementId": "27",
+      "adapterSupport": "verified-local-implementation",
+      "windowsCatalogueStatus": "published-base-catalogue",
+      "xboxAwardConfirmed": false
+    },
+    {
+      "id": "polyculture",
+      "gameToken": "31",
+      "gdkAchievementId": "28",
+      "adapterSupport": "verified-local-implementation",
+      "windowsCatalogueStatus": "published-base-catalogue",
+      "xboxAwardConfirmed": false
+    },
+    {
+      "id": "monoculture",
+      "gameToken": "32",
+      "gdkAchievementId": "29",
+      "adapterSupport": "verified-local-implementation",
+      "windowsCatalogueStatus": "published-base-catalogue",
+      "xboxAwardConfirmed": false
+    },
+    {
+      "id": "full_shipment",
+      "gameToken": "34",
+      "gdkAchievementId": "30",
+      "adapterSupport": "verified-local-implementation",
+      "windowsCatalogueStatus": "published-base-catalogue",
+      "xboxAwardConfirmed": false
+    },
+    {
+      "id": "prairie_king",
+      "gameToken": "Achievement_PrairieKing",
+      "gdkAchievementId": "31",
+      "adapterSupport": "verified-local-implementation",
+      "windowsCatalogueStatus": "published-base-catalogue",
+      "xboxAwardConfirmed": false
+    },
+    {
+      "id": "the_bottom",
+      "gameToken": "Achievement_TheBottom",
+      "gdkAchievementId": "32",
+      "adapterSupport": "verified-local-implementation",
+      "windowsCatalogueStatus": "published-base-catalogue",
+      "xboxAwardConfirmed": false
+    },
+    {
+      "id": "local_legend",
+      "gameToken": "Achievement_LocalLegend",
+      "gdkAchievementId": "33",
+      "adapterSupport": "verified-local-implementation",
+      "windowsCatalogueStatus": "published-base-catalogue",
+      "xboxAwardConfirmed": false
+    },
+    {
+      "id": "joja_co_member_of_the_year",
+      "gameToken": "Achievement_Joja",
+      "gdkAchievementId": "34",
+      "adapterSupport": "verified-local-implementation",
+      "windowsCatalogueStatus": "published-base-catalogue",
+      "xboxAwardConfirmed": false
+    },
+    {
+      "id": "mystery_of_the_stardrops",
+      "gameToken": "Achievement_Stardrop",
+      "gdkAchievementId": "35",
+      "adapterSupport": "verified-local-implementation",
+      "windowsCatalogueStatus": "published-base-catalogue",
+      "xboxAwardConfirmed": false
+    },
+    {
+      "id": "fectors_challenge",
+      "gameToken": "Achievement_FectorsChallenge",
+      "gdkAchievementId": "36",
+      "adapterSupport": "verified-local-implementation",
+      "windowsCatalogueStatus": "published-base-catalogue",
+      "xboxAwardConfirmed": false
+    },
+    {
+      "id": "full_house",
+      "gameToken": "Achievement_FullHouse",
+      "gdkAchievementId": "37",
+      "adapterSupport": "verified-local-implementation",
+      "windowsCatalogueStatus": "published-base-catalogue",
+      "xboxAwardConfirmed": false
+    },
+    {
+      "id": "singular_talent",
+      "gameToken": "Achievement_SingularTalent",
+      "gdkAchievementId": "38",
+      "adapterSupport": "verified-local-implementation",
+      "windowsCatalogueStatus": "published-base-catalogue",
+      "xboxAwardConfirmed": false
+    },
+    {
+      "id": "master_of_the_five_ways",
+      "gameToken": "Achievement_MasterOfTheFiveWays",
+      "gdkAchievementId": "39",
+      "adapterSupport": "verified-local-implementation",
+      "windowsCatalogueStatus": "published-base-catalogue",
+      "xboxAwardConfirmed": false
+    },
+    {
+      "id": "protector_of_the_valley",
+      "gameToken": "Achievement_KeeperOfTheMysticRings",
+      "gdkAchievementId": "40",
+      "adapterSupport": "verified-local-implementation",
+      "windowsCatalogueStatus": "published-base-catalogue",
+      "xboxAwardConfirmed": false
+    },
+    {
+      "id": "well_read",
+      "gameToken": "35",
+      "gdkAchievementId": "41",
+      "adapterSupport": "verified-local-implementation",
+      "windowsCatalogueStatus": "requires-service-verification",
+      "xboxAwardConfirmed": false
+    },
+    {
+      "id": "two_thumbs_up",
+      "gameToken": "36",
+      "gdkAchievementId": "42",
+      "adapterSupport": "verified-local-implementation",
+      "windowsCatalogueStatus": "requires-service-verification",
+      "xboxAwardConfirmed": false
+    },
+    {
+      "id": "blue_ribbon",
+      "gameToken": "37",
+      "gdkAchievementId": "43",
+      "adapterSupport": "verified-local-implementation",
+      "windowsCatalogueStatus": "requires-service-verification",
+      "xboxAwardConfirmed": false
+    },
+    {
+      "id": "an_unforgettable_soup",
+      "gameToken": "38",
+      "gdkAchievementId": "44",
+      "adapterSupport": "verified-local-implementation",
+      "windowsCatalogueStatus": "requires-service-verification",
+      "xboxAwardConfirmed": false
+    },
+    {
+      "id": "good_neighbors",
+      "gameToken": "39",
+      "gdkAchievementId": "45",
+      "adapterSupport": "verified-local-implementation",
+      "windowsCatalogueStatus": "requires-service-verification",
+      "xboxAwardConfirmed": false
+    },
+    {
+      "id": "danger_in_the_deep",
+      "gameToken": "41",
+      "gdkAchievementId": "46",
+      "adapterSupport": "verified-local-implementation",
+      "windowsCatalogueStatus": "requires-service-verification",
+      "xboxAwardConfirmed": false
+    },
+    {
+      "id": "a_distant_shore",
+      "gameToken": "40",
+      "gdkAchievementId": "47",
+      "adapterSupport": "verified-local-implementation",
+      "windowsCatalogueStatus": "requires-service-verification",
+      "xboxAwardConfirmed": false
+    },
+    {
+      "id": "infinite_power",
+      "gameToken": "42",
+      "gdkAchievementId": "48",
+      "adapterSupport": "verified-local-implementation",
+      "windowsCatalogueStatus": "requires-service-verification",
+      "xboxAwardConfirmed": false
+    },
+    {
+      "id": "perfection",
+      "gameToken": "44",
+      "gdkAchievementId": "49",
+      "adapterSupport": "verified-local-implementation",
+      "windowsCatalogueStatus": "requires-service-verification",
+      "xboxAwardConfirmed": false
+    },
+    {
+      "id": "iridium_seal",
+      "adapterSupport": "excluded-playstation-platinum",
+      "windowsCatalogueStatus": "not-applicable",
+      "xboxAwardConfirmed": false
+    }
+  ]
+}

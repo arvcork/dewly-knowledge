@@ -1,0 +1,2112 @@
+{
+  "schemaVersion": "0.1.0",
+  "gameVersion": "1.6.15.24354",
+  "records": [
+    {
+      "id": "crop.16-1574bddb",
+      "qualifiedItemId": "(O)16",
+      "name": "Wild Horseradish",
+      "seed": {
+        "qualifiedItemId": "(O)495",
+        "name": "Spring Seeds"
+      },
+      "seasons": [
+        "spring"
+      ],
+      "daysInPhase": [
+        3,
+        4
+      ],
+      "minimumGrowthDays": 7,
+      "regrowDays": -1,
+      "needsWatering": true,
+      "isPaddyCrop": false,
+      "countForPolyculture": false,
+      "countForMonoculture": false,
+      "seedAcquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "DesertTrade",
+          "itemId": "(O)495",
+          "tradeItemId": "(O)496",
+          "tradeItemAmount": 2,
+          "condition": "DAY_OF_WEEK Saturday"
+        }
+      ],
+      "source": "Data/Crops",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "crop.188-acf1fffc",
+      "qualifiedItemId": "(O)188",
+      "name": "Green Bean",
+      "seed": {
+        "qualifiedItemId": "(O)473",
+        "name": "Bean Starter"
+      },
+      "seasons": [
+        "spring"
+      ],
+      "daysInPhase": [
+        1,
+        1,
+        1,
+        3,
+        4
+      ],
+      "minimumGrowthDays": 10,
+      "regrowDays": 3,
+      "needsWatering": true,
+      "isPaddyCrop": false,
+      "countForPolyculture": true,
+      "countForMonoculture": true,
+      "seedAcquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "Festival_NightMarket_MagicBoat_Day1",
+          "itemId": "(O)473"
+        },
+        {
+          "type": "shop",
+          "shopId": "Joja",
+          "itemId": "(O)473",
+          "condition": "SEASON spring"
+        },
+        {
+          "type": "shop",
+          "shopId": "SeedShop",
+          "itemId": "(O)473",
+          "condition": "SEASON spring"
+        }
+      ],
+      "source": "Data/Crops",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "crop.190-3a2dc677",
+      "qualifiedItemId": "(O)190",
+      "name": "Cauliflower",
+      "seed": {
+        "qualifiedItemId": "(O)474",
+        "name": "Cauliflower Seeds"
+      },
+      "seasons": [
+        "spring"
+      ],
+      "daysInPhase": [
+        1,
+        2,
+        4,
+        4,
+        1
+      ],
+      "minimumGrowthDays": 12,
+      "regrowDays": -1,
+      "needsWatering": true,
+      "isPaddyCrop": false,
+      "countForPolyculture": true,
+      "countForMonoculture": true,
+      "seedAcquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "Festival_NightMarket_MagicBoat_Day1",
+          "itemId": "(O)474"
+        },
+        {
+          "type": "shop",
+          "shopId": "Joja",
+          "itemId": "(O)474",
+          "condition": "SEASON spring"
+        },
+        {
+          "type": "shop",
+          "shopId": "SeedShop",
+          "itemId": "(O)474",
+          "condition": "SEASON spring"
+        }
+      ],
+      "source": "Data/Crops",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "crop.192-19a448c0",
+      "qualifiedItemId": "(O)192",
+      "name": "Potato",
+      "seed": {
+        "qualifiedItemId": "(O)475",
+        "name": "Potato Seeds"
+      },
+      "seasons": [
+        "spring"
+      ],
+      "daysInPhase": [
+        1,
+        1,
+        1,
+        2,
+        1
+      ],
+      "minimumGrowthDays": 6,
+      "regrowDays": -1,
+      "needsWatering": true,
+      "isPaddyCrop": false,
+      "countForPolyculture": true,
+      "countForMonoculture": true,
+      "seedAcquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "Festival_NightMarket_MagicBoat_Day1",
+          "itemId": "(O)475"
+        },
+        {
+          "type": "shop",
+          "shopId": "Joja",
+          "itemId": "(O)475",
+          "condition": "SEASON spring"
+        },
+        {
+          "type": "shop",
+          "shopId": "SeedShop",
+          "itemId": "(O)475",
+          "condition": "SEASON spring"
+        }
+      ],
+      "source": "Data/Crops",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "crop.24-4d134bc0",
+      "qualifiedItemId": "(O)24",
+      "name": "Parsnip",
+      "seed": {
+        "qualifiedItemId": "(O)472",
+        "name": "Parsnip Seeds"
+      },
+      "seasons": [
+        "spring"
+      ],
+      "daysInPhase": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "minimumGrowthDays": 4,
+      "regrowDays": -1,
+      "needsWatering": true,
+      "isPaddyCrop": false,
+      "countForPolyculture": true,
+      "countForMonoculture": true,
+      "seedAcquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "Festival_NightMarket_MagicBoat_Day1",
+          "itemId": "(O)472"
+        },
+        {
+          "type": "shop",
+          "shopId": "Joja",
+          "itemId": "(O)472",
+          "condition": "SEASON spring"
+        },
+        {
+          "type": "shop",
+          "shopId": "SeedShop",
+          "itemId": "(O)472",
+          "condition": "SEASON spring"
+        }
+      ],
+      "source": "Data/Crops",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "crop.248-ca3799b8",
+      "qualifiedItemId": "(O)248",
+      "name": "Garlic",
+      "seed": {
+        "qualifiedItemId": "(O)476",
+        "name": "Garlic Seeds"
+      },
+      "seasons": [
+        "spring"
+      ],
+      "daysInPhase": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "minimumGrowthDays": 4,
+      "regrowDays": -1,
+      "needsWatering": true,
+      "isPaddyCrop": false,
+      "countForPolyculture": true,
+      "countForMonoculture": true,
+      "seedAcquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "Festival_NightMarket_MagicBoat_Day1",
+          "itemId": "(O)476",
+          "condition": "YEAR 2"
+        },
+        {
+          "type": "shop",
+          "shopId": "SeedShop",
+          "itemId": "(O)476",
+          "condition": "SEASON spring, YEAR 2"
+        }
+      ],
+      "source": "Data/Crops",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "crop.250-ba30fd97",
+      "qualifiedItemId": "(O)250",
+      "name": "Kale",
+      "seed": {
+        "qualifiedItemId": "(O)477",
+        "name": "Kale Seeds"
+      },
+      "seasons": [
+        "spring"
+      ],
+      "daysInPhase": [
+        1,
+        2,
+        2,
+        1
+      ],
+      "minimumGrowthDays": 6,
+      "regrowDays": -1,
+      "needsWatering": true,
+      "isPaddyCrop": false,
+      "countForPolyculture": true,
+      "countForMonoculture": true,
+      "seedAcquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "Festival_NightMarket_MagicBoat_Day1",
+          "itemId": "(O)477"
+        },
+        {
+          "type": "shop",
+          "shopId": "Joja",
+          "itemId": "(O)477",
+          "condition": "SEASON spring"
+        },
+        {
+          "type": "shop",
+          "shopId": "SeedShop",
+          "itemId": "(O)477",
+          "condition": "SEASON spring"
+        }
+      ],
+      "source": "Data/Crops",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "crop.252-98fcc378",
+      "qualifiedItemId": "(O)252",
+      "name": "Rhubarb",
+      "seed": {
+        "qualifiedItemId": "(O)478",
+        "name": "Rhubarb Seeds"
+      },
+      "seasons": [
+        "spring"
+      ],
+      "daysInPhase": [
+        2,
+        2,
+        2,
+        3,
+        4
+      ],
+      "minimumGrowthDays": 13,
+      "regrowDays": -1,
+      "needsWatering": true,
+      "isPaddyCrop": false,
+      "countForPolyculture": true,
+      "countForMonoculture": true,
+      "seedAcquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "Sandy",
+          "itemId": "(O)478"
+        }
+      ],
+      "source": "Data/Crops",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "crop.254-c9f13c16",
+      "qualifiedItemId": "(O)254",
+      "name": "Melon",
+      "seed": {
+        "qualifiedItemId": "(O)479",
+        "name": "Melon Seeds"
+      },
+      "seasons": [
+        "summer"
+      ],
+      "daysInPhase": [
+        1,
+        2,
+        3,
+        3,
+        3
+      ],
+      "minimumGrowthDays": 12,
+      "regrowDays": -1,
+      "needsWatering": true,
+      "isPaddyCrop": false,
+      "countForPolyculture": true,
+      "countForMonoculture": true,
+      "seedAcquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "Festival_NightMarket_MagicBoat_Day2",
+          "itemId": "(O)479"
+        },
+        {
+          "type": "shop",
+          "shopId": "Joja",
+          "itemId": "(O)479",
+          "condition": "SEASON summer"
+        },
+        {
+          "type": "shop",
+          "shopId": "SeedShop",
+          "itemId": "(O)479",
+          "condition": "SEASON summer"
+        }
+      ],
+      "source": "Data/Crops",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "crop.256-dd7c1a3d",
+      "qualifiedItemId": "(O)256",
+      "name": "Tomato",
+      "seed": {
+        "qualifiedItemId": "(O)480",
+        "name": "Tomato Seeds"
+      },
+      "seasons": [
+        "summer"
+      ],
+      "daysInPhase": [
+        2,
+        2,
+        2,
+        2,
+        3
+      ],
+      "minimumGrowthDays": 11,
+      "regrowDays": 4,
+      "needsWatering": true,
+      "isPaddyCrop": false,
+      "countForPolyculture": true,
+      "countForMonoculture": true,
+      "seedAcquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "Festival_NightMarket_MagicBoat_Day2",
+          "itemId": "(O)480"
+        },
+        {
+          "type": "shop",
+          "shopId": "Joja",
+          "itemId": "(O)480",
+          "condition": "SEASON summer"
+        },
+        {
+          "type": "shop",
+          "shopId": "SeedShop",
+          "itemId": "(O)480",
+          "condition": "SEASON summer"
+        }
+      ],
+      "source": "Data/Crops",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "crop.258-982fd8b7",
+      "qualifiedItemId": "(O)258",
+      "name": "Blueberry",
+      "seed": {
+        "qualifiedItemId": "(O)481",
+        "name": "Blueberry Seeds"
+      },
+      "seasons": [
+        "summer"
+      ],
+      "daysInPhase": [
+        1,
+        3,
+        3,
+        4,
+        2
+      ],
+      "minimumGrowthDays": 13,
+      "regrowDays": 4,
+      "needsWatering": true,
+      "isPaddyCrop": false,
+      "countForPolyculture": true,
+      "countForMonoculture": true,
+      "seedAcquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "Festival_NightMarket_MagicBoat_Day2",
+          "itemId": "(O)481"
+        },
+        {
+          "type": "shop",
+          "shopId": "SeedShop",
+          "itemId": "(O)481",
+          "condition": "SEASON summer"
+        }
+      ],
+      "source": "Data/Crops",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "crop.260-09d66f6e",
+      "qualifiedItemId": "(O)260",
+      "name": "Hot Pepper",
+      "seed": {
+        "qualifiedItemId": "(O)482",
+        "name": "Pepper Seeds"
+      },
+      "seasons": [
+        "summer"
+      ],
+      "daysInPhase": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "minimumGrowthDays": 5,
+      "regrowDays": 3,
+      "needsWatering": true,
+      "isPaddyCrop": false,
+      "countForPolyculture": true,
+      "countForMonoculture": true,
+      "seedAcquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "Festival_NightMarket_MagicBoat_Day2",
+          "itemId": "(O)482"
+        },
+        {
+          "type": "shop",
+          "shopId": "Joja",
+          "itemId": "(O)482",
+          "condition": "SEASON summer"
+        },
+        {
+          "type": "shop",
+          "shopId": "SeedShop",
+          "itemId": "(O)482",
+          "condition": "SEASON summer"
+        }
+      ],
+      "source": "Data/Crops",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "crop.262-1106a1dd",
+      "qualifiedItemId": "(O)262",
+      "name": "Wheat",
+      "seed": {
+        "qualifiedItemId": "(O)483",
+        "name": "Wheat Seeds"
+      },
+      "seasons": [
+        "summer",
+        "fall"
+      ],
+      "daysInPhase": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "minimumGrowthDays": 4,
+      "regrowDays": -1,
+      "needsWatering": true,
+      "isPaddyCrop": false,
+      "countForPolyculture": true,
+      "countForMonoculture": true,
+      "seedAcquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "Festival_NightMarket_MagicBoat_Day2",
+          "itemId": "(O)483"
+        },
+        {
+          "type": "shop",
+          "shopId": "Festival_NightMarket_MagicBoat_Day3",
+          "itemId": "(O)483"
+        },
+        {
+          "type": "shop",
+          "shopId": "Joja",
+          "itemId": "(O)483",
+          "condition": "SEASON summer"
+        },
+        {
+          "type": "shop",
+          "shopId": "Joja",
+          "itemId": "(O)483",
+          "condition": "SEASON fall"
+        },
+        {
+          "type": "shop",
+          "shopId": "SeedShop",
+          "itemId": "(O)483",
+          "condition": "SEASON summer"
+        },
+        {
+          "type": "shop",
+          "shopId": "SeedShop",
+          "itemId": "(O)483",
+          "condition": "SEASON fall"
+        }
+      ],
+      "source": "Data/Crops",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "crop.264-682a03f4",
+      "qualifiedItemId": "(O)264",
+      "name": "Radish",
+      "seed": {
+        "qualifiedItemId": "(O)484",
+        "name": "Radish Seeds"
+      },
+      "seasons": [
+        "summer"
+      ],
+      "daysInPhase": [
+        2,
+        1,
+        2,
+        1
+      ],
+      "minimumGrowthDays": 6,
+      "regrowDays": -1,
+      "needsWatering": true,
+      "isPaddyCrop": false,
+      "countForPolyculture": true,
+      "countForMonoculture": true,
+      "seedAcquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "Festival_NightMarket_MagicBoat_Day2",
+          "itemId": "(O)484"
+        },
+        {
+          "type": "shop",
+          "shopId": "Joja",
+          "itemId": "(O)484",
+          "condition": "SEASON summer"
+        },
+        {
+          "type": "shop",
+          "shopId": "SeedShop",
+          "itemId": "(O)484",
+          "condition": "SEASON summer"
+        }
+      ],
+      "source": "Data/Crops",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "crop.266-45cbe19f",
+      "qualifiedItemId": "(O)266",
+      "name": "Red Cabbage",
+      "seed": {
+        "qualifiedItemId": "(O)485",
+        "name": "Red Cabbage Seeds"
+      },
+      "seasons": [
+        "summer"
+      ],
+      "daysInPhase": [
+        2,
+        1,
+        2,
+        2,
+        2
+      ],
+      "minimumGrowthDays": 9,
+      "regrowDays": -1,
+      "needsWatering": true,
+      "isPaddyCrop": false,
+      "countForPolyculture": true,
+      "countForMonoculture": true,
+      "seedAcquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "Festival_NightMarket_MagicBoat_Day2",
+          "itemId": "(O)485",
+          "condition": "YEAR 2"
+        },
+        {
+          "type": "shop",
+          "shopId": "SeedShop",
+          "itemId": "(O)485",
+          "condition": "SEASON summer, YEAR 2"
+        },
+        {
+          "type": "shop",
+          "shopId": "Traveler",
+          "itemId": "(O)485",
+          "condition": "WORLD_STATE_FIELD VisitsUntilY1Guarantee 0 0"
+        }
+      ],
+      "source": "Data/Crops",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "crop.268-d5f0d910",
+      "qualifiedItemId": "(O)268",
+      "name": "Starfruit",
+      "seed": {
+        "qualifiedItemId": "(O)486",
+        "name": "Starfruit Seeds"
+      },
+      "seasons": [
+        "summer"
+      ],
+      "daysInPhase": [
+        2,
+        3,
+        2,
+        3,
+        3
+      ],
+      "minimumGrowthDays": 13,
+      "regrowDays": -1,
+      "needsWatering": true,
+      "isPaddyCrop": false,
+      "countForPolyculture": true,
+      "countForMonoculture": true,
+      "seedAcquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "Sandy",
+          "itemId": "(O)486"
+        }
+      ],
+      "source": "Data/Crops",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "crop.270-29350804",
+      "qualifiedItemId": "(O)270",
+      "name": "Corn",
+      "seed": {
+        "qualifiedItemId": "(O)487",
+        "name": "Corn Seeds"
+      },
+      "seasons": [
+        "summer",
+        "fall"
+      ],
+      "daysInPhase": [
+        2,
+        3,
+        3,
+        3,
+        3
+      ],
+      "minimumGrowthDays": 14,
+      "regrowDays": 4,
+      "needsWatering": true,
+      "isPaddyCrop": false,
+      "countForPolyculture": true,
+      "countForMonoculture": true,
+      "seedAcquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "Festival_NightMarket_MagicBoat_Day2",
+          "itemId": "(O)487"
+        },
+        {
+          "type": "shop",
+          "shopId": "Festival_NightMarket_MagicBoat_Day3",
+          "itemId": "(O)487"
+        },
+        {
+          "type": "shop",
+          "shopId": "Joja",
+          "itemId": "(O)487",
+          "condition": "SEASON fall"
+        },
+        {
+          "type": "shop",
+          "shopId": "SeedShop",
+          "itemId": "(O)487",
+          "condition": "SEASON summer"
+        },
+        {
+          "type": "shop",
+          "shopId": "SeedShop",
+          "itemId": "(O)487",
+          "condition": "SEASON fall"
+        }
+      ],
+      "source": "Data/Crops",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "crop.271-ef7de0b7",
+      "qualifiedItemId": "(O)271",
+      "name": "Unmilled Rice",
+      "seed": {
+        "qualifiedItemId": "(O)273",
+        "name": "Rice Shoot"
+      },
+      "seasons": [
+        "spring"
+      ],
+      "daysInPhase": [
+        1,
+        2,
+        2,
+        3
+      ],
+      "minimumGrowthDays": 8,
+      "regrowDays": -1,
+      "needsWatering": true,
+      "isPaddyCrop": true,
+      "countForPolyculture": false,
+      "countForMonoculture": false,
+      "seedAcquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "SeedShop",
+          "itemId": "(O)273",
+          "condition": "SEASON spring, YEAR 2"
+        }
+      ],
+      "source": "Data/Crops",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "crop.272-eb94d5c2",
+      "qualifiedItemId": "(O)272",
+      "name": "Eggplant",
+      "seed": {
+        "qualifiedItemId": "(O)488",
+        "name": "Eggplant Seeds"
+      },
+      "seasons": [
+        "fall"
+      ],
+      "daysInPhase": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "minimumGrowthDays": 5,
+      "regrowDays": 5,
+      "needsWatering": true,
+      "isPaddyCrop": false,
+      "countForPolyculture": true,
+      "countForMonoculture": true,
+      "seedAcquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "Festival_NightMarket_MagicBoat_Day3",
+          "itemId": "(O)488"
+        },
+        {
+          "type": "shop",
+          "shopId": "Joja",
+          "itemId": "(O)488",
+          "condition": "SEASON fall"
+        },
+        {
+          "type": "shop",
+          "shopId": "SeedShop",
+          "itemId": "(O)488",
+          "condition": "SEASON fall"
+        }
+      ],
+      "source": "Data/Crops",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "crop.274-431bf3b9",
+      "qualifiedItemId": "(O)274",
+      "name": "Artichoke",
+      "seed": {
+        "qualifiedItemId": "(O)489",
+        "name": "Artichoke Seeds"
+      },
+      "seasons": [
+        "fall"
+      ],
+      "daysInPhase": [
+        2,
+        2,
+        1,
+        2,
+        1
+      ],
+      "minimumGrowthDays": 8,
+      "regrowDays": -1,
+      "needsWatering": true,
+      "isPaddyCrop": false,
+      "countForPolyculture": true,
+      "countForMonoculture": true,
+      "seedAcquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "Festival_NightMarket_MagicBoat_Day3",
+          "itemId": "(O)489",
+          "condition": "YEAR 2"
+        },
+        {
+          "type": "shop",
+          "shopId": "SeedShop",
+          "itemId": "(O)489",
+          "condition": "SEASON fall, YEAR 2"
+        }
+      ],
+      "source": "Data/Crops",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "crop.276-6d363479",
+      "qualifiedItemId": "(O)276",
+      "name": "Pumpkin",
+      "seed": {
+        "qualifiedItemId": "(O)490",
+        "name": "Pumpkin Seeds"
+      },
+      "seasons": [
+        "fall"
+      ],
+      "daysInPhase": [
+        1,
+        2,
+        3,
+        4,
+        3
+      ],
+      "minimumGrowthDays": 13,
+      "regrowDays": -1,
+      "needsWatering": true,
+      "isPaddyCrop": false,
+      "countForPolyculture": true,
+      "countForMonoculture": true,
+      "seedAcquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "Festival_NightMarket_MagicBoat_Day3",
+          "itemId": "(O)490"
+        },
+        {
+          "type": "shop",
+          "shopId": "Joja",
+          "itemId": "(O)490",
+          "condition": "SEASON fall"
+        },
+        {
+          "type": "shop",
+          "shopId": "SeedShop",
+          "itemId": "(O)490",
+          "condition": "SEASON fall"
+        }
+      ],
+      "source": "Data/Crops",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "crop.278-68b5193f",
+      "qualifiedItemId": "(O)278",
+      "name": "Bok Choy",
+      "seed": {
+        "qualifiedItemId": "(O)491",
+        "name": "Bok Choy Seeds"
+      },
+      "seasons": [
+        "fall"
+      ],
+      "daysInPhase": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "minimumGrowthDays": 4,
+      "regrowDays": -1,
+      "needsWatering": true,
+      "isPaddyCrop": false,
+      "countForPolyculture": true,
+      "countForMonoculture": true,
+      "seedAcquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "Festival_NightMarket_MagicBoat_Day3",
+          "itemId": "(O)491"
+        },
+        {
+          "type": "shop",
+          "shopId": "Joja",
+          "itemId": "(O)491",
+          "condition": "SEASON fall"
+        },
+        {
+          "type": "shop",
+          "shopId": "SeedShop",
+          "itemId": "(O)491",
+          "condition": "SEASON fall"
+        }
+      ],
+      "source": "Data/Crops",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "crop.280-ba613d1f",
+      "qualifiedItemId": "(O)280",
+      "name": "Yam",
+      "seed": {
+        "qualifiedItemId": "(O)492",
+        "name": "Yam Seeds"
+      },
+      "seasons": [
+        "fall"
+      ],
+      "daysInPhase": [
+        1,
+        3,
+        3,
+        3
+      ],
+      "minimumGrowthDays": 10,
+      "regrowDays": -1,
+      "needsWatering": true,
+      "isPaddyCrop": false,
+      "countForPolyculture": true,
+      "countForMonoculture": true,
+      "seedAcquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "Festival_NightMarket_MagicBoat_Day3",
+          "itemId": "(O)492"
+        },
+        {
+          "type": "shop",
+          "shopId": "Joja",
+          "itemId": "(O)492",
+          "condition": "SEASON fall"
+        },
+        {
+          "type": "shop",
+          "shopId": "SeedShop",
+          "itemId": "(O)492",
+          "condition": "SEASON fall"
+        }
+      ],
+      "source": "Data/Crops",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "crop.282-267b976f",
+      "qualifiedItemId": "(O)282",
+      "name": "Cranberries",
+      "seed": {
+        "qualifiedItemId": "(O)493",
+        "name": "Cranberry Seeds"
+      },
+      "seasons": [
+        "fall"
+      ],
+      "daysInPhase": [
+        1,
+        2,
+        1,
+        1,
+        2
+      ],
+      "minimumGrowthDays": 7,
+      "regrowDays": 5,
+      "needsWatering": true,
+      "isPaddyCrop": false,
+      "countForPolyculture": true,
+      "countForMonoculture": true,
+      "seedAcquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "Festival_NightMarket_MagicBoat_Day3",
+          "itemId": "(O)493"
+        },
+        {
+          "type": "shop",
+          "shopId": "Joja",
+          "itemId": "(O)493",
+          "condition": "SEASON fall"
+        },
+        {
+          "type": "shop",
+          "shopId": "SeedShop",
+          "itemId": "(O)493",
+          "condition": "SEASON fall"
+        }
+      ],
+      "source": "Data/Crops",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "crop.284-7f35419a",
+      "qualifiedItemId": "(O)284",
+      "name": "Beet",
+      "seed": {
+        "qualifiedItemId": "(O)494",
+        "name": "Beet Seeds"
+      },
+      "seasons": [
+        "fall"
+      ],
+      "daysInPhase": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "minimumGrowthDays": 6,
+      "regrowDays": -1,
+      "needsWatering": true,
+      "isPaddyCrop": false,
+      "countForPolyculture": true,
+      "countForMonoculture": true,
+      "seedAcquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "Sandy",
+          "itemId": "(O)494"
+        }
+      ],
+      "source": "Data/Crops",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "crop.300-e26973e6",
+      "qualifiedItemId": "(O)300",
+      "name": "Amaranth",
+      "seed": {
+        "qualifiedItemId": "(O)299",
+        "name": "Amaranth Seeds"
+      },
+      "seasons": [
+        "fall"
+      ],
+      "daysInPhase": [
+        1,
+        2,
+        2,
+        2
+      ],
+      "minimumGrowthDays": 7,
+      "regrowDays": -1,
+      "needsWatering": true,
+      "isPaddyCrop": false,
+      "countForPolyculture": true,
+      "countForMonoculture": true,
+      "seedAcquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "Festival_NightMarket_MagicBoat_Day3",
+          "itemId": "(O)299"
+        },
+        {
+          "type": "shop",
+          "shopId": "Joja",
+          "itemId": "(O)299",
+          "condition": "SEASON fall"
+        },
+        {
+          "type": "shop",
+          "shopId": "SeedShop",
+          "itemId": "(O)299",
+          "condition": "SEASON fall"
+        }
+      ],
+      "source": "Data/Crops",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "crop.304-79816ecb",
+      "qualifiedItemId": "(O)304",
+      "name": "Hops",
+      "seed": {
+        "qualifiedItemId": "(O)302",
+        "name": "Hops Starter"
+      },
+      "seasons": [
+        "summer"
+      ],
+      "daysInPhase": [
+        1,
+        1,
+        2,
+        3,
+        4
+      ],
+      "minimumGrowthDays": 11,
+      "regrowDays": 1,
+      "needsWatering": true,
+      "isPaddyCrop": false,
+      "countForPolyculture": true,
+      "countForMonoculture": true,
+      "seedAcquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "Festival_NightMarket_MagicBoat_Day2",
+          "itemId": "(O)302"
+        },
+        {
+          "type": "shop",
+          "shopId": "Joja",
+          "itemId": "(O)302",
+          "condition": "SEASON summer"
+        },
+        {
+          "type": "shop",
+          "shopId": "SeedShop",
+          "itemId": "(O)302",
+          "condition": "SEASON summer"
+        }
+      ],
+      "source": "Data/Crops",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "crop.376-b6e2efd8",
+      "qualifiedItemId": "(O)376",
+      "name": "Poppy",
+      "seed": {
+        "qualifiedItemId": "(O)453",
+        "name": "Poppy Seeds"
+      },
+      "seasons": [
+        "summer"
+      ],
+      "daysInPhase": [
+        1,
+        2,
+        2,
+        2
+      ],
+      "minimumGrowthDays": 7,
+      "regrowDays": -1,
+      "needsWatering": true,
+      "isPaddyCrop": false,
+      "countForPolyculture": false,
+      "countForMonoculture": false,
+      "seedAcquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "Festival_NightMarket_MagicBoat_Day2",
+          "itemId": "(O)453"
+        },
+        {
+          "type": "shop",
+          "shopId": "Joja",
+          "itemId": "(O)453",
+          "condition": "SEASON summer"
+        },
+        {
+          "type": "shop",
+          "shopId": "SeedShop",
+          "itemId": "(O)453",
+          "condition": "SEASON summer"
+        }
+      ],
+      "source": "Data/Crops",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "crop.396-2bc4a9de",
+      "qualifiedItemId": "(O)396",
+      "name": "Spice Berry",
+      "seed": {
+        "qualifiedItemId": "(O)496",
+        "name": "Summer Seeds"
+      },
+      "seasons": [
+        "summer"
+      ],
+      "daysInPhase": [
+        3,
+        4
+      ],
+      "minimumGrowthDays": 7,
+      "regrowDays": -1,
+      "needsWatering": true,
+      "isPaddyCrop": false,
+      "countForPolyculture": false,
+      "countForMonoculture": false,
+      "seedAcquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "DesertTrade",
+          "itemId": "(O)496",
+          "tradeItemId": "(O)497",
+          "tradeItemAmount": 2,
+          "condition": "DAY_OF_WEEK Saturday"
+        }
+      ],
+      "source": "Data/Crops",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "crop.398-10309cbe",
+      "qualifiedItemId": "(O)398",
+      "name": "Grape",
+      "seed": {
+        "qualifiedItemId": "(O)301",
+        "name": "Grape Starter"
+      },
+      "seasons": [
+        "fall"
+      ],
+      "daysInPhase": [
+        1,
+        1,
+        2,
+        3,
+        3
+      ],
+      "minimumGrowthDays": 10,
+      "regrowDays": 3,
+      "needsWatering": true,
+      "isPaddyCrop": false,
+      "countForPolyculture": true,
+      "countForMonoculture": true,
+      "seedAcquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "Festival_NightMarket_MagicBoat_Day3",
+          "itemId": "(O)301"
+        },
+        {
+          "type": "shop",
+          "shopId": "Joja",
+          "itemId": "(O)301",
+          "condition": "SEASON fall"
+        },
+        {
+          "type": "shop",
+          "shopId": "SeedShop",
+          "itemId": "(O)301",
+          "condition": "SEASON fall"
+        }
+      ],
+      "source": "Data/Crops",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "crop.400-ab7f7b95",
+      "qualifiedItemId": "(O)400",
+      "name": "Strawberry",
+      "seed": {
+        "qualifiedItemId": "(O)745",
+        "name": "Strawberry Seeds"
+      },
+      "seasons": [
+        "spring"
+      ],
+      "daysInPhase": [
+        1,
+        1,
+        2,
+        2,
+        2
+      ],
+      "minimumGrowthDays": 8,
+      "regrowDays": 4,
+      "needsWatering": true,
+      "isPaddyCrop": false,
+      "countForPolyculture": true,
+      "countForMonoculture": true,
+      "seedAcquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "DesertFestival_EggShop",
+          "itemId": "(O)745",
+          "tradeItemId": "CalicoEgg",
+          "tradeItemAmount": 5,
+          "condition": "DAY_OF_WEEK Monday"
+        },
+        {
+          "type": "shop",
+          "shopId": "DesertFestival_EggShop",
+          "itemId": "(O)745",
+          "tradeItemId": "CalicoEgg",
+          "tradeItemAmount": 6,
+          "condition": "DAY_OF_WEEK Wednesday"
+        },
+        {
+          "type": "shop",
+          "shopId": "DesertFestival_Maru",
+          "itemId": "(O)745",
+          "tradeItemId": "CalicoEgg",
+          "tradeItemAmount": 10
+        },
+        {
+          "type": "shop",
+          "shopId": "Festival_EggFestival_Pierre",
+          "itemId": "(O)745",
+          "price": 100
+        }
+      ],
+      "source": "Data/Crops",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "crop.404-c35a9fc5",
+      "qualifiedItemId": "(O)404",
+      "name": "Common Mushroom",
+      "seed": {
+        "qualifiedItemId": "(O)497",
+        "name": "Fall Seeds"
+      },
+      "seasons": [
+        "fall"
+      ],
+      "daysInPhase": [
+        3,
+        4
+      ],
+      "minimumGrowthDays": 7,
+      "regrowDays": -1,
+      "needsWatering": true,
+      "isPaddyCrop": false,
+      "countForPolyculture": false,
+      "countForMonoculture": false,
+      "seedAcquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "DesertTrade",
+          "itemId": "(O)497",
+          "tradeItemId": "(O)498",
+          "tradeItemAmount": 2,
+          "condition": "DAY_OF_WEEK Saturday"
+        }
+      ],
+      "source": "Data/Crops",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "crop.412-6e9b9938",
+      "qualifiedItemId": "(O)412",
+      "name": "Winter Root",
+      "seed": {
+        "qualifiedItemId": "(O)498",
+        "name": "Winter Seeds"
+      },
+      "seasons": [
+        "winter"
+      ],
+      "daysInPhase": [
+        3,
+        4
+      ],
+      "minimumGrowthDays": 7,
+      "regrowDays": -1,
+      "needsWatering": true,
+      "isPaddyCrop": false,
+      "countForPolyculture": false,
+      "countForMonoculture": false,
+      "seedAcquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "DesertTrade",
+          "itemId": "(O)498",
+          "tradeItemId": "(O)495",
+          "tradeItemAmount": 2,
+          "condition": "DAY_OF_WEEK Saturday"
+        }
+      ],
+      "source": "Data/Crops",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "crop.417-4dc77829",
+      "qualifiedItemId": "(O)417",
+      "name": "Sweet Gem Berry",
+      "seed": {
+        "qualifiedItemId": "(O)347",
+        "name": "Rare Seed"
+      },
+      "seasons": [
+        "fall"
+      ],
+      "daysInPhase": [
+        2,
+        4,
+        6,
+        6,
+        6
+      ],
+      "minimumGrowthDays": 24,
+      "regrowDays": -1,
+      "needsWatering": true,
+      "isPaddyCrop": false,
+      "countForPolyculture": false,
+      "countForMonoculture": false,
+      "seedAcquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "Traveler",
+          "itemId": "(O)347",
+          "price": 1000,
+          "condition": "SEASON spring summer"
+        }
+      ],
+      "source": "Data/Crops",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "crop.421-1c76c42d",
+      "qualifiedItemId": "(O)421",
+      "name": "Sunflower",
+      "seed": {
+        "qualifiedItemId": "(O)431",
+        "name": "Sunflower Seeds"
+      },
+      "seasons": [
+        "summer",
+        "fall"
+      ],
+      "daysInPhase": [
+        1,
+        2,
+        3,
+        2
+      ],
+      "minimumGrowthDays": 8,
+      "regrowDays": -1,
+      "needsWatering": true,
+      "isPaddyCrop": false,
+      "countForPolyculture": false,
+      "countForMonoculture": false,
+      "seedAcquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "Festival_NightMarket_MagicBoat_Day2",
+          "itemId": "(O)431",
+          "price": 200
+        },
+        {
+          "type": "shop",
+          "shopId": "Festival_NightMarket_MagicBoat_Day3",
+          "itemId": "(O)431",
+          "price": 200
+        },
+        {
+          "type": "shop",
+          "shopId": "Joja",
+          "itemId": "(O)431",
+          "price": 100,
+          "condition": "SEASON summer"
+        },
+        {
+          "type": "shop",
+          "shopId": "Joja",
+          "itemId": "(O)431",
+          "price": 100,
+          "condition": "SEASON fall"
+        },
+        {
+          "type": "shop",
+          "shopId": "SeedShop",
+          "itemId": "(O)431",
+          "price": 100,
+          "condition": "SEASON summer"
+        },
+        {
+          "type": "shop",
+          "shopId": "SeedShop",
+          "itemId": "(O)431",
+          "price": 100,
+          "condition": "SEASON fall"
+        }
+      ],
+      "source": "Data/Crops",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "crop.433-82ad38f8",
+      "qualifiedItemId": "(O)433",
+      "name": "Coffee Bean",
+      "seed": {
+        "qualifiedItemId": "(O)433",
+        "name": "Coffee Bean"
+      },
+      "seasons": [
+        "spring",
+        "summer"
+      ],
+      "daysInPhase": [
+        1,
+        2,
+        2,
+        3,
+        2
+      ],
+      "minimumGrowthDays": 10,
+      "regrowDays": 2,
+      "needsWatering": true,
+      "isPaddyCrop": false,
+      "countForPolyculture": true,
+      "countForMonoculture": true,
+      "seedAcquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "Traveler",
+          "itemId": "(O)433",
+          "price": 2500,
+          "condition": "SEASON fall winter, SYNCED_RANDOM day cart_coffee_bean 0.25"
+        }
+      ],
+      "source": "Data/Crops",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "crop.454-14019988",
+      "qualifiedItemId": "(O)454",
+      "name": "Ancient Fruit",
+      "seed": {
+        "qualifiedItemId": "(O)499",
+        "name": "Ancient Seeds"
+      },
+      "seasons": [
+        "spring",
+        "summer",
+        "fall"
+      ],
+      "daysInPhase": [
+        2,
+        7,
+        7,
+        7,
+        5
+      ],
+      "minimumGrowthDays": 28,
+      "regrowDays": 7,
+      "needsWatering": true,
+      "isPaddyCrop": false,
+      "countForPolyculture": false,
+      "countForMonoculture": true,
+      "seedAcquisitionRoutes": [],
+      "source": "Data/Crops",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "crop.591-21348341",
+      "qualifiedItemId": "(O)591",
+      "name": "Tulip",
+      "seed": {
+        "qualifiedItemId": "(O)427",
+        "name": "Tulip Bulb"
+      },
+      "seasons": [
+        "spring"
+      ],
+      "daysInPhase": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "minimumGrowthDays": 6,
+      "regrowDays": -1,
+      "needsWatering": true,
+      "isPaddyCrop": false,
+      "countForPolyculture": false,
+      "countForMonoculture": true,
+      "seedAcquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "Festival_NightMarket_MagicBoat_Day1",
+          "itemId": "(O)427"
+        },
+        {
+          "type": "shop",
+          "shopId": "Joja",
+          "itemId": "(O)427",
+          "condition": "SEASON spring"
+        },
+        {
+          "type": "shop",
+          "shopId": "SeedShop",
+          "itemId": "(O)427",
+          "condition": "SEASON spring"
+        }
+      ],
+      "source": "Data/Crops",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "crop.593-620807a1",
+      "qualifiedItemId": "(O)593",
+      "name": "Summer Spangle",
+      "seed": {
+        "qualifiedItemId": "(O)455",
+        "name": "Spangle Seeds"
+      },
+      "seasons": [
+        "summer"
+      ],
+      "daysInPhase": [
+        1,
+        2,
+        3,
+        2
+      ],
+      "minimumGrowthDays": 8,
+      "regrowDays": -1,
+      "needsWatering": true,
+      "isPaddyCrop": false,
+      "countForPolyculture": false,
+      "countForMonoculture": true,
+      "seedAcquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "Festival_NightMarket_MagicBoat_Day2",
+          "itemId": "(O)455"
+        },
+        {
+          "type": "shop",
+          "shopId": "Joja",
+          "itemId": "(O)455",
+          "condition": "SEASON summer"
+        },
+        {
+          "type": "shop",
+          "shopId": "SeedShop",
+          "itemId": "(O)455",
+          "condition": "SEASON summer"
+        }
+      ],
+      "source": "Data/Crops",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "crop.595-edd6bb41",
+      "qualifiedItemId": "(O)595",
+      "name": "Fairy Rose",
+      "seed": {
+        "qualifiedItemId": "(O)425",
+        "name": "Fairy Seeds"
+      },
+      "seasons": [
+        "fall"
+      ],
+      "daysInPhase": [
+        1,
+        4,
+        4,
+        3
+      ],
+      "minimumGrowthDays": 12,
+      "regrowDays": -1,
+      "needsWatering": true,
+      "isPaddyCrop": false,
+      "countForPolyculture": false,
+      "countForMonoculture": true,
+      "seedAcquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "DesertFestival_Jas",
+          "itemId": "(O)425",
+          "tradeItemId": "CalicoEgg",
+          "tradeItemAmount": 5
+        },
+        {
+          "type": "shop",
+          "shopId": "Festival_NightMarket_MagicBoat_Day3",
+          "itemId": "(O)425"
+        },
+        {
+          "type": "shop",
+          "shopId": "Joja",
+          "itemId": "(O)425",
+          "condition": "SEASON fall"
+        },
+        {
+          "type": "shop",
+          "shopId": "SeedShop",
+          "itemId": "(O)425",
+          "condition": "SEASON fall"
+        }
+      ],
+      "source": "Data/Crops",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "crop.597-8b4753ed",
+      "qualifiedItemId": "(O)597",
+      "name": "Blue Jazz",
+      "seed": {
+        "qualifiedItemId": "(O)429",
+        "name": "Jazz Seeds"
+      },
+      "seasons": [
+        "spring"
+      ],
+      "daysInPhase": [
+        1,
+        2,
+        2,
+        2
+      ],
+      "minimumGrowthDays": 7,
+      "regrowDays": -1,
+      "needsWatering": true,
+      "isPaddyCrop": false,
+      "countForPolyculture": false,
+      "countForMonoculture": true,
+      "seedAcquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "Festival_NightMarket_MagicBoat_Day1",
+          "itemId": "(O)429"
+        },
+        {
+          "type": "shop",
+          "shopId": "Joja",
+          "itemId": "(O)429",
+          "condition": "SEASON spring"
+        },
+        {
+          "type": "shop",
+          "shopId": "SeedShop",
+          "itemId": "(O)429",
+          "condition": "SEASON spring"
+        }
+      ],
+      "source": "Data/Crops",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "crop.771-5d0fb669",
+      "qualifiedItemId": "(O)771",
+      "name": "Fiber",
+      "seed": {
+        "qualifiedItemId": "(O)885",
+        "name": "Fiber Seeds"
+      },
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "daysInPhase": [
+        1,
+        2,
+        2,
+        2
+      ],
+      "minimumGrowthDays": 7,
+      "regrowDays": -1,
+      "needsWatering": false,
+      "isPaddyCrop": false,
+      "countForPolyculture": false,
+      "countForMonoculture": false,
+      "seedAcquisitionRoutes": [],
+      "source": "Data/Crops",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "crop.830-20192191",
+      "qualifiedItemId": "(O)830",
+      "name": "Taro Root",
+      "seed": {
+        "qualifiedItemId": "(O)831",
+        "name": "Taro Tuber"
+      },
+      "seasons": [
+        "summer"
+      ],
+      "daysInPhase": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "minimumGrowthDays": 10,
+      "regrowDays": -1,
+      "needsWatering": true,
+      "isPaddyCrop": true,
+      "countForPolyculture": false,
+      "countForMonoculture": false,
+      "seedAcquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "IslandTrade",
+          "itemId": "(O)831",
+          "tradeItemId": "(O)881",
+          "tradeItemAmount": 2
+        }
+      ],
+      "source": "Data/Crops",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "crop.832-e6c790b5",
+      "qualifiedItemId": "(O)832",
+      "name": "Pineapple",
+      "seed": {
+        "qualifiedItemId": "(O)833",
+        "name": "Pineapple Seeds"
+      },
+      "seasons": [
+        "summer"
+      ],
+      "daysInPhase": [
+        1,
+        3,
+        3,
+        4,
+        3
+      ],
+      "minimumGrowthDays": 14,
+      "regrowDays": 7,
+      "needsWatering": true,
+      "isPaddyCrop": false,
+      "countForPolyculture": false,
+      "countForMonoculture": false,
+      "seedAcquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "IslandTrade",
+          "itemId": "(O)833",
+          "tradeItemId": "(O)851"
+        }
+      ],
+      "source": "Data/Crops",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "crop.889-4d7adc25",
+      "qualifiedItemId": "(O)889",
+      "name": "Qi Fruit",
+      "seed": {
+        "qualifiedItemId": "(O)890",
+        "name": "Qi Bean"
+      },
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "daysInPhase": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "minimumGrowthDays": 4,
+      "regrowDays": -1,
+      "needsWatering": true,
+      "isPaddyCrop": false,
+      "countForPolyculture": false,
+      "countForMonoculture": false,
+      "seedAcquisitionRoutes": [],
+      "source": "Data/Crops",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "crop.90-2d0c8af8",
+      "qualifiedItemId": "(O)90",
+      "name": "Cactus Fruit",
+      "seed": {
+        "qualifiedItemId": "(O)802",
+        "name": "Cactus Seeds"
+      },
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "daysInPhase": [
+        2,
+        2,
+        2,
+        3,
+        3
+      ],
+      "minimumGrowthDays": 12,
+      "regrowDays": 3,
+      "needsWatering": true,
+      "isPaddyCrop": false,
+      "countForPolyculture": false,
+      "countForMonoculture": false,
+      "seedAcquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "Sandy",
+          "itemId": "(O)802",
+          "price": 150
+        }
+      ],
+      "source": "Data/Crops",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "crop.broccoli-6b23b661",
+      "qualifiedItemId": "(O)Broccoli",
+      "name": "Broccoli",
+      "seed": {
+        "qualifiedItemId": "(O)BroccoliSeeds",
+        "name": "Broccoli Seeds"
+      },
+      "seasons": [
+        "fall"
+      ],
+      "daysInPhase": [
+        1,
+        2,
+        2,
+        3
+      ],
+      "minimumGrowthDays": 8,
+      "regrowDays": 4,
+      "needsWatering": true,
+      "isPaddyCrop": false,
+      "countForPolyculture": false,
+      "countForMonoculture": false,
+      "seedAcquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "Raccoon",
+          "itemId": "(O)BroccoliSeeds",
+          "tradeItemId": "(O)Moss",
+          "tradeItemAmount": 5
+        }
+      ],
+      "source": "Data/Crops",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "crop.carrot-617fec0e",
+      "qualifiedItemId": "(O)Carrot",
+      "name": "Carrot",
+      "seed": {
+        "qualifiedItemId": "(O)CarrotSeeds",
+        "name": "Carrot Seeds"
+      },
+      "seasons": [
+        "spring"
+      ],
+      "daysInPhase": [
+        1,
+        1,
+        1
+      ],
+      "minimumGrowthDays": 3,
+      "regrowDays": -1,
+      "needsWatering": true,
+      "isPaddyCrop": false,
+      "countForPolyculture": false,
+      "countForMonoculture": false,
+      "seedAcquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "Raccoon",
+          "itemId": "(O)CarrotSeeds",
+          "tradeItemId": "(O)310"
+        }
+      ],
+      "source": "Data/Crops",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "crop.powdermelon-bec0fe0e",
+      "qualifiedItemId": "(O)Powdermelon",
+      "name": "Powdermelon",
+      "seed": {
+        "qualifiedItemId": "(O)PowdermelonSeeds",
+        "name": "Powdermelon Seeds"
+      },
+      "seasons": [
+        "winter"
+      ],
+      "daysInPhase": [
+        1,
+        1,
+        1,
+        2,
+        2
+      ],
+      "minimumGrowthDays": 7,
+      "regrowDays": -1,
+      "needsWatering": true,
+      "isPaddyCrop": false,
+      "countForPolyculture": false,
+      "countForMonoculture": false,
+      "seedAcquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "Raccoon",
+          "itemId": "(O)PowdermelonSeeds",
+          "tradeItemId": "(O)311",
+          "tradeItemAmount": 2
+        }
+      ],
+      "source": "Data/Crops",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "crop.summersquash-b1fdccbe",
+      "qualifiedItemId": "(O)SummerSquash",
+      "name": "Summer Squash",
+      "seed": {
+        "qualifiedItemId": "(O)SummerSquashSeeds",
+        "name": "Summer Squash Seeds"
+      },
+      "seasons": [
+        "summer"
+      ],
+      "daysInPhase": [
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      "minimumGrowthDays": 6,
+      "regrowDays": 3,
+      "needsWatering": true,
+      "isPaddyCrop": false,
+      "countForPolyculture": false,
+      "countForMonoculture": false,
+      "seedAcquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "Raccoon",
+          "itemId": "(O)SummerSquashSeeds",
+          "tradeItemId": "(O)92",
+          "tradeItemAmount": 15
+        }
+      ],
+      "source": "Data/Crops",
+      "verification": "extracted-content"
+    }
+  ]
+}

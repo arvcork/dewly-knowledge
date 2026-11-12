@@ -1,0 +1,409 @@
+{
+  "schemaVersion": "0.1.0",
+  "gameVersion": "1.6.15.24354",
+  "records": [
+    {
+      "id": "book.book-trash-631c35c7",
+      "statKey": "Book_Trash",
+      "qualifiedItemId": "(O)Book_Trash",
+      "name": "The Alleyway Buffet",
+      "completionEvidence": "Stats.Get(statKey) != 0",
+      "acquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "Bookseller",
+          "itemId": "(O)Book_Trash",
+          "price": 20000,
+          "condition": "YEAR 3"
+        }
+      ],
+      "source": "Stats.checkForBooksReadAchievement",
+      "verification": "verified-compiled-logic"
+    },
+    {
+      "id": "book.book-crabbing-e4829816",
+      "statKey": "Book_Crabbing",
+      "qualifiedItemId": "(O)Book_Crabbing",
+      "name": "The Art O' Crabbing",
+      "completionEvidence": "Stats.Get(statKey) != 0",
+      "acquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "Bookseller",
+          "itemId": "(O)Book_Crabbing",
+          "price": 20000,
+          "condition": "YEAR 3"
+        }
+      ],
+      "source": "Stats.checkForBooksReadAchievement",
+      "verification": "verified-compiled-logic"
+    },
+    {
+      "id": "book.book-bombs-2b7bec9e",
+      "statKey": "Book_Bombs",
+      "qualifiedItemId": "(O)Book_Bombs",
+      "name": "Dwarvish Safety Manual",
+      "completionEvidence": "Stats.Get(statKey) != 0",
+      "acquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "Bookseller",
+          "itemId": "(O)Book_Bombs",
+          "price": 20000,
+          "condition": "YEAR 3"
+        },
+        {
+          "type": "shop",
+          "shopId": "Dwarf",
+          "itemId": "(O)Book_Bombs",
+          "price": 4000
+        }
+      ],
+      "source": "Stats.checkForBooksReadAchievement",
+      "verification": "verified-compiled-logic"
+    },
+    {
+      "id": "book.book-roe-09e6edcd",
+      "statKey": "Book_Roe",
+      "qualifiedItemId": "(O)Book_Roe",
+      "name": "Jewels Of The Sea",
+      "completionEvidence": "Stats.Get(statKey) != 0",
+      "acquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "Bookseller",
+          "itemId": "(O)Book_Roe",
+          "price": 20000,
+          "condition": "YEAR 3"
+        }
+      ],
+      "source": "Stats.checkForBooksReadAchievement",
+      "verification": "verified-compiled-logic"
+    },
+    {
+      "id": "book.book-wildseeds-536de7ee",
+      "statKey": "Book_WildSeeds",
+      "qualifiedItemId": "(O)Book_WildSeeds",
+      "name": "Ways Of The Wild",
+      "completionEvidence": "Stats.Get(statKey) != 0",
+      "acquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "Bookseller",
+          "itemId": "(O)Book_WildSeeds",
+          "price": 20000,
+          "condition": "YEAR 3"
+        },
+        {
+          "type": "shop",
+          "shopId": "Raccoon",
+          "itemId": "(O)Book_WildSeeds",
+          "tradeItemId": "(O)771",
+          "tradeItemAmount": 999,
+          "condition": "WORLD_STATE_FIELD TimesFedRaccoons 2"
+        }
+      ],
+      "source": "Stats.checkForBooksReadAchievement",
+      "verification": "verified-compiled-logic"
+    },
+    {
+      "id": "book.book-woodcutting-ff945a51",
+      "statKey": "Book_Woodcutting",
+      "qualifiedItemId": "(O)Book_Woodcutting",
+      "name": "Woody's Secret",
+      "completionEvidence": "Stats.Get(statKey) != 0",
+      "acquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "Bookseller",
+          "itemId": "(O)Book_Woodcutting",
+          "price": 20000,
+          "condition": "YEAR 3"
+        }
+      ],
+      "source": "Stats.checkForBooksReadAchievement",
+      "verification": "verified-compiled-logic"
+    },
+    {
+      "id": "book.book-defense-5eb2ae48",
+      "statKey": "Book_Defense",
+      "qualifiedItemId": "(O)Book_Defense",
+      "name": "Jack Be Nimble, Jack Be Thick",
+      "completionEvidence": "Stats.Get(statKey) != 0",
+      "acquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "Bookseller",
+          "itemId": "(O)Book_Defense",
+          "price": 20000,
+          "condition": "YEAR 3"
+        }
+      ],
+      "source": "Stats.checkForBooksReadAchievement",
+      "verification": "verified-compiled-logic"
+    },
+    {
+      "id": "book.book-friendship-e573bd4e",
+      "statKey": "Book_Friendship",
+      "qualifiedItemId": "(O)Book_Friendship",
+      "name": "Friendship 101",
+      "completionEvidence": "Stats.Get(statKey) != 0",
+      "acquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "Bookseller",
+          "itemId": "(O)Book_Friendship",
+          "price": 20000,
+          "condition": "YEAR 3"
+        }
+      ],
+      "source": "Stats.checkForBooksReadAchievement",
+      "verification": "verified-compiled-logic"
+    },
+    {
+      "id": "book.book-void-2376815d",
+      "statKey": "Book_Void",
+      "qualifiedItemId": "(O)Book_Void",
+      "name": "Monster Compendium",
+      "completionEvidence": "Stats.Get(statKey) != 0",
+      "acquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "Bookseller",
+          "itemId": "(O)Book_Void",
+          "price": 20000,
+          "condition": "YEAR 3"
+        }
+      ],
+      "source": "Stats.checkForBooksReadAchievement",
+      "verification": "verified-compiled-logic"
+    },
+    {
+      "id": "book.book-speed-712a03c0",
+      "statKey": "Book_Speed",
+      "qualifiedItemId": "(O)Book_Speed",
+      "name": "Way Of The Wind pt. 1",
+      "completionEvidence": "Stats.Get(statKey) != 0",
+      "acquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "Bookseller",
+          "itemId": "(O)Book_Speed",
+          "price": 15000
+        }
+      ],
+      "source": "Stats.checkForBooksReadAchievement",
+      "verification": "verified-compiled-logic"
+    },
+    {
+      "id": "book.book-marlon-61a05c72",
+      "statKey": "Book_Marlon",
+      "qualifiedItemId": "(O)Book_Marlon",
+      "name": "Mapping Cave Systems",
+      "completionEvidence": "Stats.Get(statKey) != 0",
+      "acquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "Bookseller",
+          "itemId": "(O)Book_Marlon",
+          "price": 20000,
+          "condition": "YEAR 3"
+        }
+      ],
+      "source": "Stats.checkForBooksReadAchievement",
+      "verification": "verified-compiled-logic"
+    },
+    {
+      "id": "book.book-pricecatalogue-770332b5",
+      "statKey": "Book_PriceCatalogue",
+      "qualifiedItemId": "(O)Book_PriceCatalogue",
+      "name": "Price Catalogue",
+      "completionEvidence": "Stats.Get(statKey) != 0",
+      "acquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "Bookseller",
+          "itemId": "(O)Book_PriceCatalogue",
+          "price": 3000
+        }
+      ],
+      "source": "Stats.checkForBooksReadAchievement",
+      "verification": "verified-compiled-logic"
+    },
+    {
+      "id": "book.book-diamonds-b6758c58",
+      "statKey": "Book_Diamonds",
+      "qualifiedItemId": "(O)Book_Diamonds",
+      "name": "The Diamond Hunter",
+      "completionEvidence": "Stats.Get(statKey) != 0",
+      "acquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "VolcanoShop",
+          "itemId": "(O)Book_Diamonds",
+          "tradeItemId": "(O)72",
+          "tradeItemAmount": 10
+        }
+      ],
+      "source": "Stats.checkForBooksReadAchievement",
+      "verification": "verified-compiled-logic"
+    },
+    {
+      "id": "book.book-mystery-1f754927",
+      "statKey": "Book_Mystery",
+      "qualifiedItemId": "(O)Book_Mystery",
+      "name": "Book of Mysteries",
+      "completionEvidence": "Stats.Get(statKey) != 0",
+      "acquisitionRoutes": [
+        {
+          "id": "acq.method.book_mystery.open-mystery-box.mystery-box",
+          "type": "open-mystery-box",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.book"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Book_of_Mysteries"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "inputItems": [
+            {
+              "name": "Mystery Box",
+              "quantity": 1
+            }
+          ],
+          "conditions": [
+            "Blacksmith service accessible",
+            "book not yet obtained",
+            "Blue Mystery Box requires more than ten boxes previously opened"
+          ],
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.mystery-box-available"
+            }
+          ],
+          "occurrence": "variable chance; not a guaranteed reward"
+        },
+        {
+          "id": "acq.method.book_mystery.open-mystery-box.golden-mystery-box",
+          "type": "open-mystery-box",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.book"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Book_of_Mysteries"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "inputItems": [
+            {
+              "name": "Golden Mystery Box",
+              "quantity": 1
+            }
+          ],
+          "conditions": [
+            "Blacksmith service accessible",
+            "book not yet obtained",
+            "Golden Mystery Box available"
+          ],
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.mystery-box-available"
+            }
+          ],
+          "occurrence": "variable chance; not a guaranteed reward"
+        }
+      ],
+      "source": "Stats.checkForBooksReadAchievement",
+      "verification": "verified-compiled-logic"
+    },
+    {
+      "id": "book.book-animalcatalogue-dc2121d8",
+      "statKey": "Book_AnimalCatalogue",
+      "qualifiedItemId": "(O)Book_AnimalCatalogue",
+      "name": "Animal Catalogue",
+      "completionEvidence": "Stats.Get(statKey) != 0",
+      "acquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "AnimalShop",
+          "itemId": "(O)Book_AnimalCatalogue",
+          "price": 5000,
+          "condition": "YEAR 2"
+        }
+      ],
+      "source": "Stats.checkForBooksReadAchievement",
+      "verification": "verified-compiled-logic"
+    },
+    {
+      "id": "book.book-speed2-385bdcad",
+      "statKey": "Book_Speed2",
+      "qualifiedItemId": "(O)Book_Speed2",
+      "name": "Way Of The Wind pt. 2",
+      "completionEvidence": "Stats.Get(statKey) != 0",
+      "acquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "Bookseller",
+          "itemId": "(O)Book_Speed2",
+          "price": 35000,
+          "condition": "PLAYER_STAT Current Book_Speed 1"
+        }
+      ],
+      "source": "Stats.checkForBooksReadAchievement",
+      "verification": "verified-compiled-logic"
+    },
+    {
+      "id": "book.book-artifact-d43d78b0",
+      "statKey": "Book_Artifact",
+      "qualifiedItemId": "(O)Book_Artifact",
+      "name": "Book_Artifact",
+      "completionEvidence": "Stats.Get(statKey) != 0",
+      "acquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "Bookseller",
+          "itemId": "(O)Book_Artifact",
+          "price": 20000,
+          "condition": "YEAR 3"
+        }
+      ],
+      "source": "Stats.checkForBooksReadAchievement",
+      "verification": "verified-compiled-logic"
+    },
+    {
+      "id": "book.book-horse-f272cead",
+      "statKey": "Book_Horse",
+      "qualifiedItemId": "(O)Book_Horse",
+      "name": "Book_Horse",
+      "completionEvidence": "Stats.Get(statKey) != 0",
+      "acquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "Bookseller",
+          "itemId": "(O)Book_Horse",
+          "price": 25000
+        }
+      ],
+      "source": "Stats.checkForBooksReadAchievement",
+      "verification": "verified-compiled-logic"
+    },
+    {
+      "id": "book.book-grass-34a2e275",
+      "statKey": "Book_Grass",
+      "qualifiedItemId": "(O)Book_Grass",
+      "name": "Book_Grass",
+      "completionEvidence": "Stats.Get(statKey) != 0",
+      "acquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "Bookseller",
+          "itemId": "(O)Book_Grass",
+          "price": 25000
+        }
+      ],
+      "source": "Stats.checkForBooksReadAchievement",
+      "verification": "verified-compiled-logic"
+    }
+  ]
+}

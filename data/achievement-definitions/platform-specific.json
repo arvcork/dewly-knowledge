@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "0.1.0",
+  "category": "platform-specific",
+  "provenance": "Supplied source assertions, not newly verified gameplay rules.",
+  "entries": [
+    {
+      "id": "iridium_seal",
+      "name": "Iridium Seal",
+      "sourceRequirement": "Earn the other base-game PlayStation trophies.",
+      "sourceDefinitionRef": "data/sources/original/trophy-50-coverage.json#/trophies/0",
+      "sourceDependencyRef": "data/sources/original/trophy-dependency-graph.json#/graph/iridium_seal",
+      "verification": "source-import-only"
+    }
+  ]
+}

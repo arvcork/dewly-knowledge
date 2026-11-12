@@ -1,0 +1,101 @@
+{
+  "schemaVersion": "0.1.0",
+  "gameVersion": "1.6.15.24354",
+  "contentFingerprint": "933b27af1f08a0253d10b5a27a8b2de3672e0d8816bb2fcab9b3f0f7e9975ff5",
+  "runtimeAuthority": "Loaded game content remains authoritative; this snapshot is a development/test index only.",
+  "sourceFingerprints": [
+    {
+      "asset": "runtime/Stardew Valley.dll",
+      "sourcePath": "Stardew Valley.dll",
+      "sha256": "2961a8a8d5716d69492bacb004e3125e7a3d8fccb41f9b2edc3971d520f98cfa",
+      "bytes": 6614528
+    },
+    {
+      "asset": "Data/Bundles",
+      "sourcePath": "Content/Data/Bundles.xnb",
+      "sha256": "b259e6ebc4654c6d560e0716d57be3e65f60d3b8726b9f55654be66e3d4073ec",
+      "bytes": 1252
+    },
+    {
+      "asset": "Data/Characters",
+      "sourcePath": "Content/Data/Characters.xnb",
+      "sha256": "423b4ec096a9b0e065a471cc6a2621f626e00a879b77950a66459042d458a189",
+      "bytes": 4574
+    },
+    {
+      "asset": "Data/CookingRecipes",
+      "sourcePath": "Content/Data/CookingRecipes.xnb",
+      "sha256": "1773c16e1e23ab752f8e0a6ee991ef44156b2e13d477df74c057ac0d3bcb05a4",
+      "bytes": 2092
+    },
+    {
+      "asset": "Data/CraftingRecipes",
+      "sourcePath": "Content/Data/CraftingRecipes.xnb",
+      "sha256": "a2dd8a285ca7cae1c85dfd5ffde8924e84c66db734b49cb50e6fb21b07b9b763",
+      "bytes": 3362
+    },
+    {
+      "asset": "Data/Crops",
+      "sourcePath": "Content/Data/Crops.xnb",
+      "sha256": "8e3c5a71d7b1c6d0c0a6123f449bc93766476187aeaa66631ce4bf40ee271a2b",
+      "bytes": 1606
+    },
+    {
+      "asset": "Data/Fish",
+      "sourcePath": "Content/Data/Fish.xnb",
+      "sha256": "d53d4d47dcab5e36c8510a685e857858b764604238e6bcdb829652771074c037",
+      "bytes": 1906
+    },
+    {
+      "asset": "Data/Locations",
+      "sourcePath": "Content/Data/Locations.xnb",
+      "sha256": "73e384023e921fbb5c0860cd6b75c9b64f4843c25aba003296d52ba777d7de4f",
+      "bytes": 7414
+    },
+    {
+      "asset": "Data/MonsterSlayerQuests",
+      "sourcePath": "Content/Data/MonsterSlayerQuests.xnb",
+      "sha256": "0225822820b7982de345ef99c4afff9c8f6e4b5aa8f4c2b010e00699fbef8dcf",
+      "bytes": 872
+    },
+    {
+      "asset": "Data/Objects",
+      "sourcePath": "Content/Data/Objects.xnb",
+      "sha256": "211fbf00dd4e662a28b7c1935649d47facb0591cc6fc863899528507bce72f89",
+      "bytes": 23764
+    },
+    {
+      "asset": "Data/RandomBundles",
+      "sourcePath": "Content/Data/RandomBundles.xnb",
+      "sha256": "0ba9ed17c961deac944ce22624d979ab4e446978be3a2cfdb14258dc1b86d1e5",
+      "bytes": 2718
+    },
+    {
+      "asset": "Data/Shops",
+      "sourcePath": "Content/Data/Shops.xnb",
+      "sha256": "e98dc45a439329384b07c944e93cf43ec457bebcc1acc111620a0bc471d7c139",
+      "bytes": 14934
+    },
+    {
+      "asset": "Data/TV/CookingChannel",
+      "sourcePath": "Content/Data/TV/CookingChannel.xnb",
+      "sha256": "c153c499972f642584336115a80a50044f1348423d5c46ba5da9caa31883b8a1",
+      "bytes": 4374
+    }
+  ],
+  "derivedFiles": [
+    "cooking.json",
+    "crafting.json",
+    "crops.json",
+    "fish.json",
+    "shipping.json",
+    "museum.json",
+    "bundles.json",
+    "monster-slayer.json",
+    "books.json",
+    "joja-development.json",
+    "stardrops.json",
+    "friendship-candidates.json",
+    "enumerators.json"
+  ]
+}

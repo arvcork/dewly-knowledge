@@ -1,0 +1,438 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "category",
+    "nodes"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": {
+      "const": "0.1.0"
+    },
+    "category": {
+      "type": "string"
+    },
+    "nodes": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/node"
+      }
+    }
+  },
+  "$defs": {
+    "condition": {
+      "oneOf": [
+        {
+          "type": "object",
+          "required": [
+            "fact",
+            "op",
+            "value"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "fact": {
+              "type": "string"
+            },
+            "op": {
+              "enum": [
+                "eq",
+                "gte",
+                "lt",
+                "in"
+              ]
+            },
+            "value": {}
+          }
+        },
+        {
+          "type": "object",
+          "required": [
+            "all"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "all": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "$ref": "#/$defs/condition"
+              }
+            }
+          }
+        },
+        {
+          "type": "object",
+          "required": [
+            "any"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "any": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "$ref": "#/$defs/condition"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "node": {
+      "type": "object",
+      "required": [
+        "id",
+        "kind",
+        "trackingRefs",
+        "sourceRefs",
+        "verification"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "any",
+            "all",
+            "gate",
+            "action",
+            "unknown",
+            "count",
+            "sum"
+          ]
+        },
+        "trackingRefs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "sourceRefs": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "verification": {
+          "enum": [
+            "source-verified",
+            "derived-rule",
+            "contract-only",
+            "unresolved"
+          ]
+        },
+        "goal": {
+          "type": "string"
+        },
+        "completion": {
+          "$ref": "#/$defs/condition"
+        },
+        "available": {
+          "$ref": "#/$defs/condition"
+        },
+        "requires": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          }
+        },
+        "reason": {
+          "type": "string"
+        },
+        "blockedReason": {
+          "type": "string"
+        },
+        "task": {
+          "type": "object",
+          "required": [
+            "text"
+          ],
+          "properties": {
+            "text": {
+              "type": "string"
+            },
+            "parameter": {
+              "enum": [
+                "mine.nextCheckpoint",
+                "gold.remaining"
+              ]
+            },
+            "recordRef": {
+              "type": "string"
+            },
+            "quantity": {
+              "type": "number",
+              "minimum": 0
+            },
+            "routeRefs": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        "cost": {
+          "type": "number",
+          "minimum": 0
+        },
+        "probabilistic": {
+          "type": "boolean"
+        },
+        "breadth": {
+          "type": "object",
+          "required": [
+            "completionLogic",
+            "runtimeStatus",
+            "platformRef",
+            "selection",
+            "assets",
+            "limitations"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "completionLogic": {
+              "type": "string"
+            },
+            "runtimeStatus": {
+              "type": "string"
+            },
+            "platformRef": {
+              "type": "string"
+            },
+            "selection": {
+              "type": "string"
+            },
+            "assets": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "limitations": {
+              "type": "string"
+            },
+            "atomicDecomposition": {
+              "type": "object",
+              "required": [
+                "status",
+                "mode",
+                "source",
+                "eligibility",
+                "resultId",
+                "requirements"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "status": {
+                  "enum": [
+                    "complete",
+                    "partial",
+                    "unresolved"
+                  ]
+                },
+                "mode": {
+                  "enum": [
+                    "static",
+                    "dynamic-enumerator",
+                    "counter-target",
+                    "alternative-set"
+                  ]
+                },
+                "source": {
+                  "type": "string"
+                },
+                "eligibility": {
+                  "type": "string"
+                },
+                "resultId": {
+                  "type": "string"
+                },
+                "requirements": {
+                  "type": "array",
+                  "minItems": 1,
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "id",
+                      "kind",
+                      "condition",
+                      "tracking",
+                      "routeRefs",
+                      "prerequisiteRefs",
+                      "verification"
+                    ],
+                    "additionalProperties": false,
+                    "properties": {
+                      "id": {
+                        "type": "string"
+                      },
+                      "kind": {
+                        "enum": [
+                          "item",
+                          "recipe",
+                          "fish",
+                          "crop",
+                          "counter",
+                          "milestone",
+                          "bundle",
+                          "relationship",
+                          "skill",
+                          "event",
+                          "collection",
+                          "alternative"
+                        ]
+                      },
+                      "condition": {
+                        "type": "string"
+                      },
+                      "tracking": {
+                        "type": "object",
+                        "required": [
+                          "value",
+                          "dataType",
+                          "source",
+                          "status"
+                        ],
+                        "additionalProperties": false,
+                        "properties": {
+                          "value": {
+                            "type": "string"
+                          },
+                          "dataType": {
+                            "type": "string"
+                          },
+                          "source": {
+                            "type": "string"
+                          },
+                          "status": {
+                            "enum": [
+                              "source-verified",
+                              "candidate",
+                              "reader-verified",
+                              "unresolved"
+                            ]
+                          }
+                        }
+                      },
+                      "routeRefs": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "prerequisiteRefs": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "verification": {
+                        "enum": [
+                          "source-verified",
+                          "derived-rule",
+                          "contract-only",
+                          "unresolved"
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "target": {
+          "type": "number",
+          "minimum": 0
+        },
+        "materialized": {
+          "type": "object",
+          "required": [
+            "semantics",
+            "target",
+            "recordCount",
+            "recordFile"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "semantics": {
+              "type": "string"
+            },
+            "target": {
+              "type": "number"
+            },
+            "recordCount": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "recordFile": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "action"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "completion",
+              "task"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "gate"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "completion"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "enum": [
+                  "any",
+                  "all"
+                ]
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "requires"
+            ],
+            "properties": {
+              "requires": {
+                "minItems": 1
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

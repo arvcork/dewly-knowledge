@@ -1,0 +1,758 @@
+{
+  "schemaVersion": "0.1.0",
+  "category": "friendships-and-family",
+  "nodes": [
+    {
+      "id": "breadth.unresolved.friendships-and-family",
+      "kind": "unknown",
+      "trackingRefs": [],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354"
+      ],
+      "verification": "unresolved",
+      "reason": "Gift exception/cap readers and child proposal eligibility pending; friendship counts use all saved friendship entries as runtime does. Live content selector and normalized progress reader pending."
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.a_new_friend.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.a_new_friend.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.goal.a_new_friend",
+      "kind": "all",
+      "goal": "a_new_friend",
+      "requires": [
+        "breadth.requirement.a_new_friend"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.a_new_friend.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.a_new_friend.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.requirement.a_new_friend",
+      "kind": "all",
+      "requires": [
+        "breadth.action.a_new_friend"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.a_new_friend.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.a_new_friend.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.action.a_new_friend",
+      "kind": "action",
+      "requires": [
+        "materialized.requirement.a_new_friend"
+      ],
+      "task": {
+        "text": "Befriend one person."
+      },
+      "breadth": {
+        "completionLogic": "count friendshipData.Points >=1250 is >=1",
+        "runtimeStatus": "materialized children; runtime reader pending; no live verification",
+        "platformRef": "data/platform-mapping.json#a_new_friend",
+        "selection": "Select friendshipData entries below needed Points threshold; rank accessible NPCs with daily talk remaining and permitted loved/liked gifts. Read GiftsToday/GiftsThisWeek and relationship state; normally one gift/day and two/week, with birthday/spouse exceptions.",
+        "assets": [
+          "Data/NPCGiftTastes",
+          "Data/Characters"
+        ],
+        "limitations": "Gift exception/cap readers and child proposal eligibility pending; friendship counts use all saved friendship entries as runtime does.",
+        "atomicDecomposition": {
+          "status": "complete",
+          "mode": "dynamic-enumerator",
+          "source": "Farmer.friendshipData",
+          "eligibility": "Saved friendship entries; select distinct NPC names meeting Points threshold. Do not use temporary UI heart rounding.",
+          "resultId": "a_new_friend.friend.{npcName}",
+          "requirements": [
+            {
+              "id": "a_new_friend.friend-threshold",
+              "kind": "relationship",
+              "condition": "at least 1 entries have Points >= 1250",
+              "tracking": {
+                "value": "Farmer.friendshipData[npcName].Points",
+                "dataType": "int32",
+                "source": "Farmer.friendshipData",
+                "status": "source-verified"
+              },
+              "routeRefs": [
+                "breadth.acquire.item"
+              ],
+              "prerequisiteRefs": [],
+              "verification": "derived-rule"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.best_friends.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.best_friends.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.goal.best_friends",
+      "kind": "all",
+      "goal": "best_friends",
+      "requires": [
+        "breadth.requirement.best_friends"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.best_friends.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.best_friends.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.requirement.best_friends",
+      "kind": "all",
+      "requires": [
+        "breadth.action.best_friends"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.best_friends.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.best_friends.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.action.best_friends",
+      "kind": "action",
+      "requires": [
+        "materialized.requirement.best_friends"
+      ],
+      "task": {
+        "text": "Reach ten hearts with one person."
+      },
+      "breadth": {
+        "completionLogic": "count friendshipData.Points >=2500 is >=1",
+        "runtimeStatus": "materialized children; runtime reader pending; no live verification",
+        "platformRef": "data/platform-mapping.json#best_friends",
+        "selection": "Select friendshipData entries below needed Points threshold; rank accessible NPCs with daily talk remaining and permitted loved/liked gifts. Read GiftsToday/GiftsThisWeek and relationship state; normally one gift/day and two/week, with birthday/spouse exceptions.",
+        "assets": [
+          "Data/NPCGiftTastes",
+          "Data/Characters"
+        ],
+        "limitations": "Gift exception/cap readers and child proposal eligibility pending; friendship counts use all saved friendship entries as runtime does.",
+        "atomicDecomposition": {
+          "status": "complete",
+          "mode": "dynamic-enumerator",
+          "source": "Farmer.friendshipData",
+          "eligibility": "Saved friendship entries; select distinct NPC names meeting Points threshold. Do not use temporary UI heart rounding.",
+          "resultId": "best_friends.friend.{npcName}",
+          "requirements": [
+            {
+              "id": "best_friends.friend-threshold",
+              "kind": "relationship",
+              "condition": "at least 1 entries have Points >= 2500",
+              "tracking": {
+                "value": "Farmer.friendshipData[npcName].Points",
+                "dataType": "int32",
+                "source": "Farmer.friendshipData",
+                "status": "source-verified"
+              },
+              "routeRefs": [
+                "breadth.acquire.item"
+              ],
+              "prerequisiteRefs": [],
+              "verification": "derived-rule"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.the_beloved_farmer.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.the_beloved_farmer.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.goal.the_beloved_farmer",
+      "kind": "all",
+      "goal": "the_beloved_farmer",
+      "requires": [
+        "breadth.requirement.the_beloved_farmer"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.the_beloved_farmer.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.the_beloved_farmer.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.requirement.the_beloved_farmer",
+      "kind": "all",
+      "requires": [
+        "breadth.action.the_beloved_farmer"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.the_beloved_farmer.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.the_beloved_farmer.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.action.the_beloved_farmer",
+      "kind": "action",
+      "requires": [
+        "materialized.requirement.the_beloved_farmer"
+      ],
+      "task": {
+        "text": "Reach ten hearts with eight people."
+      },
+      "breadth": {
+        "completionLogic": "count friendshipData.Points >=2500 is >=8",
+        "runtimeStatus": "materialized children; runtime reader pending; no live verification",
+        "platformRef": "data/platform-mapping.json#the_beloved_farmer",
+        "selection": "Select friendshipData entries below needed Points threshold; rank accessible NPCs with daily talk remaining and permitted loved/liked gifts. Read GiftsToday/GiftsThisWeek and relationship state; normally one gift/day and two/week, with birthday/spouse exceptions.",
+        "assets": [
+          "Data/NPCGiftTastes",
+          "Data/Characters"
+        ],
+        "limitations": "Gift exception/cap readers and child proposal eligibility pending; friendship counts use all saved friendship entries as runtime does.",
+        "atomicDecomposition": {
+          "status": "complete",
+          "mode": "dynamic-enumerator",
+          "source": "Farmer.friendshipData",
+          "eligibility": "Saved friendship entries; select distinct NPC names meeting Points threshold. Do not use temporary UI heart rounding.",
+          "resultId": "the_beloved_farmer.friend.{npcName}",
+          "requirements": [
+            {
+              "id": "the_beloved_farmer.friend-threshold",
+              "kind": "relationship",
+              "condition": "at least 8 entries have Points >= 2500",
+              "tracking": {
+                "value": "Farmer.friendshipData[npcName].Points",
+                "dataType": "int32",
+                "source": "Farmer.friendshipData",
+                "status": "source-verified"
+              },
+              "routeRefs": [
+                "breadth.acquire.item"
+              ],
+              "prerequisiteRefs": [],
+              "verification": "derived-rule"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.cliques.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.cliques.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.goal.cliques",
+      "kind": "all",
+      "goal": "cliques",
+      "requires": [
+        "breadth.requirement.cliques"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.cliques.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.cliques.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.requirement.cliques",
+      "kind": "all",
+      "requires": [
+        "breadth.action.cliques"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.cliques.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.cliques.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.action.cliques",
+      "kind": "action",
+      "requires": [
+        "materialized.requirement.cliques"
+      ],
+      "task": {
+        "text": "Reach five hearts with four people."
+      },
+      "breadth": {
+        "completionLogic": "count friendshipData.Points >=1250 is >=4",
+        "runtimeStatus": "materialized children; runtime reader pending; no live verification",
+        "platformRef": "data/platform-mapping.json#cliques",
+        "selection": "Select friendshipData entries below needed Points threshold; rank accessible NPCs with daily talk remaining and permitted loved/liked gifts. Read GiftsToday/GiftsThisWeek and relationship state; normally one gift/day and two/week, with birthday/spouse exceptions.",
+        "assets": [
+          "Data/NPCGiftTastes",
+          "Data/Characters"
+        ],
+        "limitations": "Gift exception/cap readers and child proposal eligibility pending; friendship counts use all saved friendship entries as runtime does.",
+        "atomicDecomposition": {
+          "status": "complete",
+          "mode": "dynamic-enumerator",
+          "source": "Farmer.friendshipData",
+          "eligibility": "Saved friendship entries; select distinct NPC names meeting Points threshold. Do not use temporary UI heart rounding.",
+          "resultId": "cliques.friend.{npcName}",
+          "requirements": [
+            {
+              "id": "cliques.friend-threshold",
+              "kind": "relationship",
+              "condition": "at least 4 entries have Points >= 1250",
+              "tracking": {
+                "value": "Farmer.friendshipData[npcName].Points",
+                "dataType": "int32",
+                "source": "Farmer.friendshipData",
+                "status": "source-verified"
+              },
+              "routeRefs": [
+                "breadth.acquire.item"
+              ],
+              "prerequisiteRefs": [],
+              "verification": "derived-rule"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.networking.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.networking.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.goal.networking",
+      "kind": "all",
+      "goal": "networking",
+      "requires": [
+        "breadth.requirement.networking"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.networking.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.networking.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.requirement.networking",
+      "kind": "all",
+      "requires": [
+        "breadth.action.networking"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.networking.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.networking.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.action.networking",
+      "kind": "action",
+      "requires": [
+        "materialized.requirement.networking"
+      ],
+      "task": {
+        "text": "Reach five hearts with ten people."
+      },
+      "breadth": {
+        "completionLogic": "count friendshipData.Points >=1250 is >=10",
+        "runtimeStatus": "materialized children; runtime reader pending; no live verification",
+        "platformRef": "data/platform-mapping.json#networking",
+        "selection": "Select friendshipData entries below needed Points threshold; rank accessible NPCs with daily talk remaining and permitted loved/liked gifts. Read GiftsToday/GiftsThisWeek and relationship state; normally one gift/day and two/week, with birthday/spouse exceptions.",
+        "assets": [
+          "Data/NPCGiftTastes",
+          "Data/Characters"
+        ],
+        "limitations": "Gift exception/cap readers and child proposal eligibility pending; friendship counts use all saved friendship entries as runtime does.",
+        "atomicDecomposition": {
+          "status": "complete",
+          "mode": "dynamic-enumerator",
+          "source": "Farmer.friendshipData",
+          "eligibility": "Saved friendship entries; select distinct NPC names meeting Points threshold. Do not use temporary UI heart rounding.",
+          "resultId": "networking.friend.{npcName}",
+          "requirements": [
+            {
+              "id": "networking.friend-threshold",
+              "kind": "relationship",
+              "condition": "at least 10 entries have Points >= 1250",
+              "tracking": {
+                "value": "Farmer.friendshipData[npcName].Points",
+                "dataType": "int32",
+                "source": "Farmer.friendshipData",
+                "status": "source-verified"
+              },
+              "routeRefs": [
+                "breadth.acquire.item"
+              ],
+              "prerequisiteRefs": [],
+              "verification": "derived-rule"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.popular.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.popular.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.goal.popular",
+      "kind": "all",
+      "goal": "popular",
+      "requires": [
+        "breadth.requirement.popular"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.popular.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.popular.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.requirement.popular",
+      "kind": "all",
+      "requires": [
+        "breadth.action.popular"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.popular.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.popular.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.action.popular",
+      "kind": "action",
+      "requires": [
+        "materialized.requirement.popular"
+      ],
+      "task": {
+        "text": "Reach five hearts with twenty people."
+      },
+      "breadth": {
+        "completionLogic": "count friendshipData.Points >=1250 is >=20",
+        "runtimeStatus": "materialized children; runtime reader pending; no live verification",
+        "platformRef": "data/platform-mapping.json#popular",
+        "selection": "Select friendshipData entries below needed Points threshold; rank accessible NPCs with daily talk remaining and permitted loved/liked gifts. Read GiftsToday/GiftsThisWeek and relationship state; normally one gift/day and two/week, with birthday/spouse exceptions.",
+        "assets": [
+          "Data/NPCGiftTastes",
+          "Data/Characters"
+        ],
+        "limitations": "Gift exception/cap readers and child proposal eligibility pending; friendship counts use all saved friendship entries as runtime does.",
+        "atomicDecomposition": {
+          "status": "complete",
+          "mode": "dynamic-enumerator",
+          "source": "Farmer.friendshipData",
+          "eligibility": "Saved friendship entries; select distinct NPC names meeting Points threshold. Do not use temporary UI heart rounding.",
+          "resultId": "popular.friend.{npcName}",
+          "requirements": [
+            {
+              "id": "popular.friend-threshold",
+              "kind": "relationship",
+              "condition": "at least 20 entries have Points >= 1250",
+              "tracking": {
+                "value": "Farmer.friendshipData[npcName].Points",
+                "dataType": "int32",
+                "source": "Farmer.friendshipData",
+                "status": "source-verified"
+              },
+              "routeRefs": [
+                "breadth.acquire.item"
+              ],
+              "prerequisiteRefs": [],
+              "verification": "derived-rule"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.full_house.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.full_house.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.goal.full_house",
+      "kind": "all",
+      "goal": "full_house",
+      "requires": [
+        "breadth.requirement.full_house"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.full_house.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.full_house.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.requirement.full_house",
+      "kind": "all",
+      "requires": [
+        "breadth.action.full_house"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.full_house.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.full_house.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.action.full_house",
+      "kind": "action",
+      "requires": [
+        "breadth.unresolved.friendships-and-family"
+      ],
+      "task": {
+        "text": "Develop family progression to two children."
+      },
+      "breadth": {
+        "completionLogic": "player.isMarriedOrRoommates() and getChildrenCount() >=2; platform unlock guard applies",
+        "runtimeStatus": "reader-pending; no live verification",
+        "platformRef": "data/platform-mapping.json#full_house",
+        "selection": "Select friendshipData entries below needed Points threshold; rank accessible NPCs with daily talk remaining and permitted loved/liked gifts. Read GiftsToday/GiftsThisWeek and relationship state; normally one gift/day and two/week, with birthday/spouse exceptions.",
+        "assets": [
+          "Data/NPCGiftTastes",
+          "Data/Characters"
+        ],
+        "limitations": "Gift exception/cap readers and child proposal eligibility pending; friendship counts use all saved friendship entries as runtime does.",
+        "atomicDecomposition": {
+          "status": "complete",
+          "mode": "static",
+          "source": "local-runtime-1.6.15.24354: Stats.checkForFriendshipAchievements; Stats.checkForFullHouseAchievement",
+          "eligibility": "All four milestones are mandatory; pregnancy/adoption offers and waiting periods are progression prerequisites.",
+          "resultId": "full_house.{relationship|house-level|child-1|child-2}",
+          "requirements": [
+            {
+              "id": "full_house.relationship",
+              "kind": "milestone",
+              "condition": "player is married or roommates",
+              "tracking": {
+                "value": "Farmer.isMarriedOrRoommates()",
+                "dataType": "bool",
+                "source": "local-runtime-1.6.15.24354: Stats.checkForFriendshipAchievements; Stats.checkForFullHouseAchievement",
+                "status": "source-verified"
+              },
+              "routeRefs": [],
+              "prerequisiteRefs": [],
+              "verification": "derived-rule"
+            },
+            {
+              "id": "full_house.house-level",
+              "kind": "milestone",
+              "condition": "nursery-capable farmhouse upgrade is complete",
+              "tracking": {
+                "value": "Farmer.HouseUpgradeLevel",
+                "dataType": "int32",
+                "source": "local-runtime-1.6.15.24354: Stats.checkForFriendshipAchievements; Stats.checkForFullHouseAchievement",
+                "status": "candidate"
+              },
+              "routeRefs": [
+                "breadth.progress.construction-access"
+              ],
+              "prerequisiteRefs": [],
+              "verification": "derived-rule"
+            },
+            {
+              "id": "full_house.child-1",
+              "kind": "milestone",
+              "condition": "first child exists",
+              "tracking": {
+                "value": "Farmer.getChildren()[0]",
+                "dataType": "Child?",
+                "source": "local-runtime-1.6.15.24354: Stats.checkForFriendshipAchievements; Stats.checkForFullHouseAchievement",
+                "status": "candidate"
+              },
+              "routeRefs": [],
+              "prerequisiteRefs": [],
+              "verification": "derived-rule"
+            },
+            {
+              "id": "full_house.child-2",
+              "kind": "milestone",
+              "condition": "second child exists",
+              "tracking": {
+                "value": "Farmer.getChildren()[1]",
+                "dataType": "Child?",
+                "source": "local-runtime-1.6.15.24354: Stats.checkForFriendshipAchievements; Stats.checkForFullHouseAchievement",
+                "status": "candidate"
+              },
+              "routeRefs": [],
+              "prerequisiteRefs": [],
+              "verification": "derived-rule"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

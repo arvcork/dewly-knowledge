@@ -1,0 +1,175 @@
+{
+  "category": "festivals-and-events",
+  "displayName": "Festivals and town events",
+  "description": "Stardew Valley Fair, Luau and movie attendance.",
+  "catalogueVersion": "ps4-npwr12196-2026-11-08",
+  "rulesVersion": "ps4-1.6-cautious-2026-11-08-r2",
+  "trophyCount": 3,
+  "trophies": [
+    {
+      "trophyId": "two_thumbs_up",
+      "name": "Two Thumbs Up",
+      "group": "1.6",
+      "tier": "bronze",
+      "classification": "Partially supported",
+      "requirement": "See a movie.",
+      "requirementKind": "binary",
+      "requirementDetail": {
+        "kind": "binary",
+        "flag": "movie_seen"
+      },
+      "dependencies": [],
+      "evidenceRequired": "Trophy evidence boolean: movie_seen; player confirmation of the exact outcome",
+      "progressDerivation": "evaluateCollectionEvidence or explicit flag (movie_seen); partial count only when eligible IDs are recognized",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "movie_visit",
+          "title": "Attend a movie at an unlocked movie theater",
+          "effort": "medium"
+        }
+      ],
+      "knownBlockers": [
+        "Movie Theatre unlock and movie visit tracked by player assertion; not save-synced.",
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false,
+      "dependencyRule": {
+        "trophyId": "two_thumbs_up",
+        "completion": {
+          "type": "FARM",
+          "condition": {
+            "type": "FACT",
+            "flag": "movie_seen"
+          }
+        },
+        "strategicDependencies": []
+      }
+    },
+    {
+      "trophyId": "blue_ribbon",
+      "name": "Blue Ribbon",
+      "group": "1.6",
+      "tier": "bronze",
+      "classification": "Partially supported",
+      "requirement": "Get first place at the Stardew Valley Fair.",
+      "requirementKind": "binary",
+      "requirementDetail": {
+        "kind": "binary",
+        "flag": "fair_first_place"
+      },
+      "dependencies": [],
+      "evidenceRequired": "Trophy evidence boolean: fair_first_place; player confirmation of the exact outcome",
+      "progressDerivation": "evaluateCollectionEvidence or explicit flag (fair_first_place); partial count only when eligible IDs are recognized",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "festival_preparation",
+          "title": "Prepare for the Fall 16 Fair; attendance alone does not satisfy the trophy",
+          "effort": "short"
+        }
+      ],
+      "knownBlockers": [
+        "Event date, prerequisite access and outcome are distinct.",
+        "Fair entry differs from a verified first-place outcome; score and competition calculation not fully checked.",
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false,
+      "dependencyRule": {
+        "trophyId": "blue_ribbon",
+        "completion": {
+          "type": "FARM",
+          "condition": {
+            "type": "FACT",
+            "flag": "fair_first_place"
+          }
+        },
+        "strategicDependencies": [],
+        "opportunityWindow": {
+          "type": "TIME_WINDOW",
+          "season": "fall",
+          "day": 16
+        }
+      }
+    },
+    {
+      "trophyId": "an_unforgettable_soup",
+      "name": "An Unforgettable Soup",
+      "group": "1.6",
+      "tier": "bronze",
+      "classification": "Partially supported",
+      "requirement": "Delight the Governor at the Luau.",
+      "requirementKind": "binary",
+      "requirementDetail": {
+        "kind": "binary",
+        "flag": "governor_delighted"
+      },
+      "dependencies": [],
+      "evidenceRequired": "Trophy evidence boolean: governor_delighted; player confirmation of the exact outcome",
+      "progressDerivation": "evaluateCollectionEvidence or explicit flag (governor_delighted); partial count only when eligible IDs are recognized",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "festival_preparation",
+          "title": "Prepare for the Summer 11 Luau; attendance alone does not satisfy the trophy",
+          "effort": "short"
+        }
+      ],
+      "knownBlockers": [
+        "Event date, prerequisite access and outcome are distinct.",
+        "Luau attendance differs from verified Governor delight; ingredient eligibility not fully checked.",
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false,
+      "dependencyRule": {
+        "trophyId": "an_unforgettable_soup",
+        "completion": {
+          "type": "FARM",
+          "condition": {
+            "type": "FACT",
+            "flag": "governor_delighted"
+          }
+        },
+        "strategicDependencies": [],
+        "opportunityWindow": {
+          "type": "TIME_WINDOW",
+          "season": "summer",
+          "day": 11
+        }
+      }
+    }
+  ]
+}

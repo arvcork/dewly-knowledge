@@ -1,0 +1,211 @@
+{
+  "category": "platform-specific",
+  "displayName": "Platform-specific trophies",
+  "description": "PlayStation-only Platinum requirement, retained for lossless conversion.",
+  "catalogueVersion": "ps4-npwr12196-2026-11-08",
+  "rulesVersion": "ps4-1.6-cautious-2026-11-08-r2",
+  "trophyCount": 1,
+  "trophies": [
+    {
+      "trophyId": "iridium_seal",
+      "name": "Iridium Seal",
+      "group": "base",
+      "tier": "platinum",
+      "classification": "Trackable but limited planning",
+      "requirement": "Earn the other base-game PlayStation trophies.",
+      "requirementKind": "platinum",
+      "requirementDetail": {
+        "kind": "platinum"
+      },
+      "dependencies": [],
+      "evidenceRequired": "Only explicitly confirmed base-game PSN trophies",
+      "progressDerivation": "All 40 other base trophies must be explicitly PSN-confirmed (no automatic completion)",
+      "playStationConfirmation": "No direct farming action. Only explicit confirmations of every other base trophy.",
+      "actionablePlanning": false,
+      "examplePracticalSteps": [],
+      "knownBlockers": [
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false,
+      "dependencyRule": {
+        "trophyId": "iridium_seal",
+        "completion": {
+          "type": "AND",
+          "nodes": [
+            {
+              "type": "ACCOUNT_TROPHY",
+              "trophyId": "greenhorn"
+            },
+            {
+              "type": "ACCOUNT_TROPHY",
+              "trophyId": "cowpoke"
+            },
+            {
+              "type": "ACCOUNT_TROPHY",
+              "trophyId": "homesteader"
+            },
+            {
+              "type": "ACCOUNT_TROPHY",
+              "trophyId": "millionaire"
+            },
+            {
+              "type": "ACCOUNT_TROPHY",
+              "trophyId": "legend"
+            },
+            {
+              "type": "ACCOUNT_TROPHY",
+              "trophyId": "a_complete_collection"
+            },
+            {
+              "type": "ACCOUNT_TROPHY",
+              "trophyId": "a_new_friend"
+            },
+            {
+              "type": "ACCOUNT_TROPHY",
+              "trophyId": "best_friends"
+            },
+            {
+              "type": "ACCOUNT_TROPHY",
+              "trophyId": "the_beloved_farmer"
+            },
+            {
+              "type": "ACCOUNT_TROPHY",
+              "trophyId": "cliques"
+            },
+            {
+              "type": "ACCOUNT_TROPHY",
+              "trophyId": "networking"
+            },
+            {
+              "type": "ACCOUNT_TROPHY",
+              "trophyId": "popular"
+            },
+            {
+              "type": "ACCOUNT_TROPHY",
+              "trophyId": "cook"
+            },
+            {
+              "type": "ACCOUNT_TROPHY",
+              "trophyId": "sous_chef"
+            },
+            {
+              "type": "ACCOUNT_TROPHY",
+              "trophyId": "gourmet_chef"
+            },
+            {
+              "type": "ACCOUNT_TROPHY",
+              "trophyId": "moving_up"
+            },
+            {
+              "type": "ACCOUNT_TROPHY",
+              "trophyId": "living_large"
+            },
+            {
+              "type": "ACCOUNT_TROPHY",
+              "trophyId": "diy"
+            },
+            {
+              "type": "ACCOUNT_TROPHY",
+              "trophyId": "artisan"
+            },
+            {
+              "type": "ACCOUNT_TROPHY",
+              "trophyId": "craft_master"
+            },
+            {
+              "type": "ACCOUNT_TROPHY",
+              "trophyId": "fisherman"
+            },
+            {
+              "type": "ACCOUNT_TROPHY",
+              "trophyId": "ol_mariner"
+            },
+            {
+              "type": "ACCOUNT_TROPHY",
+              "trophyId": "master_angler"
+            },
+            {
+              "type": "ACCOUNT_TROPHY",
+              "trophyId": "mother_catch"
+            },
+            {
+              "type": "ACCOUNT_TROPHY",
+              "trophyId": "treasure_trove"
+            },
+            {
+              "type": "ACCOUNT_TROPHY",
+              "trophyId": "gofer"
+            },
+            {
+              "type": "ACCOUNT_TROPHY",
+              "trophyId": "a_big_help"
+            },
+            {
+              "type": "ACCOUNT_TROPHY",
+              "trophyId": "polyculture"
+            },
+            {
+              "type": "ACCOUNT_TROPHY",
+              "trophyId": "monoculture"
+            },
+            {
+              "type": "ACCOUNT_TROPHY",
+              "trophyId": "full_shipment"
+            },
+            {
+              "type": "ACCOUNT_TROPHY",
+              "trophyId": "prairie_king"
+            },
+            {
+              "type": "ACCOUNT_TROPHY",
+              "trophyId": "the_bottom"
+            },
+            {
+              "type": "ACCOUNT_TROPHY",
+              "trophyId": "local_legend"
+            },
+            {
+              "type": "ACCOUNT_TROPHY",
+              "trophyId": "joja_co_member_of_the_year"
+            },
+            {
+              "type": "ACCOUNT_TROPHY",
+              "trophyId": "mystery_of_the_stardrops"
+            },
+            {
+              "type": "ACCOUNT_TROPHY",
+              "trophyId": "fectors_challenge"
+            },
+            {
+              "type": "ACCOUNT_TROPHY",
+              "trophyId": "full_house"
+            },
+            {
+              "type": "ACCOUNT_TROPHY",
+              "trophyId": "singular_talent"
+            },
+            {
+              "type": "ACCOUNT_TROPHY",
+              "trophyId": "master_of_the_five_ways"
+            },
+            {
+              "type": "ACCOUNT_TROPHY",
+              "trophyId": "protector_of_the_valley"
+            }
+          ]
+        },
+        "strategicDependencies": []
+      }
+    }
+  ]
+}

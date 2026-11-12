@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "0.1.0",
+  "category": "fishing",
+  "provenance": "Supplied source assertions, not newly verified gameplay rules.",
+  "entries": [
+    {
+      "id": "fisherman",
+      "name": "Fisherman",
+      "sourceRequirement": "Catch 10 different fish.",
+      "sourceDefinitionRef": "data/sources/original/trophy-50-coverage.json#/trophies/21",
+      "sourceDependencyRef": "data/sources/original/trophy-dependency-graph.json#/graph/fisherman",
+      "verification": "source-import-only"
+    },
+    {
+      "id": "ol_mariner",
+      "name": "Ol' Mariner",
+      "sourceRequirement": "Catch 24 different fish.",
+      "sourceDefinitionRef": "data/sources/original/trophy-50-coverage.json#/trophies/22",
+      "sourceDependencyRef": "data/sources/original/trophy-dependency-graph.json#/graph/ol_mariner",
+      "verification": "source-import-only"
+    },
+    {
+      "id": "master_angler",
+      "name": "Master Angler",
+      "sourceRequirement": "Catch every required fish.",
+      "sourceDefinitionRef": "data/sources/original/trophy-50-coverage.json#/trophies/23",
+      "sourceDependencyRef": "data/sources/original/trophy-dependency-graph.json#/graph/master_angler",
+      "verification": "source-import-only"
+    },
+    {
+      "id": "mother_catch",
+      "name": "Mother Catch",
+      "sourceRequirement": "Catch 100 fish.",
+      "sourceDefinitionRef": "data/sources/original/trophy-50-coverage.json#/trophies/24",
+      "sourceDependencyRef": "data/sources/original/trophy-dependency-graph.json#/graph/mother_catch",
+      "verification": "source-import-only"
+    }
+  ]
+}

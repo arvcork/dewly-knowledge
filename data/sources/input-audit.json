@@ -1,0 +1,105 @@
+{
+  "schemaVersion": "0.1.0",
+  "sourceCatalogueVersion": "ps4-npwr12196-2026-11-08",
+  "counts": {
+    "coverage": 50,
+    "graph": 50,
+    "categoryEntries": 50,
+    "categories": 16
+  },
+  "discrepancies": [],
+  "platformDiscrepancies": [
+    "Input is a PlayStation catalogue including Iridium Seal; target is Windows Xbox app.",
+    "Nine 1.6 additions need separate Windows catalogue verification; Xbox console catalogue is insufficient evidence."
+  ],
+  "files": [
+    {
+      "path": "data/sources/original/stardew-achievements-by-category/categories/arcade.json",
+      "sha256": "fd1348d55e89cd05b986d271fca0b5e709b8aac11603356ba2adf33e3e3bd0ec"
+    },
+    {
+      "path": "data/sources/original/stardew-achievements-by-category/categories/community-routes.json",
+      "sha256": "1610d0237aa89ec62daf3bab8f555b2bb15c1b78b30fa576732d829c585b2868"
+    },
+    {
+      "path": "data/sources/original/stardew-achievements-by-category/categories/cooking.json",
+      "sha256": "bb3dfa2257d88d59552179ecef2681c475537424c916226512742a31fd5de1a8"
+    },
+    {
+      "path": "data/sources/original/stardew-achievements-by-category/categories/crafting.json",
+      "sha256": "12ea5f34a6dda039bdd6ad1691fbabc1702fee3f1bc6a6c4d41f88a0b41bda99"
+    },
+    {
+      "path": "data/sources/original/stardew-achievements-by-category/categories/exploration-and-endgame.json",
+      "sha256": "c6786999cba81718552883930a6c17582f065ce26acb6851c8013f822110e769"
+    },
+    {
+      "path": "data/sources/original/stardew-achievements-by-category/categories/farmhouse.json",
+      "sha256": "cf151f036e3da79a0bcd0fce33735d8c5d7759ad4a8a8ed7cc69813f05d24919"
+    },
+    {
+      "path": "data/sources/original/stardew-achievements-by-category/categories/farming.json",
+      "sha256": "3967e9cef6ced324cd294c907cc8adc1460ece8de28c9518cfc8139688109523"
+    },
+    {
+      "path": "data/sources/original/stardew-achievements-by-category/categories/festivals-and-events.json",
+      "sha256": "fa0e08980c4aef2bcddcddbdb3f288321cb2d02bf4a5324fd289e6300bcadd64"
+    },
+    {
+      "path": "data/sources/original/stardew-achievements-by-category/categories/fishing.json",
+      "sha256": "2ae583024b6e2c72234a53521470f9b43be684240ce524100f9c2651e57803ac"
+    },
+    {
+      "path": "data/sources/original/stardew-achievements-by-category/categories/foraging-and-collections.json",
+      "sha256": "73913828d88abb19fd7b759f6a916703a258224c7e7f232f972ddd0d2914ea6d"
+    },
+    {
+      "path": "data/sources/original/stardew-achievements-by-category/categories/friendships-and-family.json",
+      "sha256": "e615e1790a49c2279e2d4c2549f15bfc4325ba89aed326c026f890a8da962b19"
+    },
+    {
+      "path": "data/sources/original/stardew-achievements-by-category/categories/mining-and-combat.json",
+      "sha256": "3f15073b8eb31ce128a2992766c99bdd00302dcbbc1f936e73be20482769853d"
+    },
+    {
+      "path": "data/sources/original/stardew-achievements-by-category/categories/platform-specific.json",
+      "sha256": "7fa739002c557e603f5309d950327e36c90946c9d7f07ba592c538576cc6fa04"
+    },
+    {
+      "path": "data/sources/original/stardew-achievements-by-category/categories/requests-and-quests.json",
+      "sha256": "f39325a143eee1b966599ed1fe96f0e4ddf3d13f37aeae52821e382d9e03b845"
+    },
+    {
+      "path": "data/sources/original/stardew-achievements-by-category/categories/shipping-and-earnings.json",
+      "sha256": "27e9a9fcbec8e14abcbdea311949f32cdb6362138491b68d5c07990070c7ac78"
+    },
+    {
+      "path": "data/sources/original/stardew-achievements-by-category/categories/skills.json",
+      "sha256": "0f09f432720b5b6529f1379f4a57a8df0bfee4c484d486bc4f17015af3633a2b"
+    },
+    {
+      "path": "data/sources/original/stardew-achievements-by-category/manifest.json",
+      "sha256": "ef1b92cf3b351bd39a92cc1b8e13ab17ef7183d316c313fad65644dc8f9d6aa6"
+    },
+    {
+      "path": "data/sources/original/stardew-achievements-by-category/README.md",
+      "sha256": "a3b8ee25fa7c24e9120e7bf1c6c6a2da514c18fc95c9e4439f0cb91c64a6329f"
+    },
+    {
+      "path": "data/sources/original/stardew-achievements-by-category/validate.py",
+      "sha256": "b68989af772d2fe084ef19ae49816e5c84ff54be6acd8aab4a069ab1c48e023f"
+    },
+    {
+      "path": "data/sources/original/stardew-achievements-by-category.zip",
+      "sha256": "115d7a70d3e7ce4d0598a8cbf42b2a65a7cc82456d42d738ac391f5b359a91ac"
+    },
+    {
+      "path": "data/sources/original/trophy-50-coverage.json",
+      "sha256": "19c95d98339ae905ac01cfa0a9d49c035dfb078f0e5f7c2a99c71754f27fab21"
+    },
+    {
+      "path": "data/sources/original/trophy-dependency-graph.json",
+      "sha256": "2e384d5d8f26d97a430631b6c7f1b457055276870b9fa49ef46e9360eaaeba3c"
+    }
+  ]
+}

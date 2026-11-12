@@ -1,0 +1,621 @@
+{
+  "schemaVersion": "0.1.0",
+  "category": "shipping-and-earnings",
+  "nodes": [
+    {
+      "id": "breadth.unresolved.shipping-and-earnings",
+      "kind": "unknown",
+      "trackingRefs": [],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354"
+      ],
+      "verification": "unresolved",
+      "reason": "Item acquisition routes and exact shipment predicate adapter pending; ownership is not shipping history. Live content selector and normalized progress reader pending."
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.greenhorn.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.greenhorn.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.goal.greenhorn",
+      "kind": "all",
+      "goal": "greenhorn",
+      "requires": [
+        "breadth.requirement.greenhorn"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.greenhorn.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.greenhorn.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.requirement.greenhorn",
+      "kind": "all",
+      "requires": [
+        "breadth.action.greenhorn"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.greenhorn.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.greenhorn.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.action.greenhorn",
+      "kind": "action",
+      "requires": [
+        "breadth.unresolved.shipping-and-earnings",
+        "breadth.acquire.item"
+      ],
+      "task": {
+        "text": "Sell unreserved produce or other saleable items through an available route."
+      },
+      "breadth": {
+        "completionLogic": "player.totalMoneyEarned >= 15000",
+        "runtimeStatus": "reader-pending; no live verification",
+        "platformRef": "data/platform-mapping.json#greenhorn",
+        "selection": "For collection goals enumerate object registry entries using category != -7 and != -2 plus Object.isPotentialBasicShipped, then subtract basicShipped keys (runtime tests key presence). For earnings select owned, unreserved saleable items with observed sale routes.",
+        "assets": [
+          "Data/Objects",
+          "Data/Shops"
+        ],
+        "limitations": "Item acquisition routes and exact shipment predicate adapter pending; ownership is not shipping history.",
+        "atomicDecomposition": {
+          "status": "complete",
+          "mode": "counter-target",
+          "source": "local-runtime-1.6.15.24354: Stats.checkForMoneyAchievements; Utility.getFarmerItemsShippedPercent; Object.isPotentialBasicShipped",
+          "eligibility": "Lifetime team-root earnings; current wallet and inventory value are ineligible.",
+          "resultId": "greenhorn.lifetime-earnings",
+          "requirements": [
+            {
+              "id": "greenhorn.earn-15000",
+              "kind": "counter",
+              "condition": "totalMoneyEarned >= 15000",
+              "tracking": {
+                "value": "Farmer.totalMoneyEarned",
+                "dataType": "int64",
+                "source": "local-runtime-1.6.15.24354: Stats.checkForMoneyAchievements; Utility.getFarmerItemsShippedPercent; Object.isPotentialBasicShipped",
+                "status": "source-verified"
+              },
+              "routeRefs": [
+                "breadth.acquire.item"
+              ],
+              "prerequisiteRefs": [],
+              "verification": "derived-rule"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.cowpoke.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.cowpoke.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.goal.cowpoke",
+      "kind": "all",
+      "goal": "cowpoke",
+      "requires": [
+        "breadth.requirement.cowpoke"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.cowpoke.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.cowpoke.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.requirement.cowpoke",
+      "kind": "all",
+      "requires": [
+        "breadth.action.cowpoke"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.cowpoke.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.cowpoke.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.action.cowpoke",
+      "kind": "action",
+      "requires": [
+        "breadth.unresolved.shipping-and-earnings",
+        "breadth.acquire.item"
+      ],
+      "task": {
+        "text": "Earn additional lifetime income."
+      },
+      "breadth": {
+        "completionLogic": "player.totalMoneyEarned >= 50000",
+        "runtimeStatus": "reader-pending; no live verification",
+        "platformRef": "data/platform-mapping.json#cowpoke",
+        "selection": "For collection goals enumerate object registry entries using category != -7 and != -2 plus Object.isPotentialBasicShipped, then subtract basicShipped keys (runtime tests key presence). For earnings select owned, unreserved saleable items with observed sale routes.",
+        "assets": [
+          "Data/Objects",
+          "Data/Shops"
+        ],
+        "limitations": "Item acquisition routes and exact shipment predicate adapter pending; ownership is not shipping history.",
+        "atomicDecomposition": {
+          "status": "complete",
+          "mode": "counter-target",
+          "source": "local-runtime-1.6.15.24354: Stats.checkForMoneyAchievements; Utility.getFarmerItemsShippedPercent; Object.isPotentialBasicShipped",
+          "eligibility": "Lifetime team-root earnings; current wallet and inventory value are ineligible.",
+          "resultId": "cowpoke.lifetime-earnings",
+          "requirements": [
+            {
+              "id": "cowpoke.earn-50000",
+              "kind": "counter",
+              "condition": "totalMoneyEarned >= 50000",
+              "tracking": {
+                "value": "Farmer.totalMoneyEarned",
+                "dataType": "int64",
+                "source": "local-runtime-1.6.15.24354: Stats.checkForMoneyAchievements; Utility.getFarmerItemsShippedPercent; Object.isPotentialBasicShipped",
+                "status": "source-verified"
+              },
+              "routeRefs": [
+                "breadth.acquire.item"
+              ],
+              "prerequisiteRefs": [],
+              "verification": "derived-rule"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.homesteader.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.homesteader.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.goal.homesteader",
+      "kind": "all",
+      "goal": "homesteader",
+      "requires": [
+        "breadth.requirement.homesteader"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.homesteader.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.homesteader.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.requirement.homesteader",
+      "kind": "all",
+      "requires": [
+        "breadth.action.homesteader"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.homesteader.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.homesteader.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.action.homesteader",
+      "kind": "action",
+      "requires": [
+        "breadth.unresolved.shipping-and-earnings",
+        "breadth.acquire.item"
+      ],
+      "task": {
+        "text": "Earn additional lifetime income."
+      },
+      "breadth": {
+        "completionLogic": "player.totalMoneyEarned >= 250000",
+        "runtimeStatus": "reader-pending; no live verification",
+        "platformRef": "data/platform-mapping.json#homesteader",
+        "selection": "For collection goals enumerate object registry entries using category != -7 and != -2 plus Object.isPotentialBasicShipped, then subtract basicShipped keys (runtime tests key presence). For earnings select owned, unreserved saleable items with observed sale routes.",
+        "assets": [
+          "Data/Objects",
+          "Data/Shops"
+        ],
+        "limitations": "Item acquisition routes and exact shipment predicate adapter pending; ownership is not shipping history.",
+        "atomicDecomposition": {
+          "status": "complete",
+          "mode": "counter-target",
+          "source": "local-runtime-1.6.15.24354: Stats.checkForMoneyAchievements; Utility.getFarmerItemsShippedPercent; Object.isPotentialBasicShipped",
+          "eligibility": "Lifetime team-root earnings; current wallet and inventory value are ineligible.",
+          "resultId": "homesteader.lifetime-earnings",
+          "requirements": [
+            {
+              "id": "homesteader.earn-250000",
+              "kind": "counter",
+              "condition": "totalMoneyEarned >= 250000",
+              "tracking": {
+                "value": "Farmer.totalMoneyEarned",
+                "dataType": "int64",
+                "source": "local-runtime-1.6.15.24354: Stats.checkForMoneyAchievements; Utility.getFarmerItemsShippedPercent; Object.isPotentialBasicShipped",
+                "status": "source-verified"
+              },
+              "routeRefs": [
+                "breadth.acquire.item"
+              ],
+              "prerequisiteRefs": [],
+              "verification": "derived-rule"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.millionaire.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.millionaire.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.goal.millionaire",
+      "kind": "all",
+      "goal": "millionaire",
+      "requires": [
+        "breadth.requirement.millionaire"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.millionaire.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.millionaire.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.requirement.millionaire",
+      "kind": "all",
+      "requires": [
+        "breadth.action.millionaire"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.millionaire.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.millionaire.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.action.millionaire",
+      "kind": "action",
+      "requires": [
+        "breadth.unresolved.shipping-and-earnings",
+        "breadth.acquire.item"
+      ],
+      "task": {
+        "text": "Earn additional lifetime income."
+      },
+      "breadth": {
+        "completionLogic": "player.totalMoneyEarned >= 1000000",
+        "runtimeStatus": "reader-pending; no live verification",
+        "platformRef": "data/platform-mapping.json#millionaire",
+        "selection": "For collection goals enumerate object registry entries using category != -7 and != -2 plus Object.isPotentialBasicShipped, then subtract basicShipped keys (runtime tests key presence). For earnings select owned, unreserved saleable items with observed sale routes.",
+        "assets": [
+          "Data/Objects",
+          "Data/Shops"
+        ],
+        "limitations": "Item acquisition routes and exact shipment predicate adapter pending; ownership is not shipping history.",
+        "atomicDecomposition": {
+          "status": "complete",
+          "mode": "counter-target",
+          "source": "local-runtime-1.6.15.24354: Stats.checkForMoneyAchievements; Utility.getFarmerItemsShippedPercent; Object.isPotentialBasicShipped",
+          "eligibility": "Lifetime team-root earnings; current wallet and inventory value are ineligible.",
+          "resultId": "millionaire.lifetime-earnings",
+          "requirements": [
+            {
+              "id": "millionaire.earn-1000000",
+              "kind": "counter",
+              "condition": "totalMoneyEarned >= 1000000",
+              "tracking": {
+                "value": "Farmer.totalMoneyEarned",
+                "dataType": "int64",
+                "source": "local-runtime-1.6.15.24354: Stats.checkForMoneyAchievements; Utility.getFarmerItemsShippedPercent; Object.isPotentialBasicShipped",
+                "status": "source-verified"
+              },
+              "routeRefs": [
+                "breadth.acquire.item"
+              ],
+              "prerequisiteRefs": [],
+              "verification": "derived-rule"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.legend.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.legend.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.goal.legend",
+      "kind": "all",
+      "goal": "legend",
+      "requires": [
+        "breadth.requirement.legend"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.legend.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.legend.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.requirement.legend",
+      "kind": "all",
+      "requires": [
+        "breadth.action.legend"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.legend.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.legend.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.action.legend",
+      "kind": "action",
+      "requires": [
+        "breadth.unresolved.shipping-and-earnings",
+        "breadth.acquire.item"
+      ],
+      "task": {
+        "text": "Earn additional lifetime income."
+      },
+      "breadth": {
+        "completionLogic": "player.totalMoneyEarned >= 10000000",
+        "runtimeStatus": "reader-pending; no live verification",
+        "platformRef": "data/platform-mapping.json#legend",
+        "selection": "For collection goals enumerate object registry entries using category != -7 and != -2 plus Object.isPotentialBasicShipped, then subtract basicShipped keys (runtime tests key presence). For earnings select owned, unreserved saleable items with observed sale routes.",
+        "assets": [
+          "Data/Objects",
+          "Data/Shops"
+        ],
+        "limitations": "Item acquisition routes and exact shipment predicate adapter pending; ownership is not shipping history.",
+        "atomicDecomposition": {
+          "status": "complete",
+          "mode": "counter-target",
+          "source": "local-runtime-1.6.15.24354: Stats.checkForMoneyAchievements; Utility.getFarmerItemsShippedPercent; Object.isPotentialBasicShipped",
+          "eligibility": "Lifetime team-root earnings; current wallet and inventory value are ineligible.",
+          "resultId": "legend.lifetime-earnings",
+          "requirements": [
+            {
+              "id": "legend.earn-10000000",
+              "kind": "counter",
+              "condition": "totalMoneyEarned >= 10000000",
+              "tracking": {
+                "value": "Farmer.totalMoneyEarned",
+                "dataType": "int64",
+                "source": "local-runtime-1.6.15.24354: Stats.checkForMoneyAchievements; Utility.getFarmerItemsShippedPercent; Object.isPotentialBasicShipped",
+                "status": "source-verified"
+              },
+              "routeRefs": [
+                "breadth.acquire.item"
+              ],
+              "prerequisiteRefs": [],
+              "verification": "derived-rule"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.full_shipment.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.full_shipment.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.goal.full_shipment",
+      "kind": "all",
+      "goal": "full_shipment",
+      "requires": [
+        "breadth.requirement.full_shipment"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.full_shipment.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.full_shipment.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.requirement.full_shipment",
+      "kind": "all",
+      "requires": [
+        "breadth.action.full_shipment"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.full_shipment.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.full_shipment.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.action.full_shipment",
+      "kind": "action",
+      "requires": [
+        "materialized.requirement.full_shipment"
+      ],
+      "task": {
+        "text": "Ship each missing qualifying object; await overnight processing."
+      },
+      "breadth": {
+        "completionLogic": "Utility.hasFarmerShippedAllItems()",
+        "runtimeStatus": "materialized children; runtime reader pending; no live verification",
+        "platformRef": "data/platform-mapping.json#full_shipment",
+        "selection": "For collection goals enumerate object registry entries using category != -7 and != -2 plus Object.isPotentialBasicShipped, then subtract basicShipped keys (runtime tests key presence). For earnings select owned, unreserved saleable items with observed sale routes.",
+        "assets": [
+          "Data/Objects",
+          "Data/Shops"
+        ],
+        "limitations": "Item acquisition routes and exact shipment predicate adapter pending; ownership is not shipping history.",
+        "atomicDecomposition": {
+          "status": "complete",
+          "mode": "dynamic-enumerator",
+          "source": "Data/Objects + Object.isPotentialBasicShipped",
+          "eligibility": "Object registry entries accepted by isPotentialBasicShipped; exclude category -7 and -2 exactly as runtime helper does.",
+          "resultId": "full_shipment.object.{qualifiedItemId}",
+          "requirements": [
+            {
+              "id": "full_shipment.each-object",
+              "kind": "item",
+              "condition": "basicShipped contains the enumerated object key with positive quantity",
+              "tracking": {
+                "value": "Farmer.basicShipped[localItemId]",
+                "dataType": "int32",
+                "source": "Object.isPotentialBasicShipped + Farmer.basicShipped",
+                "status": "source-verified"
+              },
+              "routeRefs": [
+                "breadth.acquire.item"
+              ],
+              "prerequisiteRefs": [],
+              "verification": "derived-rule"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

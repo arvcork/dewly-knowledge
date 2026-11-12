@@ -1,0 +1,302 @@
+{
+  "schemaVersion": "1.0.0",
+  "gameVersion": "1.6.15.24354",
+  "sources": [
+    {
+      "id": "source.research2.mining",
+      "type": "external-wiki",
+      "url": "https://stardewvalleywiki.com/Mining",
+      "description": "Gem and ore nodes, locations and minimum pre-completion mine floors."
+    },
+    {
+      "id": "source.research2.gems",
+      "type": "external-wiki",
+      "url": "https://stardewvalleywiki.com/Minerals",
+      "description": "Gem drops, panning and treasure alternatives."
+    },
+    {
+      "id": "source.research2.earth",
+      "type": "external-wiki",
+      "url": "https://stardewvalleywiki.com/Earth_Crystal",
+      "description": "Mines foraging, geodes and Duggy drops."
+    },
+    {
+      "id": "source.research2.scroll1",
+      "type": "external-wiki",
+      "url": "https://stardewvalleywiki.com/Dwarf_Scroll_I",
+      "description": "Mine dirt on any floor or specified monster drops."
+    },
+    {
+      "id": "source.research2.scroll2",
+      "type": "external-wiki",
+      "url": "https://stardewvalleywiki.com/Dwarf_Scroll_II",
+      "description": "Tilling on floors 1-39 or four named monster drops."
+    },
+    {
+      "id": "source.research2.scroll3",
+      "type": "external-wiki",
+      "url": "https://stardewvalleywiki.com/Dwarf_Scroll_III",
+      "description": "Specified colored slimes, bats and other monsters can drop this scroll."
+    },
+    {
+      "id": "source.research2.scroll4",
+      "type": "external-wiki",
+      "url": "https://stardewvalleywiki.com/Dwarf_Scroll_IV",
+      "description": "Tilling floors 80+ or monster drop subject to exclusions."
+    },
+    {
+      "id": "source.research2.iridium",
+      "type": "external-wiki",
+      "url": "https://stardewvalleywiki.com/Iridium_Ore",
+      "description": "Iridium node, Mystic Stone, Magma/Omni geodes and other alternatives."
+    },
+    {
+      "id": "source.research2.battery",
+      "type": "external-wiki",
+      "url": "https://stardewvalleywiki.com/Battery_Pack",
+      "description": "Lightning rod storms, solar panels, Traveling Cart, monster drops, fish pond."
+    },
+    {
+      "id": "source.research2.roe",
+      "type": "external-wiki",
+      "url": "https://stardewvalleywiki.com/Roe",
+      "description": "Fish pond production; fishing treasure only with Jewels of the Sea power."
+    },
+    {
+      "id": "source.research2.tea",
+      "type": "external-wiki",
+      "url": "https://stardewvalleywiki.com/Tea_Sapling",
+      "description": "20-day tea bush, last seven days; winters indoors; Caroline 2 hearts recipe and purchase alternatives."
+    },
+    {
+      "id": "source.research2.cinder",
+      "type": "external-wiki",
+      "url": "https://stardewvalleywiki.com/Cinder_Shard",
+      "description": "Volcano nodes, monsters, Stingray pond and special Skull Cavern source."
+    },
+    {
+      "id": "source.research2.bones",
+      "type": "external-wiki",
+      "url": "https://stardewvalleywiki.com/Bone_Fragment",
+      "description": "Skeleton/Lava Lurk drops, bone nodes, artifact spots and panning."
+    },
+    {
+      "id": "source.research2.radioactive",
+      "type": "external-wiki",
+      "url": "https://stardewvalleywiki.com/Radioactive_Ore",
+      "description": "Dangerous Mines and dangerous Skull Cavern toggle/quest unlocks."
+    },
+    {
+      "id": "source.research2.dehydrator",
+      "type": "external-wiki",
+      "url": "https://stardewvalleywiki.com/Dehydrator",
+      "description": "Five matching eligible items, next morning output, Pierre recipe and construction inputs."
+    },
+    {
+      "id": "source.research2.moss",
+      "type": "external-wiki",
+      "url": "https://stardewvalleywiki.com/Moss",
+      "description": "Collect moss from actually moss-covered trees and green-rain weeds."
+    },
+    {
+      "id": "source.research2.mystic",
+      "type": "external-wiki",
+      "url": "https://stardewvalleywiki.com/Mystic_Syrup",
+      "description": "Mystic Tree with Tapper 7 days or Heavy Tapper 3 days."
+    },
+    {
+      "id": "source.research2.fish-smoker",
+      "type": "external-wiki",
+      "url": "https://stardewvalleywiki.com/Fish_Smoker",
+      "description": "One fish plus one coal; 50 minutes; recipe at Willy 10,000g."
+    },
+    {
+      "id": "source.research2.book",
+      "type": "external-wiki",
+      "url": "https://stardewvalleywiki.com/Book_of_Mysteries",
+      "description": "Mystery and Golden Mystery Boxes with progressive odds, blue box threshold over 10."
+    },
+    {
+      "id": "source.research2.dragon",
+      "type": "external-wiki",
+      "url": "https://stardewvalleywiki.com/Dragon_Tooth",
+      "description": "Volcano skeletal remains, Lava Lurk 15% or Stingray pond at least 9."
+    },
+    {
+      "id": "source.research2.trees",
+      "type": "external-wiki",
+      "url": "https://stardewvalleywiki.com/Trees",
+      "description": "Tree species produce seeds from shaking/felling or seed spots."
+    }
+  ],
+  "records": [
+    {
+      "id": "evidence.research.acquire2.mining",
+      "claim": "Gem and ore nodes, locations and minimum pre-completion mine floors.",
+      "sourceRef": "source.research2.mining",
+      "verificationLevel": "externally-researched-not-live-tested",
+      "liveGameplayTested": false,
+      "gameEvidenceStatus": "not asserted as installed-game assembly evidence"
+    },
+    {
+      "id": "evidence.research.acquire2.gems",
+      "claim": "Gem drops, panning and treasure alternatives.",
+      "sourceRef": "source.research2.gems",
+      "verificationLevel": "externally-researched-not-live-tested",
+      "liveGameplayTested": false,
+      "gameEvidenceStatus": "not asserted as installed-game assembly evidence"
+    },
+    {
+      "id": "evidence.research.acquire2.earth",
+      "claim": "Mines foraging, geodes and Duggy drops.",
+      "sourceRef": "source.research2.earth",
+      "verificationLevel": "externally-researched-not-live-tested",
+      "liveGameplayTested": false,
+      "gameEvidenceStatus": "not asserted as installed-game assembly evidence"
+    },
+    {
+      "id": "evidence.research.acquire2.scroll1",
+      "claim": "Mine dirt on any floor or specified monster drops.",
+      "sourceRef": "source.research2.scroll1",
+      "verificationLevel": "externally-researched-not-live-tested",
+      "liveGameplayTested": false,
+      "gameEvidenceStatus": "not asserted as installed-game assembly evidence"
+    },
+    {
+      "id": "evidence.research.acquire2.scroll2",
+      "claim": "Tilling on floors 1-39 or four named monster drops.",
+      "sourceRef": "source.research2.scroll2",
+      "verificationLevel": "externally-researched-not-live-tested",
+      "liveGameplayTested": false,
+      "gameEvidenceStatus": "not asserted as installed-game assembly evidence"
+    },
+    {
+      "id": "evidence.research.acquire2.scroll3",
+      "claim": "Specified colored slimes, bats and other monsters can drop this scroll.",
+      "sourceRef": "source.research2.scroll3",
+      "verificationLevel": "externally-researched-not-live-tested",
+      "liveGameplayTested": false,
+      "gameEvidenceStatus": "not asserted as installed-game assembly evidence"
+    },
+    {
+      "id": "evidence.research.acquire2.scroll4",
+      "claim": "Tilling floors 80+ or monster drop subject to exclusions.",
+      "sourceRef": "source.research2.scroll4",
+      "verificationLevel": "externally-researched-not-live-tested",
+      "liveGameplayTested": false,
+      "gameEvidenceStatus": "not asserted as installed-game assembly evidence"
+    },
+    {
+      "id": "evidence.research.acquire2.iridium",
+      "claim": "Iridium node, Mystic Stone, Magma/Omni geodes and other alternatives.",
+      "sourceRef": "source.research2.iridium",
+      "verificationLevel": "externally-researched-not-live-tested",
+      "liveGameplayTested": false,
+      "gameEvidenceStatus": "not asserted as installed-game assembly evidence"
+    },
+    {
+      "id": "evidence.research.acquire2.battery",
+      "claim": "Lightning rod storms, solar panels, Traveling Cart, monster drops, fish pond.",
+      "sourceRef": "source.research2.battery",
+      "verificationLevel": "externally-researched-not-live-tested",
+      "liveGameplayTested": false,
+      "gameEvidenceStatus": "not asserted as installed-game assembly evidence"
+    },
+    {
+      "id": "evidence.research.acquire2.roe",
+      "claim": "Fish pond production; fishing treasure only with Jewels of the Sea power.",
+      "sourceRef": "source.research2.roe",
+      "verificationLevel": "externally-researched-not-live-tested",
+      "liveGameplayTested": false,
+      "gameEvidenceStatus": "not asserted as installed-game assembly evidence"
+    },
+    {
+      "id": "evidence.research.acquire2.tea",
+      "claim": "20-day tea bush, last seven days; winters indoors; Caroline 2 hearts recipe and purchase alternatives.",
+      "sourceRef": "source.research2.tea",
+      "verificationLevel": "externally-researched-not-live-tested",
+      "liveGameplayTested": false,
+      "gameEvidenceStatus": "not asserted as installed-game assembly evidence"
+    },
+    {
+      "id": "evidence.research.acquire2.cinder",
+      "claim": "Volcano nodes, monsters, Stingray pond and special Skull Cavern source.",
+      "sourceRef": "source.research2.cinder",
+      "verificationLevel": "externally-researched-not-live-tested",
+      "liveGameplayTested": false,
+      "gameEvidenceStatus": "not asserted as installed-game assembly evidence"
+    },
+    {
+      "id": "evidence.research.acquire2.bones",
+      "claim": "Skeleton/Lava Lurk drops, bone nodes, artifact spots and panning.",
+      "sourceRef": "source.research2.bones",
+      "verificationLevel": "externally-researched-not-live-tested",
+      "liveGameplayTested": false,
+      "gameEvidenceStatus": "not asserted as installed-game assembly evidence"
+    },
+    {
+      "id": "evidence.research.acquire2.radioactive",
+      "claim": "Dangerous Mines and dangerous Skull Cavern toggle/quest unlocks.",
+      "sourceRef": "source.research2.radioactive",
+      "verificationLevel": "externally-researched-not-live-tested",
+      "liveGameplayTested": false,
+      "gameEvidenceStatus": "not asserted as installed-game assembly evidence"
+    },
+    {
+      "id": "evidence.research.acquire2.dehydrator",
+      "claim": "Five matching eligible items, next morning output, Pierre recipe and construction inputs.",
+      "sourceRef": "source.research2.dehydrator",
+      "verificationLevel": "externally-researched-not-live-tested",
+      "liveGameplayTested": false,
+      "gameEvidenceStatus": "not asserted as installed-game assembly evidence"
+    },
+    {
+      "id": "evidence.research.acquire2.moss",
+      "claim": "Collect moss from actually moss-covered trees and green-rain weeds.",
+      "sourceRef": "source.research2.moss",
+      "verificationLevel": "externally-researched-not-live-tested",
+      "liveGameplayTested": false,
+      "gameEvidenceStatus": "not asserted as installed-game assembly evidence"
+    },
+    {
+      "id": "evidence.research.acquire2.mystic",
+      "claim": "Mystic Tree with Tapper 7 days or Heavy Tapper 3 days.",
+      "sourceRef": "source.research2.mystic",
+      "verificationLevel": "externally-researched-not-live-tested",
+      "liveGameplayTested": false,
+      "gameEvidenceStatus": "not asserted as installed-game assembly evidence"
+    },
+    {
+      "id": "evidence.research.acquire2.fish-smoker",
+      "claim": "One fish plus one coal; 50 minutes; recipe at Willy 10,000g.",
+      "sourceRef": "source.research2.fish-smoker",
+      "verificationLevel": "externally-researched-not-live-tested",
+      "liveGameplayTested": false,
+      "gameEvidenceStatus": "not asserted as installed-game assembly evidence"
+    },
+    {
+      "id": "evidence.research.acquire2.book",
+      "claim": "Mystery and Golden Mystery Boxes with progressive odds, blue box threshold over 10.",
+      "sourceRef": "source.research2.book",
+      "verificationLevel": "externally-researched-not-live-tested",
+      "liveGameplayTested": false,
+      "gameEvidenceStatus": "not asserted as installed-game assembly evidence"
+    },
+    {
+      "id": "evidence.research.acquire2.dragon",
+      "claim": "Volcano skeletal remains, Lava Lurk 15% or Stingray pond at least 9.",
+      "sourceRef": "source.research2.dragon",
+      "verificationLevel": "externally-researched-not-live-tested",
+      "liveGameplayTested": false,
+      "gameEvidenceStatus": "not asserted as installed-game assembly evidence"
+    },
+    {
+      "id": "evidence.research.acquire2.trees",
+      "claim": "Tree species produce seeds from shaking/felling or seed spots.",
+      "sourceRef": "source.research2.trees",
+      "verificationLevel": "externally-researched-not-live-tested",
+      "liveGameplayTested": false,
+      "gameEvidenceStatus": "not asserted as installed-game assembly evidence"
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "day",
+    "time",
+    "tasks",
+    "unknown",
+    "removedTasks",
+    "refreshedFamilies",
+    "reconciliationReason"
+  ],
+  "properties": {
+    "day": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "time": {
+      "type": "integer"
+    },
+    "tasks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "kind",
+          "key",
+          "quantity",
+          "status"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "kind": {
+            "enum": [
+              "water",
+              "harvest",
+              "catch",
+              "ship",
+              "cook"
+            ]
+          },
+          "key": {
+            "type": "string",
+            "minLength": 1
+          },
+          "quantity": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "status": {
+            "const": "ready"
+          },
+          "goalRefs": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      }
+    },
+    "unknown": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "removedTasks": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "refreshedFamilies": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "water",
+          "harvest",
+          "catch",
+          "ship",
+          "cook"
+        ]
+      }
+    },
+    "reconciliationReason": {
+      "type": "string"
+    }
+  }
+}

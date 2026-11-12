@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "0.1.0",
+  "id": "policy.slice",
+  "scope": "Reference evaluator prototype; no automatic in-game execution",
+  "roots": [
+    "goal.cook-fried-egg",
+    "goal.obtain-gold-ore",
+    "goal.catch-shad"
+  ],
+  "productionEligibility": "Require verified snapshot bindings. Contract-only facts may be injected by simulated tests only.",
+  "selection": "Choose complete route, then executable route by configured cost, then wait, blocked or unknown. Retain alternatives for explanation.",
+  "reconciliation": "Recompute on every immutable snapshot; no monotonic assumption. Platform account awards are separate from current-save evidence.",
+  "reservation": "Caller must atomically allocate accessible stock before evaluation; prototype has no general allocator.",
+  "waiting": "Never infer production or future weather; require observed state.",
+  "limitations": [
+    "No general crop scheduler",
+    "No automatic inaccessible-storage traversal",
+    "No completed animal/building/material recursion",
+    "No complete vanilla fish or recipe enumeration",
+    "Partial compiled snapshot adapter, no mod event wiring or in-game test"
+  ]
+}

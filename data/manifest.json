@@ -1,0 +1,203 @@
+{
+  "schemaVersion": "0.1.0",
+  "target": "Windows Xbox app / PC Game Pass",
+  "gameVersion": {
+    "installedBuild": "1.6.15.24354",
+    "status": "local-file-version-verified"
+  },
+  "smapiVersion": {
+    "installed": "4.5.2.0",
+    "latestObserved": "4.5.2",
+    "source": "https://smapi.io/",
+    "status": "local-file-version-and-official-site-verified"
+  },
+  "inputAudit": "data/sources/input-audit.json",
+  "categories": [
+    {
+      "id": "fishing",
+      "definitionFile": "data/achievement-definitions/fishing.json",
+      "achievementIds": [
+        "fisherman",
+        "ol_mariner",
+        "master_angler",
+        "mother_catch"
+      ]
+    },
+    {
+      "id": "farming",
+      "definitionFile": "data/achievement-definitions/farming.json",
+      "achievementIds": [
+        "polyculture",
+        "monoculture"
+      ]
+    },
+    {
+      "id": "shipping-and-earnings",
+      "definitionFile": "data/achievement-definitions/shipping-and-earnings.json",
+      "achievementIds": [
+        "greenhorn",
+        "cowpoke",
+        "homesteader",
+        "millionaire",
+        "legend",
+        "full_shipment"
+      ]
+    },
+    {
+      "id": "foraging-and-collections",
+      "definitionFile": "data/achievement-definitions/foraging-and-collections.json",
+      "achievementIds": [
+        "a_complete_collection",
+        "treasure_trove",
+        "mystery_of_the_stardrops",
+        "well_read"
+      ]
+    },
+    {
+      "id": "friendships-and-family",
+      "definitionFile": "data/achievement-definitions/friendships-and-family.json",
+      "achievementIds": [
+        "a_new_friend",
+        "best_friends",
+        "the_beloved_farmer",
+        "cliques",
+        "networking",
+        "popular",
+        "full_house"
+      ]
+    },
+    {
+      "id": "cooking",
+      "definitionFile": "data/achievement-definitions/cooking.json",
+      "achievementIds": [
+        "cook",
+        "sous_chef",
+        "gourmet_chef"
+      ]
+    },
+    {
+      "id": "crafting",
+      "definitionFile": "data/achievement-definitions/crafting.json",
+      "achievementIds": [
+        "diy",
+        "artisan",
+        "craft_master"
+      ]
+    },
+    {
+      "id": "farmhouse",
+      "definitionFile": "data/achievement-definitions/farmhouse.json",
+      "achievementIds": [
+        "moving_up",
+        "living_large"
+      ]
+    },
+    {
+      "id": "requests-and-quests",
+      "definitionFile": "data/achievement-definitions/requests-and-quests.json",
+      "achievementIds": [
+        "gofer",
+        "a_big_help",
+        "good_neighbors"
+      ]
+    },
+    {
+      "id": "community-routes",
+      "definitionFile": "data/achievement-definitions/community-routes.json",
+      "achievementIds": [
+        "local_legend",
+        "joja_co_member_of_the_year"
+      ]
+    },
+    {
+      "id": "mining-and-combat",
+      "definitionFile": "data/achievement-definitions/mining-and-combat.json",
+      "achievementIds": [
+        "the_bottom",
+        "protector_of_the_valley",
+        "danger_in_the_deep",
+        "infinite_power"
+      ]
+    },
+    {
+      "id": "skills",
+      "definitionFile": "data/achievement-definitions/skills.json",
+      "achievementIds": [
+        "singular_talent",
+        "master_of_the_five_ways"
+      ]
+    },
+    {
+      "id": "arcade",
+      "definitionFile": "data/achievement-definitions/arcade.json",
+      "achievementIds": [
+        "prairie_king",
+        "fectors_challenge"
+      ]
+    },
+    {
+      "id": "festivals-and-events",
+      "definitionFile": "data/achievement-definitions/festivals-and-events.json",
+      "achievementIds": [
+        "two_thumbs_up",
+        "blue_ribbon",
+        "an_unforgettable_soup"
+      ]
+    },
+    {
+      "id": "exploration-and-endgame",
+      "definitionFile": "data/achievement-definitions/exploration-and-endgame.json",
+      "achievementIds": [
+        "a_distant_shore",
+        "perfection"
+      ]
+    },
+    {
+      "id": "platform-specific",
+      "definitionFile": "data/achievement-definitions/platform-specific.json",
+      "achievementIds": [
+        "iridium_seal"
+      ]
+    }
+  ],
+  "evidenceStates": [
+    "unknown",
+    "attempted",
+    "observed",
+    "pending-processing",
+    "verified-in-game",
+    "requirement-satisfied",
+    "xbox-award-confirmed"
+  ],
+  "loadPolicy": "Unknown or unverified rules must never become mandatory executable tasks.",
+  "schemaBindings": [
+    {
+      "schema": "data/schemas/graph.schema.json",
+      "glob": "data/achievement-rules/*.json"
+    },
+    {
+      "schema": "data/schemas/graph.schema.json",
+      "glob": "data/acquisition-rules/*.json"
+    },
+    {
+      "schema": "data/schemas/graph.schema.json",
+      "glob": "data/progression-rules/*.json"
+    },
+    {
+      "schema": "data/schemas/access-mapping.schema.json",
+      "glob": "data/game-access-mappings/*.json"
+    },
+    {
+      "schema": "data/schemas/ingredient-joins.schema.json",
+      "glob": "data/acquisition-research/ingredient-joins.json"
+    },
+    {
+      "schema": "data/schemas/checklist-snapshot.schema.json",
+      "glob": "tests/fixtures/checklist-snapshot-*.json"
+    },
+    {
+      "schema": "data/schemas/checklist-result.schema.json",
+      "glob": "tests/expected-results/checklist-snapshot-*.json"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schemaVersion": "0.1.0",
+  "category": "friendships-and-family",
+  "provenance": "Supplied source assertions, not newly verified gameplay rules.",
+  "entries": [
+    {
+      "id": "a_new_friend",
+      "name": "A New Friend",
+      "sourceRequirement": "Reach 5 hearts with one person.",
+      "sourceDefinitionRef": "data/sources/original/trophy-50-coverage.json#/trophies/7",
+      "sourceDependencyRef": "data/sources/original/trophy-dependency-graph.json#/graph/a_new_friend",
+      "verification": "source-import-only"
+    },
+    {
+      "id": "best_friends",
+      "name": "Best Friends",
+      "sourceRequirement": "Reach 10 hearts with one person.",
+      "sourceDefinitionRef": "data/sources/original/trophy-50-coverage.json#/trophies/8",
+      "sourceDependencyRef": "data/sources/original/trophy-dependency-graph.json#/graph/best_friends",
+      "verification": "source-import-only"
+    },
+    {
+      "id": "the_beloved_farmer",
+      "name": "The Beloved Farmer",
+      "sourceRequirement": "Reach 10 hearts with 8 people.",
+      "sourceDefinitionRef": "data/sources/original/trophy-50-coverage.json#/trophies/9",
+      "sourceDependencyRef": "data/sources/original/trophy-dependency-graph.json#/graph/the_beloved_farmer",
+      "verification": "source-import-only"
+    },
+    {
+      "id": "cliques",
+      "name": "Cliques",
+      "sourceRequirement": "Reach 5 hearts with 4 people.",
+      "sourceDefinitionRef": "data/sources/original/trophy-50-coverage.json#/trophies/10",
+      "sourceDependencyRef": "data/sources/original/trophy-dependency-graph.json#/graph/cliques",
+      "verification": "source-import-only"
+    },
+    {
+      "id": "networking",
+      "name": "Networking",
+      "sourceRequirement": "Reach 5 hearts with 10 people.",
+      "sourceDefinitionRef": "data/sources/original/trophy-50-coverage.json#/trophies/11",
+      "sourceDependencyRef": "data/sources/original/trophy-dependency-graph.json#/graph/networking",
+      "verification": "source-import-only"
+    },
+    {
+      "id": "popular",
+      "name": "Popular",
+      "sourceRequirement": "Reach 5 hearts with 20 people.",
+      "sourceDefinitionRef": "data/sources/original/trophy-50-coverage.json#/trophies/12",
+      "sourceDependencyRef": "data/sources/original/trophy-dependency-graph.json#/graph/popular",
+      "verification": "source-import-only"
+    },
+    {
+      "id": "full_house",
+      "name": "Full House",
+      "sourceRequirement": "Get married and have two children.",
+      "sourceDefinitionRef": "data/sources/original/trophy-50-coverage.json#/trophies/37",
+      "sourceDependencyRef": "data/sources/original/trophy-dependency-graph.json#/graph/full_house",
+      "verification": "source-import-only"
+    }
+  ]
+}

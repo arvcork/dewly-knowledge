@@ -1,0 +1,592 @@
+{
+  "schemaVersion": "0.1.0",
+  "category": "mining-and-combat",
+  "nodes": [
+    {
+      "id": "goal.obtain-gold-ore",
+      "kind": "any",
+      "trackingRefs": [
+        "snapshot.gold.sufficient"
+      ],
+      "sourceRefs": [
+        "https://stardewvalleywiki.com/Gold_Ore"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "gold.sufficient",
+        "op": "eq",
+        "value": true
+      },
+      "requires": [
+        "action.buy-gold",
+        "action.mine-gold",
+        "unresolved.gold-opportunistic"
+      ]
+    },
+    {
+      "id": "action.buy-gold",
+      "kind": "action",
+      "trackingRefs": [
+        "snapshot.blacksmith.open-accessible",
+        "snapshot.gold.affordable",
+        "snapshot.gold.available",
+        "snapshot.gold.required",
+        "snapshot.gold.sufficient"
+      ],
+      "sourceRefs": [
+        "https://stardewvalleywiki.com/Gold_Ore"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "gold.sufficient",
+        "op": "eq",
+        "value": true
+      },
+      "task": {
+        "text": "Buy only the missing Gold Ore from observed Blacksmith stock.",
+        "parameter": "gold.remaining"
+      },
+      "available": {
+        "all": [
+          {
+            "fact": "blacksmith.open-accessible",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "fact": "gold.affordable",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "cost": 4
+    },
+    {
+      "id": "action.mine-gold",
+      "kind": "action",
+      "trackingRefs": [
+        "snapshot.gold.available",
+        "snapshot.gold.required",
+        "snapshot.gold.sufficient"
+      ],
+      "sourceRefs": [
+        "https://stardewvalleywiki.com/Gold_Ore"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "gold.sufficient",
+        "op": "eq",
+        "value": true
+      },
+      "requires": [
+        "gate.mines-open",
+        "progress.mine80",
+        "gate.pickaxe"
+      ],
+      "task": {
+        "text": "Search accessible gold-bearing mine floors for Gold Ore; repeat attempts as needed.",
+        "parameter": "gold.remaining"
+      },
+      "probabilistic": true
+    },
+    {
+      "id": "gate.mines-open",
+      "kind": "gate",
+      "trackingRefs": [
+        "snapshot.mines.open"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "mines.open",
+        "op": "eq",
+        "value": true
+      },
+      "blockedReason": "Wait for landslide removal (vanilla DaysPlayed >= 5); a locked mine does not prevent buying ore."
+    },
+    {
+      "id": "progress.mine80",
+      "kind": "action",
+      "trackingRefs": [
+        "snapshot.mine.depth",
+        "snapshot.mines.open",
+        "snapshot.pickaxe.usable"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "mine.depth",
+        "op": "gte",
+        "value": 80
+      },
+      "task": {
+        "text": "Reach the next useful five-floor elevator checkpoint toward floor 80.",
+        "parameter": "mine.nextCheckpoint"
+      },
+      "available": {
+        "all": [
+          {
+            "fact": "mines.open",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "fact": "pickaxe.usable",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "cost": 30,
+      "probabilistic": true
+    },
+    {
+      "id": "gate.pickaxe",
+      "kind": "gate",
+      "trackingRefs": [
+        "snapshot.pickaxe.usable"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "pickaxe.usable",
+        "op": "eq",
+        "value": true
+      },
+      "blockedReason": "Retrieve a usable pickaxe; tool upgrades are recommendations unless a specific obstruction requires one."
+    },
+    {
+      "id": "unresolved.gold-opportunistic",
+      "kind": "unknown",
+      "trackingRefs": [],
+      "sourceRefs": [
+        "https://stardewvalleywiki.com/Gold_Ore"
+      ],
+      "verification": "unresolved",
+      "reason": "Other verified source families: Skull Cavern, quarry/farm quarry nodes, mine containers, ghosts, fishing treasure, beach artifact spots, geodes, panning, Traveling Cart and Lava Eel pond. Each requires its own access, observed availability and probabilistic rule; not yet executable."
+    },
+    {
+      "id": "breadth.unresolved.mining-and-combat",
+      "kind": "unknown",
+      "trackingRefs": [],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354"
+      ],
+      "verification": "unresolved",
+      "reason": "Monster membership adapter, Qi activation, forge costs and lower-level acquisition chains pending; normal deepestMineLevel cannot prove dangerous-floor completion. Live content selector and normalized progress reader pending."
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.the_bottom.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.the_bottom.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.goal.the_bottom",
+      "kind": "all",
+      "goal": "the_bottom",
+      "requires": [
+        "breadth.requirement.the_bottom"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.the_bottom.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.the_bottom.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.requirement.the_bottom",
+      "kind": "all",
+      "requires": [
+        "breadth.action.the_bottom"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.the_bottom.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.the_bottom.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.action.the_bottom",
+      "kind": "action",
+      "requires": [
+        "breadth.unresolved.mining-and-combat"
+      ],
+      "task": {
+        "text": "Descend regular mines."
+      },
+      "breadth": {
+        "completionLogic": "player.deepestMineLevel >=120; platform unlock guard applies",
+        "runtimeStatus": "reader-pending; no live verification",
+        "platformRef": "data/platform-mapping.json#the_bottom",
+        "selection": "Select next reachable mine checkpoint, missing monster slayer counts, or missing Infinity weapon route. Slayer membership must match AdventureGuild.areAllMonsterSlayerQuestsComplete, not all monster data.",
+        "assets": [
+          "Data/Monsters",
+          "Data/MonsterSlayerQuests",
+          "Data/Shops"
+        ],
+        "limitations": "Monster membership adapter, Qi activation, forge costs and lower-level acquisition chains pending; normal deepestMineLevel cannot prove dangerous-floor completion.",
+        "atomicDecomposition": {
+          "status": "complete",
+          "mode": "static",
+          "source": "local-runtime-1.6.15.24354: Stats.checkForMineAchievement; checkForMonsterSlayerAchievement; checkForHeldItemAchievements; MineShaft floor 120",
+          "eligibility": "Sequential mine access milestones 5 through 120; dangerous variant additionally requires Qi activation.",
+          "resultId": "the_bottom.mine-floor.{5..120}",
+          "requirements": [
+            {
+              "id": "the_bottom.floor-120",
+              "kind": "milestone",
+              "condition": "deepestMineLevel >= 120",
+              "tracking": {
+                "value": "Farmer.deepestMineLevel",
+                "dataType": "int32/bool",
+                "source": "local-runtime-1.6.15.24354: Stats.checkForMineAchievement; checkForMonsterSlayerAchievement; checkForHeldItemAchievements; MineShaft floor 120",
+                "status": "source-verified"
+              },
+              "routeRefs": [
+                "breadth.progress.location-access"
+              ],
+              "prerequisiteRefs": [],
+              "verification": "derived-rule"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.protector_of_the_valley.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.protector_of_the_valley.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.goal.protector_of_the_valley",
+      "kind": "all",
+      "goal": "protector_of_the_valley",
+      "requires": [
+        "breadth.requirement.protector_of_the_valley"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.protector_of_the_valley.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.protector_of_the_valley.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.requirement.protector_of_the_valley",
+      "kind": "all",
+      "requires": [
+        "breadth.action.protector_of_the_valley"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.protector_of_the_valley.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.protector_of_the_valley.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.action.protector_of_the_valley",
+      "kind": "action",
+      "requires": [
+        "materialized.requirement.protector_of_the_valley"
+      ],
+      "task": {
+        "text": "Complete missing monster-slayer counts."
+      },
+      "breadth": {
+        "completionLogic": "AdventureGuild.areAllMonsterSlayerQuestsComplete(); platform guard applies",
+        "runtimeStatus": "materialized children; runtime reader pending; no live verification",
+        "platformRef": "data/platform-mapping.json#protector_of_the_valley",
+        "selection": "Select next reachable mine checkpoint, missing monster slayer counts, or missing Infinity weapon route. Slayer membership must match AdventureGuild.areAllMonsterSlayerQuestsComplete, not all monster data.",
+        "assets": [
+          "Data/Monsters",
+          "Data/MonsterSlayerQuests",
+          "Data/Shops"
+        ],
+        "limitations": "Monster membership adapter, Qi activation, forge costs and lower-level acquisition chains pending; normal deepestMineLevel cannot prove dangerous-floor completion.",
+        "atomicDecomposition": {
+          "status": "complete",
+          "mode": "dynamic-enumerator",
+          "source": "Data/MonsterSlayerQuests + AdventureGuild.areAllMonsterSlayerQuestsComplete",
+          "eligibility": "Only quest records included by the Adventure Guild completion helper; project quest/target IDs and required kill counts.",
+          "resultId": "protector_of_the_valley.slayer.{questId}",
+          "requirements": [
+            {
+              "id": "protector.each-slayer-goal",
+              "kind": "counter",
+              "condition": "each eligible monster-slayer counter reaches its content-defined target",
+              "tracking": {
+                "value": "Stats.specificMonstersKilled",
+                "dataType": "map<string,int32>",
+                "source": "AdventureGuild.areAllMonsterSlayerQuestsComplete",
+                "status": "candidate"
+              },
+              "routeRefs": [
+                "breadth.progress.location-access"
+              ],
+              "prerequisiteRefs": [],
+              "verification": "derived-rule"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.danger_in_the_deep.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.danger_in_the_deep.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.goal.danger_in_the_deep",
+      "kind": "all",
+      "goal": "danger_in_the_deep",
+      "requires": [
+        "breadth.requirement.danger_in_the_deep"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.danger_in_the_deep.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.danger_in_the_deep.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.requirement.danger_in_the_deep",
+      "kind": "all",
+      "requires": [
+        "breadth.action.danger_in_the_deep"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.danger_in_the_deep.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.danger_in_the_deep.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.action.danger_in_the_deep",
+      "kind": "action",
+      "requires": [
+        "breadth.unresolved.mining-and-combat"
+      ],
+      "task": {
+        "text": "Descend dangerous mines to 120."
+      },
+      "breadth": {
+        "completionLogic": "Enter floor 120 with MineShaft.GetAdditionalDifficulty()>0; reachedBottomOfHardMines mail is historical evidence",
+        "runtimeStatus": "reader-pending; no live verification",
+        "platformRef": "data/platform-mapping.json#danger_in_the_deep",
+        "selection": "Select next reachable mine checkpoint, missing monster slayer counts, or missing Infinity weapon route. Slayer membership must match AdventureGuild.areAllMonsterSlayerQuestsComplete, not all monster data.",
+        "assets": [
+          "Data/Monsters",
+          "Data/MonsterSlayerQuests",
+          "Data/Shops"
+        ],
+        "limitations": "Monster membership adapter, Qi activation, forge costs and lower-level acquisition chains pending; normal deepestMineLevel cannot prove dangerous-floor completion.",
+        "atomicDecomposition": {
+          "status": "complete",
+          "mode": "static",
+          "source": "local-runtime-1.6.15.24354: Stats.checkForMineAchievement; checkForMonsterSlayerAchievement; checkForHeldItemAchievements; MineShaft floor 120",
+          "eligibility": "Sequential mine access milestones 5 through 120; dangerous variant additionally requires Qi activation.",
+          "resultId": "danger_in_the_deep.mine-floor.{5..120}",
+          "requirements": [
+            {
+              "id": "danger_in_the_deep.floor-120",
+              "kind": "milestone",
+              "condition": "enter mine floor 120 while additional difficulty > 0",
+              "tracking": {
+                "value": "MineShaft.GetAdditionalDifficulty() and reachedBottomOfHardMines",
+                "dataType": "int32/bool",
+                "source": "local-runtime-1.6.15.24354: Stats.checkForMineAchievement; checkForMonsterSlayerAchievement; checkForHeldItemAchievements; MineShaft floor 120",
+                "status": "source-verified"
+              },
+              "routeRefs": [
+                "breadth.progress.location-access"
+              ],
+              "prerequisiteRefs": [],
+              "verification": "derived-rule"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.infinite_power.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.infinite_power.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.goal.infinite_power",
+      "kind": "all",
+      "goal": "infinite_power",
+      "requires": [
+        "breadth.requirement.infinite_power"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.infinite_power.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.infinite_power.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.requirement.infinite_power",
+      "kind": "all",
+      "requires": [
+        "breadth.action.infinite_power"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.infinite_power.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.infinite_power.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.action.infinite_power",
+      "kind": "action",
+      "requires": [
+        "breadth.unresolved.mining-and-combat"
+      ],
+      "task": {
+        "text": "Obtain and hold an Infinity weapon."
+      },
+      "breadth": {
+        "completionLogic": "inventory contains (W)62 or (W)63 or (W)64",
+        "runtimeStatus": "reader-pending; no live verification",
+        "platformRef": "data/platform-mapping.json#infinite_power",
+        "selection": "Select next reachable mine checkpoint, missing monster slayer counts, or missing Infinity weapon route. Slayer membership must match AdventureGuild.areAllMonsterSlayerQuestsComplete, not all monster data.",
+        "assets": [
+          "Data/Monsters",
+          "Data/MonsterSlayerQuests",
+          "Data/Shops"
+        ],
+        "limitations": "Monster membership adapter, Qi activation, forge costs and lower-level acquisition chains pending; normal deepestMineLevel cannot prove dangerous-floor completion.",
+        "atomicDecomposition": {
+          "status": "complete",
+          "mode": "alternative-set",
+          "source": "local-runtime-1.6.15.24354: Stats.checkForMineAchievement; checkForMonsterSlayerAchievement; checkForHeldItemAchievements; MineShaft floor 120",
+          "eligibility": "One held qualified weapon ID among (W)62, (W)63, (W)64.",
+          "resultId": "infinite_power.weapon.{(W)62|(W)63|(W)64}",
+          "requirements": [
+            {
+              "id": "infinite-power.weapon",
+              "kind": "alternative",
+              "condition": "inventory contains any eligible Infinity weapon",
+              "tracking": {
+                "value": "Farmer.Items qualified item IDs",
+                "dataType": "list<string>",
+                "source": "local-runtime-1.6.15.24354: Stats.checkForMineAchievement; checkForMonsterSlayerAchievement; checkForHeldItemAchievements; MineShaft floor 120",
+                "status": "source-verified"
+              },
+              "routeRefs": [
+                "breadth.acquire.item"
+              ],
+              "prerequisiteRefs": [
+                "breadth.progress.location-access"
+              ],
+              "verification": "derived-rule"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

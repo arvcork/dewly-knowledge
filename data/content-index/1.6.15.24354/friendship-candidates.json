@@ -1,0 +1,346 @@
+{
+  "schemaVersion": "0.1.0",
+  "gameVersion": "1.6.15.24354",
+  "records": [
+    {
+      "id": "friend.abigail-cbd1cabd",
+      "npcName": "Abigail",
+      "canSocializeCondition": "default-true",
+      "homeRegion": "Town",
+      "canBeRomanced": true,
+      "completionEvidence": "Farmer.friendshipData[npcName].Points",
+      "source": "Data/Characters candidate joined at runtime to Farmer.friendshipData",
+      "verification": "extracted-content-candidate"
+    },
+    {
+      "id": "friend.alex-64542dba",
+      "npcName": "Alex",
+      "canSocializeCondition": "default-true",
+      "homeRegion": "Town",
+      "canBeRomanced": true,
+      "completionEvidence": "Farmer.friendshipData[npcName].Points",
+      "source": "Data/Characters candidate joined at runtime to Farmer.friendshipData",
+      "verification": "extracted-content-candidate"
+    },
+    {
+      "id": "friend.caroline-c122b5af",
+      "npcName": "Caroline",
+      "canSocializeCondition": "default-true",
+      "homeRegion": "Town",
+      "canBeRomanced": false,
+      "completionEvidence": "Farmer.friendshipData[npcName].Points",
+      "source": "Data/Characters candidate joined at runtime to Farmer.friendshipData",
+      "verification": "extracted-content-candidate"
+    },
+    {
+      "id": "friend.clint-76d740c7",
+      "npcName": "Clint",
+      "canSocializeCondition": "default-true",
+      "homeRegion": "Town",
+      "canBeRomanced": false,
+      "completionEvidence": "Farmer.friendshipData[npcName].Points",
+      "source": "Data/Characters candidate joined at runtime to Farmer.friendshipData",
+      "verification": "extracted-content-candidate"
+    },
+    {
+      "id": "friend.demetrius-309a4fe7",
+      "npcName": "Demetrius",
+      "canSocializeCondition": "default-true",
+      "homeRegion": "Town",
+      "canBeRomanced": false,
+      "completionEvidence": "Farmer.friendshipData[npcName].Points",
+      "source": "Data/Characters candidate joined at runtime to Farmer.friendshipData",
+      "verification": "extracted-content-candidate"
+    },
+    {
+      "id": "friend.dwarf-c06ffc52",
+      "npcName": "Dwarf",
+      "canSocializeCondition": "default-true",
+      "homeRegion": "Other",
+      "canBeRomanced": false,
+      "completionEvidence": "Farmer.friendshipData[npcName].Points",
+      "source": "Data/Characters candidate joined at runtime to Farmer.friendshipData",
+      "verification": "extracted-content-candidate"
+    },
+    {
+      "id": "friend.elliott-37cc1f1e",
+      "npcName": "Elliott",
+      "canSocializeCondition": "default-true",
+      "homeRegion": "Town",
+      "canBeRomanced": true,
+      "completionEvidence": "Farmer.friendshipData[npcName].Points",
+      "source": "Data/Characters candidate joined at runtime to Farmer.friendshipData",
+      "verification": "extracted-content-candidate"
+    },
+    {
+      "id": "friend.emily-b6421c86",
+      "npcName": "Emily",
+      "canSocializeCondition": "default-true",
+      "homeRegion": "Town",
+      "canBeRomanced": true,
+      "completionEvidence": "Farmer.friendshipData[npcName].Points",
+      "source": "Data/Characters candidate joined at runtime to Farmer.friendshipData",
+      "verification": "extracted-content-candidate"
+    },
+    {
+      "id": "friend.evelyn-96f894a9",
+      "npcName": "Evelyn",
+      "canSocializeCondition": "default-true",
+      "homeRegion": "Town",
+      "canBeRomanced": false,
+      "completionEvidence": "Farmer.friendshipData[npcName].Points",
+      "source": "Data/Characters candidate joined at runtime to Farmer.friendshipData",
+      "verification": "extracted-content-candidate"
+    },
+    {
+      "id": "friend.george-9e8c5571",
+      "npcName": "George",
+      "canSocializeCondition": "default-true",
+      "homeRegion": "Town",
+      "canBeRomanced": false,
+      "completionEvidence": "Farmer.friendshipData[npcName].Points",
+      "source": "Data/Characters candidate joined at runtime to Farmer.friendshipData",
+      "verification": "extracted-content-candidate"
+    },
+    {
+      "id": "friend.gus-9f1e7524",
+      "npcName": "Gus",
+      "canSocializeCondition": "default-true",
+      "homeRegion": "Town",
+      "canBeRomanced": false,
+      "completionEvidence": "Farmer.friendshipData[npcName].Points",
+      "source": "Data/Characters candidate joined at runtime to Farmer.friendshipData",
+      "verification": "extracted-content-candidate"
+    },
+    {
+      "id": "friend.haley-0e438431",
+      "npcName": "Haley",
+      "canSocializeCondition": "default-true",
+      "homeRegion": "Town",
+      "canBeRomanced": true,
+      "completionEvidence": "Farmer.friendshipData[npcName].Points",
+      "source": "Data/Characters candidate joined at runtime to Farmer.friendshipData",
+      "verification": "extracted-content-candidate"
+    },
+    {
+      "id": "friend.harvey-54e7738d",
+      "npcName": "Harvey",
+      "canSocializeCondition": "default-true",
+      "homeRegion": "Town",
+      "canBeRomanced": true,
+      "completionEvidence": "Farmer.friendshipData[npcName].Points",
+      "source": "Data/Characters candidate joined at runtime to Farmer.friendshipData",
+      "verification": "extracted-content-candidate"
+    },
+    {
+      "id": "friend.jas-698ebdc9",
+      "npcName": "Jas",
+      "canSocializeCondition": "default-true",
+      "homeRegion": "Town",
+      "canBeRomanced": false,
+      "completionEvidence": "Farmer.friendshipData[npcName].Points",
+      "source": "Data/Characters candidate joined at runtime to Farmer.friendshipData",
+      "verification": "extracted-content-candidate"
+    },
+    {
+      "id": "friend.jodi-17e7e54b",
+      "npcName": "Jodi",
+      "canSocializeCondition": "default-true",
+      "homeRegion": "Town",
+      "canBeRomanced": false,
+      "completionEvidence": "Farmer.friendshipData[npcName].Points",
+      "source": "Data/Characters candidate joined at runtime to Farmer.friendshipData",
+      "verification": "extracted-content-candidate"
+    },
+    {
+      "id": "friend.kent-4e168a99",
+      "npcName": "Kent",
+      "canSocializeCondition": "default-true",
+      "homeRegion": "Town",
+      "canBeRomanced": false,
+      "completionEvidence": "Farmer.friendshipData[npcName].Points",
+      "source": "Data/Characters candidate joined at runtime to Farmer.friendshipData",
+      "verification": "extracted-content-candidate"
+    },
+    {
+      "id": "friend.krobus-19eacff4",
+      "npcName": "Krobus",
+      "canSocializeCondition": "default-true",
+      "homeRegion": "Other",
+      "canBeRomanced": false,
+      "completionEvidence": "Farmer.friendshipData[npcName].Points",
+      "source": "Data/Characters candidate joined at runtime to Farmer.friendshipData",
+      "verification": "extracted-content-candidate"
+    },
+    {
+      "id": "friend.leah-99927add",
+      "npcName": "Leah",
+      "canSocializeCondition": "default-true",
+      "homeRegion": "Town",
+      "canBeRomanced": true,
+      "completionEvidence": "Farmer.friendshipData[npcName].Points",
+      "source": "Data/Characters candidate joined at runtime to Farmer.friendshipData",
+      "verification": "extracted-content-candidate"
+    },
+    {
+      "id": "friend.leo-cfaf50ac",
+      "npcName": "Leo",
+      "canSocializeCondition": "default-true",
+      "homeRegion": "Other",
+      "canBeRomanced": false,
+      "completionEvidence": "Farmer.friendshipData[npcName].Points",
+      "source": "Data/Characters candidate joined at runtime to Farmer.friendshipData",
+      "verification": "extracted-content-candidate"
+    },
+    {
+      "id": "friend.lewis-0360f429",
+      "npcName": "Lewis",
+      "canSocializeCondition": "default-true",
+      "homeRegion": "Town",
+      "canBeRomanced": false,
+      "completionEvidence": "Farmer.friendshipData[npcName].Points",
+      "source": "Data/Characters candidate joined at runtime to Farmer.friendshipData",
+      "verification": "extracted-content-candidate"
+    },
+    {
+      "id": "friend.linus-e49fbc8f",
+      "npcName": "Linus",
+      "canSocializeCondition": "default-true",
+      "homeRegion": "Town",
+      "canBeRomanced": false,
+      "completionEvidence": "Farmer.friendshipData[npcName].Points",
+      "source": "Data/Characters candidate joined at runtime to Farmer.friendshipData",
+      "verification": "extracted-content-candidate"
+    },
+    {
+      "id": "friend.marnie-b1d9b9a9",
+      "npcName": "Marnie",
+      "canSocializeCondition": "default-true",
+      "homeRegion": "Town",
+      "canBeRomanced": false,
+      "completionEvidence": "Farmer.friendshipData[npcName].Points",
+      "source": "Data/Characters candidate joined at runtime to Farmer.friendshipData",
+      "verification": "extracted-content-candidate"
+    },
+    {
+      "id": "friend.maru-b744af8b",
+      "npcName": "Maru",
+      "canSocializeCondition": "default-true",
+      "homeRegion": "Town",
+      "canBeRomanced": true,
+      "completionEvidence": "Farmer.friendshipData[npcName].Points",
+      "source": "Data/Characters candidate joined at runtime to Farmer.friendshipData",
+      "verification": "extracted-content-candidate"
+    },
+    {
+      "id": "friend.pam-6c98739e",
+      "npcName": "Pam",
+      "canSocializeCondition": "default-true",
+      "homeRegion": "Town",
+      "canBeRomanced": false,
+      "completionEvidence": "Farmer.friendshipData[npcName].Points",
+      "source": "Data/Characters candidate joined at runtime to Farmer.friendshipData",
+      "verification": "extracted-content-candidate"
+    },
+    {
+      "id": "friend.penny-6b8f1df1",
+      "npcName": "Penny",
+      "canSocializeCondition": "default-true",
+      "homeRegion": "Town",
+      "canBeRomanced": true,
+      "completionEvidence": "Farmer.friendshipData[npcName].Points",
+      "source": "Data/Characters candidate joined at runtime to Farmer.friendshipData",
+      "verification": "extracted-content-candidate"
+    },
+    {
+      "id": "friend.pierre-8ce4081e",
+      "npcName": "Pierre",
+      "canSocializeCondition": "default-true",
+      "homeRegion": "Town",
+      "canBeRomanced": false,
+      "completionEvidence": "Farmer.friendshipData[npcName].Points",
+      "source": "Data/Characters candidate joined at runtime to Farmer.friendshipData",
+      "verification": "extracted-content-candidate"
+    },
+    {
+      "id": "friend.robin-8a127362",
+      "npcName": "Robin",
+      "canSocializeCondition": "default-true",
+      "homeRegion": "Town",
+      "canBeRomanced": false,
+      "completionEvidence": "Farmer.friendshipData[npcName].Points",
+      "source": "Data/Characters candidate joined at runtime to Farmer.friendshipData",
+      "verification": "extracted-content-candidate"
+    },
+    {
+      "id": "friend.sam-265dc298",
+      "npcName": "Sam",
+      "canSocializeCondition": "default-true",
+      "homeRegion": "Town",
+      "canBeRomanced": true,
+      "completionEvidence": "Farmer.friendshipData[npcName].Points",
+      "source": "Data/Characters candidate joined at runtime to Farmer.friendshipData",
+      "verification": "extracted-content-candidate"
+    },
+    {
+      "id": "friend.sandy-eb3a293a",
+      "npcName": "Sandy",
+      "canSocializeCondition": "PLAYER_HAS_SEEN_EVENT Any 67",
+      "homeRegion": "Desert",
+      "canBeRomanced": false,
+      "completionEvidence": "Farmer.friendshipData[npcName].Points",
+      "source": "Data/Characters candidate joined at runtime to Farmer.friendshipData",
+      "verification": "extracted-content-candidate"
+    },
+    {
+      "id": "friend.sebastian-98dcb271",
+      "npcName": "Sebastian",
+      "canSocializeCondition": "default-true",
+      "homeRegion": "Town",
+      "canBeRomanced": true,
+      "completionEvidence": "Farmer.friendshipData[npcName].Points",
+      "source": "Data/Characters candidate joined at runtime to Farmer.friendshipData",
+      "verification": "extracted-content-candidate"
+    },
+    {
+      "id": "friend.shane-10c61d16",
+      "npcName": "Shane",
+      "canSocializeCondition": "default-true",
+      "homeRegion": "Town",
+      "canBeRomanced": true,
+      "completionEvidence": "Farmer.friendshipData[npcName].Points",
+      "source": "Data/Characters candidate joined at runtime to Farmer.friendshipData",
+      "verification": "extracted-content-candidate"
+    },
+    {
+      "id": "friend.vincent-bb1fcb92",
+      "npcName": "Vincent",
+      "canSocializeCondition": "default-true",
+      "homeRegion": "Town",
+      "canBeRomanced": false,
+      "completionEvidence": "Farmer.friendshipData[npcName].Points",
+      "source": "Data/Characters candidate joined at runtime to Farmer.friendshipData",
+      "verification": "extracted-content-candidate"
+    },
+    {
+      "id": "friend.willy-c033bd97",
+      "npcName": "Willy",
+      "canSocializeCondition": "default-true",
+      "homeRegion": "Town",
+      "canBeRomanced": false,
+      "completionEvidence": "Farmer.friendshipData[npcName].Points",
+      "source": "Data/Characters candidate joined at runtime to Farmer.friendshipData",
+      "verification": "extracted-content-candidate"
+    },
+    {
+      "id": "friend.wizard-127a661b",
+      "npcName": "Wizard",
+      "canSocializeCondition": "default-true",
+      "homeRegion": "Other",
+      "canBeRomanced": false,
+      "completionEvidence": "Farmer.friendshipData[npcName].Points",
+      "source": "Data/Characters candidate joined at runtime to Farmer.friendshipData",
+      "verification": "extracted-content-candidate"
+    }
+  ]
+}

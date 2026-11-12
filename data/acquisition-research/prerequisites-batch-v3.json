@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "1.0.0",
+  "gameVersion": "1.6.15.24354",
+  "nodes": [
+    {
+      "id": "acq.prereq.cooking-facility",
+      "kind": "prerequisite-contract",
+      "description": "Current save has accessible upgraded farmhouse kitchen or Cookout Kit, recipe actually unlocked and compatible inputs unreserved",
+      "trackingStatus": "contract-only; runtime binding unknown",
+      "unknownPolicy": "unknown blocks availability"
+    },
+    {
+      "id": "acq.prereq.eligible-egg",
+      "kind": "prerequisite-contract",
+      "description": "Current loaded content item is one of the specific eligible egg IDs; source animal exists and output is collectable",
+      "trackingStatus": "contract-only; runtime binding unknown",
+      "unknownPolicy": "unknown blocks availability"
+    },
+    {
+      "id": "acq.prereq.eligible-fishing-catch",
+      "kind": "prerequisite-contract",
+      "description": "Currently loaded eligible fish item matches category -4; observed catch/crab-pot route, season, weather, time, water/location and tools",
+      "trackingStatus": "contract-only; runtime binding unknown",
+      "unknownPolicy": "unknown blocks availability"
+    },
+    {
+      "id": "acq.prereq.eligible-milk",
+      "kind": "prerequisite-contract",
+      "description": "Current loaded content item is eligible milk; source adult cow/goat has actually produced collectible milk and Pail/access are available",
+      "trackingStatus": "contract-only; runtime binding unknown",
+      "unknownPolicy": "unknown blocks availability"
+    },
+    {
+      "id": "acq.prereq.recycling-machine-ready",
+      "kind": "prerequisite-contract",
+      "description": "Recycling Machine available with observed input Soggy Newspaper; random output not guaranteed",
+      "trackingStatus": "contract-only; runtime binding unknown",
+      "unknownPolicy": "unknown blocks availability"
+    },
+    {
+      "id": "acq.prereq.wild-seeds-craft",
+      "kind": "prerequisite-contract",
+      "description": "Active game recipe for seasonal Wild Seeds is unlocked, eligible season-specific forage ingredients reserved and craftable; any season Wild Seeds accepted for Tea Sapling",
+      "trackingStatus": "contract-only; runtime binding unknown",
+      "unknownPolicy": "unknown blocks availability"
+    }
+  ]
+}

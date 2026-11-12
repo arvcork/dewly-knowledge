@@ -1,0 +1,96 @@
+{
+  "schemaVersion": "0.1.0",
+  "gameVersion": "1.6.15.24354",
+  "records": [
+    {
+      "id": "joja.vault",
+      "projectId": "vault",
+      "buttonNumber": 0,
+      "price": 40000,
+      "completionMail": "ccVault",
+      "processingMail": "jojaVault",
+      "completionEvidence": "any farmer has or will receive ccVault",
+      "satisfiedByAlreadyCompletedCommunityRoom": true,
+      "acquisitionRoutes": [
+        {
+          "type": "money",
+          "quantity": 40000
+        }
+      ],
+      "source": "JojaCDMenu constructor, receiveLeftClick, and getPriceFromButtonNumber",
+      "verification": "verified-compiled-logic"
+    },
+    {
+      "id": "joja.boiler-room",
+      "projectId": "boiler-room",
+      "buttonNumber": 1,
+      "price": 15000,
+      "completionMail": "ccBoilerRoom",
+      "processingMail": "jojaBoilerRoom",
+      "completionEvidence": "any farmer has or will receive ccBoilerRoom",
+      "satisfiedByAlreadyCompletedCommunityRoom": true,
+      "acquisitionRoutes": [
+        {
+          "type": "money",
+          "quantity": 15000
+        }
+      ],
+      "source": "JojaCDMenu constructor, receiveLeftClick, and getPriceFromButtonNumber",
+      "verification": "verified-compiled-logic"
+    },
+    {
+      "id": "joja.crafts-room",
+      "projectId": "crafts-room",
+      "buttonNumber": 2,
+      "price": 25000,
+      "completionMail": "ccCraftsRoom",
+      "processingMail": "jojaCraftsRoom",
+      "completionEvidence": "any farmer has or will receive ccCraftsRoom",
+      "satisfiedByAlreadyCompletedCommunityRoom": true,
+      "acquisitionRoutes": [
+        {
+          "type": "money",
+          "quantity": 25000
+        }
+      ],
+      "source": "JojaCDMenu constructor, receiveLeftClick, and getPriceFromButtonNumber",
+      "verification": "verified-compiled-logic"
+    },
+    {
+      "id": "joja.pantry",
+      "projectId": "pantry",
+      "buttonNumber": 3,
+      "price": 35000,
+      "completionMail": "ccPantry",
+      "processingMail": "jojaPantry",
+      "completionEvidence": "any farmer has or will receive ccPantry",
+      "satisfiedByAlreadyCompletedCommunityRoom": true,
+      "acquisitionRoutes": [
+        {
+          "type": "money",
+          "quantity": 35000
+        }
+      ],
+      "source": "JojaCDMenu constructor, receiveLeftClick, and getPriceFromButtonNumber",
+      "verification": "verified-compiled-logic"
+    },
+    {
+      "id": "joja.fish-tank",
+      "projectId": "fish-tank",
+      "buttonNumber": 4,
+      "price": 20000,
+      "completionMail": "ccFishTank",
+      "processingMail": "jojaFishTank",
+      "completionEvidence": "any farmer has or will receive ccFishTank",
+      "satisfiedByAlreadyCompletedCommunityRoom": true,
+      "acquisitionRoutes": [
+        {
+          "type": "money",
+          "quantity": 20000
+        }
+      ],
+      "source": "JojaCDMenu constructor, receiveLeftClick, and getPriceFromButtonNumber",
+      "verification": "verified-compiled-logic"
+    }
+  ]
+}

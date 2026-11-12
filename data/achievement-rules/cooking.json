@@ -1,0 +1,389 @@
+{
+  "schemaVersion": "0.1.0",
+  "category": "cooking",
+  "nodes": [
+    {
+      "id": "goal.cook-fried-egg",
+      "kind": "all",
+      "trackingRefs": [
+        "snapshot.cooked.194"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "cooked.194",
+        "op": "gte",
+        "value": 1
+      },
+      "requires": [
+        "action.cook-fried-egg"
+      ]
+    },
+    {
+      "id": "action.cook-fried-egg",
+      "kind": "action",
+      "trackingRefs": [
+        "snapshot.cooked.194"
+      ],
+      "sourceRefs": [
+        "https://stardewvalleywiki.com/Fried_Egg"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "cooked.194",
+        "op": "gte",
+        "value": 1
+      },
+      "requires": [
+        "gate.fried-egg-known",
+        "resource.egg",
+        "access.cooking"
+      ],
+      "task": {
+        "text": "Cook Fried Egg once using an unreserved eligible egg."
+      },
+      "goal": "gourmet_chef"
+    },
+    {
+      "id": "gate.fried-egg-known",
+      "kind": "gate",
+      "trackingRefs": [
+        "snapshot.recipe.fried-egg-known"
+      ],
+      "sourceRefs": [
+        "https://stardewvalleywiki.com/Fried_Egg"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "recipe.fried-egg-known",
+        "op": "eq",
+        "value": true
+      },
+      "blockedReason": "Starter recipe absent: verify save/content; do not invent a TV unlock."
+    },
+    {
+      "id": "breadth.unresolved.cooking",
+      "kind": "unknown",
+      "trackingRefs": [],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354"
+      ],
+      "verification": "unresolved",
+      "reason": "Unlock field alone is incomplete: shop, mail and TV sources need external joins. Animal produce, crops, fish and processing share acquisition routes; cooked inventory cannot prove cooking history. Live content selector and normalized progress reader pending."
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.cook.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.cook.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.goal.cook",
+      "kind": "all",
+      "goal": "cook",
+      "requires": [
+        "breadth.requirement.cook"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.cook.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.cook.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.requirement.cook",
+      "kind": "all",
+      "requires": [
+        "breadth.action.cook"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.cook.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.cook.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.action.cook",
+      "kind": "action",
+      "requires": [
+        "materialized.requirement.cook"
+      ],
+      "task": {
+        "text": "Cook missing recipes."
+      },
+      "breadth": {
+        "completionLogic": "runtime counted cooked recipes >= 10",
+        "runtimeStatus": "materialized children; runtime reader pending; no live verification",
+        "platformRef": "data/platform-mapping.json#cook",
+        "selection": "Enumerate CraftingRecipe.cookingRecipes. For each name, parse output ID from slash field 2 first token; runtime counts it only when player.cookingRecipes contains the name and recipesCooked contains output ID. Compare distinct recipe count to target.",
+        "assets": [
+          "Data/CookingRecipes",
+          "Data/Shops",
+          "Data/TV/CookingChannel"
+        ],
+        "limitations": "Unlock field alone is incomplete: shop, mail and TV sources need external joins. Animal produce, crops, fish and processing share acquisition routes; cooked inventory cannot prove cooking history.",
+        "atomicDecomposition": {
+          "status": "complete",
+          "mode": "dynamic-enumerator",
+          "source": "Data/CookingRecipes",
+          "eligibility": "Every CraftingRecipe.cookingRecipes entry; output local ID is first token of slash field 2; retain recipe name because knowledge and output history use different keys.",
+          "resultId": "cook.recipe.{recipeName}",
+          "requirements": [
+            {
+              "id": "cook.each-recipe",
+              "kind": "recipe",
+              "condition": "at least 10 distinct enumerated recipe outputs have positive recipesCooked history and known recipes",
+              "tracking": {
+                "value": "Farmer.cookingRecipes[recipeName] and Farmer.recipesCooked[outputLocalId]",
+                "dataType": "map<string,int32>",
+                "source": "Data/CookingRecipes + Farmer recipe maps",
+                "status": "source-verified"
+              },
+              "routeRefs": [
+                "breadth.acquire.recipe-unlock",
+                "breadth.acquire.item"
+              ],
+              "prerequisiteRefs": [
+                "breadth.progress.cooking-access"
+              ],
+              "verification": "derived-rule"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.sous_chef.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.sous_chef.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.goal.sous_chef",
+      "kind": "all",
+      "goal": "sous_chef",
+      "requires": [
+        "breadth.requirement.sous_chef"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.sous_chef.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.sous_chef.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.requirement.sous_chef",
+      "kind": "all",
+      "requires": [
+        "breadth.action.sous_chef"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.sous_chef.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.sous_chef.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.action.sous_chef",
+      "kind": "action",
+      "requires": [
+        "materialized.requirement.sous_chef"
+      ],
+      "task": {
+        "text": "Cook missing recipes."
+      },
+      "breadth": {
+        "completionLogic": "runtime counted cooked recipes >= 25",
+        "runtimeStatus": "materialized children; runtime reader pending; no live verification",
+        "platformRef": "data/platform-mapping.json#sous_chef",
+        "selection": "Enumerate CraftingRecipe.cookingRecipes. For each name, parse output ID from slash field 2 first token; runtime counts it only when player.cookingRecipes contains the name and recipesCooked contains output ID. Compare distinct recipe count to target.",
+        "assets": [
+          "Data/CookingRecipes",
+          "Data/Shops",
+          "Data/TV/CookingChannel"
+        ],
+        "limitations": "Unlock field alone is incomplete: shop, mail and TV sources need external joins. Animal produce, crops, fish and processing share acquisition routes; cooked inventory cannot prove cooking history.",
+        "atomicDecomposition": {
+          "status": "complete",
+          "mode": "dynamic-enumerator",
+          "source": "Data/CookingRecipes",
+          "eligibility": "Every CraftingRecipe.cookingRecipes entry; output local ID is first token of slash field 2; retain recipe name because knowledge and output history use different keys.",
+          "resultId": "sous_chef.recipe.{recipeName}",
+          "requirements": [
+            {
+              "id": "sous_chef.each-recipe",
+              "kind": "recipe",
+              "condition": "at least 25 distinct enumerated recipe outputs have positive recipesCooked history and known recipes",
+              "tracking": {
+                "value": "Farmer.cookingRecipes[recipeName] and Farmer.recipesCooked[outputLocalId]",
+                "dataType": "map<string,int32>",
+                "source": "Data/CookingRecipes + Farmer recipe maps",
+                "status": "source-verified"
+              },
+              "routeRefs": [
+                "breadth.acquire.recipe-unlock",
+                "breadth.acquire.item"
+              ],
+              "prerequisiteRefs": [
+                "breadth.progress.cooking-access"
+              ],
+              "verification": "derived-rule"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.gourmet_chef.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.gourmet_chef.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.goal.gourmet_chef",
+      "kind": "all",
+      "goal": "gourmet_chef",
+      "requires": [
+        "breadth.requirement.gourmet_chef"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.gourmet_chef.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.gourmet_chef.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.requirement.gourmet_chef",
+      "kind": "all",
+      "requires": [
+        "breadth.action.gourmet_chef"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.gourmet_chef.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.gourmet_chef.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.action.gourmet_chef",
+      "kind": "action",
+      "requires": [
+        "materialized.requirement.gourmet_chef"
+      ],
+      "task": {
+        "text": "Cook every required recipe."
+      },
+      "breadth": {
+        "completionLogic": "runtime counted cooked recipes >= cookingRecipes.Count",
+        "runtimeStatus": "materialized children; runtime reader pending; no live verification",
+        "platformRef": "data/platform-mapping.json#gourmet_chef",
+        "selection": "Enumerate CraftingRecipe.cookingRecipes. For each name, parse output ID from slash field 2 first token; runtime counts it only when player.cookingRecipes contains the name and recipesCooked contains output ID. Compare distinct recipe count to target.",
+        "assets": [
+          "Data/CookingRecipes",
+          "Data/Shops",
+          "Data/TV/CookingChannel"
+        ],
+        "limitations": "Unlock field alone is incomplete: shop, mail and TV sources need external joins. Animal produce, crops, fish and processing share acquisition routes; cooked inventory cannot prove cooking history.",
+        "atomicDecomposition": {
+          "status": "complete",
+          "mode": "dynamic-enumerator",
+          "source": "Data/CookingRecipes",
+          "eligibility": "Every CraftingRecipe.cookingRecipes entry; output local ID is first token of slash field 2; retain recipe name because knowledge and output history use different keys.",
+          "resultId": "gourmet_chef.recipe.{recipeName}",
+          "requirements": [
+            {
+              "id": "gourmet_chef.each-recipe",
+              "kind": "recipe",
+              "condition": "every enumerated recipe output has positive recipesCooked history and recipe is known",
+              "tracking": {
+                "value": "Farmer.cookingRecipes[recipeName] and Farmer.recipesCooked[outputLocalId]",
+                "dataType": "map<string,int32>",
+                "source": "Data/CookingRecipes + Farmer recipe maps",
+                "status": "source-verified"
+              },
+              "routeRefs": [
+                "breadth.acquire.recipe-unlock",
+                "breadth.acquire.item"
+              ],
+              "prerequisiteRefs": [
+                "breadth.progress.cooking-access"
+              ],
+              "verification": "derived-rule"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

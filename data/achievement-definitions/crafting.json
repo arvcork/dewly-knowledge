@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "0.1.0",
+  "category": "crafting",
+  "provenance": "Supplied source assertions, not newly verified gameplay rules.",
+  "entries": [
+    {
+      "id": "diy",
+      "name": "D.I.Y.",
+      "sourceRequirement": "Craft 15 different items.",
+      "sourceDefinitionRef": "data/sources/original/trophy-50-coverage.json#/trophies/18",
+      "sourceDependencyRef": "data/sources/original/trophy-dependency-graph.json#/graph/diy",
+      "verification": "source-import-only"
+    },
+    {
+      "id": "artisan",
+      "name": "Artisan",
+      "sourceRequirement": "Craft 30 different items.",
+      "sourceDefinitionRef": "data/sources/original/trophy-50-coverage.json#/trophies/19",
+      "sourceDependencyRef": "data/sources/original/trophy-dependency-graph.json#/graph/artisan",
+      "verification": "source-import-only"
+    },
+    {
+      "id": "craft_master",
+      "name": "Craft Master",
+      "sourceRequirement": "Craft every required item.",
+      "sourceDefinitionRef": "data/sources/original/trophy-50-coverage.json#/trophies/20",
+      "sourceDependencyRef": "data/sources/original/trophy-dependency-graph.json#/graph/craft_master",
+      "verification": "source-import-only"
+    }
+  ]
+}

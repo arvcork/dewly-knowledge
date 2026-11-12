@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "1.0.0",
+  "gameVersion": "1.6.15.24354",
+  "sources": [
+    {
+      "id": "source.research.runtimejoins.recipe-data",
+      "type": "external-wiki",
+      "url": "https://stardewvalleywiki.com/Modding:Recipe_data"
+    },
+    {
+      "id": "source.research.runtimejoins.big-craftables",
+      "type": "external-wiki",
+      "url": "https://stardewvalleywiki.com/Modding:Big_craftables"
+    },
+    {
+      "id": "source.research.runtimejoins.cooking",
+      "type": "external-wiki",
+      "url": "https://stardewvalleywiki.com/Cooking"
+    }
+  ],
+  "records": [
+    {
+      "id": "evidence.research.runtimejoins.big-craftable",
+      "sourceRef": "source.research.runtimejoins.recipe-data",
+      "claim": "1.6.15 crafting recipe strings explicitly contain (BC)154 for Deluxe Worm Bin and (BC)13 for Heavy Furnace; production recipes use Worm Bin output 154 and Furnace output 13 with big-craftable true field. Confirm current loaded content at runtime.",
+      "verificationLevel": "external-recipe-data-plus-portable-derived-index-not-live-tested",
+      "liveGameplayTested": false
+    },
+    {
+      "id": "evidence.research.runtimejoins.wild-seeds",
+      "sourceRef": "source.research.runtimejoins.recipe-data",
+      "claim": "1.6.15 Tea Sapling recipe uses -777 x2 (special Wild Seeds matcher); seasonal Wild Seeds crafting outputs 495 through 498 are candidate types with separate forage recipe ingredients and level unlocks.",
+      "verificationLevel": "external-recipe-data-plus-portable-derived-index-not-live-tested",
+      "liveGameplayTested": false
+    }
+  ]
+}

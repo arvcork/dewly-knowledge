@@ -1,0 +1,78 @@
+{
+  "schemaVersion": "1.0.0",
+  "gameVersion": "1.6.15.24354",
+  "sources": [
+    {
+      "id": "source.research3.omelet",
+      "type": "external-wiki",
+      "url": "https://stardewvalleywiki.com/Omelet",
+      "description": "Omelet uses any eligible egg and milk; recipe comes from Queen of Sauce 28 Spring Y1 or Gus for 100g."
+    },
+    {
+      "id": "source.research3.tortilla",
+      "type": "external-wiki",
+      "url": "https://stardewvalleywiki.com/Tortilla",
+      "description": "Tortilla uses one Corn; recipe Queen of Sauce 7 Fall Y1 or Gus 100g; occasional shop sources."
+    },
+    {
+      "id": "source.research3.torch",
+      "type": "external-wiki",
+      "url": "https://stardewvalleywiki.com/Torch",
+      "description": "Torch starter recipe consumes one Wood and two Sap; recycling Soggy Newspaper can produce three."
+    },
+    {
+      "id": "source.research3.cooking",
+      "type": "external-wiki",
+      "url": "https://stardewvalleywiki.com/Cooking",
+      "description": "Recipe egg/milk/fish ingredient categories accept multiple distinct products; candidates require live content membership."
+    },
+    {
+      "id": "source.research3.tea-seeds",
+      "type": "external-wiki",
+      "url": "https://stardewvalleywiki.com/Tea_Sapling",
+      "description": "Tea Sapling requires two Wild Seeds of any season; recipe mailed after Caroline 2-heart event."
+    }
+  ],
+  "records": [
+    {
+      "id": "evidence.research.acquire3.omelet",
+      "claim": "Omelet uses any eligible egg and milk; recipe comes from Queen of Sauce 28 Spring Y1 or Gus for 100g.",
+      "sourceRef": "source.research3.omelet",
+      "verificationLevel": "externally-researched-not-live-tested",
+      "liveGameplayTested": false,
+      "gameEvidenceStatus": "not asserted as installed-game assembly evidence"
+    },
+    {
+      "id": "evidence.research.acquire3.tortilla",
+      "claim": "Tortilla uses one Corn; recipe Queen of Sauce 7 Fall Y1 or Gus 100g; occasional shop sources.",
+      "sourceRef": "source.research3.tortilla",
+      "verificationLevel": "externally-researched-not-live-tested",
+      "liveGameplayTested": false,
+      "gameEvidenceStatus": "not asserted as installed-game assembly evidence"
+    },
+    {
+      "id": "evidence.research.acquire3.torch",
+      "claim": "Torch starter recipe consumes one Wood and two Sap; recycling Soggy Newspaper can produce three.",
+      "sourceRef": "source.research3.torch",
+      "verificationLevel": "externally-researched-not-live-tested",
+      "liveGameplayTested": false,
+      "gameEvidenceStatus": "not asserted as installed-game assembly evidence"
+    },
+    {
+      "id": "evidence.research.acquire3.cooking",
+      "claim": "Recipe egg/milk/fish ingredient categories accept multiple distinct products; candidates require live content membership.",
+      "sourceRef": "source.research3.cooking",
+      "verificationLevel": "externally-researched-not-live-tested",
+      "liveGameplayTested": false,
+      "gameEvidenceStatus": "not asserted as installed-game assembly evidence"
+    },
+    {
+      "id": "evidence.research.acquire3.tea-seeds",
+      "claim": "Tea Sapling requires two Wild Seeds of any season; recipe mailed after Caroline 2-heart event.",
+      "sourceRef": "source.research3.tea-seeds",
+      "verificationLevel": "externally-researched-not-live-tested",
+      "liveGameplayTested": false,
+      "gameEvidenceStatus": "not asserted as installed-game assembly evidence"
+    }
+  ]
+}

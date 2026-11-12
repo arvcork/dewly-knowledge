@@ -1,0 +1,156 @@
+{
+  "schemaVersion": "1.0.0",
+  "gameVersion": "1.6.15.24354",
+  "authority": "current loaded content and read-only game-thread snapshot; portable source adapter NOT live C# mapping",
+  "entries": [
+    {
+      "id": "runtime.checklist.binding.water",
+      "family": "water",
+      "generatorId": "daily.rule.water-growing-crops",
+      "graphGoals": [],
+      "trackingSource": "data/daily-tasks/snapshot-facts.json",
+      "snapshotFactIds": [
+        "daily.fact.crop.tiles",
+        "daily.fact.crop.identity",
+        "daily.fact.crop.alive",
+        "daily.fact.crop.needs-water",
+        "daily.fact.crop.hydrated",
+        "daily.fact.tile.rain-effective",
+        "daily.fact.tile.automation-pending",
+        "daily.fact.tile.reachable"
+      ],
+      "snapshotSource": "cropTiles + cropTilesObserved",
+      "currentLoadedContentCheck": "cropId and actual crop/tile observations from current save",
+      "refreshTriggers": [
+        "crop-planted",
+        "crop-watered",
+        "rain/weather-changed",
+        "sprinkler-applied",
+        "crop-harvested"
+      ],
+      "fallbackInGameMinutes": 30,
+      "unknownPolicy": "withhold actionable task; preserve explicit blocker",
+      "completionPolicy": "Group distinct location+crop+tile; block group if a candidate tile state unknown; reconcile after hydration or changed automation.",
+      "readerStatus": "portable-synthetic-tested; live C# binding not implemented",
+      "evidenceIds": [
+        "evidence.research.daily.crop-water"
+      ]
+    },
+    {
+      "id": "runtime.checklist.binding.harvest",
+      "family": "harvest",
+      "generatorId": "daily.rule.harvest-ready-crops",
+      "graphGoals": [],
+      "trackingSource": "data/daily-tasks/snapshot-facts.json",
+      "snapshotFactIds": [
+        "daily.fact.crop.tiles",
+        "daily.fact.crop.identity",
+        "daily.fact.crop.ready",
+        "daily.fact.crop.auto-harvest",
+        "daily.fact.crop.harvest-method",
+        "daily.fact.crop.harvest-access"
+      ],
+      "snapshotSource": "cropTiles + cropTilesObserved",
+      "currentLoadedContentCheck": "cropId and actual crop/tile observations from current save",
+      "refreshTriggers": [
+        "crop-matured",
+        "crop-harvested",
+        "junimo-harvest"
+      ],
+      "fallbackInGameMinutes": 30,
+      "unknownPolicy": "withhold actionable task; preserve explicit blocker",
+      "completionPolicy": "Group distinct location+crop+method+tile; suppress actionable task on unknown readiness or automation.",
+      "readerStatus": "portable-synthetic-tested; live C# binding not implemented",
+      "evidenceIds": [
+        "evidence.research.daily.crop-harvest"
+      ]
+    },
+    {
+      "id": "runtime.checklist.binding.catch",
+      "family": "catch",
+      "generatorId": "daily.rule.condition-dependent-fishing",
+      "graphGoals": [
+        "master_angler",
+        "mother_catch",
+        "fisherman",
+        "ol_mariner"
+      ],
+      "trackingSource": "data/tracking/materialized.json",
+      "snapshotFactIds": [
+        "daily.fact.fish.content-routes",
+        "daily.fact.fish.achievement-deficit",
+        "daily.fact.calendar.today",
+        "daily.fact.weather.local",
+        "daily.fact.fish.spot-access",
+        "daily.fact.fish.known-routes"
+      ],
+      "snapshotSource": "progress.caught[(O)ID] + fishAvailability route observations",
+      "currentLoadedContentCheck": "required for graph item or recipe ID, and all location route condition decisions",
+      "refreshTriggers": [
+        "fish-caught",
+        "time-window-crossed",
+        "rain/weather-changed",
+        "location-entered"
+      ],
+      "fallbackInGameMinutes": 30,
+      "unknownPolicy": "withhold actionable task; preserve explicit blocker",
+      "completionPolicy": "Existing materialized fish action completion from qualified caught-history; active-content route predicates must be explicit; alternative spawn routes collapse by fish ID.",
+      "readerStatus": "portable-synthetic-tested; live C# binding not implemented",
+      "evidenceIds": [
+        "evidence.research.daily.fishing"
+      ]
+    },
+    {
+      "id": "runtime.checklist.binding.ship",
+      "family": "ship",
+      "generatorId": null,
+      "graphGoals": [
+        "full_shipment",
+        "polyculture",
+        "monoculture"
+      ],
+      "trackingSource": "data/tracking/materialized.json",
+      "snapshotFactIds": [],
+      "snapshotSource": "progress.shipped[(O)ID] + accessibleUnreserved[(O)ID]",
+      "currentLoadedContentCheck": "required for graph item or recipe ID, and all location route condition decisions",
+      "refreshTriggers": [
+        "shipment-processed",
+        "inventory-changed",
+        "goal-changed"
+      ],
+      "fallbackInGameMinutes": 30,
+      "unknownPolicy": "withhold actionable task; preserve explicit blocker",
+      "completionPolicy": "Existing materialized shipping/crop action completion from authoritative shipped-count by qualified ID; pending bin placement not proof of shipment; deduplicate by item across achievements.",
+      "readerStatus": "portable-synthetic-tested; live C# binding not implemented",
+      "evidenceIds": [
+        "evidence.content.shipping"
+      ]
+    },
+    {
+      "id": "runtime.checklist.binding.cook",
+      "family": "cook",
+      "generatorId": null,
+      "graphGoals": [
+        "cook",
+        "sous_chef",
+        "gourmet_chef"
+      ],
+      "trackingSource": "data/tracking/materialized.json",
+      "snapshotFactIds": [],
+      "snapshotSource": "progress.cooked[recipeRecordId] + recipeReady[recipeRecordId]",
+      "currentLoadedContentCheck": "required for graph item or recipe ID, and all location route condition decisions",
+      "refreshTriggers": [
+        "recipe-cooked",
+        "recipe-unlocked",
+        "inventory-changed"
+      ],
+      "fallbackInGameMinutes": 30,
+      "unknownPolicy": "withhold actionable task; preserve explicit blocker",
+      "completionPolicy": "Existing materialized cooking action completion from canonical recipe ID mapped to authoritative recipe-history; craftable verdict requires known recipe, kitchen and unreserved compatible ingredients.",
+      "readerStatus": "portable-synthetic-tested; live C# binding not implemented",
+      "evidenceIds": [
+        "evidence.research.runtimejoins.big-craftable"
+      ]
+    }
+  ]
+}

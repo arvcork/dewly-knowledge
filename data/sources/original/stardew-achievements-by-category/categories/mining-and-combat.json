@@ -1,0 +1,228 @@
+{
+  "category": "mining-and-combat",
+  "displayName": "Mining and combat",
+  "description": "Mine progression, monster slaying and powerful weapons.",
+  "catalogueVersion": "ps4-npwr12196-2026-11-08",
+  "rulesVersion": "ps4-1.6-cautious-2026-11-08-r2",
+  "trophyCount": 4,
+  "trophies": [
+    {
+      "trophyId": "the_bottom",
+      "name": "The Bottom",
+      "group": "base",
+      "tier": "bronze",
+      "classification": "Trackable but limited planning",
+      "requirement": "Reach the bottom of the regular mines.",
+      "requirementKind": "threshold",
+      "requirementDetail": {
+        "kind": "threshold",
+        "metric": "mine_floor",
+        "target": 120,
+        "unit": "floor"
+      },
+      "dependencies": [],
+      "evidenceRequired": "Canonical trophy evidence number: mine_floor; player-confirmed total or verifiable authorized activity",
+      "progressDerivation": "metricValue(mine_floor); unknown remains unknown; no wallet/lifetime proxy",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "mine_progress",
+          "title": "Explore the accessible Mines and report the deepest floor reached",
+          "effort": "long"
+        }
+      ],
+      "knownBlockers": [
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false,
+      "dependencyRule": {
+        "trophyId": "the_bottom",
+        "completion": {
+          "type": "FARM",
+          "condition": {
+            "type": "COUNT",
+            "metric": "mine_floor",
+            "target": 120
+          }
+        },
+        "strategicDependencies": []
+      }
+    },
+    {
+      "trophyId": "protector_of_the_valley",
+      "name": "Protector Of The Valley",
+      "group": "base",
+      "tier": "silver",
+      "classification": "Partially supported",
+      "requirement": "Complete the Adventurer's Guild monster-slayer goals.",
+      "requirementKind": "collection",
+      "requirementDetail": {
+        "kind": "collection",
+        "flag": "monster_slayer_complete"
+      },
+      "dependencies": [],
+      "evidenceRequired": "Trophy evidence boolean: monster_slayer_complete; player confirmation of the exact outcome",
+      "progressDerivation": "evaluateCollectionEvidence or explicit flag (monster_slayer_complete); partial count only when eligible IDs are recognized",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "monster_goal",
+          "title": "Advance a still-unfinished Adventurer Guild monster eradication goal",
+          "effort": "long"
+        }
+      ],
+      "knownBlockers": [
+        "Individual monster-eradication goals and per-monster counts not fully integrated.",
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "condition_needs_review",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false,
+      "dependencyRule": {
+        "trophyId": "protector_of_the_valley",
+        "completion": {
+          "type": "FARM",
+          "condition": {
+            "type": "COLLECTION",
+            "flag": "monster_slayer_complete"
+          }
+        },
+        "strategicDependencies": []
+      }
+    },
+    {
+      "trophyId": "danger_in_the_deep",
+      "name": "Danger in the Deep",
+      "group": "1.6",
+      "tier": "silver",
+      "classification": "Partially supported",
+      "requirement": "Reach floor 120 of the dangerous mines.",
+      "requirementKind": "binary",
+      "requirementDetail": {
+        "kind": "binary",
+        "flag": "dangerous_mines_bottom"
+      },
+      "dependencies": [
+        "the_bottom"
+      ],
+      "evidenceRequired": "Trophy evidence boolean: dangerous_mines_bottom; player confirmation of the exact outcome",
+      "progressDerivation": "evaluateCollectionEvidence or explicit flag (dangerous_mines_bottom); partial count only when eligible IDs are recognized",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "danger_mines",
+          "title": "Complete the dangerous Mines challenge and reach floor 120",
+          "effort": "long"
+        }
+      ],
+      "knownBlockers": [
+        "Dangerous Mine activation and challenge timing not exhaustively verified.",
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false,
+      "dependencyRule": {
+        "trophyId": "danger_in_the_deep",
+        "completion": {
+          "type": "FARM",
+          "condition": {
+            "type": "FACT",
+            "flag": "dangerous_mines_bottom"
+          }
+        },
+        "strategicDependencies": [
+          "the_bottom"
+        ]
+      }
+    },
+    {
+      "trophyId": "infinite_power",
+      "name": "Infinite Power",
+      "group": "1.6",
+      "tier": "silver",
+      "classification": "Partially supported",
+      "requirement": "Obtain the most powerful weapon.",
+      "requirementKind": "binary",
+      "requirementDetail": {
+        "kind": "binary",
+        "flag": "infinity_weapon_obtained"
+      },
+      "dependencies": [],
+      "evidenceRequired": "Trophy evidence boolean: infinity_weapon_obtained; player confirmation of the exact outcome",
+      "progressDerivation": "evaluateCollectionEvidence or explicit flag (infinity_weapon_obtained); partial count only when eligible IDs are recognized",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "m4-infinite_power",
+          "title": "Forge the Infinity weapon three times and confirm actual result",
+          "effort": "long"
+        },
+        {
+          "id": "infinity_weapon",
+          "title": "Gather verified Galaxy Soul requirements and create an Infinity weapon",
+          "effort": "medium"
+        }
+      ],
+      "knownBlockers": [
+        "Three forges per Galaxy weapon and the resulting Infinity weapon are separately recorded; materials are not auto-reserved or independently confirmed.",
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": {
+        "status": "partially implemented; pure engines and contract tested; actual MCP/hosted persistence NOT verified",
+        "contract": "report_gameplay_batch + milestone4Details"
+      },
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "condition_needs_review",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false,
+      "dependencyRule": {
+        "trophyId": "infinite_power",
+        "completion": {
+          "type": "FARM",
+          "condition": {
+            "type": "FACT",
+            "flag": "infinity_weapon_obtained"
+          }
+        },
+        "strategicDependencies": []
+      }
+    }
+  ]
+}

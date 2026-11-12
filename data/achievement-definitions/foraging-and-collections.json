@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "0.1.0",
+  "category": "foraging-and-collections",
+  "provenance": "Supplied source assertions, not newly verified gameplay rules.",
+  "entries": [
+    {
+      "id": "a_complete_collection",
+      "name": "A Complete Collection",
+      "sourceRequirement": "Complete the museum collection.",
+      "sourceDefinitionRef": "data/sources/original/trophy-50-coverage.json#/trophies/6",
+      "sourceDependencyRef": "data/sources/original/trophy-dependency-graph.json#/graph/a_complete_collection",
+      "verification": "source-import-only"
+    },
+    {
+      "id": "treasure_trove",
+      "name": "Treasure Trove",
+      "sourceRequirement": "Donate 40 different museum items.",
+      "sourceDefinitionRef": "data/sources/original/trophy-50-coverage.json#/trophies/25",
+      "sourceDependencyRef": "data/sources/original/trophy-dependency-graph.json#/graph/treasure_trove",
+      "verification": "source-import-only"
+    },
+    {
+      "id": "mystery_of_the_stardrops",
+      "name": "Mystery Of The Stardrops",
+      "sourceRequirement": "Find every Stardrop.",
+      "sourceDefinitionRef": "data/sources/original/trophy-50-coverage.json#/trophies/35",
+      "sourceDependencyRef": "data/sources/original/trophy-dependency-graph.json#/graph/mystery_of_the_stardrops",
+      "verification": "source-import-only"
+    },
+    {
+      "id": "well_read",
+      "name": "Well-Read",
+      "sourceRequirement": "Read every book.",
+      "sourceDefinitionRef": "data/sources/original/trophy-50-coverage.json#/trophies/41",
+      "sourceDependencyRef": "data/sources/original/trophy-dependency-graph.json#/graph/well_read",
+      "verification": "source-import-only"
+    }
+  ]
+}

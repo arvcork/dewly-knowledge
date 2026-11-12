@@ -1,0 +1,2251 @@
+{
+  "catalogueVersion": "ps4-npwr12196-2026-11-08",
+  "scope": "Milestone 4 offline implementation checkpoint, not production ready",
+  "total": 50,
+  "totals": {
+    "Trackable but limited planning": 26,
+    "Partially supported": 24
+  },
+  "trophies": [
+    {
+      "trophyId": "iridium_seal",
+      "name": "Iridium Seal",
+      "group": "base",
+      "tier": "platinum",
+      "classification": "Trackable but limited planning",
+      "requirement": "Earn the other base-game PlayStation trophies.",
+      "requirementKind": "platinum",
+      "requirementDetail": {
+        "kind": "platinum"
+      },
+      "dependencies": [],
+      "evidenceRequired": "Only explicitly confirmed base-game PSN trophies",
+      "progressDerivation": "All 40 other base trophies must be explicitly PSN-confirmed (no automatic completion)",
+      "playStationConfirmation": "No direct farming action. Only explicit confirmations of every other base trophy.",
+      "actionablePlanning": false,
+      "examplePracticalSteps": [],
+      "knownBlockers": [
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false
+    },
+    {
+      "trophyId": "greenhorn",
+      "name": "Greenhorn",
+      "group": "base",
+      "tier": "bronze",
+      "classification": "Trackable but limited planning",
+      "requirement": "Earn 15,000g.",
+      "requirementKind": "threshold",
+      "requirementDetail": {
+        "kind": "threshold",
+        "metric": "lifetime_earnings",
+        "target": 15000,
+        "unit": "g earned"
+      },
+      "dependencies": [],
+      "evidenceRequired": "Canonical trophy evidence number: lifetime_earnings; player-confirmed total or verifiable authorized activity",
+      "progressDerivation": "metricValue(lifetime_earnings); unknown remains unknown; no wallet/lifetime proxy",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "shipping_income",
+          "title": "Harvest, process or ship legitimately obtained goods via the shipping bin",
+          "effort": "medium"
+        }
+      ],
+      "knownBlockers": [
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false
+    },
+    {
+      "trophyId": "cowpoke",
+      "name": "Cowpoke",
+      "group": "base",
+      "tier": "bronze",
+      "classification": "Trackable but limited planning",
+      "requirement": "Earn 50,000g.",
+      "requirementKind": "threshold",
+      "requirementDetail": {
+        "kind": "threshold",
+        "metric": "lifetime_earnings",
+        "target": 50000,
+        "unit": "g earned"
+      },
+      "dependencies": ["greenhorn"],
+      "evidenceRequired": "Canonical trophy evidence number: lifetime_earnings; player-confirmed total or verifiable authorized activity",
+      "progressDerivation": "metricValue(lifetime_earnings); unknown remains unknown; no wallet/lifetime proxy",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "shipping_income",
+          "title": "Harvest, process or ship legitimately obtained goods via the shipping bin",
+          "effort": "medium"
+        }
+      ],
+      "knownBlockers": [
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false
+    },
+    {
+      "trophyId": "homesteader",
+      "name": "Homesteader",
+      "group": "base",
+      "tier": "bronze",
+      "classification": "Trackable but limited planning",
+      "requirement": "Earn 250,000g.",
+      "requirementKind": "threshold",
+      "requirementDetail": {
+        "kind": "threshold",
+        "metric": "lifetime_earnings",
+        "target": 250000,
+        "unit": "g earned"
+      },
+      "dependencies": ["cowpoke"],
+      "evidenceRequired": "Canonical trophy evidence number: lifetime_earnings; player-confirmed total or verifiable authorized activity",
+      "progressDerivation": "metricValue(lifetime_earnings); unknown remains unknown; no wallet/lifetime proxy",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "shipping_income",
+          "title": "Harvest, process or ship legitimately obtained goods via the shipping bin",
+          "effort": "medium"
+        }
+      ],
+      "knownBlockers": [
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false
+    },
+    {
+      "trophyId": "millionaire",
+      "name": "Millionaire",
+      "group": "base",
+      "tier": "bronze",
+      "classification": "Trackable but limited planning",
+      "requirement": "Earn 1,000,000g.",
+      "requirementKind": "threshold",
+      "requirementDetail": {
+        "kind": "threshold",
+        "metric": "lifetime_earnings",
+        "target": 1000000,
+        "unit": "g earned"
+      },
+      "dependencies": ["homesteader"],
+      "evidenceRequired": "Canonical trophy evidence number: lifetime_earnings; player-confirmed total or verifiable authorized activity",
+      "progressDerivation": "metricValue(lifetime_earnings); unknown remains unknown; no wallet/lifetime proxy",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "shipping_income",
+          "title": "Harvest, process or ship legitimately obtained goods via the shipping bin",
+          "effort": "medium"
+        }
+      ],
+      "knownBlockers": [
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false
+    },
+    {
+      "trophyId": "legend",
+      "name": "Legend",
+      "group": "base",
+      "tier": "gold",
+      "classification": "Trackable but limited planning",
+      "requirement": "Earn 10,000,000g.",
+      "requirementKind": "threshold",
+      "requirementDetail": {
+        "kind": "threshold",
+        "metric": "lifetime_earnings",
+        "target": 10000000,
+        "unit": "g earned"
+      },
+      "dependencies": ["millionaire"],
+      "evidenceRequired": "Canonical trophy evidence number: lifetime_earnings; player-confirmed total or verifiable authorized activity",
+      "progressDerivation": "metricValue(lifetime_earnings); unknown remains unknown; no wallet/lifetime proxy",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "shipping_income",
+          "title": "Harvest, process or ship legitimately obtained goods via the shipping bin",
+          "effort": "medium"
+        }
+      ],
+      "knownBlockers": [
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false
+    },
+    {
+      "trophyId": "a_complete_collection",
+      "name": "A Complete Collection",
+      "group": "base",
+      "tier": "silver",
+      "classification": "Partially supported",
+      "requirement": "Complete the museum collection.",
+      "requirementKind": "collection",
+      "requirementDetail": {
+        "kind": "collection",
+        "flag": "museum_complete"
+      },
+      "dependencies": [],
+      "evidenceRequired": "Trophy evidence boolean: museum_complete; player confirmation of the exact outcome",
+      "progressDerivation": "evaluateCollectionEvidence or explicit flag (museum_complete); partial count only when eligible IDs are recognized",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "museum_review",
+          "title": "Assess unidentified museum donations, then seek a verified missing artifact or mineral",
+          "effort": "medium"
+        }
+      ],
+      "knownBlockers": [
+        "Museum donation completeness depends on correct artifact/mineral identity and source eligibility.",
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "condition_needs_review",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false
+    },
+    {
+      "trophyId": "a_new_friend",
+      "name": "A New Friend",
+      "group": "base",
+      "tier": "bronze",
+      "classification": "Trackable but limited planning",
+      "requirement": "Reach 5 hearts with one person.",
+      "requirementKind": "threshold",
+      "requirementDetail": {
+        "kind": "threshold",
+        "metric": "friendships_5",
+        "target": 1,
+        "unit": "people"
+      },
+      "dependencies": [],
+      "evidenceRequired": "Canonical trophy evidence number: friendships_5; player-confirmed total or verifiable authorized activity",
+      "progressDerivation": "metricValue(friendships_5); unknown remains unknown; no wallet/lifetime proxy",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "relationship_talk",
+          "title": "Talk to accessible villagers you are building friendship with",
+          "effort": "short"
+        },
+        {
+          "id": "relationship_gift",
+          "title": "Give a verified liked/loved gift, respecting limits and reported inventory",
+          "effort": "short"
+        }
+      ],
+      "knownBlockers": [
+        "Gift windows, affection decay and known heart-level changes are not fully automated.",
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false
+    },
+    {
+      "trophyId": "best_friends",
+      "name": "Best Friends",
+      "group": "base",
+      "tier": "bronze",
+      "classification": "Trackable but limited planning",
+      "requirement": "Reach 10 hearts with one person.",
+      "requirementKind": "threshold",
+      "requirementDetail": {
+        "kind": "threshold",
+        "metric": "friendships_10",
+        "target": 1,
+        "unit": "people"
+      },
+      "dependencies": ["a_new_friend"],
+      "evidenceRequired": "Canonical trophy evidence number: friendships_10; player-confirmed total or verifiable authorized activity",
+      "progressDerivation": "metricValue(friendships_10); unknown remains unknown; no wallet/lifetime proxy",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "relationship_talk",
+          "title": "Talk to accessible villagers you are building friendship with",
+          "effort": "short"
+        },
+        {
+          "id": "relationship_gift",
+          "title": "Give a verified liked/loved gift, respecting limits and reported inventory",
+          "effort": "short"
+        }
+      ],
+      "knownBlockers": [
+        "Gift windows, affection decay and known heart-level changes are not fully automated.",
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false
+    },
+    {
+      "trophyId": "the_beloved_farmer",
+      "name": "The Beloved Farmer",
+      "group": "base",
+      "tier": "silver",
+      "classification": "Trackable but limited planning",
+      "requirement": "Reach 10 hearts with 8 people.",
+      "requirementKind": "threshold",
+      "requirementDetail": {
+        "kind": "threshold",
+        "metric": "friendships_10",
+        "target": 8,
+        "unit": "people"
+      },
+      "dependencies": ["best_friends"],
+      "evidenceRequired": "Canonical trophy evidence number: friendships_10; player-confirmed total or verifiable authorized activity",
+      "progressDerivation": "metricValue(friendships_10); unknown remains unknown; no wallet/lifetime proxy",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "relationship_talk",
+          "title": "Talk to accessible villagers you are building friendship with",
+          "effort": "short"
+        },
+        {
+          "id": "relationship_gift",
+          "title": "Give a verified liked/loved gift, respecting limits and reported inventory",
+          "effort": "short"
+        }
+      ],
+      "knownBlockers": [
+        "Gift windows, affection decay and known heart-level changes are not fully automated.",
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false
+    },
+    {
+      "trophyId": "cliques",
+      "name": "Cliques",
+      "group": "base",
+      "tier": "bronze",
+      "classification": "Trackable but limited planning",
+      "requirement": "Reach 5 hearts with 4 people.",
+      "requirementKind": "threshold",
+      "requirementDetail": {
+        "kind": "threshold",
+        "metric": "friendships_5",
+        "target": 4,
+        "unit": "people"
+      },
+      "dependencies": ["a_new_friend"],
+      "evidenceRequired": "Canonical trophy evidence number: friendships_5; player-confirmed total or verifiable authorized activity",
+      "progressDerivation": "metricValue(friendships_5); unknown remains unknown; no wallet/lifetime proxy",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "relationship_talk",
+          "title": "Talk to accessible villagers you are building friendship with",
+          "effort": "short"
+        },
+        {
+          "id": "relationship_gift",
+          "title": "Give a verified liked/loved gift, respecting limits and reported inventory",
+          "effort": "short"
+        }
+      ],
+      "knownBlockers": [
+        "Gift windows, affection decay and known heart-level changes are not fully automated.",
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false
+    },
+    {
+      "trophyId": "networking",
+      "name": "Networking",
+      "group": "base",
+      "tier": "bronze",
+      "classification": "Trackable but limited planning",
+      "requirement": "Reach 5 hearts with 10 people.",
+      "requirementKind": "threshold",
+      "requirementDetail": {
+        "kind": "threshold",
+        "metric": "friendships_5",
+        "target": 10,
+        "unit": "people"
+      },
+      "dependencies": ["cliques"],
+      "evidenceRequired": "Canonical trophy evidence number: friendships_5; player-confirmed total or verifiable authorized activity",
+      "progressDerivation": "metricValue(friendships_5); unknown remains unknown; no wallet/lifetime proxy",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "relationship_talk",
+          "title": "Talk to accessible villagers you are building friendship with",
+          "effort": "short"
+        },
+        {
+          "id": "relationship_gift",
+          "title": "Give a verified liked/loved gift, respecting limits and reported inventory",
+          "effort": "short"
+        }
+      ],
+      "knownBlockers": [
+        "Gift windows, affection decay and known heart-level changes are not fully automated.",
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false
+    },
+    {
+      "trophyId": "popular",
+      "name": "Popular",
+      "group": "base",
+      "tier": "bronze",
+      "classification": "Trackable but limited planning",
+      "requirement": "Reach 5 hearts with 20 people.",
+      "requirementKind": "threshold",
+      "requirementDetail": {
+        "kind": "threshold",
+        "metric": "friendships_5",
+        "target": 20,
+        "unit": "people"
+      },
+      "dependencies": ["networking"],
+      "evidenceRequired": "Canonical trophy evidence number: friendships_5; player-confirmed total or verifiable authorized activity",
+      "progressDerivation": "metricValue(friendships_5); unknown remains unknown; no wallet/lifetime proxy",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "relationship_talk",
+          "title": "Talk to accessible villagers you are building friendship with",
+          "effort": "short"
+        },
+        {
+          "id": "relationship_gift",
+          "title": "Give a verified liked/loved gift, respecting limits and reported inventory",
+          "effort": "short"
+        }
+      ],
+      "knownBlockers": [
+        "Gift windows, affection decay and known heart-level changes are not fully automated.",
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false
+    },
+    {
+      "trophyId": "cook",
+      "name": "Cook",
+      "group": "base",
+      "tier": "bronze",
+      "classification": "Partially supported",
+      "requirement": "Cook 10 different recipes.",
+      "requirementKind": "threshold",
+      "requirementDetail": {
+        "kind": "threshold",
+        "metric": "cooked_distinct",
+        "target": 10,
+        "unit": "recipes"
+      },
+      "dependencies": [],
+      "evidenceRequired": "Canonical trophy evidence number: cooked_distinct; player-confirmed total or verifiable authorized activity",
+      "progressDerivation": "metricValue(cooked_distinct); unknown remains unknown; no wallet/lifetime proxy",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "cook_recipe",
+          "title": "Cook a learned and affordable recipe not yet cooked",
+          "effort": "medium"
+        }
+      ],
+      "knownBlockers": [
+        "Recipe learning, ingredients and actual cooking are separate; no comprehensive authoritative kitchen state.",
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false
+    },
+    {
+      "trophyId": "sous_chef",
+      "name": "Sous Chef",
+      "group": "base",
+      "tier": "silver",
+      "classification": "Partially supported",
+      "requirement": "Cook 25 different recipes.",
+      "requirementKind": "threshold",
+      "requirementDetail": {
+        "kind": "threshold",
+        "metric": "cooked_distinct",
+        "target": 25,
+        "unit": "recipes"
+      },
+      "dependencies": ["cook"],
+      "evidenceRequired": "Canonical trophy evidence number: cooked_distinct; player-confirmed total or verifiable authorized activity",
+      "progressDerivation": "metricValue(cooked_distinct); unknown remains unknown; no wallet/lifetime proxy",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "cook_recipe",
+          "title": "Cook a learned and affordable recipe not yet cooked",
+          "effort": "medium"
+        }
+      ],
+      "knownBlockers": [
+        "Recipe learning, ingredients and actual cooking are separate; no comprehensive authoritative kitchen state.",
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false
+    },
+    {
+      "trophyId": "gourmet_chef",
+      "name": "Gourmet Chef",
+      "group": "base",
+      "tier": "silver",
+      "classification": "Partially supported",
+      "requirement": "Cook every required recipe.",
+      "requirementKind": "collection",
+      "requirementDetail": {
+        "kind": "collection",
+        "flag": "cooking_complete"
+      },
+      "dependencies": ["sous_chef"],
+      "evidenceRequired": "Trophy evidence boolean: cooking_complete; player confirmation of the exact outcome",
+      "progressDerivation": "evaluateCollectionEvidence or explicit flag (cooking_complete); partial count only when eligible IDs are recognized",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "cook_recipe",
+          "title": "Learn a missing cooking recipe and source its ingredients before cooking",
+          "effort": "medium"
+        }
+      ],
+      "knownBlockers": [
+        "Seasonal recipe broadcasts, unlock paths, every cooking recipe and dates need full scenario coverage.",
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "condition_needs_review",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false
+    },
+    {
+      "trophyId": "moving_up",
+      "name": "Moving Up",
+      "group": "base",
+      "tier": "bronze",
+      "classification": "Trackable but limited planning",
+      "requirement": "Upgrade the farmhouse.",
+      "requirementKind": "threshold",
+      "requirementDetail": {
+        "kind": "threshold",
+        "metric": "house_upgrades",
+        "target": 1,
+        "unit": "upgrades"
+      },
+      "dependencies": [],
+      "evidenceRequired": "Canonical trophy evidence number: house_upgrades; player-confirmed total or verifiable authorized activity",
+      "progressDerivation": "metricValue(house_upgrades); unknown remains unknown; no wallet/lifetime proxy",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "house_upgrade",
+          "title": "Save verified building materials and gold for a farmhouse upgrade",
+          "effort": "medium"
+        }
+      ],
+      "knownBlockers": [
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false
+    },
+    {
+      "trophyId": "living_large",
+      "name": "Living Large",
+      "group": "base",
+      "tier": "bronze",
+      "classification": "Trackable but limited planning",
+      "requirement": "Upgrade the house to maximum size.",
+      "requirementKind": "binary",
+      "requirementDetail": {
+        "kind": "binary",
+        "flag": "house_maxed"
+      },
+      "dependencies": ["moving_up"],
+      "evidenceRequired": "Trophy evidence boolean: house_maxed; player confirmation of the exact outcome",
+      "progressDerivation": "evaluateCollectionEvidence or explicit flag (house_maxed); partial count only when eligible IDs are recognized",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "house_upgrade",
+          "title": "Complete the required farmhouse upgrades with verified materials",
+          "effort": "medium"
+        }
+      ],
+      "knownBlockers": [
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false
+    },
+    {
+      "trophyId": "diy",
+      "name": "D.I.Y.",
+      "group": "base",
+      "tier": "bronze",
+      "classification": "Trackable but limited planning",
+      "requirement": "Craft 15 different items.",
+      "requirementKind": "threshold",
+      "requirementDetail": {
+        "kind": "threshold",
+        "metric": "crafted_distinct",
+        "target": 15,
+        "unit": "items"
+      },
+      "dependencies": [],
+      "evidenceRequired": "Canonical trophy evidence number: crafted_distinct; player-confirmed total or verifiable authorized activity",
+      "progressDerivation": "metricValue(crafted_distinct); unknown remains unknown; no wallet/lifetime proxy",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "craft_recipe",
+          "title": "Craft a learned recipe not yet crafted, confirming materials",
+          "effort": "medium"
+        }
+      ],
+      "knownBlockers": [
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false
+    },
+    {
+      "trophyId": "artisan",
+      "name": "Artisan",
+      "group": "base",
+      "tier": "silver",
+      "classification": "Trackable but limited planning",
+      "requirement": "Craft 30 different items.",
+      "requirementKind": "threshold",
+      "requirementDetail": {
+        "kind": "threshold",
+        "metric": "crafted_distinct",
+        "target": 30,
+        "unit": "items"
+      },
+      "dependencies": ["diy"],
+      "evidenceRequired": "Canonical trophy evidence number: crafted_distinct; player-confirmed total or verifiable authorized activity",
+      "progressDerivation": "metricValue(crafted_distinct); unknown remains unknown; no wallet/lifetime proxy",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "craft_recipe",
+          "title": "Craft a learned recipe not yet crafted, confirming materials",
+          "effort": "medium"
+        }
+      ],
+      "knownBlockers": [
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false
+    },
+    {
+      "trophyId": "craft_master",
+      "name": "Craft Master",
+      "group": "base",
+      "tier": "gold",
+      "classification": "Partially supported",
+      "requirement": "Craft every required item.",
+      "requirementKind": "collection",
+      "requirementDetail": {
+        "kind": "collection",
+        "flag": "crafting_complete"
+      },
+      "dependencies": ["artisan"],
+      "evidenceRequired": "Trophy evidence boolean: crafting_complete; player confirmation of the exact outcome",
+      "progressDerivation": "evaluateCollectionEvidence or explicit flag (crafting_complete); partial count only when eligible IDs are recognized",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "craft_recipe",
+          "title": "Learn and craft eligible missing recipes, including progression unlocks",
+          "effort": "medium"
+        }
+      ],
+      "knownBlockers": [
+        "Every crafting recipe/material unlocking prerequisite needs full scenario coverage.",
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "condition_needs_review",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false
+    },
+    {
+      "trophyId": "fisherman",
+      "name": "Fisherman",
+      "group": "base",
+      "tier": "bronze",
+      "classification": "Trackable but limited planning",
+      "requirement": "Catch 10 different fish.",
+      "requirementKind": "threshold",
+      "requirementDetail": {
+        "kind": "threshold",
+        "metric": "fish_distinct",
+        "target": 10,
+        "unit": "species"
+      },
+      "dependencies": [],
+      "evidenceRequired": "Canonical trophy evidence number: fish_distinct; player-confirmed total or verifiable authorized activity",
+      "progressDerivation": "metricValue(fish_distinct); unknown remains unknown; no wallet/lifetime proxy",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "catch_fish:Shad",
+          "title": "Catch Shad with a rod",
+          "effort": "long"
+        },
+        {
+          "id": "catch_fish:Eel",
+          "title": "Catch Eel with a rod",
+          "effort": "long"
+        },
+        {
+          "id": "catch_fish:Catfish",
+          "title": "Catch Catfish with a rod",
+          "effort": "long"
+        },
+        {
+          "id": "catch_fish:Anchovy",
+          "title": "Catch Anchovy with a rod",
+          "effort": "long"
+        },
+        {
+          "id": "catch_fish:Sardine",
+          "title": "Catch Sardine with a rod",
+          "effort": "long"
+        },
+        {
+          "id": "catch_fish:Bream",
+          "title": "Catch Bream with a rod",
+          "effort": "long"
+        },
+        {
+          "id": "catch_fish:Largemouth Bass",
+          "title": "Catch Largemouth Bass with a rod",
+          "effort": "long"
+        }
+      ],
+      "knownBlockers": [
+        "Catch must be the correct qualifying method, location, time, season, weather, access and equipment; purchased fish are not rod catches.",
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false
+    },
+    {
+      "trophyId": "ol_mariner",
+      "name": "Ol' Mariner",
+      "group": "base",
+      "tier": "bronze",
+      "classification": "Trackable but limited planning",
+      "requirement": "Catch 24 different fish.",
+      "requirementKind": "threshold",
+      "requirementDetail": {
+        "kind": "threshold",
+        "metric": "fish_distinct",
+        "target": 24,
+        "unit": "species"
+      },
+      "dependencies": ["fisherman"],
+      "evidenceRequired": "Canonical trophy evidence number: fish_distinct; player-confirmed total or verifiable authorized activity",
+      "progressDerivation": "metricValue(fish_distinct); unknown remains unknown; no wallet/lifetime proxy",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "catch_fish:Shad",
+          "title": "Catch Shad with a rod",
+          "effort": "long"
+        },
+        {
+          "id": "catch_fish:Eel",
+          "title": "Catch Eel with a rod",
+          "effort": "long"
+        },
+        {
+          "id": "catch_fish:Catfish",
+          "title": "Catch Catfish with a rod",
+          "effort": "long"
+        },
+        {
+          "id": "catch_fish:Anchovy",
+          "title": "Catch Anchovy with a rod",
+          "effort": "long"
+        },
+        {
+          "id": "catch_fish:Sardine",
+          "title": "Catch Sardine with a rod",
+          "effort": "long"
+        },
+        {
+          "id": "catch_fish:Bream",
+          "title": "Catch Bream with a rod",
+          "effort": "long"
+        },
+        {
+          "id": "catch_fish:Largemouth Bass",
+          "title": "Catch Largemouth Bass with a rod",
+          "effort": "long"
+        }
+      ],
+      "knownBlockers": [
+        "Catch must be the correct qualifying method, location, time, season, weather, access and equipment; purchased fish are not rod catches.",
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false
+    },
+    {
+      "trophyId": "master_angler",
+      "name": "Master Angler",
+      "group": "base",
+      "tier": "silver",
+      "classification": "Trackable but limited planning",
+      "requirement": "Catch every required fish.",
+      "requirementKind": "collection",
+      "requirementDetail": {
+        "kind": "collection",
+        "flag": "fish_collection_complete"
+      },
+      "dependencies": ["ol_mariner"],
+      "evidenceRequired": "Trophy evidence boolean: fish_collection_complete; player confirmation of the exact outcome",
+      "progressDerivation": "evaluateCollectionEvidence or explicit flag (fish_collection_complete); partial count only when eligible IDs are recognized",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "catch_fish:Shad",
+          "title": "Catch Shad with a rod",
+          "effort": "long"
+        },
+        {
+          "id": "catch_fish:Eel",
+          "title": "Catch Eel with a rod",
+          "effort": "long"
+        },
+        {
+          "id": "catch_fish:Catfish",
+          "title": "Catch Catfish with a rod",
+          "effort": "long"
+        },
+        {
+          "id": "catch_fish:Anchovy",
+          "title": "Catch Anchovy with a rod",
+          "effort": "long"
+        },
+        {
+          "id": "catch_fish:Sardine",
+          "title": "Catch Sardine with a rod",
+          "effort": "long"
+        },
+        {
+          "id": "catch_fish:Bream",
+          "title": "Catch Bream with a rod",
+          "effort": "long"
+        },
+        {
+          "id": "catch_fish:Largemouth Bass",
+          "title": "Catch Largemouth Bass with a rod",
+          "effort": "long"
+        },
+        {
+          "id": "crab_pot_preparation",
+          "title": "Work towards a Crab Pot and confirm which eligible pot catches remain",
+          "effort": "short"
+        }
+      ],
+      "knownBlockers": [
+        "Catch must be the correct qualifying method, location, time, season, weather, access and equipment; purchased fish are not rod catches.",
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "condition_needs_review",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false
+    },
+    {
+      "trophyId": "mother_catch",
+      "name": "Mother Catch",
+      "group": "base",
+      "tier": "bronze",
+      "classification": "Trackable but limited planning",
+      "requirement": "Catch 100 fish.",
+      "requirementKind": "threshold",
+      "requirementDetail": {
+        "kind": "threshold",
+        "metric": "fish_caught_total",
+        "target": 100,
+        "unit": "fish"
+      },
+      "dependencies": [],
+      "evidenceRequired": "Canonical trophy evidence number: fish_caught_total; player-confirmed total or verifiable authorized activity",
+      "progressDerivation": "metricValue(fish_caught_total); unknown remains unknown; no wallet/lifetime proxy",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "catch_fish:Shad",
+          "title": "Catch Shad with a rod",
+          "effort": "long"
+        },
+        {
+          "id": "catch_fish:Eel",
+          "title": "Catch Eel with a rod",
+          "effort": "long"
+        },
+        {
+          "id": "catch_fish:Catfish",
+          "title": "Catch Catfish with a rod",
+          "effort": "long"
+        },
+        {
+          "id": "catch_fish:Anchovy",
+          "title": "Catch Anchovy with a rod",
+          "effort": "long"
+        },
+        {
+          "id": "catch_fish:Sardine",
+          "title": "Catch Sardine with a rod",
+          "effort": "long"
+        },
+        {
+          "id": "catch_fish:Bream",
+          "title": "Catch Bream with a rod",
+          "effort": "long"
+        },
+        {
+          "id": "catch_fish:Largemouth Bass",
+          "title": "Catch Largemouth Bass with a rod",
+          "effort": "long"
+        }
+      ],
+      "knownBlockers": [
+        "Catch must be the correct qualifying method, location, time, season, weather, access and equipment; purchased fish are not rod catches.",
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false
+    },
+    {
+      "trophyId": "treasure_trove",
+      "name": "Treasure Trove",
+      "group": "base",
+      "tier": "bronze",
+      "classification": "Trackable but limited planning",
+      "requirement": "Donate 40 different museum items.",
+      "requirementKind": "threshold",
+      "requirementDetail": {
+        "kind": "threshold",
+        "metric": "museum_donations_distinct",
+        "target": 40,
+        "unit": "items"
+      },
+      "dependencies": [],
+      "evidenceRequired": "Canonical trophy evidence number: museum_donations_distinct; player-confirmed total or verifiable authorized activity",
+      "progressDerivation": "metricValue(museum_donations_distinct); unknown remains unknown; no wallet/lifetime proxy",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "museum_donate",
+          "title": "Donate a verified unsubmitted artifact or mineral to the museum",
+          "effort": "medium"
+        }
+      ],
+      "knownBlockers": [
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false
+    },
+    {
+      "trophyId": "gofer",
+      "name": "Gofer",
+      "group": "base",
+      "tier": "bronze",
+      "classification": "Partially supported",
+      "requirement": "Complete 10 Help Wanted requests.",
+      "requirementKind": "threshold",
+      "requirementDetail": {
+        "kind": "threshold",
+        "metric": "help_wanted_completed",
+        "target": 10,
+        "unit": "requests"
+      },
+      "dependencies": [],
+      "evidenceRequired": "Canonical trophy evidence number: help_wanted_completed; player-confirmed total or verifiable authorized activity",
+      "progressDerivation": "metricValue(help_wanted_completed); unknown remains unknown; no wallet/lifetime proxy",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "help_wanted",
+          "title": "Inspect the Help Wanted board; complete an actual accepted task",
+          "effort": "medium"
+        }
+      ],
+      "knownBlockers": [
+        "The daily board and accepted quest state are not read directly from the game.",
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false
+    },
+    {
+      "trophyId": "a_big_help",
+      "name": "A Big Help",
+      "group": "base",
+      "tier": "silver",
+      "classification": "Partially supported",
+      "requirement": "Complete 40 Help Wanted requests.",
+      "requirementKind": "threshold",
+      "requirementDetail": {
+        "kind": "threshold",
+        "metric": "help_wanted_completed",
+        "target": 40,
+        "unit": "requests"
+      },
+      "dependencies": ["gofer"],
+      "evidenceRequired": "Canonical trophy evidence number: help_wanted_completed; player-confirmed total or verifiable authorized activity",
+      "progressDerivation": "metricValue(help_wanted_completed); unknown remains unknown; no wallet/lifetime proxy",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "help_wanted",
+          "title": "Inspect the Help Wanted board; complete an actual accepted task",
+          "effort": "medium"
+        }
+      ],
+      "knownBlockers": [
+        "The daily board and accepted quest state are not read directly from the game.",
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false
+    },
+    {
+      "trophyId": "polyculture",
+      "name": "Polyculture",
+      "group": "base",
+      "tier": "bronze",
+      "classification": "Partially supported",
+      "requirement": "Ship 15 of each required crop.",
+      "requirementKind": "collection",
+      "requirementDetail": {
+        "kind": "collection",
+        "flag": "polyculture_complete"
+      },
+      "dependencies": [],
+      "evidenceRequired": "Trophy evidence boolean: polyculture_complete; player confirmation of the exact outcome",
+      "progressDerivation": "evaluateCollectionEvidence or explicit flag (polyculture_complete); partial count only when eligible IDs are recognized",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "grow_ship_crop",
+          "title": "Grow and ship 15 of a still-needed eligible crop",
+          "effort": "medium"
+        }
+      ],
+      "knownBlockers": [
+        "Only explicitly reported shipping-bin activity counts; acquisition and merchant sales do not.",
+        "Track 15-shipped quantities, but source set/canonical sales and corrections require broader testing.",
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "condition_needs_review",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false
+    },
+    {
+      "trophyId": "monoculture",
+      "name": "Monoculture",
+      "group": "base",
+      "tier": "bronze",
+      "classification": "Trackable but limited planning",
+      "requirement": "Ship 300 of one crop.",
+      "requirementKind": "threshold",
+      "requirementDetail": {
+        "kind": "threshold",
+        "metric": "monoculture_max",
+        "target": 300,
+        "unit": "same-crop shipments"
+      },
+      "dependencies": [],
+      "evidenceRequired": "Canonical trophy evidence number: monoculture_max; player-confirmed total or verifiable authorized activity",
+      "progressDerivation": "metricValue(monoculture_max); unknown remains unknown; no wallet/lifetime proxy",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "grow_ship_crop",
+          "title": "Grow and ship quantities of a single eligible crop",
+          "effort": "medium"
+        }
+      ],
+      "knownBlockers": [
+        "Only explicitly reported shipping-bin activity counts; acquisition and merchant sales do not.",
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false
+    },
+    {
+      "trophyId": "full_shipment",
+      "name": "Full Shipment",
+      "group": "base",
+      "tier": "gold",
+      "classification": "Partially supported",
+      "requirement": "Ship each item required by the shipping collection.",
+      "requirementKind": "collection",
+      "requirementDetail": {
+        "kind": "collection",
+        "flag": "shipping_complete"
+      },
+      "dependencies": [],
+      "evidenceRequired": "Trophy evidence boolean: shipping_complete; player confirmation of the exact outcome",
+      "progressDerivation": "evaluateCollectionEvidence or explicit flag (shipping_complete); partial count only when eligible IDs are recognized",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "ship_missing",
+          "title": "Ship a verifiably missing collection item through the shipping bin",
+          "effort": "medium"
+        }
+      ],
+      "knownBlockers": [
+        "Only explicitly reported shipping-bin activity counts; acquisition and merchant sales do not.",
+        "Shipping eligibility for all source-listed items and corrected sale channels require broader testing.",
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "condition_needs_review",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false
+    },
+    {
+      "trophyId": "prairie_king",
+      "name": "Prairie King",
+      "group": "base",
+      "tier": "bronze",
+      "classification": "Trackable but limited planning",
+      "requirement": "Beat Journey of the Prairie King.",
+      "requirementKind": "binary",
+      "requirementDetail": {
+        "kind": "binary",
+        "flag": "prairie_king_won"
+      },
+      "dependencies": [],
+      "evidenceRequired": "Trophy evidence boolean: prairie_king_won; player confirmation of the exact outcome",
+      "progressDerivation": "evaluateCollectionEvidence or explicit flag (prairie_king_won); partial count only when eligible IDs are recognized",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "arcade_practice",
+          "title": "Practice and attempt a full Journey of the Prairie King win",
+          "effort": "long"
+        }
+      ],
+      "knownBlockers": [
+        "Unverified arcade-run state cannot be promoted to a PlayStation trophy.",
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false
+    },
+    {
+      "trophyId": "the_bottom",
+      "name": "The Bottom",
+      "group": "base",
+      "tier": "bronze",
+      "classification": "Trackable but limited planning",
+      "requirement": "Reach the bottom of the regular mines.",
+      "requirementKind": "threshold",
+      "requirementDetail": {
+        "kind": "threshold",
+        "metric": "mine_floor",
+        "target": 120,
+        "unit": "floor"
+      },
+      "dependencies": [],
+      "evidenceRequired": "Canonical trophy evidence number: mine_floor; player-confirmed total or verifiable authorized activity",
+      "progressDerivation": "metricValue(mine_floor); unknown remains unknown; no wallet/lifetime proxy",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "mine_progress",
+          "title": "Explore the accessible Mines and report the deepest floor reached",
+          "effort": "long"
+        }
+      ],
+      "knownBlockers": [
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false
+    },
+    {
+      "trophyId": "local_legend",
+      "name": "Local Legend",
+      "group": "base",
+      "tier": "bronze",
+      "classification": "Partially supported",
+      "requirement": "Restore the Pelican Town Community Center.",
+      "requirementKind": "route",
+      "requirementDetail": {
+        "kind": "route",
+        "route": "community_center",
+        "flag": "community_center_restored"
+      },
+      "dependencies": [],
+      "evidenceRequired": "Trophy evidence boolean: community_center_restored; player confirmation of the exact outcome",
+      "progressDerivation": "evaluateCollectionEvidence or explicit flag (community_center_restored); partial count only when eligible IDs are recognized",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "cc_bundle",
+          "title": "Inspect the Community Center bundles on this farm and complete a missing requirement",
+          "effort": "medium"
+        }
+      ],
+      "knownBlockers": [
+        "The Community Center and Joja outcomes are mutually exclusive on the same farm; existing different farms may satisfy account-wide trophies.",
+        "Bundle variant, bundle completion and Community Center route are not completely auto-reconciled.",
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "Potentially yes: opposite Community Center/Joja branch",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false
+    },
+    {
+      "trophyId": "joja_co_member_of_the_year",
+      "name": "Joja Co. Member Of The Year",
+      "group": "base",
+      "tier": "bronze",
+      "classification": "Partially supported",
+      "requirement": "Buy all Joja community development projects.",
+      "requirementKind": "route",
+      "requirementDetail": {
+        "kind": "route",
+        "route": "joja",
+        "flag": "joja_completed"
+      },
+      "dependencies": [],
+      "evidenceRequired": "Trophy evidence boolean: joja_completed; player confirmation of the exact outcome",
+      "progressDerivation": "evaluateCollectionEvidence or explicit flag (joja_completed); partial count only when eligible IDs are recognized",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "joja_project",
+          "title": "Save gold for a verified unpurchased Joja community project",
+          "effort": "medium"
+        }
+      ],
+      "knownBlockers": [
+        "The Community Center and Joja outcomes are mutually exclusive on the same farm; existing different farms may satisfy account-wide trophies.",
+        "All individual purchases and cash availability not proven by integration tests.",
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "Potentially yes: opposite Community Center/Joja branch",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false
+    },
+    {
+      "trophyId": "mystery_of_the_stardrops",
+      "name": "Mystery Of The Stardrops",
+      "group": "base",
+      "tier": "gold",
+      "classification": "Partially supported",
+      "requirement": "Find every Stardrop.",
+      "requirementKind": "collection",
+      "requirementDetail": {
+        "kind": "collection",
+        "flag": "stardrops_complete"
+      },
+      "dependencies": [],
+      "evidenceRequired": "Trophy evidence boolean: stardrops_complete; player confirmation of the exact outcome",
+      "progressDerivation": "evaluateCollectionEvidence or explicit flag (stardrops_complete); partial count only when eligible IDs are recognized",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "stardrop_path",
+          "title": "Identify a missing Stardrop source and pursue its actual prerequisites",
+          "effort": "medium"
+        }
+      ],
+      "knownBlockers": [
+        "Gift windows, affection decay and known heart-level changes are not fully automated.",
+        "Stardrop sources and full collection do not have a verified exhaustive dependency graph.",
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "condition_needs_review",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false
+    },
+    {
+      "trophyId": "fectors_challenge",
+      "name": "Fector's Challenge",
+      "group": "base",
+      "tier": "silver",
+      "classification": "Partially supported",
+      "requirement": "Beat Journey of the Prairie King without dying.",
+      "requirementKind": "binary",
+      "requirementDetail": {
+        "kind": "binary",
+        "flag": "fector_won_no_deaths"
+      },
+      "dependencies": ["prairie_king"],
+      "evidenceRequired": "Trophy evidence boolean: fector_won_no_deaths; player confirmation of the exact outcome",
+      "progressDerivation": "evaluateCollectionEvidence or explicit flag (fector_won_no_deaths); partial count only when eligible IDs are recognized",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "m4-fectors_challenge",
+          "title": "Separate Prairie King attempts with run IDs; a victory needs explicit deathless attestation",
+          "effort": "long"
+        },
+        {
+          "id": "arcade_practice",
+          "title": "Prepare a fresh no-death Prairie King attempt; multiple runs cannot be combined",
+          "effort": "long"
+        }
+      ],
+      "knownBlockers": [
+        "Unverified arcade-run state cannot be promoted to a PlayStation trophy.",
+        "Per-run start/checkpoint/death/completion and explicit deathless attestation now exist, but player-reported runs are not save-verified and the MCP/D1 path is untested.",
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": {
+        "status": "partially implemented; pure engines and contract tested; actual MCP/hosted persistence NOT verified",
+        "contract": "report_gameplay_batch + milestone4Details"
+      },
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false
+    },
+    {
+      "trophyId": "full_house",
+      "name": "Full House",
+      "group": "base",
+      "tier": "bronze",
+      "classification": "Partially supported",
+      "requirement": "Get married and have two children.",
+      "requirementKind": "threshold",
+      "requirementDetail": {
+        "kind": "threshold",
+        "metric": "children_count",
+        "target": 2,
+        "unit": "children"
+      },
+      "dependencies": [],
+      "evidenceRequired": "Canonical trophy evidence number: children_count; player-confirmed total or verifiable authorized activity",
+      "progressDerivation": "metricValue(children_count); unknown remains unknown; no wallet/lifetime proxy",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "marriage_prerequisites",
+          "title": "Build a relationship, secure the necessary house upgrades, then plan children after marriage",
+          "effort": "medium"
+        }
+      ],
+      "knownBlockers": [
+        "Gift windows, affection decay and known heart-level changes are not fully automated.",
+        "Marriage/house/child timeline and proposal mechanics remain manually evidenced.",
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false
+    },
+    {
+      "trophyId": "singular_talent",
+      "name": "Singular Talent",
+      "group": "base",
+      "tier": "bronze",
+      "classification": "Trackable but limited planning",
+      "requirement": "Reach level 10 in a skill.",
+      "requirementKind": "threshold",
+      "requirementDetail": {
+        "kind": "threshold",
+        "metric": "skill_10_count",
+        "target": 1,
+        "unit": "skills"
+      },
+      "dependencies": [],
+      "evidenceRequired": "Canonical trophy evidence number: skill_10_count; player-confirmed total or verifiable authorized activity",
+      "progressDerivation": "metricValue(skill_10_count); unknown remains unknown; no wallet/lifetime proxy",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "skill_training",
+          "title": "Practice a skill below level 10",
+          "effort": "medium"
+        }
+      ],
+      "knownBlockers": [
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false
+    },
+    {
+      "trophyId": "master_of_the_five_ways",
+      "name": "Master Of The Five Ways",
+      "group": "base",
+      "tier": "silver",
+      "classification": "Trackable but limited planning",
+      "requirement": "Reach level 10 in all five skills.",
+      "requirementKind": "threshold",
+      "requirementDetail": {
+        "kind": "threshold",
+        "metric": "skill_10_count",
+        "target": 5,
+        "unit": "skills"
+      },
+      "dependencies": ["singular_talent"],
+      "evidenceRequired": "Canonical trophy evidence number: skill_10_count; player-confirmed total or verifiable authorized activity",
+      "progressDerivation": "metricValue(skill_10_count); unknown remains unknown; no wallet/lifetime proxy",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "skill_training",
+          "title": "Practice a skill below level 10",
+          "effort": "medium"
+        }
+      ],
+      "knownBlockers": [
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false
+    },
+    {
+      "trophyId": "protector_of_the_valley",
+      "name": "Protector Of The Valley",
+      "group": "base",
+      "tier": "silver",
+      "classification": "Partially supported",
+      "requirement": "Complete the Adventurer's Guild monster-slayer goals.",
+      "requirementKind": "collection",
+      "requirementDetail": {
+        "kind": "collection",
+        "flag": "monster_slayer_complete"
+      },
+      "dependencies": [],
+      "evidenceRequired": "Trophy evidence boolean: monster_slayer_complete; player confirmation of the exact outcome",
+      "progressDerivation": "evaluateCollectionEvidence or explicit flag (monster_slayer_complete); partial count only when eligible IDs are recognized",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "monster_goal",
+          "title": "Advance a still-unfinished Adventurer Guild monster eradication goal",
+          "effort": "long"
+        }
+      ],
+      "knownBlockers": [
+        "Individual monster-eradication goals and per-monster counts not fully integrated.",
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "condition_needs_review",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false
+    },
+    {
+      "trophyId": "well_read",
+      "name": "Well-Read",
+      "group": "1.6",
+      "tier": "silver",
+      "classification": "Partially supported",
+      "requirement": "Read every book.",
+      "requirementKind": "collection",
+      "requirementDetail": {
+        "kind": "collection",
+        "flag": "power_books_complete"
+      },
+      "dependencies": [],
+      "evidenceRequired": "Trophy evidence boolean: power_books_complete; player confirmation of the exact outcome",
+      "progressDerivation": "evaluateCollectionEvidence or explicit flag (power_books_complete); partial count only when eligible IDs are recognized",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "m4-well_read",
+          "title": "Read each of the 19 power books individually, distinct from owning it",
+          "effort": "long"
+        },
+        {
+          "id": "power_book",
+          "title": "Identify and read a missing power book; owning is not reading",
+          "effort": "medium"
+        }
+      ],
+      "knownBlockers": [
+        "The 19 qualifying power books are individually tracked as READ, not owned; source list is version-pinned but the in-game books-read counter is not imported.",
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": {
+        "status": "partially implemented; pure engines and contract tested; actual MCP/hosted persistence NOT verified",
+        "contract": "report_gameplay_batch + milestone4Details"
+      },
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "condition_needs_review",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false
+    },
+    {
+      "trophyId": "two_thumbs_up",
+      "name": "Two Thumbs Up",
+      "group": "1.6",
+      "tier": "bronze",
+      "classification": "Partially supported",
+      "requirement": "See a movie.",
+      "requirementKind": "binary",
+      "requirementDetail": {
+        "kind": "binary",
+        "flag": "movie_seen"
+      },
+      "dependencies": [],
+      "evidenceRequired": "Trophy evidence boolean: movie_seen; player confirmation of the exact outcome",
+      "progressDerivation": "evaluateCollectionEvidence or explicit flag (movie_seen); partial count only when eligible IDs are recognized",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "movie_visit",
+          "title": "Attend a movie at an unlocked movie theater",
+          "effort": "medium"
+        }
+      ],
+      "knownBlockers": [
+        "Movie Theatre unlock and movie visit tracked by player assertion; not save-synced.",
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false
+    },
+    {
+      "trophyId": "blue_ribbon",
+      "name": "Blue Ribbon",
+      "group": "1.6",
+      "tier": "bronze",
+      "classification": "Partially supported",
+      "requirement": "Get first place at the Stardew Valley Fair.",
+      "requirementKind": "binary",
+      "requirementDetail": {
+        "kind": "binary",
+        "flag": "fair_first_place"
+      },
+      "dependencies": [],
+      "evidenceRequired": "Trophy evidence boolean: fair_first_place; player confirmation of the exact outcome",
+      "progressDerivation": "evaluateCollectionEvidence or explicit flag (fair_first_place); partial count only when eligible IDs are recognized",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "festival_preparation",
+          "title": "Prepare for the Fall 16 Fair; attendance alone does not satisfy the trophy",
+          "effort": "short"
+        }
+      ],
+      "knownBlockers": [
+        "Event date, prerequisite access and outcome are distinct.",
+        "Fair entry differs from a verified first-place outcome; score and competition calculation not fully checked.",
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false
+    },
+    {
+      "trophyId": "an_unforgettable_soup",
+      "name": "An Unforgettable Soup",
+      "group": "1.6",
+      "tier": "bronze",
+      "classification": "Partially supported",
+      "requirement": "Delight the Governor at the Luau.",
+      "requirementKind": "binary",
+      "requirementDetail": {
+        "kind": "binary",
+        "flag": "governor_delighted"
+      },
+      "dependencies": [],
+      "evidenceRequired": "Trophy evidence boolean: governor_delighted; player confirmation of the exact outcome",
+      "progressDerivation": "evaluateCollectionEvidence or explicit flag (governor_delighted); partial count only when eligible IDs are recognized",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "festival_preparation",
+          "title": "Prepare for the Summer 11 Luau; attendance alone does not satisfy the trophy",
+          "effort": "short"
+        }
+      ],
+      "knownBlockers": [
+        "Event date, prerequisite access and outcome are distinct.",
+        "Luau attendance differs from verified Governor delight; ingredient eligibility not fully checked.",
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false
+    },
+    {
+      "trophyId": "good_neighbors",
+      "name": "Good Neighbors",
+      "group": "1.6",
+      "tier": "bronze",
+      "classification": "Partially supported",
+      "requirement": "Help your forest neighbors grow their family.",
+      "requirementKind": "binary",
+      "requirementDetail": {
+        "kind": "binary",
+        "flag": "raccoon_family_completed"
+      },
+      "dependencies": [],
+      "evidenceRequired": "Trophy evidence boolean: raccoon_family_completed; player confirmation of the exact outcome",
+      "progressDerivation": "evaluateCollectionEvidence or explicit flag (raccoon_family_completed); partial count only when eligible IDs are recognized",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "m4-good_neighbors",
+          "title": "Complete all nine raccoon requests and witness the finale cutscene",
+          "effort": "long"
+        },
+        {
+          "id": "raccoon_quest",
+          "title": "Work through the forest-raccoon requests once the prerequisites are verified",
+          "effort": "medium"
+        }
+      ],
+      "knownBlockers": [
+        "Nine distinct completed requests, stump repair and sunny forest finale are represented; game-trigger state, wait times and actual completion remain player-reported.",
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": {
+        "status": "partially implemented; pure engines and contract tested; actual MCP/hosted persistence NOT verified",
+        "contract": "report_gameplay_batch + milestone4Details"
+      },
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "condition_needs_review",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false
+    },
+    {
+      "trophyId": "a_distant_shore",
+      "name": "A Distant Shore",
+      "group": "1.6",
+      "tier": "bronze",
+      "classification": "Partially supported",
+      "requirement": "Reach Ginger Island.",
+      "requirementKind": "binary",
+      "requirementDetail": {
+        "kind": "binary",
+        "flag": "ginger_island_reached"
+      },
+      "dependencies": [],
+      "evidenceRequired": "Trophy evidence boolean: ginger_island_reached; player confirmation of the exact outcome",
+      "progressDerivation": "evaluateCollectionEvidence or explicit flag (ginger_island_reached); partial count only when eligible IDs are recognized",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "island_unlock",
+          "title": "Complete verified boat-repair requirements and travel to Ginger Island",
+          "effort": "medium"
+        }
+      ],
+      "knownBlockers": [
+        "The Community Center and Joja outcomes are mutually exclusive on the same farm; existing different farms may satisfy account-wide trophies.",
+        "Boat repair/island unlock dependency chain not exhaustively validated.",
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false
+    },
+    {
+      "trophyId": "danger_in_the_deep",
+      "name": "Danger in the Deep",
+      "group": "1.6",
+      "tier": "silver",
+      "classification": "Partially supported",
+      "requirement": "Reach floor 120 of the dangerous mines.",
+      "requirementKind": "binary",
+      "requirementDetail": {
+        "kind": "binary",
+        "flag": "dangerous_mines_bottom"
+      },
+      "dependencies": ["the_bottom"],
+      "evidenceRequired": "Trophy evidence boolean: dangerous_mines_bottom; player confirmation of the exact outcome",
+      "progressDerivation": "evaluateCollectionEvidence or explicit flag (dangerous_mines_bottom); partial count only when eligible IDs are recognized",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "danger_mines",
+          "title": "Complete the dangerous Mines challenge and reach floor 120",
+          "effort": "long"
+        }
+      ],
+      "knownBlockers": [
+        "Dangerous Mine activation and challenge timing not exhaustively verified.",
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false
+    },
+    {
+      "trophyId": "infinite_power",
+      "name": "Infinite Power",
+      "group": "1.6",
+      "tier": "silver",
+      "classification": "Partially supported",
+      "requirement": "Obtain the most powerful weapon.",
+      "requirementKind": "binary",
+      "requirementDetail": {
+        "kind": "binary",
+        "flag": "infinity_weapon_obtained"
+      },
+      "dependencies": [],
+      "evidenceRequired": "Trophy evidence boolean: infinity_weapon_obtained; player confirmation of the exact outcome",
+      "progressDerivation": "evaluateCollectionEvidence or explicit flag (infinity_weapon_obtained); partial count only when eligible IDs are recognized",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "m4-infinite_power",
+          "title": "Forge the Infinity weapon three times and confirm actual result",
+          "effort": "long"
+        },
+        {
+          "id": "infinity_weapon",
+          "title": "Gather verified Galaxy Soul requirements and create an Infinity weapon",
+          "effort": "medium"
+        }
+      ],
+      "knownBlockers": [
+        "Three forges per Galaxy weapon and the resulting Infinity weapon are separately recorded; materials are not auto-reserved or independently confirmed.",
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": {
+        "status": "partially implemented; pure engines and contract tested; actual MCP/hosted persistence NOT verified",
+        "contract": "report_gameplay_batch + milestone4Details"
+      },
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "condition_needs_review",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false
+    },
+    {
+      "trophyId": "perfection",
+      "name": "Perfection",
+      "group": "1.6",
+      "tier": "silver",
+      "classification": "Partially supported",
+      "requirement": "Reach the summit.",
+      "requirementKind": "binary",
+      "requirementDetail": {
+        "kind": "binary",
+        "flag": "summit_reached"
+      },
+      "dependencies": [],
+      "evidenceRequired": "Trophy evidence boolean: summit_reached; player confirmation of the exact outcome",
+      "progressDerivation": "evaluateCollectionEvidence or explicit flag (summit_reached); partial count only when eligible IDs are recognized",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "m4-perfection",
+          "title": "Observe Qi Tracker, progress 11 categories and verify Summit visit",
+          "effort": "long"
+        },
+        {
+          "id": "perfection_check",
+          "title": "Inspect the Perfection Tracker and work on a confirmed remaining requirement",
+          "effort": "medium"
+        }
+      ],
+      "knownBlockers": [
+        "Eleven named Qi Tracker categories, weight annotations, manual percentage and separate Summit outcome are tracked; no exact automated 100% calculation.",
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": {
+        "status": "partially implemented; pure engines and contract tested; actual MCP/hosted persistence NOT verified",
+        "contract": "report_gameplay_batch + milestone4Details"
+      },
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false
+    }
+  ]
+}

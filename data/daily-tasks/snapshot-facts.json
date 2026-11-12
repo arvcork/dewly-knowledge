@@ -1,0 +1,365 @@
+{
+  "schemaVersion": "1.0.0",
+  "records": [
+    {
+      "id": "daily.fact.animal.access",
+      "definition": "Building door/accessibility and multiplayer ownership",
+      "scope": "entity",
+      "authority": "current save/current loaded content at refresh time",
+      "readerStatus": "contract-only; no verified live SMAPI or C# accessor",
+      "unknownRepresentation": "unknown (not false, zero, or complete)"
+    },
+    {
+      "id": "daily.fact.animal.auto-grabber",
+      "definition": "Actual stored auto-grabber stacks and source allocation",
+      "scope": "entity",
+      "authority": "current save/current loaded content at refresh time",
+      "readerStatus": "contract-only; no verified live SMAPI or C# accessor",
+      "unknownRepresentation": "unknown (not false, zero, or complete)"
+    },
+    {
+      "id": "daily.fact.animal.collection-method",
+      "definition": "Milk pail, shears, floor pickup, grabber or alternative",
+      "scope": "entity",
+      "authority": "current save/current loaded content at refresh time",
+      "readerStatus": "contract-only; no verified live SMAPI or C# accessor",
+      "unknownRepresentation": "unknown (not false, zero, or complete)"
+    },
+    {
+      "id": "daily.fact.animal.day-context",
+      "definition": "Season, weather, indoor/outdoor and animal ability to graze",
+      "scope": "entity",
+      "authority": "current save/current loaded content at refresh time",
+      "readerStatus": "contract-only; no verified live SMAPI or C# accessor",
+      "unknownRepresentation": "unknown (not false, zero, or complete)"
+    },
+    {
+      "id": "daily.fact.animal.entities",
+      "definition": "Current animals with unique IDs, house and owner",
+      "scope": "entity",
+      "authority": "current save/current loaded content at refresh time",
+      "readerStatus": "contract-only; no verified live SMAPI or C# accessor",
+      "unknownRepresentation": "unknown (not false, zero, or complete)"
+    },
+    {
+      "id": "daily.fact.animal.fed",
+      "definition": "Observed fed and consumed-food status for relevant day",
+      "scope": "entity",
+      "authority": "current save/current loaded content at refresh time",
+      "readerStatus": "contract-only; no verified live SMAPI or C# accessor",
+      "unknownRepresentation": "unknown (not false, zero, or complete)"
+    },
+    {
+      "id": "daily.fact.animal.feed-placement",
+      "definition": "Hay trough slots, feeder state, silo and accessible hay",
+      "scope": "entity",
+      "authority": "current save/current loaded content at refresh time",
+      "readerStatus": "contract-only; no verified live SMAPI or C# accessor",
+      "unknownRepresentation": "unknown (not false, zero, or complete)"
+    },
+    {
+      "id": "daily.fact.animal.grazing",
+      "definition": "Whether this specific animal has grazed valid outdoor grass today",
+      "scope": "entity",
+      "authority": "current save/current loaded content at refresh time",
+      "readerStatus": "contract-only; no verified live SMAPI or C# accessor",
+      "unknownRepresentation": "unknown (not false, zero, or complete)"
+    },
+    {
+      "id": "daily.fact.animal.output-access",
+      "definition": "Inventory capacity, tool, permissions and location",
+      "scope": "entity",
+      "authority": "current save/current loaded content at refresh time",
+      "readerStatus": "contract-only; no verified live SMAPI or C# accessor",
+      "unknownRepresentation": "unknown (not false, zero, or complete)"
+    },
+    {
+      "id": "daily.fact.animal.products",
+      "definition": "Observed ready product entities and stack/animal IDs",
+      "scope": "entity",
+      "authority": "current save/current loaded content at refresh time",
+      "readerStatus": "contract-only; no verified live SMAPI or C# accessor",
+      "unknownRepresentation": "unknown (not false, zero, or complete)"
+    },
+    {
+      "id": "daily.fact.calendar.birthdays",
+      "definition": "Birthday calendar from active loaded content, date and NPC IDs",
+      "scope": "entity",
+      "authority": "current save/current loaded content at refresh time",
+      "readerStatus": "contract-only; no verified live SMAPI or C# accessor",
+      "unknownRepresentation": "unknown (not false, zero, or complete)"
+    },
+    {
+      "id": "daily.fact.calendar.future-weather",
+      "definition": "Forecast only when verified; not guaranteed beyond accessible forecast",
+      "scope": "global",
+      "authority": "current save/current loaded content at refresh time",
+      "readerStatus": "contract-only; no verified live SMAPI or C# accessor",
+      "unknownRepresentation": "unknown (not false, zero, or complete)"
+    },
+    {
+      "id": "daily.fact.calendar.today",
+      "definition": "Current day, season, year, times and remaining valid windows",
+      "scope": "global",
+      "authority": "current save/current loaded content at refresh time",
+      "readerStatus": "contract-only; no verified live SMAPI or C# accessor",
+      "unknownRepresentation": "unknown (not false, zero, or complete)"
+    },
+    {
+      "id": "daily.fact.crop.alive",
+      "definition": "Crop exists, is not dead, not dormant and is on an actionable tile",
+      "scope": "entity",
+      "authority": "current save/current loaded content at refresh time",
+      "readerStatus": "contract-only; no verified live SMAPI or C# accessor",
+      "unknownRepresentation": "unknown (not false, zero, or complete)"
+    },
+    {
+      "id": "daily.fact.crop.auto-harvest",
+      "definition": "Junimo or other automation finished/pending/disabled state",
+      "scope": "entity",
+      "authority": "current save/current loaded content at refresh time",
+      "readerStatus": "contract-only; no verified live SMAPI or C# accessor",
+      "unknownRepresentation": "unknown (not false, zero, or complete)"
+    },
+    {
+      "id": "daily.fact.crop.growth-remaining",
+      "definition": "Content growth phases, speed modifiers, watering history and future watering assumptions",
+      "scope": "entity",
+      "authority": "current save/current loaded content at refresh time",
+      "readerStatus": "contract-only; no verified live SMAPI or C# accessor",
+      "unknownRepresentation": "unknown (not false, zero, or complete)"
+    },
+    {
+      "id": "daily.fact.crop.harvest-access",
+      "definition": "Reachability, tool and storage capacity",
+      "scope": "entity",
+      "authority": "current save/current loaded content at refresh time",
+      "readerStatus": "contract-only; no verified live SMAPI or C# accessor",
+      "unknownRepresentation": "unknown (not false, zero, or complete)"
+    },
+    {
+      "id": "daily.fact.crop.harvest-method",
+      "definition": "Hand, scythe or other method required",
+      "scope": "entity",
+      "authority": "current save/current loaded content at refresh time",
+      "readerStatus": "contract-only; no verified live SMAPI or C# accessor",
+      "unknownRepresentation": "unknown (not false, zero, or complete)"
+    },
+    {
+      "id": "daily.fact.crop.hydrated",
+      "definition": "Effective watered state for this tile today, including retention/irrigation observed",
+      "scope": "entity",
+      "authority": "current save/current loaded content at refresh time",
+      "readerStatus": "contract-only; no verified live SMAPI or C# accessor",
+      "unknownRepresentation": "unknown (not false, zero, or complete)"
+    },
+    {
+      "id": "daily.fact.crop.identity",
+      "definition": "Qualified crop harvest/seed ID and current loaded content record ID",
+      "scope": "entity",
+      "authority": "current save/current loaded content at refresh time",
+      "readerStatus": "contract-only; no verified live SMAPI or C# accessor",
+      "unknownRepresentation": "unknown (not false, zero, or complete)"
+    },
+    {
+      "id": "daily.fact.crop.needs-water",
+      "definition": "Loaded crop requires hydration to advance its current phase (including regrowth); mature single-harvest crop excluded unless configured giant-crop objective",
+      "scope": "entity",
+      "authority": "current save/current loaded content at refresh time",
+      "readerStatus": "contract-only; no verified live SMAPI or C# accessor",
+      "unknownRepresentation": "unknown (not false, zero, or complete)"
+    },
+    {
+      "id": "daily.fact.crop.ready",
+      "definition": "True harvestable now, including regrowing crop",
+      "scope": "entity",
+      "authority": "current save/current loaded content at refresh time",
+      "readerStatus": "contract-only; no verified live SMAPI or C# accessor",
+      "unknownRepresentation": "unknown (not false, zero, or complete)"
+    },
+    {
+      "id": "daily.fact.crop.tiles",
+      "definition": "Observed plant/hoe-dirt tiles by (locationUniqueId,x,y)",
+      "scope": "location",
+      "authority": "current save/current loaded content at refresh time",
+      "readerStatus": "contract-only; no verified live SMAPI or C# accessor",
+      "unknownRepresentation": "unknown (not false, zero, or complete)"
+    },
+    {
+      "id": "daily.fact.fish.achievement-deficit",
+      "definition": "Fish caught-history/achievement objectives and whether fish is outstanding",
+      "scope": "entity",
+      "authority": "current save/current loaded content at refresh time",
+      "readerStatus": "contract-only; no verified live SMAPI or C# accessor",
+      "unknownRepresentation": "unknown (not false, zero, or complete)"
+    },
+    {
+      "id": "daily.fact.fish.content-routes",
+      "definition": "Current loaded Data/Fish and location spawn routes, including special conditions",
+      "scope": "entity",
+      "authority": "current save/current loaded content at refresh time",
+      "readerStatus": "contract-only; no verified live SMAPI or C# accessor",
+      "unknownRepresentation": "unknown (not false, zero, or complete)"
+    },
+    {
+      "id": "daily.fact.fish.known-routes",
+      "definition": "Content-index interpreted spawn route; unresolved fish explicitly flagged",
+      "scope": "entity",
+      "authority": "current save/current loaded content at refresh time",
+      "readerStatus": "contract-only; no verified live SMAPI or C# accessor",
+      "unknownRepresentation": "unknown (not false, zero, or complete)"
+    },
+    {
+      "id": "daily.fact.fish.spot-access",
+      "definition": "Actual target water tile, cast depth, fishing level, rod/bait, unlocked areas and special flags",
+      "scope": "entity",
+      "authority": "current save/current loaded content at refresh time",
+      "readerStatus": "contract-only; no verified live SMAPI or C# accessor",
+      "unknownRepresentation": "unknown (not false, zero, or complete)"
+    },
+    {
+      "id": "daily.fact.friendship.gift-counters",
+      "definition": "Gifts already given today/week and birthday exception eligibility",
+      "scope": "entity",
+      "authority": "current save/current loaded content at refresh time",
+      "readerStatus": "contract-only; no verified live SMAPI or C# accessor",
+      "unknownRepresentation": "unknown (not false, zero, or complete)"
+    },
+    {
+      "id": "daily.fact.friendship.gift-tastes",
+      "definition": "Current per-NPC preferred items; gift quality and provenance",
+      "scope": "entity",
+      "authority": "current save/current loaded content at refresh time",
+      "readerStatus": "contract-only; no verified live SMAPI or C# accessor",
+      "unknownRepresentation": "unknown (not false, zero, or complete)"
+    },
+    {
+      "id": "daily.fact.friendship.state",
+      "definition": "Current save NPC friendship, known/giftable relationship, cap and friendship goals",
+      "scope": "entity",
+      "authority": "current save/current loaded content at refresh time",
+      "readerStatus": "contract-only; no verified live SMAPI or C# accessor",
+      "unknownRepresentation": "unknown (not false, zero, or complete)"
+    },
+    {
+      "id": "daily.fact.goal.seasonal-demand",
+      "definition": "Outstanding crop/fish/collection requirement, quantities, accessible alternatives",
+      "scope": "entity",
+      "authority": "current save/current loaded content at refresh time",
+      "readerStatus": "contract-only; no verified live SMAPI or C# accessor",
+      "unknownRepresentation": "unknown (not false, zero, or complete)"
+    },
+    {
+      "id": "daily.fact.machine.accepted-inputs",
+      "definition": "Current content-defined machine input/output rule and unlock condition",
+      "scope": "entity",
+      "authority": "current save/current loaded content at refresh time",
+      "readerStatus": "contract-only; no verified live SMAPI or C# accessor",
+      "unknownRepresentation": "unknown (not false, zero, or complete)"
+    },
+    {
+      "id": "daily.fact.machine.access",
+      "definition": "Reachability, ownership and inventory capacity",
+      "scope": "entity",
+      "authority": "current save/current loaded content at refresh time",
+      "readerStatus": "contract-only; no verified live SMAPI or C# accessor",
+      "unknownRepresentation": "unknown (not false, zero, or complete)"
+    },
+    {
+      "id": "daily.fact.machine.automation",
+      "definition": "Output collector, transfer or mod automation ownership",
+      "scope": "entity",
+      "authority": "current save/current loaded content at refresh time",
+      "readerStatus": "contract-only; no verified live SMAPI or C# accessor",
+      "unknownRepresentation": "unknown (not false, zero, or complete)"
+    },
+    {
+      "id": "daily.fact.machine.goal-demand",
+      "definition": "Pending achievement output deficits, configured user goals and costs",
+      "scope": "entity",
+      "authority": "current save/current loaded content at refresh time",
+      "readerStatus": "contract-only; no verified live SMAPI or C# accessor",
+      "unknownRepresentation": "unknown (not false, zero, or complete)"
+    },
+    {
+      "id": "daily.fact.machine.held-output",
+      "definition": "Held item, output quantity and processing completion state",
+      "scope": "entity",
+      "authority": "current save/current loaded content at refresh time",
+      "readerStatus": "contract-only; no verified live SMAPI or C# accessor",
+      "unknownRepresentation": "unknown (not false, zero, or complete)"
+    },
+    {
+      "id": "daily.fact.machine.instances",
+      "definition": "Unique placed machine/location/tile ID and machine type",
+      "scope": "entity",
+      "authority": "current save/current loaded content at refresh time",
+      "readerStatus": "contract-only; no verified live SMAPI or C# accessor",
+      "unknownRepresentation": "unknown (not false, zero, or complete)"
+    },
+    {
+      "id": "daily.fact.npc.access",
+      "definition": "Observed NPC location/schedule or uncertain availability",
+      "scope": "entity",
+      "authority": "current save/current loaded content at refresh time",
+      "readerStatus": "contract-only; no verified live SMAPI or C# accessor",
+      "unknownRepresentation": "unknown (not false, zero, or complete)"
+    },
+    {
+      "id": "daily.fact.opportunity.last-window",
+      "definition": "Last playable day/time for this source under current content",
+      "scope": "entity",
+      "authority": "current save/current loaded content at refresh time",
+      "readerStatus": "contract-only; no verified live SMAPI or C# accessor",
+      "unknownRepresentation": "unknown (not false, zero, or complete)"
+    },
+    {
+      "id": "daily.fact.place.available",
+      "definition": "Greenhouse, island, festival closure and relevant access",
+      "scope": "entity",
+      "authority": "current save/current loaded content at refresh time",
+      "readerStatus": "contract-only; no verified live SMAPI or C# accessor",
+      "unknownRepresentation": "unknown (not false, zero, or complete)"
+    },
+    {
+      "id": "daily.fact.stock.unreserved",
+      "definition": "Accessible unreserved input IDs/quantities by storage and player",
+      "scope": "entity",
+      "authority": "current save/current loaded content at refresh time",
+      "readerStatus": "contract-only; no verified live SMAPI or C# accessor",
+      "unknownRepresentation": "unknown (not false, zero, or complete)"
+    },
+    {
+      "id": "daily.fact.tile.automation-pending",
+      "definition": "Whether observed schedule/machine/mod/multiplayer will wet tile before daily growth",
+      "scope": "entity",
+      "authority": "current save/current loaded content at refresh time",
+      "readerStatus": "contract-only; no verified live SMAPI or C# accessor",
+      "unknownRepresentation": "unknown (not false, zero, or complete)"
+    },
+    {
+      "id": "daily.fact.tile.rain-effective",
+      "definition": "Rain currently waters this specific tile/location; greenhouse/garden pots are not automatically rain-wet",
+      "scope": "entity",
+      "authority": "current save/current loaded content at refresh time",
+      "readerStatus": "contract-only; no verified live SMAPI or C# accessor",
+      "unknownRepresentation": "unknown (not false, zero, or complete)"
+    },
+    {
+      "id": "daily.fact.tile.reachable",
+      "definition": "Whether player can reach/water the tile and has a usable tool",
+      "scope": "entity",
+      "authority": "current save/current loaded content at refresh time",
+      "readerStatus": "contract-only; no verified live SMAPI or C# accessor",
+      "unknownRepresentation": "unknown (not false, zero, or complete)"
+    },
+    {
+      "id": "daily.fact.weather.local",
+      "definition": "Weather at target fishing location, not merely farm weather",
+      "scope": "location",
+      "authority": "current save/current loaded content at refresh time",
+      "readerStatus": "contract-only; no verified live SMAPI or C# accessor",
+      "unknownRepresentation": "unknown (not false, zero, or complete)"
+    }
+  ]
+}

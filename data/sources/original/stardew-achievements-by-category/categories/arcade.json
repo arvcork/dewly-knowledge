@@ -1,0 +1,125 @@
+{
+  "category": "arcade",
+  "displayName": "Arcade games",
+  "description": "Journey of the Prairie King milestones.",
+  "catalogueVersion": "ps4-npwr12196-2026-11-08",
+  "rulesVersion": "ps4-1.6-cautious-2026-11-08-r2",
+  "trophyCount": 2,
+  "trophies": [
+    {
+      "trophyId": "prairie_king",
+      "name": "Prairie King",
+      "group": "base",
+      "tier": "bronze",
+      "classification": "Trackable but limited planning",
+      "requirement": "Beat Journey of the Prairie King.",
+      "requirementKind": "binary",
+      "requirementDetail": {
+        "kind": "binary",
+        "flag": "prairie_king_won"
+      },
+      "dependencies": [],
+      "evidenceRequired": "Trophy evidence boolean: prairie_king_won; player confirmation of the exact outcome",
+      "progressDerivation": "evaluateCollectionEvidence or explicit flag (prairie_king_won); partial count only when eligible IDs are recognized",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "arcade_practice",
+          "title": "Practice and attempt a full Journey of the Prairie King win",
+          "effort": "long"
+        }
+      ],
+      "knownBlockers": [
+        "Unverified arcade-run state cannot be promoted to a PlayStation trophy.",
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false,
+      "dependencyRule": {
+        "trophyId": "prairie_king",
+        "completion": {
+          "type": "FARM",
+          "condition": {
+            "type": "FACT",
+            "flag": "prairie_king_won"
+          }
+        },
+        "strategicDependencies": []
+      }
+    },
+    {
+      "trophyId": "fectors_challenge",
+      "name": "Fector's Challenge",
+      "group": "base",
+      "tier": "silver",
+      "classification": "Partially supported",
+      "requirement": "Beat Journey of the Prairie King without dying.",
+      "requirementKind": "binary",
+      "requirementDetail": {
+        "kind": "binary",
+        "flag": "fector_won_no_deaths"
+      },
+      "dependencies": [
+        "prairie_king"
+      ],
+      "evidenceRequired": "Trophy evidence boolean: fector_won_no_deaths; player confirmation of the exact outcome",
+      "progressDerivation": "evaluateCollectionEvidence or explicit flag (fector_won_no_deaths); partial count only when eligible IDs are recognized",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "m4-fectors_challenge",
+          "title": "Separate Prairie King attempts with run IDs; a victory needs explicit deathless attestation",
+          "effort": "long"
+        },
+        {
+          "id": "arcade_practice",
+          "title": "Prepare a fresh no-death Prairie King attempt; multiple runs cannot be combined",
+          "effort": "long"
+        }
+      ],
+      "knownBlockers": [
+        "Unverified arcade-run state cannot be promoted to a PlayStation trophy.",
+        "Per-run start/checkpoint/death/completion and explicit deathless attestation now exist, but player-reported runs are not save-verified and the MCP/D1 path is untested.",
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": {
+        "status": "partially implemented; pure engines and contract tested; actual MCP/hosted persistence NOT verified",
+        "contract": "report_gameplay_batch + milestone4Details"
+      },
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false,
+      "dependencyRule": {
+        "trophyId": "fectors_challenge",
+        "completion": {
+          "type": "FARM",
+          "condition": {
+            "type": "FACT",
+            "flag": "fector_won_no_deaths"
+          }
+        },
+        "strategicDependencies": [
+          "prairie_king"
+        ]
+      }
+    }
+  ]
+}

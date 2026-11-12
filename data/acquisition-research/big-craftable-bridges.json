@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "1.0.0",
+  "gameVersion": "1.6.15.24354",
+  "authority": "external game-data research plus preserved derived recipe identities; current loaded asset requires recheck",
+  "records": [
+    {
+      "id": "acq.bridge.bc-154",
+      "rawCraftingRecipeIngredient": "(BC)154",
+      "qualifiedItemId": "(BC)154",
+      "recipeName": "Worm Bin",
+      "sourceRecipeRef": "crafting.worm-bin-c6b12e8e",
+      "consumerRecipeRef": "crafting.deluxe-worm-bin-e0691180",
+      "consumerIngredientQuantity": 1,
+      "outputIdentityPolicy": "big-craftable item must retain (BC), never coerce to (O)",
+      "prerequisiteId": "acq.prereq.bc-154-crafting",
+      "methodId": "acq.method.bc-154.craft-worm-bin",
+      "requiresCurrentLoadedRecipeVerification": true,
+      "evidenceIds": [
+        "evidence.research.runtimejoins.big-craftable"
+      ],
+      "sourceRefs": [
+        "https://stardewvalleywiki.com/Modding:Recipe_data",
+        "https://stardewvalleywiki.com/Modding:Big_craftables"
+      ]
+    },
+    {
+      "id": "acq.bridge.bc-13",
+      "rawCraftingRecipeIngredient": "(BC)13",
+      "qualifiedItemId": "(BC)13",
+      "recipeName": "Furnace",
+      "sourceRecipeRef": "crafting.furnace-63ec0e85",
+      "consumerRecipeRef": "crafting.heavy-furnace-8ef8d88f",
+      "consumerIngredientQuantity": 2,
+      "outputIdentityPolicy": "big-craftable item must retain (BC), never coerce to (O)",
+      "prerequisiteId": "acq.prereq.bc-13-crafting",
+      "methodId": "acq.method.bc-13.craft-furnace",
+      "requiresCurrentLoadedRecipeVerification": true,
+      "evidenceIds": [
+        "evidence.research.runtimejoins.big-craftable"
+      ],
+      "sourceRefs": [
+        "https://stardewvalleywiki.com/Modding:Recipe_data",
+        "https://stardewvalleywiki.com/Modding:Big_craftables"
+      ]
+    }
+  ],
+  "sourceFile": "scripts/apply-big-craftable-bridges.py"
+}

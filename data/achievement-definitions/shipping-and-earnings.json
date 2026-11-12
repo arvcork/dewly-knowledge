@@ -1,0 +1,55 @@
+{
+  "schemaVersion": "0.1.0",
+  "category": "shipping-and-earnings",
+  "provenance": "Supplied source assertions, not newly verified gameplay rules.",
+  "entries": [
+    {
+      "id": "greenhorn",
+      "name": "Greenhorn",
+      "sourceRequirement": "Earn 15,000g.",
+      "sourceDefinitionRef": "data/sources/original/trophy-50-coverage.json#/trophies/1",
+      "sourceDependencyRef": "data/sources/original/trophy-dependency-graph.json#/graph/greenhorn",
+      "verification": "source-import-only"
+    },
+    {
+      "id": "cowpoke",
+      "name": "Cowpoke",
+      "sourceRequirement": "Earn 50,000g.",
+      "sourceDefinitionRef": "data/sources/original/trophy-50-coverage.json#/trophies/2",
+      "sourceDependencyRef": "data/sources/original/trophy-dependency-graph.json#/graph/cowpoke",
+      "verification": "source-import-only"
+    },
+    {
+      "id": "homesteader",
+      "name": "Homesteader",
+      "sourceRequirement": "Earn 250,000g.",
+      "sourceDefinitionRef": "data/sources/original/trophy-50-coverage.json#/trophies/3",
+      "sourceDependencyRef": "data/sources/original/trophy-dependency-graph.json#/graph/homesteader",
+      "verification": "source-import-only"
+    },
+    {
+      "id": "millionaire",
+      "name": "Millionaire",
+      "sourceRequirement": "Earn 1,000,000g.",
+      "sourceDefinitionRef": "data/sources/original/trophy-50-coverage.json#/trophies/4",
+      "sourceDependencyRef": "data/sources/original/trophy-dependency-graph.json#/graph/millionaire",
+      "verification": "source-import-only"
+    },
+    {
+      "id": "legend",
+      "name": "Legend",
+      "sourceRequirement": "Earn 10,000,000g.",
+      "sourceDefinitionRef": "data/sources/original/trophy-50-coverage.json#/trophies/5",
+      "sourceDependencyRef": "data/sources/original/trophy-dependency-graph.json#/graph/legend",
+      "verification": "source-import-only"
+    },
+    {
+      "id": "full_shipment",
+      "name": "Full Shipment",
+      "sourceRequirement": "Ship each item required by the shipping collection.",
+      "sourceDefinitionRef": "data/sources/original/trophy-50-coverage.json#/trophies/30",
+      "sourceDependencyRef": "data/sources/original/trophy-dependency-graph.json#/graph/full_shipment",
+      "verification": "source-import-only"
+    }
+  ]
+}

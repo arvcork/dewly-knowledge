@@ -1,0 +1,210 @@
+{
+  "schemaVersion": "0.1.0",
+  "category": "skills",
+  "nodes": [
+    {
+      "id": "breadth.unresolved.skills",
+      "kind": "unknown",
+      "trackingRefs": [],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354"
+      ],
+      "verification": "unresolved",
+      "reason": "Exact XP yields, next-level scheduling and mastery alternatives unresolved; normal level-up overnight processing must be observed. Live content selector and normalized progress reader pending."
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.singular_talent.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.singular_talent.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.goal.singular_talent",
+      "kind": "all",
+      "goal": "singular_talent",
+      "requires": [
+        "breadth.requirement.singular_talent"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.singular_talent.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.singular_talent.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.requirement.singular_talent",
+      "kind": "all",
+      "requires": [
+        "breadth.action.singular_talent"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.singular_talent.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.singular_talent.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.action.singular_talent",
+      "kind": "action",
+      "requires": [
+        "breadth.unresolved.skills"
+      ],
+      "task": {
+        "text": "Train a skill to ten."
+      },
+      "breadth": {
+        "completionLogic": "any of five base skill levels >=10",
+        "runtimeStatus": "reader-pending; no live verification",
+        "platformRef": "data/platform-mapping.json#singular_talent",
+        "selection": "Enumerate farmingLevel, miningLevel, fishingLevel, foragingLevel, combatLevel; select those below 10.",
+        "assets": [
+          "Data/Objects"
+        ],
+        "limitations": "Exact XP yields, next-level scheduling and mastery alternatives unresolved; normal level-up overnight processing must be observed.",
+        "atomicDecomposition": {
+          "status": "complete",
+          "mode": "alternative-set",
+          "source": "local-runtime-1.6.15.24354: Stats.checkForSkillAchievements",
+          "eligibility": "Exactly Farming, Mining, Fishing, Foraging and Combat; unbuffed NetInt.Value only.",
+          "resultId": "singular_talent.skill.{farming|mining|fishing|foraging|combat}",
+          "requirements": [
+            {
+              "id": "singular_talent.skill-level",
+              "kind": "skill",
+              "condition": "at least one enumerated base skill level >= 10",
+              "tracking": {
+                "value": "Farmer.<skill>Level.Value",
+                "dataType": "int32",
+                "source": "local-runtime-1.6.15.24354: Stats.checkForSkillAchievements",
+                "status": "source-verified"
+              },
+              "routeRefs": [],
+              "prerequisiteRefs": [],
+              "verification": "derived-rule"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.master_of_the_five_ways.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.master_of_the_five_ways.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.goal.master_of_the_five_ways",
+      "kind": "all",
+      "goal": "master_of_the_five_ways",
+      "requires": [
+        "breadth.requirement.master_of_the_five_ways"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.master_of_the_five_ways.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.master_of_the_five_ways.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.requirement.master_of_the_five_ways",
+      "kind": "all",
+      "requires": [
+        "breadth.action.master_of_the_five_ways"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.master_of_the_five_ways.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.master_of_the_five_ways.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.action.master_of_the_five_ways",
+      "kind": "action",
+      "requires": [
+        "breadth.unresolved.skills"
+      ],
+      "task": {
+        "text": "Train all five skills to ten."
+      },
+      "breadth": {
+        "completionLogic": "all five base skill levels >=10",
+        "runtimeStatus": "reader-pending; no live verification",
+        "platformRef": "data/platform-mapping.json#master_of_the_five_ways",
+        "selection": "Enumerate farmingLevel, miningLevel, fishingLevel, foragingLevel, combatLevel; select those below 10.",
+        "assets": [
+          "Data/Objects"
+        ],
+        "limitations": "Exact XP yields, next-level scheduling and mastery alternatives unresolved; normal level-up overnight processing must be observed.",
+        "atomicDecomposition": {
+          "status": "complete",
+          "mode": "static",
+          "source": "local-runtime-1.6.15.24354: Stats.checkForSkillAchievements",
+          "eligibility": "Exactly Farming, Mining, Fishing, Foraging and Combat; unbuffed NetInt.Value only.",
+          "resultId": "master_of_the_five_ways.skill.{farming|mining|fishing|foraging|combat}",
+          "requirements": [
+            {
+              "id": "master_of_the_five_ways.skill-level",
+              "kind": "skill",
+              "condition": "each enumerated base skill level >= 10",
+              "tracking": {
+                "value": "Farmer.<skill>Level.Value",
+                "dataType": "int32",
+                "source": "local-runtime-1.6.15.24354: Stats.checkForSkillAchievements",
+                "status": "source-verified"
+              },
+              "routeRefs": [],
+              "prerequisiteRefs": [],
+              "verification": "derived-rule"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

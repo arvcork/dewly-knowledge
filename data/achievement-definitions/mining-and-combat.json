@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "0.1.0",
+  "category": "mining-and-combat",
+  "provenance": "Supplied source assertions, not newly verified gameplay rules.",
+  "entries": [
+    {
+      "id": "the_bottom",
+      "name": "The Bottom",
+      "sourceRequirement": "Reach the bottom of the regular mines.",
+      "sourceDefinitionRef": "data/sources/original/trophy-50-coverage.json#/trophies/32",
+      "sourceDependencyRef": "data/sources/original/trophy-dependency-graph.json#/graph/the_bottom",
+      "verification": "source-import-only"
+    },
+    {
+      "id": "protector_of_the_valley",
+      "name": "Protector Of The Valley",
+      "sourceRequirement": "Complete the Adventurer's Guild monster-slayer goals.",
+      "sourceDefinitionRef": "data/sources/original/trophy-50-coverage.json#/trophies/40",
+      "sourceDependencyRef": "data/sources/original/trophy-dependency-graph.json#/graph/protector_of_the_valley",
+      "verification": "source-import-only"
+    },
+    {
+      "id": "danger_in_the_deep",
+      "name": "Danger in the Deep",
+      "sourceRequirement": "Reach floor 120 of the dangerous mines.",
+      "sourceDefinitionRef": "data/sources/original/trophy-50-coverage.json#/trophies/47",
+      "sourceDependencyRef": "data/sources/original/trophy-dependency-graph.json#/graph/danger_in_the_deep",
+      "verification": "source-import-only"
+    },
+    {
+      "id": "infinite_power",
+      "name": "Infinite Power",
+      "sourceRequirement": "Obtain the most powerful weapon.",
+      "sourceDefinitionRef": "data/sources/original/trophy-50-coverage.json#/trophies/48",
+      "sourceDependencyRef": "data/sources/original/trophy-dependency-graph.json#/graph/infinite_power",
+      "verification": "source-import-only"
+    }
+  ]
+}

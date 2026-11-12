@@ -1,0 +1,222 @@
+{
+  "schemaVersion": "0.1.0",
+  "category": "farming",
+  "nodes": [
+    {
+      "id": "breadth.unresolved.farming",
+      "kind": "unknown",
+      "trackingRefs": [],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354"
+      ],
+      "verification": "unresolved",
+      "reason": "Check crop Seasons, DaysInPhase, RegrowDays, trellis/space and harvest yields from loaded content; resolve actual seed stock, access and remaining growing days before proposing planting. Live content selector and normalized progress reader pending."
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.polyculture.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.polyculture.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.goal.polyculture",
+      "kind": "all",
+      "goal": "polyculture",
+      "requires": [
+        "breadth.requirement.polyculture"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.polyculture.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.polyculture.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.requirement.polyculture",
+      "kind": "all",
+      "requires": [
+        "breadth.action.polyculture"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.polyculture.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.polyculture.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.action.polyculture",
+      "kind": "action",
+      "requires": [
+        "materialized.requirement.polyculture"
+      ],
+      "task": {
+        "text": "Grow or otherwise acquire and ship each crop deficit."
+      },
+      "breadth": {
+        "completionLogic": "all CountForPolyculture crops have basicShipped[HarvestItemId] >= 15",
+        "runtimeStatus": "materialized children; runtime reader pending; no live verification",
+        "platformRef": "data/platform-mapping.json#polyculture",
+        "selection": "Enumerate Game1.cropData.Values filtered by CountForPolyculture or CountForMonoculture; use HarvestItemId to join basicShipped. Deduplicate harvest IDs for tasks. Polyculture deficits=max(0,15-shipped); Monoculture select any flagged crop with deficit to 300.",
+        "assets": [
+          "Data/Crops",
+          "Data/Objects",
+          "Data/Shops"
+        ],
+        "limitations": "Check crop Seasons, DaysInPhase, RegrowDays, trellis/space and harvest yields from loaded content; resolve actual seed stock, access and remaining growing days before proposing planting.",
+        "atomicDecomposition": {
+          "status": "complete",
+          "mode": "dynamic-enumerator",
+          "source": "Data/Crops",
+          "eligibility": "Crop records whose CountForPolyculture is true; project and deduplicate HarvestItemId.",
+          "resultId": "polyculture.crop.{harvestItemId}",
+          "requirements": [
+            {
+              "id": "polyculture.eligible-crop",
+              "kind": "crop",
+              "condition": "each eligible crop has basicShipped >= 15",
+              "tracking": {
+                "value": "Farmer.basicShipped[HarvestItemId]",
+                "dataType": "int32",
+                "source": "Data/Crops + Farmer.basicShipped",
+                "status": "source-verified"
+              },
+              "routeRefs": [
+                "breadth.acquire.item.grow"
+              ],
+              "prerequisiteRefs": [
+                "breadth.progress.growing-access"
+              ],
+              "verification": "derived-rule"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.monoculture.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.monoculture.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.goal.monoculture",
+      "kind": "all",
+      "goal": "monoculture",
+      "requires": [
+        "breadth.requirement.monoculture"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.monoculture.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.monoculture.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.requirement.monoculture",
+      "kind": "all",
+      "requires": [
+        "breadth.action.monoculture"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.monoculture.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.monoculture.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.action.monoculture",
+      "kind": "action",
+      "requires": [
+        "materialized.requirement.monoculture"
+      ],
+      "task": {
+        "text": "Choose one eligible crop and ship its remaining quantity."
+      },
+      "breadth": {
+        "completionLogic": "any CountForMonoculture crop has basicShipped[HarvestItemId] >= 300",
+        "runtimeStatus": "materialized children; runtime reader pending; no live verification",
+        "platformRef": "data/platform-mapping.json#monoculture",
+        "selection": "Enumerate Game1.cropData.Values filtered by CountForPolyculture or CountForMonoculture; use HarvestItemId to join basicShipped. Deduplicate harvest IDs for tasks. Polyculture deficits=max(0,15-shipped); Monoculture select any flagged crop with deficit to 300.",
+        "assets": [
+          "Data/Crops",
+          "Data/Objects",
+          "Data/Shops"
+        ],
+        "limitations": "Check crop Seasons, DaysInPhase, RegrowDays, trellis/space and harvest yields from loaded content; resolve actual seed stock, access and remaining growing days before proposing planting.",
+        "atomicDecomposition": {
+          "status": "complete",
+          "mode": "alternative-set",
+          "source": "Data/Crops",
+          "eligibility": "Crop records whose CountForMonoculture is true; project and deduplicate HarvestItemId.",
+          "resultId": "monoculture.crop.{harvestItemId}",
+          "requirements": [
+            {
+              "id": "monoculture.eligible-crop",
+              "kind": "crop",
+              "condition": "at least one eligible crop has basicShipped >= 300",
+              "tracking": {
+                "value": "Farmer.basicShipped[HarvestItemId]",
+                "dataType": "int32",
+                "source": "Data/Crops + Farmer.basicShipped",
+                "status": "source-verified"
+              },
+              "routeRefs": [
+                "breadth.acquire.item.grow"
+              ],
+              "prerequisiteRefs": [
+                "breadth.progress.growing-access"
+              ],
+              "verification": "derived-rule"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

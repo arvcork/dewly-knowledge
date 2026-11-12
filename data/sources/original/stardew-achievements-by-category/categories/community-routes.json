@@ -1,0 +1,124 @@
+{
+  "category": "community-routes",
+  "displayName": "Community Center and Joja",
+  "description": "Mutually exclusive farm-level Community Center and Joja routes.",
+  "catalogueVersion": "ps4-npwr12196-2026-11-08",
+  "rulesVersion": "ps4-1.6-cautious-2026-11-08-r2",
+  "trophyCount": 2,
+  "trophies": [
+    {
+      "trophyId": "local_legend",
+      "name": "Local Legend",
+      "group": "base",
+      "tier": "bronze",
+      "classification": "Partially supported",
+      "requirement": "Restore the Pelican Town Community Center.",
+      "requirementKind": "route",
+      "requirementDetail": {
+        "kind": "route",
+        "route": "community_center",
+        "flag": "community_center_restored"
+      },
+      "dependencies": [],
+      "evidenceRequired": "Trophy evidence boolean: community_center_restored; player confirmation of the exact outcome",
+      "progressDerivation": "evaluateCollectionEvidence or explicit flag (community_center_restored); partial count only when eligible IDs are recognized",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "cc_bundle",
+          "title": "Inspect the Community Center bundles on this farm and complete a missing requirement",
+          "effort": "medium"
+        }
+      ],
+      "knownBlockers": [
+        "The Community Center and Joja outcomes are mutually exclusive on the same farm; existing different farms may satisfy account-wide trophies.",
+        "Bundle variant, bundle completion and Community Center route are not completely auto-reconciled.",
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "Potentially yes: opposite Community Center/Joja branch",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false,
+      "dependencyRule": {
+        "trophyId": "local_legend",
+        "completion": {
+          "type": "FARM",
+          "condition": {
+            "type": "ROUTE",
+            "route": "community_center",
+            "condition": {
+              "type": "FACT",
+              "flag": "community_center_restored"
+            }
+          }
+        },
+        "strategicDependencies": []
+      }
+    },
+    {
+      "trophyId": "joja_co_member_of_the_year",
+      "name": "Joja Co. Member Of The Year",
+      "group": "base",
+      "tier": "bronze",
+      "classification": "Partially supported",
+      "requirement": "Buy all Joja community development projects.",
+      "requirementKind": "route",
+      "requirementDetail": {
+        "kind": "route",
+        "route": "joja",
+        "flag": "joja_completed"
+      },
+      "dependencies": [],
+      "evidenceRequired": "Trophy evidence boolean: joja_completed; player confirmation of the exact outcome",
+      "progressDerivation": "evaluateCollectionEvidence or explicit flag (joja_completed); partial count only when eligible IDs are recognized",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "joja_project",
+          "title": "Save gold for a verified unpurchased Joja community project",
+          "effort": "medium"
+        }
+      ],
+      "knownBlockers": [
+        "The Community Center and Joja outcomes are mutually exclusive on the same farm; existing different farms may satisfy account-wide trophies.",
+        "All individual purchases and cash availability not proven by integration tests.",
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "Potentially yes: opposite Community Center/Joja branch",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false,
+      "dependencyRule": {
+        "trophyId": "joja_co_member_of_the_year",
+        "completion": {
+          "type": "FARM",
+          "condition": {
+            "type": "ROUTE",
+            "route": "joja",
+            "condition": {
+              "type": "FACT",
+              "flag": "joja_completed"
+            }
+          }
+        },
+        "strategicDependencies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,216 @@
+{
+  "schemaVersion": "0.1.0",
+  "category": "farmhouse",
+  "nodes": [
+    {
+      "id": "breadth.unresolved.farmhouse",
+      "kind": "unknown",
+      "trackingRefs": [],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354"
+      ],
+      "verification": "unresolved",
+      "reason": "House offer costs, schedule and remaining construction days need reader; pending purchase is not completion. Live content selector and normalized progress reader pending."
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.moving_up.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.moving_up.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.goal.moving_up",
+      "kind": "all",
+      "goal": "moving_up",
+      "requires": [
+        "breadth.requirement.moving_up"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.moving_up.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.moving_up.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.requirement.moving_up",
+      "kind": "all",
+      "requires": [
+        "breadth.action.moving_up"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.moving_up.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.moving_up.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.action.moving_up",
+      "kind": "action",
+      "requires": [
+        "breadth.unresolved.farmhouse",
+        "breadth.progress.construction-access"
+      ],
+      "task": {
+        "text": "Complete first house upgrade."
+      },
+      "breadth": {
+        "completionLogic": "player.HouseUpgradeLevel >=1",
+        "runtimeStatus": "reader-pending; no live verification",
+        "platformRef": "data/platform-mapping.json#moving_up",
+        "selection": "Select next house upgrade while HouseUpgradeLevel below target; use actual upgrade offer and construction status.",
+        "assets": [
+          "Data/Buildings"
+        ],
+        "limitations": "House offer costs, schedule and remaining construction days need reader; pending purchase is not completion.",
+        "atomicDecomposition": {
+          "status": "complete",
+          "mode": "static",
+          "source": "local-runtime-1.6.15.24354: Stats.checkForBuildingUpgradeAchievements",
+          "eligibility": "Sequential completed farmhouse levels; a purchased/in-progress upgrade does not satisfy the milestone.",
+          "resultId": "moving_up.house-level.1",
+          "requirements": [
+            {
+              "id": "moving_up.house-level",
+              "kind": "milestone",
+              "condition": "HouseUpgradeLevel >= 1",
+              "tracking": {
+                "value": "Farmer.HouseUpgradeLevel",
+                "dataType": "int32",
+                "source": "local-runtime-1.6.15.24354: Stats.checkForBuildingUpgradeAchievements",
+                "status": "source-verified"
+              },
+              "routeRefs": [
+                "breadth.progress.construction-access"
+              ],
+              "prerequisiteRefs": [],
+              "verification": "derived-rule"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.living_large.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.living_large.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.goal.living_large",
+      "kind": "all",
+      "goal": "living_large",
+      "requires": [
+        "breadth.requirement.living_large"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.living_large.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.living_large.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.requirement.living_large",
+      "kind": "all",
+      "requires": [
+        "breadth.action.living_large"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.living_large.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.living_large.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.action.living_large",
+      "kind": "action",
+      "requires": [
+        "breadth.unresolved.farmhouse",
+        "breadth.progress.construction-access"
+      ],
+      "task": {
+        "text": "Complete second house upgrade."
+      },
+      "breadth": {
+        "completionLogic": "player.HouseUpgradeLevel >=2",
+        "runtimeStatus": "reader-pending; no live verification",
+        "platformRef": "data/platform-mapping.json#living_large",
+        "selection": "Select next house upgrade while HouseUpgradeLevel below target; use actual upgrade offer and construction status.",
+        "assets": [
+          "Data/Buildings"
+        ],
+        "limitations": "House offer costs, schedule and remaining construction days need reader; pending purchase is not completion.",
+        "atomicDecomposition": {
+          "status": "complete",
+          "mode": "static",
+          "source": "local-runtime-1.6.15.24354: Stats.checkForBuildingUpgradeAchievements",
+          "eligibility": "Sequential completed farmhouse levels; a purchased/in-progress upgrade does not satisfy the milestone.",
+          "resultId": "living_large.house-level.2",
+          "requirements": [
+            {
+              "id": "living_large.house-level",
+              "kind": "milestone",
+              "condition": "HouseUpgradeLevel >= 2",
+              "tracking": {
+                "value": "Farmer.HouseUpgradeLevel",
+                "dataType": "int32",
+                "source": "local-runtime-1.6.15.24354: Stats.checkForBuildingUpgradeAchievements",
+                "status": "source-verified"
+              },
+              "routeRefs": [
+                "breadth.progress.construction-access"
+              ],
+              "prerequisiteRefs": [],
+              "verification": "derived-rule"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

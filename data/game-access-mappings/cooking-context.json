@@ -1,0 +1,547 @@
+{
+  "schemaVersion": "0.1.0",
+  "entries": [
+    {
+      "id": "track.context.cart-observed",
+      "namespace": "Dewly.Planner",
+      "class": "SliceSnapshotReader",
+      "member": "CaptureCart",
+      "sourceMemberType": "void",
+      "parameters": [],
+      "accessor": "SliceSnapshotReader.Capture(goldRequired, riverContext, reserve, reservedMoney)",
+      "dataType": "derived-context",
+      "implementation": "src/Planner.Readers/SliceSnapshotReader.cs",
+      "gsq": null,
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354"
+      ],
+      "version": "Stardew Valley 1.6.15.24354 / SMAPI 4.5.2",
+      "confidence": "verified-local-implementation-and-compiled-helper",
+      "calculation": "Active ShopMenu ShopId Traveler (verified Forest.checkAction) certifies access. Live forSale/itemPriceAndStock matched using loaded Fried Egg ingredient selector provides stock; ordinary unit gold-priced offers require wallet minus explicit reservations and capacity. Unsupported callbacks/barter/custom shapes stay unknown. No static catalogue or predicted future stock. See docs/runtime-bindings.md.",
+      "refreshEvents": [
+        "GameLoop.SaveLoaded",
+        "GameLoop.DayStarted",
+        "GameLoop.OneSecondUpdateTicked",
+        "Display.MenuChanged",
+        "Player.InventoryChanged",
+        "World.ChestInventoryChanged"
+      ],
+      "refreshTiming": "Main game thread, Context.IsWorldReady; rebuild per-slot reservations within each capture",
+      "snapshotComparison": "Copy facts, never mutate Net state; reservation keys expire after capture",
+      "historicalReconstruction": "Context facts are current observations, not reconstructed historical proof",
+      "completionInterpretation": "Cooking menu/stock are availability; history remains separate",
+      "relatedActions": [
+        "action.cook-fried-egg",
+        "action.buy-gold",
+        "action.mine-gold"
+      ],
+      "relatedAchievements": [
+        "gourmet_chef"
+      ],
+      "implementationVerifiedInGame": false,
+      "fallback": "unknown when unsupported or unreadable; no broad storage assumptions"
+    },
+    {
+      "id": "track.context.equipment-placement",
+      "namespace": "Dewly.Planner",
+      "class": "SliceSnapshotReader",
+      "member": "Capture",
+      "sourceMemberType": "Dictionary<string,object?>",
+      "parameters": [],
+      "accessor": "SliceSnapshotReader.Capture(goldRequired, riverContext, reserve, reservedMoney)",
+      "dataType": "derived-context",
+      "implementation": "src/Planner.Readers/SliceSnapshotReader.cs",
+      "gsq": null,
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354"
+      ],
+      "version": "Stardew Valley 1.6.15.24354 / SMAPI 4.5.2",
+      "confidence": "verified-local-implementation-and-compiled-helper",
+      "calculation": "Unreserved player inventory Pickaxe/FishingRod certify retrievable equipment only, not stamina or safety. FishingRod.GetBait respects CanUseBait; HasMagicBait plus positive attached stack certifies special bait on an available rod. Ordinary bait is optional supplementary evidence. Owned ordinary Cookout Kit tested on nearby tiles with Utility.playerCanPlaceItemHere(show_error:false) plus Object.placementAction object/terrain occupancy constraints; only positive placement certified, otherwise unknown. Never calls placementAction. See docs/runtime-bindings.md.",
+      "refreshEvents": [
+        "GameLoop.SaveLoaded",
+        "GameLoop.DayStarted",
+        "GameLoop.OneSecondUpdateTicked",
+        "Display.MenuChanged",
+        "Player.InventoryChanged",
+        "World.ChestInventoryChanged"
+      ],
+      "refreshTiming": "Main game thread, Context.IsWorldReady; rebuild per-slot reservations within each capture",
+      "snapshotComparison": "Copy facts, never mutate Net state; reservation keys expire after capture",
+      "historicalReconstruction": "Context facts are current observations, not reconstructed historical proof",
+      "completionInterpretation": "Cooking menu/stock are availability; history remains separate",
+      "relatedActions": [
+        "action.cook-fried-egg",
+        "action.buy-gold",
+        "action.mine-gold"
+      ],
+      "relatedAchievements": [
+        "gourmet_chef"
+      ],
+      "implementationVerifiedInGame": false,
+      "fallback": "unknown when unsupported or unreadable; no broad storage assumptions"
+    },
+    {
+      "id": "track.context.animal-state",
+      "namespace": "Dewly.Planner",
+      "class": "SliceSnapshotReader",
+      "member": "CaptureAnimals",
+      "sourceMemberType": "void",
+      "parameters": [],
+      "accessor": "SliceSnapshotReader.Capture(goldRequired, riverContext, reserve, reservedMoney)",
+      "dataType": "derived-context",
+      "implementation": "src/Planner.Readers/SliceSnapshotReader.cs",
+      "gsq": null,
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354"
+      ],
+      "version": "Stardew Valley 1.6.15.24354 / SMAPI 4.5.2",
+      "confidence": "verified-local-implementation-and-compiled-helper",
+      "calculation": "Farm.getAllFarmAnimals deduplicated by myID; loaded House Coop and unconditional normal produce matching Fried Egg selector establish positive eligible ownership (includes equivalent egg-laying Coop animals). Select mature then fullest then ID; age/isBaby and fullness >=200 refer to that same animal. Fullness is current nutrition, not feeding history or promised production. Missing positive ownership/capacity remains unknown. Completed/non-upgrading AnimalHouse with loaded Coop occupant compatibility and !isFull provides positive space evidence; no farm-layout assumptions. See docs/runtime-bindings.md.",
+      "refreshEvents": [
+        "GameLoop.SaveLoaded",
+        "GameLoop.DayStarted",
+        "GameLoop.OneSecondUpdateTicked",
+        "Display.MenuChanged",
+        "Player.InventoryChanged",
+        "World.ChestInventoryChanged"
+      ],
+      "refreshTiming": "Main game thread, Context.IsWorldReady; rebuild per-slot reservations within each capture",
+      "snapshotComparison": "Copy facts, never mutate Net state; reservation keys expire after capture",
+      "historicalReconstruction": "Context facts are current observations, not reconstructed historical proof",
+      "completionInterpretation": "Cooking menu/stock are availability; history remains separate",
+      "relatedActions": [
+        "action.cook-fried-egg",
+        "action.buy-gold",
+        "action.mine-gold"
+      ],
+      "relatedAchievements": [
+        "gourmet_chef"
+      ],
+      "implementationVerifiedInGame": false,
+      "fallback": "unknown when unsupported or unreadable; no broad storage assumptions"
+    },
+    {
+      "id": "track.context.blacksmith-observed",
+      "namespace": "Dewly.Planner",
+      "class": "SliceSnapshotReader",
+      "member": "CaptureBlacksmith",
+      "sourceMemberType": "void",
+      "parameters": [],
+      "accessor": "SliceSnapshotReader.Capture(goldRequired, riverContext, reserve, reservedMoney)",
+      "dataType": "derived-context",
+      "implementation": "src/Planner.Readers/SliceSnapshotReader.cs",
+      "gsq": null,
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354"
+      ],
+      "version": "Stardew Valley 1.6.15.24354 / SMAPI 4.5.2",
+      "confidence": "verified-local-implementation-and-compiled-helper",
+      "calculation": "Only active ShopMenu ShopId Blacksmith proves observed access. Absent menu stays unknown; static catalogue/schedule is not an offer. Gold affordability reads forSale intersect itemPriceAndStock for unit (O)384, actual Price/Stock, currency 0, wallet minus explicit money reservations and inventory capacity. Unsupported callbacks/custom subclasses/barter/bundles/special synced stock return unknown. Never purchases or invokes shop callbacks; later inventory snapshot verifies completion. Price and stock observations are supplementary, not proof of purchase. See docs/runtime-bindings.md for inspection evidence.",
+      "refreshEvents": [
+        "GameLoop.SaveLoaded",
+        "GameLoop.DayStarted",
+        "GameLoop.OneSecondUpdateTicked",
+        "Display.MenuChanged",
+        "Player.InventoryChanged",
+        "World.ChestInventoryChanged"
+      ],
+      "refreshTiming": "Main game thread, Context.IsWorldReady; rebuild per-slot reservations within each capture",
+      "snapshotComparison": "Copy facts, never mutate Net state; reservation keys expire after capture",
+      "historicalReconstruction": "Context facts are current observations, not reconstructed historical proof",
+      "completionInterpretation": "Cooking menu/stock are availability; history remains separate",
+      "relatedActions": [
+        "action.cook-fried-egg",
+        "action.buy-gold",
+        "action.mine-gold"
+      ],
+      "relatedAchievements": [
+        "gourmet_chef"
+      ],
+      "implementationVerifiedInGame": false,
+      "fallback": "unknown when unsupported or unreadable; no broad storage assumptions"
+    },
+    {
+      "id": "track.context.cookout-owned",
+      "namespace": "Dewly.Planner",
+      "class": "SliceSnapshotReader",
+      "member": "Capture",
+      "sourceMemberType": "Dictionary<string,object?>",
+      "parameters": [],
+      "accessor": "SliceSnapshotReader.Capture(goldRequired, riverContext, reserve)[\"cookout.owned\"]",
+      "dataType": "derived-context",
+      "implementation": "src/Planner.Readers/SliceSnapshotReader.cs",
+      "gsq": null,
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354"
+      ],
+      "version": "Stardew Valley 1.6.15.24354 / SMAPI 4.5.2",
+      "confidence": "verified-local-implementation-and-compiled-helper",
+      "calculation": "Player inventory (O)926 stacks with positive quantity after synchronous reservations. Placed (BC)278 and inaccessible chest stock are not inventory ownership.",
+      "refreshEvents": [
+        "GameLoop.SaveLoaded",
+        "GameLoop.DayStarted",
+        "GameLoop.OneSecondUpdateTicked",
+        "Display.MenuChanged",
+        "Player.InventoryChanged",
+        "World.ChestInventoryChanged"
+      ],
+      "refreshTiming": "Main game thread, Context.IsWorldReady; rebuild per-slot reservations within each capture",
+      "snapshotComparison": "Copy facts, never mutate Net state; reservation keys expire after capture",
+      "historicalReconstruction": "Context facts are current observations, not reconstructed historical proof",
+      "completionInterpretation": "Cooking menu/stock are availability; history remains separate",
+      "relatedActions": [
+        "action.cook-fried-egg",
+        "action.buy-gold",
+        "action.mine-gold"
+      ],
+      "relatedAchievements": [
+        "gourmet_chef"
+      ],
+      "implementationVerifiedInGame": false,
+      "fallback": "unknown when unsupported or unreadable; no broad storage assumptions"
+    },
+    {
+      "id": "track.context.cookout-usable",
+      "namespace": "Dewly.Planner",
+      "class": "SliceSnapshotReader",
+      "member": "CaptureFacilities",
+      "sourceMemberType": "void",
+      "parameters": [],
+      "accessor": "SliceSnapshotReader.Capture(goldRequired, riverContext, reserve)[\"cookout.usable\"]",
+      "dataType": "derived-context",
+      "implementation": "src/Planner.Readers/SliceSnapshotReader.cs",
+      "gsq": null,
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354"
+      ],
+      "version": "Stardew Valley 1.6.15.24354 / SMAPI 4.5.2",
+      "confidence": "verified-local-implementation-and-compiled-helper",
+      "calculation": "Current-location objects: Torch (BC)278, bigCraftable true, within Utility.withinRadiusOfPlayer radius 1, no event/tool/unrelated menu. Positive local interaction evidence only; otherwise null, not global absence. Torch.checkForAction opens a cooking CraftingPage without containers regardless of isOn. No mutating interaction invoked.",
+      "refreshEvents": [
+        "GameLoop.SaveLoaded",
+        "GameLoop.DayStarted",
+        "GameLoop.OneSecondUpdateTicked",
+        "Display.MenuChanged",
+        "Player.InventoryChanged",
+        "World.ChestInventoryChanged"
+      ],
+      "refreshTiming": "Main game thread, Context.IsWorldReady; rebuild per-slot reservations within each capture",
+      "snapshotComparison": "Copy facts, never mutate Net state; reservation keys expire after capture",
+      "historicalReconstruction": "Context facts are current observations, not reconstructed historical proof",
+      "completionInterpretation": "Cooking menu/stock are availability; history remains separate",
+      "relatedActions": [
+        "action.cook-fried-egg",
+        "action.buy-gold",
+        "action.mine-gold"
+      ],
+      "relatedAchievements": [
+        "gourmet_chef"
+      ],
+      "implementationVerifiedInGame": false,
+      "fallback": "unknown when unsupported or unreadable; no broad storage assumptions"
+    },
+    {
+      "id": "track.context.kitchen-usable",
+      "namespace": "Dewly.Planner",
+      "class": "SliceSnapshotReader",
+      "member": "CaptureFacilities",
+      "sourceMemberType": "void",
+      "parameters": [],
+      "accessor": "SliceSnapshotReader.Capture(goldRequired, riverContext, reserve)[\"kitchen.usable\"]",
+      "dataType": "derived-context",
+      "implementation": "src/Planner.Readers/SliceSnapshotReader.cs",
+      "gsq": null,
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354"
+      ],
+      "version": "Stardew Valley 1.6.15.24354 / SMAPI 4.5.2",
+      "confidence": "verified-local-implementation-and-compiled-helper",
+      "calculation": "Nearby Buildings-layer Action kitchen/Kitchen plus active cooking CraftingPage certifies current kitchen context; otherwise null because fridge mutex acquisition and remote reachability are not certified. FarmHouse.upgradeLevel copied as supplementary observation only. GameLocation.ActivateKitchen confirms refrigerator locking semantics.",
+      "refreshEvents": [
+        "GameLoop.SaveLoaded",
+        "GameLoop.DayStarted",
+        "GameLoop.OneSecondUpdateTicked",
+        "Display.MenuChanged",
+        "Player.InventoryChanged",
+        "World.ChestInventoryChanged"
+      ],
+      "refreshTiming": "Main game thread, Context.IsWorldReady; rebuild per-slot reservations within each capture",
+      "snapshotComparison": "Copy facts, never mutate Net state; reservation keys expire after capture",
+      "historicalReconstruction": "Context facts are current observations, not reconstructed historical proof",
+      "completionInterpretation": "Cooking menu/stock are availability; history remains separate",
+      "relatedActions": [
+        "action.cook-fried-egg",
+        "action.buy-gold",
+        "action.mine-gold"
+      ],
+      "relatedAchievements": [
+        "gourmet_chef"
+      ],
+      "implementationVerifiedInGame": false,
+      "fallback": "unknown when unsupported or unreadable; no broad storage assumptions"
+    },
+    {
+      "id": "track.context.cooking-menu",
+      "namespace": "StardewValley.Menus",
+      "class": "CraftingPage",
+      "member": "cooking",
+      "sourceMemberType": "bool",
+      "parameters": [],
+      "accessor": "Game1.activeClickableMenu is CraftingPage page && page.cooking",
+      "dataType": "bool",
+      "implementation": "src/Planner.Readers/SliceSnapshotReader.cs",
+      "gsq": null,
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354"
+      ],
+      "version": "Stardew Valley 1.6.15.24354 / SMAPI 4.5.2",
+      "confidence": "verified-local-implementation-and-compiled-helper",
+      "calculation": "An active vanilla cooking menu is current usability evidence; absence does not prove no kitchen exists.",
+      "refreshEvents": [
+        "GameLoop.SaveLoaded",
+        "GameLoop.DayStarted",
+        "GameLoop.OneSecondUpdateTicked",
+        "Display.MenuChanged",
+        "Player.InventoryChanged",
+        "World.ChestInventoryChanged"
+      ],
+      "refreshTiming": "Main game thread, Context.IsWorldReady; rebuild per-slot reservations within each capture",
+      "snapshotComparison": "Copy facts, never mutate Net state; reservation keys expire after capture",
+      "historicalReconstruction": "Context facts are current observations, not reconstructed historical proof",
+      "completionInterpretation": "Cooking menu/stock are availability; history remains separate",
+      "relatedActions": [
+        "action.cook-fried-egg",
+        "action.buy-gold",
+        "action.mine-gold"
+      ],
+      "relatedAchievements": [
+        "gourmet_chef"
+      ],
+      "implementationVerifiedInGame": false,
+      "fallback": "unknown when unsupported or unreadable; no broad storage assumptions"
+    },
+    {
+      "id": "track.context.ingredients",
+      "namespace": "StardewValley",
+      "class": "CraftingRecipe",
+      "member": "ItemMatchesForCrafting",
+      "sourceMemberType": "bool",
+      "parameters": [
+        {
+          "name": "item",
+          "type": "StardewValley.Item"
+        },
+        {
+          "name": "item_id",
+          "type": "string"
+        }
+      ],
+      "accessor": "CraftingRecipe.ItemMatchesForCrafting(item, ingredientSelector)",
+      "dataType": "derived-context",
+      "implementation": "src/Planner.Readers/SliceSnapshotReader.cs",
+      "gsq": null,
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354"
+      ],
+      "version": "Stardew Valley 1.6.15.24354 / SMAPI 4.5.2",
+      "confidence": "verified-local-implementation-and-compiled-helper",
+      "calculation": "Use loaded ingredient selector/count; sum each unique accessible inventory once, subtract per-slot reservations; recipe output and ingredient shape must match slice contract.",
+      "refreshEvents": [
+        "GameLoop.SaveLoaded",
+        "GameLoop.DayStarted",
+        "GameLoop.OneSecondUpdateTicked",
+        "Display.MenuChanged",
+        "Player.InventoryChanged",
+        "World.ChestInventoryChanged"
+      ],
+      "refreshTiming": "Main game thread, Context.IsWorldReady; rebuild per-slot reservations within each capture",
+      "snapshotComparison": "Copy facts, never mutate Net state; reservation keys expire after capture",
+      "historicalReconstruction": "Context facts are current observations, not reconstructed historical proof",
+      "completionInterpretation": "Cooking menu/stock are availability; history remains separate",
+      "relatedActions": [
+        "action.cook-fried-egg",
+        "action.buy-gold",
+        "action.mine-gold"
+      ],
+      "relatedAchievements": [
+        "gourmet_chef"
+      ],
+      "implementationVerifiedInGame": false,
+      "fallback": "unknown when unsupported or unreadable; no broad storage assumptions"
+    },
+    {
+      "id": "track.context.containers",
+      "namespace": "StardewValley.Menus",
+      "class": "CraftingPage",
+      "member": "_materialContainers",
+      "sourceMemberType": "List<StardewValley.Inventories.IInventory>",
+      "parameters": [],
+      "accessor": "(Game1.activeClickableMenu as CraftingPage)?._materialContainers",
+      "dataType": "derived-context",
+      "implementation": "src/Planner.Readers/SliceSnapshotReader.cs",
+      "gsq": null,
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354"
+      ],
+      "version": "Stardew Valley 1.6.15.24354 / SMAPI 4.5.2",
+      "confidence": "verified-local-implementation-and-compiled-helper",
+      "calculation": "Only an active cooking page supplies action-accessible extra inventories. GameLocation.ActivateKitchen acquires fridge/mini-fridge mutexes before opening the menu. Do not infer all world chests are accessible.",
+      "refreshEvents": [
+        "GameLoop.SaveLoaded",
+        "GameLoop.DayStarted",
+        "GameLoop.OneSecondUpdateTicked",
+        "Display.MenuChanged",
+        "Player.InventoryChanged",
+        "World.ChestInventoryChanged"
+      ],
+      "refreshTiming": "Main game thread, Context.IsWorldReady; rebuild per-slot reservations within each capture",
+      "snapshotComparison": "Copy facts, never mutate Net state; reservation keys expire after capture",
+      "historicalReconstruction": "Context facts are current observations, not reconstructed historical proof",
+      "completionInterpretation": "Cooking menu/stock are availability; history remains separate",
+      "relatedActions": [
+        "action.cook-fried-egg",
+        "action.buy-gold",
+        "action.mine-gold"
+      ],
+      "relatedAchievements": [
+        "gourmet_chef"
+      ],
+      "implementationVerifiedInGame": false,
+      "fallback": "unknown when unsupported or unreadable; no broad storage assumptions"
+    },
+    {
+      "id": "track.context.crafting-known",
+      "namespace": "StardewValley",
+      "class": "Farmer",
+      "member": "craftingRecipes",
+      "sourceMemberType": "Netcode.NetStringDictionary<int,Netcode.NetInt>",
+      "parameters": [],
+      "accessor": "player.craftingRecipes.ContainsKey(\"Cookout Kit\")",
+      "dataType": "bool",
+      "implementation": "src/Planner.Readers/SliceSnapshotReader.cs",
+      "gsq": null,
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354"
+      ],
+      "version": "Stardew Valley 1.6.15.24354 / SMAPI 4.5.2",
+      "confidence": "verified-local-implementation-and-compiled-helper",
+      "calculation": "Known recipe may have zero crafts; membership proves knowledge, not crafting.",
+      "refreshEvents": [
+        "GameLoop.SaveLoaded",
+        "GameLoop.DayStarted",
+        "GameLoop.OneSecondUpdateTicked",
+        "Display.MenuChanged",
+        "Player.InventoryChanged",
+        "World.ChestInventoryChanged"
+      ],
+      "refreshTiming": "Main game thread, Context.IsWorldReady; rebuild per-slot reservations within each capture",
+      "snapshotComparison": "Copy facts, never mutate Net state; reservation keys expire after capture",
+      "historicalReconstruction": "Context facts are current observations, not reconstructed historical proof",
+      "completionInterpretation": "Cooking menu/stock are availability; history remains separate",
+      "relatedActions": [
+        "action.cook-fried-egg",
+        "action.buy-gold",
+        "action.mine-gold"
+      ],
+      "relatedAchievements": [
+        "gourmet_chef"
+      ],
+      "implementationVerifiedInGame": false,
+      "fallback": "unknown when unsupported or unreadable; no broad storage assumptions"
+    },
+    {
+      "id": "track.context.mines-open",
+      "namespace": "StardewValley",
+      "class": "Stats",
+      "member": "DaysPlayed",
+      "sourceMemberType": "uint",
+      "parameters": [],
+      "accessor": "Game1.stats.DaysPlayed >= 5",
+      "dataType": "bool",
+      "implementation": "src/Planner.Readers/SliceSnapshotReader.cs",
+      "gsq": null,
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354"
+      ],
+      "version": "Stardew Valley 1.6.15.24354 / SMAPI 4.5.2",
+      "confidence": "verified-local-implementation-and-compiled-helper",
+      "calculation": "Derived vanilla gate verified against Mountain.landslide initialization/day update. Modded map/blockage changes require an override; this does not certify route reachability.",
+      "refreshEvents": [
+        "GameLoop.SaveLoaded",
+        "GameLoop.DayStarted",
+        "GameLoop.OneSecondUpdateTicked",
+        "Display.MenuChanged",
+        "Player.InventoryChanged",
+        "World.ChestInventoryChanged"
+      ],
+      "refreshTiming": "Main game thread, Context.IsWorldReady; rebuild per-slot reservations within each capture",
+      "snapshotComparison": "Copy facts, never mutate Net state; reservation keys expire after capture",
+      "historicalReconstruction": "Context facts are current observations, not reconstructed historical proof",
+      "completionInterpretation": "Cooking menu/stock are availability; history remains separate",
+      "relatedActions": [
+        "action.cook-fried-egg",
+        "action.buy-gold",
+        "action.mine-gold"
+      ],
+      "relatedAchievements": [
+        "gourmet_chef"
+      ],
+      "implementationVerifiedInGame": false,
+      "fallback": "unknown when unsupported or unreadable; no broad storage assumptions"
+    },
+    {
+      "id": "track.context.gold-quantity",
+      "namespace": "Dewly.Planner",
+      "class": "SliceSnapshotReader",
+      "member": "Capture",
+      "sourceMemberType": "Dictionary<string,object?>",
+      "parameters": [
+        {
+          "name": "goldRequired",
+          "type": "int"
+        },
+        {
+          "name": "riverContext",
+          "type": "StardewValley.GameLocation"
+        },
+        {
+          "name": "reserve",
+          "type": "Func<IReadOnlyList<AccessibleStack>,IReadOnlyDictionary<string,int>>"
+        }
+      ],
+      "accessor": "SliceSnapshotReader.Capture(goldRequired, riverContext, reserve)",
+      "dataType": "derived-context",
+      "implementation": "src/Planner.Readers/SliceSnapshotReader.cs",
+      "gsq": null,
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354"
+      ],
+      "version": "Stardew Valley 1.6.15.24354 / SMAPI 4.5.2",
+      "confidence": "verified-local-implementation-and-compiled-helper",
+      "calculation": "Actual repository helper, not a game API. Quantity parameter is nonnegative; inventory (O)384 stock minus current per-slot reservations; sufficient = available >= required.",
+      "refreshEvents": [
+        "GameLoop.SaveLoaded",
+        "GameLoop.DayStarted",
+        "GameLoop.OneSecondUpdateTicked",
+        "Display.MenuChanged",
+        "Player.InventoryChanged",
+        "World.ChestInventoryChanged"
+      ],
+      "refreshTiming": "Main game thread, Context.IsWorldReady; rebuild per-slot reservations within each capture",
+      "snapshotComparison": "Copy facts, never mutate Net state; reservation keys expire after capture",
+      "historicalReconstruction": "Context facts are current observations, not reconstructed historical proof",
+      "completionInterpretation": "Cooking menu/stock are availability; history remains separate",
+      "relatedActions": [
+        "action.cook-fried-egg",
+        "action.buy-gold",
+        "action.mine-gold"
+      ],
+      "relatedAchievements": [
+        "gourmet_chef"
+      ],
+      "implementationVerifiedInGame": false,
+      "fallback": "unknown when unsupported or unreadable; no broad storage assumptions"
+    }
+  ]
+}

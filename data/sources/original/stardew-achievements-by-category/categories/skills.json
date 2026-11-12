@@ -1,0 +1,120 @@
+{
+  "category": "skills",
+  "displayName": "Skills",
+  "description": "Skill-level milestones.",
+  "catalogueVersion": "ps4-npwr12196-2026-11-08",
+  "rulesVersion": "ps4-1.6-cautious-2026-11-08-r2",
+  "trophyCount": 2,
+  "trophies": [
+    {
+      "trophyId": "singular_talent",
+      "name": "Singular Talent",
+      "group": "base",
+      "tier": "bronze",
+      "classification": "Trackable but limited planning",
+      "requirement": "Reach level 10 in a skill.",
+      "requirementKind": "threshold",
+      "requirementDetail": {
+        "kind": "threshold",
+        "metric": "skill_10_count",
+        "target": 1,
+        "unit": "skills"
+      },
+      "dependencies": [],
+      "evidenceRequired": "Canonical trophy evidence number: skill_10_count; player-confirmed total or verifiable authorized activity",
+      "progressDerivation": "metricValue(skill_10_count); unknown remains unknown; no wallet/lifetime proxy",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "skill_training",
+          "title": "Practice a skill below level 10",
+          "effort": "medium"
+        }
+      ],
+      "knownBlockers": [
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false,
+      "dependencyRule": {
+        "trophyId": "singular_talent",
+        "completion": {
+          "type": "FARM",
+          "condition": {
+            "type": "COUNT",
+            "metric": "skill_10_count",
+            "target": 1
+          }
+        },
+        "strategicDependencies": []
+      }
+    },
+    {
+      "trophyId": "master_of_the_five_ways",
+      "name": "Master Of The Five Ways",
+      "group": "base",
+      "tier": "silver",
+      "classification": "Trackable but limited planning",
+      "requirement": "Reach level 10 in all five skills.",
+      "requirementKind": "threshold",
+      "requirementDetail": {
+        "kind": "threshold",
+        "metric": "skill_10_count",
+        "target": 5,
+        "unit": "skills"
+      },
+      "dependencies": [
+        "singular_talent"
+      ],
+      "evidenceRequired": "Canonical trophy evidence number: skill_10_count; player-confirmed total or verifiable authorized activity",
+      "progressDerivation": "metricValue(skill_10_count); unknown remains unknown; no wallet/lifetime proxy",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "skill_training",
+          "title": "Practice a skill below level 10",
+          "effort": "medium"
+        }
+      ],
+      "knownBlockers": [
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false,
+      "dependencyRule": {
+        "trophyId": "master_of_the_five_ways",
+        "completion": {
+          "type": "FARM",
+          "condition": {
+            "type": "COUNT",
+            "metric": "skill_10_count",
+            "target": 5
+          }
+        },
+        "strategicDependencies": [
+          "singular_talent"
+        ]
+      }
+    }
+  ]
+}

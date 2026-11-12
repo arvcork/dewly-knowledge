@@ -1,0 +1,322 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Dewly portable checklist snapshot \u2014 synthetic or reader-provided",
+  "type": "object",
+  "required": [
+    "saveId",
+    "day",
+    "time",
+    "activeContent",
+    "selectedGoals",
+    "progress",
+    "cropTilesObserved",
+    "cropTiles"
+  ],
+  "properties": {
+    "saveId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "identity": {
+      "type": "string"
+    },
+    "day": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "time": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 2600
+    },
+    "contentGeneration": {
+      "type": "string",
+      "minLength": 1
+    },
+    "activeContent": {
+      "type": "object",
+      "required": [
+        "itemIds",
+        "recipeIds"
+      ],
+      "properties": {
+        "itemIds": {
+          "type": "object",
+          "additionalProperties": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          }
+        },
+        "recipeIds": {
+          "type": "object",
+          "additionalProperties": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "selectedGoals": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "focusTargets": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "cropTilesObserved": {
+      "type": "boolean"
+    },
+    "cropTiles": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "locationUniqueId",
+          "qualifiedCropId",
+          "x",
+          "y"
+        ],
+        "properties": {
+          "locationUniqueId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "qualifiedCropId": {
+            "type": "string",
+            "pattern": "^\\(O\\)"
+          },
+          "x": {
+            "type": "integer"
+          },
+          "y": {
+            "type": "integer"
+          },
+          "alive": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "needsWater": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "hydrated": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "rainEffective": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "automationPending": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "reachable": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "ready": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "harvestAccessible": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "autoHarvestNotHandled": {
+            "type": [
+              "boolean",
+              "null"
+            ]
+          },
+          "harvestMethod": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    },
+    "progress": {
+      "type": "object",
+      "required": [
+        "shipped",
+        "caught",
+        "cooked"
+      ],
+      "properties": {
+        "shipped": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "integer",
+            "minimum": 0
+          }
+        },
+        "caught": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "integer",
+            "minimum": 0
+          }
+        },
+        "cooked": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "integer",
+            "minimum": 0
+          }
+        }
+      }
+    },
+    "accessibleUnreserved": {
+      "type": "object",
+      "additionalProperties": {
+        "type": [
+          "integer",
+          "null"
+        ],
+        "minimum": 0
+      }
+    },
+    "recipeReady": {
+      "type": "object",
+      "additionalProperties": {
+        "type": [
+          "boolean",
+          "null"
+        ]
+      }
+    },
+    "categoryChecks": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": {
+          "type": "object",
+          "properties": {
+            "member": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "accessibleUnreserved": {
+              "type": [
+                "integer",
+                "null"
+              ],
+              "minimum": 0
+            }
+          }
+        }
+      }
+    },
+    "fishAvailability": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "spawnRouteIndex",
+            "contentLocationName",
+            "locationUniqueId"
+          ],
+          "properties": {
+            "spawnRouteIndex": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "contentLocationName": {
+              "type": "string",
+              "minLength": 1
+            },
+            "locationUniqueId": {
+              "type": "string",
+              "minLength": 1
+            },
+            "activeSpawnMatched": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "locationAccessible": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "seasonCompatible": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "timeCompatible": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "weatherCompatible": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "gearCompatible": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "waterCompatible": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "otherConditionsCompatible": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

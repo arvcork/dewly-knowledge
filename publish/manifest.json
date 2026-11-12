@@ -1,0 +1,485 @@
+{
+  "channel": "main",
+  "compatibilityNote": "A mod must check format version, supported game content and all required condition operators before activating imported knowledge.",
+  "counts": {
+    "achievement-definitionsFiles": 16,
+    "achievement-rulesFiles": 17,
+    "acquisition-researchFiles": 11,
+    "acquisition-rulesFiles": 2,
+    "content-indexFiles": 14,
+    "daily-tasksFiles": 2,
+    "dailyTaskGenerators": 9,
+    "game-access-mappingsFiles": 2,
+    "graphNodes": 2039,
+    "manifest.jsonFiles": 1,
+    "materializedGameplayRecords": 710,
+    "planningFiles": 2,
+    "platform-mapping.jsonFiles": 1,
+    "progression-rulesFiles": 1,
+    "schemasFiles": 10,
+    "sourceAchievementDefinitions": 50,
+    "sourcesFiles": 27,
+    "trackingFiles": 5
+  },
+  "dataSchemaVersion": "0.1.0",
+  "documentCount": 111,
+  "files": [
+    {
+      "path": "data/achievement-definitions/arcade.json",
+      "sha256": "f6e75ec113a4c019a5abc765125ab4e92c1cc8171dd7c520d8fe0bc6a77a6448"
+    },
+    {
+      "path": "data/achievement-definitions/community-routes.json",
+      "sha256": "5370e2c4cc552e1a72989139b1a041c7450fd1643c5b459099a15779dba4f100"
+    },
+    {
+      "path": "data/achievement-definitions/cooking.json",
+      "sha256": "c2be872d4a3c3c9a0d64322551162ec37fcc15e82d4fe4f85e0995016673ae28"
+    },
+    {
+      "path": "data/achievement-definitions/crafting.json",
+      "sha256": "476867a397f11152b5dd4faa2a42fddf59e9c6da4d8fd25548934b1c30f37e7c"
+    },
+    {
+      "path": "data/achievement-definitions/exploration-and-endgame.json",
+      "sha256": "3b39a6e6f1fecd191aa74b7cc7f9212f26eae67296ee53cc6474cf87e483eaa8"
+    },
+    {
+      "path": "data/achievement-definitions/farmhouse.json",
+      "sha256": "03b0ed990cc1e9b52905d779058d79676a6e5cd2a9d2c979d5e76264944e3e6d"
+    },
+    {
+      "path": "data/achievement-definitions/farming.json",
+      "sha256": "2f3dc8a26a3b13fba7b85cd256d16a3207a586a68ea73541f230b4902d0de9a2"
+    },
+    {
+      "path": "data/achievement-definitions/festivals-and-events.json",
+      "sha256": "d1e6bd2fecca058ce979d0cfd76fb498014bfcfffb9a3c85809055abf266d49c"
+    },
+    {
+      "path": "data/achievement-definitions/fishing.json",
+      "sha256": "647ddafa74a9f9eb0fe93f29dd8e2167963b0baf08adee8deb50f55cd89abb3f"
+    },
+    {
+      "path": "data/achievement-definitions/foraging-and-collections.json",
+      "sha256": "c9c0bfdcb7298eaee4b192171ee38d32407c833eb03fd2d13019203b3e89342b"
+    },
+    {
+      "path": "data/achievement-definitions/friendships-and-family.json",
+      "sha256": "866f2f480927f9335369da76701948abd08df2d67c5cca77200c1feb626e7d27"
+    },
+    {
+      "path": "data/achievement-definitions/mining-and-combat.json",
+      "sha256": "65875507ba388c73c888f8dcd4a2f03d9197ae41968526520f17ada4c618b56a"
+    },
+    {
+      "path": "data/achievement-definitions/platform-specific.json",
+      "sha256": "5a7b832e31b12eaf50f5f19e41cf667caf661b9861c20e7a457fd7567c03a01f"
+    },
+    {
+      "path": "data/achievement-definitions/requests-and-quests.json",
+      "sha256": "abe7c897d5c35fd43f5981765efc33876bd354068f48bcf8d898f000165328df"
+    },
+    {
+      "path": "data/achievement-definitions/shipping-and-earnings.json",
+      "sha256": "c3498e1295d09abc6fa073fa8f82f383c2bb6d94ed080c5db29c22266b0ee326"
+    },
+    {
+      "path": "data/achievement-definitions/skills.json",
+      "sha256": "d70fb87e46ce5961b71e74b48535032d24a211f5764245a5766ff4f34232f9a3"
+    },
+    {
+      "path": "data/achievement-rules/arcade.json",
+      "sha256": "41ab48d5ba9603caaa1bc527b457a048f4a2973cbf354063ed49facffcaa251a"
+    },
+    {
+      "path": "data/achievement-rules/community-routes.json",
+      "sha256": "34a886f2d0f5b3fb04b3294b86fe41f50545517d88ce3ed3aee3534cc051d467"
+    },
+    {
+      "path": "data/achievement-rules/cooking.json",
+      "sha256": "c7dd0e3cdd98b2711f05d867457462b1f9d6d3bdd916a4fc23336cd7a0d9ea68"
+    },
+    {
+      "path": "data/achievement-rules/crafting.json",
+      "sha256": "4cd77d11758d77ba5513ea5929fb7daa8b2efc7c6ff11acd4fe46760ab10c56e"
+    },
+    {
+      "path": "data/achievement-rules/exploration-and-endgame.json",
+      "sha256": "fdd875efd8af74ae0498b7d4949fef4559811f66bc859193203fed6884780d51"
+    },
+    {
+      "path": "data/achievement-rules/farmhouse.json",
+      "sha256": "7fa0b9d68cac4a33ddb52e308e17d5912c9ee9dd55e07c6d0a19bb0e5a69ee83"
+    },
+    {
+      "path": "data/achievement-rules/farming.json",
+      "sha256": "3b98492abd10d51e4be9718b77396e57deb6b9014865bb841fbebd76a9317296"
+    },
+    {
+      "path": "data/achievement-rules/festivals-and-events.json",
+      "sha256": "a4637ef09545aeec6f2707285aed9faded9366abf17d39ced7474850e6f3f595"
+    },
+    {
+      "path": "data/achievement-rules/fishing.json",
+      "sha256": "74a3471e328a73ba3aca9cee99921cf115b0f5f586f261d5f2b3818d69b4b0f0"
+    },
+    {
+      "path": "data/achievement-rules/foraging-and-collections.json",
+      "sha256": "3c182345ee3b9d63aeb687e8e792a6a5eedb27cf4b62a4b659b8ee26e0a2298d"
+    },
+    {
+      "path": "data/achievement-rules/friendships-and-family.json",
+      "sha256": "3aa9d8264175213de591499407e34ee0816aa7d437516f5013fc1a12a3b5b512"
+    },
+    {
+      "path": "data/achievement-rules/materialized-content.json",
+      "sha256": "eaee89381c4cbe74de5fc0f7816aee70fe4a41040f6ce9241d30dcc5fa202944"
+    },
+    {
+      "path": "data/achievement-rules/mining-and-combat.json",
+      "sha256": "3af6a167f945938c857843199f288a7202dcafb3e97cc9abace6958158cf53e0"
+    },
+    {
+      "path": "data/achievement-rules/platform-specific.json",
+      "sha256": "1ca0407b96151a6c2fcfa6610e3be8c426f50523b9f64a73e689f5f89efef20b"
+    },
+    {
+      "path": "data/achievement-rules/requests-and-quests.json",
+      "sha256": "1b6e3cccc2064ca148d24283f46dda7a6350e05997a0c52d3ca3db101b993afb"
+    },
+    {
+      "path": "data/achievement-rules/shipping-and-earnings.json",
+      "sha256": "9062882075d112be51470e63ec9b916648cbcb2836af8f90725eab97744b3205"
+    },
+    {
+      "path": "data/achievement-rules/skills.json",
+      "sha256": "f91e3795a63cb76046864d980df9f1f1eb3f62593f914fd755c9b74721e3c165"
+    },
+    {
+      "path": "data/acquisition-research/big-craftable-bridges.json",
+      "sha256": "281750582ad356687a9c0998495f9063fef01600c75ca68dfa46c58aee63f91a"
+    },
+    {
+      "path": "data/acquisition-research/category-alternatives.json",
+      "sha256": "b85a10fbf48d8bda0bc387cecf30166c4c8be8a88c32dda387142880cec18097"
+    },
+    {
+      "path": "data/acquisition-research/evidence-relationships.json",
+      "sha256": "d31b41810d1dfbe0b20406c4bb6eb6c8a914fe918ddaf9603a103de16d2c415c"
+    },
+    {
+      "path": "data/acquisition-research/ingredient-joins.json",
+      "sha256": "1552431a3a0ebeee62e45d6a40c59f189894624be234abe5835fbcfae3e56ad4"
+    },
+    {
+      "path": "data/acquisition-research/prerequisites-batch-v2.json",
+      "sha256": "9d3c0868c633a75e3a4bf258505567e495e30901b959b5cd11504c40060e1d12"
+    },
+    {
+      "path": "data/acquisition-research/prerequisites-batch-v3.json",
+      "sha256": "cc9effc8af9d417d5d64cd3b8d0c6505fdf9ca29ddeab3ec699176f8b4615092"
+    },
+    {
+      "path": "data/acquisition-research/prerequisites-runtime-joins.json",
+      "sha256": "aedc37e257aadd33775910f71c490107fdd2c3bb9b7f953acf0f84d446a51a31"
+    },
+    {
+      "path": "data/acquisition-research/prerequisites.json",
+      "sha256": "301e3b47215c05a47681645664220221059aaca3335ddecf63d3201df39e97b6"
+    },
+    {
+      "path": "data/acquisition-research/research-batch-v1.json",
+      "sha256": "5953fe4a020b3beefc6ebc205915f7dabe73db2a7d9628254b67e782d3987523"
+    },
+    {
+      "path": "data/acquisition-research/research-batch-v2.json",
+      "sha256": "d87ae7a07816c0c29e442c6bb2603cd62378305c1a39f1b02cb5e69fe129e1e0"
+    },
+    {
+      "path": "data/acquisition-research/research-batch-v3.json",
+      "sha256": "7cf2cc3b0f6ec9a387e31ad53012a42ad63bd534755c72c1f5ed4407100bea3a"
+    },
+    {
+      "path": "data/acquisition-rules/breadth-shared.json",
+      "sha256": "b777f6d9c4abea4b0d3980231fe09744a6d1c1a94b1c640abd45a34fcce4064e"
+    },
+    {
+      "path": "data/acquisition-rules/shared.json",
+      "sha256": "4f548fa9ff9bc5a13e761f3fcc676cf133356a6017061a413c28faaabe15a03d"
+    },
+    {
+      "path": "data/content-index/1.6.15.24354/books.json",
+      "sha256": "f9828283a3fe88166f5e6cf4fe4a88bdcbc2932a08067c2eb912fadad3a72484"
+    },
+    {
+      "path": "data/content-index/1.6.15.24354/bundles.json",
+      "sha256": "d51b5530952d77d60ca722b2cd5b7e6b17b696fbad7b77a6ec1f17ccbc668af7"
+    },
+    {
+      "path": "data/content-index/1.6.15.24354/cooking.json",
+      "sha256": "6599f10a5058eea827ac44cec0577a135e1c00e1e16eff81389db510a8bf65da"
+    },
+    {
+      "path": "data/content-index/1.6.15.24354/crafting.json",
+      "sha256": "c1f27a58f6dfa017506c27591b768f8a12e16835eae40c2bb2ee2d4ea82f708b"
+    },
+    {
+      "path": "data/content-index/1.6.15.24354/crops.json",
+      "sha256": "42e2ddfc281aadb7b27c1d5cc5477de4f174c8aa7fd3e537c72b3a44b7ec8cd6"
+    },
+    {
+      "path": "data/content-index/1.6.15.24354/enumerators.json",
+      "sha256": "c598a0ae5cf2f062a4299a8a666fba5d69ebbc55df4e7cae906bfa7219f764bb"
+    },
+    {
+      "path": "data/content-index/1.6.15.24354/fish.json",
+      "sha256": "43e38cbf74366a931585536599299a1d44d22ff8e772bc8933ca4a63f02a2376"
+    },
+    {
+      "path": "data/content-index/1.6.15.24354/friendship-candidates.json",
+      "sha256": "bf29a955180c7e27cfdba791d343341b1ceb71d813c2440f7dd1d23d1a5e9c0e"
+    },
+    {
+      "path": "data/content-index/1.6.15.24354/joja-development.json",
+      "sha256": "110f7840ddc572c57fa721ab76c32d529ef4b64ac3a958ed6c505d7282cb7532"
+    },
+    {
+      "path": "data/content-index/1.6.15.24354/manifest.json",
+      "sha256": "0eb4bf85c5f52027cc075f1a1ae5d44b9ffcec6f6401c13afce32abf26532aae"
+    },
+    {
+      "path": "data/content-index/1.6.15.24354/monster-slayer.json",
+      "sha256": "a6c8a62607f6994c576f970a1da3fe9ce700b51d283fbbb4ccf4fc15810f475b"
+    },
+    {
+      "path": "data/content-index/1.6.15.24354/museum.json",
+      "sha256": "485ad461873846044c31e5d2f67b61ba404cc5ab58623392bf98abfa2c710c20"
+    },
+    {
+      "path": "data/content-index/1.6.15.24354/shipping.json",
+      "sha256": "795e2d7ca209484ad730d941bae4fefc16608e54f246d51fbbb468560983a684"
+    },
+    {
+      "path": "data/content-index/1.6.15.24354/stardrops.json",
+      "sha256": "b525577115a861881ea75322b53de142137495755c33ade9daf11561ede94577"
+    },
+    {
+      "path": "data/daily-tasks/generators.json",
+      "sha256": "b19c6f86cfe5bb2696a8d0663c3cc07efe67ba2396ed71fac6a75b0fdb9bb344"
+    },
+    {
+      "path": "data/daily-tasks/snapshot-facts.json",
+      "sha256": "35ba2ac766ef9c83a995fe04e8de3be72e71fdcbda6f4122981536e32d525ae2"
+    },
+    {
+      "path": "data/game-access-mappings/cooking-context.json",
+      "sha256": "05525b6877ce0f0d848b49deff9c3f377ea304057f4d0b1986fa8a1364657204"
+    },
+    {
+      "path": "data/game-access-mappings/foundation.json",
+      "sha256": "93b60e5597689c0aaee7e7b6e715649cf1d69464686451e945784e6e399cbacf"
+    },
+    {
+      "path": "data/manifest.json",
+      "sha256": "8c8b1805ff708125680663057e73b5cce5de1605c784d339df86710f6a5b5857"
+    },
+    {
+      "path": "data/planning/checklist-policy.json",
+      "sha256": "b7e05d9d97fa1f153bc42cb9224f4372c3567ede963c81bb758bcd87653e1380"
+    },
+    {
+      "path": "data/planning/slice-policy.json",
+      "sha256": "7734d7eefcef598b61c22a7ca354d80b58ff3a50fc7d71c6314b4ffc1715df83"
+    },
+    {
+      "path": "data/platform-mapping.json",
+      "sha256": "e2045e27c58af9a7dc54c2d7a3128b0ba6f3bdcf4766bfccd8f68846f3f5c4fd"
+    },
+    {
+      "path": "data/progression-rules/breadth-access.json",
+      "sha256": "6d53d051ce203cffc1ac303f7cd036c9510e217af97bf0908b2953faf03e7c8f"
+    },
+    {
+      "path": "data/schemas/access-mapping.schema.json",
+      "sha256": "e251b4972897977b5e1bba8af0c9c87bf656c68844cfc8496b36b81ad392bed2"
+    },
+    {
+      "path": "data/schemas/acquisition-category.schema.json",
+      "sha256": "966ece4b2d7aa85cceb35a1938b8902ab176d852b167e6dbb3f4c14d075c7875"
+    },
+    {
+      "path": "data/schemas/acquisition-research.schema.json",
+      "sha256": "65ca5cb047297e4c1c83c8d26c2bf63103e31d206b1eb2628b8ebb327fbb68c4"
+    },
+    {
+      "path": "data/schemas/category.schema.json",
+      "sha256": "34336116ca13299bc746ce5cdb7b79aaae52dac464444a464a2c52260e7ce374"
+    },
+    {
+      "path": "data/schemas/checklist-result.schema.json",
+      "sha256": "9f9749c0b488ffdc4b4ea4931e42c918c335555fec7d9eed67ab890093d0f588"
+    },
+    {
+      "path": "data/schemas/checklist-snapshot.schema.json",
+      "sha256": "f7d20910605b9ec9d1f6921e0efb5d0e2c7309b63379aadf631585745997189e"
+    },
+    {
+      "path": "data/schemas/daily-task-generator.schema.json",
+      "sha256": "1ea64171f35f418cc2ed421975f307465edc6384b66bd101367a9bb8b1cc3c81"
+    },
+    {
+      "path": "data/schemas/graph.schema.json",
+      "sha256": "f858245f1e54eed1dedc75bd478444e6d9d8819939666d2334ed012c5b627cc7"
+    },
+    {
+      "path": "data/schemas/ingredient-joins.schema.json",
+      "sha256": "8f0f2992982a998b4d868821ecaff8643d6c9e011224617dcf649fc9006192ef"
+    },
+    {
+      "path": "data/schemas/research-relationships.schema.json",
+      "sha256": "5754ceeb34972cbccffddd3672bc6427c96a4fc43c10993a3dac1a089932fa86"
+    },
+    {
+      "path": "data/sources/achievement-trigger-evidence.json",
+      "sha256": "512cbb014a0b9e8c020090755f336694c244ce58980e07b02943954f4f4b902e"
+    },
+    {
+      "path": "data/sources/acquisition-research-2.json",
+      "sha256": "27a5a95a9364fa1c5086bfad7eb241f2bfb5e405472f30f672a1485e37cd3ea3"
+    },
+    {
+      "path": "data/sources/acquisition-research-3.json",
+      "sha256": "ba0588a0d9d1677653b2f36426c9c9dc568bc7cdcc3b7f1af2edb0a157df4f9b"
+    },
+    {
+      "path": "data/sources/acquisition-research.json",
+      "sha256": "7f40bb89b0964657beaf5976d4c68ce0fd8b6696209d64517ca219400bd126b4"
+    },
+    {
+      "path": "data/sources/daily-research.json",
+      "sha256": "1ff0fe9561f7365c399b84e6a35040d69d1fc8eb150287c228449d362911f27d"
+    },
+    {
+      "path": "data/sources/input-audit.json",
+      "sha256": "dc4399daf3686be77e1c5bd3de30a1826e1d90d75a805439381ef0ccb5cd6af0"
+    },
+    {
+      "path": "data/sources/original/stardew-achievements-by-category/categories/arcade.json",
+      "sha256": "fd1348d55e89cd05b986d271fca0b5e709b8aac11603356ba2adf33e3e3bd0ec"
+    },
+    {
+      "path": "data/sources/original/stardew-achievements-by-category/categories/community-routes.json",
+      "sha256": "1610d0237aa89ec62daf3bab8f555b2bb15c1b78b30fa576732d829c585b2868"
+    },
+    {
+      "path": "data/sources/original/stardew-achievements-by-category/categories/cooking.json",
+      "sha256": "bb3dfa2257d88d59552179ecef2681c475537424c916226512742a31fd5de1a8"
+    },
+    {
+      "path": "data/sources/original/stardew-achievements-by-category/categories/crafting.json",
+      "sha256": "12ea5f34a6dda039bdd6ad1691fbabc1702fee3f1bc6a6c4d41f88a0b41bda99"
+    },
+    {
+      "path": "data/sources/original/stardew-achievements-by-category/categories/exploration-and-endgame.json",
+      "sha256": "c6786999cba81718552883930a6c17582f065ce26acb6851c8013f822110e769"
+    },
+    {
+      "path": "data/sources/original/stardew-achievements-by-category/categories/farmhouse.json",
+      "sha256": "cf151f036e3da79a0bcd0fce33735d8c5d7759ad4a8a8ed7cc69813f05d24919"
+    },
+    {
+      "path": "data/sources/original/stardew-achievements-by-category/categories/farming.json",
+      "sha256": "3967e9cef6ced324cd294c907cc8adc1460ece8de28c9518cfc8139688109523"
+    },
+    {
+      "path": "data/sources/original/stardew-achievements-by-category/categories/festivals-and-events.json",
+      "sha256": "fa0e08980c4aef2bcddcddbdb3f288321cb2d02bf4a5324fd289e6300bcadd64"
+    },
+    {
+      "path": "data/sources/original/stardew-achievements-by-category/categories/fishing.json",
+      "sha256": "2ae583024b6e2c72234a53521470f9b43be684240ce524100f9c2651e57803ac"
+    },
+    {
+      "path": "data/sources/original/stardew-achievements-by-category/categories/foraging-and-collections.json",
+      "sha256": "73913828d88abb19fd7b759f6a916703a258224c7e7f232f972ddd0d2914ea6d"
+    },
+    {
+      "path": "data/sources/original/stardew-achievements-by-category/categories/friendships-and-family.json",
+      "sha256": "e615e1790a49c2279e2d4c2549f15bfc4325ba89aed326c026f890a8da962b19"
+    },
+    {
+      "path": "data/sources/original/stardew-achievements-by-category/categories/mining-and-combat.json",
+      "sha256": "3f15073b8eb31ce128a2992766c99bdd00302dcbbc1f936e73be20482769853d"
+    },
+    {
+      "path": "data/sources/original/stardew-achievements-by-category/categories/platform-specific.json",
+      "sha256": "7fa739002c557e603f5309d950327e36c90946c9d7f07ba592c538576cc6fa04"
+    },
+    {
+      "path": "data/sources/original/stardew-achievements-by-category/categories/requests-and-quests.json",
+      "sha256": "f39325a143eee1b966599ed1fe96f0e4ddf3d13f37aeae52821e382d9e03b845"
+    },
+    {
+      "path": "data/sources/original/stardew-achievements-by-category/categories/shipping-and-earnings.json",
+      "sha256": "27e9a9fcbec8e14abcbdea311949f32cdb6362138491b68d5c07990070c7ac78"
+    },
+    {
+      "path": "data/sources/original/stardew-achievements-by-category/categories/skills.json",
+      "sha256": "0f09f432720b5b6529f1379f4a57a8df0bfee4c484d486bc4f17015af3633a2b"
+    },
+    {
+      "path": "data/sources/original/stardew-achievements-by-category/manifest.json",
+      "sha256": "ef1b92cf3b351bd39a92cc1b8e13ab17ef7183d316c313fad65644dc8f9d6aa6"
+    },
+    {
+      "path": "data/sources/original/trophy-50-coverage.json",
+      "sha256": "19c95d98339ae905ac01cfa0a9d49c035dfb078f0e5f7c2a99c71754f27fab21"
+    },
+    {
+      "path": "data/sources/original/trophy-dependency-graph.json",
+      "sha256": "2e384d5d8f26d97a430631b6c7f1b457055276870b9fa49ef46e9360eaaeba3c"
+    },
+    {
+      "path": "data/sources/runtime-evidence.json",
+      "sha256": "7cc3f877ad7bca5f0838a47719f93e596146344f2f4880e33401b384a193002d"
+    },
+    {
+      "path": "data/sources/runtime-join-research.json",
+      "sha256": "ce994eda378ae11cb467a41ad99e8502b5fabd3e56b9f95063417baf986d9304"
+    },
+    {
+      "path": "data/tracking/breadth.json",
+      "sha256": "8e6ea3250e31f05ac2eb1264861515f183ebb2c348aa4cd170fb7fd1493a1467"
+    },
+    {
+      "path": "data/tracking/checklist-bindings.json",
+      "sha256": "f9550e2fed1a1c1fdd7b54b127ab7ae8c4df5d983bca464f6587a05f0915008a"
+    },
+    {
+      "path": "data/tracking/foundation.json",
+      "sha256": "ec0dfcbb0ba207f257cd69b2ab95b816b4335b58a8c0a33a40939322fa8806d3"
+    },
+    {
+      "path": "data/tracking/materialized.json",
+      "sha256": "0ea7f14fc3a082ecf24547900c6e5779a953765fddcc391f1f3d9a2fce3e45bf"
+    },
+    {
+      "path": "data/tracking/slice-snapshot-contracts.json",
+      "sha256": "570cd4217b408c0087e99231ce1fc088af825df45cf6c4451743befe677fa4ab"
+    }
+  ],
+  "format": "dewly.knowledge.manifest",
+  "knowledgeRevision": "fcd1fb2ad18706c77be1f5a78bf156f8e9032041bca129e0a9f1c6869abb7e5f",
+  "manifestSchemaVersion": 1,
+  "payload": {
+    "bytes": 4158403,
+    "compression": "none",
+    "encoding": "utf-8",
+    "path": "publish/knowledge.json",
+    "sha256": "de996a58f390db69c46b7c8af9e055655cb1e2e08e9b3f7e6273356ff7f82fc1"
+  },
+  "runtimeAuthority": "Active game and loaded mod content take precedence over this vanilla reference snapshot.",
+  "sourceGameContentFingerprint": "933b27af1f08a0253d10b5a27a8b2de3672e0d8816bb2fcab9b3f0f7e9975ff5",
+  "sourceGameVersion": "1.6.15.24354"
+}

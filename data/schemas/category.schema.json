@@ -1,0 +1,12 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "type":"object",
+  "required":["schemaVersion","category","provenance","entries"],
+  "additionalProperties":false,
+  "properties":{
+    "schemaVersion":{"const":"0.1.0"},
+    "category":{"type":"string"},
+    "provenance":{"type":"string"},
+    "entries":{"type":"array","items":{"type":"object","additionalProperties":false,"required":["id","name","sourceRequirement","sourceDefinitionRef","sourceDependencyRef","verification"],"properties":{"id":{"type":"string","pattern":"^[a-z0-9_]+$"},"name":{"type":"string"},"sourceRequirement":{"type":"string"},"sourceDefinitionRef":{"type":"string"},"sourceDependencyRef":{"type":"string"},"verification":{"const":"source-import-only"}}}}
+  }
+}

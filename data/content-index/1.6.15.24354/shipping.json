@@ -1,0 +1,6239 @@
+{
+  "schemaVersion": "0.1.0",
+  "gameVersion": "1.6.15.24354",
+  "records": [
+    {
+      "id": "shipping.16-1574bddb",
+      "qualifiedItemId": "(O)16",
+      "name": "Wild Horseradish",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "grow",
+          "seedId": "(O)495",
+          "seasons": [
+            "spring"
+          ],
+          "minimumGrowthDays": 7,
+          "seedAcquisitionRoutes": [
+            {
+              "type": "shop",
+              "shopId": "DesertTrade",
+              "itemId": "(O)495",
+              "tradeItemId": "(O)496",
+              "tradeItemAmount": 2,
+              "condition": "DAY_OF_WEEK Saturday"
+            }
+          ]
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.174-d094700e",
+      "qualifiedItemId": "(O)174",
+      "name": "Large Egg",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "id": "acq.method.174.animal-production.white-chicken",
+          "type": "animal-production",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire.animals"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Animals"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "animal": "White Chicken",
+          "product": "Large Egg",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.animal-housing"
+            },
+            {
+              "ref": "acq.prereq.animal-mature-fed"
+            }
+          ],
+          "conditions": [
+            "appropriate adult animal present",
+            "production roll/required days satisfied",
+            "collectable produce observed"
+          ],
+          "occurrence": "chance and interval vary with animal type, feeding, mood, friendship and weather"
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.176-5c8f5ac0",
+      "qualifiedItemId": "(O)176",
+      "name": "Egg",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "DesertFestival_Shane",
+          "itemId": "(O)176",
+          "tradeItemId": "CalicoEgg"
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.18-9e6a55b6",
+      "qualifiedItemId": "(O)18",
+      "name": "Daffodil",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "DesertFestival_Evelyn",
+          "itemId": "(O)18",
+          "tradeItemId": "CalicoEgg",
+          "tradeItemAmount": 15
+        },
+        {
+          "type": "shop",
+          "shopId": "Festival_FlowerDance_Pierre",
+          "itemId": "(O)18",
+          "price": 50
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.180-ec7f1f65",
+      "qualifiedItemId": "(O)180",
+      "name": "Egg",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "id": "acq.method.180.animal-production.brown-chicken",
+          "type": "animal-production",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire.animals"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Animals"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "animal": "Brown Chicken",
+          "product": "Egg",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.animal-housing"
+            },
+            {
+              "ref": "acq.prereq.animal-mature-fed"
+            }
+          ],
+          "conditions": [
+            "appropriate adult animal present",
+            "production roll/required days satisfied",
+            "collectable produce observed"
+          ],
+          "occurrence": "chance and interval vary with animal type, feeding, mood, friendship and weather"
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.182-58f07449",
+      "qualifiedItemId": "(O)182",
+      "name": "Large Egg",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "id": "acq.method.182.animal-production.brown-chicken",
+          "type": "animal-production",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire.animals"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Animals"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "animal": "Brown Chicken",
+          "product": "Large Egg",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.animal-housing"
+            },
+            {
+              "ref": "acq.prereq.animal-mature-fed"
+            }
+          ],
+          "conditions": [
+            "appropriate adult animal present",
+            "production roll/required days satisfied",
+            "collectable produce observed"
+          ],
+          "occurrence": "chance and interval vary with animal type, feeding, mood, friendship and weather"
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.184-bcf814ab",
+      "qualifiedItemId": "(O)184",
+      "name": "Milk",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "DesertFestival_Alex",
+          "itemId": "(O)184",
+          "tradeItemId": "CalicoEgg",
+          "tradeItemAmount": 10
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.186-87d538ef",
+      "qualifiedItemId": "(O)186",
+      "name": "Large Milk",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "id": "acq.method.186.animal-production.cow",
+          "type": "animal-production",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire.animals"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Animals"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "animal": "Cow",
+          "product": "Large Milk",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.animal-housing"
+            },
+            {
+              "ref": "acq.prereq.animal-mature-fed"
+            }
+          ],
+          "conditions": [
+            "appropriate adult animal present",
+            "production roll/required days satisfied",
+            "collectable produce observed"
+          ],
+          "occurrence": "chance and interval vary with animal type, feeding, mood, friendship and weather"
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.188-acf1fffc",
+      "qualifiedItemId": "(O)188",
+      "name": "Green Bean",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "grow",
+          "seedId": "(O)473",
+          "seasons": [
+            "spring"
+          ],
+          "minimumGrowthDays": 10,
+          "seedAcquisitionRoutes": [
+            {
+              "type": "shop",
+              "shopId": "Festival_NightMarket_MagicBoat_Day1",
+              "itemId": "(O)473"
+            },
+            {
+              "type": "shop",
+              "shopId": "Joja",
+              "itemId": "(O)473",
+              "condition": "SEASON spring"
+            },
+            {
+              "type": "shop",
+              "shopId": "SeedShop",
+              "itemId": "(O)473",
+              "condition": "SEASON spring"
+            }
+          ]
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.190-3a2dc677",
+      "qualifiedItemId": "(O)190",
+      "name": "Cauliflower",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "grow",
+          "seedId": "(O)474",
+          "seasons": [
+            "spring"
+          ],
+          "minimumGrowthDays": 12,
+          "seedAcquisitionRoutes": [
+            {
+              "type": "shop",
+              "shopId": "Festival_NightMarket_MagicBoat_Day1",
+              "itemId": "(O)474"
+            },
+            {
+              "type": "shop",
+              "shopId": "Joja",
+              "itemId": "(O)474",
+              "condition": "SEASON spring"
+            },
+            {
+              "type": "shop",
+              "shopId": "SeedShop",
+              "itemId": "(O)474",
+              "condition": "SEASON spring"
+            }
+          ]
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.192-19a448c0",
+      "qualifiedItemId": "(O)192",
+      "name": "Potato",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "grow",
+          "seedId": "(O)475",
+          "seasons": [
+            "spring"
+          ],
+          "minimumGrowthDays": 6,
+          "seedAcquisitionRoutes": [
+            {
+              "type": "shop",
+              "shopId": "Festival_NightMarket_MagicBoat_Day1",
+              "itemId": "(O)475"
+            },
+            {
+              "type": "shop",
+              "shopId": "Joja",
+              "itemId": "(O)475",
+              "condition": "SEASON spring"
+            },
+            {
+              "type": "shop",
+              "shopId": "SeedShop",
+              "itemId": "(O)475",
+              "condition": "SEASON spring"
+            }
+          ]
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.20-91032ad7",
+      "qualifiedItemId": "(O)20",
+      "name": "Leek",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "id": "acq.method.20.forage.ground",
+          "type": "forage",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire.forage"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Foraging"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "season": "spring",
+          "location": "Valley outdoor forage",
+          "prerequisites": [],
+          "availability": "collect only when the item/spawn is observed; no guaranteed spawn"
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.22-12c6fc06",
+      "qualifiedItemId": "(O)22",
+      "name": "Dandelion",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "DesertFestival_Caroline",
+          "itemId": "(O)22",
+          "tradeItemId": "CalicoEgg",
+          "tradeItemAmount": 10
+        },
+        {
+          "type": "shop",
+          "shopId": "Festival_FlowerDance_Pierre",
+          "itemId": "(O)22",
+          "price": 50
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.24-4d134bc0",
+      "qualifiedItemId": "(O)24",
+      "name": "Parsnip",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "grow",
+          "seedId": "(O)472",
+          "seasons": [
+            "spring"
+          ],
+          "minimumGrowthDays": 4,
+          "seedAcquisitionRoutes": [
+            {
+              "type": "shop",
+              "shopId": "Festival_NightMarket_MagicBoat_Day1",
+              "itemId": "(O)472"
+            },
+            {
+              "type": "shop",
+              "shopId": "Joja",
+              "itemId": "(O)472",
+              "condition": "SEASON spring"
+            },
+            {
+              "type": "shop",
+              "shopId": "SeedShop",
+              "itemId": "(O)472",
+              "condition": "SEASON spring"
+            }
+          ]
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.248-ca3799b8",
+      "qualifiedItemId": "(O)248",
+      "name": "Garlic",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "grow",
+          "seedId": "(O)476",
+          "seasons": [
+            "spring"
+          ],
+          "minimumGrowthDays": 4,
+          "seedAcquisitionRoutes": [
+            {
+              "type": "shop",
+              "shopId": "Festival_NightMarket_MagicBoat_Day1",
+              "itemId": "(O)476",
+              "condition": "YEAR 2"
+            },
+            {
+              "type": "shop",
+              "shopId": "SeedShop",
+              "itemId": "(O)476",
+              "condition": "SEASON spring, YEAR 2"
+            }
+          ]
+        },
+        {
+          "type": "shop",
+          "shopId": "Festival_FeastOfTheWinterStar_Pierre",
+          "itemId": "(O)248",
+          "price": 2500
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.250-ba30fd97",
+      "qualifiedItemId": "(O)250",
+      "name": "Kale",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "grow",
+          "seedId": "(O)477",
+          "seasons": [
+            "spring"
+          ],
+          "minimumGrowthDays": 6,
+          "seedAcquisitionRoutes": [
+            {
+              "type": "shop",
+              "shopId": "Festival_NightMarket_MagicBoat_Day1",
+              "itemId": "(O)477"
+            },
+            {
+              "type": "shop",
+              "shopId": "Joja",
+              "itemId": "(O)477",
+              "condition": "SEASON spring"
+            },
+            {
+              "type": "shop",
+              "shopId": "SeedShop",
+              "itemId": "(O)477",
+              "condition": "SEASON spring"
+            }
+          ]
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.252-98fcc378",
+      "qualifiedItemId": "(O)252",
+      "name": "Rhubarb",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "grow",
+          "seedId": "(O)478",
+          "seasons": [
+            "spring"
+          ],
+          "minimumGrowthDays": 13,
+          "seedAcquisitionRoutes": [
+            {
+              "type": "shop",
+              "shopId": "Sandy",
+              "itemId": "(O)478"
+            }
+          ]
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.254-c9f13c16",
+      "qualifiedItemId": "(O)254",
+      "name": "Melon",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "grow",
+          "seedId": "(O)479",
+          "seasons": [
+            "summer"
+          ],
+          "minimumGrowthDays": 12,
+          "seedAcquisitionRoutes": [
+            {
+              "type": "shop",
+              "shopId": "Festival_NightMarket_MagicBoat_Day2",
+              "itemId": "(O)479"
+            },
+            {
+              "type": "shop",
+              "shopId": "Joja",
+              "itemId": "(O)479",
+              "condition": "SEASON summer"
+            },
+            {
+              "type": "shop",
+              "shopId": "SeedShop",
+              "itemId": "(O)479",
+              "condition": "SEASON summer"
+            }
+          ]
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.256-dd7c1a3d",
+      "qualifiedItemId": "(O)256",
+      "name": "Tomato",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "grow",
+          "seedId": "(O)480",
+          "seasons": [
+            "summer"
+          ],
+          "minimumGrowthDays": 11,
+          "seedAcquisitionRoutes": [
+            {
+              "type": "shop",
+              "shopId": "Festival_NightMarket_MagicBoat_Day2",
+              "itemId": "(O)480"
+            },
+            {
+              "type": "shop",
+              "shopId": "Joja",
+              "itemId": "(O)480",
+              "condition": "SEASON summer"
+            },
+            {
+              "type": "shop",
+              "shopId": "SeedShop",
+              "itemId": "(O)480",
+              "condition": "SEASON summer"
+            }
+          ]
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.257-c439c60b",
+      "qualifiedItemId": "(O)257",
+      "name": "Morel",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "DesertFestival_George",
+          "itemId": "(O)257",
+          "tradeItemId": "CalicoEgg",
+          "tradeItemAmount": 30
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.258-982fd8b7",
+      "qualifiedItemId": "(O)258",
+      "name": "Blueberry",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "grow",
+          "seedId": "(O)481",
+          "seasons": [
+            "summer"
+          ],
+          "minimumGrowthDays": 13,
+          "seedAcquisitionRoutes": [
+            {
+              "type": "shop",
+              "shopId": "Festival_NightMarket_MagicBoat_Day2",
+              "itemId": "(O)481"
+            },
+            {
+              "type": "shop",
+              "shopId": "SeedShop",
+              "itemId": "(O)481",
+              "condition": "SEASON summer"
+            }
+          ]
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.259-5f573b82",
+      "qualifiedItemId": "(O)259",
+      "name": "Fiddlehead Fern",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "DesertFestival_Kent",
+          "itemId": "(O)259",
+          "tradeItemId": "CalicoEgg",
+          "tradeItemAmount": 10
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.260-09d66f6e",
+      "qualifiedItemId": "(O)260",
+      "name": "Hot Pepper",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "grow",
+          "seedId": "(O)482",
+          "seasons": [
+            "summer"
+          ],
+          "minimumGrowthDays": 5,
+          "seedAcquisitionRoutes": [
+            {
+              "type": "shop",
+              "shopId": "Festival_NightMarket_MagicBoat_Day2",
+              "itemId": "(O)482"
+            },
+            {
+              "type": "shop",
+              "shopId": "Joja",
+              "itemId": "(O)482",
+              "condition": "SEASON summer"
+            },
+            {
+              "type": "shop",
+              "shopId": "SeedShop",
+              "itemId": "(O)482",
+              "condition": "SEASON summer"
+            }
+          ]
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.262-1106a1dd",
+      "qualifiedItemId": "(O)262",
+      "name": "Wheat",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "grow",
+          "seedId": "(O)483",
+          "seasons": [
+            "summer",
+            "fall"
+          ],
+          "minimumGrowthDays": 4,
+          "seedAcquisitionRoutes": [
+            {
+              "type": "shop",
+              "shopId": "Festival_NightMarket_MagicBoat_Day2",
+              "itemId": "(O)483"
+            },
+            {
+              "type": "shop",
+              "shopId": "Festival_NightMarket_MagicBoat_Day3",
+              "itemId": "(O)483"
+            },
+            {
+              "type": "shop",
+              "shopId": "Joja",
+              "itemId": "(O)483",
+              "condition": "SEASON summer"
+            },
+            {
+              "type": "shop",
+              "shopId": "Joja",
+              "itemId": "(O)483",
+              "condition": "SEASON fall"
+            },
+            {
+              "type": "shop",
+              "shopId": "SeedShop",
+              "itemId": "(O)483",
+              "condition": "SEASON summer"
+            },
+            {
+              "type": "shop",
+              "shopId": "SeedShop",
+              "itemId": "(O)483",
+              "condition": "SEASON fall"
+            }
+          ]
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.264-682a03f4",
+      "qualifiedItemId": "(O)264",
+      "name": "Radish",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "grow",
+          "seedId": "(O)484",
+          "seasons": [
+            "summer"
+          ],
+          "minimumGrowthDays": 6,
+          "seedAcquisitionRoutes": [
+            {
+              "type": "shop",
+              "shopId": "Festival_NightMarket_MagicBoat_Day2",
+              "itemId": "(O)484"
+            },
+            {
+              "type": "shop",
+              "shopId": "Joja",
+              "itemId": "(O)484",
+              "condition": "SEASON summer"
+            },
+            {
+              "type": "shop",
+              "shopId": "SeedShop",
+              "itemId": "(O)484",
+              "condition": "SEASON summer"
+            }
+          ]
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.266-45cbe19f",
+      "qualifiedItemId": "(O)266",
+      "name": "Red Cabbage",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "grow",
+          "seedId": "(O)485",
+          "seasons": [
+            "summer"
+          ],
+          "minimumGrowthDays": 9,
+          "seedAcquisitionRoutes": [
+            {
+              "type": "shop",
+              "shopId": "Festival_NightMarket_MagicBoat_Day2",
+              "itemId": "(O)485",
+              "condition": "YEAR 2"
+            },
+            {
+              "type": "shop",
+              "shopId": "SeedShop",
+              "itemId": "(O)485",
+              "condition": "SEASON summer, YEAR 2"
+            },
+            {
+              "type": "shop",
+              "shopId": "Traveler",
+              "itemId": "(O)485",
+              "condition": "WORLD_STATE_FIELD VisitsUntilY1Guarantee 0 0"
+            }
+          ]
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.268-d5f0d910",
+      "qualifiedItemId": "(O)268",
+      "name": "Starfruit",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "grow",
+          "seedId": "(O)486",
+          "seasons": [
+            "summer"
+          ],
+          "minimumGrowthDays": 13,
+          "seedAcquisitionRoutes": [
+            {
+              "type": "shop",
+              "shopId": "Sandy",
+              "itemId": "(O)486"
+            }
+          ]
+        },
+        {
+          "type": "shop",
+          "shopId": "Festival_Luau_Pierre",
+          "itemId": "(O)268",
+          "price": 3000
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.270-29350804",
+      "qualifiedItemId": "(O)270",
+      "name": "Corn",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "grow",
+          "seedId": "(O)487",
+          "seasons": [
+            "summer",
+            "fall"
+          ],
+          "minimumGrowthDays": 14,
+          "seedAcquisitionRoutes": [
+            {
+              "type": "shop",
+              "shopId": "Festival_NightMarket_MagicBoat_Day2",
+              "itemId": "(O)487"
+            },
+            {
+              "type": "shop",
+              "shopId": "Festival_NightMarket_MagicBoat_Day3",
+              "itemId": "(O)487"
+            },
+            {
+              "type": "shop",
+              "shopId": "Joja",
+              "itemId": "(O)487",
+              "condition": "SEASON fall"
+            },
+            {
+              "type": "shop",
+              "shopId": "SeedShop",
+              "itemId": "(O)487",
+              "condition": "SEASON summer"
+            },
+            {
+              "type": "shop",
+              "shopId": "SeedShop",
+              "itemId": "(O)487",
+              "condition": "SEASON fall"
+            }
+          ]
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.271-ef7de0b7",
+      "qualifiedItemId": "(O)271",
+      "name": "Unmilled Rice",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "grow",
+          "seedId": "(O)273",
+          "seasons": [
+            "spring"
+          ],
+          "minimumGrowthDays": 8,
+          "seedAcquisitionRoutes": [
+            {
+              "type": "shop",
+              "shopId": "SeedShop",
+              "itemId": "(O)273",
+              "condition": "SEASON spring, YEAR 2"
+            }
+          ]
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.272-eb94d5c2",
+      "qualifiedItemId": "(O)272",
+      "name": "Eggplant",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "grow",
+          "seedId": "(O)488",
+          "seasons": [
+            "fall"
+          ],
+          "minimumGrowthDays": 5,
+          "seedAcquisitionRoutes": [
+            {
+              "type": "shop",
+              "shopId": "Festival_NightMarket_MagicBoat_Day3",
+              "itemId": "(O)488"
+            },
+            {
+              "type": "shop",
+              "shopId": "Joja",
+              "itemId": "(O)488",
+              "condition": "SEASON fall"
+            },
+            {
+              "type": "shop",
+              "shopId": "SeedShop",
+              "itemId": "(O)488",
+              "condition": "SEASON fall"
+            }
+          ]
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.274-431bf3b9",
+      "qualifiedItemId": "(O)274",
+      "name": "Artichoke",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "grow",
+          "seedId": "(O)489",
+          "seasons": [
+            "fall"
+          ],
+          "minimumGrowthDays": 8,
+          "seedAcquisitionRoutes": [
+            {
+              "type": "shop",
+              "shopId": "Festival_NightMarket_MagicBoat_Day3",
+              "itemId": "(O)489",
+              "condition": "YEAR 2"
+            },
+            {
+              "type": "shop",
+              "shopId": "SeedShop",
+              "itemId": "(O)489",
+              "condition": "SEASON fall, YEAR 2"
+            }
+          ]
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.276-6d363479",
+      "qualifiedItemId": "(O)276",
+      "name": "Pumpkin",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "grow",
+          "seedId": "(O)490",
+          "seasons": [
+            "fall"
+          ],
+          "minimumGrowthDays": 13,
+          "seedAcquisitionRoutes": [
+            {
+              "type": "shop",
+              "shopId": "Festival_NightMarket_MagicBoat_Day3",
+              "itemId": "(O)490"
+            },
+            {
+              "type": "shop",
+              "shopId": "Joja",
+              "itemId": "(O)490",
+              "condition": "SEASON fall"
+            },
+            {
+              "type": "shop",
+              "shopId": "SeedShop",
+              "itemId": "(O)490",
+              "condition": "SEASON fall"
+            }
+          ]
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.278-68b5193f",
+      "qualifiedItemId": "(O)278",
+      "name": "Bok Choy",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "grow",
+          "seedId": "(O)491",
+          "seasons": [
+            "fall"
+          ],
+          "minimumGrowthDays": 4,
+          "seedAcquisitionRoutes": [
+            {
+              "type": "shop",
+              "shopId": "Festival_NightMarket_MagicBoat_Day3",
+              "itemId": "(O)491"
+            },
+            {
+              "type": "shop",
+              "shopId": "Joja",
+              "itemId": "(O)491",
+              "condition": "SEASON fall"
+            },
+            {
+              "type": "shop",
+              "shopId": "SeedShop",
+              "itemId": "(O)491",
+              "condition": "SEASON fall"
+            }
+          ]
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.280-ba613d1f",
+      "qualifiedItemId": "(O)280",
+      "name": "Yam",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "grow",
+          "seedId": "(O)492",
+          "seasons": [
+            "fall"
+          ],
+          "minimumGrowthDays": 10,
+          "seedAcquisitionRoutes": [
+            {
+              "type": "shop",
+              "shopId": "Festival_NightMarket_MagicBoat_Day3",
+              "itemId": "(O)492"
+            },
+            {
+              "type": "shop",
+              "shopId": "Joja",
+              "itemId": "(O)492",
+              "condition": "SEASON fall"
+            },
+            {
+              "type": "shop",
+              "shopId": "SeedShop",
+              "itemId": "(O)492",
+              "condition": "SEASON fall"
+            }
+          ]
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.281-d8502b7d",
+      "qualifiedItemId": "(O)281",
+      "name": "Chanterelle",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "id": "acq.method.281.forage.ground",
+          "type": "forage",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire.forage"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Foraging"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "season": "fall",
+          "location": "Secret Woods or Forest Farm",
+          "prerequisites": [],
+          "availability": "collect only when the item/spawn is observed; no guaranteed spawn"
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.282-267b976f",
+      "qualifiedItemId": "(O)282",
+      "name": "Cranberries",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "grow",
+          "seedId": "(O)493",
+          "seasons": [
+            "fall"
+          ],
+          "minimumGrowthDays": 7,
+          "seedAcquisitionRoutes": [
+            {
+              "type": "shop",
+              "shopId": "Festival_NightMarket_MagicBoat_Day3",
+              "itemId": "(O)493"
+            },
+            {
+              "type": "shop",
+              "shopId": "Joja",
+              "itemId": "(O)493",
+              "condition": "SEASON fall"
+            },
+            {
+              "type": "shop",
+              "shopId": "SeedShop",
+              "itemId": "(O)493",
+              "condition": "SEASON fall"
+            }
+          ]
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.283-3032a4be",
+      "qualifiedItemId": "(O)283",
+      "name": "Holly",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "id": "acq.method.283.forage.ground",
+          "type": "forage",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire.forage"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Foraging"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "season": "winter",
+          "location": "Valley outdoor forage",
+          "prerequisites": [],
+          "availability": "collect only when the item/spawn is observed; no guaranteed spawn"
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.284-7f35419a",
+      "qualifiedItemId": "(O)284",
+      "name": "Beet",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "grow",
+          "seedId": "(O)494",
+          "seasons": [
+            "fall"
+          ],
+          "minimumGrowthDays": 6,
+          "seedAcquisitionRoutes": [
+            {
+              "type": "shop",
+              "shopId": "Sandy",
+              "itemId": "(O)494"
+            }
+          ]
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.289-6b0f4d99",
+      "qualifiedItemId": "(O)289",
+      "name": "Ostrich Egg",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "id": "acq.method.289.animal-production.ostrich",
+          "type": "animal-production",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire.animals"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Animals"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "animal": "Ostrich",
+          "product": "Ostrich Egg",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.animal-housing"
+            },
+            {
+              "ref": "acq.prereq.animal-mature-fed"
+            }
+          ],
+          "conditions": [
+            "appropriate adult animal present",
+            "production roll/required days satisfied",
+            "collectable produce observed"
+          ],
+          "occurrence": "chance and interval vary with animal type, feeding, mood, friendship and weather"
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.296-cc8cd1ce",
+      "qualifiedItemId": "(O)296",
+      "name": "Salmonberry",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "id": "acq.method.296.forage.bush--spring-days-15-18",
+          "type": "forage",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire.forage"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Foraging"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "season": "spring",
+          "location": "Valley berry bushes",
+          "prerequisites": [],
+          "availability": "collect only when the item/spawn is observed; no guaranteed spawn"
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.300-e26973e6",
+      "qualifiedItemId": "(O)300",
+      "name": "Amaranth",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "grow",
+          "seedId": "(O)299",
+          "seasons": [
+            "fall"
+          ],
+          "minimumGrowthDays": 7,
+          "seedAcquisitionRoutes": [
+            {
+              "type": "shop",
+              "shopId": "Festival_NightMarket_MagicBoat_Day3",
+              "itemId": "(O)299"
+            },
+            {
+              "type": "shop",
+              "shopId": "Joja",
+              "itemId": "(O)299",
+              "condition": "SEASON fall"
+            },
+            {
+              "type": "shop",
+              "shopId": "SeedShop",
+              "itemId": "(O)299",
+              "condition": "SEASON fall"
+            }
+          ]
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.303-bbcbb1e8",
+      "qualifiedItemId": "(O)303",
+      "name": "Pale Ale",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "DesertFestival_Pam",
+          "itemId": "(O)303",
+          "tradeItemId": "CalicoEgg",
+          "tradeItemAmount": 30
+        },
+        {
+          "type": "shop",
+          "shopId": "ResortBar",
+          "itemId": "(O)303",
+          "price": 1000
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.304-79816ecb",
+      "qualifiedItemId": "(O)304",
+      "name": "Hops",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "grow",
+          "seedId": "(O)302",
+          "seasons": [
+            "summer"
+          ],
+          "minimumGrowthDays": 11,
+          "seedAcquisitionRoutes": [
+            {
+              "type": "shop",
+              "shopId": "Festival_NightMarket_MagicBoat_Day2",
+              "itemId": "(O)302"
+            },
+            {
+              "type": "shop",
+              "shopId": "Joja",
+              "itemId": "(O)302",
+              "condition": "SEASON summer"
+            },
+            {
+              "type": "shop",
+              "shopId": "SeedShop",
+              "itemId": "(O)302",
+              "condition": "SEASON summer"
+            }
+          ]
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.305-9a3d6127",
+      "qualifiedItemId": "(O)305",
+      "name": "Void Egg",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "ShadowShop",
+          "itemId": "(O)305",
+          "price": 5000
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.306-72c1975b",
+      "qualifiedItemId": "(O)306",
+      "name": "Mayonnaise",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "id": "acq.method.306.machine-processing.mayonnaise-machine",
+          "type": "machine-processing",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire.artisan"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Artisan_Goods"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "machine": "Mayonnaise Machine",
+          "inputItems": [
+            {
+              "name": "Egg",
+              "quantity": 1
+            },
+            {
+              "name": "Large Egg",
+              "quantity": 1
+            },
+            {
+              "name": "Ostrich Egg",
+              "quantity": 1
+            },
+            {
+              "name": "Golden Egg",
+              "quantity": 1
+            }
+          ],
+          "inputAlternatives": true,
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.machine-mayonnaise-machine"
+            },
+            {
+              "ref": "acq.prereq.valid-machine-input"
+            }
+          ],
+          "conditions": [
+            "matching input observed and unreserved",
+            "machine idle and capable of accepting input"
+          ],
+          "outputQuantity": "depends on input and content-defined machine rules",
+          "processingMinutes": 180
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.307-ae5ffa65",
+      "qualifiedItemId": "(O)307",
+      "name": "Duck Mayonnaise",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "id": "acq.method.307.machine-processing.mayonnaise-machine",
+          "type": "machine-processing",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire.artisan"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Artisan_Goods"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "machine": "Mayonnaise Machine",
+          "inputItems": [
+            {
+              "name": "Duck Egg",
+              "quantity": 1
+            }
+          ],
+          "inputAlternatives": true,
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.machine-mayonnaise-machine"
+            },
+            {
+              "ref": "acq.prereq.valid-machine-input"
+            }
+          ],
+          "conditions": [
+            "matching input observed and unreserved",
+            "machine idle and capable of accepting input"
+          ],
+          "outputQuantity": "depends on input and content-defined machine rules",
+          "processingMinutes": 180
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.308-3e0f83cc",
+      "qualifiedItemId": "(O)308",
+      "name": "Void Mayonnaise",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "id": "acq.method.308.machine-processing.mayonnaise-machine",
+          "type": "machine-processing",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire.artisan"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Artisan_Goods"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "machine": "Mayonnaise Machine",
+          "inputItems": [
+            {
+              "name": "Void Egg",
+              "quantity": 1
+            }
+          ],
+          "inputAlternatives": true,
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.machine-mayonnaise-machine"
+            },
+            {
+              "ref": "acq.prereq.valid-machine-input"
+            }
+          ],
+          "conditions": [
+            "matching input observed and unreserved",
+            "machine idle and capable of accepting input"
+          ],
+          "outputQuantity": "depends on input and content-defined machine rules",
+          "processingMinutes": 180
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.330-a609bb8a",
+      "qualifiedItemId": "(O)330",
+      "name": "Clay",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "DesertFestival_Vincent",
+          "itemId": "(O)330",
+          "tradeItemId": "CalicoEgg"
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.334-fffb8e85",
+      "qualifiedItemId": "(O)334",
+      "name": "Copper Bar",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "id": "acq.method.334.smelt.furnace",
+          "type": "smelt",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire.furnace"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Furnace"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "machine": "Furnace",
+          "inputItems": [
+            {
+              "itemId": "(O)378",
+              "name": "Copper Ore",
+              "quantity": 5
+            },
+            {
+              "itemId": "(O)382",
+              "name": "Coal",
+              "quantity": 1
+            }
+          ],
+          "outputQuantity": 1,
+          "processingMinutes": 30,
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.furnace"
+            },
+            {
+              "ref": "acq.prereq.fuel-and-ore"
+            }
+          ],
+          "conditions": [
+            "recipe available and machine accessible",
+            "unreserved inputs available"
+          ]
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.335-4728a264",
+      "qualifiedItemId": "(O)335",
+      "name": "Iron Bar",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "id": "acq.method.335.smelt.furnace",
+          "type": "smelt",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire.furnace"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Furnace"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "machine": "Furnace",
+          "inputItems": [
+            {
+              "itemId": "(O)380",
+              "name": "Iron Ore",
+              "quantity": 5
+            },
+            {
+              "itemId": "(O)382",
+              "name": "Coal",
+              "quantity": 1
+            }
+          ],
+          "outputQuantity": 1,
+          "processingMinutes": 120,
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.furnace"
+            },
+            {
+              "ref": "acq.prereq.fuel-and-ore"
+            }
+          ],
+          "conditions": [
+            "recipe available and machine accessible",
+            "unreserved inputs available"
+          ]
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.336-9c882d5c",
+      "qualifiedItemId": "(O)336",
+      "name": "Gold Bar",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "id": "acq.method.336.smelt.furnace",
+          "type": "smelt",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire.furnace"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Furnace"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "machine": "Furnace",
+          "inputItems": [
+            {
+              "itemId": "(O)384",
+              "name": "Gold Ore",
+              "quantity": 5
+            },
+            {
+              "itemId": "(O)382",
+              "name": "Coal",
+              "quantity": 1
+            }
+          ],
+          "outputQuantity": 1,
+          "processingMinutes": 300,
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.furnace"
+            },
+            {
+              "ref": "acq.prereq.fuel-and-ore"
+            }
+          ],
+          "conditions": [
+            "recipe available and machine accessible",
+            "unreserved inputs available"
+          ]
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.337-0588f590",
+      "qualifiedItemId": "(O)337",
+      "name": "Iridium Bar",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "DesertFestival_Maru",
+          "itemId": "(O)337",
+          "tradeItemId": "CalicoEgg",
+          "tradeItemAmount": 50
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.338-01ec4021",
+      "qualifiedItemId": "(O)338",
+      "name": "Refined Quartz",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "id": "acq.method.338.smelt.quartz",
+          "type": "smelt",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire.furnace"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Furnace"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "machine": "Furnace",
+          "inputItems": [
+            {
+              "itemId": "(O)80",
+              "quantity": 1
+            },
+            {
+              "itemId": "(O)382",
+              "name": "Coal",
+              "quantity": 1
+            }
+          ],
+          "outputQuantity": 1,
+          "processingMinutes": 90,
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.furnace"
+            },
+            {
+              "ref": "acq.prereq.fuel-and-ore"
+            }
+          ]
+        },
+        {
+          "id": "acq.method.338.smelt.fire-quartz",
+          "type": "smelt",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire.furnace"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Furnace"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "machine": "Furnace",
+          "inputItems": [
+            {
+              "itemId": "(O)82",
+              "quantity": 1
+            },
+            {
+              "itemId": "(O)382",
+              "name": "Coal",
+              "quantity": 1
+            }
+          ],
+          "outputQuantity": 3,
+          "processingMinutes": 90,
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.furnace"
+            },
+            {
+              "ref": "acq.prereq.fuel-and-ore"
+            }
+          ]
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.340-3e6bf6c8",
+      "qualifiedItemId": "(O)340",
+      "name": "Honey",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "Sandy",
+          "itemId": "(O)340",
+          "condition": "DAY_OF_WEEK Friday"
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.342-c415505d",
+      "qualifiedItemId": "(O)342",
+      "name": "Pickles",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "id": "acq.method.342.machine-processing.preserves-jar",
+          "type": "machine-processing",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire.preserves"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Preserves_Jar"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "machine": "Preserves Jar",
+          "inputItems": [
+            {
+              "name": "eligible vegetable",
+              "quantity": 1
+            }
+          ],
+          "inputAlternatives": true,
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.machine-preserves-jar"
+            },
+            {
+              "ref": "acq.prereq.valid-machine-input"
+            }
+          ],
+          "conditions": [
+            "matching input observed and unreserved",
+            "machine idle and capable of accepting input"
+          ],
+          "outputQuantity": "depends on input and content-defined machine rules",
+          "processingMinutes": 4000
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.344-640bacfb",
+      "qualifiedItemId": "(O)344",
+      "name": "Jelly",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "id": "acq.method.344.machine-processing.preserves-jar",
+          "type": "machine-processing",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire.preserves"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Preserves_Jar"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "machine": "Preserves Jar",
+          "inputItems": [
+            {
+              "name": "eligible fruit",
+              "quantity": 1
+            }
+          ],
+          "inputAlternatives": true,
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.machine-preserves-jar"
+            },
+            {
+              "ref": "acq.prereq.valid-machine-input"
+            }
+          ],
+          "conditions": [
+            "matching input observed and unreserved",
+            "machine idle and capable of accepting input"
+          ],
+          "outputQuantity": "depends on input and content-defined machine rules",
+          "processingMinutes": 4000
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.346-41f448af",
+      "qualifiedItemId": "(O)346",
+      "name": "Beer",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "DesertFestival_Pam",
+          "itemId": "(O)346",
+          "tradeItemId": "CalicoEgg",
+          "tradeItemAmount": 20
+        },
+        {
+          "type": "shop",
+          "shopId": "ResortBar",
+          "itemId": "(O)346",
+          "price": 500
+        },
+        {
+          "type": "shop",
+          "shopId": "Saloon",
+          "itemId": "(O)346"
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.348-cfd17996",
+      "qualifiedItemId": "(O)348",
+      "name": "Wine",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "id": "acq.method.348.machine-processing.keg",
+          "type": "machine-processing",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire.artisan"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Artisan_Goods"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "machine": "Keg",
+          "inputItems": [
+            {
+              "name": "eligible fruit",
+              "quantity": 1
+            }
+          ],
+          "inputAlternatives": true,
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.machine-keg"
+            },
+            {
+              "ref": "acq.prereq.valid-machine-input"
+            }
+          ],
+          "conditions": [
+            "matching input observed and unreserved",
+            "machine idle and capable of accepting input"
+          ],
+          "outputQuantity": "depends on input and content-defined machine rules",
+          "processingMinutes": null,
+          "unknowns": [
+            "Exact processing time depends on input and machine content; do not use fixed default."
+          ]
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.350-89a1c105",
+      "qualifiedItemId": "(O)350",
+      "name": "Juice",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "id": "acq.method.350.machine-processing.keg",
+          "type": "machine-processing",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire.artisan"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Artisan_Goods"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "machine": "Keg",
+          "inputItems": [
+            {
+              "name": "eligible vegetable",
+              "quantity": 1
+            }
+          ],
+          "inputAlternatives": true,
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.machine-keg"
+            },
+            {
+              "ref": "acq.prereq.valid-machine-input"
+            }
+          ],
+          "conditions": [
+            "matching input observed and unreserved",
+            "machine idle and capable of accepting input"
+          ],
+          "outputQuantity": "depends on input and content-defined machine rules",
+          "processingMinutes": null,
+          "unknowns": [
+            "Exact processing time depends on input and machine content; do not use fixed default."
+          ]
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.376-b6e2efd8",
+      "qualifiedItemId": "(O)376",
+      "name": "Poppy",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "grow",
+          "seedId": "(O)453",
+          "seasons": [
+            "summer"
+          ],
+          "minimumGrowthDays": 7,
+          "seedAcquisitionRoutes": [
+            {
+              "type": "shop",
+              "shopId": "Festival_NightMarket_MagicBoat_Day2",
+              "itemId": "(O)453"
+            },
+            {
+              "type": "shop",
+              "shopId": "Joja",
+              "itemId": "(O)453",
+              "condition": "SEASON summer"
+            },
+            {
+              "type": "shop",
+              "shopId": "SeedShop",
+              "itemId": "(O)453",
+              "condition": "SEASON summer"
+            }
+          ]
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.378-0d990fa9",
+      "qualifiedItemId": "(O)378",
+      "name": "Copper Ore",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "Blacksmith",
+          "itemId": "(O)378",
+          "price": 75,
+          "condition": "!YEAR 2"
+        },
+        {
+          "type": "shop",
+          "shopId": "Blacksmith",
+          "itemId": "(O)378",
+          "price": 150,
+          "condition": "YEAR 2"
+        },
+        {
+          "type": "shop",
+          "shopId": "DesertFestival_Clint",
+          "itemId": "(O)378",
+          "tradeItemId": "CalicoEgg",
+          "tradeItemAmount": 2
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.380-c30749cf",
+      "qualifiedItemId": "(O)380",
+      "name": "Iron Ore",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "Blacksmith",
+          "itemId": "(O)380",
+          "price": 150,
+          "condition": "!YEAR 2"
+        },
+        {
+          "type": "shop",
+          "shopId": "Blacksmith",
+          "itemId": "(O)380",
+          "price": 250,
+          "condition": "YEAR 2"
+        },
+        {
+          "type": "shop",
+          "shopId": "DesertFestival_Clint",
+          "itemId": "(O)380",
+          "tradeItemId": "CalicoEgg",
+          "tradeItemAmount": 4
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.382-d0226f9e",
+      "qualifiedItemId": "(O)382",
+      "name": "Coal",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "Blacksmith",
+          "itemId": "(O)382",
+          "price": 150,
+          "condition": "!YEAR 2"
+        },
+        {
+          "type": "shop",
+          "shopId": "Blacksmith",
+          "itemId": "(O)382",
+          "price": 250,
+          "condition": "YEAR 2"
+        },
+        {
+          "type": "shop",
+          "shopId": "BooksellerTrade",
+          "itemId": "(O)382",
+          "tradeItemId": "SkillBook_3"
+        },
+        {
+          "type": "shop",
+          "shopId": "DesertFestival_Clint",
+          "itemId": "(O)382",
+          "tradeItemId": "CalicoEgg",
+          "tradeItemAmount": 5
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.384-b741f252",
+      "qualifiedItemId": "(O)384",
+      "name": "Gold Ore",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "Blacksmith",
+          "itemId": "(O)384",
+          "price": 400,
+          "condition": "!YEAR 2"
+        },
+        {
+          "type": "shop",
+          "shopId": "Blacksmith",
+          "itemId": "(O)384",
+          "price": 750,
+          "condition": "YEAR 2"
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.386-295df4a5",
+      "qualifiedItemId": "(O)386",
+      "name": "Iridium Ore",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "id": "acq.method.386.mine-iridium-node.skull-cavern",
+          "type": "mine-iridium-node",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.iridium"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Iridium_Ore"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "location": "Skull Cavern",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.mine-ore-node"
+            }
+          ],
+          "occurrence": "Observed Iridium Node; success depends on spawn"
+        },
+        {
+          "id": "acq.method.386.mine-iridium-node.volcano-dungeon",
+          "type": "mine-iridium-node",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.iridium"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Iridium_Ore"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "location": "Volcano Dungeon",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.mine-ore-node"
+            }
+          ],
+          "occurrence": "Observed Iridium Node; success depends on spawn"
+        },
+        {
+          "id": "acq.method.386.mine-iridium-node.quarry",
+          "type": "mine-iridium-node",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.iridium"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Iridium_Ore"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "location": "Quarry",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.mine-ore-node"
+            }
+          ],
+          "occurrence": "Observed Iridium Node; success depends on spawn"
+        },
+        {
+          "id": "acq.method.386.mine-mystic-stone.any-reachable",
+          "type": "mine-mystic-stone",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.iridium"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Iridium_Ore"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "location": "Mines 100+ / Quarry / Skull Cavern / Volcano",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.mine-ore-node"
+            }
+          ],
+          "outputQuantity": "1-3 Iridium Ore per Mystic Stone"
+        },
+        {
+          "id": "acq.method.386.open-geode.magma-geode",
+          "type": "open-geode",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.iridium"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Iridium_Ore"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "inputItems": [
+            {
+              "itemId": "(O)537",
+              "quantity": 1
+            }
+          ],
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.geode-open-service"
+            }
+          ],
+          "occurrence": "chance; not a guaranteed output"
+        },
+        {
+          "id": "acq.method.386.open-geode.omni-geode",
+          "type": "open-geode",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.iridium"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Iridium_Ore"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "inputItems": [
+            {
+              "itemId": "(O)749",
+              "quantity": 1
+            }
+          ],
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.geode-open-service"
+            }
+          ],
+          "occurrence": "chance; not a guaranteed output"
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.388-11307768",
+      "qualifiedItemId": "(O)388",
+      "name": "Wood",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "BooksellerTrade",
+          "itemId": "(O)388",
+          "tradeItemId": "SkillBook_2"
+        },
+        {
+          "type": "shop",
+          "shopId": "Carpenter",
+          "itemId": "(O)388"
+        },
+        {
+          "type": "shop",
+          "shopId": "DesertFestival_Robin",
+          "itemId": "(O)388",
+          "tradeItemId": "CalicoEgg"
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.390-f369b411",
+      "qualifiedItemId": "(O)390",
+      "name": "Stone",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "Carpenter",
+          "itemId": "(O)390"
+        },
+        {
+          "type": "shop",
+          "shopId": "DesertFestival_Robin",
+          "itemId": "(O)390",
+          "tradeItemId": "CalicoEgg"
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.392-0715d58c",
+      "qualifiedItemId": "(O)392",
+      "name": "Nautilus Shell",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "DesertFestival_Demetrius",
+          "itemId": "(O)392",
+          "tradeItemId": "CalicoEgg",
+          "tradeItemAmount": 50
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.393-b0c68924",
+      "qualifiedItemId": "(O)393",
+      "name": "Coral",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "id": "acq.method.393.forage.beach-forage",
+          "type": "forage",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire.forage"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Foraging"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "season": "any",
+          "location": "Beach",
+          "prerequisites": [],
+          "availability": "collect only when the item/spawn is observed; no guaranteed spawn"
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.394-bc62305b",
+      "qualifiedItemId": "(O)394",
+      "name": "Rainbow Shell",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "id": "acq.method.394.forage.beach-forage",
+          "type": "forage",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire.forage"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Foraging"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "season": "summer",
+          "location": "Beach",
+          "prerequisites": [],
+          "availability": "collect only when the item/spawn is observed; no guaranteed spawn"
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.396-2bc4a9de",
+      "qualifiedItemId": "(O)396",
+      "name": "Spice Berry",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "grow",
+          "seedId": "(O)496",
+          "seasons": [
+            "summer"
+          ],
+          "minimumGrowthDays": 7,
+          "seedAcquisitionRoutes": [
+            {
+              "type": "shop",
+              "shopId": "DesertTrade",
+              "itemId": "(O)496",
+              "tradeItemId": "(O)497",
+              "tradeItemAmount": 2,
+              "condition": "DAY_OF_WEEK Saturday"
+            }
+          ]
+        },
+        {
+          "type": "shop",
+          "shopId": "DesertFestival_Demetrius",
+          "itemId": "(O)396",
+          "tradeItemId": "CalicoEgg",
+          "tradeItemAmount": 10
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.397-20387dbb",
+      "qualifiedItemId": "(O)397",
+      "name": "Sea Urchin",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "DesertFestival_Emily",
+          "itemId": "(O)397",
+          "tradeItemId": "CalicoEgg",
+          "tradeItemAmount": 5
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.398-10309cbe",
+      "qualifiedItemId": "(O)398",
+      "name": "Grape",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "grow",
+          "seedId": "(O)301",
+          "seasons": [
+            "fall"
+          ],
+          "minimumGrowthDays": 10,
+          "seedAcquisitionRoutes": [
+            {
+              "type": "shop",
+              "shopId": "Festival_NightMarket_MagicBoat_Day3",
+              "itemId": "(O)301"
+            },
+            {
+              "type": "shop",
+              "shopId": "Joja",
+              "itemId": "(O)301",
+              "condition": "SEASON fall"
+            },
+            {
+              "type": "shop",
+              "shopId": "SeedShop",
+              "itemId": "(O)301",
+              "condition": "SEASON fall"
+            }
+          ]
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.399-9ed4f29f",
+      "qualifiedItemId": "(O)399",
+      "name": "Spring Onion",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "id": "acq.method.399.forage.ground",
+          "type": "forage",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire.forage"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Foraging"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "season": "spring",
+          "location": "Cindersap Forest spring onion patch",
+          "prerequisites": [],
+          "availability": "collect only when the item/spawn is observed; no guaranteed spawn"
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.400-ab7f7b95",
+      "qualifiedItemId": "(O)400",
+      "name": "Strawberry",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "grow",
+          "seedId": "(O)745",
+          "seasons": [
+            "spring"
+          ],
+          "minimumGrowthDays": 8,
+          "seedAcquisitionRoutes": [
+            {
+              "type": "shop",
+              "shopId": "DesertFestival_EggShop",
+              "itemId": "(O)745",
+              "tradeItemId": "CalicoEgg",
+              "tradeItemAmount": 5,
+              "condition": "DAY_OF_WEEK Monday"
+            },
+            {
+              "type": "shop",
+              "shopId": "DesertFestival_EggShop",
+              "itemId": "(O)745",
+              "tradeItemId": "CalicoEgg",
+              "tradeItemAmount": 6,
+              "condition": "DAY_OF_WEEK Wednesday"
+            },
+            {
+              "type": "shop",
+              "shopId": "DesertFestival_Maru",
+              "itemId": "(O)745",
+              "tradeItemId": "CalicoEgg",
+              "tradeItemAmount": 10
+            },
+            {
+              "type": "shop",
+              "shopId": "Festival_EggFestival_Pierre",
+              "itemId": "(O)745",
+              "price": 100
+            }
+          ]
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.402-5e63673c",
+      "qualifiedItemId": "(O)402",
+      "name": "Sweet Pea",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "id": "acq.method.402.forage.ground",
+          "type": "forage",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire.forage"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Foraging"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "season": "summer",
+          "location": "Valley outdoor forage",
+          "prerequisites": [],
+          "availability": "collect only when the item/spawn is observed; no guaranteed spawn"
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.404-c35a9fc5",
+      "qualifiedItemId": "(O)404",
+      "name": "Common Mushroom",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "grow",
+          "seedId": "(O)497",
+          "seasons": [
+            "fall"
+          ],
+          "minimumGrowthDays": 7,
+          "seedAcquisitionRoutes": [
+            {
+              "type": "shop",
+              "shopId": "DesertTrade",
+              "itemId": "(O)497",
+              "tradeItemId": "(O)498",
+              "tradeItemAmount": 2,
+              "condition": "DAY_OF_WEEK Saturday"
+            }
+          ]
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.406-b202977c",
+      "qualifiedItemId": "(O)406",
+      "name": "Wild Plum",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "id": "acq.method.406.forage.ground",
+          "type": "forage",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire.forage"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Foraging"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "season": "fall",
+          "location": "Valley outdoor forage",
+          "prerequisites": [],
+          "availability": "collect only when the item/spawn is observed; no guaranteed spawn"
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.408-beba4d5d",
+      "qualifiedItemId": "(O)408",
+      "name": "Hazelnut",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "DesertFestival_Kent",
+          "itemId": "(O)408",
+          "tradeItemId": "CalicoEgg",
+          "tradeItemAmount": 10
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.410-329dc1da",
+      "qualifiedItemId": "(O)410",
+      "name": "Blackberry",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "id": "acq.method.410.forage.bush--fall-days-8-11",
+          "type": "forage",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire.forage"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Foraging"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "season": "fall",
+          "location": "Valley berry bushes",
+          "prerequisites": [],
+          "availability": "collect only when the item/spawn is observed; no guaranteed spawn"
+        },
+        {
+          "id": "acq.method.410.forage.fall-ground",
+          "type": "forage",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire.forage"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Foraging"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "season": "fall",
+          "location": "Valley outdoor forage",
+          "availability": "random ground forage independent of 8-11 bush opportunity"
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.412-6e9b9938",
+      "qualifiedItemId": "(O)412",
+      "name": "Winter Root",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "grow",
+          "seedId": "(O)498",
+          "seasons": [
+            "winter"
+          ],
+          "minimumGrowthDays": 7,
+          "seedAcquisitionRoutes": [
+            {
+              "type": "shop",
+              "shopId": "DesertTrade",
+              "itemId": "(O)498",
+              "tradeItemId": "(O)495",
+              "tradeItemAmount": 2,
+              "condition": "DAY_OF_WEEK Saturday"
+            }
+          ]
+        },
+        {
+          "type": "shop",
+          "shopId": "Festival_FeastOfTheWinterStar_Pierre",
+          "itemId": "(O)412",
+          "price": 500
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.414-4396c2d0",
+      "qualifiedItemId": "(O)414",
+      "name": "Crystal Fruit",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "id": "acq.method.414.forage.ground",
+          "type": "forage",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire.forage"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Foraging"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "season": "winter",
+          "location": "Valley outdoor forage",
+          "prerequisites": [],
+          "availability": "collect only when the item/spawn is observed; no guaranteed spawn"
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.416-279e901e",
+      "qualifiedItemId": "(O)416",
+      "name": "Snow Yam",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "id": "acq.method.416.forage.hoe-dig",
+          "type": "forage",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire.forage"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Foraging"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "season": "winter",
+          "location": "hoeable dirt",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.hoe"
+            }
+          ],
+          "availability": "collect only when the item/spawn is observed; no guaranteed spawn"
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.417-4dc77829",
+      "qualifiedItemId": "(O)417",
+      "name": "Sweet Gem Berry",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "grow",
+          "seedId": "(O)347",
+          "seasons": [
+            "fall"
+          ],
+          "minimumGrowthDays": 24,
+          "seedAcquisitionRoutes": [
+            {
+              "type": "shop",
+              "shopId": "Traveler",
+              "itemId": "(O)347",
+              "price": 1000,
+              "condition": "SEASON spring summer"
+            }
+          ]
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.418-93ac1946",
+      "qualifiedItemId": "(O)418",
+      "name": "Crocus",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "id": "acq.method.418.forage.ground",
+          "type": "forage",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire.forage"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Foraging"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "season": "winter",
+          "location": "Valley outdoor forage",
+          "prerequisites": [],
+          "availability": "collect only when the item/spawn is observed; no guaranteed spawn"
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.420-7a955634",
+      "qualifiedItemId": "(O)420",
+      "name": "Red Mushroom",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "id": "acq.method.420.forage.ground-or-cave",
+          "type": "forage",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire.forage"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Foraging"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "season": "summer or fall",
+          "location": "Secret Woods / other eligible caves",
+          "prerequisites": [],
+          "availability": "collect only when the item/spawn is observed; no guaranteed spawn"
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.421-1c76c42d",
+      "qualifiedItemId": "(O)421",
+      "name": "Sunflower",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "grow",
+          "seedId": "(O)431",
+          "seasons": [
+            "summer",
+            "fall"
+          ],
+          "minimumGrowthDays": 8,
+          "seedAcquisitionRoutes": [
+            {
+              "type": "shop",
+              "shopId": "Festival_NightMarket_MagicBoat_Day2",
+              "itemId": "(O)431",
+              "price": 200
+            },
+            {
+              "type": "shop",
+              "shopId": "Festival_NightMarket_MagicBoat_Day3",
+              "itemId": "(O)431",
+              "price": 200
+            },
+            {
+              "type": "shop",
+              "shopId": "Joja",
+              "itemId": "(O)431",
+              "price": 100,
+              "condition": "SEASON summer"
+            },
+            {
+              "type": "shop",
+              "shopId": "Joja",
+              "itemId": "(O)431",
+              "price": 100,
+              "condition": "SEASON fall"
+            },
+            {
+              "type": "shop",
+              "shopId": "SeedShop",
+              "itemId": "(O)431",
+              "price": 100,
+              "condition": "SEASON summer"
+            },
+            {
+              "type": "shop",
+              "shopId": "SeedShop",
+              "itemId": "(O)431",
+              "price": 100,
+              "condition": "SEASON fall"
+            }
+          ]
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.422-020c4877",
+      "qualifiedItemId": "(O)422",
+      "name": "Purple Mushroom",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "id": "acq.method.422.forage.cave",
+          "type": "forage",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire.forage"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Foraging"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "season": "any",
+          "location": "Mines or mushroom cave",
+          "prerequisites": [],
+          "availability": "collect only when the item/spawn is observed; no guaranteed spawn"
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.424-77873674",
+      "qualifiedItemId": "(O)424",
+      "name": "Cheese",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "DesertTrade",
+          "itemId": "(O)424",
+          "tradeItemId": "(O)60",
+          "condition": "DAY_OF_WEEK Friday"
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.426-62866ab4",
+      "qualifiedItemId": "(O)426",
+      "name": "Goat Cheese",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "id": "acq.method.426.machine-processing.cheese-press",
+          "type": "machine-processing",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire.artisan"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Artisan_Goods"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "machine": "Cheese Press",
+          "inputItems": [
+            {
+              "name": "Goat Milk",
+              "quantity": 1
+            },
+            {
+              "name": "Large Goat Milk",
+              "quantity": 1
+            }
+          ],
+          "inputAlternatives": true,
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.machine-cheese-press"
+            },
+            {
+              "ref": "acq.prereq.valid-machine-input"
+            }
+          ],
+          "conditions": [
+            "matching input observed and unreserved",
+            "machine idle and capable of accepting input"
+          ],
+          "outputQuantity": "depends on input and content-defined machine rules",
+          "processingMinutes": 180
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.428-2aed8cef",
+      "qualifiedItemId": "(O)428",
+      "name": "Cloth",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "DesertFestival_Emily",
+          "itemId": "(O)428",
+          "tradeItemId": "CalicoEgg",
+          "tradeItemAmount": 25
+        },
+        {
+          "type": "shop",
+          "shopId": "DesertTrade",
+          "itemId": "(O)428",
+          "tradeItemId": "(O)62",
+          "tradeItemAmount": 3,
+          "condition": "DAY_OF_WEEK Wednesday"
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.430-f8c024c4",
+      "qualifiedItemId": "(O)430",
+      "name": "Truffle",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "id": "acq.method.430.animal-production.pig",
+          "type": "animal-production",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire.animals"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Animals"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "animal": "Pig",
+          "product": "Truffle",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.animal-housing"
+            },
+            {
+              "ref": "acq.prereq.animal-mature-fed"
+            }
+          ],
+          "conditions": [
+            "appropriate adult animal present",
+            "production roll/required days satisfied",
+            "collectable produce observed"
+          ],
+          "occurrence": "chance and interval vary with animal type, feeding, mood, friendship and weather"
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.432-a2092f63",
+      "qualifiedItemId": "(O)432",
+      "name": "Truffle Oil",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "DesertFestival_Marnie",
+          "itemId": "(O)432",
+          "tradeItemId": "CalicoEgg",
+          "tradeItemAmount": 50
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.433-82ad38f8",
+      "qualifiedItemId": "(O)433",
+      "name": "Coffee Bean",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "grow",
+          "seedId": "(O)433",
+          "seasons": [
+            "spring",
+            "summer"
+          ],
+          "minimumGrowthDays": 10,
+          "seedAcquisitionRoutes": [
+            {
+              "type": "shop",
+              "shopId": "Traveler",
+              "itemId": "(O)433",
+              "price": 2500,
+              "condition": "SEASON fall winter, SYNCED_RANDOM day cart_coffee_bean 0.25"
+            }
+          ]
+        },
+        {
+          "type": "shop",
+          "shopId": "Traveler",
+          "itemId": "(O)433",
+          "price": 2500,
+          "condition": "SEASON fall winter, SYNCED_RANDOM day cart_coffee_bean 0.25"
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.436-6c4c04be",
+      "qualifiedItemId": "(O)436",
+      "name": "Goat Milk",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "id": "acq.method.436.animal-production.goat",
+          "type": "animal-production",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire.animals"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Animals"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "animal": "Goat",
+          "product": "Goat Milk",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.animal-housing"
+            },
+            {
+              "ref": "acq.prereq.animal-mature-fed"
+            }
+          ],
+          "conditions": [
+            "appropriate adult animal present",
+            "production roll/required days satisfied",
+            "collectable produce observed"
+          ],
+          "occurrence": "chance and interval vary with animal type, feeding, mood, friendship and weather"
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.438-06cb3f00",
+      "qualifiedItemId": "(O)438",
+      "name": "L. Goat Milk",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "id": "acq.method.438.animal-production.goat",
+          "type": "animal-production",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire.animals"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Animals"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "animal": "Goat",
+          "product": "Large Goat Milk",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.animal-housing"
+            },
+            {
+              "ref": "acq.prereq.animal-mature-fed"
+            }
+          ],
+          "conditions": [
+            "appropriate adult animal present",
+            "production roll/required days satisfied",
+            "collectable produce observed"
+          ],
+          "occurrence": "chance and interval vary with animal type, feeding, mood, friendship and weather"
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.440-6d0e1050",
+      "qualifiedItemId": "(O)440",
+      "name": "Wool",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "id": "acq.method.440.animal-production.sheep-or-rabbit",
+          "type": "animal-production",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire.animals"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Animals"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "animal": "Sheep or Rabbit",
+          "product": "Wool",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.animal-housing"
+            },
+            {
+              "ref": "acq.prereq.animal-mature-fed"
+            }
+          ],
+          "conditions": [
+            "appropriate adult animal present",
+            "production roll/required days satisfied",
+            "collectable produce observed"
+          ],
+          "occurrence": "chance and interval vary with animal type, feeding, mood, friendship and weather"
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.442-e076fa13",
+      "qualifiedItemId": "(O)442",
+      "name": "Duck Egg",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "Festival_FeastOfTheWinterStar_Pierre",
+          "itemId": "(O)442",
+          "price": 2500
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.444-9a3e61b6",
+      "qualifiedItemId": "(O)444",
+      "name": "Duck Feather",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "id": "acq.method.444.animal-production.duck",
+          "type": "animal-production",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire.animals"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Animals"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "animal": "Duck",
+          "product": "Duck Feather",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.animal-housing"
+            },
+            {
+              "ref": "acq.prereq.animal-mature-fed"
+            }
+          ],
+          "conditions": [
+            "appropriate adult animal present",
+            "production roll/required days satisfied",
+            "collectable produce observed"
+          ],
+          "occurrence": "chance and interval vary with animal type, feeding, mood, friendship and weather"
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.445-ac9c9577",
+      "qualifiedItemId": "(O)445",
+      "name": "Caviar",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "id": "acq.method.445.machine-processing.preserves-jar",
+          "type": "machine-processing",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire.preserves"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Preserves_Jar"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "machine": "Preserves Jar",
+          "inputItems": [
+            {
+              "name": "Sturgeon Roe",
+              "quantity": 1
+            }
+          ],
+          "inputAlternatives": true,
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.machine-preserves-jar"
+            },
+            {
+              "ref": "acq.prereq.valid-machine-input"
+            }
+          ],
+          "conditions": [
+            "matching input observed and unreserved",
+            "machine idle and capable of accepting input"
+          ],
+          "outputQuantity": "depends on input and content-defined machine rules",
+          "processingMinutes": 6000
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.446-5a9295d8",
+      "qualifiedItemId": "(O)446",
+      "name": "Rabbit's Foot",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "DesertFestival_Jas",
+          "itemId": "(O)446",
+          "tradeItemId": "CalicoEgg",
+          "tradeItemAmount": 100
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.447-08d55d01",
+      "qualifiedItemId": "(O)447",
+      "name": "Aged Roe",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "id": "acq.method.447.machine-processing.preserves-jar",
+          "type": "machine-processing",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire.preserves"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Preserves_Jar"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "machine": "Preserves Jar",
+          "inputItems": [
+            {
+              "name": "Roe (non-Sturgeon)",
+              "quantity": 1
+            }
+          ],
+          "inputAlternatives": true,
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.machine-preserves-jar"
+            },
+            {
+              "ref": "acq.prereq.valid-machine-input"
+            }
+          ],
+          "conditions": [
+            "matching input observed and unreserved",
+            "machine idle and capable of accepting input"
+          ],
+          "outputQuantity": "depends on input and content-defined machine rules",
+          "processingMinutes": 4000
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.454-14019988",
+      "qualifiedItemId": "(O)454",
+      "name": "Ancient Fruit",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "grow",
+          "seedId": "(O)499",
+          "seasons": [
+            "spring",
+            "summer",
+            "fall"
+          ],
+          "minimumGrowthDays": 28,
+          "seedAcquisitionRoutes": []
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.459-bf0d80b1",
+      "qualifiedItemId": "(O)459",
+      "name": "Mead",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "DesertFestival_Pam",
+          "itemId": "(O)459",
+          "tradeItemId": "CalicoEgg",
+          "tradeItemAmount": 20
+        },
+        {
+          "type": "shop",
+          "shopId": "ResortBar",
+          "itemId": "(O)459",
+          "price": 800
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.591-21348341",
+      "qualifiedItemId": "(O)591",
+      "name": "Tulip",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "grow",
+          "seedId": "(O)427",
+          "seasons": [
+            "spring"
+          ],
+          "minimumGrowthDays": 6,
+          "seedAcquisitionRoutes": [
+            {
+              "type": "shop",
+              "shopId": "Festival_NightMarket_MagicBoat_Day1",
+              "itemId": "(O)427"
+            },
+            {
+              "type": "shop",
+              "shopId": "Joja",
+              "itemId": "(O)427",
+              "condition": "SEASON spring"
+            },
+            {
+              "type": "shop",
+              "shopId": "SeedShop",
+              "itemId": "(O)427",
+              "condition": "SEASON spring"
+            }
+          ]
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.593-620807a1",
+      "qualifiedItemId": "(O)593",
+      "name": "Summer Spangle",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "grow",
+          "seedId": "(O)455",
+          "seasons": [
+            "summer"
+          ],
+          "minimumGrowthDays": 8,
+          "seedAcquisitionRoutes": [
+            {
+              "type": "shop",
+              "shopId": "Festival_NightMarket_MagicBoat_Day2",
+              "itemId": "(O)455"
+            },
+            {
+              "type": "shop",
+              "shopId": "Joja",
+              "itemId": "(O)455",
+              "condition": "SEASON summer"
+            },
+            {
+              "type": "shop",
+              "shopId": "SeedShop",
+              "itemId": "(O)455",
+              "condition": "SEASON summer"
+            }
+          ]
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.595-edd6bb41",
+      "qualifiedItemId": "(O)595",
+      "name": "Fairy Rose",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "grow",
+          "seedId": "(O)425",
+          "seasons": [
+            "fall"
+          ],
+          "minimumGrowthDays": 12,
+          "seedAcquisitionRoutes": [
+            {
+              "type": "shop",
+              "shopId": "DesertFestival_Jas",
+              "itemId": "(O)425",
+              "tradeItemId": "CalicoEgg",
+              "tradeItemAmount": 5
+            },
+            {
+              "type": "shop",
+              "shopId": "Festival_NightMarket_MagicBoat_Day3",
+              "itemId": "(O)425"
+            },
+            {
+              "type": "shop",
+              "shopId": "Joja",
+              "itemId": "(O)425",
+              "condition": "SEASON fall"
+            },
+            {
+              "type": "shop",
+              "shopId": "SeedShop",
+              "itemId": "(O)425",
+              "condition": "SEASON fall"
+            }
+          ]
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.597-8b4753ed",
+      "qualifiedItemId": "(O)597",
+      "name": "Blue Jazz",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "grow",
+          "seedId": "(O)429",
+          "seasons": [
+            "spring"
+          ],
+          "minimumGrowthDays": 7,
+          "seedAcquisitionRoutes": [
+            {
+              "type": "shop",
+              "shopId": "Festival_NightMarket_MagicBoat_Day1",
+              "itemId": "(O)429"
+            },
+            {
+              "type": "shop",
+              "shopId": "Joja",
+              "itemId": "(O)429",
+              "condition": "SEASON spring"
+            },
+            {
+              "type": "shop",
+              "shopId": "SeedShop",
+              "itemId": "(O)429",
+              "condition": "SEASON spring"
+            }
+          ]
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.613-ae694b07",
+      "qualifiedItemId": "(O)613",
+      "name": "Apple",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "id": "acq.method.613.harvest-fruit-tree.mature-tree",
+          "type": "harvest-fruit-tree",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire.trees"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Fruit_Trees"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "tree": "Apple Tree",
+          "sapling": "Apple Sapling",
+          "minimumGrowthDays": 28,
+          "season": "fall",
+          "producesPerDay": 1,
+          "location": "Valley outdoors (seasonal) or Greenhouse/Ginger Island (year-round if valid)",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.fruit-tree-sapling"
+            },
+            {
+              "ref": "acq.prereq.fruit-tree-space"
+            }
+          ],
+          "conditions": [
+            "mature living tree",
+            "fruit present",
+            "current location/season enables fruit production"
+          ]
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.614-1bdf1a2f",
+      "qualifiedItemId": "(O)614",
+      "name": "Green Tea",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "DesertFestival_Caroline",
+          "itemId": "(O)614",
+          "tradeItemId": "CalicoEgg",
+          "tradeItemAmount": 10
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.634-08ec2efc",
+      "qualifiedItemId": "(O)634",
+      "name": "Apricot",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "id": "acq.method.634.harvest-fruit-tree.mature-tree",
+          "type": "harvest-fruit-tree",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire.trees"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Fruit_Trees"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "tree": "Apricot Tree",
+          "sapling": "Apricot Sapling",
+          "minimumGrowthDays": 28,
+          "season": "spring",
+          "producesPerDay": 1,
+          "location": "Valley outdoors (seasonal) or Greenhouse/Ginger Island (year-round if valid)",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.fruit-tree-sapling"
+            },
+            {
+              "ref": "acq.prereq.fruit-tree-space"
+            }
+          ],
+          "conditions": [
+            "mature living tree",
+            "fruit present",
+            "current location/season enables fruit production"
+          ]
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.635-83a002e8",
+      "qualifiedItemId": "(O)635",
+      "name": "Orange",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "id": "acq.method.635.harvest-fruit-tree.mature-tree",
+          "type": "harvest-fruit-tree",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire.trees"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Fruit_Trees"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "tree": "Orange Tree",
+          "sapling": "Orange Sapling",
+          "minimumGrowthDays": 28,
+          "season": "summer",
+          "producesPerDay": 1,
+          "location": "Valley outdoors (seasonal) or Greenhouse/Ginger Island (year-round if valid)",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.fruit-tree-sapling"
+            },
+            {
+              "ref": "acq.prereq.fruit-tree-space"
+            }
+          ],
+          "conditions": [
+            "mature living tree",
+            "fruit present",
+            "current location/season enables fruit production"
+          ]
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.636-bc60205d",
+      "qualifiedItemId": "(O)636",
+      "name": "Peach",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "id": "acq.method.636.harvest-fruit-tree.mature-tree",
+          "type": "harvest-fruit-tree",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire.trees"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Fruit_Trees"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "tree": "Peach Tree",
+          "sapling": "Peach Sapling",
+          "minimumGrowthDays": 28,
+          "season": "summer",
+          "producesPerDay": 1,
+          "location": "Valley outdoors (seasonal) or Greenhouse/Ginger Island (year-round if valid)",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.fruit-tree-sapling"
+            },
+            {
+              "ref": "acq.prereq.fruit-tree-space"
+            }
+          ],
+          "conditions": [
+            "mature living tree",
+            "fruit present",
+            "current location/season enables fruit production"
+          ]
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.637-88a9d5a8",
+      "qualifiedItemId": "(O)637",
+      "name": "Pomegranate",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "id": "acq.method.637.harvest-fruit-tree.mature-tree",
+          "type": "harvest-fruit-tree",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire.trees"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Fruit_Trees"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "tree": "Pomegranate Tree",
+          "sapling": "Pomegranate Sapling",
+          "minimumGrowthDays": 28,
+          "season": "fall",
+          "producesPerDay": 1,
+          "location": "Valley outdoors (seasonal) or Greenhouse/Ginger Island (year-round if valid)",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.fruit-tree-sapling"
+            },
+            {
+              "ref": "acq.prereq.fruit-tree-space"
+            }
+          ],
+          "conditions": [
+            "mature living tree",
+            "fruit present",
+            "current location/season enables fruit production"
+          ]
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.638-afc3bf9d",
+      "qualifiedItemId": "(O)638",
+      "name": "Cherry",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "id": "acq.method.638.harvest-fruit-tree.mature-tree",
+          "type": "harvest-fruit-tree",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire.trees"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Fruit_Trees"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "tree": "Cherry Tree",
+          "sapling": "Cherry Sapling",
+          "minimumGrowthDays": 28,
+          "season": "spring",
+          "producesPerDay": 1,
+          "location": "Valley outdoors (seasonal) or Greenhouse/Ginger Island (year-round if valid)",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.fruit-tree-sapling"
+            },
+            {
+              "ref": "acq.prereq.fruit-tree-space"
+            }
+          ],
+          "conditions": [
+            "mature living tree",
+            "fruit present",
+            "current location/season enables fruit production"
+          ]
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.684-a79e9a40",
+      "qualifiedItemId": "(O)684",
+      "name": "Bug Meat",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "DesertFestival_Vincent",
+          "itemId": "(O)684",
+          "tradeItemId": "CalicoEgg"
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.709-29da9bc3",
+      "qualifiedItemId": "(O)709",
+      "name": "Hardwood",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "BooksellerTrade",
+          "itemId": "(O)709",
+          "tradeItemId": "Book_Woodcutting",
+          "condition": "PLAYER_STAT Current Book_Woodcutting 1"
+        },
+        {
+          "type": "shop",
+          "shopId": "DesertFestival_Leah",
+          "itemId": "(O)709",
+          "tradeItemId": "CalicoEgg",
+          "tradeItemAmount": 3
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.724-b19dc177",
+      "qualifiedItemId": "(O)724",
+      "name": "Maple Syrup",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "id": "acq.method.724.tap-tree.maple",
+          "type": "tap-tree",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire.forage"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Foraging"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "treeType": "Maple",
+          "machine": "Tapper or Heavy Tapper",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.tapper"
+            },
+            {
+              "ref": "acq.prereq.mature-correct-tree"
+            }
+          ],
+          "conditions": [
+            "placed tapper holds ready output"
+          ],
+          "processingMinutes": null,
+          "unknowns": [
+            "Exact time varies with tapper and relevant modifiers."
+          ]
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.725-75d2a5a3",
+      "qualifiedItemId": "(O)725",
+      "name": "Oak Resin",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "id": "acq.method.725.tap-tree.oak",
+          "type": "tap-tree",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire.forage"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Foraging"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "treeType": "Oak",
+          "machine": "Tapper or Heavy Tapper",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.tapper"
+            },
+            {
+              "ref": "acq.prereq.mature-correct-tree"
+            }
+          ],
+          "conditions": [
+            "placed tapper holds ready output"
+          ],
+          "processingMinutes": null,
+          "unknowns": [
+            "Exact time varies with tapper and relevant modifiers."
+          ]
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.726-db667d12",
+      "qualifiedItemId": "(O)726",
+      "name": "Pine Tar",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "id": "acq.method.726.tap-tree.pine",
+          "type": "tap-tree",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire.forage"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Foraging"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "treeType": "Pine",
+          "machine": "Tapper or Heavy Tapper",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.tapper"
+            },
+            {
+              "ref": "acq.prereq.mature-correct-tree"
+            }
+          ],
+          "conditions": [
+            "placed tapper holds ready output"
+          ],
+          "processingMinutes": null,
+          "unknowns": [
+            "Exact time varies with tapper and relevant modifiers."
+          ]
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.766-581a8ed6",
+      "qualifiedItemId": "(O)766",
+      "name": "Slime",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "ShadowShop",
+          "itemId": "(O)766",
+          "price": 10,
+          "condition": "DAY_OF_WEEK Monday"
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.767-81755a28",
+      "qualifiedItemId": "(O)767",
+      "name": "Bat Wing",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "ShadowShop",
+          "itemId": "(O)767",
+          "price": 30,
+          "condition": "DAY_OF_WEEK Sunday"
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.768-ad2ad593",
+      "qualifiedItemId": "(O)768",
+      "name": "Solar Essence",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "ShadowShop",
+          "itemId": "(O)768",
+          "price": 80
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.769-98079d38",
+      "qualifiedItemId": "(O)769",
+      "name": "Void Essence",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "ShadowShop",
+          "itemId": "(O)769",
+          "price": 100
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.771-5d0fb669",
+      "qualifiedItemId": "(O)771",
+      "name": "Fiber",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "grow",
+          "seedId": "(O)885",
+          "seasons": [
+            "spring",
+            "summer",
+            "fall",
+            "winter"
+          ],
+          "minimumGrowthDays": 7,
+          "seedAcquisitionRoutes": []
+        },
+        {
+          "type": "shop",
+          "shopId": "DesertFestival_Vincent",
+          "itemId": "(O)771",
+          "tradeItemId": "CalicoEgg"
+        },
+        {
+          "type": "shop",
+          "shopId": "DesertTrade",
+          "itemId": "(O)771",
+          "tradeItemId": "(O)390",
+          "tradeItemAmount": 5,
+          "condition": "DAY_OF_WEEK Tuesday"
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.78-eb4ac303",
+      "qualifiedItemId": "(O)78",
+      "name": "Cave Carrot",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "DesertFestival_Vincent",
+          "itemId": "(O)78",
+          "tradeItemId": "CalicoEgg",
+          "tradeItemAmount": 2
+        },
+        {
+          "type": "shop",
+          "shopId": "Festival_FeastOfTheWinterStar_Pierre",
+          "itemId": "(O)78",
+          "price": 500
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.787-e00988f4",
+      "qualifiedItemId": "(O)787",
+      "name": "Battery Pack",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "id": "acq.method.787.collect-machine.lightning-rod",
+          "type": "collect-machine",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.battery"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Battery_Pack"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "machine": "Lightning Rod",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.lightning-rod-ready"
+            }
+          ],
+          "weather": "thunderstorm, battery collectable following day",
+          "occurrence": "lightning strike is not guaranteed"
+        },
+        {
+          "id": "acq.method.787.collect-machine.solar-panel",
+          "type": "collect-machine",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.battery"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Battery_Pack"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "machine": "Solar Panel",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.solar-panel-ready"
+            }
+          ],
+          "conditions": [
+            "seven sunny days completed",
+            "output collectable"
+          ]
+        },
+        {
+          "id": "acq.method.787.buy.traveling-cart",
+          "type": "buy",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.battery"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Battery_Pack"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "shop": "Traveling Cart",
+          "goldPriceRange": [
+            1500,
+            2500
+          ],
+          "conditions": [
+            "stock has actually been observed",
+            "enough unreserved gold available"
+          ]
+        },
+        {
+          "id": "acq.method.787.monster-drop.iridium-bat",
+          "type": "monster-drop",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.battery"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Battery_Pack"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "monster": "Iridium Bat",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.combat-access"
+            }
+          ],
+          "occurrence": "5% chance"
+        },
+        {
+          "id": "acq.method.787.fish-pond.stingray",
+          "type": "fish-pond",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.battery"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Battery_Pack"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "species": "Stingray",
+          "minimumPopulation": 9,
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.stingray-pond"
+            }
+          ],
+          "occurrence": "chance of output; observe pond first"
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.807-425ac6a2",
+      "qualifiedItemId": "(O)807",
+      "name": "Dinosaur Mayonnaise",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "id": "acq.method.807.machine-processing.mayonnaise-machine",
+          "type": "machine-processing",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire.artisan"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Artisan_Goods"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "machine": "Mayonnaise Machine",
+          "inputItems": [
+            {
+              "name": "Dinosaur Egg",
+              "quantity": 1
+            }
+          ],
+          "inputAlternatives": true,
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.machine-mayonnaise-machine"
+            },
+            {
+              "ref": "acq.prereq.valid-machine-input"
+            }
+          ],
+          "conditions": [
+            "matching input observed and unreserved",
+            "machine idle and capable of accepting input"
+          ],
+          "outputQuantity": "depends on input and content-defined machine rules",
+          "processingMinutes": 180
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.812-872a319e",
+      "qualifiedItemId": "(O)812",
+      "name": "Roe",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "id": "acq.method.812.fish-pond.fish-eggs",
+          "type": "fish-pond",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.roe"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Roe"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.pond-roe-ready"
+            }
+          ],
+          "occurrence": "Not all pond species produce common Roe; validate fish species and observed output"
+        },
+        {
+          "id": "acq.method.812.fishing-treasure.jewels-of-the-sea",
+          "type": "fishing-treasure",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.roe"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Roe"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.jewels-of-the-sea"
+            },
+            {
+              "ref": "acq.prereq.fishing-treasure"
+            }
+          ],
+          "occurrence": "25% chance of Roe conditional on relevant power and treasure chest; fish-specific variants"
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.814-c9264fc8",
+      "qualifiedItemId": "(O)814",
+      "name": "Squid Ink",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "DesertFestival_Elliott",
+          "itemId": "(O)814",
+          "tradeItemId": "CalicoEgg",
+          "tradeItemAmount": 30
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.815-d528edaa",
+      "qualifiedItemId": "(O)815",
+      "name": "Tea Leaves",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "id": "acq.method.815.harvest-tea-bush.mature",
+          "type": "harvest-tea-bush",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.tea"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Tea_Sapling"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "minGrowthDays": 20,
+          "harvestDays": "22-28 spring/summer/fall outdoors; winter only inside",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.tea-bush-grown"
+            },
+            {
+              "ref": "acq.prereq.tea-sapling-source"
+            }
+          ],
+          "conditions": [
+            "mature tea bush",
+            "tea leaves currently harvestable",
+            "no watering necessary"
+          ]
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.829-459b5019",
+      "qualifiedItemId": "(O)829",
+      "name": "Ginger",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "id": "acq.method.829.forage.hoe-dig",
+          "type": "forage",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire.forage"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Foraging"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "season": "any",
+          "location": "Ginger Island",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.island-access"
+            }
+          ],
+          "availability": "collect only when the item/spawn is observed; no guaranteed spawn"
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.830-20192191",
+      "qualifiedItemId": "(O)830",
+      "name": "Taro Root",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "grow",
+          "seedId": "(O)831",
+          "seasons": [
+            "summer"
+          ],
+          "minimumGrowthDays": 10,
+          "seedAcquisitionRoutes": [
+            {
+              "type": "shop",
+              "shopId": "IslandTrade",
+              "itemId": "(O)831",
+              "tradeItemId": "(O)881",
+              "tradeItemAmount": 2
+            }
+          ]
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.832-e6c790b5",
+      "qualifiedItemId": "(O)832",
+      "name": "Pineapple",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "grow",
+          "seedId": "(O)833",
+          "seasons": [
+            "summer"
+          ],
+          "minimumGrowthDays": 14,
+          "seedAcquisitionRoutes": [
+            {
+              "type": "shop",
+              "shopId": "IslandTrade",
+              "itemId": "(O)833",
+              "tradeItemId": "(O)851"
+            }
+          ]
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.834-bcdb6b30",
+      "qualifiedItemId": "(O)834",
+      "name": "Mango",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "id": "acq.method.834.harvest-fruit-tree.mature-tree",
+          "type": "harvest-fruit-tree",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire.trees"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Fruit_Trees"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "tree": "Mango Tree",
+          "sapling": "Mango Sapling",
+          "minimumGrowthDays": 28,
+          "season": "summer",
+          "producesPerDay": 1,
+          "location": "Valley outdoors (seasonal) or Greenhouse/Ginger Island (year-round if valid)",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.fruit-tree-sapling"
+            },
+            {
+              "ref": "acq.prereq.fruit-tree-space"
+            }
+          ],
+          "conditions": [
+            "mature living tree",
+            "fruit present",
+            "current location/season enables fruit production"
+          ]
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.848-0e380823",
+      "qualifiedItemId": "(O)848",
+      "name": "Cinder Shard",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "id": "acq.method.848.volcano-source.cinder-shard-node",
+          "type": "volcano-source",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.cinder"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Cinder_Shard"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "location": "Volcano Dungeon",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.island-volcano"
+            }
+          ],
+          "occurrence": "chance/quantity per eligible node or monster, not deterministic"
+        },
+        {
+          "id": "acq.method.848.volcano-source.magma-sprite",
+          "type": "volcano-source",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.cinder"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Cinder_Shard"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "location": "Volcano Dungeon",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.island-volcano"
+            }
+          ],
+          "occurrence": "chance/quantity per eligible node or monster, not deterministic"
+        },
+        {
+          "id": "acq.method.848.volcano-source.magma-sparker",
+          "type": "volcano-source",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.cinder"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Cinder_Shard"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "location": "Volcano Dungeon",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.island-volcano"
+            }
+          ],
+          "occurrence": "chance/quantity per eligible node or monster, not deterministic"
+        },
+        {
+          "id": "acq.method.848.volcano-source.magma-duggy",
+          "type": "volcano-source",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.cinder"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Cinder_Shard"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "location": "Volcano Dungeon",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.island-volcano"
+            }
+          ],
+          "occurrence": "chance/quantity per eligible node or monster, not deterministic"
+        },
+        {
+          "id": "acq.method.848.volcano-source.false-magma-cap",
+          "type": "volcano-source",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.cinder"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Cinder_Shard"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "location": "Volcano Dungeon",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.island-volcano"
+            }
+          ],
+          "occurrence": "chance/quantity per eligible node or monster, not deterministic"
+        },
+        {
+          "id": "acq.method.848.fish-pond.stingray",
+          "type": "fish-pond",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.cinder"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Cinder_Shard"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "species": "Stingray",
+          "minimumPopulation": 7,
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.stingray-pond"
+            }
+          ],
+          "occurrence": "random output; not guaranteed"
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.851-b1b98699",
+      "qualifiedItemId": "(O)851",
+      "name": "Magma Cap",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "id": "acq.method.851.forage.forage",
+          "type": "forage",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire.forage"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Foraging"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "season": "any",
+          "location": "Volcano Dungeon",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.island-access"
+            }
+          ],
+          "availability": "collect only when the item/spawn is observed; no guaranteed spawn"
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.88-b37f6ddc",
+      "qualifiedItemId": "(O)88",
+      "name": "Coconut",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "Sandy",
+          "itemId": "(O)88",
+          "price": 200,
+          "condition": "DAY_OF_WEEK Monday"
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.881-c425c670",
+      "qualifiedItemId": "(O)881",
+      "name": "Bone Fragment",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "id": "acq.method.881.collect-bone-fragments.skeleton",
+          "type": "collect-bone-fragments",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.bones"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Bone_Fragment"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "location": "relevant combat/dig location",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.combat-access"
+            }
+          ],
+          "occurrence": "variable, check actual drop/spot/node"
+        },
+        {
+          "id": "acq.method.881.collect-bone-fragments.lava-lurk",
+          "type": "collect-bone-fragments",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.bones"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Bone_Fragment"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "location": "relevant combat/dig location",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.combat-access"
+            }
+          ],
+          "occurrence": "variable, check actual drop/spot/node"
+        },
+        {
+          "id": "acq.method.881.collect-bone-fragments.island-bone-node",
+          "type": "collect-bone-fragments",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.bones"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Bone_Fragment"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "location": "Ginger Island Dig Site",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.bone-node-access"
+            },
+            {
+              "ref": "acq.prereq.island-access"
+            }
+          ],
+          "occurrence": "variable, check actual drop/spot/node"
+        },
+        {
+          "id": "acq.method.881.collect-bone-fragments.skull-cavern-crates",
+          "type": "collect-bone-fragments",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.bones"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Bone_Fragment"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "location": "relevant combat/dig location",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.skull-cavern-access"
+            }
+          ],
+          "occurrence": "variable, check actual drop/spot/node"
+        },
+        {
+          "id": "acq.method.881.collect-bone-fragments.artifact-spot",
+          "type": "collect-bone-fragments",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.bones"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Bone_Fragment"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "location": "relevant combat/dig location",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.artifact-spots"
+            }
+          ],
+          "occurrence": "variable, check actual drop/spot/node"
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.90-2d0c8af8",
+      "qualifiedItemId": "(O)90",
+      "name": "Cactus Fruit",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "grow",
+          "seedId": "(O)802",
+          "seasons": [
+            "spring",
+            "summer",
+            "fall",
+            "winter"
+          ],
+          "minimumGrowthDays": 12,
+          "seedAcquisitionRoutes": [
+            {
+              "type": "shop",
+              "shopId": "Sandy",
+              "itemId": "(O)802",
+              "price": 150
+            }
+          ]
+        },
+        {
+          "type": "shop",
+          "shopId": "Sandy",
+          "itemId": "(O)90",
+          "condition": "DAY_OF_WEEK Tuesday"
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.909-ed665fd6",
+      "qualifiedItemId": "(O)909",
+      "name": "Radioactive Ore",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "id": "acq.method.909.mine-radioactive-node.dangerous-mines",
+          "type": "mine-radioactive-node",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.radioactive"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Radioactive_Ore"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "location": "dangerous-mines",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.dangerous-mines"
+            },
+            {
+              "ref": "acq.prereq.pickaxe"
+            },
+            {
+              "ref": "acq.prereq.mine-ore-node"
+            }
+          ],
+          "occurrence": "only when corresponding difficulty is active and radioactive node actually spawned"
+        },
+        {
+          "id": "acq.method.909.mine-radioactive-node.dangerous-skull-cavern",
+          "type": "mine-radioactive-node",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.radioactive"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Radioactive_Ore"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "location": "dangerous-skull-cavern",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.dangerous-skull"
+            },
+            {
+              "ref": "acq.prereq.pickaxe"
+            },
+            {
+              "ref": "acq.prereq.mine-ore-node"
+            }
+          ],
+          "occurrence": "only when corresponding difficulty is active and radioactive node actually spawned"
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.91-4cd66dfa",
+      "qualifiedItemId": "(O)91",
+      "name": "Banana",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "id": "acq.method.91.harvest-fruit-tree.mature-tree",
+          "type": "harvest-fruit-tree",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire.trees"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Fruit_Trees"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "tree": "Banana Tree",
+          "sapling": "Banana Sapling",
+          "minimumGrowthDays": 28,
+          "season": "summer",
+          "producesPerDay": 1,
+          "location": "Valley outdoors (seasonal) or Greenhouse/Ginger Island (year-round if valid)",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.fruit-tree-sapling"
+            },
+            {
+              "ref": "acq.prereq.fruit-tree-space"
+            }
+          ],
+          "conditions": [
+            "mature living tree",
+            "fruit present",
+            "current location/season enables fruit production"
+          ]
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.910-c70dfb07",
+      "qualifiedItemId": "(O)910",
+      "name": "Radioactive Bar",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "id": "acq.method.910.smelt.furnace",
+          "type": "smelt",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire.furnace"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Furnace"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "machine": "Furnace",
+          "inputItems": [
+            {
+              "itemId": "(O)909",
+              "name": "Radioactive Ore",
+              "quantity": 5
+            },
+            {
+              "itemId": "(O)382",
+              "name": "Coal",
+              "quantity": 1
+            }
+          ],
+          "outputQuantity": 1,
+          "processingMinutes": 560,
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.furnace"
+            },
+            {
+              "ref": "acq.prereq.fuel-and-ore"
+            }
+          ],
+          "conditions": [
+            "recipe available and machine accessible",
+            "unreserved inputs available"
+          ]
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.92-8ee51caa",
+      "qualifiedItemId": "(O)92",
+      "name": "Sap",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "DesertFestival_Vincent",
+          "itemId": "(O)92",
+          "tradeItemId": "CalicoEgg"
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.broccoli-6b23b661",
+      "qualifiedItemId": "(O)Broccoli",
+      "name": "Broccoli",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "grow",
+          "seedId": "(O)BroccoliSeeds",
+          "seasons": [
+            "fall"
+          ],
+          "minimumGrowthDays": 8,
+          "seedAcquisitionRoutes": [
+            {
+              "type": "shop",
+              "shopId": "Raccoon",
+              "itemId": "(O)BroccoliSeeds",
+              "tradeItemId": "(O)Moss",
+              "tradeItemAmount": 5
+            }
+          ]
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.carrot-617fec0e",
+      "qualifiedItemId": "(O)Carrot",
+      "name": "Carrot",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "grow",
+          "seedId": "(O)CarrotSeeds",
+          "seasons": [
+            "spring"
+          ],
+          "minimumGrowthDays": 3,
+          "seedAcquisitionRoutes": [
+            {
+              "type": "shop",
+              "shopId": "Raccoon",
+              "itemId": "(O)CarrotSeeds",
+              "tradeItemId": "(O)310"
+            }
+          ]
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.driedfruit-e7ebc34c",
+      "qualifiedItemId": "(O)DriedFruit",
+      "name": "Dried",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "id": "acq.method.driedfruit.dehydrate.five-fruits",
+          "type": "dehydrate",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.dehydrator"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Dehydrator"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "machine": "Dehydrator",
+          "inputCategory": "eligible fruit",
+          "inputQuantity": 5,
+          "inputSameTypeAndQuality": true,
+          "excludedInputs": [
+            "Grape"
+          ],
+          "processingTime": "ready next morning",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.dehydrator-ready"
+            }
+          ],
+          "conditions": [
+            "five accessible unreserved matching inputs",
+            "machine idle",
+            "recipe respects item category restrictions"
+          ]
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.driedmushrooms-e45b72aa",
+      "qualifiedItemId": "(O)DriedMushrooms",
+      "name": "Dried",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "id": "acq.method.driedmushrooms.dehydrate.five-mushrooms",
+          "type": "dehydrate",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.dehydrator"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Dehydrator"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "machine": "Dehydrator",
+          "inputCategory": "eligible mushroom",
+          "inputQuantity": 5,
+          "inputSameTypeAndQuality": true,
+          "excludedInputs": [
+            "Red Mushroom"
+          ],
+          "processingTime": "ready next morning",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.dehydrator-ready"
+            }
+          ],
+          "conditions": [
+            "five accessible unreserved matching inputs",
+            "machine idle",
+            "recipe respects item category restrictions"
+          ]
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.moss-752fbb36",
+      "qualifiedItemId": "(O)Moss",
+      "name": "Moss",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "id": "acq.method.moss.harvest-moss.tree",
+          "type": "harvest-moss",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.moss"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Moss"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "location": "eligible outdoor trees",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.moss-bearing-tree"
+            }
+          ],
+          "outputQuantity": "1-2 on collection",
+          "conditions": [
+            "moss visibly present",
+            "suitable weapon or tool available"
+          ]
+        },
+        {
+          "id": "acq.method.moss.harvest-moss.green-rain-weeds",
+          "type": "harvest-moss",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.moss"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Moss"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "location": "Green Rain event",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.moss-bearing-tree"
+            }
+          ],
+          "conditions": [
+            "currently active Green Rain weeds"
+          ],
+          "occurrence": "special green-rain weeds have random drop chance"
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.mysticsyrup-84404a1f",
+      "qualifiedItemId": "(O)MysticSyrup",
+      "name": "Mystic Syrup",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "id": "acq.method.mysticsyrup.tap-mystic-tree.tapper",
+          "type": "tap-mystic-tree",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.mystic"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Mystic_Syrup"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "tree": "Mystic Tree",
+          "machine": "Tapper",
+          "processingDays": 7,
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.mystic-tree"
+            }
+          ],
+          "conditions": [
+            "tree fully grown",
+            "tap output ready"
+          ]
+        },
+        {
+          "id": "acq.method.mysticsyrup.tap-mystic-tree.heavy-tapper",
+          "type": "tap-mystic-tree",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.mystic"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Mystic_Syrup"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "tree": "Mystic Tree",
+          "machine": "Heavy Tapper",
+          "processingDays": 3,
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.mystic-tree"
+            }
+          ],
+          "conditions": [
+            "tree fully grown",
+            "tap output ready"
+          ]
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.powdermelon-bec0fe0e",
+      "qualifiedItemId": "(O)Powdermelon",
+      "name": "Powdermelon",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "grow",
+          "seedId": "(O)PowdermelonSeeds",
+          "seasons": [
+            "winter"
+          ],
+          "minimumGrowthDays": 7,
+          "seedAcquisitionRoutes": [
+            {
+              "type": "shop",
+              "shopId": "Raccoon",
+              "itemId": "(O)PowdermelonSeeds",
+              "tradeItemId": "(O)311",
+              "tradeItemAmount": 2
+            }
+          ]
+        },
+        {
+          "type": "shop",
+          "shopId": "Festival_FeastOfTheWinterStar_Pierre",
+          "itemId": "(O)Powdermelon",
+          "price": 2500
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.raisins-2fa14487",
+      "qualifiedItemId": "(O)Raisins",
+      "name": "Raisins",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "id": "acq.method.raisins.dehydrate.five-grapes",
+          "type": "dehydrate",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.dehydrator"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Dehydrator"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "machine": "Dehydrator",
+          "inputCategory": "Grape",
+          "inputQuantity": 5,
+          "inputSameTypeAndQuality": true,
+          "excludedInputs": [],
+          "processingTime": "ready next morning",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.dehydrator-ready"
+            }
+          ],
+          "conditions": [
+            "five accessible unreserved matching inputs",
+            "machine idle",
+            "recipe respects item category restrictions"
+          ]
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.smokedfish-7c0fa4f0",
+      "qualifiedItemId": "(O)SmokedFish",
+      "name": "Smoked",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "id": "acq.method.smokedfish.smoke-fish.smoker",
+          "type": "smoke-fish",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.fish-smoker"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Fish_Smoker"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "machine": "Fish Smoker",
+          "inputCategory": "any eligible fish (not jelly)",
+          "inputQuantity": 1,
+          "inputItems": [
+            {
+              "itemId": "(O)382",
+              "name": "Coal",
+              "quantity": 1
+            }
+          ],
+          "processingMinutes": 50,
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.fish-smoker-ready"
+            },
+            {
+              "ref": "acq.prereq.fish-and-coal"
+            }
+          ],
+          "conditions": [
+            "machine idle",
+            "fish and coal accessible and unreserved"
+          ]
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    },
+    {
+      "id": "shipping.summersquash-b1fdccbe",
+      "qualifiedItemId": "(O)SummerSquash",
+      "name": "Summer Squash",
+      "requiredQuantity": 1,
+      "deficitFormula": "max(0, 1 - Farmer.basicShipped[itemId])",
+      "completionEvidence": "Farmer.basicShipped[itemId] >= 1",
+      "acquisitionRoutes": [
+        {
+          "type": "grow",
+          "seedId": "(O)SummerSquashSeeds",
+          "seasons": [
+            "summer"
+          ],
+          "minimumGrowthDays": 6,
+          "seedAcquisitionRoutes": [
+            {
+              "type": "shop",
+              "shopId": "Raccoon",
+              "itemId": "(O)SummerSquashSeeds",
+              "tradeItemId": "(O)92",
+              "tradeItemAmount": 15
+            }
+          ]
+        }
+      ],
+      "source": [
+        "Data/Objects",
+        "Object.isPotentialBasicShipped"
+      ],
+      "verification": "derived-from-verified-logic"
+    }
+  ]
+}

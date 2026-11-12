@@ -1,0 +1,759 @@
+{
+  "catalogueVersion": "ps4-npwr12196-2026-11-08",
+  "rulesVersion": "ps4-1.6-cautious-2026-11-08-r2",
+  "graph": {
+    "iridium_seal": {
+      "trophyId": "iridium_seal",
+      "completion": {
+        "type": "AND",
+        "nodes": [
+          {
+            "type": "ACCOUNT_TROPHY",
+            "trophyId": "greenhorn"
+          },
+          {
+            "type": "ACCOUNT_TROPHY",
+            "trophyId": "cowpoke"
+          },
+          {
+            "type": "ACCOUNT_TROPHY",
+            "trophyId": "homesteader"
+          },
+          {
+            "type": "ACCOUNT_TROPHY",
+            "trophyId": "millionaire"
+          },
+          {
+            "type": "ACCOUNT_TROPHY",
+            "trophyId": "legend"
+          },
+          {
+            "type": "ACCOUNT_TROPHY",
+            "trophyId": "a_complete_collection"
+          },
+          {
+            "type": "ACCOUNT_TROPHY",
+            "trophyId": "a_new_friend"
+          },
+          {
+            "type": "ACCOUNT_TROPHY",
+            "trophyId": "best_friends"
+          },
+          {
+            "type": "ACCOUNT_TROPHY",
+            "trophyId": "the_beloved_farmer"
+          },
+          {
+            "type": "ACCOUNT_TROPHY",
+            "trophyId": "cliques"
+          },
+          {
+            "type": "ACCOUNT_TROPHY",
+            "trophyId": "networking"
+          },
+          {
+            "type": "ACCOUNT_TROPHY",
+            "trophyId": "popular"
+          },
+          {
+            "type": "ACCOUNT_TROPHY",
+            "trophyId": "cook"
+          },
+          {
+            "type": "ACCOUNT_TROPHY",
+            "trophyId": "sous_chef"
+          },
+          {
+            "type": "ACCOUNT_TROPHY",
+            "trophyId": "gourmet_chef"
+          },
+          {
+            "type": "ACCOUNT_TROPHY",
+            "trophyId": "moving_up"
+          },
+          {
+            "type": "ACCOUNT_TROPHY",
+            "trophyId": "living_large"
+          },
+          {
+            "type": "ACCOUNT_TROPHY",
+            "trophyId": "diy"
+          },
+          {
+            "type": "ACCOUNT_TROPHY",
+            "trophyId": "artisan"
+          },
+          {
+            "type": "ACCOUNT_TROPHY",
+            "trophyId": "craft_master"
+          },
+          {
+            "type": "ACCOUNT_TROPHY",
+            "trophyId": "fisherman"
+          },
+          {
+            "type": "ACCOUNT_TROPHY",
+            "trophyId": "ol_mariner"
+          },
+          {
+            "type": "ACCOUNT_TROPHY",
+            "trophyId": "master_angler"
+          },
+          {
+            "type": "ACCOUNT_TROPHY",
+            "trophyId": "mother_catch"
+          },
+          {
+            "type": "ACCOUNT_TROPHY",
+            "trophyId": "treasure_trove"
+          },
+          {
+            "type": "ACCOUNT_TROPHY",
+            "trophyId": "gofer"
+          },
+          {
+            "type": "ACCOUNT_TROPHY",
+            "trophyId": "a_big_help"
+          },
+          {
+            "type": "ACCOUNT_TROPHY",
+            "trophyId": "polyculture"
+          },
+          {
+            "type": "ACCOUNT_TROPHY",
+            "trophyId": "monoculture"
+          },
+          {
+            "type": "ACCOUNT_TROPHY",
+            "trophyId": "full_shipment"
+          },
+          {
+            "type": "ACCOUNT_TROPHY",
+            "trophyId": "prairie_king"
+          },
+          {
+            "type": "ACCOUNT_TROPHY",
+            "trophyId": "the_bottom"
+          },
+          {
+            "type": "ACCOUNT_TROPHY",
+            "trophyId": "local_legend"
+          },
+          {
+            "type": "ACCOUNT_TROPHY",
+            "trophyId": "joja_co_member_of_the_year"
+          },
+          {
+            "type": "ACCOUNT_TROPHY",
+            "trophyId": "mystery_of_the_stardrops"
+          },
+          {
+            "type": "ACCOUNT_TROPHY",
+            "trophyId": "fectors_challenge"
+          },
+          {
+            "type": "ACCOUNT_TROPHY",
+            "trophyId": "full_house"
+          },
+          {
+            "type": "ACCOUNT_TROPHY",
+            "trophyId": "singular_talent"
+          },
+          {
+            "type": "ACCOUNT_TROPHY",
+            "trophyId": "master_of_the_five_ways"
+          },
+          {
+            "type": "ACCOUNT_TROPHY",
+            "trophyId": "protector_of_the_valley"
+          }
+        ]
+      },
+      "strategicDependencies": []
+    },
+    "greenhorn": {
+      "trophyId": "greenhorn",
+      "completion": {
+        "type": "FARM",
+        "condition": {
+          "type": "COUNT",
+          "metric": "lifetime_earnings",
+          "target": 15000
+        }
+      },
+      "strategicDependencies": []
+    },
+    "cowpoke": {
+      "trophyId": "cowpoke",
+      "completion": {
+        "type": "FARM",
+        "condition": {
+          "type": "COUNT",
+          "metric": "lifetime_earnings",
+          "target": 50000
+        }
+      },
+      "strategicDependencies": ["greenhorn"]
+    },
+    "homesteader": {
+      "trophyId": "homesteader",
+      "completion": {
+        "type": "FARM",
+        "condition": {
+          "type": "COUNT",
+          "metric": "lifetime_earnings",
+          "target": 250000
+        }
+      },
+      "strategicDependencies": ["cowpoke"]
+    },
+    "millionaire": {
+      "trophyId": "millionaire",
+      "completion": {
+        "type": "FARM",
+        "condition": {
+          "type": "COUNT",
+          "metric": "lifetime_earnings",
+          "target": 1000000
+        }
+      },
+      "strategicDependencies": ["homesteader"]
+    },
+    "legend": {
+      "trophyId": "legend",
+      "completion": {
+        "type": "FARM",
+        "condition": {
+          "type": "COUNT",
+          "metric": "lifetime_earnings",
+          "target": 10000000
+        }
+      },
+      "strategicDependencies": ["millionaire"]
+    },
+    "a_complete_collection": {
+      "trophyId": "a_complete_collection",
+      "completion": {
+        "type": "FARM",
+        "condition": {
+          "type": "COLLECTION",
+          "flag": "museum_complete"
+        }
+      },
+      "strategicDependencies": []
+    },
+    "a_new_friend": {
+      "trophyId": "a_new_friend",
+      "completion": {
+        "type": "FARM",
+        "condition": {
+          "type": "COUNT",
+          "metric": "friendships_5",
+          "target": 1
+        }
+      },
+      "strategicDependencies": []
+    },
+    "best_friends": {
+      "trophyId": "best_friends",
+      "completion": {
+        "type": "FARM",
+        "condition": {
+          "type": "COUNT",
+          "metric": "friendships_10",
+          "target": 1
+        }
+      },
+      "strategicDependencies": ["a_new_friend"]
+    },
+    "the_beloved_farmer": {
+      "trophyId": "the_beloved_farmer",
+      "completion": {
+        "type": "FARM",
+        "condition": {
+          "type": "COUNT",
+          "metric": "friendships_10",
+          "target": 8
+        }
+      },
+      "strategicDependencies": ["best_friends"]
+    },
+    "cliques": {
+      "trophyId": "cliques",
+      "completion": {
+        "type": "FARM",
+        "condition": {
+          "type": "COUNT",
+          "metric": "friendships_5",
+          "target": 4
+        }
+      },
+      "strategicDependencies": ["a_new_friend"]
+    },
+    "networking": {
+      "trophyId": "networking",
+      "completion": {
+        "type": "FARM",
+        "condition": {
+          "type": "COUNT",
+          "metric": "friendships_5",
+          "target": 10
+        }
+      },
+      "strategicDependencies": ["cliques"]
+    },
+    "popular": {
+      "trophyId": "popular",
+      "completion": {
+        "type": "FARM",
+        "condition": {
+          "type": "COUNT",
+          "metric": "friendships_5",
+          "target": 20
+        }
+      },
+      "strategicDependencies": ["networking"]
+    },
+    "cook": {
+      "trophyId": "cook",
+      "completion": {
+        "type": "FARM",
+        "condition": {
+          "type": "COUNT",
+          "metric": "cooked_distinct",
+          "target": 10
+        }
+      },
+      "strategicDependencies": []
+    },
+    "sous_chef": {
+      "trophyId": "sous_chef",
+      "completion": {
+        "type": "FARM",
+        "condition": {
+          "type": "COUNT",
+          "metric": "cooked_distinct",
+          "target": 25
+        }
+      },
+      "strategicDependencies": ["cook"]
+    },
+    "gourmet_chef": {
+      "trophyId": "gourmet_chef",
+      "completion": {
+        "type": "FARM",
+        "condition": {
+          "type": "COLLECTION",
+          "flag": "cooking_complete"
+        }
+      },
+      "strategicDependencies": ["sous_chef"]
+    },
+    "moving_up": {
+      "trophyId": "moving_up",
+      "completion": {
+        "type": "FARM",
+        "condition": {
+          "type": "COUNT",
+          "metric": "house_upgrades",
+          "target": 1
+        }
+      },
+      "strategicDependencies": []
+    },
+    "living_large": {
+      "trophyId": "living_large",
+      "completion": {
+        "type": "FARM",
+        "condition": {
+          "type": "FACT",
+          "flag": "house_maxed"
+        }
+      },
+      "strategicDependencies": ["moving_up"]
+    },
+    "diy": {
+      "trophyId": "diy",
+      "completion": {
+        "type": "FARM",
+        "condition": {
+          "type": "COUNT",
+          "metric": "crafted_distinct",
+          "target": 15
+        }
+      },
+      "strategicDependencies": []
+    },
+    "artisan": {
+      "trophyId": "artisan",
+      "completion": {
+        "type": "FARM",
+        "condition": {
+          "type": "COUNT",
+          "metric": "crafted_distinct",
+          "target": 30
+        }
+      },
+      "strategicDependencies": ["diy"]
+    },
+    "craft_master": {
+      "trophyId": "craft_master",
+      "completion": {
+        "type": "FARM",
+        "condition": {
+          "type": "COLLECTION",
+          "flag": "crafting_complete"
+        }
+      },
+      "strategicDependencies": ["artisan"]
+    },
+    "fisherman": {
+      "trophyId": "fisherman",
+      "completion": {
+        "type": "FARM",
+        "condition": {
+          "type": "COUNT",
+          "metric": "fish_distinct",
+          "target": 10
+        }
+      },
+      "strategicDependencies": []
+    },
+    "ol_mariner": {
+      "trophyId": "ol_mariner",
+      "completion": {
+        "type": "FARM",
+        "condition": {
+          "type": "COUNT",
+          "metric": "fish_distinct",
+          "target": 24
+        }
+      },
+      "strategicDependencies": ["fisherman"]
+    },
+    "master_angler": {
+      "trophyId": "master_angler",
+      "completion": {
+        "type": "FARM",
+        "condition": {
+          "type": "COLLECTION",
+          "flag": "fish_collection_complete"
+        }
+      },
+      "strategicDependencies": ["ol_mariner"]
+    },
+    "mother_catch": {
+      "trophyId": "mother_catch",
+      "completion": {
+        "type": "FARM",
+        "condition": {
+          "type": "COUNT",
+          "metric": "fish_caught_total",
+          "target": 100
+        }
+      },
+      "strategicDependencies": []
+    },
+    "treasure_trove": {
+      "trophyId": "treasure_trove",
+      "completion": {
+        "type": "FARM",
+        "condition": {
+          "type": "COUNT",
+          "metric": "museum_donations_distinct",
+          "target": 40
+        }
+      },
+      "strategicDependencies": []
+    },
+    "gofer": {
+      "trophyId": "gofer",
+      "completion": {
+        "type": "FARM",
+        "condition": {
+          "type": "COUNT",
+          "metric": "help_wanted_completed",
+          "target": 10
+        }
+      },
+      "strategicDependencies": []
+    },
+    "a_big_help": {
+      "trophyId": "a_big_help",
+      "completion": {
+        "type": "FARM",
+        "condition": {
+          "type": "COUNT",
+          "metric": "help_wanted_completed",
+          "target": 40
+        }
+      },
+      "strategicDependencies": ["gofer"]
+    },
+    "polyculture": {
+      "trophyId": "polyculture",
+      "completion": {
+        "type": "FARM",
+        "condition": {
+          "type": "COLLECTION",
+          "flag": "polyculture_complete"
+        }
+      },
+      "strategicDependencies": []
+    },
+    "monoculture": {
+      "trophyId": "monoculture",
+      "completion": {
+        "type": "FARM",
+        "condition": {
+          "type": "COUNT",
+          "metric": "monoculture_max",
+          "target": 300
+        }
+      },
+      "strategicDependencies": []
+    },
+    "full_shipment": {
+      "trophyId": "full_shipment",
+      "completion": {
+        "type": "FARM",
+        "condition": {
+          "type": "COLLECTION",
+          "flag": "shipping_complete"
+        }
+      },
+      "strategicDependencies": []
+    },
+    "prairie_king": {
+      "trophyId": "prairie_king",
+      "completion": {
+        "type": "FARM",
+        "condition": {
+          "type": "FACT",
+          "flag": "prairie_king_won"
+        }
+      },
+      "strategicDependencies": []
+    },
+    "the_bottom": {
+      "trophyId": "the_bottom",
+      "completion": {
+        "type": "FARM",
+        "condition": {
+          "type": "COUNT",
+          "metric": "mine_floor",
+          "target": 120
+        }
+      },
+      "strategicDependencies": []
+    },
+    "local_legend": {
+      "trophyId": "local_legend",
+      "completion": {
+        "type": "FARM",
+        "condition": {
+          "type": "ROUTE",
+          "route": "community_center",
+          "condition": {
+            "type": "FACT",
+            "flag": "community_center_restored"
+          }
+        }
+      },
+      "strategicDependencies": []
+    },
+    "joja_co_member_of_the_year": {
+      "trophyId": "joja_co_member_of_the_year",
+      "completion": {
+        "type": "FARM",
+        "condition": {
+          "type": "ROUTE",
+          "route": "joja",
+          "condition": {
+            "type": "FACT",
+            "flag": "joja_completed"
+          }
+        }
+      },
+      "strategicDependencies": []
+    },
+    "mystery_of_the_stardrops": {
+      "trophyId": "mystery_of_the_stardrops",
+      "completion": {
+        "type": "FARM",
+        "condition": {
+          "type": "COLLECTION",
+          "flag": "stardrops_complete"
+        }
+      },
+      "strategicDependencies": []
+    },
+    "fectors_challenge": {
+      "trophyId": "fectors_challenge",
+      "completion": {
+        "type": "FARM",
+        "condition": {
+          "type": "FACT",
+          "flag": "fector_won_no_deaths"
+        }
+      },
+      "strategicDependencies": ["prairie_king"]
+    },
+    "full_house": {
+      "trophyId": "full_house",
+      "completion": {
+        "type": "FARM",
+        "condition": {
+          "type": "COUNT",
+          "metric": "children_count",
+          "target": 2
+        }
+      },
+      "strategicDependencies": []
+    },
+    "singular_talent": {
+      "trophyId": "singular_talent",
+      "completion": {
+        "type": "FARM",
+        "condition": {
+          "type": "COUNT",
+          "metric": "skill_10_count",
+          "target": 1
+        }
+      },
+      "strategicDependencies": []
+    },
+    "master_of_the_five_ways": {
+      "trophyId": "master_of_the_five_ways",
+      "completion": {
+        "type": "FARM",
+        "condition": {
+          "type": "COUNT",
+          "metric": "skill_10_count",
+          "target": 5
+        }
+      },
+      "strategicDependencies": ["singular_talent"]
+    },
+    "protector_of_the_valley": {
+      "trophyId": "protector_of_the_valley",
+      "completion": {
+        "type": "FARM",
+        "condition": {
+          "type": "COLLECTION",
+          "flag": "monster_slayer_complete"
+        }
+      },
+      "strategicDependencies": []
+    },
+    "well_read": {
+      "trophyId": "well_read",
+      "completion": {
+        "type": "FARM",
+        "condition": {
+          "type": "COLLECTION",
+          "flag": "power_books_complete"
+        }
+      },
+      "strategicDependencies": []
+    },
+    "two_thumbs_up": {
+      "trophyId": "two_thumbs_up",
+      "completion": {
+        "type": "FARM",
+        "condition": {
+          "type": "FACT",
+          "flag": "movie_seen"
+        }
+      },
+      "strategicDependencies": []
+    },
+    "blue_ribbon": {
+      "trophyId": "blue_ribbon",
+      "completion": {
+        "type": "FARM",
+        "condition": {
+          "type": "FACT",
+          "flag": "fair_first_place"
+        }
+      },
+      "strategicDependencies": [],
+      "opportunityWindow": {
+        "type": "TIME_WINDOW",
+        "season": "fall",
+        "day": 16
+      }
+    },
+    "an_unforgettable_soup": {
+      "trophyId": "an_unforgettable_soup",
+      "completion": {
+        "type": "FARM",
+        "condition": {
+          "type": "FACT",
+          "flag": "governor_delighted"
+        }
+      },
+      "strategicDependencies": [],
+      "opportunityWindow": {
+        "type": "TIME_WINDOW",
+        "season": "summer",
+        "day": 11
+      }
+    },
+    "good_neighbors": {
+      "trophyId": "good_neighbors",
+      "completion": {
+        "type": "FARM",
+        "condition": {
+          "type": "FACT",
+          "flag": "raccoon_family_completed"
+        }
+      },
+      "strategicDependencies": []
+    },
+    "a_distant_shore": {
+      "trophyId": "a_distant_shore",
+      "completion": {
+        "type": "FARM",
+        "condition": {
+          "type": "FACT",
+          "flag": "ginger_island_reached"
+        }
+      },
+      "strategicDependencies": []
+    },
+    "danger_in_the_deep": {
+      "trophyId": "danger_in_the_deep",
+      "completion": {
+        "type": "FARM",
+        "condition": {
+          "type": "FACT",
+          "flag": "dangerous_mines_bottom"
+        }
+      },
+      "strategicDependencies": ["the_bottom"]
+    },
+    "infinite_power": {
+      "trophyId": "infinite_power",
+      "completion": {
+        "type": "FARM",
+        "condition": {
+          "type": "FACT",
+          "flag": "infinity_weapon_obtained"
+        }
+      },
+      "strategicDependencies": []
+    },
+    "perfection": {
+      "trophyId": "perfection",
+      "completion": {
+        "type": "FARM",
+        "condition": {
+          "type": "FACT",
+          "flag": "summit_reached"
+        }
+      },
+      "strategicDependencies": []
+    }
+  }
+}

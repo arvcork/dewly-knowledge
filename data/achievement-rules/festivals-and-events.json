@@ -1,0 +1,322 @@
+{
+  "schemaVersion": "0.1.0",
+  "category": "festivals-and-events",
+  "nodes": [
+    {
+      "id": "breadth.unresolved.festivals-and-events",
+      "kind": "unknown",
+      "trackingRefs": [],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354"
+      ],
+      "verification": "unresolved",
+      "reason": "Exact award calls are source-verified; item scoring/acquisition and theater unlock routes still need content adapters. Live content selector and normalized progress reader pending."
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.two_thumbs_up.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.two_thumbs_up.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.goal.two_thumbs_up",
+      "kind": "all",
+      "goal": "two_thumbs_up",
+      "requires": [
+        "breadth.requirement.two_thumbs_up"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.two_thumbs_up.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.two_thumbs_up.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.requirement.two_thumbs_up",
+      "kind": "all",
+      "requires": [
+        "breadth.action.two_thumbs_up"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.two_thumbs_up.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.two_thumbs_up.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.action.two_thumbs_up",
+      "kind": "action",
+      "requires": [
+        "breadth.unresolved.festivals-and-events"
+      ],
+      "task": {
+        "text": "Enter MovieTheater after unlocking a screening route."
+      },
+      "breadth": {
+        "completionLogic": "MovieTheater.resetLocalState calls getAchievement(36)",
+        "runtimeStatus": "reader-pending; no live verification",
+        "platformRef": "data/platform-mapping.json#two_thumbs_up",
+        "selection": "Fair: select owned items using grange scoring by category, quality and sale price; Luau: choose ingredient with verified reaction 4; movie: select available screening and ticket.",
+        "assets": [
+          "Data/Festivals/fall16",
+          "Data/Festivals/summer11",
+          "Data/Movies",
+          "Data/Shops"
+        ],
+        "limitations": "Exact award calls are source-verified; item scoring/acquisition and theater unlock routes still need content adapters.",
+        "atomicDecomposition": {
+          "status": "complete",
+          "mode": "static",
+          "source": "MovieTheater.resetLocalState (local runtime)",
+          "eligibility": "Award call occurs whenever MovieTheater local state resets; gameplay route still requires theater unlock, ticket and entering the screening location.",
+          "resultId": "two_thumbs_up.enter-movie-theater",
+          "requirements": [
+            {
+              "id": "two_thumbs_up.enter",
+              "kind": "event",
+              "condition": "MovieTheater.resetLocalState executes for player",
+              "tracking": {
+                "value": "Farmer.achievements contains 36",
+                "dataType": "bool/set<int>",
+                "source": "MovieTheater.resetLocalState + Farmer.achievements",
+                "status": "source-verified"
+              },
+              "routeRefs": [
+                "breadth.progress.location-access"
+              ],
+              "prerequisiteRefs": [],
+              "verification": "derived-rule"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.blue_ribbon.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.blue_ribbon.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.goal.blue_ribbon",
+      "kind": "all",
+      "goal": "blue_ribbon",
+      "requires": [
+        "breadth.requirement.blue_ribbon"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.blue_ribbon.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.blue_ribbon.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.requirement.blue_ribbon",
+      "kind": "all",
+      "requires": [
+        "breadth.action.blue_ribbon"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.blue_ribbon.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.blue_ribbon.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.action.blue_ribbon",
+      "kind": "action",
+      "requires": [
+        "breadth.unresolved.festivals-and-events"
+      ],
+      "task": {
+        "text": "Prepare and submit a display scoring at least 90 and speak to the host."
+      },
+      "breadth": {
+        "completionLogic": "grangeJudged and grangeScore >= 90, then host interaction calls getAchievement(37)",
+        "runtimeStatus": "reader-pending; no live verification",
+        "platformRef": "data/platform-mapping.json#blue_ribbon",
+        "selection": "Fair: select owned items using grange scoring by category, quality and sale price; Luau: choose ingredient with verified reaction 4; movie: select available screening and ticket.",
+        "assets": [
+          "Data/Festivals/fall16",
+          "Data/Festivals/summer11",
+          "Data/Movies",
+          "Data/Shops"
+        ],
+        "limitations": "Exact award calls are source-verified; item scoring/acquisition and theater unlock routes still need content adapters.",
+        "atomicDecomposition": {
+          "status": "complete",
+          "mode": "static",
+          "source": "Event grange judging interaction (local runtime)",
+          "eligibility": "After judging, interact with festival host; award branch requires grangeScore >= 90.",
+          "resultId": "blue_ribbon.grange-score-90",
+          "requirements": [
+            {
+              "id": "blue_ribbon.win",
+              "kind": "event",
+              "condition": "grangeJudged and grangeScore >= 90 when speaking to festival host",
+              "tracking": {
+                "value": "Event.grangeJudged and Event.grangeScore; durable Farmer.achievements contains 37",
+                "dataType": "bool + int32",
+                "source": "Event.checkAction grange result branch",
+                "status": "source-verified"
+              },
+              "routeRefs": [
+                "breadth.acquire.item"
+              ],
+              "prerequisiteRefs": [],
+              "verification": "derived-rule"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.an_unforgettable_soup.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.an_unforgettable_soup.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.goal.an_unforgettable_soup",
+      "kind": "all",
+      "goal": "an_unforgettable_soup",
+      "requires": [
+        "breadth.requirement.an_unforgettable_soup"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.an_unforgettable_soup.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.an_unforgettable_soup.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.requirement.an_unforgettable_soup",
+      "kind": "all",
+      "requires": [
+        "breadth.action.an_unforgettable_soup"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.an_unforgettable_soup.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.an_unforgettable_soup.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.action.an_unforgettable_soup",
+      "kind": "action",
+      "requires": [
+        "breadth.unresolved.festivals-and-events"
+      ],
+      "task": {
+        "text": "Contribute ingredients producing Governor reaction 4."
+      },
+      "breadth": {
+        "completionLogic": "Luau potluck evaluation reaction index == 4 calls getAchievement(38)",
+        "runtimeStatus": "reader-pending; no live verification",
+        "platformRef": "data/platform-mapping.json#an_unforgettable_soup",
+        "selection": "Fair: select owned items using grange scoring by category, quality and sale price; Luau: choose ingredient with verified reaction 4; movie: select available screening and ticket.",
+        "assets": [
+          "Data/Festivals/fall16",
+          "Data/Festivals/summer11",
+          "Data/Movies",
+          "Data/Shops"
+        ],
+        "limitations": "Exact award calls are source-verified; item scoring/acquisition and theater unlock routes still need content adapters.",
+        "atomicDecomposition": {
+          "status": "complete",
+          "mode": "static",
+          "source": "Event Luau potluck evaluation (local runtime)",
+          "eligibility": "All contributed ingredients are scored; final reaction index must be 4 and multiplayer must have enough contributions unless reaction is already 6.",
+          "resultId": "an_unforgettable_soup.reaction-4",
+          "requirements": [
+            {
+              "id": "soup.best-response",
+              "kind": "event",
+              "condition": "computed governor reaction == 4",
+              "tracking": {
+                "value": "Event potluck reaction; durable Farmer.achievements contains 38",
+                "dataType": "int32",
+                "source": "Event Luau evaluation",
+                "status": "source-verified"
+              },
+              "routeRefs": [
+                "breadth.acquire.item"
+              ],
+              "prerequisiteRefs": [],
+              "verification": "derived-rule"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

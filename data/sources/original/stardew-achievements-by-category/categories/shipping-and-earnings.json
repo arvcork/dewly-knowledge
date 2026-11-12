@@ -1,0 +1,343 @@
+{
+  "category": "shipping-and-earnings",
+  "displayName": "Shipping and earnings",
+  "description": "Earnings milestones and the full shipping collection.",
+  "catalogueVersion": "ps4-npwr12196-2026-11-08",
+  "rulesVersion": "ps4-1.6-cautious-2026-11-08-r2",
+  "trophyCount": 6,
+  "trophies": [
+    {
+      "trophyId": "greenhorn",
+      "name": "Greenhorn",
+      "group": "base",
+      "tier": "bronze",
+      "classification": "Trackable but limited planning",
+      "requirement": "Earn 15,000g.",
+      "requirementKind": "threshold",
+      "requirementDetail": {
+        "kind": "threshold",
+        "metric": "lifetime_earnings",
+        "target": 15000,
+        "unit": "g earned"
+      },
+      "dependencies": [],
+      "evidenceRequired": "Canonical trophy evidence number: lifetime_earnings; player-confirmed total or verifiable authorized activity",
+      "progressDerivation": "metricValue(lifetime_earnings); unknown remains unknown; no wallet/lifetime proxy",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "shipping_income",
+          "title": "Harvest, process or ship legitimately obtained goods via the shipping bin",
+          "effort": "medium"
+        }
+      ],
+      "knownBlockers": [
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false,
+      "dependencyRule": {
+        "trophyId": "greenhorn",
+        "completion": {
+          "type": "FARM",
+          "condition": {
+            "type": "COUNT",
+            "metric": "lifetime_earnings",
+            "target": 15000
+          }
+        },
+        "strategicDependencies": []
+      }
+    },
+    {
+      "trophyId": "cowpoke",
+      "name": "Cowpoke",
+      "group": "base",
+      "tier": "bronze",
+      "classification": "Trackable but limited planning",
+      "requirement": "Earn 50,000g.",
+      "requirementKind": "threshold",
+      "requirementDetail": {
+        "kind": "threshold",
+        "metric": "lifetime_earnings",
+        "target": 50000,
+        "unit": "g earned"
+      },
+      "dependencies": [
+        "greenhorn"
+      ],
+      "evidenceRequired": "Canonical trophy evidence number: lifetime_earnings; player-confirmed total or verifiable authorized activity",
+      "progressDerivation": "metricValue(lifetime_earnings); unknown remains unknown; no wallet/lifetime proxy",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "shipping_income",
+          "title": "Harvest, process or ship legitimately obtained goods via the shipping bin",
+          "effort": "medium"
+        }
+      ],
+      "knownBlockers": [
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false,
+      "dependencyRule": {
+        "trophyId": "cowpoke",
+        "completion": {
+          "type": "FARM",
+          "condition": {
+            "type": "COUNT",
+            "metric": "lifetime_earnings",
+            "target": 50000
+          }
+        },
+        "strategicDependencies": [
+          "greenhorn"
+        ]
+      }
+    },
+    {
+      "trophyId": "homesteader",
+      "name": "Homesteader",
+      "group": "base",
+      "tier": "bronze",
+      "classification": "Trackable but limited planning",
+      "requirement": "Earn 250,000g.",
+      "requirementKind": "threshold",
+      "requirementDetail": {
+        "kind": "threshold",
+        "metric": "lifetime_earnings",
+        "target": 250000,
+        "unit": "g earned"
+      },
+      "dependencies": [
+        "cowpoke"
+      ],
+      "evidenceRequired": "Canonical trophy evidence number: lifetime_earnings; player-confirmed total or verifiable authorized activity",
+      "progressDerivation": "metricValue(lifetime_earnings); unknown remains unknown; no wallet/lifetime proxy",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "shipping_income",
+          "title": "Harvest, process or ship legitimately obtained goods via the shipping bin",
+          "effort": "medium"
+        }
+      ],
+      "knownBlockers": [
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false,
+      "dependencyRule": {
+        "trophyId": "homesteader",
+        "completion": {
+          "type": "FARM",
+          "condition": {
+            "type": "COUNT",
+            "metric": "lifetime_earnings",
+            "target": 250000
+          }
+        },
+        "strategicDependencies": [
+          "cowpoke"
+        ]
+      }
+    },
+    {
+      "trophyId": "millionaire",
+      "name": "Millionaire",
+      "group": "base",
+      "tier": "bronze",
+      "classification": "Trackable but limited planning",
+      "requirement": "Earn 1,000,000g.",
+      "requirementKind": "threshold",
+      "requirementDetail": {
+        "kind": "threshold",
+        "metric": "lifetime_earnings",
+        "target": 1000000,
+        "unit": "g earned"
+      },
+      "dependencies": [
+        "homesteader"
+      ],
+      "evidenceRequired": "Canonical trophy evidence number: lifetime_earnings; player-confirmed total or verifiable authorized activity",
+      "progressDerivation": "metricValue(lifetime_earnings); unknown remains unknown; no wallet/lifetime proxy",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "shipping_income",
+          "title": "Harvest, process or ship legitimately obtained goods via the shipping bin",
+          "effort": "medium"
+        }
+      ],
+      "knownBlockers": [
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false,
+      "dependencyRule": {
+        "trophyId": "millionaire",
+        "completion": {
+          "type": "FARM",
+          "condition": {
+            "type": "COUNT",
+            "metric": "lifetime_earnings",
+            "target": 1000000
+          }
+        },
+        "strategicDependencies": [
+          "homesteader"
+        ]
+      }
+    },
+    {
+      "trophyId": "legend",
+      "name": "Legend",
+      "group": "base",
+      "tier": "gold",
+      "classification": "Trackable but limited planning",
+      "requirement": "Earn 10,000,000g.",
+      "requirementKind": "threshold",
+      "requirementDetail": {
+        "kind": "threshold",
+        "metric": "lifetime_earnings",
+        "target": 10000000,
+        "unit": "g earned"
+      },
+      "dependencies": [
+        "millionaire"
+      ],
+      "evidenceRequired": "Canonical trophy evidence number: lifetime_earnings; player-confirmed total or verifiable authorized activity",
+      "progressDerivation": "metricValue(lifetime_earnings); unknown remains unknown; no wallet/lifetime proxy",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "shipping_income",
+          "title": "Harvest, process or ship legitimately obtained goods via the shipping bin",
+          "effort": "medium"
+        }
+      ],
+      "knownBlockers": [
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false,
+      "dependencyRule": {
+        "trophyId": "legend",
+        "completion": {
+          "type": "FARM",
+          "condition": {
+            "type": "COUNT",
+            "metric": "lifetime_earnings",
+            "target": 10000000
+          }
+        },
+        "strategicDependencies": [
+          "millionaire"
+        ]
+      }
+    },
+    {
+      "trophyId": "full_shipment",
+      "name": "Full Shipment",
+      "group": "base",
+      "tier": "gold",
+      "classification": "Partially supported",
+      "requirement": "Ship each item required by the shipping collection.",
+      "requirementKind": "collection",
+      "requirementDetail": {
+        "kind": "collection",
+        "flag": "shipping_complete"
+      },
+      "dependencies": [],
+      "evidenceRequired": "Trophy evidence boolean: shipping_complete; player confirmation of the exact outcome",
+      "progressDerivation": "evaluateCollectionEvidence or explicit flag (shipping_complete); partial count only when eligible IDs are recognized",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "ship_missing",
+          "title": "Ship a verifiably missing collection item through the shipping bin",
+          "effort": "medium"
+        }
+      ],
+      "knownBlockers": [
+        "Only explicitly reported shipping-bin activity counts; acquisition and merchant sales do not.",
+        "Shipping eligibility for all source-listed items and corrected sale channels require broader testing.",
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "condition_needs_review",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false,
+      "dependencyRule": {
+        "trophyId": "full_shipment",
+        "completion": {
+          "type": "FARM",
+          "condition": {
+            "type": "COLLECTION",
+            "flag": "shipping_complete"
+          }
+        },
+        "strategicDependencies": []
+      }
+    }
+  ]
+}

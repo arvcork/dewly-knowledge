@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "0.1.0",
+  "category": "arcade",
+  "provenance": "Supplied source assertions, not newly verified gameplay rules.",
+  "entries": [
+    {
+      "id": "prairie_king",
+      "name": "Prairie King",
+      "sourceRequirement": "Beat Journey of the Prairie King.",
+      "sourceDefinitionRef": "data/sources/original/trophy-50-coverage.json#/trophies/31",
+      "sourceDependencyRef": "data/sources/original/trophy-dependency-graph.json#/graph/prairie_king",
+      "verification": "source-import-only"
+    },
+    {
+      "id": "fectors_challenge",
+      "name": "Fector's Challenge",
+      "sourceRequirement": "Beat Journey of the Prairie King without dying.",
+      "sourceDefinitionRef": "data/sources/original/trophy-50-coverage.json#/trophies/36",
+      "sourceDependencyRef": "data/sources/original/trophy-dependency-graph.json#/graph/fectors_challenge",
+      "verification": "source-import-only"
+    }
+  ]
+}

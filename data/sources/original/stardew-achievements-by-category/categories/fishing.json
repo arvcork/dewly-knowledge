@@ -1,0 +1,356 @@
+{
+  "category": "fishing",
+  "displayName": "Fishing",
+  "description": "Fish-catch counts and complete fish collections.",
+  "catalogueVersion": "ps4-npwr12196-2026-11-08",
+  "rulesVersion": "ps4-1.6-cautious-2026-11-08-r2",
+  "trophyCount": 4,
+  "trophies": [
+    {
+      "trophyId": "fisherman",
+      "name": "Fisherman",
+      "group": "base",
+      "tier": "bronze",
+      "classification": "Trackable but limited planning",
+      "requirement": "Catch 10 different fish.",
+      "requirementKind": "threshold",
+      "requirementDetail": {
+        "kind": "threshold",
+        "metric": "fish_distinct",
+        "target": 10,
+        "unit": "species"
+      },
+      "dependencies": [],
+      "evidenceRequired": "Canonical trophy evidence number: fish_distinct; player-confirmed total or verifiable authorized activity",
+      "progressDerivation": "metricValue(fish_distinct); unknown remains unknown; no wallet/lifetime proxy",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "catch_fish:Shad",
+          "title": "Catch Shad with a rod",
+          "effort": "long"
+        },
+        {
+          "id": "catch_fish:Eel",
+          "title": "Catch Eel with a rod",
+          "effort": "long"
+        },
+        {
+          "id": "catch_fish:Catfish",
+          "title": "Catch Catfish with a rod",
+          "effort": "long"
+        },
+        {
+          "id": "catch_fish:Anchovy",
+          "title": "Catch Anchovy with a rod",
+          "effort": "long"
+        },
+        {
+          "id": "catch_fish:Sardine",
+          "title": "Catch Sardine with a rod",
+          "effort": "long"
+        },
+        {
+          "id": "catch_fish:Bream",
+          "title": "Catch Bream with a rod",
+          "effort": "long"
+        },
+        {
+          "id": "catch_fish:Largemouth Bass",
+          "title": "Catch Largemouth Bass with a rod",
+          "effort": "long"
+        }
+      ],
+      "knownBlockers": [
+        "Catch must be the correct qualifying method, location, time, season, weather, access and equipment; purchased fish are not rod catches.",
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false,
+      "dependencyRule": {
+        "trophyId": "fisherman",
+        "completion": {
+          "type": "FARM",
+          "condition": {
+            "type": "COUNT",
+            "metric": "fish_distinct",
+            "target": 10
+          }
+        },
+        "strategicDependencies": []
+      }
+    },
+    {
+      "trophyId": "ol_mariner",
+      "name": "Ol' Mariner",
+      "group": "base",
+      "tier": "bronze",
+      "classification": "Trackable but limited planning",
+      "requirement": "Catch 24 different fish.",
+      "requirementKind": "threshold",
+      "requirementDetail": {
+        "kind": "threshold",
+        "metric": "fish_distinct",
+        "target": 24,
+        "unit": "species"
+      },
+      "dependencies": [
+        "fisherman"
+      ],
+      "evidenceRequired": "Canonical trophy evidence number: fish_distinct; player-confirmed total or verifiable authorized activity",
+      "progressDerivation": "metricValue(fish_distinct); unknown remains unknown; no wallet/lifetime proxy",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "catch_fish:Shad",
+          "title": "Catch Shad with a rod",
+          "effort": "long"
+        },
+        {
+          "id": "catch_fish:Eel",
+          "title": "Catch Eel with a rod",
+          "effort": "long"
+        },
+        {
+          "id": "catch_fish:Catfish",
+          "title": "Catch Catfish with a rod",
+          "effort": "long"
+        },
+        {
+          "id": "catch_fish:Anchovy",
+          "title": "Catch Anchovy with a rod",
+          "effort": "long"
+        },
+        {
+          "id": "catch_fish:Sardine",
+          "title": "Catch Sardine with a rod",
+          "effort": "long"
+        },
+        {
+          "id": "catch_fish:Bream",
+          "title": "Catch Bream with a rod",
+          "effort": "long"
+        },
+        {
+          "id": "catch_fish:Largemouth Bass",
+          "title": "Catch Largemouth Bass with a rod",
+          "effort": "long"
+        }
+      ],
+      "knownBlockers": [
+        "Catch must be the correct qualifying method, location, time, season, weather, access and equipment; purchased fish are not rod catches.",
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false,
+      "dependencyRule": {
+        "trophyId": "ol_mariner",
+        "completion": {
+          "type": "FARM",
+          "condition": {
+            "type": "COUNT",
+            "metric": "fish_distinct",
+            "target": 24
+          }
+        },
+        "strategicDependencies": [
+          "fisherman"
+        ]
+      }
+    },
+    {
+      "trophyId": "master_angler",
+      "name": "Master Angler",
+      "group": "base",
+      "tier": "silver",
+      "classification": "Trackable but limited planning",
+      "requirement": "Catch every required fish.",
+      "requirementKind": "collection",
+      "requirementDetail": {
+        "kind": "collection",
+        "flag": "fish_collection_complete"
+      },
+      "dependencies": [
+        "ol_mariner"
+      ],
+      "evidenceRequired": "Trophy evidence boolean: fish_collection_complete; player confirmation of the exact outcome",
+      "progressDerivation": "evaluateCollectionEvidence or explicit flag (fish_collection_complete); partial count only when eligible IDs are recognized",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "catch_fish:Shad",
+          "title": "Catch Shad with a rod",
+          "effort": "long"
+        },
+        {
+          "id": "catch_fish:Eel",
+          "title": "Catch Eel with a rod",
+          "effort": "long"
+        },
+        {
+          "id": "catch_fish:Catfish",
+          "title": "Catch Catfish with a rod",
+          "effort": "long"
+        },
+        {
+          "id": "catch_fish:Anchovy",
+          "title": "Catch Anchovy with a rod",
+          "effort": "long"
+        },
+        {
+          "id": "catch_fish:Sardine",
+          "title": "Catch Sardine with a rod",
+          "effort": "long"
+        },
+        {
+          "id": "catch_fish:Bream",
+          "title": "Catch Bream with a rod",
+          "effort": "long"
+        },
+        {
+          "id": "catch_fish:Largemouth Bass",
+          "title": "Catch Largemouth Bass with a rod",
+          "effort": "long"
+        },
+        {
+          "id": "crab_pot_preparation",
+          "title": "Work towards a Crab Pot and confirm which eligible pot catches remain",
+          "effort": "short"
+        }
+      ],
+      "knownBlockers": [
+        "Catch must be the correct qualifying method, location, time, season, weather, access and equipment; purchased fish are not rod catches.",
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "condition_needs_review",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false,
+      "dependencyRule": {
+        "trophyId": "master_angler",
+        "completion": {
+          "type": "FARM",
+          "condition": {
+            "type": "COLLECTION",
+            "flag": "fish_collection_complete"
+          }
+        },
+        "strategicDependencies": [
+          "ol_mariner"
+        ]
+      }
+    },
+    {
+      "trophyId": "mother_catch",
+      "name": "Mother Catch",
+      "group": "base",
+      "tier": "bronze",
+      "classification": "Trackable but limited planning",
+      "requirement": "Catch 100 fish.",
+      "requirementKind": "threshold",
+      "requirementDetail": {
+        "kind": "threshold",
+        "metric": "fish_caught_total",
+        "target": 100,
+        "unit": "fish"
+      },
+      "dependencies": [],
+      "evidenceRequired": "Canonical trophy evidence number: fish_caught_total; player-confirmed total or verifiable authorized activity",
+      "progressDerivation": "metricValue(fish_caught_total); unknown remains unknown; no wallet/lifetime proxy",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "catch_fish:Shad",
+          "title": "Catch Shad with a rod",
+          "effort": "long"
+        },
+        {
+          "id": "catch_fish:Eel",
+          "title": "Catch Eel with a rod",
+          "effort": "long"
+        },
+        {
+          "id": "catch_fish:Catfish",
+          "title": "Catch Catfish with a rod",
+          "effort": "long"
+        },
+        {
+          "id": "catch_fish:Anchovy",
+          "title": "Catch Anchovy with a rod",
+          "effort": "long"
+        },
+        {
+          "id": "catch_fish:Sardine",
+          "title": "Catch Sardine with a rod",
+          "effort": "long"
+        },
+        {
+          "id": "catch_fish:Bream",
+          "title": "Catch Bream with a rod",
+          "effort": "long"
+        },
+        {
+          "id": "catch_fish:Largemouth Bass",
+          "title": "Catch Largemouth Bass with a rod",
+          "effort": "long"
+        }
+      ],
+      "knownBlockers": [
+        "Catch must be the correct qualifying method, location, time, season, weather, access and equipment; purchased fish are not rod catches.",
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false,
+      "dependencyRule": {
+        "trophyId": "mother_catch",
+        "completion": {
+          "type": "FARM",
+          "condition": {
+            "type": "COUNT",
+            "metric": "fish_caught_total",
+            "target": 100
+          }
+        },
+        "strategicDependencies": []
+      }
+    }
+  ]
+}

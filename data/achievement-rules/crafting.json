@@ -1,0 +1,325 @@
+{
+  "schemaVersion": "0.1.0",
+  "category": "crafting",
+  "nodes": [
+    {
+      "id": "breadth.unresolved.crafting",
+      "kind": "unknown",
+      "trackingRefs": [],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354"
+      ],
+      "verification": "unresolved",
+      "reason": "Parse skill/friendship unlock field 4 but also inspect shops, quests and events; machine production is separate from crafting the machine. Live content selector and normalized progress reader pending."
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.diy.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.diy.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.goal.diy",
+      "kind": "all",
+      "goal": "diy",
+      "requires": [
+        "breadth.requirement.diy"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.diy.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.diy.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.requirement.diy",
+      "kind": "all",
+      "requires": [
+        "breadth.action.diy"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.diy.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.diy.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.action.diy",
+      "kind": "action",
+      "requires": [
+        "materialized.requirement.diy"
+      ],
+      "task": {
+        "text": "Craft missing recipes."
+      },
+      "breadth": {
+        "completionLogic": "positive eligible crafting recipe counts >= 15",
+        "runtimeStatus": "materialized children; runtime reader pending; no live verification",
+        "platformRef": "data/platform-mapping.json#diy",
+        "selection": "Enumerate CraftingRecipe.craftingRecipes.Keys except Wedding Ring; missing recipe names have no positive count in player.craftingRecipes. Match runtime Craft Master target craftingRecipes.Count - 1, and report content-pack target discrepancies.",
+        "assets": [
+          "Data/CraftingRecipes",
+          "Data/Shops"
+        ],
+        "limitations": "Parse skill/friendship unlock field 4 but also inspect shops, quests and events; machine production is separate from crafting the machine.",
+        "atomicDecomposition": {
+          "status": "complete",
+          "mode": "dynamic-enumerator",
+          "source": "Data/CraftingRecipes",
+          "eligibility": "All CraftingRecipe.craftingRecipes keys except exact recipe name Wedding Ring; retain content-pack recipes so runtime target remains Count - 1.",
+          "resultId": "diy.recipe.{recipeName}",
+          "requirements": [
+            {
+              "id": "diy.each-recipe",
+              "kind": "recipe",
+              "condition": "at least 15 distinct enumerated recipes have positive crafting counts",
+              "tracking": {
+                "value": "Farmer.craftingRecipes[recipeName]",
+                "dataType": "int32",
+                "source": "Data/CraftingRecipes + Farmer.craftingRecipes",
+                "status": "source-verified"
+              },
+              "routeRefs": [
+                "breadth.acquire.recipe-unlock",
+                "breadth.acquire.item"
+              ],
+              "prerequisiteRefs": [
+                "breadth.progress.crafting-access"
+              ],
+              "verification": "derived-rule"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.artisan.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.artisan.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.goal.artisan",
+      "kind": "all",
+      "goal": "artisan",
+      "requires": [
+        "breadth.requirement.artisan"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.artisan.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.artisan.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.requirement.artisan",
+      "kind": "all",
+      "requires": [
+        "breadth.action.artisan"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.artisan.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.artisan.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.action.artisan",
+      "kind": "action",
+      "requires": [
+        "materialized.requirement.artisan"
+      ],
+      "task": {
+        "text": "Craft missing recipes."
+      },
+      "breadth": {
+        "completionLogic": "positive eligible crafting recipe counts >= 30",
+        "runtimeStatus": "materialized children; runtime reader pending; no live verification",
+        "platformRef": "data/platform-mapping.json#artisan",
+        "selection": "Enumerate CraftingRecipe.craftingRecipes.Keys except Wedding Ring; missing recipe names have no positive count in player.craftingRecipes. Match runtime Craft Master target craftingRecipes.Count - 1, and report content-pack target discrepancies.",
+        "assets": [
+          "Data/CraftingRecipes",
+          "Data/Shops"
+        ],
+        "limitations": "Parse skill/friendship unlock field 4 but also inspect shops, quests and events; machine production is separate from crafting the machine.",
+        "atomicDecomposition": {
+          "status": "complete",
+          "mode": "dynamic-enumerator",
+          "source": "Data/CraftingRecipes",
+          "eligibility": "All CraftingRecipe.craftingRecipes keys except exact recipe name Wedding Ring; retain content-pack recipes so runtime target remains Count - 1.",
+          "resultId": "artisan.recipe.{recipeName}",
+          "requirements": [
+            {
+              "id": "artisan.each-recipe",
+              "kind": "recipe",
+              "condition": "at least 30 distinct enumerated recipes have positive crafting counts",
+              "tracking": {
+                "value": "Farmer.craftingRecipes[recipeName]",
+                "dataType": "int32",
+                "source": "Data/CraftingRecipes + Farmer.craftingRecipes",
+                "status": "source-verified"
+              },
+              "routeRefs": [
+                "breadth.acquire.recipe-unlock",
+                "breadth.acquire.item"
+              ],
+              "prerequisiteRefs": [
+                "breadth.progress.crafting-access"
+              ],
+              "verification": "derived-rule"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.craft_master.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.craft_master.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.goal.craft_master",
+      "kind": "all",
+      "goal": "craft_master",
+      "requires": [
+        "breadth.requirement.craft_master"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.craft_master.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.craft_master.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.requirement.craft_master",
+      "kind": "all",
+      "requires": [
+        "breadth.action.craft_master"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.craft_master.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.craft_master.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.action.craft_master",
+      "kind": "action",
+      "requires": [
+        "materialized.requirement.craft_master"
+      ],
+      "task": {
+        "text": "Craft all required recipes excluding Wedding Ring."
+      },
+      "breadth": {
+        "completionLogic": "positive eligible crafting recipe counts >= craftingRecipes.Count - 1",
+        "runtimeStatus": "materialized children; runtime reader pending; no live verification",
+        "platformRef": "data/platform-mapping.json#craft_master",
+        "selection": "Enumerate CraftingRecipe.craftingRecipes.Keys except Wedding Ring; missing recipe names have no positive count in player.craftingRecipes. Match runtime Craft Master target craftingRecipes.Count - 1, and report content-pack target discrepancies.",
+        "assets": [
+          "Data/CraftingRecipes",
+          "Data/Shops"
+        ],
+        "limitations": "Parse skill/friendship unlock field 4 but also inspect shops, quests and events; machine production is separate from crafting the machine.",
+        "atomicDecomposition": {
+          "status": "complete",
+          "mode": "dynamic-enumerator",
+          "source": "Data/CraftingRecipes",
+          "eligibility": "All CraftingRecipe.craftingRecipes keys except exact recipe name Wedding Ring; retain content-pack recipes so runtime target remains Count - 1.",
+          "resultId": "craft_master.recipe.{recipeName}",
+          "requirements": [
+            {
+              "id": "craft_master.each-recipe",
+              "kind": "recipe",
+              "condition": "every enumerated recipe has a positive crafting count",
+              "tracking": {
+                "value": "Farmer.craftingRecipes[recipeName]",
+                "dataType": "int32",
+                "source": "Data/CraftingRecipes + Farmer.craftingRecipes",
+                "status": "source-verified"
+              },
+              "routeRefs": [
+                "breadth.acquire.recipe-unlock",
+                "breadth.acquire.item"
+              ],
+              "prerequisiteRefs": [
+                "breadth.progress.crafting-access"
+              ],
+              "verification": "derived-rule"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

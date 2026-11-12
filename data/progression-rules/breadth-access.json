@@ -1,0 +1,66 @@
+{
+  "schemaVersion": "0.1.0",
+  "category": "shared-breadth",
+  "nodes": [
+    {
+      "id": "breadth.progress.growing-access",
+      "kind": "unknown",
+      "trackingRefs": [],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354"
+      ],
+      "verification": "unresolved",
+      "reason": "Valid growing location, season and remaining watered growth days; seeds and tool capability required. General runtime adapter pending."
+    },
+    {
+      "id": "breadth.progress.cooking-access",
+      "kind": "unknown",
+      "trackingRefs": [],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354"
+      ],
+      "verification": "unresolved",
+      "reason": "Accessible kitchen or usable Cookout Kit with recipe-matched unreserved ingredients. Existing Fried Egg graph remains the concrete example. General runtime adapter pending."
+    },
+    {
+      "id": "breadth.progress.crafting-access",
+      "kind": "unknown",
+      "trackingRefs": [],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354"
+      ],
+      "verification": "unresolved",
+      "reason": "Known recipe, matching accessible unreserved materials and recipe-specific capabilities. General runtime adapter pending."
+    },
+    {
+      "id": "breadth.progress.fishing-access",
+      "kind": "unknown",
+      "trackingRefs": [],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354"
+      ],
+      "verification": "unresolved",
+      "reason": "Accessible eligible location, usable rod or crab pot, spawn conditions and bait/tool capability; no purchase substitute. General runtime adapter pending."
+    },
+    {
+      "id": "breadth.progress.construction-access",
+      "kind": "unknown",
+      "trackingRefs": [],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354"
+      ],
+      "verification": "unresolved",
+      "reason": "Observed offer, sufficient money/materials, access schedule, free construction slot and completed waiting period. General runtime adapter pending."
+    },
+    {
+      "id": "breadth.progress.location-access",
+      "kind": "unknown",
+      "trackingRefs": [],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354"
+      ],
+      "verification": "unresolved",
+      "reason": "Actual progression flags and reachable entrance; asset presence alone is insufficient. General runtime adapter pending."
+    }
+  ]
+}

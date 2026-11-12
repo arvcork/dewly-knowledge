@@ -1,0 +1,3795 @@
+{
+  "schemaVersion": "0.1.0",
+  "gameVersion": "1.6.15.24354",
+  "records": [
+    {
+      "id": "fish.o-128-0e45b3c3",
+      "qualifiedItemId": "(O)128",
+      "name": "Pufferfish",
+      "catchHistoryKey": "(O)128",
+      "difficulty": 80,
+      "movementType": "floater",
+      "minimumSize": 1,
+      "maximumSize": 36,
+      "timeWindows": [
+        1200,
+        1600
+      ],
+      "seasons": [
+        "summer"
+      ],
+      "weather": "sunny",
+      "spawnRoutes": [
+        {
+          "location": "Beach",
+          "method": "fishing-rod",
+          "chance": 1,
+          "season": "summer",
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "IslandSouth",
+          "method": "fishing-rod",
+          "chance": 1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "IslandSouthEast",
+          "method": "fishing-rod",
+          "chance": 1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "IslandSouthEastCave",
+          "method": "fishing-rod",
+          "chance": 1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "IslandWest",
+          "method": "fishing-rod",
+          "chance": 1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        }
+      ],
+      "availabilityStatus": "resolved-from-location-content",
+      "source": [
+        "Data/Objects",
+        "Data/Fish",
+        "Data/Locations"
+      ],
+      "verification": "extracted-content"
+    },
+    {
+      "id": "fish.o-129-0384badd",
+      "qualifiedItemId": "(O)129",
+      "name": "Anchovy",
+      "catchHistoryKey": "(O)129",
+      "difficulty": 30,
+      "movementType": "dart",
+      "minimumSize": 1,
+      "maximumSize": 16,
+      "timeWindows": [
+        600,
+        2600
+      ],
+      "seasons": [
+        "spring",
+        "fall"
+      ],
+      "weather": "both",
+      "spawnRoutes": [
+        {
+          "location": "Beach",
+          "method": "fishing-rod",
+          "chance": 1,
+          "condition": "LOCATION_SEASON Here spring fall",
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        }
+      ],
+      "availabilityStatus": "resolved-from-location-content",
+      "source": [
+        "Data/Objects",
+        "Data/Fish",
+        "Data/Locations"
+      ],
+      "verification": "extracted-content"
+    },
+    {
+      "id": "fish.o-130-9cce987d",
+      "qualifiedItemId": "(O)130",
+      "name": "Tuna",
+      "catchHistoryKey": "(O)130",
+      "difficulty": 70,
+      "movementType": "smooth",
+      "minimumSize": 12,
+      "maximumSize": 60,
+      "timeWindows": [
+        600,
+        1900
+      ],
+      "seasons": [
+        "summer",
+        "winter"
+      ],
+      "weather": "both",
+      "spawnRoutes": [
+        {
+          "location": "Beach",
+          "method": "fishing-rod",
+          "chance": 1,
+          "condition": "LOCATION_SEASON Here summer winter",
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "IslandSouth",
+          "method": "fishing-rod",
+          "chance": 1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "IslandSouthEast",
+          "method": "fishing-rod",
+          "chance": 1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "IslandSouthEastCave",
+          "method": "fishing-rod",
+          "chance": 1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "IslandWest",
+          "method": "fishing-rod",
+          "chance": 1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        }
+      ],
+      "availabilityStatus": "resolved-from-location-content",
+      "source": [
+        "Data/Objects",
+        "Data/Fish",
+        "Data/Locations"
+      ],
+      "verification": "extracted-content"
+    },
+    {
+      "id": "fish.o-131-7a2026f3",
+      "qualifiedItemId": "(O)131",
+      "name": "Sardine",
+      "catchHistoryKey": "(O)131",
+      "difficulty": 30,
+      "movementType": "dart",
+      "minimumSize": 1,
+      "maximumSize": 12,
+      "timeWindows": [
+        600,
+        1900
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "weather": "both",
+      "spawnRoutes": [
+        {
+          "location": "Beach",
+          "method": "fishing-rod",
+          "chance": 1,
+          "condition": "LOCATION_SEASON Here spring fall winter",
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        }
+      ],
+      "availabilityStatus": "resolved-from-location-content",
+      "source": [
+        "Data/Objects",
+        "Data/Fish",
+        "Data/Locations"
+      ],
+      "verification": "extracted-content"
+    },
+    {
+      "id": "fish.o-132-f15242ff",
+      "qualifiedItemId": "(O)132",
+      "name": "Bream",
+      "catchHistoryKey": "(O)132",
+      "difficulty": 35,
+      "movementType": "smooth",
+      "minimumSize": 12,
+      "maximumSize": 30,
+      "timeWindows": [
+        1800,
+        2600
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "weather": "both",
+      "spawnRoutes": [
+        {
+          "location": "Town",
+          "method": "fishing-rod",
+          "chance": 1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "Forest",
+          "method": "fishing-rod",
+          "chance": 1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "Temp",
+          "method": "fishing-rod",
+          "chance": 1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        }
+      ],
+      "availabilityStatus": "resolved-from-location-content",
+      "source": [
+        "Data/Objects",
+        "Data/Fish",
+        "Data/Locations"
+      ],
+      "verification": "extracted-content"
+    },
+    {
+      "id": "fish.o-136-d95c32c6",
+      "qualifiedItemId": "(O)136",
+      "name": "Largemouth Bass",
+      "catchHistoryKey": "(O)136",
+      "difficulty": 50,
+      "movementType": "mixed",
+      "minimumSize": 11,
+      "maximumSize": 30,
+      "timeWindows": [
+        600,
+        1900
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "weather": "both",
+      "spawnRoutes": [
+        {
+          "location": "Mountain",
+          "method": "fishing-rod",
+          "chance": 1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "Backwoods",
+          "method": "fishing-rod",
+          "chance": 1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        }
+      ],
+      "availabilityStatus": "resolved-from-location-content",
+      "source": [
+        "Data/Objects",
+        "Data/Fish",
+        "Data/Locations"
+      ],
+      "verification": "extracted-content"
+    },
+    {
+      "id": "fish.o-137-268f6e96",
+      "qualifiedItemId": "(O)137",
+      "name": "Smallmouth Bass",
+      "catchHistoryKey": "(O)137",
+      "difficulty": 28,
+      "movementType": "mixed",
+      "minimumSize": 12,
+      "maximumSize": 24,
+      "timeWindows": [
+        600,
+        2600
+      ],
+      "seasons": [
+        "spring",
+        "fall"
+      ],
+      "weather": "both",
+      "spawnRoutes": [
+        {
+          "location": "Town",
+          "method": "fishing-rod",
+          "chance": 1,
+          "condition": "LOCATION_SEASON Here spring fall",
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "Forest",
+          "method": "fishing-rod",
+          "chance": 1,
+          "condition": "LOCATION_SEASON Here spring fall",
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "fishingGame",
+          "method": "fishing-rod",
+          "chance": 1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "Temp",
+          "method": "fishing-rod",
+          "chance": 1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        }
+      ],
+      "availabilityStatus": "resolved-from-location-content",
+      "source": [
+        "Data/Objects",
+        "Data/Fish",
+        "Data/Locations"
+      ],
+      "verification": "extracted-content"
+    },
+    {
+      "id": "fish.o-138-b01dc06d",
+      "qualifiedItemId": "(O)138",
+      "name": "Rainbow Trout",
+      "catchHistoryKey": "(O)138",
+      "difficulty": 45,
+      "movementType": "mixed",
+      "minimumSize": 10,
+      "maximumSize": 25,
+      "timeWindows": [
+        600,
+        1900
+      ],
+      "seasons": [
+        "summer"
+      ],
+      "weather": "sunny",
+      "spawnRoutes": [
+        {
+          "location": "Town",
+          "method": "fishing-rod",
+          "chance": 1,
+          "season": "summer",
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "Mountain",
+          "method": "fishing-rod",
+          "chance": 1,
+          "season": "summer",
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "Forest",
+          "method": "fishing-rod",
+          "chance": 1,
+          "season": "summer",
+          "condition": "IS_PASSIVE_FESTIVAL_OPEN TroutDerby",
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "Forest",
+          "method": "fishing-rod",
+          "chance": 1,
+          "season": "summer",
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "Backwoods",
+          "method": "fishing-rod",
+          "chance": 1,
+          "season": "summer",
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        }
+      ],
+      "availabilityStatus": "resolved-from-location-content",
+      "source": [
+        "Data/Objects",
+        "Data/Fish",
+        "Data/Locations"
+      ],
+      "verification": "extracted-content"
+    },
+    {
+      "id": "fish.o-139-37b343c6",
+      "qualifiedItemId": "(O)139",
+      "name": "Salmon",
+      "catchHistoryKey": "(O)139",
+      "difficulty": 50,
+      "movementType": "mixed",
+      "minimumSize": 24,
+      "maximumSize": 65,
+      "timeWindows": [
+        600,
+        1900
+      ],
+      "seasons": [
+        "fall"
+      ],
+      "weather": "both",
+      "spawnRoutes": [
+        {
+          "location": "Town",
+          "method": "fishing-rod",
+          "chance": 1,
+          "season": "fall",
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "Forest",
+          "method": "fishing-rod",
+          "chance": 0.15,
+          "season": "fall",
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "canUseTrainingRod": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "Forest",
+          "method": "fishing-rod",
+          "chance": 1,
+          "season": "fall",
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "fishingGame",
+          "method": "fishing-rod",
+          "chance": 1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        }
+      ],
+      "availabilityStatus": "resolved-from-location-content",
+      "source": [
+        "Data/Objects",
+        "Data/Fish",
+        "Data/Locations"
+      ],
+      "verification": "extracted-content"
+    },
+    {
+      "id": "fish.o-140-393de289",
+      "qualifiedItemId": "(O)140",
+      "name": "Walleye",
+      "catchHistoryKey": "(O)140",
+      "difficulty": 45,
+      "movementType": "smooth",
+      "minimumSize": 10,
+      "maximumSize": 40,
+      "timeWindows": [
+        1200,
+        2600
+      ],
+      "seasons": [
+        "fall",
+        "winter"
+      ],
+      "weather": "rainy",
+      "spawnRoutes": [
+        {
+          "location": "Town",
+          "method": "fishing-rod",
+          "chance": 1,
+          "condition": "LOCATION_SEASON Here fall winter",
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "Mountain",
+          "method": "fishing-rod",
+          "chance": 1,
+          "condition": "LOCATION_SEASON Here fall winter",
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "Forest",
+          "method": "fishing-rod",
+          "chance": 1,
+          "condition": "LOCATION_SEASON Here fall winter",
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "Backwoods",
+          "method": "fishing-rod",
+          "chance": 1,
+          "condition": "LOCATION_SEASON Here fall winter",
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        }
+      ],
+      "availabilityStatus": "resolved-from-location-content",
+      "source": [
+        "Data/Objects",
+        "Data/Fish",
+        "Data/Locations"
+      ],
+      "verification": "extracted-content"
+    },
+    {
+      "id": "fish.o-141-a76e249e",
+      "qualifiedItemId": "(O)141",
+      "name": "Perch",
+      "catchHistoryKey": "(O)141",
+      "difficulty": 35,
+      "movementType": "dart",
+      "minimumSize": 10,
+      "maximumSize": 24,
+      "timeWindows": [
+        600,
+        2600
+      ],
+      "seasons": [
+        "winter"
+      ],
+      "weather": "both",
+      "spawnRoutes": [
+        {
+          "location": "Town",
+          "method": "fishing-rod",
+          "chance": 1,
+          "season": "winter",
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "Mountain",
+          "method": "fishing-rod",
+          "chance": 1,
+          "season": "winter",
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "Forest",
+          "method": "fishing-rod",
+          "chance": 1,
+          "season": "winter",
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "Backwoods",
+          "method": "fishing-rod",
+          "chance": 1,
+          "season": "winter",
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "Temp",
+          "method": "fishing-rod",
+          "chance": 1,
+          "condition": "IS_FESTIVAL_DAY, SEASON winter",
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        }
+      ],
+      "availabilityStatus": "resolved-from-location-content",
+      "source": [
+        "Data/Objects",
+        "Data/Fish",
+        "Data/Locations"
+      ],
+      "verification": "extracted-content"
+    },
+    {
+      "id": "fish.o-142-2ae6c752",
+      "qualifiedItemId": "(O)142",
+      "name": "Carp",
+      "catchHistoryKey": "(O)142",
+      "difficulty": 15,
+      "movementType": "mixed",
+      "minimumSize": 15,
+      "maximumSize": 50,
+      "timeWindows": [
+        600,
+        2600
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall"
+      ],
+      "weather": "both",
+      "spawnRoutes": [
+        {
+          "location": "Mountain",
+          "method": "fishing-rod",
+          "chance": 1,
+          "condition": "LOCATION_SEASON Here spring summer fall",
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "Sewer",
+          "method": "fishing-rod",
+          "chance": 1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "BugLand",
+          "method": "fishing-rod",
+          "chance": 1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "Woods",
+          "method": "fishing-rod",
+          "chance": 1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "Backwoods",
+          "method": "fishing-rod",
+          "chance": 1,
+          "condition": "LOCATION_SEASON Here spring summer fall",
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        }
+      ],
+      "availabilityStatus": "resolved-from-location-content",
+      "source": [
+        "Data/Objects",
+        "Data/Fish",
+        "Data/Locations"
+      ],
+      "verification": "extracted-content"
+    },
+    {
+      "id": "fish.o-143-d590db88",
+      "qualifiedItemId": "(O)143",
+      "name": "Catfish",
+      "catchHistoryKey": "(O)143",
+      "difficulty": 75,
+      "movementType": "mixed",
+      "minimumSize": 12,
+      "maximumSize": 72,
+      "timeWindows": [
+        600,
+        2400
+      ],
+      "seasons": [
+        "spring",
+        "fall",
+        "winter"
+      ],
+      "weather": "rainy",
+      "spawnRoutes": [
+        {
+          "location": "Town",
+          "method": "fishing-rod",
+          "chance": 1,
+          "condition": "LOCATION_SEASON Here spring fall winter",
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "Forest",
+          "method": "fishing-rod",
+          "chance": 1,
+          "condition": "LOCATION_SEASON Here spring fall winter",
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "Woods",
+          "method": "fishing-rod",
+          "chance": 1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "WitchSwamp",
+          "method": "fishing-rod",
+          "chance": 1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "fishingGame",
+          "method": "fishing-rod",
+          "chance": 1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        }
+      ],
+      "availabilityStatus": "resolved-from-location-content",
+      "source": [
+        "Data/Objects",
+        "Data/Fish",
+        "Data/Locations"
+      ],
+      "verification": "extracted-content"
+    },
+    {
+      "id": "fish.o-144-d6e9facc",
+      "qualifiedItemId": "(O)144",
+      "name": "Pike",
+      "catchHistoryKey": "(O)144",
+      "difficulty": 60,
+      "movementType": "dart",
+      "minimumSize": 15,
+      "maximumSize": 60,
+      "timeWindows": [
+        600,
+        2600
+      ],
+      "seasons": [
+        "summer",
+        "winter"
+      ],
+      "weather": "both",
+      "spawnRoutes": [
+        {
+          "location": "Town",
+          "method": "fishing-rod",
+          "chance": 1,
+          "condition": "LOCATION_SEASON Here summer winter",
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "Forest",
+          "method": "fishing-rod",
+          "chance": 1,
+          "condition": "LOCATION_SEASON Here summer winter",
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "Temp",
+          "method": "fishing-rod",
+          "chance": 1,
+          "condition": "IS_FESTIVAL_DAY, SEASON winter",
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        }
+      ],
+      "availabilityStatus": "resolved-from-location-content",
+      "source": [
+        "Data/Objects",
+        "Data/Fish",
+        "Data/Locations"
+      ],
+      "verification": "extracted-content"
+    },
+    {
+      "id": "fish.o-145-316190dc",
+      "qualifiedItemId": "(O)145",
+      "name": "Sunfish",
+      "catchHistoryKey": "(O)145",
+      "difficulty": 30,
+      "movementType": "mixed",
+      "minimumSize": 5,
+      "maximumSize": 15,
+      "timeWindows": [
+        600,
+        1900
+      ],
+      "seasons": [
+        "spring",
+        "summer"
+      ],
+      "weather": "sunny",
+      "spawnRoutes": [
+        {
+          "location": "Town",
+          "method": "fishing-rod",
+          "chance": 1,
+          "condition": "LOCATION_SEASON Here spring summer",
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "Forest",
+          "method": "fishing-rod",
+          "chance": 1,
+          "condition": "LOCATION_SEASON Here spring summer",
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "fishingGame",
+          "method": "fishing-rod",
+          "chance": 1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "Temp",
+          "method": "fishing-rod",
+          "chance": 1,
+          "condition": "!IS_FESTIVAL_DAY",
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        }
+      ],
+      "availabilityStatus": "resolved-from-location-content",
+      "source": [
+        "Data/Objects",
+        "Data/Fish",
+        "Data/Locations"
+      ],
+      "verification": "extracted-content"
+    },
+    {
+      "id": "fish.o-146-1d370255",
+      "qualifiedItemId": "(O)146",
+      "name": "Red Mullet",
+      "catchHistoryKey": "(O)146",
+      "difficulty": 55,
+      "movementType": "smooth",
+      "minimumSize": 8,
+      "maximumSize": 22,
+      "timeWindows": [
+        600,
+        1900
+      ],
+      "seasons": [
+        "summer",
+        "winter"
+      ],
+      "weather": "both",
+      "spawnRoutes": [
+        {
+          "location": "Beach",
+          "method": "fishing-rod",
+          "chance": 1,
+          "condition": "LOCATION_SEASON Here summer winter",
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "Temp",
+          "method": "fishing-rod",
+          "chance": 1,
+          "condition": "IS_FESTIVAL_DAY, SEASON winter, RANDOM 0.6",
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        }
+      ],
+      "availabilityStatus": "resolved-from-location-content",
+      "source": [
+        "Data/Objects",
+        "Data/Fish",
+        "Data/Locations"
+      ],
+      "verification": "extracted-content"
+    },
+    {
+      "id": "fish.o-147-414f9336",
+      "qualifiedItemId": "(O)147",
+      "name": "Herring",
+      "catchHistoryKey": "(O)147",
+      "difficulty": 25,
+      "movementType": "dart",
+      "minimumSize": 8,
+      "maximumSize": 20,
+      "timeWindows": [
+        600,
+        2600
+      ],
+      "seasons": [
+        "spring",
+        "winter"
+      ],
+      "weather": "both",
+      "spawnRoutes": [
+        {
+          "location": "Beach",
+          "method": "fishing-rod",
+          "chance": 1,
+          "condition": "LOCATION_SEASON Here spring winter",
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        }
+      ],
+      "availabilityStatus": "resolved-from-location-content",
+      "source": [
+        "Data/Objects",
+        "Data/Fish",
+        "Data/Locations"
+      ],
+      "verification": "extracted-content"
+    },
+    {
+      "id": "fish.o-148-3f064acf",
+      "qualifiedItemId": "(O)148",
+      "name": "Eel",
+      "catchHistoryKey": "(O)148",
+      "difficulty": 70,
+      "movementType": "smooth",
+      "minimumSize": 12,
+      "maximumSize": 80,
+      "timeWindows": [
+        1600,
+        2600
+      ],
+      "seasons": [
+        "spring",
+        "fall"
+      ],
+      "weather": "rainy",
+      "spawnRoutes": [
+        {
+          "location": "Beach",
+          "method": "fishing-rod",
+          "chance": 1,
+          "condition": "LOCATION_SEASON Here spring fall",
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        }
+      ],
+      "availabilityStatus": "resolved-from-location-content",
+      "source": [
+        "Data/Objects",
+        "Data/Fish",
+        "Data/Locations"
+      ],
+      "verification": "extracted-content"
+    },
+    {
+      "id": "fish.o-149-579178ec",
+      "qualifiedItemId": "(O)149",
+      "name": "Octopus",
+      "catchHistoryKey": "(O)149",
+      "difficulty": 95,
+      "movementType": "sinker",
+      "minimumSize": 12,
+      "maximumSize": 48,
+      "timeWindows": [
+        600,
+        1300
+      ],
+      "seasons": [
+        "summer"
+      ],
+      "weather": "both",
+      "spawnRoutes": [
+        {
+          "location": "Beach",
+          "method": "fishing-rod",
+          "chance": 1,
+          "season": "summer",
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "Submarine",
+          "method": "fishing-rod",
+          "chance": 0.05,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "IslandWest",
+          "method": "fishing-rod",
+          "chance": 1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        }
+      ],
+      "availabilityStatus": "resolved-from-location-content",
+      "source": [
+        "Data/Objects",
+        "Data/Fish",
+        "Data/Locations"
+      ],
+      "verification": "extracted-content"
+    },
+    {
+      "id": "fish.o-150-ce11e09e",
+      "qualifiedItemId": "(O)150",
+      "name": "Red Snapper",
+      "catchHistoryKey": "(O)150",
+      "difficulty": 40,
+      "movementType": "mixed",
+      "minimumSize": 8,
+      "maximumSize": 25,
+      "timeWindows": [
+        600,
+        1900
+      ],
+      "seasons": [
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "weather": "rainy",
+      "spawnRoutes": [
+        {
+          "location": "Beach",
+          "method": "fishing-rod",
+          "chance": 1,
+          "condition": "LOCATION_SEASON Here summer fall winter",
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        }
+      ],
+      "availabilityStatus": "resolved-from-location-content",
+      "source": [
+        "Data/Objects",
+        "Data/Fish",
+        "Data/Locations"
+      ],
+      "verification": "extracted-content"
+    },
+    {
+      "id": "fish.o-151-b6486937",
+      "qualifiedItemId": "(O)151",
+      "name": "Squid",
+      "catchHistoryKey": "(O)151",
+      "difficulty": 75,
+      "movementType": "sinker",
+      "minimumSize": 12,
+      "maximumSize": 48,
+      "timeWindows": [
+        1800,
+        2600
+      ],
+      "seasons": [
+        "winter"
+      ],
+      "weather": "both",
+      "spawnRoutes": [
+        {
+          "location": "Beach",
+          "method": "fishing-rod",
+          "chance": 1,
+          "season": "winter",
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "Beach",
+          "method": "fishing-rod",
+          "chance": 0.35,
+          "condition": "IS_PASSIVE_FESTIVAL_OPEN SquidFest, TIME 0600 1800",
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "Beach",
+          "method": "fishing-rod",
+          "chance": 0.5,
+          "condition": "IS_PASSIVE_FESTIVAL_OPEN SquidFest",
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        }
+      ],
+      "availabilityStatus": "resolved-from-location-content",
+      "source": [
+        "Data/Objects",
+        "Data/Fish",
+        "Data/Locations"
+      ],
+      "verification": "extracted-content"
+    },
+    {
+      "id": "fish.o-152-638427a6",
+      "qualifiedItemId": "(O)152",
+      "name": "Seaweed",
+      "catchHistoryKey": "(O)152",
+      "difficulty": 5,
+      "movementType": "floater",
+      "minimumSize": 5,
+      "maximumSize": 30,
+      "timeWindows": [
+        600,
+        2600
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "weather": "both",
+      "spawnRoutes": [
+        {
+          "location": "Farm_Beach",
+          "method": "fishing-rod",
+          "chance": 0.15,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "Beach",
+          "method": "fishing-rod",
+          "chance": 1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "Submarine",
+          "method": "fishing-rod",
+          "chance": 1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        }
+      ],
+      "availabilityStatus": "resolved-from-location-content",
+      "source": [
+        "Data/Objects",
+        "Data/Fish",
+        "Data/Locations"
+      ],
+      "verification": "extracted-content"
+    },
+    {
+      "id": "fish.o-153-c1a9377d",
+      "qualifiedItemId": "(O)153",
+      "name": "Green Algae",
+      "catchHistoryKey": "(O)153",
+      "difficulty": 5,
+      "movementType": "floater",
+      "minimumSize": 5,
+      "maximumSize": 30,
+      "timeWindows": [
+        600,
+        2600
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "weather": "both",
+      "spawnRoutes": [
+        {
+          "location": "Town",
+          "method": "fishing-rod",
+          "chance": 1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "Mountain",
+          "method": "fishing-rod",
+          "chance": 1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "Forest",
+          "method": "fishing-rod",
+          "chance": 1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "Sewer",
+          "method": "fishing-rod",
+          "chance": 1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "BugLand",
+          "method": "fishing-rod",
+          "chance": 1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "Desert",
+          "method": "fishing-rod",
+          "chance": 1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "WitchSwamp",
+          "method": "fishing-rod",
+          "chance": 1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "Backwoods",
+          "method": "fishing-rod",
+          "chance": 1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "UndergroundMine",
+          "method": "fishing-rod",
+          "chance": 1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "fishingGame",
+          "method": "fishing-rod",
+          "chance": 1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "Temp",
+          "method": "fishing-rod",
+          "chance": 1,
+          "condition": "!IS_FESTIVAL_DAY",
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        }
+      ],
+      "availabilityStatus": "resolved-from-location-content",
+      "source": [
+        "Data/Objects",
+        "Data/Fish",
+        "Data/Locations"
+      ],
+      "verification": "extracted-content"
+    },
+    {
+      "id": "fish.o-154-c203406d",
+      "qualifiedItemId": "(O)154",
+      "name": "Sea Cucumber",
+      "catchHistoryKey": "(O)154",
+      "difficulty": 40,
+      "movementType": "sinker",
+      "minimumSize": 3,
+      "maximumSize": 20,
+      "timeWindows": [
+        600,
+        1900
+      ],
+      "seasons": [
+        "fall",
+        "winter"
+      ],
+      "weather": "both",
+      "spawnRoutes": [
+        {
+          "location": "Beach",
+          "method": "fishing-rod",
+          "chance": 1,
+          "condition": "LOCATION_SEASON Here fall winter",
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "Submarine",
+          "method": "fishing-rod",
+          "chance": 0.1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        }
+      ],
+      "availabilityStatus": "resolved-from-location-content",
+      "source": [
+        "Data/Objects",
+        "Data/Fish",
+        "Data/Locations"
+      ],
+      "verification": "extracted-content"
+    },
+    {
+      "id": "fish.o-155-ff4af4f9",
+      "qualifiedItemId": "(O)155",
+      "name": "Super Cucumber",
+      "catchHistoryKey": "(O)155",
+      "difficulty": 80,
+      "movementType": "sinker",
+      "minimumSize": 12,
+      "maximumSize": 36,
+      "timeWindows": [
+        1800,
+        2600
+      ],
+      "seasons": [
+        "summer",
+        "winter"
+      ],
+      "weather": "both",
+      "spawnRoutes": [
+        {
+          "location": "Beach",
+          "method": "fishing-rod",
+          "chance": 1,
+          "condition": "LOCATION_SEASON Here summer fall",
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "Submarine",
+          "method": "fishing-rod",
+          "chance": 0.08,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "IslandSouth",
+          "method": "fishing-rod",
+          "chance": 1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "IslandSouthEast",
+          "method": "fishing-rod",
+          "chance": 1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "IslandSouthEastCave",
+          "method": "fishing-rod",
+          "chance": 1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "IslandWest",
+          "method": "fishing-rod",
+          "chance": 1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        }
+      ],
+      "availabilityStatus": "resolved-from-location-content",
+      "source": [
+        "Data/Objects",
+        "Data/Fish",
+        "Data/Locations"
+      ],
+      "verification": "extracted-content"
+    },
+    {
+      "id": "fish.o-156-90bc1c60",
+      "qualifiedItemId": "(O)156",
+      "name": "Ghostfish",
+      "catchHistoryKey": "(O)156",
+      "difficulty": 50,
+      "movementType": "mixed",
+      "minimumSize": 10,
+      "maximumSize": 35,
+      "timeWindows": [
+        600,
+        2600
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "weather": "both",
+      "spawnRoutes": [
+        {
+          "location": "UndergroundMine",
+          "method": "fishing-rod",
+          "chance": 1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        }
+      ],
+      "availabilityStatus": "resolved-from-location-content",
+      "source": [
+        "Data/Objects",
+        "Data/Fish",
+        "Data/Locations"
+      ],
+      "verification": "extracted-content"
+    },
+    {
+      "id": "fish.o-157-192ae3a8",
+      "qualifiedItemId": "(O)157",
+      "name": "White Algae",
+      "catchHistoryKey": "(O)157",
+      "difficulty": 5,
+      "movementType": "floater",
+      "minimumSize": 5,
+      "maximumSize": 30,
+      "timeWindows": [
+        600,
+        2600
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "weather": "both",
+      "spawnRoutes": [
+        {
+          "location": "Sewer",
+          "method": "fishing-rod",
+          "chance": 1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "BugLand",
+          "method": "fishing-rod",
+          "chance": 1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "WitchSwamp",
+          "method": "fishing-rod",
+          "chance": 1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "UndergroundMine",
+          "method": "fishing-rod",
+          "chance": 1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        }
+      ],
+      "availabilityStatus": "resolved-from-location-content",
+      "source": [
+        "Data/Objects",
+        "Data/Fish",
+        "Data/Locations"
+      ],
+      "verification": "extracted-content"
+    },
+    {
+      "id": "fish.o-158-41074b4d",
+      "qualifiedItemId": "(O)158",
+      "name": "Stonefish",
+      "catchHistoryKey": "(O)158",
+      "difficulty": 65,
+      "movementType": "sinker",
+      "minimumSize": 15,
+      "maximumSize": 15,
+      "timeWindows": [
+        600,
+        2600
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "weather": "both",
+      "spawnRoutes": [],
+      "availabilityStatus": "no-explicit-location-spawn-interpreted",
+      "source": [
+        "Data/Objects",
+        "Data/Fish",
+        "Data/Locations"
+      ],
+      "verification": "extracted-content"
+    },
+    {
+      "id": "fish.o-159-b070d833",
+      "qualifiedItemId": "(O)159",
+      "name": "Crimsonfish",
+      "catchHistoryKey": "(O)159",
+      "difficulty": 95,
+      "movementType": "mixed",
+      "minimumSize": 20,
+      "maximumSize": 20,
+      "timeWindows": [
+        600,
+        2000
+      ],
+      "seasons": [
+        "winter"
+      ],
+      "weather": "both",
+      "spawnRoutes": [
+        {
+          "location": "Beach",
+          "method": "fishing-rod",
+          "chance": 0.18,
+          "season": "summer",
+          "condition": "!PLAYER_SPECIAL_ORDER_RULE_ACTIVE Current LEGENDARY_FAMILY",
+          "minimumFishingLevel": 5,
+          "minimumDistanceFromShore": 3,
+          "requiresMagicBait": false,
+          "isBossFish": true,
+          "catchLimit": 1
+        }
+      ],
+      "availabilityStatus": "resolved-from-location-content",
+      "source": [
+        "Data/Objects",
+        "Data/Fish",
+        "Data/Locations"
+      ],
+      "verification": "extracted-content"
+    },
+    {
+      "id": "fish.o-160-efa2352d",
+      "qualifiedItemId": "(O)160",
+      "name": "Angler",
+      "catchHistoryKey": "(O)160",
+      "difficulty": 85,
+      "movementType": "smooth",
+      "minimumSize": 18,
+      "maximumSize": 18,
+      "timeWindows": [
+        600,
+        2600
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "weather": "both",
+      "spawnRoutes": [
+        {
+          "location": "Town",
+          "method": "fishing-rod",
+          "chance": 0.2,
+          "season": "fall",
+          "condition": "!PLAYER_SPECIAL_ORDER_RULE_ACTIVE Current LEGENDARY_FAMILY",
+          "minimumFishingLevel": 3,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": true,
+          "catchLimit": 1
+        }
+      ],
+      "availabilityStatus": "resolved-from-location-content",
+      "source": [
+        "Data/Objects",
+        "Data/Fish",
+        "Data/Locations"
+      ],
+      "verification": "extracted-content"
+    },
+    {
+      "id": "fish.o-161-10cfd2de",
+      "qualifiedItemId": "(O)161",
+      "name": "Ice Pip",
+      "catchHistoryKey": "(O)161",
+      "difficulty": 85,
+      "movementType": "dart",
+      "minimumSize": 8,
+      "maximumSize": 8,
+      "timeWindows": [
+        600,
+        2600
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "weather": "both",
+      "spawnRoutes": [],
+      "availabilityStatus": "no-explicit-location-spawn-interpreted",
+      "source": [
+        "Data/Objects",
+        "Data/Fish",
+        "Data/Locations"
+      ],
+      "verification": "extracted-content"
+    },
+    {
+      "id": "fish.o-162-800878a6",
+      "qualifiedItemId": "(O)162",
+      "name": "Lava Eel",
+      "catchHistoryKey": "(O)162",
+      "difficulty": 90,
+      "movementType": "mixed",
+      "minimumSize": 32,
+      "maximumSize": 32,
+      "timeWindows": [
+        600,
+        2600
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "weather": "both",
+      "spawnRoutes": [
+        {
+          "location": "Caldera",
+          "method": "fishing-rod",
+          "chance": 0.1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 1,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "Caldera",
+          "method": "fishing-rod",
+          "chance": 0.2,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 2,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "Caldera",
+          "method": "fishing-rod",
+          "chance": 0.3,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 3,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "Caldera",
+          "method": "fishing-rod",
+          "chance": 0.4,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 4,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "Caldera",
+          "method": "fishing-rod",
+          "chance": 0.5,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 5,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "Caldera",
+          "method": "fishing-rod",
+          "chance": 0.6,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 6,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "Caldera",
+          "method": "fishing-rod",
+          "chance": 0.7,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 7,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "Caldera",
+          "method": "fishing-rod",
+          "chance": 0.8,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 8,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        }
+      ],
+      "availabilityStatus": "resolved-from-location-content",
+      "source": [
+        "Data/Objects",
+        "Data/Fish",
+        "Data/Locations"
+      ],
+      "verification": "extracted-content"
+    },
+    {
+      "id": "fish.o-163-4d35dc76",
+      "qualifiedItemId": "(O)163",
+      "name": "Legend",
+      "catchHistoryKey": "(O)163",
+      "difficulty": 110,
+      "movementType": "mixed",
+      "minimumSize": 50,
+      "maximumSize": 50,
+      "timeWindows": [
+        600,
+        2000
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "weather": "rainy",
+      "spawnRoutes": [
+        {
+          "location": "Mountain",
+          "method": "fishing-rod",
+          "chance": 0.1,
+          "season": "spring",
+          "condition": "!PLAYER_SPECIAL_ORDER_RULE_ACTIVE Current LEGENDARY_FAMILY, WEATHER Here Rain Storm GreenRain",
+          "minimumFishingLevel": 10,
+          "minimumDistanceFromShore": 4,
+          "requiresMagicBait": false,
+          "isBossFish": true,
+          "catchLimit": 1
+        },
+        {
+          "location": "Backwoods",
+          "method": "fishing-rod",
+          "chance": 1,
+          "season": "spring",
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": true,
+          "catchLimit": -1
+        }
+      ],
+      "availabilityStatus": "resolved-from-location-content",
+      "source": [
+        "Data/Objects",
+        "Data/Fish",
+        "Data/Locations"
+      ],
+      "verification": "extracted-content"
+    },
+    {
+      "id": "fish.o-164-64b83b32",
+      "qualifiedItemId": "(O)164",
+      "name": "Sandfish",
+      "catchHistoryKey": "(O)164",
+      "difficulty": 65,
+      "movementType": "mixed",
+      "minimumSize": 8,
+      "maximumSize": 24,
+      "timeWindows": [
+        600,
+        2000
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "weather": "both",
+      "spawnRoutes": [
+        {
+          "location": "Desert",
+          "method": "fishing-rod",
+          "chance": 1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        }
+      ],
+      "availabilityStatus": "resolved-from-location-content",
+      "source": [
+        "Data/Objects",
+        "Data/Fish",
+        "Data/Locations"
+      ],
+      "verification": "extracted-content"
+    },
+    {
+      "id": "fish.o-165-a29cbfa1",
+      "qualifiedItemId": "(O)165",
+      "name": "Scorpion Carp",
+      "catchHistoryKey": "(O)165",
+      "difficulty": 90,
+      "movementType": "dart",
+      "minimumSize": 12,
+      "maximumSize": 32,
+      "timeWindows": [
+        600,
+        2000
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "weather": "both",
+      "spawnRoutes": [
+        {
+          "location": "Desert",
+          "method": "fishing-rod",
+          "chance": 1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        }
+      ],
+      "availabilityStatus": "resolved-from-location-content",
+      "source": [
+        "Data/Objects",
+        "Data/Fish",
+        "Data/Locations"
+      ],
+      "verification": "extracted-content"
+    },
+    {
+      "id": "fish.o-267-4733f4f9",
+      "qualifiedItemId": "(O)267",
+      "name": "Flounder",
+      "catchHistoryKey": "(O)267",
+      "difficulty": 50,
+      "movementType": "sinker",
+      "minimumSize": 4,
+      "maximumSize": 16,
+      "timeWindows": [
+        600,
+        2000
+      ],
+      "seasons": [
+        "spring",
+        "summer"
+      ],
+      "weather": "both",
+      "spawnRoutes": [
+        {
+          "location": "Beach",
+          "method": "fishing-rod",
+          "chance": 1,
+          "condition": "LOCATION_SEASON Here spring summer",
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "IslandSouth",
+          "method": "fishing-rod",
+          "chance": 1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "IslandSouthEast",
+          "method": "fishing-rod",
+          "chance": 1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "IslandSouthEastCave",
+          "method": "fishing-rod",
+          "chance": 1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "IslandWest",
+          "method": "fishing-rod",
+          "chance": 1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        }
+      ],
+      "availabilityStatus": "resolved-from-location-content",
+      "source": [
+        "Data/Objects",
+        "Data/Fish",
+        "Data/Locations"
+      ],
+      "verification": "extracted-content"
+    },
+    {
+      "id": "fish.o-269-679c01f1",
+      "qualifiedItemId": "(O)269",
+      "name": "Midnight Carp",
+      "catchHistoryKey": "(O)269",
+      "difficulty": 55,
+      "movementType": "mixed",
+      "minimumSize": 12,
+      "maximumSize": 52,
+      "timeWindows": [
+        2200,
+        2600
+      ],
+      "seasons": [
+        "fall",
+        "winter"
+      ],
+      "weather": "both",
+      "spawnRoutes": [
+        {
+          "location": "Mountain",
+          "method": "fishing-rod",
+          "chance": 1,
+          "condition": "LOCATION_SEASON Here fall winter",
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "Forest",
+          "method": "fishing-rod",
+          "chance": 1,
+          "condition": "LOCATION_SEASON Here fall winter",
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "IslandWest",
+          "method": "fishing-rod",
+          "chance": 1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "IslandNorth",
+          "method": "fishing-rod",
+          "chance": 1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "Temp",
+          "method": "fishing-rod",
+          "chance": 1,
+          "condition": "IS_FESTIVAL_DAY, SEASON winter",
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        }
+      ],
+      "availabilityStatus": "resolved-from-location-content",
+      "source": [
+        "Data/Objects",
+        "Data/Fish",
+        "Data/Locations"
+      ],
+      "verification": "extracted-content"
+    },
+    {
+      "id": "fish.o-372-d46e37b6",
+      "qualifiedItemId": "(O)372",
+      "name": "Clam",
+      "catchHistoryKey": "(O)372",
+      "method": "crab-pot",
+      "waterType": "trap",
+      "spawnRoutes": [],
+      "availabilityStatus": "no-explicit-location-spawn-interpreted",
+      "source": [
+        "Data/Objects",
+        "Data/Fish",
+        "Data/Locations"
+      ],
+      "verification": "extracted-content"
+    },
+    {
+      "id": "fish.o-682-4bc0b13a",
+      "qualifiedItemId": "(O)682",
+      "name": "Mutant Carp",
+      "catchHistoryKey": "(O)682",
+      "difficulty": 80,
+      "movementType": "dart",
+      "minimumSize": 36,
+      "maximumSize": 36,
+      "timeWindows": [
+        600,
+        2600
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "weather": "both",
+      "spawnRoutes": [
+        {
+          "location": "Sewer",
+          "method": "fishing-rod",
+          "chance": 0.1,
+          "condition": "!PLAYER_SPECIAL_ORDER_RULE_ACTIVE Current LEGENDARY_FAMILY",
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": true,
+          "catchLimit": 1
+        }
+      ],
+      "availabilityStatus": "resolved-from-location-content",
+      "source": [
+        "Data/Objects",
+        "Data/Fish",
+        "Data/Locations"
+      ],
+      "verification": "extracted-content"
+    },
+    {
+      "id": "fish.o-698-a0ae12ff",
+      "qualifiedItemId": "(O)698",
+      "name": "Sturgeon",
+      "catchHistoryKey": "(O)698",
+      "difficulty": 78,
+      "movementType": "mixed",
+      "minimumSize": 12,
+      "maximumSize": 60,
+      "timeWindows": [
+        600,
+        1900
+      ],
+      "seasons": [
+        "summer",
+        "winter"
+      ],
+      "weather": "both",
+      "spawnRoutes": [
+        {
+          "location": "Mountain",
+          "method": "fishing-rod",
+          "chance": 1,
+          "condition": "LOCATION_SEASON Here summer winter",
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "Backwoods",
+          "method": "fishing-rod",
+          "chance": 1,
+          "condition": "LOCATION_SEASON Here summer winter",
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        }
+      ],
+      "availabilityStatus": "resolved-from-location-content",
+      "source": [
+        "Data/Objects",
+        "Data/Fish",
+        "Data/Locations"
+      ],
+      "verification": "extracted-content"
+    },
+    {
+      "id": "fish.o-699-da71b256",
+      "qualifiedItemId": "(O)699",
+      "name": "Tiger Trout",
+      "catchHistoryKey": "(O)699",
+      "difficulty": 60,
+      "movementType": "dart",
+      "minimumSize": 10,
+      "maximumSize": 20,
+      "timeWindows": [
+        600,
+        1900
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "weather": "both",
+      "spawnRoutes": [
+        {
+          "location": "Town",
+          "method": "fishing-rod",
+          "chance": 1,
+          "condition": "LOCATION_SEASON Here fall winter",
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "Forest",
+          "method": "fishing-rod",
+          "chance": 1,
+          "condition": "LOCATION_SEASON Here fall winter",
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        }
+      ],
+      "availabilityStatus": "resolved-from-location-content",
+      "source": [
+        "Data/Objects",
+        "Data/Fish",
+        "Data/Locations"
+      ],
+      "verification": "extracted-content"
+    },
+    {
+      "id": "fish.o-700-48fc6fe2",
+      "qualifiedItemId": "(O)700",
+      "name": "Bullhead",
+      "catchHistoryKey": "(O)700",
+      "difficulty": 46,
+      "movementType": "smooth",
+      "minimumSize": 12,
+      "maximumSize": 30,
+      "timeWindows": [
+        600,
+        2600
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "weather": "both",
+      "spawnRoutes": [
+        {
+          "location": "Mountain",
+          "method": "fishing-rod",
+          "chance": 1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "Backwoods",
+          "method": "fishing-rod",
+          "chance": 1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        }
+      ],
+      "availabilityStatus": "resolved-from-location-content",
+      "source": [
+        "Data/Objects",
+        "Data/Fish",
+        "Data/Locations"
+      ],
+      "verification": "extracted-content"
+    },
+    {
+      "id": "fish.o-701-d25ec339",
+      "qualifiedItemId": "(O)701",
+      "name": "Tilapia",
+      "catchHistoryKey": "(O)701",
+      "difficulty": 50,
+      "movementType": "mixed",
+      "minimumSize": 11,
+      "maximumSize": 30,
+      "timeWindows": [
+        600,
+        1400
+      ],
+      "seasons": [
+        "summer",
+        "fall"
+      ],
+      "weather": "both",
+      "spawnRoutes": [
+        {
+          "location": "Beach",
+          "method": "fishing-rod",
+          "chance": 1,
+          "condition": "LOCATION_SEASON Here summer fall",
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "IslandWest",
+          "method": "fishing-rod",
+          "chance": 1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "IslandNorth",
+          "method": "fishing-rod",
+          "chance": 1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        }
+      ],
+      "availabilityStatus": "resolved-from-location-content",
+      "source": [
+        "Data/Objects",
+        "Data/Fish",
+        "Data/Locations"
+      ],
+      "verification": "extracted-content"
+    },
+    {
+      "id": "fish.o-702-fbbbcf93",
+      "qualifiedItemId": "(O)702",
+      "name": "Chub",
+      "catchHistoryKey": "(O)702",
+      "difficulty": 35,
+      "movementType": "dart",
+      "minimumSize": 12,
+      "maximumSize": 24,
+      "timeWindows": [
+        600,
+        2600
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "weather": "both",
+      "spawnRoutes": [
+        {
+          "location": "Mountain",
+          "method": "fishing-rod",
+          "chance": 1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "Forest",
+          "method": "fishing-rod",
+          "chance": 1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "Backwoods",
+          "method": "fishing-rod",
+          "chance": 1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "fishingGame",
+          "method": "fishing-rod",
+          "chance": 1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "Temp",
+          "method": "fishing-rod",
+          "chance": 1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        }
+      ],
+      "availabilityStatus": "resolved-from-location-content",
+      "source": [
+        "Data/Objects",
+        "Data/Fish",
+        "Data/Locations"
+      ],
+      "verification": "extracted-content"
+    },
+    {
+      "id": "fish.o-704-072e00d3",
+      "qualifiedItemId": "(O)704",
+      "name": "Dorado",
+      "catchHistoryKey": "(O)704",
+      "difficulty": 78,
+      "movementType": "mixed",
+      "minimumSize": 24,
+      "maximumSize": 32,
+      "timeWindows": [
+        600,
+        1900
+      ],
+      "seasons": [
+        "summer"
+      ],
+      "weather": "both",
+      "spawnRoutes": [
+        {
+          "location": "Forest",
+          "method": "fishing-rod",
+          "chance": 1,
+          "season": "summer",
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        }
+      ],
+      "availabilityStatus": "resolved-from-location-content",
+      "source": [
+        "Data/Objects",
+        "Data/Fish",
+        "Data/Locations"
+      ],
+      "verification": "extracted-content"
+    },
+    {
+      "id": "fish.o-705-d76d977a",
+      "qualifiedItemId": "(O)705",
+      "name": "Albacore",
+      "catchHistoryKey": "(O)705",
+      "difficulty": 60,
+      "movementType": "mixed",
+      "minimumSize": 20,
+      "maximumSize": 40,
+      "timeWindows": [
+        600,
+        1100,
+        1800,
+        2600
+      ],
+      "seasons": [
+        "fall",
+        "winter"
+      ],
+      "weather": "both",
+      "spawnRoutes": [
+        {
+          "location": "Beach",
+          "method": "fishing-rod",
+          "chance": 1,
+          "condition": "LOCATION_SEASON Here fall winter",
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        }
+      ],
+      "availabilityStatus": "resolved-from-location-content",
+      "source": [
+        "Data/Objects",
+        "Data/Fish",
+        "Data/Locations"
+      ],
+      "verification": "extracted-content"
+    },
+    {
+      "id": "fish.o-706-7bc3ac1b",
+      "qualifiedItemId": "(O)706",
+      "name": "Shad",
+      "catchHistoryKey": "(O)706",
+      "difficulty": 45,
+      "movementType": "smooth",
+      "minimumSize": 20,
+      "maximumSize": 48,
+      "timeWindows": [
+        900,
+        2600
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall"
+      ],
+      "weather": "rainy",
+      "spawnRoutes": [
+        {
+          "location": "Town",
+          "method": "fishing-rod",
+          "chance": 1,
+          "condition": "LOCATION_SEASON Here spring summer fall",
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "Forest",
+          "method": "fishing-rod",
+          "chance": 1,
+          "condition": "LOCATION_SEASON Here spring summer fall",
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "fishingGame",
+          "method": "fishing-rod",
+          "chance": 1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "Temp",
+          "method": "fishing-rod",
+          "chance": 1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        }
+      ],
+      "availabilityStatus": "resolved-from-location-content",
+      "source": [
+        "Data/Objects",
+        "Data/Fish",
+        "Data/Locations"
+      ],
+      "verification": "extracted-content"
+    },
+    {
+      "id": "fish.o-707-4ec4b4ea",
+      "qualifiedItemId": "(O)707",
+      "name": "Lingcod",
+      "catchHistoryKey": "(O)707",
+      "difficulty": 85,
+      "movementType": "mixed",
+      "minimumSize": 30,
+      "maximumSize": 50,
+      "timeWindows": [
+        600,
+        2600
+      ],
+      "seasons": [
+        "winter"
+      ],
+      "weather": "both",
+      "spawnRoutes": [
+        {
+          "location": "Town",
+          "method": "fishing-rod",
+          "chance": 1,
+          "season": "winter",
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "Mountain",
+          "method": "fishing-rod",
+          "chance": 1,
+          "season": "winter",
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "Forest",
+          "method": "fishing-rod",
+          "chance": 1,
+          "season": "winter",
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "Backwoods",
+          "method": "fishing-rod",
+          "chance": 1,
+          "season": "winter",
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "Temp",
+          "method": "fishing-rod",
+          "chance": 1,
+          "condition": "IS_FESTIVAL_DAY, SEASON winter, YEAR 2, RANDOM 0.4",
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        }
+      ],
+      "availabilityStatus": "resolved-from-location-content",
+      "source": [
+        "Data/Objects",
+        "Data/Fish",
+        "Data/Locations"
+      ],
+      "verification": "extracted-content"
+    },
+    {
+      "id": "fish.o-708-872e1ea2",
+      "qualifiedItemId": "(O)708",
+      "name": "Halibut",
+      "catchHistoryKey": "(O)708",
+      "difficulty": 50,
+      "movementType": "sinker",
+      "minimumSize": 10,
+      "maximumSize": 33,
+      "timeWindows": [
+        600,
+        1100,
+        1900,
+        2600
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "winter"
+      ],
+      "weather": "both",
+      "spawnRoutes": [
+        {
+          "location": "Beach",
+          "method": "fishing-rod",
+          "chance": 1,
+          "condition": "LOCATION_SEASON Here spring summer winter",
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        }
+      ],
+      "availabilityStatus": "resolved-from-location-content",
+      "source": [
+        "Data/Objects",
+        "Data/Fish",
+        "Data/Locations"
+      ],
+      "verification": "extracted-content"
+    },
+    {
+      "id": "fish.o-715-25c87988",
+      "qualifiedItemId": "(O)715",
+      "name": "Lobster",
+      "catchHistoryKey": "(O)715",
+      "method": "crab-pot",
+      "waterType": "trap",
+      "spawnRoutes": [],
+      "availabilityStatus": "no-explicit-location-spawn-interpreted",
+      "source": [
+        "Data/Objects",
+        "Data/Fish",
+        "Data/Locations"
+      ],
+      "verification": "extracted-content"
+    },
+    {
+      "id": "fish.o-716-cfea5ad2",
+      "qualifiedItemId": "(O)716",
+      "name": "Crayfish",
+      "catchHistoryKey": "(O)716",
+      "method": "crab-pot",
+      "waterType": "trap",
+      "spawnRoutes": [],
+      "availabilityStatus": "no-explicit-location-spawn-interpreted",
+      "source": [
+        "Data/Objects",
+        "Data/Fish",
+        "Data/Locations"
+      ],
+      "verification": "extracted-content"
+    },
+    {
+      "id": "fish.o-717-4f18f6b2",
+      "qualifiedItemId": "(O)717",
+      "name": "Crab",
+      "catchHistoryKey": "(O)717",
+      "method": "crab-pot",
+      "waterType": "trap",
+      "spawnRoutes": [],
+      "availabilityStatus": "no-explicit-location-spawn-interpreted",
+      "source": [
+        "Data/Objects",
+        "Data/Fish",
+        "Data/Locations"
+      ],
+      "verification": "extracted-content"
+    },
+    {
+      "id": "fish.o-718-b8897b7d",
+      "qualifiedItemId": "(O)718",
+      "name": "Cockle",
+      "catchHistoryKey": "(O)718",
+      "method": "crab-pot",
+      "waterType": "trap",
+      "spawnRoutes": [
+        {
+          "location": "Farm_Beach",
+          "method": "fishing-rod",
+          "chance": 0.06,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        }
+      ],
+      "availabilityStatus": "resolved-from-location-content",
+      "source": [
+        "Data/Objects",
+        "Data/Fish",
+        "Data/Locations"
+      ],
+      "verification": "extracted-content"
+    },
+    {
+      "id": "fish.o-719-2fbdca5a",
+      "qualifiedItemId": "(O)719",
+      "name": "Mussel",
+      "catchHistoryKey": "(O)719",
+      "method": "crab-pot",
+      "waterType": "trap",
+      "spawnRoutes": [
+        {
+          "location": "Farm_Beach",
+          "method": "fishing-rod",
+          "chance": 0.06,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        }
+      ],
+      "availabilityStatus": "resolved-from-location-content",
+      "source": [
+        "Data/Objects",
+        "Data/Fish",
+        "Data/Locations"
+      ],
+      "verification": "extracted-content"
+    },
+    {
+      "id": "fish.o-720-da549854",
+      "qualifiedItemId": "(O)720",
+      "name": "Shrimp",
+      "catchHistoryKey": "(O)720",
+      "method": "crab-pot",
+      "waterType": "trap",
+      "spawnRoutes": [],
+      "availabilityStatus": "no-explicit-location-spawn-interpreted",
+      "source": [
+        "Data/Objects",
+        "Data/Fish",
+        "Data/Locations"
+      ],
+      "verification": "extracted-content"
+    },
+    {
+      "id": "fish.o-721-cac8294e",
+      "qualifiedItemId": "(O)721",
+      "name": "Snail",
+      "catchHistoryKey": "(O)721",
+      "method": "crab-pot",
+      "waterType": "trap",
+      "spawnRoutes": [],
+      "availabilityStatus": "no-explicit-location-spawn-interpreted",
+      "source": [
+        "Data/Objects",
+        "Data/Fish",
+        "Data/Locations"
+      ],
+      "verification": "extracted-content"
+    },
+    {
+      "id": "fish.o-722-830fd49a",
+      "qualifiedItemId": "(O)722",
+      "name": "Periwinkle",
+      "catchHistoryKey": "(O)722",
+      "method": "crab-pot",
+      "waterType": "trap",
+      "spawnRoutes": [],
+      "availabilityStatus": "no-explicit-location-spawn-interpreted",
+      "source": [
+        "Data/Objects",
+        "Data/Fish",
+        "Data/Locations"
+      ],
+      "verification": "extracted-content"
+    },
+    {
+      "id": "fish.o-723-63cdb39a",
+      "qualifiedItemId": "(O)723",
+      "name": "Oyster",
+      "catchHistoryKey": "(O)723",
+      "method": "crab-pot",
+      "waterType": "trap",
+      "spawnRoutes": [
+        {
+          "location": "Farm_Beach",
+          "method": "fishing-rod",
+          "chance": 0.06,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        }
+      ],
+      "availabilityStatus": "resolved-from-location-content",
+      "source": [
+        "Data/Objects",
+        "Data/Fish",
+        "Data/Locations"
+      ],
+      "verification": "extracted-content"
+    },
+    {
+      "id": "fish.o-734-8f581253",
+      "qualifiedItemId": "(O)734",
+      "name": "Woodskip",
+      "catchHistoryKey": "(O)734",
+      "difficulty": 50,
+      "movementType": "mixed",
+      "minimumSize": 11,
+      "maximumSize": 30,
+      "timeWindows": [
+        600,
+        2600
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "weather": "both",
+      "spawnRoutes": [
+        {
+          "location": "Farm_Forest",
+          "method": "fishing-rod",
+          "chance": 0.05,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "Woods",
+          "method": "fishing-rod",
+          "chance": 1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        }
+      ],
+      "availabilityStatus": "resolved-from-location-content",
+      "source": [
+        "Data/Objects",
+        "Data/Fish",
+        "Data/Locations"
+      ],
+      "verification": "extracted-content"
+    },
+    {
+      "id": "fish.o-775-83cadf4e",
+      "qualifiedItemId": "(O)775",
+      "name": "Glacierfish",
+      "catchHistoryKey": "(O)775",
+      "difficulty": 100,
+      "movementType": "mixed",
+      "minimumSize": 27,
+      "maximumSize": 27,
+      "timeWindows": [
+        600,
+        2000
+      ],
+      "seasons": [
+        "winter"
+      ],
+      "weather": "sunny",
+      "spawnRoutes": [
+        {
+          "location": "Forest",
+          "method": "fishing-rod",
+          "chance": 0.5,
+          "season": "winter",
+          "condition": "!PLAYER_SPECIAL_ORDER_RULE_ACTIVE Current LEGENDARY_FAMILY",
+          "minimumFishingLevel": 6,
+          "minimumDistanceFromShore": 3,
+          "requiresMagicBait": false,
+          "isBossFish": true,
+          "catchLimit": 1
+        }
+      ],
+      "availabilityStatus": "resolved-from-location-content",
+      "source": [
+        "Data/Objects",
+        "Data/Fish",
+        "Data/Locations"
+      ],
+      "verification": "extracted-content"
+    },
+    {
+      "id": "fish.o-795-09b6d768",
+      "qualifiedItemId": "(O)795",
+      "name": "Void Salmon",
+      "catchHistoryKey": "(O)795",
+      "difficulty": 80,
+      "movementType": "mixed",
+      "minimumSize": 24,
+      "maximumSize": 65,
+      "timeWindows": [
+        600,
+        2600
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "weather": "both",
+      "spawnRoutes": [
+        {
+          "location": "WitchSwamp",
+          "method": "fishing-rod",
+          "chance": 1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        }
+      ],
+      "availabilityStatus": "resolved-from-location-content",
+      "source": [
+        "Data/Objects",
+        "Data/Fish",
+        "Data/Locations"
+      ],
+      "verification": "extracted-content"
+    },
+    {
+      "id": "fish.o-796-6815d971",
+      "qualifiedItemId": "(O)796",
+      "name": "Slimejack",
+      "catchHistoryKey": "(O)796",
+      "difficulty": 55,
+      "movementType": "dart",
+      "minimumSize": 8,
+      "maximumSize": 25,
+      "timeWindows": [
+        600,
+        2600
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "weather": "both",
+      "spawnRoutes": [
+        {
+          "location": "BugLand",
+          "method": "fishing-rod",
+          "chance": 1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        }
+      ],
+      "availabilityStatus": "resolved-from-location-content",
+      "source": [
+        "Data/Objects",
+        "Data/Fish",
+        "Data/Locations"
+      ],
+      "verification": "extracted-content"
+    },
+    {
+      "id": "fish.o-798-f6f25add",
+      "qualifiedItemId": "(O)798",
+      "name": "Midnight Squid",
+      "catchHistoryKey": "(O)798",
+      "difficulty": 55,
+      "movementType": "sinker",
+      "minimumSize": 8,
+      "maximumSize": 25,
+      "timeWindows": [
+        600,
+        2600
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "weather": "both",
+      "spawnRoutes": [
+        {
+          "location": "Beach",
+          "method": "fishing-rod",
+          "chance": 0.1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 3,
+          "requiresMagicBait": true,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "Submarine",
+          "method": "fishing-rod",
+          "chance": 0.28,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        }
+      ],
+      "availabilityStatus": "resolved-from-location-content",
+      "source": [
+        "Data/Objects",
+        "Data/Fish",
+        "Data/Locations"
+      ],
+      "verification": "extracted-content"
+    },
+    {
+      "id": "fish.o-799-11f2ee90",
+      "qualifiedItemId": "(O)799",
+      "name": "Spook Fish",
+      "catchHistoryKey": "(O)799",
+      "difficulty": 60,
+      "movementType": "dart",
+      "minimumSize": 8,
+      "maximumSize": 25,
+      "timeWindows": [
+        600,
+        2600
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "weather": "both",
+      "spawnRoutes": [
+        {
+          "location": "Beach",
+          "method": "fishing-rod",
+          "chance": 0.1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 3,
+          "requiresMagicBait": true,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "Submarine",
+          "method": "fishing-rod",
+          "chance": 0.18,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        }
+      ],
+      "availabilityStatus": "resolved-from-location-content",
+      "source": [
+        "Data/Objects",
+        "Data/Fish",
+        "Data/Locations"
+      ],
+      "verification": "extracted-content"
+    },
+    {
+      "id": "fish.o-800-531f9452",
+      "qualifiedItemId": "(O)800",
+      "name": "Blobfish",
+      "catchHistoryKey": "(O)800",
+      "difficulty": 75,
+      "movementType": "floater",
+      "minimumSize": 8,
+      "maximumSize": 25,
+      "timeWindows": [
+        600,
+        2600
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "weather": "both",
+      "spawnRoutes": [
+        {
+          "location": "Beach",
+          "method": "fishing-rod",
+          "chance": 0.1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 3,
+          "requiresMagicBait": true,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "Submarine",
+          "method": "fishing-rod",
+          "chance": 0.1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        }
+      ],
+      "availabilityStatus": "resolved-from-location-content",
+      "source": [
+        "Data/Objects",
+        "Data/Fish",
+        "Data/Locations"
+      ],
+      "verification": "extracted-content"
+    },
+    {
+      "id": "fish.o-836-197b31f9",
+      "qualifiedItemId": "(O)836",
+      "name": "Stingray",
+      "catchHistoryKey": "(O)836",
+      "difficulty": 80,
+      "movementType": "sinker",
+      "minimumSize": 18,
+      "maximumSize": 60,
+      "timeWindows": [
+        600,
+        2600
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "weather": "both",
+      "spawnRoutes": [
+        {
+          "location": "IslandSouthEastCave",
+          "method": "fishing-rod",
+          "chance": 1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        }
+      ],
+      "availabilityStatus": "resolved-from-location-content",
+      "source": [
+        "Data/Objects",
+        "Data/Fish",
+        "Data/Locations"
+      ],
+      "verification": "extracted-content"
+    },
+    {
+      "id": "fish.o-837-748515be",
+      "qualifiedItemId": "(O)837",
+      "name": "Lionfish",
+      "catchHistoryKey": "(O)837",
+      "difficulty": 50,
+      "movementType": "smooth",
+      "minimumSize": 3,
+      "maximumSize": 12,
+      "timeWindows": [
+        600,
+        2600
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "weather": "both",
+      "spawnRoutes": [
+        {
+          "location": "IslandSouth",
+          "method": "fishing-rod",
+          "chance": 1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "IslandSouthEast",
+          "method": "fishing-rod",
+          "chance": 1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "IslandWest",
+          "method": "fishing-rod",
+          "chance": 1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        }
+      ],
+      "availabilityStatus": "resolved-from-location-content",
+      "source": [
+        "Data/Objects",
+        "Data/Fish",
+        "Data/Locations"
+      ],
+      "verification": "extracted-content"
+    },
+    {
+      "id": "fish.o-838-d9de378d",
+      "qualifiedItemId": "(O)838",
+      "name": "Blue Discus",
+      "catchHistoryKey": "(O)838",
+      "difficulty": 60,
+      "movementType": "dart",
+      "minimumSize": 2,
+      "maximumSize": 9,
+      "timeWindows": [
+        600,
+        2600
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall",
+        "winter"
+      ],
+      "weather": "both",
+      "spawnRoutes": [
+        {
+          "location": "IslandWest",
+          "method": "fishing-rod",
+          "chance": 1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "IslandNorth",
+          "method": "fishing-rod",
+          "chance": 1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        }
+      ],
+      "availabilityStatus": "resolved-from-location-content",
+      "source": [
+        "Data/Objects",
+        "Data/Fish",
+        "Data/Locations"
+      ],
+      "verification": "extracted-content"
+    },
+    {
+      "id": "fish.o-cavejelly-416a9184",
+      "qualifiedItemId": "(O)CaveJelly",
+      "name": "Cave Jelly",
+      "catchHistoryKey": "(O)CaveJelly",
+      "spawnRoutes": [
+        {
+          "location": "UndergroundMine",
+          "method": "fishing-rod",
+          "chance": 0.1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        }
+      ],
+      "availabilityStatus": "resolved-from-location-content",
+      "source": [
+        "Data/Objects",
+        "Data/Fish",
+        "Data/Locations"
+      ],
+      "verification": "extracted-content"
+    },
+    {
+      "id": "fish.o-goby-8a0e3b85",
+      "qualifiedItemId": "(O)Goby",
+      "name": "Goby",
+      "catchHistoryKey": "(O)Goby",
+      "difficulty": 55,
+      "movementType": "dart",
+      "minimumSize": 3,
+      "maximumSize": 12,
+      "timeWindows": [
+        800,
+        1800
+      ],
+      "seasons": [
+        "spring",
+        "summer",
+        "fall"
+      ],
+      "weather": "both",
+      "spawnRoutes": [
+        {
+          "location": "Forest",
+          "method": "fishing-rod",
+          "chance": 0.15,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "canUseTrainingRod": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        }
+      ],
+      "availabilityStatus": "resolved-from-location-content",
+      "source": [
+        "Data/Objects",
+        "Data/Fish",
+        "Data/Locations"
+      ],
+      "verification": "extracted-content"
+    },
+    {
+      "id": "fish.o-riverjelly-e2cd9f7a",
+      "qualifiedItemId": "(O)RiverJelly",
+      "name": "River Jelly",
+      "catchHistoryKey": "(O)RiverJelly",
+      "spawnRoutes": [
+        {
+          "location": "Town",
+          "method": "fishing-rod",
+          "chance": 0.1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "Mountain",
+          "method": "fishing-rod",
+          "chance": 0.1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "Forest",
+          "method": "fishing-rod",
+          "chance": 0.1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "Desert",
+          "method": "fishing-rod",
+          "chance": 0.1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "Woods",
+          "method": "fishing-rod",
+          "chance": 0.1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "IslandWest",
+          "method": "fishing-rod",
+          "chance": 0.1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "IslandNorth",
+          "method": "fishing-rod",
+          "chance": 0.1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        }
+      ],
+      "availabilityStatus": "resolved-from-location-content",
+      "source": [
+        "Data/Objects",
+        "Data/Fish",
+        "Data/Locations"
+      ],
+      "verification": "extracted-content"
+    },
+    {
+      "id": "fish.o-seajelly-3a74153d",
+      "qualifiedItemId": "(O)SeaJelly",
+      "name": "Sea Jelly",
+      "catchHistoryKey": "(O)SeaJelly",
+      "spawnRoutes": [
+        {
+          "location": "Beach",
+          "method": "fishing-rod",
+          "chance": 0.1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "Submarine",
+          "method": "fishing-rod",
+          "chance": 0.1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "IslandSouth",
+          "method": "fishing-rod",
+          "chance": 0.1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "IslandSouthEast",
+          "method": "fishing-rod",
+          "chance": 0.1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "IslandSouthEastCave",
+          "method": "fishing-rod",
+          "chance": 0.1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        },
+        {
+          "location": "IslandWest",
+          "method": "fishing-rod",
+          "chance": 0.1,
+          "minimumFishingLevel": 0,
+          "minimumDistanceFromShore": 0,
+          "requiresMagicBait": false,
+          "isBossFish": false,
+          "catchLimit": -1
+        }
+      ],
+      "availabilityStatus": "resolved-from-location-content",
+      "source": [
+        "Data/Objects",
+        "Data/Fish",
+        "Data/Locations"
+      ],
+      "verification": "extracted-content"
+    }
+  ]
+}

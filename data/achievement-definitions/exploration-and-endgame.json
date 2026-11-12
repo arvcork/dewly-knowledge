@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "0.1.0",
+  "category": "exploration-and-endgame",
+  "provenance": "Supplied source assertions, not newly verified gameplay rules.",
+  "entries": [
+    {
+      "id": "a_distant_shore",
+      "name": "A Distant Shore",
+      "sourceRequirement": "Reach Ginger Island.",
+      "sourceDefinitionRef": "data/sources/original/trophy-50-coverage.json#/trophies/46",
+      "sourceDependencyRef": "data/sources/original/trophy-dependency-graph.json#/graph/a_distant_shore",
+      "verification": "source-import-only"
+    },
+    {
+      "id": "perfection",
+      "name": "Perfection",
+      "sourceRequirement": "Reach the summit.",
+      "sourceDefinitionRef": "data/sources/original/trophy-50-coverage.json#/trophies/49",
+      "sourceDependencyRef": "data/sources/original/trophy-dependency-graph.json#/graph/perfection",
+      "verification": "source-import-only"
+    }
+  ]
+}

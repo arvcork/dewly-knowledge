@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "0.1.0",
+  "category": "cooking",
+  "provenance": "Supplied source assertions, not newly verified gameplay rules.",
+  "entries": [
+    {
+      "id": "cook",
+      "name": "Cook",
+      "sourceRequirement": "Cook 10 different recipes.",
+      "sourceDefinitionRef": "data/sources/original/trophy-50-coverage.json#/trophies/13",
+      "sourceDependencyRef": "data/sources/original/trophy-dependency-graph.json#/graph/cook",
+      "verification": "source-import-only"
+    },
+    {
+      "id": "sous_chef",
+      "name": "Sous Chef",
+      "sourceRequirement": "Cook 25 different recipes.",
+      "sourceDefinitionRef": "data/sources/original/trophy-50-coverage.json#/trophies/14",
+      "sourceDependencyRef": "data/sources/original/trophy-dependency-graph.json#/graph/sous_chef",
+      "verification": "source-import-only"
+    },
+    {
+      "id": "gourmet_chef",
+      "name": "Gourmet Chef",
+      "sourceRequirement": "Cook every required recipe.",
+      "sourceDefinitionRef": "data/sources/original/trophy-50-coverage.json#/trophies/15",
+      "sourceDependencyRef": "data/sources/original/trophy-dependency-graph.json#/graph/gourmet_chef",
+      "verification": "source-import-only"
+    }
+  ]
+}

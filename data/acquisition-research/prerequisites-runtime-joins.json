@@ -1,0 +1,20 @@
+{
+  "schemaVersion": "1.0.0",
+  "gameVersion": "1.6.15.24354",
+  "nodes": [
+    {
+      "id": "acq.prereq.bc-154-crafting",
+      "kind": "prerequisite-contract",
+      "description": "Known recipe and accessible unreserved crafting ingredients for Worm Bin; current content must confirm (BC) output.",
+      "trackingStatus": "contract-only; runtime binding unknown",
+      "unknownPolicy": "do not issue craft task without observed recipe unlock, ingredients and active item identity"
+    },
+    {
+      "id": "acq.prereq.bc-13-crafting",
+      "kind": "prerequisite-contract",
+      "description": "Known recipe and accessible unreserved crafting ingredients for Furnace; current content must confirm (BC) output.",
+      "trackingStatus": "contract-only; runtime binding unknown",
+      "unknownPolicy": "do not issue craft task without observed recipe unlock, ingredients and active item identity"
+    }
+  ]
+}

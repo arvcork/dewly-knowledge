@@ -1,0 +1,117 @@
+{
+  "category": "farmhouse",
+  "displayName": "Farmhouse improvements",
+  "description": "Farmhouse upgrade milestones.",
+  "catalogueVersion": "ps4-npwr12196-2026-11-08",
+  "rulesVersion": "ps4-1.6-cautious-2026-11-08-r2",
+  "trophyCount": 2,
+  "trophies": [
+    {
+      "trophyId": "moving_up",
+      "name": "Moving Up",
+      "group": "base",
+      "tier": "bronze",
+      "classification": "Trackable but limited planning",
+      "requirement": "Upgrade the farmhouse.",
+      "requirementKind": "threshold",
+      "requirementDetail": {
+        "kind": "threshold",
+        "metric": "house_upgrades",
+        "target": 1,
+        "unit": "upgrades"
+      },
+      "dependencies": [],
+      "evidenceRequired": "Canonical trophy evidence number: house_upgrades; player-confirmed total or verifiable authorized activity",
+      "progressDerivation": "metricValue(house_upgrades); unknown remains unknown; no wallet/lifetime proxy",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "house_upgrade",
+          "title": "Save verified building materials and gold for a farmhouse upgrade",
+          "effort": "medium"
+        }
+      ],
+      "knownBlockers": [
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false,
+      "dependencyRule": {
+        "trophyId": "moving_up",
+        "completion": {
+          "type": "FARM",
+          "condition": {
+            "type": "COUNT",
+            "metric": "house_upgrades",
+            "target": 1
+          }
+        },
+        "strategicDependencies": []
+      }
+    },
+    {
+      "trophyId": "living_large",
+      "name": "Living Large",
+      "group": "base",
+      "tier": "bronze",
+      "classification": "Trackable but limited planning",
+      "requirement": "Upgrade the house to maximum size.",
+      "requirementKind": "binary",
+      "requirementDetail": {
+        "kind": "binary",
+        "flag": "house_maxed"
+      },
+      "dependencies": [
+        "moving_up"
+      ],
+      "evidenceRequired": "Trophy evidence boolean: house_maxed; player confirmation of the exact outcome",
+      "progressDerivation": "evaluateCollectionEvidence or explicit flag (house_maxed); partial count only when eligible IDs are recognized",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "house_upgrade",
+          "title": "Complete the required farmhouse upgrades with verified materials",
+          "effort": "medium"
+        }
+      ],
+      "knownBlockers": [
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false,
+      "dependencyRule": {
+        "trophyId": "living_large",
+        "completion": {
+          "type": "FARM",
+          "condition": {
+            "type": "FACT",
+            "flag": "house_maxed"
+          }
+        },
+        "strategicDependencies": [
+          "moving_up"
+        ]
+      }
+    }
+  ]
+}

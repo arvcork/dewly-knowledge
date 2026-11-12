@@ -1,0 +1,43 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "policy.runtime-checklist-portable",
+  "version": "1.6.15.24354",
+  "engine": "scripts/planner.py reused via scripts/runtime_checklist.py",
+  "ruleDefinitions": [
+    "data/daily-tasks/generators.json",
+    "data/achievement-rules/materialized-content.json",
+    "data/tracking/materialized.json"
+  ],
+  "inputContract": "tests/fixtures/checklist-snapshot-day1.json",
+  "evaluation": {
+    "cache": "one loaded graph and per-family results per pipeline instance; callers provide immutable snapshots",
+    "eventInvalidation": "only dependent families recomputed",
+    "fallback": "30 in-game minutes since last full or fallback reconciliation; no constant polling in this package",
+    "gameThread": "live SMAPI reader must capture world/actor state on required game thread; no worker game reads",
+    "ui": "consume returned immutable tasks; never reevaluate display"
+  },
+  "taskIdentity": {
+    "daily": "hash family/location/crop/method, plus day in snapshot identity",
+    "achievement": "hash action type and qualified item ID or recipe record ID across all selected achievement roots",
+    "alternatives": "route references and candidate locations are ordered choices, not separate tasks"
+  },
+  "completion": [
+    "crops: selected tiles no longer ready/dry after freshly observed changes (do not call these historically completed without evidence)",
+    "fish: observed caught-history meets target",
+    "shipping: processed shipping history, not pending bin",
+    "cooking: observed recipe completion history; unlock alone insufficient"
+  ],
+  "unknowns": [
+    "missing active membership",
+    "unknown hydration or pending irrigation",
+    "missing current fish spawn or access predicate",
+    "unobserved shipping and cooking history",
+    "unobserved unreserved stock or recipe ingredient allocations"
+  ],
+  "limitations": [
+    "Current game content not available; synthetic fixtures do not validate C# readers",
+    "no scheduling or profit optimiser",
+    "no UI or SQLite",
+    "partial caller-supplied snapshots must not be mistaken for complete world scans"
+  ]
+}

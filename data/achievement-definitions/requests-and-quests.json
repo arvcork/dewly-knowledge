@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "0.1.0",
+  "category": "requests-and-quests",
+  "provenance": "Supplied source assertions, not newly verified gameplay rules.",
+  "entries": [
+    {
+      "id": "gofer",
+      "name": "Gofer",
+      "sourceRequirement": "Complete 10 Help Wanted requests.",
+      "sourceDefinitionRef": "data/sources/original/trophy-50-coverage.json#/trophies/26",
+      "sourceDependencyRef": "data/sources/original/trophy-dependency-graph.json#/graph/gofer",
+      "verification": "source-import-only"
+    },
+    {
+      "id": "a_big_help",
+      "name": "A Big Help",
+      "sourceRequirement": "Complete 40 Help Wanted requests.",
+      "sourceDefinitionRef": "data/sources/original/trophy-50-coverage.json#/trophies/27",
+      "sourceDependencyRef": "data/sources/original/trophy-dependency-graph.json#/graph/a_big_help",
+      "verification": "source-import-only"
+    },
+    {
+      "id": "good_neighbors",
+      "name": "Good Neighbors",
+      "sourceRequirement": "Help your forest neighbors grow their family.",
+      "sourceDefinitionRef": "data/sources/original/trophy-50-coverage.json#/trophies/45",
+      "sourceDependencyRef": "data/sources/original/trophy-dependency-graph.json#/graph/good_neighbors",
+      "verification": "source-import-only"
+    }
+  ]
+}

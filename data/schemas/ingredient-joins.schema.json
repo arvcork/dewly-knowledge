@@ -1,0 +1,100 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "gameVersion",
+    "records"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0.0"
+    },
+    "gameVersion": {
+      "type": "string"
+    },
+    "records": {
+      "type": "array",
+      "minItems": 24,
+      "maxItems": 24,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "recipeRecordId",
+          "ingredientIndex",
+          "categoryId",
+          "quantity",
+          "candidates",
+          "currentLoadedContentRequired",
+          "membershipPolicy",
+          "evidenceIds"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^ingredient\\.join\\."
+          },
+          "recipeRecordId": {
+            "type": "string"
+          },
+          "ingredientIndex": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "categoryId": {
+            "enum": [
+              -4,
+              -5,
+              -6,
+              -777
+            ]
+          },
+          "quantity": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "candidates": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "qualifiedItemId",
+                "sources",
+                "activeMembership",
+                "acquisitionFeasibility"
+              ],
+              "properties": {
+                "qualifiedItemId": {
+                  "type": "string",
+                  "pattern": "^\\(O\\)"
+                },
+                "sources": {
+                  "type": "array"
+                },
+                "activeMembership": {
+                  "const": "unknown-until-current-content-checked"
+                },
+                "acquisitionFeasibility": {
+                  "const": "unknown-until-save-checked"
+                }
+              }
+            }
+          },
+          "currentLoadedContentRequired": {
+            "const": true
+          },
+          "membershipPolicy": {
+            "type": "string"
+          },
+          "evidenceIds": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

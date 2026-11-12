@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "0.1.0",
+  "category": "skills",
+  "provenance": "Supplied source assertions, not newly verified gameplay rules.",
+  "entries": [
+    {
+      "id": "singular_talent",
+      "name": "Singular Talent",
+      "sourceRequirement": "Reach level 10 in a skill.",
+      "sourceDefinitionRef": "data/sources/original/trophy-50-coverage.json#/trophies/38",
+      "sourceDependencyRef": "data/sources/original/trophy-dependency-graph.json#/graph/singular_talent",
+      "verification": "source-import-only"
+    },
+    {
+      "id": "master_of_the_five_ways",
+      "name": "Master Of The Five Ways",
+      "sourceRequirement": "Reach level 10 in all five skills.",
+      "sourceDefinitionRef": "data/sources/original/trophy-50-coverage.json#/trophies/39",
+      "sourceDependencyRef": "data/sources/original/trophy-dependency-graph.json#/graph/master_of_the_five_ways",
+      "verification": "source-import-only"
+    }
+  ]
+}

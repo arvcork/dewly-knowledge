@@ -1,0 +1,177 @@
+{
+  "category": "cooking",
+  "displayName": "Cooking",
+  "description": "Distinct recipes cooked and the full cooking collection.",
+  "catalogueVersion": "ps4-npwr12196-2026-11-08",
+  "rulesVersion": "ps4-1.6-cautious-2026-11-08-r2",
+  "trophyCount": 3,
+  "trophies": [
+    {
+      "trophyId": "cook",
+      "name": "Cook",
+      "group": "base",
+      "tier": "bronze",
+      "classification": "Partially supported",
+      "requirement": "Cook 10 different recipes.",
+      "requirementKind": "threshold",
+      "requirementDetail": {
+        "kind": "threshold",
+        "metric": "cooked_distinct",
+        "target": 10,
+        "unit": "recipes"
+      },
+      "dependencies": [],
+      "evidenceRequired": "Canonical trophy evidence number: cooked_distinct; player-confirmed total or verifiable authorized activity",
+      "progressDerivation": "metricValue(cooked_distinct); unknown remains unknown; no wallet/lifetime proxy",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "cook_recipe",
+          "title": "Cook a learned and affordable recipe not yet cooked",
+          "effort": "medium"
+        }
+      ],
+      "knownBlockers": [
+        "Recipe learning, ingredients and actual cooking are separate; no comprehensive authoritative kitchen state.",
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false,
+      "dependencyRule": {
+        "trophyId": "cook",
+        "completion": {
+          "type": "FARM",
+          "condition": {
+            "type": "COUNT",
+            "metric": "cooked_distinct",
+            "target": 10
+          }
+        },
+        "strategicDependencies": []
+      }
+    },
+    {
+      "trophyId": "sous_chef",
+      "name": "Sous Chef",
+      "group": "base",
+      "tier": "silver",
+      "classification": "Partially supported",
+      "requirement": "Cook 25 different recipes.",
+      "requirementKind": "threshold",
+      "requirementDetail": {
+        "kind": "threshold",
+        "metric": "cooked_distinct",
+        "target": 25,
+        "unit": "recipes"
+      },
+      "dependencies": [
+        "cook"
+      ],
+      "evidenceRequired": "Canonical trophy evidence number: cooked_distinct; player-confirmed total or verifiable authorized activity",
+      "progressDerivation": "metricValue(cooked_distinct); unknown remains unknown; no wallet/lifetime proxy",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "cook_recipe",
+          "title": "Cook a learned and affordable recipe not yet cooked",
+          "effort": "medium"
+        }
+      ],
+      "knownBlockers": [
+        "Recipe learning, ingredients and actual cooking are separate; no comprehensive authoritative kitchen state.",
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false,
+      "dependencyRule": {
+        "trophyId": "sous_chef",
+        "completion": {
+          "type": "FARM",
+          "condition": {
+            "type": "COUNT",
+            "metric": "cooked_distinct",
+            "target": 25
+          }
+        },
+        "strategicDependencies": [
+          "cook"
+        ]
+      }
+    },
+    {
+      "trophyId": "gourmet_chef",
+      "name": "Gourmet Chef",
+      "group": "base",
+      "tier": "silver",
+      "classification": "Partially supported",
+      "requirement": "Cook every required recipe.",
+      "requirementKind": "collection",
+      "requirementDetail": {
+        "kind": "collection",
+        "flag": "cooking_complete"
+      },
+      "dependencies": [
+        "sous_chef"
+      ],
+      "evidenceRequired": "Trophy evidence boolean: cooking_complete; player confirmation of the exact outcome",
+      "progressDerivation": "evaluateCollectionEvidence or explicit flag (cooking_complete); partial count only when eligible IDs are recognized",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "cook_recipe",
+          "title": "Learn a missing cooking recipe and source its ingredients before cooking",
+          "effort": "medium"
+        }
+      ],
+      "knownBlockers": [
+        "Seasonal recipe broadcasts, unlock paths, every cooking recipe and dates need full scenario coverage.",
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "condition_needs_review",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false,
+      "dependencyRule": {
+        "trophyId": "gourmet_chef",
+        "completion": {
+          "type": "FARM",
+          "condition": {
+            "type": "COLLECTION",
+            "flag": "cooking_complete"
+          }
+        },
+        "strategicDependencies": [
+          "sous_chef"
+        ]
+      }
+    }
+  ]
+}

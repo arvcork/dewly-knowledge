@@ -1,0 +1,689 @@
+{
+  "schemaVersion": "0.1.0",
+  "gameVersion": "1.6.15.24354",
+  "contentFingerprint": "933b27af1f08a0253d10b5a27a8b2de3672e0d8816bb2fcab9b3f0f7e9975ff5",
+  "reports": [
+    {
+      "enumerator": "cooking-recipes",
+      "sourceRecordsExamined": 81,
+      "eligibleRecordsEmitted": 81,
+      "excludedRecords": 0,
+      "exclusionReasons": {},
+      "uninterpretedRecords": [],
+      "gameVersion": "1.6.15.24354",
+      "contentFingerprint": "933b27af1f08a0253d10b5a27a8b2de3672e0d8816bb2fcab9b3f0f7e9975ff5",
+      "status": "materialized"
+    },
+    {
+      "enumerator": "crafting-recipes",
+      "sourceRecordsExamined": 150,
+      "eligibleRecordsEmitted": 149,
+      "excludedRecords": 1,
+      "exclusionReasons": {
+        "Wedding Ring": 1
+      },
+      "uninterpretedRecords": [],
+      "gameVersion": "1.6.15.24354",
+      "contentFingerprint": "933b27af1f08a0253d10b5a27a8b2de3672e0d8816bb2fcab9b3f0f7e9975ff5",
+      "status": "materialized"
+    },
+    {
+      "enumerator": "fishing-collection",
+      "sourceRecordsExamined": 807,
+      "eligibleRecordsEmitted": 72,
+      "excludedRecords": 735,
+      "exclusionReasons": {
+        "not ObjectType Fish or explicitly excluded": 735
+      },
+      "uninterpretedRecords": [],
+      "gameVersion": "1.6.15.24354",
+      "contentFingerprint": "933b27af1f08a0253d10b5a27a8b2de3672e0d8816bb2fcab9b3f0f7e9975ff5",
+      "status": "materialized"
+    },
+    {
+      "enumerator": "shipping-collection",
+      "sourceRecordsExamined": 807,
+      "eligibleRecordsEmitted": 154,
+      "excludedRecords": 653,
+      "exclusionReasons": {
+        "Object.isPotentialBasicShipped returned false": 653
+      },
+      "uninterpretedRecords": [],
+      "gameVersion": "1.6.15.24354",
+      "contentFingerprint": "933b27af1f08a0253d10b5a27a8b2de3672e0d8816bb2fcab9b3f0f7e9975ff5",
+      "status": "materialized"
+    },
+    {
+      "enumerator": "polyculture-crops",
+      "sourceRecordsExamined": 50,
+      "eligibleRecordsEmitted": 28,
+      "excludedRecords": 22,
+      "exclusionReasons": {
+        "CountForPolyculture false": 22
+      },
+      "uninterpretedRecords": [],
+      "gameVersion": "1.6.15.24354",
+      "contentFingerprint": "933b27af1f08a0253d10b5a27a8b2de3672e0d8816bb2fcab9b3f0f7e9975ff5",
+      "status": "materialized"
+    },
+    {
+      "enumerator": "monoculture-crops",
+      "sourceRecordsExamined": 50,
+      "eligibleRecordsEmitted": 33,
+      "excludedRecords": 17,
+      "exclusionReasons": {
+        "CountForMonoculture false": 17
+      },
+      "uninterpretedRecords": [],
+      "gameVersion": "1.6.15.24354",
+      "contentFingerprint": "933b27af1f08a0253d10b5a27a8b2de3672e0d8816bb2fcab9b3f0f7e9975ff5",
+      "status": "materialized"
+    },
+    {
+      "enumerator": "community-center-bundles",
+      "sourceRecordsExamined": 31,
+      "eligibleRecordsEmitted": 31,
+      "excludedRecords": 0,
+      "exclusionReasons": {},
+      "uninterpretedRecords": [],
+      "gameVersion": "1.6.15.24354",
+      "contentFingerprint": "933b27af1f08a0253d10b5a27a8b2de3672e0d8816bb2fcab9b3f0f7e9975ff5",
+      "status": "materialized"
+    },
+    {
+      "enumerator": "museum-donations",
+      "sourceRecordsExamined": 807,
+      "eligibleRecordsEmitted": 95,
+      "excludedRecords": 712,
+      "exclusionReasons": {
+        "donation predicate false": 712
+      },
+      "uninterpretedRecords": [],
+      "gameVersion": "1.6.15.24354",
+      "contentFingerprint": "933b27af1f08a0253d10b5a27a8b2de3672e0d8816bb2fcab9b3f0f7e9975ff5",
+      "status": "materialized"
+    },
+    {
+      "enumerator": "monster-slayer-goals",
+      "sourceRecordsExamined": 12,
+      "eligibleRecordsEmitted": 12,
+      "excludedRecords": 0,
+      "exclusionReasons": {},
+      "uninterpretedRecords": [],
+      "gameVersion": "1.6.15.24354",
+      "contentFingerprint": "933b27af1f08a0253d10b5a27a8b2de3672e0d8816bb2fcab9b3f0f7e9975ff5",
+      "status": "materialized"
+    },
+    {
+      "enumerator": "well-read-books",
+      "sourceRecordsExamined": 19,
+      "eligibleRecordsEmitted": 19,
+      "excludedRecords": 0,
+      "exclusionReasons": {},
+      "uninterpretedRecords": [],
+      "gameVersion": "1.6.15.24354",
+      "contentFingerprint": "933b27af1f08a0253d10b5a27a8b2de3672e0d8816bb2fcab9b3f0f7e9975ff5",
+      "status": "materialized"
+    },
+    {
+      "enumerator": "joja-development-projects",
+      "sourceRecordsExamined": 5,
+      "eligibleRecordsEmitted": 5,
+      "excludedRecords": 0,
+      "exclusionReasons": {},
+      "uninterpretedRecords": [],
+      "gameVersion": "1.6.15.24354",
+      "contentFingerprint": "933b27af1f08a0253d10b5a27a8b2de3672e0d8816bb2fcab9b3f0f7e9975ff5",
+      "status": "materialized"
+    },
+    {
+      "enumerator": "stardrop-sources",
+      "sourceRecordsExamined": 7,
+      "eligibleRecordsEmitted": 7,
+      "excludedRecords": 0,
+      "exclusionReasons": {},
+      "uninterpretedRecords": [],
+      "gameVersion": "1.6.15.24354",
+      "contentFingerprint": "933b27af1f08a0253d10b5a27a8b2de3672e0d8816bb2fcab9b3f0f7e9975ff5",
+      "status": "materialized"
+    },
+    {
+      "enumerator": "friendship-candidates",
+      "sourceRecordsExamined": 48,
+      "eligibleRecordsEmitted": 34,
+      "excludedRecords": 14,
+      "exclusionReasons": {
+        "CanSocialize is immutably FALSE": 14
+      },
+      "uninterpretedRecords": [],
+      "gameVersion": "1.6.15.24354",
+      "contentFingerprint": "933b27af1f08a0253d10b5a27a8b2de3672e0d8816bb2fcab9b3f0f7e9975ff5",
+      "status": "materialized"
+    }
+  ],
+  "dynamicEnumeratorReports": [
+    {
+      "achievementId": "a_complete_collection",
+      "status": "materialized",
+      "semantics": "ALL museum-eligible items",
+      "recordFile": "data/content-index/1.6.15.24354/museum.json",
+      "sourceRecordsExamined": 807,
+      "eligibleRecordsEmitted": 95,
+      "excludedRecords": 712,
+      "exclusionReasons": {
+        "donation predicate false": 712
+      },
+      "uninterpretedRecords": [],
+      "gameVersion": "1.6.15.24354",
+      "contentFingerprint": "933b27af1f08a0253d10b5a27a8b2de3672e0d8816bb2fcab9b3f0f7e9975ff5"
+    },
+    {
+      "achievementId": "a_new_friend",
+      "status": "materialized",
+      "semantics": "COUNT 1 at 1250 points; runtime friendshipData keys remain authoritative",
+      "recordFile": "data/content-index/1.6.15.24354/friendship-candidates.json",
+      "sourceRecordsExamined": 48,
+      "eligibleRecordsEmitted": 34,
+      "excludedRecords": 14,
+      "exclusionReasons": {
+        "CanSocialize is immutably FALSE": 14
+      },
+      "uninterpretedRecords": [],
+      "gameVersion": "1.6.15.24354",
+      "contentFingerprint": "933b27af1f08a0253d10b5a27a8b2de3672e0d8816bb2fcab9b3f0f7e9975ff5",
+      "membershipAuthority": "Farmer.friendshipData keys from the current save; append modded/current-save identifiers at runtime"
+    },
+    {
+      "achievementId": "artisan",
+      "status": "materialized",
+      "semantics": "COUNT 30 distinct completed recipe records",
+      "recordFile": "data/content-index/1.6.15.24354/crafting.json",
+      "sourceRecordsExamined": 150,
+      "eligibleRecordsEmitted": 149,
+      "excludedRecords": 1,
+      "exclusionReasons": {
+        "Wedding Ring": 1
+      },
+      "uninterpretedRecords": [],
+      "gameVersion": "1.6.15.24354",
+      "contentFingerprint": "933b27af1f08a0253d10b5a27a8b2de3672e0d8816bb2fcab9b3f0f7e9975ff5"
+    },
+    {
+      "achievementId": "best_friends",
+      "status": "materialized",
+      "semantics": "COUNT 1 at 2500 points; runtime friendshipData keys remain authoritative",
+      "recordFile": "data/content-index/1.6.15.24354/friendship-candidates.json",
+      "sourceRecordsExamined": 48,
+      "eligibleRecordsEmitted": 34,
+      "excludedRecords": 14,
+      "exclusionReasons": {
+        "CanSocialize is immutably FALSE": 14
+      },
+      "uninterpretedRecords": [],
+      "gameVersion": "1.6.15.24354",
+      "contentFingerprint": "933b27af1f08a0253d10b5a27a8b2de3672e0d8816bb2fcab9b3f0f7e9975ff5",
+      "membershipAuthority": "Farmer.friendshipData keys from the current save; append modded/current-save identifiers at runtime"
+    },
+    {
+      "achievementId": "cliques",
+      "status": "materialized",
+      "semantics": "COUNT 4 at 1250 points; runtime friendshipData keys remain authoritative",
+      "recordFile": "data/content-index/1.6.15.24354/friendship-candidates.json",
+      "sourceRecordsExamined": 48,
+      "eligibleRecordsEmitted": 34,
+      "excludedRecords": 14,
+      "exclusionReasons": {
+        "CanSocialize is immutably FALSE": 14
+      },
+      "uninterpretedRecords": [],
+      "gameVersion": "1.6.15.24354",
+      "contentFingerprint": "933b27af1f08a0253d10b5a27a8b2de3672e0d8816bb2fcab9b3f0f7e9975ff5",
+      "membershipAuthority": "Farmer.friendshipData keys from the current save; append modded/current-save identifiers at runtime"
+    },
+    {
+      "achievementId": "cook",
+      "status": "materialized",
+      "semantics": "COUNT 10 distinct completed recipe records",
+      "recordFile": "data/content-index/1.6.15.24354/cooking.json",
+      "sourceRecordsExamined": 81,
+      "eligibleRecordsEmitted": 81,
+      "excludedRecords": 0,
+      "exclusionReasons": {},
+      "uninterpretedRecords": [],
+      "gameVersion": "1.6.15.24354",
+      "contentFingerprint": "933b27af1f08a0253d10b5a27a8b2de3672e0d8816bb2fcab9b3f0f7e9975ff5"
+    },
+    {
+      "achievementId": "craft_master",
+      "status": "materialized",
+      "semantics": "ALL recipe records except Wedding Ring",
+      "recordFile": "data/content-index/1.6.15.24354/crafting.json",
+      "sourceRecordsExamined": 150,
+      "eligibleRecordsEmitted": 149,
+      "excludedRecords": 1,
+      "exclusionReasons": {
+        "Wedding Ring": 1
+      },
+      "uninterpretedRecords": [],
+      "gameVersion": "1.6.15.24354",
+      "contentFingerprint": "933b27af1f08a0253d10b5a27a8b2de3672e0d8816bb2fcab9b3f0f7e9975ff5"
+    },
+    {
+      "achievementId": "diy",
+      "status": "materialized",
+      "semantics": "COUNT 15 distinct completed recipe records",
+      "recordFile": "data/content-index/1.6.15.24354/crafting.json",
+      "sourceRecordsExamined": 150,
+      "eligibleRecordsEmitted": 149,
+      "excludedRecords": 1,
+      "exclusionReasons": {
+        "Wedding Ring": 1
+      },
+      "uninterpretedRecords": [],
+      "gameVersion": "1.6.15.24354",
+      "contentFingerprint": "933b27af1f08a0253d10b5a27a8b2de3672e0d8816bb2fcab9b3f0f7e9975ff5"
+    },
+    {
+      "achievementId": "fisherman",
+      "status": "materialized",
+      "semantics": "COUNT 10 distinct qualifying fish",
+      "recordFile": "data/content-index/1.6.15.24354/fish.json",
+      "sourceRecordsExamined": 807,
+      "eligibleRecordsEmitted": 72,
+      "excludedRecords": 735,
+      "exclusionReasons": {
+        "not ObjectType Fish or explicitly excluded": 735
+      },
+      "uninterpretedRecords": [],
+      "gameVersion": "1.6.15.24354",
+      "contentFingerprint": "933b27af1f08a0253d10b5a27a8b2de3672e0d8816bb2fcab9b3f0f7e9975ff5"
+    },
+    {
+      "achievementId": "full_shipment",
+      "status": "materialized",
+      "semantics": "ALL qualifying shipment objects",
+      "recordFile": "data/content-index/1.6.15.24354/shipping.json",
+      "sourceRecordsExamined": 807,
+      "eligibleRecordsEmitted": 154,
+      "excludedRecords": 653,
+      "exclusionReasons": {
+        "Object.isPotentialBasicShipped returned false": 653
+      },
+      "uninterpretedRecords": [],
+      "gameVersion": "1.6.15.24354",
+      "contentFingerprint": "933b27af1f08a0253d10b5a27a8b2de3672e0d8816bb2fcab9b3f0f7e9975ff5"
+    },
+    {
+      "achievementId": "gourmet_chef",
+      "status": "materialized",
+      "semantics": "ALL recipe records",
+      "recordFile": "data/content-index/1.6.15.24354/cooking.json",
+      "sourceRecordsExamined": 81,
+      "eligibleRecordsEmitted": 81,
+      "excludedRecords": 0,
+      "exclusionReasons": {},
+      "uninterpretedRecords": [],
+      "gameVersion": "1.6.15.24354",
+      "contentFingerprint": "933b27af1f08a0253d10b5a27a8b2de3672e0d8816bb2fcab9b3f0f7e9975ff5"
+    },
+    {
+      "achievementId": "joja_co_member_of_the_year",
+      "status": "materialized",
+      "semantics": "ALL five development projects; membership and ceremony remain prerequisite/event gates",
+      "recordFile": "data/content-index/1.6.15.24354/joja-development.json",
+      "sourceRecordsExamined": 5,
+      "eligibleRecordsEmitted": 5,
+      "excludedRecords": 0,
+      "exclusionReasons": {},
+      "uninterpretedRecords": [],
+      "gameVersion": "1.6.15.24354",
+      "contentFingerprint": "933b27af1f08a0253d10b5a27a8b2de3672e0d8816bb2fcab9b3f0f7e9975ff5"
+    },
+    {
+      "achievementId": "local_legend",
+      "status": "materialized",
+      "semantics": "ALL selected bundles; COUNT accepted slots within each bundle",
+      "recordFile": "data/content-index/1.6.15.24354/bundles.json",
+      "sourceRecordsExamined": 31,
+      "eligibleRecordsEmitted": 31,
+      "excludedRecords": 0,
+      "exclusionReasons": {},
+      "uninterpretedRecords": [],
+      "gameVersion": "1.6.15.24354",
+      "contentFingerprint": "933b27af1f08a0253d10b5a27a8b2de3672e0d8816bb2fcab9b3f0f7e9975ff5"
+    },
+    {
+      "achievementId": "master_angler",
+      "status": "materialized",
+      "semantics": "ALL qualifying fish",
+      "recordFile": "data/content-index/1.6.15.24354/fish.json",
+      "sourceRecordsExamined": 807,
+      "eligibleRecordsEmitted": 72,
+      "excludedRecords": 735,
+      "exclusionReasons": {
+        "not ObjectType Fish or explicitly excluded": 735
+      },
+      "uninterpretedRecords": [],
+      "gameVersion": "1.6.15.24354",
+      "contentFingerprint": "933b27af1f08a0253d10b5a27a8b2de3672e0d8816bb2fcab9b3f0f7e9975ff5"
+    },
+    {
+      "achievementId": "mother_catch",
+      "status": "materialized",
+      "semantics": "SUM catch-history quantities to 100",
+      "recordFile": "data/content-index/1.6.15.24354/fish.json",
+      "sourceRecordsExamined": 807,
+      "eligibleRecordsEmitted": 72,
+      "excludedRecords": 735,
+      "exclusionReasons": {
+        "not ObjectType Fish or explicitly excluded": 735
+      },
+      "uninterpretedRecords": [],
+      "gameVersion": "1.6.15.24354",
+      "contentFingerprint": "933b27af1f08a0253d10b5a27a8b2de3672e0d8816bb2fcab9b3f0f7e9975ff5"
+    },
+    {
+      "achievementId": "networking",
+      "status": "materialized",
+      "semantics": "COUNT 10 at 1250 points; runtime friendshipData keys remain authoritative",
+      "recordFile": "data/content-index/1.6.15.24354/friendship-candidates.json",
+      "sourceRecordsExamined": 48,
+      "eligibleRecordsEmitted": 34,
+      "excludedRecords": 14,
+      "exclusionReasons": {
+        "CanSocialize is immutably FALSE": 14
+      },
+      "uninterpretedRecords": [],
+      "gameVersion": "1.6.15.24354",
+      "contentFingerprint": "933b27af1f08a0253d10b5a27a8b2de3672e0d8816bb2fcab9b3f0f7e9975ff5",
+      "membershipAuthority": "Farmer.friendshipData keys from the current save; append modded/current-save identifiers at runtime"
+    },
+    {
+      "achievementId": "ol_mariner",
+      "status": "materialized",
+      "semantics": "COUNT 24 distinct qualifying fish",
+      "recordFile": "data/content-index/1.6.15.24354/fish.json",
+      "sourceRecordsExamined": 807,
+      "eligibleRecordsEmitted": 72,
+      "excludedRecords": 735,
+      "exclusionReasons": {
+        "not ObjectType Fish or explicitly excluded": 735
+      },
+      "uninterpretedRecords": [],
+      "gameVersion": "1.6.15.24354",
+      "contentFingerprint": "933b27af1f08a0253d10b5a27a8b2de3672e0d8816bb2fcab9b3f0f7e9975ff5"
+    },
+    {
+      "achievementId": "polyculture",
+      "status": "materialized",
+      "semantics": "ALL eligible crops at quantity 15",
+      "recordFile": "data/content-index/1.6.15.24354/crops.json",
+      "sourceRecordsExamined": 50,
+      "eligibleRecordsEmitted": 28,
+      "excludedRecords": 22,
+      "exclusionReasons": {
+        "CountForPolyculture false": 22
+      },
+      "uninterpretedRecords": [],
+      "gameVersion": "1.6.15.24354",
+      "contentFingerprint": "933b27af1f08a0253d10b5a27a8b2de3672e0d8816bb2fcab9b3f0f7e9975ff5"
+    },
+    {
+      "achievementId": "popular",
+      "status": "materialized",
+      "semantics": "COUNT 20 at 1250 points; runtime friendshipData keys remain authoritative",
+      "recordFile": "data/content-index/1.6.15.24354/friendship-candidates.json",
+      "sourceRecordsExamined": 48,
+      "eligibleRecordsEmitted": 34,
+      "excludedRecords": 14,
+      "exclusionReasons": {
+        "CanSocialize is immutably FALSE": 14
+      },
+      "uninterpretedRecords": [],
+      "gameVersion": "1.6.15.24354",
+      "contentFingerprint": "933b27af1f08a0253d10b5a27a8b2de3672e0d8816bb2fcab9b3f0f7e9975ff5",
+      "membershipAuthority": "Farmer.friendshipData keys from the current save; append modded/current-save identifiers at runtime"
+    },
+    {
+      "achievementId": "protector_of_the_valley",
+      "status": "materialized",
+      "semantics": "ALL content-defined slayer counters",
+      "recordFile": "data/content-index/1.6.15.24354/monster-slayer.json",
+      "sourceRecordsExamined": 12,
+      "eligibleRecordsEmitted": 12,
+      "excludedRecords": 0,
+      "exclusionReasons": {},
+      "uninterpretedRecords": [],
+      "gameVersion": "1.6.15.24354",
+      "contentFingerprint": "933b27af1f08a0253d10b5a27a8b2de3672e0d8816bb2fcab9b3f0f7e9975ff5"
+    },
+    {
+      "achievementId": "sous_chef",
+      "status": "materialized",
+      "semantics": "COUNT 25 distinct completed recipe records",
+      "recordFile": "data/content-index/1.6.15.24354/cooking.json",
+      "sourceRecordsExamined": 81,
+      "eligibleRecordsEmitted": 81,
+      "excludedRecords": 0,
+      "exclusionReasons": {},
+      "uninterpretedRecords": [],
+      "gameVersion": "1.6.15.24354",
+      "contentFingerprint": "933b27af1f08a0253d10b5a27a8b2de3672e0d8816bb2fcab9b3f0f7e9975ff5"
+    },
+    {
+      "achievementId": "the_beloved_farmer",
+      "status": "materialized",
+      "semantics": "COUNT 8 at 2500 points; runtime friendshipData keys remain authoritative",
+      "recordFile": "data/content-index/1.6.15.24354/friendship-candidates.json",
+      "sourceRecordsExamined": 48,
+      "eligibleRecordsEmitted": 34,
+      "excludedRecords": 14,
+      "exclusionReasons": {
+        "CanSocialize is immutably FALSE": 14
+      },
+      "uninterpretedRecords": [],
+      "gameVersion": "1.6.15.24354",
+      "contentFingerprint": "933b27af1f08a0253d10b5a27a8b2de3672e0d8816bb2fcab9b3f0f7e9975ff5",
+      "membershipAuthority": "Farmer.friendshipData keys from the current save; append modded/current-save identifiers at runtime"
+    },
+    {
+      "achievementId": "treasure_trove",
+      "status": "materialized",
+      "semantics": "COUNT 40 distinct donations",
+      "recordFile": "data/content-index/1.6.15.24354/museum.json",
+      "sourceRecordsExamined": 807,
+      "eligibleRecordsEmitted": 95,
+      "excludedRecords": 712,
+      "exclusionReasons": {
+        "donation predicate false": 712
+      },
+      "uninterpretedRecords": [],
+      "gameVersion": "1.6.15.24354",
+      "contentFingerprint": "933b27af1f08a0253d10b5a27a8b2de3672e0d8816bb2fcab9b3f0f7e9975ff5"
+    }
+  ],
+  "achievementMaterializations": {
+    "cook": {
+      "rootNodeId": "materialized.requirement.cook",
+      "semantics": "COUNT",
+      "target": 10,
+      "emittedChildren": 81,
+      "status": "materialized"
+    },
+    "sous_chef": {
+      "rootNodeId": "materialized.requirement.sous_chef",
+      "semantics": "COUNT",
+      "target": 25,
+      "emittedChildren": 81,
+      "status": "materialized"
+    },
+    "gourmet_chef": {
+      "rootNodeId": "materialized.requirement.gourmet_chef",
+      "semantics": "COUNT",
+      "target": 81,
+      "emittedChildren": 81,
+      "status": "materialized"
+    },
+    "diy": {
+      "rootNodeId": "materialized.requirement.diy",
+      "semantics": "COUNT",
+      "target": 15,
+      "emittedChildren": 149,
+      "status": "materialized"
+    },
+    "artisan": {
+      "rootNodeId": "materialized.requirement.artisan",
+      "semantics": "COUNT",
+      "target": 30,
+      "emittedChildren": 149,
+      "status": "materialized"
+    },
+    "craft_master": {
+      "rootNodeId": "materialized.requirement.craft_master",
+      "semantics": "COUNT",
+      "target": 149,
+      "emittedChildren": 149,
+      "status": "materialized"
+    },
+    "fisherman": {
+      "rootNodeId": "materialized.requirement.fisherman",
+      "semantics": "COUNT",
+      "target": 10,
+      "emittedChildren": 72,
+      "status": "materialized"
+    },
+    "ol_mariner": {
+      "rootNodeId": "materialized.requirement.ol_mariner",
+      "semantics": "COUNT",
+      "target": 24,
+      "emittedChildren": 72,
+      "status": "materialized"
+    },
+    "master_angler": {
+      "rootNodeId": "materialized.requirement.master_angler",
+      "semantics": "ALL",
+      "target": 72,
+      "emittedChildren": 72,
+      "status": "materialized"
+    },
+    "mother_catch": {
+      "rootNodeId": "materialized.requirement.mother_catch",
+      "semantics": "SUM",
+      "target": 100,
+      "emittedChildren": 72,
+      "status": "materialized"
+    },
+    "polyculture": {
+      "rootNodeId": "materialized.requirement.polyculture",
+      "semantics": "ALL",
+      "target": 28,
+      "emittedChildren": 28,
+      "status": "materialized"
+    },
+    "monoculture": {
+      "rootNodeId": "materialized.requirement.monoculture",
+      "semantics": "ANY",
+      "target": 1,
+      "emittedChildren": 33,
+      "status": "materialized"
+    },
+    "full_shipment": {
+      "rootNodeId": "materialized.requirement.full_shipment",
+      "semantics": "ALL",
+      "target": 154,
+      "emittedChildren": 154,
+      "status": "materialized"
+    },
+    "a_complete_collection": {
+      "rootNodeId": "materialized.requirement.a_complete_collection",
+      "semantics": "ALL",
+      "target": 95,
+      "emittedChildren": 95,
+      "status": "materialized"
+    },
+    "treasure_trove": {
+      "rootNodeId": "materialized.requirement.treasure_trove",
+      "semantics": "COUNT",
+      "target": 40,
+      "emittedChildren": 95,
+      "status": "materialized"
+    },
+    "protector_of_the_valley": {
+      "rootNodeId": "materialized.requirement.protector_of_the_valley",
+      "semantics": "ALL",
+      "target": 12,
+      "emittedChildren": 12,
+      "status": "materialized"
+    },
+    "well_read": {
+      "rootNodeId": "materialized.requirement.well_read",
+      "semantics": "ALL",
+      "target": 19,
+      "emittedChildren": 19,
+      "status": "materialized"
+    },
+    "joja_co_member_of_the_year": {
+      "rootNodeId": "materialized.requirement.joja_co_member_of_the_year",
+      "semantics": "ALL",
+      "target": 5,
+      "emittedChildren": 5,
+      "status": "materialized"
+    },
+    "mystery_of_the_stardrops": {
+      "rootNodeId": "materialized.requirement.mystery_of_the_stardrops",
+      "semantics": "ALL",
+      "target": 7,
+      "emittedChildren": 7,
+      "status": "materialized"
+    },
+    "a_new_friend": {
+      "rootNodeId": "materialized.requirement.a_new_friend",
+      "semantics": "COUNT",
+      "target": 1,
+      "emittedChildren": 34,
+      "status": "materialized"
+    },
+    "best_friends": {
+      "rootNodeId": "materialized.requirement.best_friends",
+      "semantics": "COUNT",
+      "target": 1,
+      "emittedChildren": 34,
+      "status": "materialized"
+    },
+    "the_beloved_farmer": {
+      "rootNodeId": "materialized.requirement.the_beloved_farmer",
+      "semantics": "COUNT",
+      "target": 8,
+      "emittedChildren": 34,
+      "status": "materialized"
+    },
+    "cliques": {
+      "rootNodeId": "materialized.requirement.cliques",
+      "semantics": "COUNT",
+      "target": 4,
+      "emittedChildren": 34,
+      "status": "materialized"
+    },
+    "networking": {
+      "rootNodeId": "materialized.requirement.networking",
+      "semantics": "COUNT",
+      "target": 10,
+      "emittedChildren": 34,
+      "status": "materialized"
+    },
+    "popular": {
+      "rootNodeId": "materialized.requirement.popular",
+      "semantics": "COUNT",
+      "target": 20,
+      "emittedChildren": 34,
+      "status": "materialized"
+    },
+    "local_legend": {
+      "rootNodeId": "materialized.requirement.local_legend",
+      "semantics": "ALL bundles; COUNT slots per bundle",
+      "target": 31,
+      "emittedChildren": 135,
+      "status": "materialized-vanilla-default; runtime save selection required"
+    }
+  }
+}

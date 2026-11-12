@@ -1,0 +1,418 @@
+{
+  "schemaVersion": "0.1.0",
+  "category": "shared",
+  "nodes": [
+    {
+      "id": "resource.egg",
+      "kind": "any",
+      "trackingRefs": [
+        "snapshot.egg.accessible-unreserved"
+      ],
+      "sourceRefs": [
+        "https://stardewvalleywiki.com/Egg"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "egg.accessible-unreserved",
+        "op": "gte",
+        "value": 1
+      },
+      "requires": [
+        "action.collect-egg",
+        "action.buy-egg-cart",
+        "production.egg"
+      ]
+    },
+    {
+      "id": "action.collect-egg",
+      "kind": "action",
+      "trackingRefs": [
+        "snapshot.egg.accessible-unreserved",
+        "snapshot.egg.collectable"
+      ],
+      "sourceRefs": [
+        "https://stardewvalleywiki.com/Egg"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "egg.accessible-unreserved",
+        "op": "gte",
+        "value": 1
+      },
+      "task": {
+        "text": "Collect an eligible egg already produced in the coop or collector."
+      },
+      "available": {
+        "fact": "egg.collectable",
+        "op": "eq",
+        "value": true
+      }
+    },
+    {
+      "id": "action.buy-egg-cart",
+      "kind": "action",
+      "trackingRefs": [
+        "snapshot.cart.access-open",
+        "snapshot.cart.egg-affordable",
+        "snapshot.cart.egg-stock",
+        "snapshot.egg.accessible-unreserved"
+      ],
+      "sourceRefs": [
+        "https://stardewvalleywiki.com/Egg"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "egg.accessible-unreserved",
+        "op": "gte",
+        "value": 1
+      },
+      "task": {
+        "text": "Buy an eligible egg from observed Traveling Cart stock."
+      },
+      "available": {
+        "all": [
+          {
+            "fact": "cart.egg-stock",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "fact": "cart.access-open",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "fact": "cart.egg-affordable",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "probabilistic": false,
+      "cost": 20
+    },
+    {
+      "id": "production.egg",
+      "kind": "all",
+      "trackingRefs": [
+        "snapshot.egg.accessible-unreserved"
+      ],
+      "sourceRefs": [
+        "https://stardewvalleywiki.com/Chicken"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "egg.accessible-unreserved",
+        "op": "gte",
+        "value": 1
+      },
+      "requires": [
+        "access.chicken",
+        "gate.chicken-mature",
+        "action.feed-chicken",
+        "gate.egg-produced"
+      ]
+    },
+    {
+      "id": "access.chicken",
+      "kind": "any",
+      "trackingRefs": [
+        "snapshot.chicken.eligible-owned"
+      ],
+      "sourceRefs": [
+        "https://stardewvalleywiki.com/Chicken"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "chicken.eligible-owned",
+        "op": "eq",
+        "value": true
+      },
+      "requires": [
+        "action.buy-chicken"
+      ]
+    },
+    {
+      "id": "action.buy-chicken",
+      "kind": "action",
+      "trackingRefs": [
+        "snapshot.chicken.affordable",
+        "snapshot.chicken.eligible-owned",
+        "snapshot.marnie.purchase-available"
+      ],
+      "sourceRefs": [
+        "https://stardewvalleywiki.com/Chicken"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "chicken.eligible-owned",
+        "op": "eq",
+        "value": true
+      },
+      "requires": [
+        "access.coop"
+      ],
+      "task": {
+        "text": "Buy a normal chicken for an existing eligible coop."
+      },
+      "available": {
+        "all": [
+          {
+            "fact": "marnie.purchase-available",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "fact": "chicken.affordable",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      },
+      "cost": 80
+    },
+    {
+      "id": "access.coop",
+      "kind": "any",
+      "trackingRefs": [
+        "snapshot.coop.eligible-space"
+      ],
+      "sourceRefs": [
+        "https://stardewvalleywiki.com/Coop"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "coop.eligible-space",
+        "op": "eq",
+        "value": true
+      },
+      "requires": [
+        "unresolved.coop-construction"
+      ]
+    },
+    {
+      "id": "unresolved.coop-construction",
+      "kind": "unknown",
+      "trackingRefs": [],
+      "sourceRefs": [
+        "https://stardewvalleywiki.com/Coop"
+      ],
+      "verification": "unresolved",
+      "reason": "Resolve loaded Data/Buildings Coop costs, construction state, materials, buildable footprint and Robin availability before recommending construction."
+    },
+    {
+      "id": "gate.chicken-mature",
+      "kind": "gate",
+      "trackingRefs": [
+        "snapshot.chicken.mature"
+      ],
+      "sourceRefs": [
+        "https://stardewvalleywiki.com/Chicken"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "chicken.mature",
+        "op": "eq",
+        "value": true
+      },
+      "blockedReason": "Wait for eligible chicken maturity using loaded FarmAnimals data and actual animal age."
+    },
+    {
+      "id": "action.feed-chicken",
+      "kind": "action",
+      "trackingRefs": [
+        "snapshot.chicken.feed-accessible",
+        "snapshot.chicken.production-fed"
+      ],
+      "sourceRefs": [
+        "https://stardewvalleywiki.com/Chicken"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "chicken.production-fed",
+        "op": "eq",
+        "value": true
+      },
+      "task": {
+        "text": "Ensure the eligible chicken can eat today; do not promise tomorrow's production."
+      },
+      "available": {
+        "fact": "chicken.feed-accessible",
+        "op": "eq",
+        "value": true
+      }
+    },
+    {
+      "id": "gate.egg-produced",
+      "kind": "gate",
+      "trackingRefs": [
+        "snapshot.egg.collectable"
+      ],
+      "sourceRefs": [
+        "https://stardewvalleywiki.com/Chicken"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "egg.collectable",
+        "op": "eq",
+        "value": true
+      },
+      "blockedReason": "Wait for authoritative production; maturity and feed alone do not prove an egg exists."
+    },
+    {
+      "id": "access.cooking",
+      "kind": "any",
+      "trackingRefs": [],
+      "sourceRefs": [
+        "https://stardewvalleywiki.com/Fried_Egg"
+      ],
+      "verification": "derived-rule",
+      "requires": [
+        "gate.cooking-menu",
+        "gate.kitchen",
+        "gate.cookout",
+        "action.place-kit"
+      ]
+    },
+    {
+      "id": "gate.cooking-menu",
+      "kind": "gate",
+      "trackingRefs": [
+        "snapshot.cooking.menu-active"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "cooking.menu-active",
+        "op": "eq",
+        "value": true
+      },
+      "blockedReason": "No active vanilla cooking menu; investigate kitchen or Cookout Kit access."
+    },
+    {
+      "id": "gate.kitchen",
+      "kind": "gate",
+      "trackingRefs": [
+        "snapshot.kitchen.usable"
+      ],
+      "sourceRefs": [
+        "https://stardewvalleywiki.com/Fried_Egg"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "kitchen.usable",
+        "op": "eq",
+        "value": true
+      },
+      "blockedReason": "No currently usable kitchen; an upgrade is an optional route."
+    },
+    {
+      "id": "gate.cookout",
+      "kind": "gate",
+      "trackingRefs": [
+        "snapshot.cookout.usable"
+      ],
+      "sourceRefs": [
+        "https://stardewvalleywiki.com/Cookout_Kit"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "cookout.usable",
+        "op": "eq",
+        "value": true
+      },
+      "blockedReason": "No placed usable Cookout Kit."
+    },
+    {
+      "id": "action.place-kit",
+      "kind": "action",
+      "trackingRefs": [
+        "snapshot.cookout.owned",
+        "snapshot.cookout.placeable",
+        "snapshot.cookout.usable"
+      ],
+      "sourceRefs": [
+        "https://stardewvalleywiki.com/Cookout_Kit"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "cookout.usable",
+        "op": "eq",
+        "value": true
+      },
+      "requires": [
+        "action.craft-kit"
+      ],
+      "task": {
+        "text": "Place the owned Cookout Kit in a valid location and cook today."
+      },
+      "available": {
+        "all": [
+          {
+            "fact": "cookout.owned",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "fact": "cookout.placeable",
+            "op": "eq",
+            "value": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "action.craft-kit",
+      "kind": "action",
+      "trackingRefs": [
+        "snapshot.cookout.owned"
+      ],
+      "sourceRefs": [
+        "https://stardewvalleywiki.com/Cookout_Kit"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "cookout.owned",
+        "op": "eq",
+        "value": true
+      },
+      "requires": [
+        "gate.kit-known",
+        "unresolved.kit-materials"
+      ],
+      "task": {
+        "text": "Craft a Cookout Kit using loaded recipe ingredients."
+      },
+      "cost": 15
+    },
+    {
+      "id": "gate.kit-known",
+      "kind": "gate",
+      "trackingRefs": [
+        "snapshot.cookout.recipe-known"
+      ],
+      "sourceRefs": [
+        "https://stardewvalleywiki.com/Cookout_Kit"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "cookout.recipe-known",
+        "op": "eq",
+        "value": true
+      },
+      "blockedReason": "Verify known Cookout Kit recipe; 1.6 source unlock is Foraging 3."
+    },
+    {
+      "id": "unresolved.kit-materials",
+      "kind": "unknown",
+      "trackingRefs": [],
+      "sourceRefs": [
+        "https://stardewvalleywiki.com/Cookout_Kit"
+      ],
+      "verification": "unresolved",
+      "reason": "Bind CraftingRecipe(Cookout Kit,false), expand missing wood/fiber/coal acquisition and allocate stock."
+    }
+  ]
+}

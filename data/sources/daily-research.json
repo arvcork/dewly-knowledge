@@ -1,0 +1,92 @@
+{
+  "schemaVersion": "1.0.0",
+  "gameVersion": "1.6.15.24354",
+  "sourceReferences": [
+    {
+      "id": "source.research.daily.crop-water",
+      "type": "external-wiki",
+      "url": "https://stardewvalleywiki.com/Watering_Cans"
+    },
+    {
+      "id": "source.research.daily.crop-harvest",
+      "type": "external-wiki",
+      "url": "https://stardewvalleywiki.com/Junimo_Hut"
+    },
+    {
+      "id": "source.research.daily.animal",
+      "type": "external-wiki",
+      "url": "https://stardewvalleywiki.com/Animals"
+    },
+    {
+      "id": "source.research.daily.machines",
+      "type": "external-wiki",
+      "url": "https://stardewvalleywiki.com/Artisan_Goods"
+    },
+    {
+      "id": "source.research.daily.season",
+      "type": "external-wiki",
+      "url": "https://stardewvalleywiki.com/Crops"
+    },
+    {
+      "id": "source.research.daily.friendship",
+      "type": "external-wiki",
+      "url": "https://stardewvalleywiki.com/Friendship"
+    },
+    {
+      "id": "source.research.daily.fishing",
+      "type": "external-wiki",
+      "url": "https://stardewvalleywiki.com/Fishing"
+    }
+  ],
+  "records": [
+    {
+      "id": "evidence.research.daily.crop-water",
+      "sourceRef": "source.research.daily.crop-water",
+      "fact": "Outdoor rain removes manual watering need; indoor crops do not benefit from rain; single-harvest mature crops generally need no additional water.",
+      "verificationLevel": "external-research-not-live-tested",
+      "liveGameplayTested": false
+    },
+    {
+      "id": "evidence.research.daily.crop-harvest",
+      "sourceRef": "source.research.daily.crop-harvest",
+      "fact": "Junimos harvest eligible mature crops, but their harvest is not guaranteed to have occurred and weather/season can prevent it.",
+      "verificationLevel": "external-research-not-live-tested",
+      "liveGameplayTested": false
+    },
+    {
+      "id": "evidence.research.daily.animal",
+      "sourceRef": "source.research.daily.animal",
+      "fact": "Feed, maturity, mood and friendship influence animal product generation; outputs are not guaranteed.",
+      "verificationLevel": "external-research-not-live-tested",
+      "liveGameplayTested": false
+    },
+    {
+      "id": "evidence.research.daily.machines",
+      "sourceRef": "source.research.daily.machines",
+      "fact": "Machine processing accepts recipe-dependent inputs and yields outputs after processing.",
+      "verificationLevel": "external-research-not-live-tested",
+      "liveGameplayTested": false
+    },
+    {
+      "id": "evidence.research.daily.season",
+      "sourceRef": "source.research.daily.season",
+      "fact": "Growth times count nights; crops out of season may wither; speed and watering alter timing.",
+      "verificationLevel": "external-research-not-live-tested",
+      "liveGameplayTested": false
+    },
+    {
+      "id": "evidence.research.daily.friendship",
+      "sourceRef": "source.research.daily.friendship",
+      "fact": "Birthday gifts multiply friendship; gifting depends on limits and taste; birthday gifts can bypass weekly gift count.",
+      "verificationLevel": "external-research-not-live-tested",
+      "liveGameplayTested": false
+    },
+    {
+      "id": "evidence.research.daily.fishing",
+      "sourceRef": "source.research.daily.fishing",
+      "fact": "Fish availability depends on water body, time, season, weather, and special spot conditions.",
+      "verificationLevel": "external-research-not-live-tested",
+      "liveGameplayTested": false
+    }
+  ]
+}

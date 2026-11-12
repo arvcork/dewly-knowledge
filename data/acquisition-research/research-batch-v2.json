@@ -1,0 +1,2471 @@
+{
+  "schemaVersion": "1.0.0",
+  "gameVersion": "1.6.15.24354",
+  "scope": "Additive second batch, first-level researched route methods; do not resolve recursive prerequisites",
+  "records": [
+    {
+      "id": "acq.item.309",
+      "qualifiedItemId": "(O)309",
+      "routes": [
+        {
+          "id": "acq.method.309.tree-seed-drop.oak",
+          "type": "tree-seed-drop",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.trees"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Trees"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "species": "Oak Tree",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.tree-seed-parent"
+            }
+          ],
+          "occurrence": "shake/chop eligible tree; random drop and seasonal limits"
+        }
+      ]
+    },
+    {
+      "id": "acq.item.310",
+      "qualifiedItemId": "(O)310",
+      "routes": [
+        {
+          "id": "acq.method.310.tree-seed-drop.maple",
+          "type": "tree-seed-drop",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.trees"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Trees"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "species": "Maple Tree",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.tree-seed-parent"
+            }
+          ],
+          "occurrence": "shake/chop eligible tree; random drop and seasonal limits"
+        }
+      ]
+    },
+    {
+      "id": "acq.item.311",
+      "qualifiedItemId": "(O)311",
+      "routes": [
+        {
+          "id": "acq.method.311.tree-seed-drop.pine",
+          "type": "tree-seed-drop",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.trees"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Trees"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "species": "Pine Tree",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.tree-seed-parent"
+            }
+          ],
+          "occurrence": "shake/chop eligible tree; random drop and seasonal limits"
+        }
+      ]
+    },
+    {
+      "id": "acq.item.386",
+      "qualifiedItemId": "(O)386",
+      "routes": [
+        {
+          "id": "acq.method.386.mine-iridium-node.skull-cavern",
+          "type": "mine-iridium-node",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.iridium"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Iridium_Ore"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "location": "Skull Cavern",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.mine-ore-node"
+            }
+          ],
+          "occurrence": "Observed Iridium Node; success depends on spawn"
+        },
+        {
+          "id": "acq.method.386.mine-iridium-node.volcano-dungeon",
+          "type": "mine-iridium-node",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.iridium"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Iridium_Ore"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "location": "Volcano Dungeon",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.mine-ore-node"
+            }
+          ],
+          "occurrence": "Observed Iridium Node; success depends on spawn"
+        },
+        {
+          "id": "acq.method.386.mine-iridium-node.quarry",
+          "type": "mine-iridium-node",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.iridium"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Iridium_Ore"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "location": "Quarry",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.mine-ore-node"
+            }
+          ],
+          "occurrence": "Observed Iridium Node; success depends on spawn"
+        },
+        {
+          "id": "acq.method.386.mine-mystic-stone.any-reachable",
+          "type": "mine-mystic-stone",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.iridium"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Iridium_Ore"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "location": "Mines 100+ / Quarry / Skull Cavern / Volcano",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.mine-ore-node"
+            }
+          ],
+          "outputQuantity": "1-3 Iridium Ore per Mystic Stone"
+        },
+        {
+          "id": "acq.method.386.open-geode.magma-geode",
+          "type": "open-geode",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.iridium"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Iridium_Ore"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "inputItems": [
+            {
+              "itemId": "(O)537",
+              "quantity": 1
+            }
+          ],
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.geode-open-service"
+            }
+          ],
+          "occurrence": "chance; not a guaranteed output"
+        },
+        {
+          "id": "acq.method.386.open-geode.omni-geode",
+          "type": "open-geode",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.iridium"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Iridium_Ore"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "inputItems": [
+            {
+              "itemId": "(O)749",
+              "quantity": 1
+            }
+          ],
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.geode-open-service"
+            }
+          ],
+          "occurrence": "chance; not a guaranteed output"
+        }
+      ]
+    },
+    {
+      "id": "acq.item.60",
+      "qualifiedItemId": "(O)60",
+      "routes": [
+        {
+          "id": "acq.method.60.mine-gem-node.emerald",
+          "type": "mine-gem-node",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.mining"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Mining"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "gem": "Emerald",
+          "minesMinimumFloorBeforeBottom": 80,
+          "minesFloorAfterBottom": "any for gemstone nodes other than Diamond",
+          "location": "The Mines",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.mine-access"
+            },
+            {
+              "ref": "acq.prereq.pickaxe"
+            },
+            {
+              "ref": "acq.prereq.gem-node-observed"
+            }
+          ],
+          "occurrence": "Requires observed Emerald Node; floor requirement is Mines-specific, not a global barrier"
+        },
+        {
+          "id": "acq.method.60.mine-gem-node.random-gem-node",
+          "type": "mine-gem-node",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.mining"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Mining"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "gem": "Emerald",
+          "location": "The Mines / Quarry / Skull Cavern",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.mine-access"
+            },
+            {
+              "ref": "acq.prereq.pickaxe"
+            },
+            {
+              "ref": "acq.prereq.gem-node-observed"
+            }
+          ],
+          "occurrence": "Generic Gem Node randomly selects one of the seven gem types"
+        },
+        {
+          "id": "acq.method.60.fishing-treasure.treasure-chest",
+          "type": "fishing-treasure",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.gems"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Minerals"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.fishing-treasure"
+            }
+          ],
+          "occurrence": "probabilistic chest contents"
+        },
+        {
+          "id": "acq.method.60.pan-for-gem.panning",
+          "type": "pan-for-gem",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.gems"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Minerals"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.panning-access"
+            }
+          ],
+          "occurrence": "probabilistic and requires a valid panning spot"
+        }
+      ]
+    },
+    {
+      "id": "acq.item.62",
+      "qualifiedItemId": "(O)62",
+      "routes": [
+        {
+          "id": "acq.method.62.mine-gem-node.aquamarine",
+          "type": "mine-gem-node",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.mining"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Mining"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "gem": "Aquamarine",
+          "minesMinimumFloorBeforeBottom": 40,
+          "minesFloorAfterBottom": "any for gemstone nodes other than Diamond",
+          "location": "The Mines",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.mine-access"
+            },
+            {
+              "ref": "acq.prereq.pickaxe"
+            },
+            {
+              "ref": "acq.prereq.gem-node-observed"
+            }
+          ],
+          "occurrence": "Requires observed Aquamarine Node; floor requirement is Mines-specific, not a global barrier"
+        },
+        {
+          "id": "acq.method.62.mine-gem-node.random-gem-node",
+          "type": "mine-gem-node",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.mining"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Mining"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "gem": "Aquamarine",
+          "location": "The Mines / Quarry / Skull Cavern",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.mine-access"
+            },
+            {
+              "ref": "acq.prereq.pickaxe"
+            },
+            {
+              "ref": "acq.prereq.gem-node-observed"
+            }
+          ],
+          "occurrence": "Generic Gem Node randomly selects one of the seven gem types"
+        },
+        {
+          "id": "acq.method.62.fishing-treasure.treasure-chest",
+          "type": "fishing-treasure",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.gems"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Minerals"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.fishing-treasure"
+            }
+          ],
+          "occurrence": "probabilistic chest contents"
+        },
+        {
+          "id": "acq.method.62.pan-for-gem.panning",
+          "type": "pan-for-gem",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.gems"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Minerals"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.panning-access"
+            }
+          ],
+          "occurrence": "probabilistic and requires a valid panning spot"
+        }
+      ]
+    },
+    {
+      "id": "acq.item.64",
+      "qualifiedItemId": "(O)64",
+      "routes": [
+        {
+          "id": "acq.method.64.mine-gem-node.ruby",
+          "type": "mine-gem-node",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.mining"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Mining"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "gem": "Ruby",
+          "minesMinimumFloorBeforeBottom": 80,
+          "minesFloorAfterBottom": "any for gemstone nodes other than Diamond",
+          "location": "The Mines",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.mine-access"
+            },
+            {
+              "ref": "acq.prereq.pickaxe"
+            },
+            {
+              "ref": "acq.prereq.gem-node-observed"
+            }
+          ],
+          "occurrence": "Requires observed Ruby Node; floor requirement is Mines-specific, not a global barrier"
+        },
+        {
+          "id": "acq.method.64.mine-gem-node.random-gem-node",
+          "type": "mine-gem-node",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.mining"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Mining"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "gem": "Ruby",
+          "location": "The Mines / Quarry / Skull Cavern",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.mine-access"
+            },
+            {
+              "ref": "acq.prereq.pickaxe"
+            },
+            {
+              "ref": "acq.prereq.gem-node-observed"
+            }
+          ],
+          "occurrence": "Generic Gem Node randomly selects one of the seven gem types"
+        },
+        {
+          "id": "acq.method.64.fishing-treasure.treasure-chest",
+          "type": "fishing-treasure",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.gems"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Minerals"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.fishing-treasure"
+            }
+          ],
+          "occurrence": "probabilistic chest contents"
+        },
+        {
+          "id": "acq.method.64.pan-for-gem.panning",
+          "type": "pan-for-gem",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.gems"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Minerals"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.panning-access"
+            }
+          ],
+          "occurrence": "probabilistic and requires a valid panning spot"
+        }
+      ]
+    },
+    {
+      "id": "acq.item.66",
+      "qualifiedItemId": "(O)66",
+      "routes": [
+        {
+          "id": "acq.method.66.mine-gem-node.amethyst",
+          "type": "mine-gem-node",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.mining"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Mining"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "gem": "Amethyst",
+          "minesMinimumFloorBeforeBottom": 1,
+          "minesFloorAfterBottom": "any for gemstone nodes other than Diamond",
+          "location": "The Mines",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.mine-access"
+            },
+            {
+              "ref": "acq.prereq.pickaxe"
+            },
+            {
+              "ref": "acq.prereq.gem-node-observed"
+            }
+          ],
+          "occurrence": "Requires observed Amethyst Node; floor requirement is Mines-specific, not a global barrier"
+        },
+        {
+          "id": "acq.method.66.mine-gem-node.random-gem-node",
+          "type": "mine-gem-node",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.mining"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Mining"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "gem": "Amethyst",
+          "location": "The Mines / Quarry / Skull Cavern",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.mine-access"
+            },
+            {
+              "ref": "acq.prereq.pickaxe"
+            },
+            {
+              "ref": "acq.prereq.gem-node-observed"
+            }
+          ],
+          "occurrence": "Generic Gem Node randomly selects one of the seven gem types"
+        },
+        {
+          "id": "acq.method.66.fishing-treasure.treasure-chest",
+          "type": "fishing-treasure",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.gems"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Minerals"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.fishing-treasure"
+            }
+          ],
+          "occurrence": "probabilistic chest contents"
+        },
+        {
+          "id": "acq.method.66.pan-for-gem.panning",
+          "type": "pan-for-gem",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.gems"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Minerals"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.panning-access"
+            }
+          ],
+          "occurrence": "probabilistic and requires a valid panning spot"
+        }
+      ]
+    },
+    {
+      "id": "acq.item.68",
+      "qualifiedItemId": "(O)68",
+      "routes": [
+        {
+          "id": "acq.method.68.mine-gem-node.topaz",
+          "type": "mine-gem-node",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.mining"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Mining"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "gem": "Topaz",
+          "minesMinimumFloorBeforeBottom": 1,
+          "minesFloorAfterBottom": "any for gemstone nodes other than Diamond",
+          "location": "The Mines",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.mine-access"
+            },
+            {
+              "ref": "acq.prereq.pickaxe"
+            },
+            {
+              "ref": "acq.prereq.gem-node-observed"
+            }
+          ],
+          "occurrence": "Requires observed Topaz Node; floor requirement is Mines-specific, not a global barrier"
+        },
+        {
+          "id": "acq.method.68.mine-gem-node.random-gem-node",
+          "type": "mine-gem-node",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.mining"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Mining"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "gem": "Topaz",
+          "location": "The Mines / Quarry / Skull Cavern",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.mine-access"
+            },
+            {
+              "ref": "acq.prereq.pickaxe"
+            },
+            {
+              "ref": "acq.prereq.gem-node-observed"
+            }
+          ],
+          "occurrence": "Generic Gem Node randomly selects one of the seven gem types"
+        },
+        {
+          "id": "acq.method.68.fishing-treasure.treasure-chest",
+          "type": "fishing-treasure",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.gems"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Minerals"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.fishing-treasure"
+            }
+          ],
+          "occurrence": "probabilistic chest contents"
+        },
+        {
+          "id": "acq.method.68.pan-for-gem.panning",
+          "type": "pan-for-gem",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.gems"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Minerals"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.panning-access"
+            }
+          ],
+          "occurrence": "probabilistic and requires a valid panning spot"
+        }
+      ]
+    },
+    {
+      "id": "acq.item.70",
+      "qualifiedItemId": "(O)70",
+      "routes": [
+        {
+          "id": "acq.method.70.mine-gem-node.jade",
+          "type": "mine-gem-node",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.mining"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Mining"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "gem": "Jade",
+          "minesMinimumFloorBeforeBottom": 40,
+          "minesFloorAfterBottom": "any for gemstone nodes other than Diamond",
+          "location": "The Mines",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.mine-access"
+            },
+            {
+              "ref": "acq.prereq.pickaxe"
+            },
+            {
+              "ref": "acq.prereq.gem-node-observed"
+            }
+          ],
+          "occurrence": "Requires observed Jade Node; floor requirement is Mines-specific, not a global barrier"
+        },
+        {
+          "id": "acq.method.70.mine-gem-node.random-gem-node",
+          "type": "mine-gem-node",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.mining"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Mining"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "gem": "Jade",
+          "location": "The Mines / Quarry / Skull Cavern",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.mine-access"
+            },
+            {
+              "ref": "acq.prereq.pickaxe"
+            },
+            {
+              "ref": "acq.prereq.gem-node-observed"
+            }
+          ],
+          "occurrence": "Generic Gem Node randomly selects one of the seven gem types"
+        },
+        {
+          "id": "acq.method.70.fishing-treasure.treasure-chest",
+          "type": "fishing-treasure",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.gems"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Minerals"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.fishing-treasure"
+            }
+          ],
+          "occurrence": "probabilistic chest contents"
+        },
+        {
+          "id": "acq.method.70.pan-for-gem.panning",
+          "type": "pan-for-gem",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.gems"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Minerals"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.panning-access"
+            }
+          ],
+          "occurrence": "probabilistic and requires a valid panning spot"
+        }
+      ]
+    },
+    {
+      "id": "acq.item.72",
+      "qualifiedItemId": "(O)72",
+      "routes": [
+        {
+          "id": "acq.method.72.mine-gem-node.diamond",
+          "type": "mine-gem-node",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.mining"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Mining"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "gem": "Diamond",
+          "minesMinimumFloorBeforeBottom": 50,
+          "minesFloorAfterBottom": "any for gemstone nodes other than Diamond",
+          "location": "The Mines",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.mine-access"
+            },
+            {
+              "ref": "acq.prereq.pickaxe"
+            },
+            {
+              "ref": "acq.prereq.gem-node-observed"
+            }
+          ],
+          "occurrence": "Requires observed Diamond Node; floor requirement is Mines-specific, not a global barrier"
+        },
+        {
+          "id": "acq.method.72.mine-gem-node.random-gem-node",
+          "type": "mine-gem-node",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.mining"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Mining"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "gem": "Diamond",
+          "location": "The Mines / Quarry / Skull Cavern",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.mine-access"
+            },
+            {
+              "ref": "acq.prereq.pickaxe"
+            },
+            {
+              "ref": "acq.prereq.gem-node-observed"
+            }
+          ],
+          "occurrence": "Generic Gem Node randomly selects one of the seven gem types"
+        },
+        {
+          "id": "acq.method.72.fishing-treasure.treasure-chest",
+          "type": "fishing-treasure",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.gems"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Minerals"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.fishing-treasure"
+            }
+          ],
+          "occurrence": "probabilistic chest contents"
+        },
+        {
+          "id": "acq.method.72.pan-for-gem.panning",
+          "type": "pan-for-gem",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.gems"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Minerals"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.panning-access"
+            }
+          ],
+          "occurrence": "probabilistic and requires a valid panning spot"
+        }
+      ]
+    },
+    {
+      "id": "acq.item.787",
+      "qualifiedItemId": "(O)787",
+      "routes": [
+        {
+          "id": "acq.method.787.collect-machine.lightning-rod",
+          "type": "collect-machine",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.battery"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Battery_Pack"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "machine": "Lightning Rod",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.lightning-rod-ready"
+            }
+          ],
+          "weather": "thunderstorm, battery collectable following day",
+          "occurrence": "lightning strike is not guaranteed"
+        },
+        {
+          "id": "acq.method.787.collect-machine.solar-panel",
+          "type": "collect-machine",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.battery"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Battery_Pack"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "machine": "Solar Panel",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.solar-panel-ready"
+            }
+          ],
+          "conditions": [
+            "seven sunny days completed",
+            "output collectable"
+          ]
+        },
+        {
+          "id": "acq.method.787.buy.traveling-cart",
+          "type": "buy",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.battery"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Battery_Pack"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "shop": "Traveling Cart",
+          "goldPriceRange": [
+            1500,
+            2500
+          ],
+          "conditions": [
+            "stock has actually been observed",
+            "enough unreserved gold available"
+          ]
+        },
+        {
+          "id": "acq.method.787.monster-drop.iridium-bat",
+          "type": "monster-drop",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.battery"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Battery_Pack"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "monster": "Iridium Bat",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.combat-access"
+            }
+          ],
+          "occurrence": "5% chance"
+        },
+        {
+          "id": "acq.method.787.fish-pond.stingray",
+          "type": "fish-pond",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.battery"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Battery_Pack"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "species": "Stingray",
+          "minimumPopulation": 9,
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.stingray-pond"
+            }
+          ],
+          "occurrence": "chance of output; observe pond first"
+        }
+      ]
+    },
+    {
+      "id": "acq.item.80",
+      "qualifiedItemId": "(O)80",
+      "routes": [
+        {
+          "id": "acq.method.80.forage-mine-mineral.all-mine-floors",
+          "type": "forage-mine-mineral",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.mining"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Mining"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "location": "The Mines",
+          "minesFloor": "1-119",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.mine-access"
+            }
+          ],
+          "occurrence": "observed ground Quartz only"
+        }
+      ]
+    },
+    {
+      "id": "acq.item.812",
+      "qualifiedItemId": "(O)812",
+      "routes": [
+        {
+          "id": "acq.method.812.fish-pond.fish-eggs",
+          "type": "fish-pond",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.roe"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Roe"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.pond-roe-ready"
+            }
+          ],
+          "occurrence": "Not all pond species produce common Roe; validate fish species and observed output"
+        },
+        {
+          "id": "acq.method.812.fishing-treasure.jewels-of-the-sea",
+          "type": "fishing-treasure",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.roe"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Roe"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.jewels-of-the-sea"
+            },
+            {
+              "ref": "acq.prereq.fishing-treasure"
+            }
+          ],
+          "occurrence": "25% chance of Roe conditional on relevant power and treasure chest; fish-specific variants"
+        }
+      ]
+    },
+    {
+      "id": "acq.item.815",
+      "qualifiedItemId": "(O)815",
+      "routes": [
+        {
+          "id": "acq.method.815.harvest-tea-bush.mature",
+          "type": "harvest-tea-bush",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.tea"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Tea_Sapling"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "minGrowthDays": 20,
+          "harvestDays": "22-28 spring/summer/fall outdoors; winter only inside",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.tea-bush-grown"
+            },
+            {
+              "ref": "acq.prereq.tea-sapling-source"
+            }
+          ],
+          "conditions": [
+            "mature tea bush",
+            "tea leaves currently harvestable",
+            "no watering necessary"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "acq.item.848",
+      "qualifiedItemId": "(O)848",
+      "routes": [
+        {
+          "id": "acq.method.848.volcano-source.cinder-shard-node",
+          "type": "volcano-source",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.cinder"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Cinder_Shard"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "location": "Volcano Dungeon",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.island-volcano"
+            }
+          ],
+          "occurrence": "chance/quantity per eligible node or monster, not deterministic"
+        },
+        {
+          "id": "acq.method.848.volcano-source.magma-sprite",
+          "type": "volcano-source",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.cinder"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Cinder_Shard"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "location": "Volcano Dungeon",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.island-volcano"
+            }
+          ],
+          "occurrence": "chance/quantity per eligible node or monster, not deterministic"
+        },
+        {
+          "id": "acq.method.848.volcano-source.magma-sparker",
+          "type": "volcano-source",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.cinder"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Cinder_Shard"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "location": "Volcano Dungeon",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.island-volcano"
+            }
+          ],
+          "occurrence": "chance/quantity per eligible node or monster, not deterministic"
+        },
+        {
+          "id": "acq.method.848.volcano-source.magma-duggy",
+          "type": "volcano-source",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.cinder"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Cinder_Shard"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "location": "Volcano Dungeon",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.island-volcano"
+            }
+          ],
+          "occurrence": "chance/quantity per eligible node or monster, not deterministic"
+        },
+        {
+          "id": "acq.method.848.volcano-source.false-magma-cap",
+          "type": "volcano-source",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.cinder"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Cinder_Shard"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "location": "Volcano Dungeon",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.island-volcano"
+            }
+          ],
+          "occurrence": "chance/quantity per eligible node or monster, not deterministic"
+        },
+        {
+          "id": "acq.method.848.fish-pond.stingray",
+          "type": "fish-pond",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.cinder"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Cinder_Shard"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "species": "Stingray",
+          "minimumPopulation": 7,
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.stingray-pond"
+            }
+          ],
+          "occurrence": "random output; not guaranteed"
+        }
+      ]
+    },
+    {
+      "id": "acq.item.852",
+      "qualifiedItemId": "(O)852",
+      "routes": [
+        {
+          "id": "acq.method.852.collect-dragon-tooth.volcano-skeleton",
+          "type": "collect-dragon-tooth",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.dragon"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Dragon_Tooth"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "location": "Volcano Dungeon",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.island-volcano"
+            }
+          ],
+          "conditions": [
+            "dragon skeleton remains actually spawned"
+          ]
+        },
+        {
+          "id": "acq.method.852.monster-drop.lava-lurk",
+          "type": "monster-drop",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.dragon"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Dragon_Tooth"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "monster": "Lava Lurk",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.island-volcano"
+            },
+            {
+              "ref": "acq.prereq.combat-access"
+            }
+          ],
+          "occurrence": "15% chance"
+        },
+        {
+          "id": "acq.method.852.fish-pond.stingray",
+          "type": "fish-pond",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.dragon"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Dragon_Tooth"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "species": "Stingray",
+          "minimumPopulation": 9,
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.stingray-pond"
+            }
+          ],
+          "occurrence": "random product; check pond"
+        }
+      ]
+    },
+    {
+      "id": "acq.item.86",
+      "qualifiedItemId": "(O)86",
+      "routes": [
+        {
+          "id": "acq.method.86.forage-mine-mineral.early-mines",
+          "type": "forage-mine-mineral",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.earth"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Earth_Crystal"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "location": "The Mines",
+          "minesFloor": "1-39",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.mine-access"
+            }
+          ],
+          "occurrence": "observed ground Earth Crystal only"
+        },
+        {
+          "id": "acq.method.86.open-geode.geode",
+          "type": "open-geode",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.earth"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Earth_Crystal"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "inputItems": [
+            {
+              "itemId": "(O)535",
+              "quantity": 1
+            }
+          ],
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.geode-open-service"
+            }
+          ],
+          "occurrence": "random geode contents"
+        },
+        {
+          "id": "acq.method.86.open-geode.omni-geode",
+          "type": "open-geode",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.earth"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Earth_Crystal"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "inputItems": [
+            {
+              "itemId": "(O)749",
+              "quantity": 1
+            }
+          ],
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.geode-open-service"
+            }
+          ],
+          "occurrence": "random geode contents"
+        },
+        {
+          "id": "acq.method.86.monster-drop.duggy",
+          "type": "monster-drop",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.earth"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Earth_Crystal"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "monster": "Duggy",
+          "minesFloor": "1-29",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.mine-access"
+            },
+            {
+              "ref": "acq.prereq.combat-access"
+            }
+          ],
+          "occurrence": "chance drop; not guaranteed"
+        }
+      ]
+    },
+    {
+      "id": "acq.item.881",
+      "qualifiedItemId": "(O)881",
+      "routes": [
+        {
+          "id": "acq.method.881.collect-bone-fragments.skeleton",
+          "type": "collect-bone-fragments",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.bones"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Bone_Fragment"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "location": "relevant combat/dig location",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.combat-access"
+            }
+          ],
+          "occurrence": "variable, check actual drop/spot/node"
+        },
+        {
+          "id": "acq.method.881.collect-bone-fragments.lava-lurk",
+          "type": "collect-bone-fragments",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.bones"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Bone_Fragment"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "location": "relevant combat/dig location",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.combat-access"
+            }
+          ],
+          "occurrence": "variable, check actual drop/spot/node"
+        },
+        {
+          "id": "acq.method.881.collect-bone-fragments.island-bone-node",
+          "type": "collect-bone-fragments",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.bones"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Bone_Fragment"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "location": "Ginger Island Dig Site",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.bone-node-access"
+            },
+            {
+              "ref": "acq.prereq.island-access"
+            }
+          ],
+          "occurrence": "variable, check actual drop/spot/node"
+        },
+        {
+          "id": "acq.method.881.collect-bone-fragments.skull-cavern-crates",
+          "type": "collect-bone-fragments",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.bones"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Bone_Fragment"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "location": "relevant combat/dig location",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.skull-cavern-access"
+            }
+          ],
+          "occurrence": "variable, check actual drop/spot/node"
+        },
+        {
+          "id": "acq.method.881.collect-bone-fragments.artifact-spot",
+          "type": "collect-bone-fragments",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.bones"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Bone_Fragment"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "location": "relevant combat/dig location",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.artifact-spots"
+            }
+          ],
+          "occurrence": "variable, check actual drop/spot/node"
+        }
+      ]
+    },
+    {
+      "id": "acq.item.909",
+      "qualifiedItemId": "(O)909",
+      "routes": [
+        {
+          "id": "acq.method.909.mine-radioactive-node.dangerous-mines",
+          "type": "mine-radioactive-node",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.radioactive"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Radioactive_Ore"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "location": "dangerous-mines",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.dangerous-mines"
+            },
+            {
+              "ref": "acq.prereq.pickaxe"
+            },
+            {
+              "ref": "acq.prereq.mine-ore-node"
+            }
+          ],
+          "occurrence": "only when corresponding difficulty is active and radioactive node actually spawned"
+        },
+        {
+          "id": "acq.method.909.mine-radioactive-node.dangerous-skull-cavern",
+          "type": "mine-radioactive-node",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.radioactive"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Radioactive_Ore"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "location": "dangerous-skull-cavern",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.dangerous-skull"
+            },
+            {
+              "ref": "acq.prereq.pickaxe"
+            },
+            {
+              "ref": "acq.prereq.mine-ore-node"
+            }
+          ],
+          "occurrence": "only when corresponding difficulty is active and radioactive node actually spawned"
+        }
+      ]
+    },
+    {
+      "id": "acq.item.96",
+      "qualifiedItemId": "(O)96",
+      "routes": [
+        {
+          "id": "acq.method.96.till-mine-dirt.mine-or-skull-cavern",
+          "type": "till-mine-dirt",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.scroll1"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Dwarf_Scroll_I"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "minesFloor": "any",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.mine-dirt"
+            },
+            {
+              "ref": "acq.prereq.hoe"
+            }
+          ],
+          "occurrence": "random chance ~0.16% per dig"
+        },
+        {
+          "id": "acq.method.96.monster-drop.bat",
+          "type": "monster-drop",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.scroll1"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Dwarf_Scroll_I"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "monster": "Bat",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.combat-access"
+            }
+          ],
+          "occurrence": "0.5% per eligible kill"
+        },
+        {
+          "id": "acq.method.96.monster-drop.bug",
+          "type": "monster-drop",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.scroll1"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Dwarf_Scroll_I"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "monster": "Bug",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.combat-access"
+            }
+          ],
+          "occurrence": "0.5% per eligible kill"
+        },
+        {
+          "id": "acq.method.96.monster-drop.cave-fly",
+          "type": "monster-drop",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.scroll1"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Dwarf_Scroll_I"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "monster": "Cave Fly",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.combat-access"
+            }
+          ],
+          "occurrence": "0.5% per eligible kill"
+        },
+        {
+          "id": "acq.method.96.monster-drop.duggy",
+          "type": "monster-drop",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.scroll1"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Dwarf_Scroll_I"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "monster": "Duggy",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.combat-access"
+            }
+          ],
+          "occurrence": "0.5% per eligible kill"
+        },
+        {
+          "id": "acq.method.96.monster-drop.green-slime",
+          "type": "monster-drop",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.scroll1"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Dwarf_Scroll_I"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "monster": "Green Slime",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.combat-access"
+            }
+          ],
+          "occurrence": "0.5% per eligible kill"
+        },
+        {
+          "id": "acq.method.96.monster-drop.grub",
+          "type": "monster-drop",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.scroll1"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Dwarf_Scroll_I"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "monster": "Grub",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.combat-access"
+            }
+          ],
+          "occurrence": "0.5% per eligible kill"
+        },
+        {
+          "id": "acq.method.96.monster-drop.rock-crab",
+          "type": "monster-drop",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.scroll1"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Dwarf_Scroll_I"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "monster": "Rock Crab",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.combat-access"
+            }
+          ],
+          "occurrence": "0.5% per eligible kill"
+        },
+        {
+          "id": "acq.method.96.monster-drop.stone-golem",
+          "type": "monster-drop",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.scroll1"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Dwarf_Scroll_I"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "monster": "Stone Golem",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.combat-access"
+            }
+          ],
+          "occurrence": "0.5% per eligible kill"
+        }
+      ]
+    },
+    {
+      "id": "acq.item.97",
+      "qualifiedItemId": "(O)97",
+      "routes": [
+        {
+          "id": "acq.method.97.till-mine-dirt.mines-floors-1-39",
+          "type": "till-mine-dirt",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.scroll2"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Dwarf_Scroll_II"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "minesFloor": "1-39",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.mine-dirt"
+            },
+            {
+              "ref": "acq.prereq.hoe"
+            }
+          ],
+          "occurrence": "~0.1% per dig"
+        },
+        {
+          "id": "acq.method.97.monster-drop.blue-slime",
+          "type": "monster-drop",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.scroll2"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Dwarf_Scroll_II"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "monster": "Blue Slime",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.combat-access"
+            }
+          ],
+          "occurrence": "0.5% per eligible kill"
+        },
+        {
+          "id": "acq.method.97.monster-drop.dust-sprite",
+          "type": "monster-drop",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.scroll2"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Dwarf_Scroll_II"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "monster": "Dust Sprite",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.combat-access"
+            }
+          ],
+          "occurrence": "0.5% per eligible kill"
+        },
+        {
+          "id": "acq.method.97.monster-drop.frost-bat",
+          "type": "monster-drop",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.scroll2"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Dwarf_Scroll_II"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "monster": "Frost Bat",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.combat-access"
+            }
+          ],
+          "occurrence": "0.5% per eligible kill"
+        },
+        {
+          "id": "acq.method.97.monster-drop.ghost",
+          "type": "monster-drop",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.scroll2"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Dwarf_Scroll_II"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "monster": "Ghost",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.combat-access"
+            }
+          ],
+          "occurrence": "0.5% per eligible kill"
+        }
+      ]
+    },
+    {
+      "id": "acq.item.98",
+      "qualifiedItemId": "(O)98",
+      "routes": [
+        {
+          "id": "acq.method.98.monster-drop.blue-slime",
+          "type": "monster-drop",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.scroll3"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Dwarf_Scroll_III"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "monster": "Blue Slime",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.combat-access"
+            }
+          ],
+          "occurrence": "1.5% Blue Slime, 0.5% others"
+        },
+        {
+          "id": "acq.method.98.monster-drop.red-slime",
+          "type": "monster-drop",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.scroll3"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Dwarf_Scroll_III"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "monster": "Red Slime",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.combat-access"
+            }
+          ],
+          "occurrence": "1.5% Blue Slime, 0.5% others"
+        },
+        {
+          "id": "acq.method.98.monster-drop.purple-slime",
+          "type": "monster-drop",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.scroll3"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Dwarf_Scroll_III"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "monster": "Purple Slime",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.combat-access"
+            }
+          ],
+          "occurrence": "1.5% Blue Slime, 0.5% others"
+        },
+        {
+          "id": "acq.method.98.monster-drop.copper-slime",
+          "type": "monster-drop",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.scroll3"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Dwarf_Scroll_III"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "monster": "Copper Slime",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.combat-access"
+            }
+          ],
+          "occurrence": "1.5% Blue Slime, 0.5% others"
+        },
+        {
+          "id": "acq.method.98.monster-drop.iron-slime",
+          "type": "monster-drop",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.scroll3"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Dwarf_Scroll_III"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "monster": "Iron Slime",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.combat-access"
+            }
+          ],
+          "occurrence": "1.5% Blue Slime, 0.5% others"
+        },
+        {
+          "id": "acq.method.98.monster-drop.tiger-slime",
+          "type": "monster-drop",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.scroll3"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Dwarf_Scroll_III"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "monster": "Tiger Slime",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.combat-access"
+            }
+          ],
+          "occurrence": "1.5% Blue Slime, 0.5% others"
+        },
+        {
+          "id": "acq.method.98.monster-drop.lava-bat",
+          "type": "monster-drop",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.scroll3"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Dwarf_Scroll_III"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "monster": "Lava Bat",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.combat-access"
+            }
+          ],
+          "occurrence": "1.5% Blue Slime, 0.5% others"
+        },
+        {
+          "id": "acq.method.98.monster-drop.lava-crab",
+          "type": "monster-drop",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.scroll3"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Dwarf_Scroll_III"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "monster": "Lava Crab",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.combat-access"
+            }
+          ],
+          "occurrence": "1.5% Blue Slime, 0.5% others"
+        },
+        {
+          "id": "acq.method.98.monster-drop.squid-kid",
+          "type": "monster-drop",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.scroll3"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Dwarf_Scroll_III"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "monster": "Squid Kid",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.combat-access"
+            }
+          ],
+          "occurrence": "1.5% Blue Slime, 0.5% others"
+        },
+        {
+          "id": "acq.method.98.monster-drop.shadow-brute",
+          "type": "monster-drop",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.scroll3"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Dwarf_Scroll_III"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "monster": "Shadow Brute",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.combat-access"
+            }
+          ],
+          "occurrence": "1.5% Blue Slime, 0.5% others"
+        },
+        {
+          "id": "acq.method.98.monster-drop.shadow-shaman",
+          "type": "monster-drop",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.scroll3"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Dwarf_Scroll_III"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "monster": "Shadow Shaman",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.combat-access"
+            }
+          ],
+          "occurrence": "1.5% Blue Slime, 0.5% others"
+        },
+        {
+          "id": "acq.method.98.monster-drop.metal-head",
+          "type": "monster-drop",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.scroll3"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Dwarf_Scroll_III"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "monster": "Metal Head",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.combat-access"
+            }
+          ],
+          "occurrence": "1.5% Blue Slime, 0.5% others"
+        },
+        {
+          "id": "acq.method.98.monster-drop.spider",
+          "type": "monster-drop",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.scroll3"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Dwarf_Scroll_III"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "monster": "Spider",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.combat-access"
+            }
+          ],
+          "occurrence": "1.5% Blue Slime, 0.5% others"
+        },
+        {
+          "id": "acq.method.98.monster-drop.blue-squid",
+          "type": "monster-drop",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.scroll3"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Dwarf_Scroll_III"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "monster": "Blue Squid",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.combat-access"
+            }
+          ],
+          "occurrence": "1.5% Blue Slime, 0.5% others"
+        }
+      ]
+    },
+    {
+      "id": "acq.item.99",
+      "qualifiedItemId": "(O)99",
+      "routes": [
+        {
+          "id": "acq.method.99.till-mine-dirt.mines-floors-80-plus",
+          "type": "till-mine-dirt",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.scroll4"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Dwarf_Scroll_IV"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "minesFloor": "80+",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.mine-dirt"
+            },
+            {
+              "ref": "acq.prereq.hoe"
+            }
+          ],
+          "occurrence": "~0.2% per dig"
+        },
+        {
+          "id": "acq.method.99.monster-drop.eligible-monster",
+          "type": "monster-drop",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.scroll4"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Dwarf_Scroll_IV"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "excludedMonsters": [
+            "Serpent",
+            "Skeleton",
+            "Wilderness Golem",
+            "Carbon Ghost",
+            "Iridium Bat",
+            "Iridium Crab",
+            "Haunted Skull"
+          ],
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.combat-access"
+            }
+          ],
+          "occurrence": "~0.1% for eligible monster, not excluded types"
+        }
+      ]
+    },
+    {
+      "id": "acq.item.book_mystery",
+      "qualifiedItemId": "(O)Book_Mystery",
+      "routes": [
+        {
+          "id": "acq.method.book_mystery.open-mystery-box.mystery-box",
+          "type": "open-mystery-box",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.book"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Book_of_Mysteries"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "inputItems": [
+            {
+              "name": "Mystery Box",
+              "quantity": 1
+            }
+          ],
+          "conditions": [
+            "Blacksmith service accessible",
+            "book not yet obtained",
+            "Blue Mystery Box requires more than ten boxes previously opened"
+          ],
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.mystery-box-available"
+            }
+          ],
+          "occurrence": "variable chance; not a guaranteed reward"
+        },
+        {
+          "id": "acq.method.book_mystery.open-mystery-box.golden-mystery-box",
+          "type": "open-mystery-box",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.book"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Book_of_Mysteries"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "inputItems": [
+            {
+              "name": "Golden Mystery Box",
+              "quantity": 1
+            }
+          ],
+          "conditions": [
+            "Blacksmith service accessible",
+            "book not yet obtained",
+            "Golden Mystery Box available"
+          ],
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.mystery-box-available"
+            }
+          ],
+          "occurrence": "variable chance; not a guaranteed reward"
+        }
+      ]
+    },
+    {
+      "id": "acq.item.driedfruit",
+      "qualifiedItemId": "(O)DriedFruit",
+      "routes": [
+        {
+          "id": "acq.method.driedfruit.dehydrate.five-fruits",
+          "type": "dehydrate",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.dehydrator"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Dehydrator"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "machine": "Dehydrator",
+          "inputCategory": "eligible fruit",
+          "inputQuantity": 5,
+          "inputSameTypeAndQuality": true,
+          "excludedInputs": [
+            "Grape"
+          ],
+          "processingTime": "ready next morning",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.dehydrator-ready"
+            }
+          ],
+          "conditions": [
+            "five accessible unreserved matching inputs",
+            "machine idle",
+            "recipe respects item category restrictions"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "acq.item.driedmushrooms",
+      "qualifiedItemId": "(O)DriedMushrooms",
+      "routes": [
+        {
+          "id": "acq.method.driedmushrooms.dehydrate.five-mushrooms",
+          "type": "dehydrate",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.dehydrator"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Dehydrator"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "machine": "Dehydrator",
+          "inputCategory": "eligible mushroom",
+          "inputQuantity": 5,
+          "inputSameTypeAndQuality": true,
+          "excludedInputs": [
+            "Red Mushroom"
+          ],
+          "processingTime": "ready next morning",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.dehydrator-ready"
+            }
+          ],
+          "conditions": [
+            "five accessible unreserved matching inputs",
+            "machine idle",
+            "recipe respects item category restrictions"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "acq.item.moss",
+      "qualifiedItemId": "(O)Moss",
+      "routes": [
+        {
+          "id": "acq.method.moss.harvest-moss.tree",
+          "type": "harvest-moss",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.moss"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Moss"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "location": "eligible outdoor trees",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.moss-bearing-tree"
+            }
+          ],
+          "outputQuantity": "1-2 on collection",
+          "conditions": [
+            "moss visibly present",
+            "suitable weapon or tool available"
+          ]
+        },
+        {
+          "id": "acq.method.moss.harvest-moss.green-rain-weeds",
+          "type": "harvest-moss",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.moss"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Moss"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "location": "Green Rain event",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.moss-bearing-tree"
+            }
+          ],
+          "conditions": [
+            "currently active Green Rain weeds"
+          ],
+          "occurrence": "special green-rain weeds have random drop chance"
+        }
+      ]
+    },
+    {
+      "id": "acq.item.mysticsyrup",
+      "qualifiedItemId": "(O)MysticSyrup",
+      "routes": [
+        {
+          "id": "acq.method.mysticsyrup.tap-mystic-tree.tapper",
+          "type": "tap-mystic-tree",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.mystic"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Mystic_Syrup"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "tree": "Mystic Tree",
+          "machine": "Tapper",
+          "processingDays": 7,
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.mystic-tree"
+            }
+          ],
+          "conditions": [
+            "tree fully grown",
+            "tap output ready"
+          ]
+        },
+        {
+          "id": "acq.method.mysticsyrup.tap-mystic-tree.heavy-tapper",
+          "type": "tap-mystic-tree",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.mystic"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Mystic_Syrup"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "tree": "Mystic Tree",
+          "machine": "Heavy Tapper",
+          "processingDays": 3,
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.mystic-tree"
+            }
+          ],
+          "conditions": [
+            "tree fully grown",
+            "tap output ready"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "acq.item.raisins",
+      "qualifiedItemId": "(O)Raisins",
+      "routes": [
+        {
+          "id": "acq.method.raisins.dehydrate.five-grapes",
+          "type": "dehydrate",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.dehydrator"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Dehydrator"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "machine": "Dehydrator",
+          "inputCategory": "Grape",
+          "inputQuantity": 5,
+          "inputSameTypeAndQuality": true,
+          "excludedInputs": [],
+          "processingTime": "ready next morning",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.dehydrator-ready"
+            }
+          ],
+          "conditions": [
+            "five accessible unreserved matching inputs",
+            "machine idle",
+            "recipe respects item category restrictions"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "acq.item.smokedfish",
+      "qualifiedItemId": "(O)SmokedFish",
+      "routes": [
+        {
+          "id": "acq.method.smokedfish.smoke-fish.smoker",
+          "type": "smoke-fish",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire2.fish-smoker"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Fish_Smoker"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "machine": "Fish Smoker",
+          "inputCategory": "any eligible fish (not jelly)",
+          "inputQuantity": 1,
+          "inputItems": [
+            {
+              "itemId": "(O)382",
+              "name": "Coal",
+              "quantity": 1
+            }
+          ],
+          "processingMinutes": 50,
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.fish-smoker-ready"
+            },
+            {
+              "ref": "acq.prereq.fish-and-coal"
+            }
+          ],
+          "conditions": [
+            "machine idle",
+            "fish and coal accessible and unreserved"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceFile": "scripts/build-research-batch-2.py"
+}

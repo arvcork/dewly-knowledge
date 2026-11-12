@@ -1,0 +1,167 @@
+{
+  "schemaVersion": "1.0.0",
+  "gameVersion": "1.6.15.24354",
+  "nodes": [
+    {
+      "id": "acq.prereq.dangerous-mines",
+      "kind": "prerequisite-contract",
+      "description": "Danger In The Deep active OR Shrine of Challenge enabled since prior day, correct Mines floors",
+      "trackingStatus": "contract-only; runtime binding unknown",
+      "unknownPolicy": "unknown blocks availability"
+    },
+    {
+      "id": "acq.prereq.dangerous-skull",
+      "kind": "prerequisite-contract",
+      "description": "Skull Cavern Invasion active OR unlocked dangerous skull cavern statue enabled",
+      "trackingStatus": "contract-only; runtime binding unknown",
+      "unknownPolicy": "unknown blocks availability"
+    },
+    {
+      "id": "acq.prereq.dehydrator-ready",
+      "kind": "prerequisite-contract",
+      "description": "Observed placed idle Dehydrator; craft recipe bought from Pierre for 10,000g and crafted with 30 Wood, 2 Clay, 1 Fire Quartz; alternate mushroom cave/prize reward",
+      "trackingStatus": "contract-only; runtime binding unknown",
+      "unknownPolicy": "unknown blocks availability"
+    },
+    {
+      "id": "acq.prereq.fish-and-coal",
+      "kind": "prerequisite-contract",
+      "description": "One unreserved eligible fish and one unreserved Coal, plus machine ready",
+      "trackingStatus": "contract-only; runtime binding unknown",
+      "unknownPolicy": "unknown blocks availability"
+    },
+    {
+      "id": "acq.prereq.fish-smoker-ready",
+      "kind": "prerequisite-contract",
+      "description": "Observed placed idle Fish Smoker; recipe bought from Fish Shop 10,000g, craft using 10 Hardwood and three Jelly varieties; alternate Riverland farm/prize reward",
+      "trackingStatus": "contract-only; runtime binding unknown",
+      "unknownPolicy": "unknown blocks availability"
+    },
+    {
+      "id": "acq.prereq.gem-fishing-chest",
+      "kind": "prerequisite-contract",
+      "description": "Observed treasure chest during fishing; loot is probabilistic",
+      "trackingStatus": "contract-only; runtime binding unknown",
+      "unknownPolicy": "unknown blocks availability"
+    },
+    {
+      "id": "acq.prereq.gem-node-observed",
+      "kind": "prerequisite-contract",
+      "description": "Observed gem type node exists in a reachable mine location; a general Gem Node yield is random",
+      "trackingStatus": "contract-only; runtime binding unknown",
+      "unknownPolicy": "unknown blocks availability"
+    },
+    {
+      "id": "acq.prereq.geode-open-service",
+      "kind": "prerequisite-contract",
+      "description": "Owned geode, 25g and accessible Clint or functioning Geode Crusher, outcome random",
+      "trackingStatus": "contract-only; runtime binding unknown",
+      "unknownPolicy": "unknown blocks availability"
+    },
+    {
+      "id": "acq.prereq.island-volcano",
+      "kind": "prerequisite-contract",
+      "description": "Ginger Island unlocked; Volcano Dungeon accessible and relevant spawn exists",
+      "trackingStatus": "contract-only; runtime binding unknown",
+      "unknownPolicy": "unknown blocks availability"
+    },
+    {
+      "id": "acq.prereq.jewels-of-the-sea",
+      "kind": "prerequisite-contract",
+      "description": "Jewels of the Sea power has actually been read and is active",
+      "trackingStatus": "contract-only; runtime binding unknown",
+      "unknownPolicy": "unknown blocks availability"
+    },
+    {
+      "id": "acq.prereq.lightning-rod-ready",
+      "kind": "prerequisite-contract",
+      "description": "Observed Lightning Rod struck during thunderstorm, battery ready the next day; storm does not guarantee strike",
+      "trackingStatus": "contract-only; runtime binding unknown",
+      "unknownPolicy": "unknown blocks availability"
+    },
+    {
+      "id": "acq.prereq.mine-dirt",
+      "kind": "prerequisite-contract",
+      "description": "Observed tillable mine dirt and Hoe; required floor currently reachable",
+      "trackingStatus": "contract-only; runtime binding unknown",
+      "unknownPolicy": "unknown blocks availability"
+    },
+    {
+      "id": "acq.prereq.mine-ore-node",
+      "kind": "prerequisite-contract",
+      "description": "Observed ore/node in unlocked appropriate location, suitable mining tool, random amount not guaranteed",
+      "trackingStatus": "contract-only; runtime binding unknown",
+      "unknownPolicy": "unknown blocks availability"
+    },
+    {
+      "id": "acq.prereq.moss-bearing-tree",
+      "kind": "prerequisite-contract",
+      "description": "Observed mature valid moss-covered tree or green-rain weed, reachable and harvestable",
+      "trackingStatus": "contract-only; runtime binding unknown",
+      "unknownPolicy": "unknown blocks availability"
+    },
+    {
+      "id": "acq.prereq.mystery-box-available",
+      "kind": "prerequisite-contract",
+      "description": "Unopened Mystery Box / Golden Mystery Box, 25g and Blacksmith service",
+      "trackingStatus": "contract-only; runtime binding unknown",
+      "unknownPolicy": "unknown blocks availability"
+    },
+    {
+      "id": "acq.prereq.mystic-tree",
+      "kind": "prerequisite-contract",
+      "description": "Observed mature Mystic Tree with installed Tapper or Heavy Tapper; Foraging Mastery unlocks Mystic Tree Seed crafting",
+      "trackingStatus": "contract-only; runtime binding unknown",
+      "unknownPolicy": "unknown blocks availability"
+    },
+    {
+      "id": "acq.prereq.panning-access",
+      "kind": "prerequisite-contract",
+      "description": "Panning tool and currently visible pan spot, correct location",
+      "trackingStatus": "contract-only; runtime binding unknown",
+      "unknownPolicy": "unknown blocks availability"
+    },
+    {
+      "id": "acq.prereq.pond-roe-ready",
+      "kind": "prerequisite-contract",
+      "description": "Placed stocked Fish Pond and collectable Roe actually present; variable per-fish production",
+      "trackingStatus": "contract-only; runtime binding unknown",
+      "unknownPolicy": "unknown blocks availability"
+    },
+    {
+      "id": "acq.prereq.solar-panel-ready",
+      "kind": "prerequisite-contract",
+      "description": "Observed Solar Panel; seven sunny days have completed and battery ready",
+      "trackingStatus": "contract-only; runtime binding unknown",
+      "unknownPolicy": "unknown blocks availability"
+    },
+    {
+      "id": "acq.prereq.stingray-pond",
+      "kind": "prerequisite-contract",
+      "description": "Fish Pond with Stingray and observed population threshold and ready output",
+      "trackingStatus": "contract-only; runtime binding unknown",
+      "unknownPolicy": "unknown blocks availability"
+    },
+    {
+      "id": "acq.prereq.tea-bush-grown",
+      "kind": "prerequisite-contract",
+      "description": "Mature Tea Bush and season/location permits collection on current day",
+      "trackingStatus": "contract-only; runtime binding unknown",
+      "unknownPolicy": "unknown blocks availability"
+    },
+    {
+      "id": "acq.prereq.tea-sapling-source",
+      "kind": "prerequisite-contract",
+      "description": "Tea Sapling already owned or Caroline 2-heart event+next-day mail recipe, plus craft inputs 2 Wild Seeds 5 Fiber 5 Wood; or stock at Traveling Cart/Desert Festival",
+      "trackingStatus": "contract-only; runtime binding unknown",
+      "unknownPolicy": "unknown blocks availability"
+    },
+    {
+      "id": "acq.prereq.tree-seed-parent",
+      "kind": "prerequisite-contract",
+      "description": "Correct tree species available to shake or fell; seed drops are not guaranteed",
+      "trackingStatus": "contract-only; runtime binding unknown",
+      "unknownPolicy": "unknown blocks availability"
+    }
+  ]
+}

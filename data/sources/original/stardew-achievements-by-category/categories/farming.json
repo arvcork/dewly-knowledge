@@ -1,0 +1,116 @@
+{
+  "category": "farming",
+  "displayName": "Farming and crops",
+  "description": "Crop-focused shipping targets and growing goals.",
+  "catalogueVersion": "ps4-npwr12196-2026-11-08",
+  "rulesVersion": "ps4-1.6-cautious-2026-11-08-r2",
+  "trophyCount": 2,
+  "trophies": [
+    {
+      "trophyId": "polyculture",
+      "name": "Polyculture",
+      "group": "base",
+      "tier": "bronze",
+      "classification": "Partially supported",
+      "requirement": "Ship 15 of each required crop.",
+      "requirementKind": "collection",
+      "requirementDetail": {
+        "kind": "collection",
+        "flag": "polyculture_complete"
+      },
+      "dependencies": [],
+      "evidenceRequired": "Trophy evidence boolean: polyculture_complete; player confirmation of the exact outcome",
+      "progressDerivation": "evaluateCollectionEvidence or explicit flag (polyculture_complete); partial count only when eligible IDs are recognized",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "grow_ship_crop",
+          "title": "Grow and ship 15 of a still-needed eligible crop",
+          "effort": "medium"
+        }
+      ],
+      "knownBlockers": [
+        "Only explicitly reported shipping-bin activity counts; acquisition and merchant sales do not.",
+        "Track 15-shipped quantities, but source set/canonical sales and corrections require broader testing.",
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "condition_needs_review",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false,
+      "dependencyRule": {
+        "trophyId": "polyculture",
+        "completion": {
+          "type": "FARM",
+          "condition": {
+            "type": "COLLECTION",
+            "flag": "polyculture_complete"
+          }
+        },
+        "strategicDependencies": []
+      }
+    },
+    {
+      "trophyId": "monoculture",
+      "name": "Monoculture",
+      "group": "base",
+      "tier": "bronze",
+      "classification": "Trackable but limited planning",
+      "requirement": "Ship 300 of one crop.",
+      "requirementKind": "threshold",
+      "requirementDetail": {
+        "kind": "threshold",
+        "metric": "monoculture_max",
+        "target": 300,
+        "unit": "same-crop shipments"
+      },
+      "dependencies": [],
+      "evidenceRequired": "Canonical trophy evidence number: monoculture_max; player-confirmed total or verifiable authorized activity",
+      "progressDerivation": "metricValue(monoculture_max); unknown remains unknown; no wallet/lifetime proxy",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "grow_ship_crop",
+          "title": "Grow and ship quantities of a single eligible crop",
+          "effort": "medium"
+        }
+      ],
+      "knownBlockers": [
+        "Only explicitly reported shipping-bin activity counts; acquisition and merchant sales do not.",
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false,
+      "dependencyRule": {
+        "trophyId": "monoculture",
+        "completion": {
+          "type": "FARM",
+          "condition": {
+            "type": "COUNT",
+            "metric": "monoculture_max",
+            "target": 300
+          }
+        },
+        "strategicDependencies": []
+      }
+    }
+  ]
+}

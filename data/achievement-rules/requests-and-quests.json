@@ -1,0 +1,316 @@
+{
+  "schemaVersion": "0.1.0",
+  "category": "requests-and-quests",
+  "nodes": [
+    {
+      "id": "breadth.unresolved.requests-and-quests",
+      "kind": "unknown",
+      "trackingRefs": [],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354"
+      ],
+      "verification": "unresolved",
+      "reason": "Quest count increment sites and exact raccoon final trigger still need inspection; generated deliveries must never be replaced with a fixed catalogue. Live content selector and normalized progress reader pending."
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.gofer.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.gofer.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.goal.gofer",
+      "kind": "all",
+      "goal": "gofer",
+      "requires": [
+        "breadth.requirement.gofer"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.gofer.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.gofer.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.requirement.gofer",
+      "kind": "all",
+      "requires": [
+        "breadth.action.gofer"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.gofer.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.gofer.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.action.gofer",
+      "kind": "action",
+      "requires": [
+        "breadth.unresolved.requests-and-quests"
+      ],
+      "task": {
+        "text": "Complete counted quests."
+      },
+      "breadth": {
+        "completionLogic": "Stats.QuestsCompleted >=10",
+        "runtimeStatus": "reader-pending; no live verification",
+        "platformRef": "data/platform-mapping.json#gofer",
+        "selection": "Select active qualifying quest with unmet objective and feasible deadline; use actual quest counters, not all finished journal entries. Raccoon requests must use current generated request items.",
+        "assets": [
+          "Data/Quests",
+          "Data/SpecialOrders"
+        ],
+        "limitations": "Quest count increment sites and exact raccoon final trigger still need inspection; generated deliveries must never be replaced with a fixed catalogue.",
+        "atomicDecomposition": {
+          "status": "complete",
+          "mode": "counter-target",
+          "source": "local-runtime-1.6.15.24354: Stats.checkForQuestAchievements; Forest raccoon progression",
+          "eligibility": "Only completions that increment Stats.QuestsCompleted; current objectives are dynamically generated and not a fixed item catalogue.",
+          "resultId": "gofer.quest-completion.10",
+          "requirements": [
+            {
+              "id": "gofer.quest-count",
+              "kind": "counter",
+              "condition": "QuestsCompleted >= 10",
+              "tracking": {
+                "value": "Stats.QuestsCompleted",
+                "dataType": "uint32",
+                "source": "local-runtime-1.6.15.24354: Stats.checkForQuestAchievements; Forest raccoon progression",
+                "status": "source-verified"
+              },
+              "routeRefs": [
+                "breadth.acquire.item"
+              ],
+              "prerequisiteRefs": [],
+              "verification": "derived-rule"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.a_big_help.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.a_big_help.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.goal.a_big_help",
+      "kind": "all",
+      "goal": "a_big_help",
+      "requires": [
+        "breadth.requirement.a_big_help"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.a_big_help.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.a_big_help.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.requirement.a_big_help",
+      "kind": "all",
+      "requires": [
+        "breadth.action.a_big_help"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.a_big_help.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.a_big_help.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.action.a_big_help",
+      "kind": "action",
+      "requires": [
+        "breadth.unresolved.requests-and-quests"
+      ],
+      "task": {
+        "text": "Complete counted quests."
+      },
+      "breadth": {
+        "completionLogic": "Stats.QuestsCompleted >=40",
+        "runtimeStatus": "reader-pending; no live verification",
+        "platformRef": "data/platform-mapping.json#a_big_help",
+        "selection": "Select active qualifying quest with unmet objective and feasible deadline; use actual quest counters, not all finished journal entries. Raccoon requests must use current generated request items.",
+        "assets": [
+          "Data/Quests",
+          "Data/SpecialOrders"
+        ],
+        "limitations": "Quest count increment sites and exact raccoon final trigger still need inspection; generated deliveries must never be replaced with a fixed catalogue.",
+        "atomicDecomposition": {
+          "status": "complete",
+          "mode": "counter-target",
+          "source": "local-runtime-1.6.15.24354: Stats.checkForQuestAchievements; Forest raccoon progression",
+          "eligibility": "Only completions that increment Stats.QuestsCompleted; current objectives are dynamically generated and not a fixed item catalogue.",
+          "resultId": "a_big_help.quest-completion.40",
+          "requirements": [
+            {
+              "id": "a_big_help.quest-count",
+              "kind": "counter",
+              "condition": "QuestsCompleted >= 40",
+              "tracking": {
+                "value": "Stats.QuestsCompleted",
+                "dataType": "uint32",
+                "source": "local-runtime-1.6.15.24354: Stats.checkForQuestAchievements; Forest raccoon progression",
+                "status": "source-verified"
+              },
+              "routeRefs": [
+                "breadth.acquire.item"
+              ],
+              "prerequisiteRefs": [],
+              "verification": "derived-rule"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.good_neighbors.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.good_neighbors.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.goal.good_neighbors",
+      "kind": "all",
+      "goal": "good_neighbors",
+      "requires": [
+        "breadth.requirement.good_neighbors"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.good_neighbors.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.good_neighbors.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.requirement.good_neighbors",
+      "kind": "all",
+      "requires": [
+        "breadth.action.good_neighbors"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.good_neighbors.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.good_neighbors.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.action.good_neighbors",
+      "kind": "action",
+      "requires": [
+        "breadth.unresolved.requests-and-quests"
+      ],
+      "task": {
+        "text": "Progress actual raccoon requests and wait out the seven-day reveal delay."
+      },
+      "breadth": {
+        "completionLogic": "Forest computed numRaccoonBabies >= 8 during resetSharedState",
+        "runtimeStatus": "reader-pending; no live verification",
+        "platformRef": "data/platform-mapping.json#good_neighbors",
+        "selection": "Select active qualifying quest with unmet objective and feasible deadline; use actual quest counters, not all finished journal entries. Raccoon requests must use current generated request items.",
+        "assets": [
+          "Data/Quests",
+          "Data/SpecialOrders"
+        ],
+        "limitations": "Quest count increment sites and exact raccoon final trigger still need inspection; generated deliveries must never be replaced with a fixed catalogue.",
+        "atomicDecomposition": {
+          "status": "complete",
+          "mode": "counter-target",
+          "source": "Forest.resetSharedState (local runtime)",
+          "eligibility": "TimesFedRaccoons produces numRaccoonBabies = TimesFedRaccoons - 1, reduced by one until seven days after the latest bundle; award occurs when computed babies >= 8.",
+          "resultId": "good_neighbors.raccoon-baby.8",
+          "requirements": [
+            {
+              "id": "good_neighbors.raccoon-family",
+              "kind": "counter",
+              "condition": "computed numRaccoonBabies >= 8 on Forest shared-state reset",
+              "tracking": {
+                "value": "NetWorldState.TimesFedRaccoons, Date.TotalDays, DaysPlayedWhenLastRaccoonBundleWasFinished",
+                "dataType": "int32 tuple",
+                "source": "Forest.resetSharedState",
+                "status": "source-verified"
+              },
+              "routeRefs": [
+                "breadth.acquire.item"
+              ],
+              "prerequisiteRefs": [],
+              "verification": "derived-rule"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

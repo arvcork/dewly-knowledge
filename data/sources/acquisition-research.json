@@ -1,0 +1,149 @@
+{
+  "schemaVersion": "1.0.0",
+  "gameVersion": "1.6.15.24354",
+  "contentFingerprint": "933b27af1f08a0253d10b5a27a8b2de3672e0d8816bb2fcab9b3f0f7e9975ff5",
+  "sources": [
+    {
+      "id": "source.research.artifact",
+      "type": "external-wiki",
+      "url": "https://stardewvalleywiki.com/Artifacts",
+      "description": "Artifact table identifies location- and drop-specific sources."
+    },
+    {
+      "id": "source.research.trove",
+      "type": "external-wiki",
+      "url": "https://stardewvalleywiki.com/Artifact_Trove",
+      "description": "Trove contains 27 possible outputs; Blacksmith opens for 25g; Desert Trader exchanges 5 Omni Geodes."
+    },
+    {
+      "id": "source.research.mineral",
+      "type": "external-wiki",
+      "url": "https://stardewvalleywiki.com/Minerals",
+      "description": "Individual geode mineral table and geode processing requirements."
+    },
+    {
+      "id": "source.research.crusher",
+      "type": "external-wiki",
+      "url": "https://stardewvalleywiki.com/Geode_Crusher",
+      "description": "1.6 crusher consumes no coal; recipe from Cave Patrol; requires 2 Gold Bars, 50 Stone, 1 Diamond."
+    },
+    {
+      "id": "source.research.furnace",
+      "type": "external-wiki",
+      "url": "https://stardewvalleywiki.com/Furnace",
+      "description": "Smelting consumes five of each ore and one coal; Quartz and Fire Quartz alternative for Refined Quartz."
+    },
+    {
+      "id": "source.research.forage",
+      "type": "external-wiki",
+      "url": "https://stardewvalleywiki.com/Foraging",
+      "description": "Seasonal foraging, berry dates, beach/mines/Ginger Island contexts."
+    },
+    {
+      "id": "source.research.trees",
+      "type": "external-wiki",
+      "url": "https://stardewvalleywiki.com/Fruit_Trees",
+      "description": "Fruit trees mature after 28 days; saplings, seasons, island/greenhouse variants."
+    },
+    {
+      "id": "source.research.animals",
+      "type": "external-wiki",
+      "url": "https://stardewvalleywiki.com/Animals",
+      "description": "Adult/fed animal production and probabilistic large produce based on mood and friendship."
+    },
+    {
+      "id": "source.research.artisan",
+      "type": "external-wiki",
+      "url": "https://stardewvalleywiki.com/Artisan_Goods",
+      "description": "Processing machines and ingredient/output relationships."
+    },
+    {
+      "id": "source.research.preserves",
+      "type": "external-wiki",
+      "url": "https://stardewvalleywiki.com/Preserves_Jar",
+      "description": "Preserves jar turns vegetables into pickles, fruit into jelly, roe into aged roe and sturgeon roe into caviar."
+    }
+  ],
+  "records": [
+    {
+      "id": "evidence.research.acquire.artifact",
+      "claim": "Artifact table identifies location- and drop-specific sources.",
+      "sourceRef": "source.research.artifact",
+      "verificationLevel": "externally-researched-not-live-tested",
+      "liveGameplayTested": false,
+      "gameEvidenceStatus": "not asserted as installed-game assembly evidence"
+    },
+    {
+      "id": "evidence.research.acquire.trove",
+      "claim": "Trove contains 27 possible outputs; Blacksmith opens for 25g; Desert Trader exchanges 5 Omni Geodes.",
+      "sourceRef": "source.research.trove",
+      "verificationLevel": "externally-researched-not-live-tested",
+      "liveGameplayTested": false,
+      "gameEvidenceStatus": "not asserted as installed-game assembly evidence"
+    },
+    {
+      "id": "evidence.research.acquire.mineral",
+      "claim": "Individual geode mineral table and geode processing requirements.",
+      "sourceRef": "source.research.mineral",
+      "verificationLevel": "externally-researched-not-live-tested",
+      "liveGameplayTested": false,
+      "gameEvidenceStatus": "not asserted as installed-game assembly evidence"
+    },
+    {
+      "id": "evidence.research.acquire.crusher",
+      "claim": "1.6 crusher consumes no coal; recipe from Cave Patrol; requires 2 Gold Bars, 50 Stone, 1 Diamond.",
+      "sourceRef": "source.research.crusher",
+      "verificationLevel": "externally-researched-not-live-tested",
+      "liveGameplayTested": false,
+      "gameEvidenceStatus": "not asserted as installed-game assembly evidence"
+    },
+    {
+      "id": "evidence.research.acquire.furnace",
+      "claim": "Smelting consumes five of each ore and one coal; Quartz and Fire Quartz alternative for Refined Quartz.",
+      "sourceRef": "source.research.furnace",
+      "verificationLevel": "externally-researched-not-live-tested",
+      "liveGameplayTested": false,
+      "gameEvidenceStatus": "not asserted as installed-game assembly evidence"
+    },
+    {
+      "id": "evidence.research.acquire.forage",
+      "claim": "Seasonal foraging, berry dates, beach/mines/Ginger Island contexts.",
+      "sourceRef": "source.research.forage",
+      "verificationLevel": "externally-researched-not-live-tested",
+      "liveGameplayTested": false,
+      "gameEvidenceStatus": "not asserted as installed-game assembly evidence"
+    },
+    {
+      "id": "evidence.research.acquire.trees",
+      "claim": "Fruit trees mature after 28 days; saplings, seasons, island/greenhouse variants.",
+      "sourceRef": "source.research.trees",
+      "verificationLevel": "externally-researched-not-live-tested",
+      "liveGameplayTested": false,
+      "gameEvidenceStatus": "not asserted as installed-game assembly evidence"
+    },
+    {
+      "id": "evidence.research.acquire.animals",
+      "claim": "Adult/fed animal production and probabilistic large produce based on mood and friendship.",
+      "sourceRef": "source.research.animals",
+      "verificationLevel": "externally-researched-not-live-tested",
+      "liveGameplayTested": false,
+      "gameEvidenceStatus": "not asserted as installed-game assembly evidence"
+    },
+    {
+      "id": "evidence.research.acquire.artisan",
+      "claim": "Processing machines and ingredient/output relationships.",
+      "sourceRef": "source.research.artisan",
+      "verificationLevel": "externally-researched-not-live-tested",
+      "liveGameplayTested": false,
+      "gameEvidenceStatus": "not asserted as installed-game assembly evidence"
+    },
+    {
+      "id": "evidence.research.acquire.preserves",
+      "claim": "Preserves jar turns vegetables into pickles, fruit into jelly, roe into aged roe and sturgeon roe into caviar.",
+      "sourceRef": "source.research.preserves",
+      "verificationLevel": "externally-researched-not-live-tested",
+      "liveGameplayTested": false,
+      "gameEvidenceStatus": "not asserted as installed-game assembly evidence"
+    }
+  ]
+}

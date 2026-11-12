@@ -1,0 +1,156 @@
+{
+  "schemaVersion": "1.0.0",
+  "gameVersion": "1.6.15.24354",
+  "scope": "Four symbolic ingredient category matchers; runtime item membership must be confirmed before use",
+  "records": [
+    {
+      "id": "acq.category.-4",
+      "categoryId": -4,
+      "categoryName": "fish",
+      "membershipSource": "current loaded content category match; portable index ingredient.eligibleItemIds is a development fixture",
+      "routes": [
+        {
+          "id": "acq.method.category-fish.catch",
+          "type": "acquire-eligible-category-fish",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire3.cooking"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Cooking"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "selectionPolicy": "Join each eligible item to its content-defined fishing/crab-pot acquisition methods",
+          "requiredConditions": [
+            "fish matches -4 in active data",
+            "valid current spawn location, season, time and weather",
+            "accessible gear and water"
+          ],
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.eligible-fishing-catch"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "acq.category.-5",
+      "categoryId": -5,
+      "categoryName": "egg",
+      "membershipSource": "eligibleItemIds exported for ingredient; re-evaluate current loaded content",
+      "routes": [
+        {
+          "id": "acq.method.category-egg.animal-production",
+          "type": "acquire-eligible-category-egg",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire3.cooking"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Cooking"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "itemNameAlternatives": [
+            "Egg",
+            "Brown Egg",
+            "Large Egg",
+            "Large Brown Egg",
+            "Void Egg",
+            "Duck Egg",
+            "Ostrich Egg",
+            "Golden Egg"
+          ],
+          "selectionPolicy": "Select only qualified IDs that actually match active -5 category; joined to individual animal acquisition routes",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.eligible-egg"
+            },
+            {
+              "ref": "acq.prereq.animal-housing"
+            },
+            {
+              "ref": "acq.prereq.animal-mature-fed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "acq.category.-6",
+      "categoryId": -6,
+      "categoryName": "milk",
+      "membershipSource": "eligibleItemIds exported for ingredient; re-evaluate current loaded content",
+      "routes": [
+        {
+          "id": "acq.method.category-milk.animal-production",
+          "type": "acquire-eligible-category-milk",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire3.cooking"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Cooking"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "itemNameAlternatives": [
+            "Milk",
+            "Large Milk",
+            "Goat Milk",
+            "Large Goat Milk"
+          ],
+          "selectionPolicy": "Select eligible current-content IDs only; quantities and collection method depend on animal",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.eligible-milk"
+            },
+            {
+              "ref": "acq.prereq.animal-housing"
+            },
+            {
+              "ref": "acq.prereq.animal-mature-fed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "acq.category.-777",
+      "categoryId": -777,
+      "categoryName": "wild-seeds-any",
+      "membershipSource": "special Tea Sapling crafting recipe selector; must bind special recipe to active content before using",
+      "routes": [
+        {
+          "id": "acq.method.category-wild-seeds.craft",
+          "type": "craft-seasonal-wild-seeds",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire3.tea-seeds"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Tea_Sapling"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "nameAlternatives": [
+            "Spring Seeds",
+            "Summer Seeds",
+            "Fall Seeds",
+            "Winter Seeds"
+          ],
+          "selectionPolicy": "Any currently recognized seasonal Wild Seeds variant; Tea Sapling requires 2 total",
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.wild-seeds-craft"
+            }
+          ],
+          "conditions": [
+            "correct seed recipe unlocked for chosen season",
+            "forage ingredients available",
+            "produced seasonal seed count confirmed"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceFile": "scripts/build-research-batch-3.py"
+}

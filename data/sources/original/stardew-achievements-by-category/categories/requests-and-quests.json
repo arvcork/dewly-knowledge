@@ -1,0 +1,181 @@
+{
+  "category": "requests-and-quests",
+  "displayName": "Requests and quests",
+  "description": "Help Wanted requests and the raccoon family quest.",
+  "catalogueVersion": "ps4-npwr12196-2026-11-08",
+  "rulesVersion": "ps4-1.6-cautious-2026-11-08-r2",
+  "trophyCount": 3,
+  "trophies": [
+    {
+      "trophyId": "gofer",
+      "name": "Gofer",
+      "group": "base",
+      "tier": "bronze",
+      "classification": "Partially supported",
+      "requirement": "Complete 10 Help Wanted requests.",
+      "requirementKind": "threshold",
+      "requirementDetail": {
+        "kind": "threshold",
+        "metric": "help_wanted_completed",
+        "target": 10,
+        "unit": "requests"
+      },
+      "dependencies": [],
+      "evidenceRequired": "Canonical trophy evidence number: help_wanted_completed; player-confirmed total or verifiable authorized activity",
+      "progressDerivation": "metricValue(help_wanted_completed); unknown remains unknown; no wallet/lifetime proxy",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "help_wanted",
+          "title": "Inspect the Help Wanted board; complete an actual accepted task",
+          "effort": "medium"
+        }
+      ],
+      "knownBlockers": [
+        "The daily board and accepted quest state are not read directly from the game.",
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false,
+      "dependencyRule": {
+        "trophyId": "gofer",
+        "completion": {
+          "type": "FARM",
+          "condition": {
+            "type": "COUNT",
+            "metric": "help_wanted_completed",
+            "target": 10
+          }
+        },
+        "strategicDependencies": []
+      }
+    },
+    {
+      "trophyId": "a_big_help",
+      "name": "A Big Help",
+      "group": "base",
+      "tier": "silver",
+      "classification": "Partially supported",
+      "requirement": "Complete 40 Help Wanted requests.",
+      "requirementKind": "threshold",
+      "requirementDetail": {
+        "kind": "threshold",
+        "metric": "help_wanted_completed",
+        "target": 40,
+        "unit": "requests"
+      },
+      "dependencies": [
+        "gofer"
+      ],
+      "evidenceRequired": "Canonical trophy evidence number: help_wanted_completed; player-confirmed total or verifiable authorized activity",
+      "progressDerivation": "metricValue(help_wanted_completed); unknown remains unknown; no wallet/lifetime proxy",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "help_wanted",
+          "title": "Inspect the Help Wanted board; complete an actual accepted task",
+          "effort": "medium"
+        }
+      ],
+      "knownBlockers": [
+        "The daily board and accepted quest state are not read directly from the game.",
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false,
+      "dependencyRule": {
+        "trophyId": "a_big_help",
+        "completion": {
+          "type": "FARM",
+          "condition": {
+            "type": "COUNT",
+            "metric": "help_wanted_completed",
+            "target": 40
+          }
+        },
+        "strategicDependencies": [
+          "gofer"
+        ]
+      }
+    },
+    {
+      "trophyId": "good_neighbors",
+      "name": "Good Neighbors",
+      "group": "1.6",
+      "tier": "bronze",
+      "classification": "Partially supported",
+      "requirement": "Help your forest neighbors grow their family.",
+      "requirementKind": "binary",
+      "requirementDetail": {
+        "kind": "binary",
+        "flag": "raccoon_family_completed"
+      },
+      "dependencies": [],
+      "evidenceRequired": "Trophy evidence boolean: raccoon_family_completed; player confirmation of the exact outcome",
+      "progressDerivation": "evaluateCollectionEvidence or explicit flag (raccoon_family_completed); partial count only when eligible IDs are recognized",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "m4-good_neighbors",
+          "title": "Complete all nine raccoon requests and witness the finale cutscene",
+          "effort": "long"
+        },
+        {
+          "id": "raccoon_quest",
+          "title": "Work through the forest-raccoon requests once the prerequisites are verified",
+          "effort": "medium"
+        }
+      ],
+      "knownBlockers": [
+        "Nine distinct completed requests, stump repair and sunny forest finale are represented; game-trigger state, wait times and actual completion remain player-reported.",
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": {
+        "status": "partially implemented; pure engines and contract tested; actual MCP/hosted persistence NOT verified",
+        "contract": "report_gameplay_batch + milestone4Details"
+      },
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "condition_needs_review",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false,
+      "dependencyRule": {
+        "trophyId": "good_neighbors",
+        "completion": {
+          "type": "FARM",
+          "condition": {
+            "type": "FACT",
+            "flag": "raccoon_family_completed"
+          }
+        },
+        "strategicDependencies": []
+      }
+    }
+  ]
+}

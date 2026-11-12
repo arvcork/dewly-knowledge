@@ -1,0 +1,1346 @@
+{
+  "schemaVersion": "0.1.0",
+  "gameVersion": "1.6.15.24354",
+  "records": [
+    {
+      "id": "bundle.abandoned-joja-mart-36-18c74bd3",
+      "bundleKey": "Abandoned Joja Mart/36",
+      "name": "The Missing",
+      "requiredSlots": 5,
+      "optionCount": 6,
+      "semantics": "COUNT distinct completed options",
+      "options": [
+        {
+          "slot": 0,
+          "qualifiedItemId": "(O)348",
+          "name": "Wine",
+          "quantity": 1,
+          "quality": 1
+        },
+        {
+          "slot": 1,
+          "qualifiedItemId": "(O)807",
+          "name": "Dinosaur Mayonnaise",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 2,
+          "qualifiedItemId": "(O)74",
+          "name": "Prismatic Shard",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 3,
+          "qualifiedItemId": "(O)454",
+          "name": "Ancient Fruit",
+          "quantity": 5,
+          "quality": 2
+        },
+        {
+          "slot": 4,
+          "qualifiedItemId": "(O)795",
+          "name": "Void Salmon",
+          "quantity": 1,
+          "quality": 2
+        },
+        {
+          "slot": 5,
+          "qualifiedItemId": "(O)445",
+          "name": "Caviar",
+          "quantity": 1,
+          "quality": 0
+        }
+      ],
+      "saveSelectionRequired": true,
+      "source": "Data/Bundles",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "bundle.boiler-room-20-8ef1287b",
+      "bundleKey": "Boiler Room/20",
+      "name": "Blacksmith's",
+      "requiredSlots": 3,
+      "optionCount": 3,
+      "semantics": "COUNT distinct completed options",
+      "options": [
+        {
+          "slot": 0,
+          "qualifiedItemId": "(O)334",
+          "name": "Copper Bar",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 1,
+          "qualifiedItemId": "(O)335",
+          "name": "Iron Bar",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 2,
+          "qualifiedItemId": "(O)336",
+          "name": "Gold Bar",
+          "quantity": 1,
+          "quality": 0
+        }
+      ],
+      "saveSelectionRequired": true,
+      "source": "Data/Bundles",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "bundle.boiler-room-21-c23b5276",
+      "bundleKey": "Boiler Room/21",
+      "name": "Geologist's",
+      "requiredSlots": 4,
+      "optionCount": 4,
+      "semantics": "COUNT distinct completed options",
+      "options": [
+        {
+          "slot": 0,
+          "qualifiedItemId": "(O)80",
+          "name": "Quartz",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 1,
+          "qualifiedItemId": "(O)86",
+          "name": "Earth Crystal",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 2,
+          "qualifiedItemId": "(O)84",
+          "name": "Frozen Tear",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 3,
+          "qualifiedItemId": "(O)82",
+          "name": "Fire Quartz",
+          "quantity": 1,
+          "quality": 0
+        }
+      ],
+      "saveSelectionRequired": true,
+      "source": "Data/Bundles",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "bundle.boiler-room-22-802837eb",
+      "bundleKey": "Boiler Room/22",
+      "name": "Adventurer's",
+      "requiredSlots": 2,
+      "optionCount": 4,
+      "semantics": "COUNT distinct completed options",
+      "options": [
+        {
+          "slot": 0,
+          "qualifiedItemId": "(O)766",
+          "name": "Slime",
+          "quantity": 99,
+          "quality": 0
+        },
+        {
+          "slot": 1,
+          "qualifiedItemId": "(O)767",
+          "name": "Bat Wing",
+          "quantity": 10,
+          "quality": 0
+        },
+        {
+          "slot": 2,
+          "qualifiedItemId": "(O)768",
+          "name": "Solar Essence",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 3,
+          "qualifiedItemId": "(O)769",
+          "name": "Void Essence",
+          "quantity": 1,
+          "quality": 0
+        }
+      ],
+      "saveSelectionRequired": true,
+      "source": "Data/Bundles",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "bundle.bulletin-board-31-ed94aa53",
+      "bundleKey": "Bulletin Board/31",
+      "name": "Chef's",
+      "requiredSlots": 6,
+      "optionCount": 6,
+      "semantics": "COUNT distinct completed options",
+      "options": [
+        {
+          "slot": 0,
+          "qualifiedItemId": "(O)724",
+          "name": "Maple Syrup",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 1,
+          "qualifiedItemId": "(O)259",
+          "name": "Fiddlehead Fern",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 2,
+          "qualifiedItemId": "(O)430",
+          "name": "Truffle",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 3,
+          "qualifiedItemId": "(O)376",
+          "name": "Poppy",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 4,
+          "qualifiedItemId": "(O)228",
+          "name": "Maki Roll",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 5,
+          "qualifiedItemId": "(O)194",
+          "name": "Fried Egg",
+          "quantity": 1,
+          "quality": 0
+        }
+      ],
+      "saveSelectionRequired": true,
+      "source": "Data/Bundles",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "bundle.bulletin-board-32-839ffbde",
+      "bundleKey": "Bulletin Board/32",
+      "name": "Field Research",
+      "requiredSlots": 4,
+      "optionCount": 4,
+      "semantics": "COUNT distinct completed options",
+      "options": [
+        {
+          "slot": 0,
+          "qualifiedItemId": "(O)422",
+          "name": "Purple Mushroom",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 1,
+          "qualifiedItemId": "(O)392",
+          "name": "Nautilus Shell",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 2,
+          "qualifiedItemId": "(O)702",
+          "name": "Chub",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 3,
+          "qualifiedItemId": "(O)536",
+          "name": "Frozen Geode",
+          "quantity": 1,
+          "quality": 0
+        }
+      ],
+      "saveSelectionRequired": true,
+      "source": "Data/Bundles",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "bundle.bulletin-board-33-37777f0c",
+      "bundleKey": "Bulletin Board/33",
+      "name": "Enchanter's",
+      "requiredSlots": 4,
+      "optionCount": 4,
+      "semantics": "COUNT distinct completed options",
+      "options": [
+        {
+          "slot": 0,
+          "qualifiedItemId": "(O)725",
+          "name": "Oak Resin",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 1,
+          "qualifiedItemId": "(O)348",
+          "name": "Wine",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 2,
+          "qualifiedItemId": "(O)446",
+          "name": "Rabbit's Foot",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 3,
+          "qualifiedItemId": "(O)637",
+          "name": "Pomegranate",
+          "quantity": 1,
+          "quality": 0
+        }
+      ],
+      "saveSelectionRequired": true,
+      "source": "Data/Bundles",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "bundle.bulletin-board-34-500d4994",
+      "bundleKey": "Bulletin Board/34",
+      "name": "Dye",
+      "requiredSlots": 6,
+      "optionCount": 6,
+      "semantics": "COUNT distinct completed options",
+      "options": [
+        {
+          "slot": 0,
+          "qualifiedItemId": "(O)420",
+          "name": "Red Mushroom",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 1,
+          "qualifiedItemId": "(O)397",
+          "name": "Sea Urchin",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 2,
+          "qualifiedItemId": "(O)421",
+          "name": "Sunflower",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 3,
+          "qualifiedItemId": "(O)444",
+          "name": "Duck Feather",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 4,
+          "qualifiedItemId": "(O)62",
+          "name": "Aquamarine",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 5,
+          "qualifiedItemId": "(O)266",
+          "name": "Red Cabbage",
+          "quantity": 1,
+          "quality": 0
+        }
+      ],
+      "saveSelectionRequired": true,
+      "source": "Data/Bundles",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "bundle.bulletin-board-35-eb8a497f",
+      "bundleKey": "Bulletin Board/35",
+      "name": "Fodder",
+      "requiredSlots": 3,
+      "optionCount": 3,
+      "semantics": "COUNT distinct completed options",
+      "options": [
+        {
+          "slot": 0,
+          "qualifiedItemId": "(O)262",
+          "name": "Wheat",
+          "quantity": 10,
+          "quality": 0
+        },
+        {
+          "slot": 1,
+          "qualifiedItemId": "(O)178",
+          "name": "Hay",
+          "quantity": 10,
+          "quality": 0
+        },
+        {
+          "slot": 2,
+          "qualifiedItemId": "(O)613",
+          "name": "Apple",
+          "quantity": 3,
+          "quality": 0
+        }
+      ],
+      "saveSelectionRequired": true,
+      "source": "Data/Bundles",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "bundle.crafts-room-13-774736ea",
+      "bundleKey": "Crafts Room/13",
+      "name": "Spring Foraging",
+      "requiredSlots": 4,
+      "optionCount": 4,
+      "semantics": "COUNT distinct completed options",
+      "options": [
+        {
+          "slot": 0,
+          "qualifiedItemId": "(O)16",
+          "name": "Wild Horseradish",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 1,
+          "qualifiedItemId": "(O)18",
+          "name": "Daffodil",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 2,
+          "qualifiedItemId": "(O)20",
+          "name": "Leek",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 3,
+          "qualifiedItemId": "(O)22",
+          "name": "Dandelion",
+          "quantity": 1,
+          "quality": 0
+        }
+      ],
+      "saveSelectionRequired": true,
+      "source": "Data/Bundles",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "bundle.crafts-room-14-3dd2d544",
+      "bundleKey": "Crafts Room/14",
+      "name": "Summer Foraging",
+      "requiredSlots": 3,
+      "optionCount": 3,
+      "semantics": "COUNT distinct completed options",
+      "options": [
+        {
+          "slot": 0,
+          "qualifiedItemId": "(O)396",
+          "name": "Spice Berry",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 1,
+          "qualifiedItemId": "(O)398",
+          "name": "Grape",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 2,
+          "qualifiedItemId": "(O)402",
+          "name": "Sweet Pea",
+          "quantity": 1,
+          "quality": 0
+        }
+      ],
+      "saveSelectionRequired": true,
+      "source": "Data/Bundles",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "bundle.crafts-room-15-20f89fea",
+      "bundleKey": "Crafts Room/15",
+      "name": "Fall Foraging",
+      "requiredSlots": 4,
+      "optionCount": 4,
+      "semantics": "COUNT distinct completed options",
+      "options": [
+        {
+          "slot": 0,
+          "qualifiedItemId": "(O)404",
+          "name": "Common Mushroom",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 1,
+          "qualifiedItemId": "(O)406",
+          "name": "Wild Plum",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 2,
+          "qualifiedItemId": "(O)408",
+          "name": "Hazelnut",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 3,
+          "qualifiedItemId": "(O)410",
+          "name": "Blackberry",
+          "quantity": 1,
+          "quality": 0
+        }
+      ],
+      "saveSelectionRequired": true,
+      "source": "Data/Bundles",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "bundle.crafts-room-16-3b99be2b",
+      "bundleKey": "Crafts Room/16",
+      "name": "Winter Foraging",
+      "requiredSlots": 4,
+      "optionCount": 4,
+      "semantics": "COUNT distinct completed options",
+      "options": [
+        {
+          "slot": 0,
+          "qualifiedItemId": "(O)412",
+          "name": "Winter Root",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 1,
+          "qualifiedItemId": "(O)414",
+          "name": "Crystal Fruit",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 2,
+          "qualifiedItemId": "(O)416",
+          "name": "Snow Yam",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 3,
+          "qualifiedItemId": "(O)418",
+          "name": "Crocus",
+          "quantity": 1,
+          "quality": 0
+        }
+      ],
+      "saveSelectionRequired": true,
+      "source": "Data/Bundles",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "bundle.crafts-room-17-0be4dbcf",
+      "bundleKey": "Crafts Room/17",
+      "name": "Construction",
+      "requiredSlots": 4,
+      "optionCount": 4,
+      "semantics": "COUNT distinct completed options",
+      "options": [
+        {
+          "slot": 0,
+          "qualifiedItemId": "(O)388",
+          "name": "Wood",
+          "quantity": 99,
+          "quality": 0
+        },
+        {
+          "slot": 1,
+          "qualifiedItemId": "(O)388",
+          "name": "Wood",
+          "quantity": 99,
+          "quality": 0
+        },
+        {
+          "slot": 2,
+          "qualifiedItemId": "(O)390",
+          "name": "Stone",
+          "quantity": 99,
+          "quality": 0
+        },
+        {
+          "slot": 3,
+          "qualifiedItemId": "(O)709",
+          "name": "Hardwood",
+          "quantity": 10,
+          "quality": 0
+        }
+      ],
+      "saveSelectionRequired": true,
+      "source": "Data/Bundles",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "bundle.crafts-room-19-54491a0c",
+      "bundleKey": "Crafts Room/19",
+      "name": "Exotic Foraging",
+      "requiredSlots": 5,
+      "optionCount": 9,
+      "semantics": "COUNT distinct completed options",
+      "options": [
+        {
+          "slot": 0,
+          "qualifiedItemId": "(O)88",
+          "name": "Coconut",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 1,
+          "qualifiedItemId": "(O)90",
+          "name": "Cactus Fruit",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 2,
+          "qualifiedItemId": "(O)78",
+          "name": "Cave Carrot",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 3,
+          "qualifiedItemId": "(O)420",
+          "name": "Red Mushroom",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 4,
+          "qualifiedItemId": "(O)422",
+          "name": "Purple Mushroom",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 5,
+          "qualifiedItemId": "(O)724",
+          "name": "Maple Syrup",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 6,
+          "qualifiedItemId": "(O)725",
+          "name": "Oak Resin",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 7,
+          "qualifiedItemId": "(O)726",
+          "name": "Pine Tar",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 8,
+          "qualifiedItemId": "(O)257",
+          "name": "Morel",
+          "quantity": 1,
+          "quality": 0
+        }
+      ],
+      "saveSelectionRequired": true,
+      "source": "Data/Bundles",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "bundle.fish-tank-10-30364d84",
+      "bundleKey": "Fish Tank/10",
+      "name": "Specialty Fish",
+      "requiredSlots": 4,
+      "optionCount": 4,
+      "semantics": "COUNT distinct completed options",
+      "options": [
+        {
+          "slot": 0,
+          "qualifiedItemId": "(O)128",
+          "name": "Pufferfish",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 1,
+          "qualifiedItemId": "(O)156",
+          "name": "Ghostfish",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 2,
+          "qualifiedItemId": "(O)164",
+          "name": "Sandfish",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 3,
+          "qualifiedItemId": "(O)734",
+          "name": "Woodskip",
+          "quantity": 1,
+          "quality": 0
+        }
+      ],
+      "saveSelectionRequired": true,
+      "source": "Data/Bundles",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "bundle.fish-tank-11-55c96259",
+      "bundleKey": "Fish Tank/11",
+      "name": "Crab Pot",
+      "requiredSlots": 5,
+      "optionCount": 10,
+      "semantics": "COUNT distinct completed options",
+      "options": [
+        {
+          "slot": 0,
+          "qualifiedItemId": "(O)715",
+          "name": "Lobster",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 1,
+          "qualifiedItemId": "(O)716",
+          "name": "Crayfish",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 2,
+          "qualifiedItemId": "(O)717",
+          "name": "Crab",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 3,
+          "qualifiedItemId": "(O)718",
+          "name": "Cockle",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 4,
+          "qualifiedItemId": "(O)719",
+          "name": "Mussel",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 5,
+          "qualifiedItemId": "(O)720",
+          "name": "Shrimp",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 6,
+          "qualifiedItemId": "(O)721",
+          "name": "Snail",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 7,
+          "qualifiedItemId": "(O)722",
+          "name": "Periwinkle",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 8,
+          "qualifiedItemId": "(O)723",
+          "name": "Oyster",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 9,
+          "qualifiedItemId": "(O)372",
+          "name": "Clam",
+          "quantity": 1,
+          "quality": 0
+        }
+      ],
+      "saveSelectionRequired": true,
+      "source": "Data/Bundles",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "bundle.fish-tank-6-4e515153",
+      "bundleKey": "Fish Tank/6",
+      "name": "River Fish",
+      "requiredSlots": 4,
+      "optionCount": 4,
+      "semantics": "COUNT distinct completed options",
+      "options": [
+        {
+          "slot": 0,
+          "qualifiedItemId": "(O)145",
+          "name": "Sunfish",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 1,
+          "qualifiedItemId": "(O)143",
+          "name": "Catfish",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 2,
+          "qualifiedItemId": "(O)706",
+          "name": "Shad",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 3,
+          "qualifiedItemId": "(O)699",
+          "name": "Tiger Trout",
+          "quantity": 1,
+          "quality": 0
+        }
+      ],
+      "saveSelectionRequired": true,
+      "source": "Data/Bundles",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "bundle.fish-tank-7-cab8c26a",
+      "bundleKey": "Fish Tank/7",
+      "name": "Lake Fish",
+      "requiredSlots": 4,
+      "optionCount": 4,
+      "semantics": "COUNT distinct completed options",
+      "options": [
+        {
+          "slot": 0,
+          "qualifiedItemId": "(O)136",
+          "name": "Largemouth Bass",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 1,
+          "qualifiedItemId": "(O)142",
+          "name": "Carp",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 2,
+          "qualifiedItemId": "(O)700",
+          "name": "Bullhead",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 3,
+          "qualifiedItemId": "(O)698",
+          "name": "Sturgeon",
+          "quantity": 1,
+          "quality": 0
+        }
+      ],
+      "saveSelectionRequired": true,
+      "source": "Data/Bundles",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "bundle.fish-tank-8-e8c21c1b",
+      "bundleKey": "Fish Tank/8",
+      "name": "Ocean Fish",
+      "requiredSlots": 4,
+      "optionCount": 4,
+      "semantics": "COUNT distinct completed options",
+      "options": [
+        {
+          "slot": 0,
+          "qualifiedItemId": "(O)131",
+          "name": "Sardine",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 1,
+          "qualifiedItemId": "(O)130",
+          "name": "Tuna",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 2,
+          "qualifiedItemId": "(O)150",
+          "name": "Red Snapper",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 3,
+          "qualifiedItemId": "(O)701",
+          "name": "Tilapia",
+          "quantity": 1,
+          "quality": 0
+        }
+      ],
+      "saveSelectionRequired": true,
+      "source": "Data/Bundles",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "bundle.fish-tank-9-3afc81a7",
+      "bundleKey": "Fish Tank/9",
+      "name": "Night Fishing",
+      "requiredSlots": 3,
+      "optionCount": 3,
+      "semantics": "COUNT distinct completed options",
+      "options": [
+        {
+          "slot": 0,
+          "qualifiedItemId": "(O)140",
+          "name": "Walleye",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 1,
+          "qualifiedItemId": "(O)132",
+          "name": "Bream",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 2,
+          "qualifiedItemId": "(O)148",
+          "name": "Eel",
+          "quantity": 1,
+          "quality": 0
+        }
+      ],
+      "saveSelectionRequired": true,
+      "source": "Data/Bundles",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "bundle.pantry-0-4e9e828e",
+      "bundleKey": "Pantry/0",
+      "name": "Spring Crops",
+      "requiredSlots": 4,
+      "optionCount": 4,
+      "semantics": "COUNT distinct completed options",
+      "options": [
+        {
+          "slot": 0,
+          "qualifiedItemId": "(O)24",
+          "name": "Parsnip",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 1,
+          "qualifiedItemId": "(O)188",
+          "name": "Green Bean",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 2,
+          "qualifiedItemId": "(O)190",
+          "name": "Cauliflower",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 3,
+          "qualifiedItemId": "(O)192",
+          "name": "Potato",
+          "quantity": 1,
+          "quality": 0
+        }
+      ],
+      "saveSelectionRequired": true,
+      "source": "Data/Bundles",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "bundle.pantry-1-2e9521ab",
+      "bundleKey": "Pantry/1",
+      "name": "Summer Crops",
+      "requiredSlots": 4,
+      "optionCount": 4,
+      "semantics": "COUNT distinct completed options",
+      "options": [
+        {
+          "slot": 0,
+          "qualifiedItemId": "(O)256",
+          "name": "Tomato",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 1,
+          "qualifiedItemId": "(O)260",
+          "name": "Hot Pepper",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 2,
+          "qualifiedItemId": "(O)258",
+          "name": "Blueberry",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 3,
+          "qualifiedItemId": "(O)254",
+          "name": "Melon",
+          "quantity": 1,
+          "quality": 0
+        }
+      ],
+      "saveSelectionRequired": true,
+      "source": "Data/Bundles",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "bundle.pantry-2-3808e7e5",
+      "bundleKey": "Pantry/2",
+      "name": "Fall Crops",
+      "requiredSlots": 4,
+      "optionCount": 4,
+      "semantics": "COUNT distinct completed options",
+      "options": [
+        {
+          "slot": 0,
+          "qualifiedItemId": "(O)270",
+          "name": "Corn",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 1,
+          "qualifiedItemId": "(O)272",
+          "name": "Eggplant",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 2,
+          "qualifiedItemId": "(O)276",
+          "name": "Pumpkin",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 3,
+          "qualifiedItemId": "(O)280",
+          "name": "Yam",
+          "quantity": 1,
+          "quality": 0
+        }
+      ],
+      "saveSelectionRequired": true,
+      "source": "Data/Bundles",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "bundle.pantry-3-c9fde3d6",
+      "bundleKey": "Pantry/3",
+      "name": "Quality Crops",
+      "requiredSlots": 3,
+      "optionCount": 4,
+      "semantics": "COUNT distinct completed options",
+      "options": [
+        {
+          "slot": 0,
+          "qualifiedItemId": "(O)24",
+          "name": "Parsnip",
+          "quantity": 5,
+          "quality": 2
+        },
+        {
+          "slot": 1,
+          "qualifiedItemId": "(O)254",
+          "name": "Melon",
+          "quantity": 5,
+          "quality": 2
+        },
+        {
+          "slot": 2,
+          "qualifiedItemId": "(O)276",
+          "name": "Pumpkin",
+          "quantity": 5,
+          "quality": 2
+        },
+        {
+          "slot": 3,
+          "qualifiedItemId": "(O)270",
+          "name": "Corn",
+          "quantity": 5,
+          "quality": 2
+        }
+      ],
+      "saveSelectionRequired": true,
+      "source": "Data/Bundles",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "bundle.pantry-4-08393a92",
+      "bundleKey": "Pantry/4",
+      "name": "Animal",
+      "requiredSlots": 5,
+      "optionCount": 6,
+      "semantics": "COUNT distinct completed options",
+      "options": [
+        {
+          "slot": 0,
+          "qualifiedItemId": "(O)186",
+          "name": "Large Milk",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 1,
+          "qualifiedItemId": "(O)182",
+          "name": "Large Egg",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 2,
+          "qualifiedItemId": "(O)174",
+          "name": "Large Egg",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 3,
+          "qualifiedItemId": "(O)438",
+          "name": "L. Goat Milk",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 4,
+          "qualifiedItemId": "(O)440",
+          "name": "Wool",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 5,
+          "qualifiedItemId": "(O)442",
+          "name": "Duck Egg",
+          "quantity": 1,
+          "quality": 0
+        }
+      ],
+      "saveSelectionRequired": true,
+      "source": "Data/Bundles",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "bundle.pantry-5-333625a3",
+      "bundleKey": "Pantry/5",
+      "name": "Artisan",
+      "requiredSlots": 6,
+      "optionCount": 12,
+      "semantics": "COUNT distinct completed options",
+      "options": [
+        {
+          "slot": 0,
+          "qualifiedItemId": "(O)432",
+          "name": "Truffle Oil",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 1,
+          "qualifiedItemId": "(O)428",
+          "name": "Cloth",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 2,
+          "qualifiedItemId": "(O)426",
+          "name": "Goat Cheese",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 3,
+          "qualifiedItemId": "(O)424",
+          "name": "Cheese",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 4,
+          "qualifiedItemId": "(O)340",
+          "name": "Honey",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 5,
+          "qualifiedItemId": "(O)344",
+          "name": "Jelly",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 6,
+          "qualifiedItemId": "(O)613",
+          "name": "Apple",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 7,
+          "qualifiedItemId": "(O)634",
+          "name": "Apricot",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 8,
+          "qualifiedItemId": "(O)635",
+          "name": "Orange",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 9,
+          "qualifiedItemId": "(O)636",
+          "name": "Peach",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 10,
+          "qualifiedItemId": "(O)637",
+          "name": "Pomegranate",
+          "quantity": 1,
+          "quality": 0
+        },
+        {
+          "slot": 11,
+          "qualifiedItemId": "(O)638",
+          "name": "Cherry",
+          "quantity": 1,
+          "quality": 0
+        }
+      ],
+      "saveSelectionRequired": true,
+      "source": "Data/Bundles",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "bundle.vault-23-c5adf179",
+      "bundleKey": "Vault/23",
+      "name": "2,500g",
+      "requiredSlots": 1,
+      "optionCount": 1,
+      "semantics": "COUNT distinct completed options",
+      "options": [
+        {
+          "slot": 0,
+          "currency": "gold",
+          "quantity": 2500
+        }
+      ],
+      "saveSelectionRequired": true,
+      "source": "Data/Bundles",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "bundle.vault-24-edc114b0",
+      "bundleKey": "Vault/24",
+      "name": "5,000g",
+      "requiredSlots": 1,
+      "optionCount": 1,
+      "semantics": "COUNT distinct completed options",
+      "options": [
+        {
+          "slot": 0,
+          "currency": "gold",
+          "quantity": 5000
+        }
+      ],
+      "saveSelectionRequired": true,
+      "source": "Data/Bundles",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "bundle.vault-25-444f8de5",
+      "bundleKey": "Vault/25",
+      "name": "10,000g",
+      "requiredSlots": 1,
+      "optionCount": 1,
+      "semantics": "COUNT distinct completed options",
+      "options": [
+        {
+          "slot": 0,
+          "currency": "gold",
+          "quantity": 10000
+        }
+      ],
+      "saveSelectionRequired": true,
+      "source": "Data/Bundles",
+      "verification": "extracted-content"
+    },
+    {
+      "id": "bundle.vault-26-43fa4161",
+      "bundleKey": "Vault/26",
+      "name": "25,000g",
+      "requiredSlots": 1,
+      "optionCount": 1,
+      "semantics": "COUNT distinct completed options",
+      "options": [
+        {
+          "slot": 0,
+          "currency": "gold",
+          "quantity": 25000
+        }
+      ],
+      "saveSelectionRequired": true,
+      "source": "Data/Bundles",
+      "verification": "extracted-content"
+    }
+  ]
+}

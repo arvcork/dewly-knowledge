@@ -1,0 +1,121 @@
+{
+  "category": "exploration-and-endgame",
+  "displayName": "Exploration and endgame",
+  "description": "Ginger Island and summit progression.",
+  "catalogueVersion": "ps4-npwr12196-2026-11-08",
+  "rulesVersion": "ps4-1.6-cautious-2026-11-08-r2",
+  "trophyCount": 2,
+  "trophies": [
+    {
+      "trophyId": "a_distant_shore",
+      "name": "A Distant Shore",
+      "group": "1.6",
+      "tier": "bronze",
+      "classification": "Partially supported",
+      "requirement": "Reach Ginger Island.",
+      "requirementKind": "binary",
+      "requirementDetail": {
+        "kind": "binary",
+        "flag": "ginger_island_reached"
+      },
+      "dependencies": [],
+      "evidenceRequired": "Trophy evidence boolean: ginger_island_reached; player confirmation of the exact outcome",
+      "progressDerivation": "evaluateCollectionEvidence or explicit flag (ginger_island_reached); partial count only when eligible IDs are recognized",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "island_unlock",
+          "title": "Complete verified boat-repair requirements and travel to Ginger Island",
+          "effort": "medium"
+        }
+      ],
+      "knownBlockers": [
+        "The Community Center and Joja outcomes are mutually exclusive on the same farm; existing different farms may satisfy account-wide trophies.",
+        "Boat repair/island unlock dependency chain not exhaustively validated.",
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": null,
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false,
+      "dependencyRule": {
+        "trophyId": "a_distant_shore",
+        "completion": {
+          "type": "FARM",
+          "condition": {
+            "type": "FACT",
+            "flag": "ginger_island_reached"
+          }
+        },
+        "strategicDependencies": []
+      }
+    },
+    {
+      "trophyId": "perfection",
+      "name": "Perfection",
+      "group": "1.6",
+      "tier": "silver",
+      "classification": "Partially supported",
+      "requirement": "Reach the summit.",
+      "requirementKind": "binary",
+      "requirementDetail": {
+        "kind": "binary",
+        "flag": "summit_reached"
+      },
+      "dependencies": [],
+      "evidenceRequired": "Trophy evidence boolean: summit_reached; player confirmation of the exact outcome",
+      "progressDerivation": "evaluateCollectionEvidence or explicit flag (summit_reached); partial count only when eligible IDs are recognized",
+      "playStationConfirmation": "No live PSN connection; player must explicitly report unlock, separately from in-game eligibility.",
+      "actionablePlanning": true,
+      "examplePracticalSteps": [
+        {
+          "id": "m4-perfection",
+          "title": "Observe Qi Tracker, progress 11 categories and verify Summit visit",
+          "effort": "long"
+        },
+        {
+          "id": "perfection_check",
+          "title": "Inspect the Perfection Tracker and work on a confirmed remaining requirement",
+          "effort": "medium"
+        }
+      ],
+      "knownBlockers": [
+        "Eleven named Qi Tracker categories, weight annotations, manual percentage and separate Summit outcome are tracked; no exact automated 100% calculation.",
+        "Hosted D1 migration, full MCP tool invocation and real PSN award are not verified."
+      ],
+      "milestone4Implementation": {
+        "status": "partially implemented; pure engines and contract tested; actual MCP/hosted persistence NOT verified",
+        "contract": "report_gameplay_batch + milestone4Details"
+      },
+      "requiresSeparateSave": "No separate save known; confirm other special constraints as needed",
+      "sourceReferences": [
+        "platpursuit-2026-11",
+        "psngg-2026-11",
+        "playstationtrophies-2026-11",
+        "stardew-valley-data-snapshot@stardew-valley-data@1.1.1+verified-overrides-2026-11-08"
+      ],
+      "ruleConfidence": "cross_checked",
+      "automaticHistoricalSaveImport": false,
+      "hostedMcpVerified": false,
+      "dependencyRule": {
+        "trophyId": "perfection",
+        "completion": {
+          "type": "FARM",
+          "condition": {
+            "type": "FACT",
+            "flag": "summit_reached"
+          }
+        },
+        "strategicDependencies": []
+      }
+    }
+  ]
+}

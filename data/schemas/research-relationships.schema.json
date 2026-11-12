@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dewly.local/schemas/research-relationships.schema.json",
+  "title": "Relational research evidence registry (JSON source representation)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "gameVersion", "scope", "entities", "relations", "externalAchievementIdPolicy", "refreshPolicy"],
+  "properties": {
+    "schemaVersion": {"const": "1.0.0"},
+    "gameVersion": {"type": "string"},
+    "scope": {"type": "string"},
+    "externalAchievementIdPolicy": {"type": "string"},
+    "refreshPolicy": {"type": "string"},
+    "entities": {"type": "array", "minItems": 1, "items": {"type": "object", "additionalProperties": false, "required": ["id", "kind"], "properties": {"id": {"type": "string"}, "kind": {"type": "string"}}}},
+    "relations": {"type": "array", "minItems": 1, "items": {"type": "object", "additionalProperties": false, "required": ["id", "fromId", "relation", "toId"], "properties": {
+      "id": {"type": "string", "pattern": "^research\\.link\\.[a-f0-9]{16}$"},
+      "fromId": {"type": "string"}, "relation": {"type": "string"}, "toId": {"type": "string"}
+    }}}
+  }
+}

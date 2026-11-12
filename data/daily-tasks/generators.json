@@ -1,0 +1,544 @@
+{
+  "schemaVersion": "1.0.0",
+  "gameVersion": "1.6.15.24354",
+  "authority": "read-only; only current observed game snapshots allow instance generation",
+  "triState": {
+    "true": "eligible",
+    "false": "ineligible",
+    "unknown": "withhold action, report blocker and request next relevant refresh"
+  },
+  "evaluationPolicy": {
+    "indexRulesOnLoad": true,
+    "invalidateByFactDependency": true,
+    "subscribeToRefreshTriggers": true,
+    "tickPolling": "not specified; do not evaluate all records every frame",
+    "gameThread": "all live game access stays on required game thread",
+    "display": "use cached results; not live predicate evaluation"
+  },
+  "records": [
+    {
+      "id": "daily.rule.water-growing-crops",
+      "family": "crop-maintenance",
+      "description": "Count only growing or regrowing crop tiles that benefit from water, are demonstrably dry, are not covered by effective rain and have no confirmed pending automated watering.",
+      "requiredSnapshotFacts": [
+        "daily.fact.crop.tiles",
+        "daily.fact.crop.identity",
+        "daily.fact.crop.alive",
+        "daily.fact.crop.needs-water",
+        "daily.fact.crop.hydrated",
+        "daily.fact.tile.rain-effective",
+        "daily.fact.tile.automation-pending",
+        "daily.fact.tile.reachable"
+      ],
+      "eligibility": "crop.alive=true AND crop.needs-water=true AND crop.hydrated=false AND tile.rain-effective=false AND tile.automation-pending=false AND tile.reachable=true",
+      "quantityCalculation": "COUNT DISTINCT (locationUniqueId,x,y) of eligible tiles (not total planted, not outside-sprinkler count)",
+      "targetReferences": {
+        "locationKey": "locationUniqueId",
+        "tileKey": "(x,y)",
+        "itemKey": "qualifiedCropId"
+      },
+      "grouping": {
+        "keys": [
+          "locationUniqueId",
+          "qualifiedCropId"
+        ],
+        "display": "Water {count} {cropPlural}",
+        "includeTiles": true
+      },
+      "completionCondition": "All selected tiles are observed hydrated OR the task is invalidated by new verified rain/automation/harvest state; re-evaluate remaining count",
+      "priorityInputs": [
+        "today growth opportunity",
+        "season end proximity",
+        "missing water capacity",
+        "achievement crop demand"
+      ],
+      "refreshTriggers": [
+        "day-start",
+        "crop-planted",
+        "crop-watered",
+        "rain/weather-changed",
+        "sprinkler-applied",
+        "equipment-changed",
+        "location-observed",
+        "crop-harvested",
+        "save-loaded",
+        "content-invalidated",
+        "multiplayer-change"
+      ],
+      "achievementLinks": [
+        "polyculture",
+        "monoculture",
+        "full_shipment"
+      ],
+      "unknownStateHandling": "Any unobserved rain applicability, sprinkler action phase, hydration, growth phase or automation = UNKNOWN; never infer from sprinkler coverage alone.",
+      "evidenceIds": [
+        "evidence.research.daily.crop-water"
+      ],
+      "status": "data-contract-only; runtime integration and live validation pending",
+      "instanceIdFormat": "daily.instance.{gameDay}.{ruleId}.{groupKey}",
+      "detail": {}
+    },
+    {
+      "id": "daily.rule.harvest-ready-crops",
+      "family": "crop-maintenance",
+      "description": "Harvest mature uncollected crops; do not double count delegated auto-harvesting.",
+      "requiredSnapshotFacts": [
+        "daily.fact.crop.tiles",
+        "daily.fact.crop.identity",
+        "daily.fact.crop.ready",
+        "daily.fact.crop.auto-harvest",
+        "daily.fact.crop.harvest-method",
+        "daily.fact.crop.harvest-access"
+      ],
+      "eligibility": "crop.ready=true AND crop.auto-harvest=disabled-or-confirmed-not-handled AND crop.harvest-access=true",
+      "quantityCalculation": "COUNT DISTINCT harvestable crop tiles per crop and location; separately model variable per-tile output stacks",
+      "targetReferences": {
+        "locationKey": "locationUniqueId",
+        "tileKey": "(x,y)",
+        "itemKey": "qualifiedCropId"
+      },
+      "grouping": {
+        "keys": [
+          "locationUniqueId",
+          "qualifiedCropId",
+          "harvestMethod"
+        ],
+        "display": "Harvest {count} {cropPlural}",
+        "includeTiles": true
+      },
+      "completionCondition": "Selected crop tiles no longer have harvestable produce; reconcile re-growth and automatically harvested quantities",
+      "priorityInputs": [
+        "spoilage or season end",
+        "achievement shipment deficit",
+        "inventory capacity",
+        "automation status"
+      ],
+      "refreshTriggers": [
+        "day-start",
+        "crop-matured",
+        "crop-harvested",
+        "junimo-harvest",
+        "location-observed",
+        "inventory-changed",
+        "save-loaded"
+      ],
+      "achievementLinks": [
+        "full_shipment",
+        "polyculture",
+        "monoculture"
+      ],
+      "unknownStateHandling": "If harvest readiness or automation disposition is unknown, defer manual instructions until confirmed; do not mark complete because Junimo hut exists.",
+      "evidenceIds": [
+        "evidence.research.daily.crop-harvest"
+      ],
+      "status": "data-contract-only; runtime integration and live validation pending",
+      "instanceIdFormat": "daily.instance.{gameDay}.{ruleId}.{groupKey}",
+      "detail": {}
+    },
+    {
+      "id": "daily.rule.feed-hungry-animals",
+      "family": "animal-maintenance",
+      "description": "Feed only animals with unmet daily food needs after checking valid grazed grass, troughs and autofeeders.",
+      "requiredSnapshotFacts": [
+        "daily.fact.animal.entities",
+        "daily.fact.animal.fed",
+        "daily.fact.animal.grazing",
+        "daily.fact.animal.feed-placement",
+        "daily.fact.animal.day-context",
+        "daily.fact.animal.access"
+      ],
+      "eligibility": "animal.fed=false AND animal.grazing=false AND animal.feed-placement.confirmed-unfulfilled=true",
+      "quantityCalculation": "COUNT DISTINCT hungry animal IDs; hay-to-place = MIN(eligible animals, empty usable trough slots, unreserved hay), report shortage separately",
+      "targetReferences": {
+        "locationKey": "animalHouseId",
+        "entityKey": "animalId"
+      },
+      "grouping": {
+        "keys": [
+          "animalHouseId",
+          "feedType"
+        ],
+        "display": "Provide feed for {count} animals",
+        "includeEntities": true
+      },
+      "completionCondition": "Observed per-animal feed satisfied (grazed or trough/autofeeder consumption when effective); do not treat placing hay alone as proof animal ate",
+      "priorityInputs": [
+        "number hungry",
+        "winter/rain grazing constraints",
+        "silo shortage",
+        "animal productivity"
+      ],
+      "refreshTriggers": [
+        "day-start",
+        "animal-fed",
+        "animal-grazed",
+        "trough-changed",
+        "hay-changed",
+        "animal-moved",
+        "weather-changed",
+        "save-loaded",
+        "multiplayer-change"
+      ],
+      "achievementLinks": [
+        "full_shipment"
+      ],
+      "unknownStateHandling": "Unknown animal grazing or autofeeder phase makes individual need uncertain; show an investigation/blocked task instead of purchasing hay by assumption.",
+      "evidenceIds": [
+        "evidence.research.daily.animal"
+      ],
+      "status": "data-contract-only; runtime integration and live validation pending",
+      "instanceIdFormat": "daily.instance.{gameDay}.{ruleId}.{groupKey}",
+      "detail": {}
+    },
+    {
+      "id": "daily.rule.collect-animal-products",
+      "family": "animal-maintenance",
+      "description": "Collect ready animal output on ground, from animals or auto-grabbers without double counting.",
+      "requiredSnapshotFacts": [
+        "daily.fact.animal.products",
+        "daily.fact.animal.collection-method",
+        "daily.fact.animal.auto-grabber",
+        "daily.fact.animal.output-access"
+      ],
+      "eligibility": "product.ready=true AND product.accessible=true AND product.not-already-collected=true",
+      "quantityCalculation": "SUM observed collectible output stacks grouped by item+location+collection method, deduplicated by producer/output ID",
+      "targetReferences": {
+        "locationKey": "buildingOrFarmLocationId",
+        "entityKey": "producerOrOutputId",
+        "itemKey": "qualifiedProductId"
+      },
+      "grouping": {
+        "keys": [
+          "locationUniqueId",
+          "qualifiedProductId",
+          "collectionMethod"
+        ],
+        "display": "Collect {count} {productPlural}"
+      },
+      "completionCondition": "Each selected product removed from world/animal/auto-grabber into selected accessible storage; remaining stack decrements",
+      "priorityInputs": [
+        "unreserved achievement inputs",
+        "value",
+        "inventory capacity",
+        "production frequency"
+      ],
+      "refreshTriggers": [
+        "day-start",
+        "animal-produced",
+        "animal-milked-or-sheared",
+        "ground-output-collected",
+        "grabber-changed",
+        "inventory-changed",
+        "save-loaded"
+      ],
+      "achievementLinks": [
+        "full_shipment",
+        "gourmet_chef",
+        "craft_master"
+      ],
+      "unknownStateHandling": "Unknown ready state, grabber contents or duplicate ownership = block/deduplicate; never infer produced quantity from animal count.",
+      "evidenceIds": [
+        "evidence.research.daily.animal"
+      ],
+      "status": "data-contract-only; runtime integration and live validation pending",
+      "instanceIdFormat": "daily.instance.{gameDay}.{ruleId}.{groupKey}",
+      "detail": {}
+    },
+    {
+      "id": "daily.rule.collect-machine-outputs",
+      "family": "machine-maintenance",
+      "description": "Empty observed ready outputs from placed machines, including stack counts and location.",
+      "requiredSnapshotFacts": [
+        "daily.fact.machine.instances",
+        "daily.fact.machine.held-output",
+        "daily.fact.machine.automation",
+        "daily.fact.machine.access"
+      ],
+      "eligibility": "machine.held-output.ready=true AND machine.access=true AND machine.automation.confirmed-collected=false",
+      "quantityCalculation": "SUM ready output stacks (or count machines if quantities unknown); include machine tile IDs",
+      "targetReferences": {
+        "locationKey": "locationUniqueId",
+        "tileKey": "(x,y)",
+        "entityKey": "machineInstanceId",
+        "itemKey": "outputQualifiedId"
+      },
+      "grouping": {
+        "keys": [
+          "locationUniqueId",
+          "outputQualifiedId",
+          "machineType"
+        ],
+        "display": "Collect {count} {outputPlural}"
+      },
+      "completionCondition": "Output removed from each selected machine or collector; reconcile quantity and item identity after change",
+      "priorityInputs": [
+        "achievement output deficit",
+        "machine blockage",
+        "inventory space",
+        "deadline"
+      ],
+      "refreshTriggers": [
+        "day-start",
+        "machine-finished",
+        "machine-collected",
+        "automator-moved-item",
+        "location-observed",
+        "inventory-changed",
+        "save-loaded"
+      ],
+      "achievementLinks": [
+        "full_shipment",
+        "craft_master",
+        "gourmet_chef"
+      ],
+      "unknownStateHandling": "Held output, completion timer or automation ownership unknown = unknown; do not predict collection from elapsed time alone.",
+      "evidenceIds": [
+        "evidence.research.daily.machines"
+      ],
+      "status": "data-contract-only; runtime integration and live validation pending",
+      "instanceIdFormat": "daily.instance.{gameDay}.{ruleId}.{groupKey}",
+      "detail": {}
+    },
+    {
+      "id": "daily.rule.replenish-processing-machines",
+      "family": "machine-maintenance",
+      "description": "Load idle accessible machines only where a valid input-to-target transformation and unreserved ingredients are known.",
+      "requiredSnapshotFacts": [
+        "daily.fact.machine.instances",
+        "daily.fact.machine.accepted-inputs",
+        "daily.fact.stock.unreserved",
+        "daily.fact.machine.goal-demand",
+        "daily.fact.machine.access"
+      ],
+      "eligibility": "machine.idle=true AND input-rule.verified=true AND demand.positive=true AND stock.unreserved>=required-input-quantity AND machine.access=true",
+      "quantityCalculation": "MIN(number of eligible idle machines, FLOOR(unreserved-stock / per-machine-input), outstanding-output-demand) per machine+input recipe; allocate resources without double-booking",
+      "targetReferences": {
+        "locationKey": "locationUniqueId",
+        "tileKey": "(x,y)",
+        "entityKey": "machineInstanceId",
+        "itemKey": "inputQualifiedId"
+      },
+      "grouping": {
+        "keys": [
+          "locationUniqueId",
+          "machineType",
+          "inputQualifiedId",
+          "outputQualifiedId"
+        ],
+        "display": "Load {count} {machinePlural} with {inputPlural}"
+      },
+      "completionCondition": "Selected machines observed processing matching inputs, and consumption reservations reconciled; task may be skipped by explicit no-demand choice",
+      "priorityInputs": [
+        "achievement deficit",
+        "time to complete",
+        "output per input",
+        "opportunity cost",
+        "reserved materials"
+      ],
+      "refreshTriggers": [
+        "machine-output-collected",
+        "machine-input-accepted",
+        "inventory-changed",
+        "chest-changed",
+        "goal-changed",
+        "recipe-unlocked",
+        "day-start",
+        "content-invalidated",
+        "save-loaded"
+      ],
+      "achievementLinks": [
+        "full_shipment",
+        "gourmet_chef",
+        "craft_master"
+      ],
+      "unknownStateHandling": "If machine data or recipe-output identity is unavailable, emit no speculative replenishment, retain explicit unknown demand.",
+      "evidenceIds": [
+        "evidence.research.daily.machines"
+      ],
+      "status": "data-contract-only; runtime integration and live validation pending",
+      "instanceIdFormat": "daily.instance.{gameDay}.{ruleId}.{groupKey}",
+      "detail": {}
+    },
+    {
+      "id": "daily.rule.seasonal-deadline",
+      "family": "opportunity",
+      "description": "Warn when an actionable crop/fish/seasonal objective could expire before next viable opportunity.",
+      "requiredSnapshotFacts": [
+        "daily.fact.calendar.today",
+        "daily.fact.calendar.future-weather",
+        "daily.fact.crop.growth-remaining",
+        "daily.fact.goal.seasonal-demand",
+        "daily.fact.place.available",
+        "daily.fact.opportunity.last-window"
+      ],
+      "eligibility": "goal.outstanding=true AND option.seasonal=true AND window.closing-within-user-horizon=true",
+      "quantityCalculation": "COUNT distinct at-risk item/goal/window tuples; list exact days or UNKNOWN when maturity cannot be calculated",
+      "targetReferences": {
+        "locationKey": "targetLocationId",
+        "itemKey": "qualifiedItemId",
+        "entityKey": "goalId"
+      },
+      "grouping": {
+        "keys": [
+          "season",
+          "deadline",
+          "goalId"
+        ],
+        "display": "Season deadline: {count} remaining opportunity items"
+      },
+      "completionCondition": "Achievement objective satisfied OR valid alternate window confirmed OR seasonal window elapsed with outcome explicitly recorded",
+      "priorityInputs": [
+        "days-to-last-valid-seed-date",
+        "estimated harvest nights",
+        "severe weather dependency",
+        "alternate-source coverage",
+        "goal priority"
+      ],
+      "refreshTriggers": [
+        "day-start",
+        "weather-forecast-updated",
+        "crop-planted",
+        "crop-watered",
+        "crop-harvested",
+        "goal-changed",
+        "season-changed",
+        "content-invalidated",
+        "save-loaded"
+      ],
+      "achievementLinks": [
+        "polyculture",
+        "monoculture",
+        "full_shipment",
+        "master_angler",
+        "gourmet_chef"
+      ],
+      "unknownStateHandling": "Unverified weather, season exceptions, soil state, speed modifier or alternate route = uncertainty interval; issue conditional warning, never deterministic expiry.",
+      "evidenceIds": [
+        "evidence.research.daily.season"
+      ],
+      "status": "data-contract-only; runtime integration and live validation pending",
+      "instanceIdFormat": "daily.instance.{gameDay}.{ruleId}.{groupKey}",
+      "detail": {}
+    },
+    {
+      "id": "daily.rule.birthday-and-friendship",
+      "family": "social-opportunity",
+      "description": "Suggest legal high-value birthday gifts and optional daily friendship interactions to relevant NPCs.",
+      "requiredSnapshotFacts": [
+        "daily.fact.calendar.birthdays",
+        "daily.fact.friendship.state",
+        "daily.fact.friendship.gift-counters",
+        "daily.fact.friendship.gift-tastes",
+        "daily.fact.stock.unreserved",
+        "daily.fact.npc.access"
+      ],
+      "eligibility": "npc.giftable=true AND npc.birthday-today-or-enabled-social-task=true AND no-birthday-gift-given=true AND available-positive-taste-gift=true",
+      "quantityCalculation": "COUNT NPCs with eligible interaction; one birthday gift target per NPC, not number of candidate gifts; optional talk count separate",
+      "targetReferences": {
+        "entityKey": "npcId",
+        "locationKey": "observedNpcLocation"
+      },
+      "grouping": {
+        "keys": [
+          "npcId",
+          "interactionType"
+        ],
+        "display": "Gift {npc} a {taste} birthday gift"
+      },
+      "completionCondition": "Birthday gift observed in player/NPC gift counters or equivalent durable daily state; optional talk observed separately",
+      "priorityInputs": [
+        "birthday ends tonight",
+        "gift taste and quality",
+        "remaining friendship deficit",
+        "gift limits",
+        "NPC accessibility"
+      ],
+      "refreshTriggers": [
+        "day-start",
+        "npc-moved",
+        "gift-given",
+        "npc-talked",
+        "friendship-changed",
+        "inventory-changed",
+        "gift-taste-changed",
+        "content-invalidated",
+        "save-loaded"
+      ],
+      "achievementLinks": [
+        "a_new_friend",
+        "best_friends",
+        "the_beloved_farmer",
+        "cliques",
+        "networking",
+        "popular"
+      ],
+      "unknownStateHandling": "Unverified birthday, tastes or gift eligibility blocks suggestion. If NPC schedule cannot be confirmed, show opportunity but no fabricated location.",
+      "evidenceIds": [
+        "evidence.research.daily.friendship"
+      ],
+      "status": "data-contract-only; runtime integration and live validation pending",
+      "instanceIdFormat": "daily.instance.{gameDay}.{ruleId}.{groupKey}",
+      "detail": {}
+    },
+    {
+      "id": "daily.rule.condition-dependent-fishing",
+      "family": "fishing-opportunity",
+      "description": "List presently reachable outstanding fish only when water, season, clock, weather, rod and special requirements intersect.",
+      "requiredSnapshotFacts": [
+        "daily.fact.fish.content-routes",
+        "daily.fact.fish.achievement-deficit",
+        "daily.fact.calendar.today",
+        "daily.fact.weather.local",
+        "daily.fact.fish.spot-access",
+        "daily.fact.fish.known-routes"
+      ],
+      "eligibility": "fish.outstanding=true AND fish.spawn-route-resolved=true AND location.accessible=true AND in-time-window=true AND season-compatible=true AND weather-compatible=true AND spot-and-gear-compatible=true",
+      "quantityCalculation": "COUNT DISTINCT eligible fish IDs by fishing spot and current window; one task per fish objective, not estimated catches",
+      "targetReferences": {
+        "locationKey": "fishingWaterbodyAndSpecificTileIfRequired",
+        "itemKey": "fishQualifiedItemId"
+      },
+      "grouping": {
+        "keys": [
+          "locationUniqueId",
+          "timeWindow",
+          "weatherCondition"
+        ],
+        "display": "Fish for {count} outstanding species"
+      },
+      "completionCondition": "Caught-history for target species increases to required goal OR current window ends and task is explicitly expired/deferred; reevaluate after each catch",
+      "priorityInputs": [
+        "remaining weather-only hours",
+        "season end",
+        "fishing level",
+        "access travel",
+        "rarity",
+        "achievement deficit"
+      ],
+      "refreshTriggers": [
+        "time-window-crossed",
+        "weather-changed",
+        "location-entered",
+        "rod-or-bait-changed",
+        "fish-caught",
+        "goal-changed",
+        "day-start",
+        "content-invalidated",
+        "save-loaded"
+      ],
+      "achievementLinks": [
+        "fisherman",
+        "ol_mariner",
+        "master_angler",
+        "mother_catch"
+      ],
+      "unknownStateHandling": "Missing location spawn or opaque content condition = UNKNOWN; never promote Data/Fish alone to an eligible fishing route.",
+      "evidenceIds": [
+        "evidence.research.daily.fishing"
+      ],
+      "status": "data-contract-only; runtime integration and live validation pending",
+      "instanceIdFormat": "daily.instance.{gameDay}.{ruleId}.{groupKey}",
+      "detail": {}
+    }
+  ]
+}

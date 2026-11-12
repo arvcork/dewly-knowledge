@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "0.1.0",
+  "category": "community-routes",
+  "provenance": "Supplied source assertions, not newly verified gameplay rules.",
+  "entries": [
+    {
+      "id": "local_legend",
+      "name": "Local Legend",
+      "sourceRequirement": "Restore the Pelican Town Community Center.",
+      "sourceDefinitionRef": "data/sources/original/trophy-50-coverage.json#/trophies/33",
+      "sourceDependencyRef": "data/sources/original/trophy-dependency-graph.json#/graph/local_legend",
+      "verification": "source-import-only"
+    },
+    {
+      "id": "joja_co_member_of_the_year",
+      "name": "Joja Co. Member Of The Year",
+      "sourceRequirement": "Buy all Joja community development projects.",
+      "sourceDefinitionRef": "data/sources/original/trophy-50-coverage.json#/trophies/34",
+      "sourceDependencyRef": "data/sources/original/trophy-dependency-graph.json#/graph/joja_co_member_of_the_year",
+      "verification": "source-import-only"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "schemaVersion": "0.1.0",
+  "gameVersion": "1.6.15.24354",
+  "records": [
+    {
+      "id": "stardrop.fair",
+      "route": "Stardew Valley Fair shop",
+      "completionEvidence": "hasOrWillReceiveMail(CF_Fair)",
+      "acquisitionRoutes": [
+        {
+          "type": "festival-purchase",
+          "itemId": "(O)434"
+        }
+      ]
+    },
+    {
+      "id": "stardrop.master-angler",
+      "route": "Master Angler reward",
+      "completionEvidence": "hasOrWillReceiveMail(CF_Fish)",
+      "acquisitionRoutes": [
+        {
+          "type": "achievement-reward",
+          "achievementId": "master_angler"
+        }
+      ]
+    },
+    {
+      "id": "stardrop.mines-floor-100",
+      "route": "Mines floor 100 chest",
+      "completionEvidence": "hasOrWillReceiveMail(CF_Mines) OR chestConsumedMineLevels[100]",
+      "acquisitionRoutes": [
+        {
+          "type": "mine-chest",
+          "floor": 100
+        }
+      ]
+    },
+    {
+      "id": "stardrop.sewer",
+      "route": "Krobus shop",
+      "completionEvidence": "hasOrWillReceiveMail(CF_Sewer)",
+      "acquisitionRoutes": [
+        {
+          "type": "shop",
+          "shopId": "ShadowShop",
+          "itemId": "(O)434"
+        }
+      ]
+    },
+    {
+      "id": "stardrop.museum",
+      "route": "Museum collection reward",
+      "completionEvidence": "hasOrWillReceiveMail(museumComplete)",
+      "acquisitionRoutes": [
+        {
+          "type": "collection-reward",
+          "achievementId": "a_complete_collection"
+        }
+      ]
+    },
+    {
+      "id": "stardrop.spouse",
+      "route": "Spouse at 12.5 hearts",
+      "completionEvidence": "hasOrWillReceiveMail(CF_Spouse)",
+      "acquisitionRoutes": [
+        {
+          "type": "relationship",
+          "points": 3125
+        }
+      ]
+    },
+    {
+      "id": "stardrop.statue",
+      "route": "Old Master Cannoli statue after Sweet Gem Berry",
+      "completionEvidence": "hasOrWillReceiveMail(CF_Statue)",
+      "acquisitionRoutes": [
+        {
+          "type": "statue-offering",
+          "itemId": "(O)417",
+          "location": "Woods"
+        }
+      ]
+    }
+  ]
+}

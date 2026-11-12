@@ -1,0 +1,512 @@
+{
+  "schemaVersion": "0.1.0",
+  "category": "foraging-and-collections",
+  "nodes": [
+    {
+      "id": "breadth.unresolved.foraging-and-collections",
+      "kind": "unknown",
+      "trackingRefs": [],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354"
+      ],
+      "verification": "unresolved",
+      "reason": "Museum eligibility and per-book purchase/drop routes need content adapters; Stardrop evidence includes gotMaxStamina override and hasOrWillReceiveMail semantics. Live content selector and normalized progress reader pending."
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.a_complete_collection.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.a_complete_collection.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.goal.a_complete_collection",
+      "kind": "all",
+      "goal": "a_complete_collection",
+      "requires": [
+        "breadth.requirement.a_complete_collection"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.a_complete_collection.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.a_complete_collection.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.requirement.a_complete_collection",
+      "kind": "all",
+      "requires": [
+        "breadth.action.a_complete_collection"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.a_complete_collection.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.a_complete_collection.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.action.a_complete_collection",
+      "kind": "action",
+      "requires": [
+        "materialized.requirement.a_complete_collection"
+      ],
+      "task": {
+        "text": "Donate all required museum items."
+      },
+      "breadth": {
+        "completionLogic": "MuseumPieces.Length >= LibraryMuseum.totalArtifacts",
+        "runtimeStatus": "materialized children; runtime reader pending; no live verification",
+        "platformRef": "data/platform-mapping.json#a_complete_collection",
+        "selection": "Museum: enumerate donation-eligible artifacts/minerals using museum acceptance logic and subtract MuseumPieces. Books: use the exact 19 Book_* keys in Stats.checkForBooksReadAchievement, not every book object. Stardrops: use Utility.foundAllStardrops mail/chest predicates.",
+        "assets": [
+          "Data/Objects",
+          "Data/Shops"
+        ],
+        "limitations": "Museum eligibility and per-book purchase/drop routes need content adapters; Stardrop evidence includes gotMaxStamina override and hasOrWillReceiveMail semantics.",
+        "atomicDecomposition": {
+          "status": "complete",
+          "mode": "dynamic-enumerator",
+          "source": "LibraryMuseum donation acceptance + Data/Objects",
+          "eligibility": "For completion enumerate only items accepted by museum donation logic; Treasure Trove is a distinct-entry counter.",
+          "resultId": "a_complete_collection.museum.{qualifiedItemId}",
+          "requirements": [
+            {
+              "id": "a_complete_collection.donation",
+              "kind": "collection",
+              "condition": "every LibraryMuseum-accepted artifact/mineral ID is present in MuseumPieces",
+              "tracking": {
+                "value": "LibraryMuseum.MuseumPieces",
+                "dataType": "map<Vector2,string>",
+                "source": "local-runtime-1.6.15.24354: Stats.checkForArchaeologyAchievements; checkForBooksReadAchievement; Utility.foundAllStardrops",
+                "status": "candidate"
+              },
+              "routeRefs": [
+                "breadth.acquire.item"
+              ],
+              "prerequisiteRefs": [],
+              "verification": "derived-rule"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.treasure_trove.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.treasure_trove.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.goal.treasure_trove",
+      "kind": "all",
+      "goal": "treasure_trove",
+      "requires": [
+        "breadth.requirement.treasure_trove"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.treasure_trove.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.treasure_trove.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.requirement.treasure_trove",
+      "kind": "all",
+      "requires": [
+        "breadth.action.treasure_trove"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.treasure_trove.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.treasure_trove.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.action.treasure_trove",
+      "kind": "action",
+      "requires": [
+        "materialized.requirement.treasure_trove"
+      ],
+      "task": {
+        "text": "Donate forty different items."
+      },
+      "breadth": {
+        "completionLogic": "MuseumPieces.Length >=40",
+        "runtimeStatus": "materialized children; runtime reader pending; no live verification",
+        "platformRef": "data/platform-mapping.json#treasure_trove",
+        "selection": "Museum: enumerate donation-eligible artifacts/minerals using museum acceptance logic and subtract MuseumPieces. Books: use the exact 19 Book_* keys in Stats.checkForBooksReadAchievement, not every book object. Stardrops: use Utility.foundAllStardrops mail/chest predicates.",
+        "assets": [
+          "Data/Objects",
+          "Data/Shops"
+        ],
+        "limitations": "Museum eligibility and per-book purchase/drop routes need content adapters; Stardrop evidence includes gotMaxStamina override and hasOrWillReceiveMail semantics.",
+        "atomicDecomposition": {
+          "status": "complete",
+          "mode": "dynamic-enumerator",
+          "source": "LibraryMuseum donation acceptance + Data/Objects",
+          "eligibility": "For completion enumerate only items accepted by museum donation logic; Treasure Trove is a distinct-entry counter.",
+          "resultId": "treasure_trove.museum.{qualifiedItemId}",
+          "requirements": [
+            {
+              "id": "treasure_trove.donation",
+              "kind": "collection",
+              "condition": "at least 40 distinct MuseumPieces entries",
+              "tracking": {
+                "value": "LibraryMuseum.MuseumPieces",
+                "dataType": "map<Vector2,string>",
+                "source": "local-runtime-1.6.15.24354: Stats.checkForArchaeologyAchievements; checkForBooksReadAchievement; Utility.foundAllStardrops",
+                "status": "candidate"
+              },
+              "routeRefs": [
+                "breadth.acquire.item"
+              ],
+              "prerequisiteRefs": [],
+              "verification": "derived-rule"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.mystery_of_the_stardrops.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.mystery_of_the_stardrops.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.goal.mystery_of_the_stardrops",
+      "kind": "all",
+      "goal": "mystery_of_the_stardrops",
+      "requires": [
+        "breadth.requirement.mystery_of_the_stardrops"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.mystery_of_the_stardrops.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.mystery_of_the_stardrops.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.requirement.mystery_of_the_stardrops",
+      "kind": "all",
+      "requires": [
+        "breadth.action.mystery_of_the_stardrops"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.mystery_of_the_stardrops.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.mystery_of_the_stardrops.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.action.mystery_of_the_stardrops",
+      "kind": "action",
+      "requires": [
+        "materialized.requirement.mystery_of_the_stardrops"
+      ],
+      "task": {
+        "text": "Obtain remaining Stardrop rewards."
+      },
+      "breadth": {
+        "completionLogic": "Utility.foundAllStardrops(player)",
+        "runtimeStatus": "materialized children; runtime reader pending; no live verification",
+        "platformRef": "data/platform-mapping.json#mystery_of_the_stardrops",
+        "selection": "Museum: enumerate donation-eligible artifacts/minerals using museum acceptance logic and subtract MuseumPieces. Books: use the exact 19 Book_* keys in Stats.checkForBooksReadAchievement, not every book object. Stardrops: use Utility.foundAllStardrops mail/chest predicates.",
+        "assets": [
+          "Data/Objects",
+          "Data/Shops"
+        ],
+        "limitations": "Museum eligibility and per-book purchase/drop routes need content adapters; Stardrop evidence includes gotMaxStamina override and hasOrWillReceiveMail semantics.",
+        "atomicDecomposition": {
+          "status": "complete",
+          "mode": "static",
+          "source": "Utility.foundAllStardrops",
+          "eligibility": "Seven route predicates used by Utility.foundAllStardrops; gotMaxStamina is only the runtime override.",
+          "resultId": "mystery_of_the_stardrops.stardrop.{route}",
+          "requirements": [
+            {
+              "id": "stardrop.fair",
+              "kind": "milestone",
+              "condition": "route-specific mail/chest/friendship predicate is true",
+              "tracking": {
+                "value": "Utility.foundAllStardrops route predicate",
+                "dataType": "bool",
+                "source": "Utility.foundAllStardrops",
+                "status": "source-verified"
+              },
+              "routeRefs": [
+                "breadth.acquire.item"
+              ],
+              "prerequisiteRefs": [],
+              "verification": "derived-rule"
+            },
+            {
+              "id": "stardrop.master-angler",
+              "kind": "milestone",
+              "condition": "route-specific mail/chest/friendship predicate is true",
+              "tracking": {
+                "value": "Utility.foundAllStardrops route predicate",
+                "dataType": "bool",
+                "source": "Utility.foundAllStardrops",
+                "status": "source-verified"
+              },
+              "routeRefs": [
+                "breadth.acquire.item"
+              ],
+              "prerequisiteRefs": [],
+              "verification": "derived-rule"
+            },
+            {
+              "id": "stardrop.mines-floor-100",
+              "kind": "milestone",
+              "condition": "route-specific mail/chest/friendship predicate is true",
+              "tracking": {
+                "value": "Utility.foundAllStardrops route predicate",
+                "dataType": "bool",
+                "source": "Utility.foundAllStardrops",
+                "status": "source-verified"
+              },
+              "routeRefs": [
+                "breadth.acquire.item"
+              ],
+              "prerequisiteRefs": [],
+              "verification": "derived-rule"
+            },
+            {
+              "id": "stardrop.sewer",
+              "kind": "milestone",
+              "condition": "route-specific mail/chest/friendship predicate is true",
+              "tracking": {
+                "value": "Utility.foundAllStardrops route predicate",
+                "dataType": "bool",
+                "source": "Utility.foundAllStardrops",
+                "status": "source-verified"
+              },
+              "routeRefs": [
+                "breadth.acquire.item"
+              ],
+              "prerequisiteRefs": [],
+              "verification": "derived-rule"
+            },
+            {
+              "id": "stardrop.museum",
+              "kind": "milestone",
+              "condition": "route-specific mail/chest/friendship predicate is true",
+              "tracking": {
+                "value": "Utility.foundAllStardrops route predicate",
+                "dataType": "bool",
+                "source": "Utility.foundAllStardrops",
+                "status": "source-verified"
+              },
+              "routeRefs": [
+                "breadth.acquire.item"
+              ],
+              "prerequisiteRefs": [],
+              "verification": "derived-rule"
+            },
+            {
+              "id": "stardrop.spouse",
+              "kind": "milestone",
+              "condition": "route-specific mail/chest/friendship predicate is true",
+              "tracking": {
+                "value": "Utility.foundAllStardrops route predicate",
+                "dataType": "bool",
+                "source": "Utility.foundAllStardrops",
+                "status": "source-verified"
+              },
+              "routeRefs": [
+                "breadth.acquire.item"
+              ],
+              "prerequisiteRefs": [],
+              "verification": "derived-rule"
+            },
+            {
+              "id": "stardrop.statue",
+              "kind": "milestone",
+              "condition": "route-specific mail/chest/friendship predicate is true",
+              "tracking": {
+                "value": "Utility.foundAllStardrops route predicate",
+                "dataType": "bool",
+                "source": "Utility.foundAllStardrops",
+                "status": "source-verified"
+              },
+              "routeRefs": [
+                "breadth.acquire.item"
+              ],
+              "prerequisiteRefs": [],
+              "verification": "derived-rule"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.well_read.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.well_read.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.goal.well_read",
+      "kind": "all",
+      "goal": "well_read",
+      "requires": [
+        "breadth.requirement.well_read"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.well_read.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.well_read.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.requirement.well_read",
+      "kind": "all",
+      "requires": [
+        "breadth.action.well_read"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.well_read.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.well_read.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.action.well_read",
+      "kind": "action",
+      "requires": [
+        "materialized.requirement.well_read"
+      ],
+      "task": {
+        "text": "Read missing power books."
+      },
+      "breadth": {
+        "completionLogic": "all 19 explicit Book_* stats in Stats.checkForBooksReadAchievement are nonzero",
+        "runtimeStatus": "materialized children; runtime reader pending; no live verification",
+        "platformRef": "data/platform-mapping.json#well_read",
+        "selection": "Museum: enumerate donation-eligible artifacts/minerals using museum acceptance logic and subtract MuseumPieces. Books: use the exact 19 Book_* keys in Stats.checkForBooksReadAchievement, not every book object. Stardrops: use Utility.foundAllStardrops mail/chest predicates.",
+        "assets": [
+          "Data/Objects",
+          "Data/Shops"
+        ],
+        "limitations": "Museum eligibility and per-book purchase/drop routes need content adapters; Stardrop evidence includes gotMaxStamina override and hasOrWillReceiveMail semantics.",
+        "atomicDecomposition": {
+          "status": "complete",
+          "mode": "static",
+          "source": "Stats.checkForBooksReadAchievement",
+          "eligibility": "The exact 19 stat keys tested by checkForBooksReadAchievement; do not enumerate every book object.",
+          "resultId": "well_read.book.{statKey}",
+          "requirements": [
+            {
+              "id": "well_read.each-power-book",
+              "kind": "collection",
+              "condition": "each of the 19 explicit Book_* stats is nonzero",
+              "tracking": {
+                "value": "Stats.Get(statKey)",
+                "dataType": "uint32",
+                "source": "Stats.checkForBooksReadAchievement",
+                "status": "source-verified"
+              },
+              "routeRefs": [
+                "breadth.acquire.item"
+              ],
+              "prerequisiteRefs": [],
+              "verification": "derived-rule"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "schemaVersion": "1.0.0",
+  "gameVersion": "1.6.15.24354",
+  "scope": "Research batch 3 item routes; first level, not recursively resolved",
+  "records": [
+    {
+      "id": "acq.item.195",
+      "qualifiedItemId": "(O)195",
+      "routes": [
+        {
+          "id": "acq.method.195.cook.omelet",
+          "type": "cook-recipe",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire3.omelet"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Omelet"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "recipeName": "Omelet",
+          "requiredInputs": [
+            {
+              "category": -5,
+              "quantity": 1
+            },
+            {
+              "category": -6,
+              "quantity": 1
+            }
+          ],
+          "unlockAlternatives": [
+            "The Queen of Sauce 28 Spring Year 1",
+            "Buy recipe at Stardrop Saloon for 100g"
+          ],
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.cooking-facility"
+            },
+            {
+              "ref": "acq.prereq.eligible-egg"
+            },
+            {
+              "ref": "acq.prereq.eligible-milk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "acq.item.229",
+      "qualifiedItemId": "(O)229",
+      "routes": [
+        {
+          "id": "acq.method.229.cook.tortilla",
+          "type": "cook-recipe",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire3.tortilla"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Tortilla"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "recipeName": "Tortilla",
+          "inputItems": [
+            {
+              "itemId": "(O)270",
+              "quantity": 1
+            }
+          ],
+          "unlockAlternatives": [
+            "The Queen of Sauce 7 Fall Year 1",
+            "Buy recipe at Stardrop Saloon for 100g"
+          ],
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.cooking-facility"
+            }
+          ]
+        },
+        {
+          "id": "acq.method.229.buy.random-stock",
+          "type": "purchase",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire3.tortilla"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Tortilla"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "shopAlternatives": [
+            "Stardrop Saloon rotating cooked-food stock",
+            "Krobus Saturday rotating stock"
+          ],
+          "conditions": [
+            "current shop stock observed",
+            "unreserved gold sufficient"
+          ],
+          "occurrence": "not guaranteed to be stocked"
+        }
+      ]
+    },
+    {
+      "id": "acq.item.93",
+      "qualifiedItemId": "(O)93",
+      "routes": [
+        {
+          "id": "acq.method.93.craft.torch",
+          "type": "craft-recipe",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire3.torch"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Torch"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "recipeName": "Torch",
+          "inputItems": [
+            {
+              "itemId": "(O)388",
+              "quantity": 1
+            },
+            {
+              "itemId": "(O)92",
+              "quantity": 2
+            }
+          ],
+          "recipeUnlock": "Starter",
+          "outputQuantity": 1,
+          "conditions": [
+            "recipe actually known and resources unreserved"
+          ]
+        },
+        {
+          "id": "acq.method.93.recycle.soggy-newspaper",
+          "type": "recycle",
+          "verification": "external-research",
+          "evidenceIds": [
+            "evidence.research.acquire3.torch"
+          ],
+          "sourceRefs": [
+            "https://stardewvalleywiki.com/Torch"
+          ],
+          "recursivePrerequisitesResolved": false,
+          "machine": "Recycling Machine",
+          "inputItems": [
+            {
+              "itemId": "(O)172",
+              "quantity": 1
+            }
+          ],
+          "outputQuantity": 3,
+          "prerequisites": [
+            {
+              "ref": "acq.prereq.recycling-machine-ready"
+            }
+          ],
+          "occurrence": "chance of producing torches, not guaranteed"
+        }
+      ]
+    }
+  ],
+  "sourceFile": "scripts/build-research-batch-3.py"
+}

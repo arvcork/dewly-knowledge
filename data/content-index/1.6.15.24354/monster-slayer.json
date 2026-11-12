@@ -1,0 +1,167 @@
+{
+  "schemaVersion": "0.1.0",
+  "gameVersion": "1.6.15.24354",
+  "records": [
+    {
+      "id": "slayer.bats-4ffae2eb",
+      "questId": "Bats",
+      "targetMonsterKeys": [
+        "Bat",
+        "Frost Bat",
+        "Lava Bat",
+        "Iridium Bat"
+      ],
+      "requiredKills": 200,
+      "counterFormula": "sum Stats.specificMonstersKilled[targetMonsterKeys]",
+      "rewardItemId": "(O)522",
+      "source": "Data/MonsterSlayerQuests",
+      "verification": "extracted-content-and-verified-logic"
+    },
+    {
+      "id": "slayer.crabs-b3ee0cd7",
+      "questId": "Crabs",
+      "targetMonsterKeys": [
+        "Rock Crab",
+        "Lava Crab",
+        "Iridium Crab"
+      ],
+      "requiredKills": 60,
+      "counterFormula": "sum Stats.specificMonstersKilled[targetMonsterKeys]",
+      "rewardItemId": "(O)810",
+      "source": "Data/MonsterSlayerQuests",
+      "verification": "extracted-content-and-verified-logic"
+    },
+    {
+      "id": "slayer.dinos-86ceaaf0",
+      "questId": "Dinos",
+      "targetMonsterKeys": [
+        "Pepper Rex"
+      ],
+      "requiredKills": 50,
+      "counterFormula": "sum Stats.specificMonstersKilled[targetMonsterKeys]",
+      "rewardItemId": "(H)50",
+      "source": "Data/MonsterSlayerQuests",
+      "verification": "extracted-content-and-verified-logic"
+    },
+    {
+      "id": "slayer.duggy-d1defa89",
+      "questId": "Duggy",
+      "targetMonsterKeys": [
+        "Duggy",
+        "Magma Duggy"
+      ],
+      "requiredKills": 30,
+      "counterFormula": "sum Stats.specificMonstersKilled[targetMonsterKeys]",
+      "rewardItemId": "(H)27",
+      "source": "Data/MonsterSlayerQuests",
+      "verification": "extracted-content-and-verified-logic"
+    },
+    {
+      "id": "slayer.dustspirits-d6874687",
+      "questId": "DustSpirits",
+      "targetMonsterKeys": [
+        "Dust Spirit"
+      ],
+      "requiredKills": 500,
+      "counterFormula": "sum Stats.specificMonstersKilled[targetMonsterKeys]",
+      "rewardItemId": "(O)526",
+      "source": "Data/MonsterSlayerQuests",
+      "verification": "extracted-content-and-verified-logic"
+    },
+    {
+      "id": "slayer.flamespirits-8ec0ee1e",
+      "questId": "FlameSpirits",
+      "targetMonsterKeys": [
+        "Magma Sprite",
+        "Magma Sparker"
+      ],
+      "requiredKills": 150,
+      "counterFormula": "sum Stats.specificMonstersKilled[targetMonsterKeys]",
+      "rewardItemId": null,
+      "source": "Data/MonsterSlayerQuests",
+      "verification": "extracted-content-and-verified-logic"
+    },
+    {
+      "id": "slayer.insects-9462999f",
+      "questId": "Insects",
+      "targetMonsterKeys": [
+        "Grub",
+        "Fly",
+        "Bug"
+      ],
+      "requiredKills": 80,
+      "counterFormula": "sum Stats.specificMonstersKilled[targetMonsterKeys]",
+      "rewardItemId": "(W)13",
+      "source": "Data/MonsterSlayerQuests",
+      "verification": "extracted-content-and-verified-logic"
+    },
+    {
+      "id": "slayer.mummies-befb68f4",
+      "questId": "Mummies",
+      "targetMonsterKeys": [
+        "Mummy"
+      ],
+      "requiredKills": 100,
+      "counterFormula": "sum Stats.specificMonstersKilled[targetMonsterKeys]",
+      "rewardItemId": "(H)60",
+      "source": "Data/MonsterSlayerQuests",
+      "verification": "extracted-content-and-verified-logic"
+    },
+    {
+      "id": "slayer.serpents-a8f1380f",
+      "questId": "Serpents",
+      "targetMonsterKeys": [
+        "Serpent",
+        "Royal Serpent"
+      ],
+      "requiredKills": 250,
+      "counterFormula": "sum Stats.specificMonstersKilled[targetMonsterKeys]",
+      "rewardItemId": "(O)811",
+      "source": "Data/MonsterSlayerQuests",
+      "verification": "extracted-content-and-verified-logic"
+    },
+    {
+      "id": "slayer.shadows-446d99fc",
+      "questId": "Shadows",
+      "targetMonsterKeys": [
+        "Shadow Guy",
+        "Shadow Shaman",
+        "Shadow Brute",
+        "Shadow Sniper"
+      ],
+      "requiredKills": 150,
+      "counterFormula": "sum Stats.specificMonstersKilled[targetMonsterKeys]",
+      "rewardItemId": "(O)523",
+      "source": "Data/MonsterSlayerQuests",
+      "verification": "extracted-content-and-verified-logic"
+    },
+    {
+      "id": "slayer.skeletons-0bed184c",
+      "questId": "Skeletons",
+      "targetMonsterKeys": [
+        "Skeleton",
+        "Skeleton Mage"
+      ],
+      "requiredKills": 50,
+      "counterFormula": "sum Stats.specificMonstersKilled[targetMonsterKeys]",
+      "rewardItemId": "(H)8",
+      "source": "Data/MonsterSlayerQuests",
+      "verification": "extracted-content-and-verified-logic"
+    },
+    {
+      "id": "slayer.slimes-c2677cd1",
+      "questId": "Slimes",
+      "targetMonsterKeys": [
+        "Green Slime",
+        "Frost Jelly",
+        "Sludge",
+        "Tiger Slime"
+      ],
+      "requiredKills": 1000,
+      "counterFormula": "sum Stats.specificMonstersKilled[targetMonsterKeys]",
+      "rewardItemId": "(O)520",
+      "source": "Data/MonsterSlayerQuests",
+      "verification": "extracted-content-and-verified-logic"
+    }
+  ]
+}

@@ -1,0 +1,579 @@
+{
+  "schemaVersion": "0.1.0",
+  "category": "fishing",
+  "nodes": [
+    {
+      "id": "goal.catch-shad",
+      "kind": "all",
+      "trackingRefs": [
+        "snapshot.caught.(O)706"
+      ],
+      "sourceRefs": [
+        "https://stardewvalleywiki.com/Shad"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "caught.(O)706",
+        "op": "gte",
+        "value": 1
+      },
+      "requires": [
+        "action.catch-shad"
+      ]
+    },
+    {
+      "id": "action.catch-shad",
+      "kind": "action",
+      "trackingRefs": [
+        "snapshot.caught.(O)706"
+      ],
+      "sourceRefs": [
+        "https://stardewvalleywiki.com/Shad"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "caught.(O)706",
+        "op": "gte",
+        "value": 1
+      },
+      "requires": [
+        "gate.river-access",
+        "gate.rod",
+        "access.shad-window"
+      ],
+      "task": {
+        "text": "Fish for Shad in an accessible eligible river; repeat attempts until catch history confirms it."
+      },
+      "probabilistic": true,
+      "goal": "master_angler"
+    },
+    {
+      "id": "gate.river-access",
+      "kind": "gate",
+      "trackingRefs": [
+        "snapshot.shad.river-accessible"
+      ],
+      "sourceRefs": [
+        "https://stardewvalleywiki.com/Shad"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "shad.river-accessible",
+        "op": "eq",
+        "value": true
+      },
+      "blockedReason": "Reach a river fishing tile included in the loaded location spawn data."
+    },
+    {
+      "id": "gate.rod",
+      "kind": "gate",
+      "trackingRefs": [
+        "snapshot.fishing.rod-usable"
+      ],
+      "sourceRefs": [
+        "https://stardewvalleywiki.com/Shad"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "fishing.rod-usable",
+        "op": "eq",
+        "value": true
+      },
+      "blockedReason": "Obtain/retrieve a usable rod; detailed rod acquisition remains to be mapped."
+    },
+    {
+      "id": "access.shad-window",
+      "kind": "any",
+      "trackingRefs": [],
+      "sourceRefs": [
+        "https://stardewvalleywiki.com/Shad"
+      ],
+      "verification": "derived-rule",
+      "requires": [
+        "gate.shad-natural-window",
+        "gate.shad-magic-bait"
+      ]
+    },
+    {
+      "id": "gate.shad-natural-window",
+      "kind": "gate",
+      "trackingRefs": [
+        "snapshot.date.time",
+        "snapshot.river.raining",
+        "snapshot.river.season"
+      ],
+      "sourceRefs": [
+        "https://stardewvalleywiki.com/Shad"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "all": [
+          {
+            "fact": "river.season",
+            "op": "in",
+            "value": [
+              "spring",
+              "summer",
+              "fall"
+            ]
+          },
+          {
+            "fact": "river.raining",
+            "op": "eq",
+            "value": true
+          },
+          {
+            "fact": "date.time",
+            "op": "gte",
+            "value": 900
+          },
+          {
+            "fact": "date.time",
+            "op": "lt",
+            "value": 2600
+          }
+        ]
+      },
+      "blockedReason": "Wait for eligible season/rain and time >=09:00 before 02:00; future rain is not guaranteed."
+    },
+    {
+      "id": "gate.shad-magic-bait",
+      "kind": "gate",
+      "trackingRefs": [
+        "snapshot.magic-bait.attached-usable"
+      ],
+      "sourceRefs": [
+        "https://stardewvalleywiki.com/Magic_Bait"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "magic-bait.attached-usable",
+        "op": "eq",
+        "value": true
+      },
+      "blockedReason": "Magic Bait on a compatible rod bypasses time/weather/season; it does not bypass location."
+    },
+    {
+      "id": "breadth.unresolved.fishing",
+      "kind": "unknown",
+      "trackingRefs": [],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354"
+      ],
+      "verification": "unresolved",
+      "reason": "Do not infer availability from Data/Fish alone. Default and location-specific spawns, runtime exceptions and crab-pot filters need adapters; Magic Bait bypass applies only to supported restrictions, not all gates. Purchased fish do not count. Live content selector and normalized progress reader pending."
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.fisherman.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.fisherman.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.goal.fisherman",
+      "kind": "all",
+      "goal": "fisherman",
+      "requires": [
+        "breadth.requirement.fisherman"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.fisherman.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.fisherman.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.requirement.fisherman",
+      "kind": "all",
+      "requires": [
+        "breadth.action.fisherman"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.fisherman.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.fisherman.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.action.fisherman",
+      "kind": "action",
+      "requires": [
+        "materialized.requirement.fisherman"
+      ],
+      "task": {
+        "text": "Catch missing eligible types."
+      },
+      "breadth": {
+        "completionLogic": "eligible distinct fishCaught keys >= 10",
+        "runtimeStatus": "materialized children; runtime reader pending; no live verification",
+        "platformRef": "data/platform-mapping.json#fisherman",
+        "selection": "Enumerate ItemRegistry.GetObjectTypeDefinition().GetAllData(): ObjectType == Fish and ObjectData.ExcludeFromFishingCollection == false. Missing types lack qualified-ID keys in fishCaught; total catches sum value[0] over eligible entries.",
+        "assets": [
+          "Data/Objects",
+          "Data/Fish",
+          "Data/Locations"
+        ],
+        "limitations": "Do not infer availability from Data/Fish alone. Default and location-specific spawns, runtime exceptions and crab-pot filters need adapters; Magic Bait bypass applies only to supported restrictions, not all gates. Purchased fish do not count.",
+        "atomicDecomposition": {
+          "status": "complete",
+          "mode": "dynamic-enumerator",
+          "source": "ItemRegistry object data + Data/Fish + Data/Locations",
+          "eligibility": "ObjectType == Fish and ExcludeFromFishingCollection == false; preserve qualified item ID; join all location/default spawns without treating Data/Fish presence as availability.",
+          "resultId": "fisherman.fish.{qualifiedItemId}",
+          "requirements": [
+            {
+              "id": "fisherman.eligible-fish",
+              "kind": "fish",
+              "condition": "at least 10 distinct eligible fish have fishCaught keys",
+              "tracking": {
+                "value": "Farmer.fishCaught[qualifiedItemId][0]",
+                "dataType": "int32",
+                "source": "ItemRegistry + Farmer.fishCaught",
+                "status": "source-verified"
+              },
+              "routeRefs": [
+                "breadth.progress.fishing-access"
+              ],
+              "prerequisiteRefs": [
+                "breadth.progress.location-access"
+              ],
+              "verification": "derived-rule"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.ol_mariner.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.ol_mariner.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.goal.ol_mariner",
+      "kind": "all",
+      "goal": "ol_mariner",
+      "requires": [
+        "breadth.requirement.ol_mariner"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.ol_mariner.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.ol_mariner.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.requirement.ol_mariner",
+      "kind": "all",
+      "requires": [
+        "breadth.action.ol_mariner"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.ol_mariner.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.ol_mariner.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.action.ol_mariner",
+      "kind": "action",
+      "requires": [
+        "materialized.requirement.ol_mariner"
+      ],
+      "task": {
+        "text": "Catch missing eligible types."
+      },
+      "breadth": {
+        "completionLogic": "eligible distinct fishCaught keys >= 24",
+        "runtimeStatus": "materialized children; runtime reader pending; no live verification",
+        "platformRef": "data/platform-mapping.json#ol_mariner",
+        "selection": "Enumerate ItemRegistry.GetObjectTypeDefinition().GetAllData(): ObjectType == Fish and ObjectData.ExcludeFromFishingCollection == false. Missing types lack qualified-ID keys in fishCaught; total catches sum value[0] over eligible entries.",
+        "assets": [
+          "Data/Objects",
+          "Data/Fish",
+          "Data/Locations"
+        ],
+        "limitations": "Do not infer availability from Data/Fish alone. Default and location-specific spawns, runtime exceptions and crab-pot filters need adapters; Magic Bait bypass applies only to supported restrictions, not all gates. Purchased fish do not count.",
+        "atomicDecomposition": {
+          "status": "complete",
+          "mode": "dynamic-enumerator",
+          "source": "ItemRegistry object data + Data/Fish + Data/Locations",
+          "eligibility": "ObjectType == Fish and ExcludeFromFishingCollection == false; preserve qualified item ID; join all location/default spawns without treating Data/Fish presence as availability.",
+          "resultId": "ol_mariner.fish.{qualifiedItemId}",
+          "requirements": [
+            {
+              "id": "ol_mariner.eligible-fish",
+              "kind": "fish",
+              "condition": "at least 24 distinct eligible fish have fishCaught keys",
+              "tracking": {
+                "value": "Farmer.fishCaught[qualifiedItemId][0]",
+                "dataType": "int32",
+                "source": "ItemRegistry + Farmer.fishCaught",
+                "status": "source-verified"
+              },
+              "routeRefs": [
+                "breadth.progress.fishing-access"
+              ],
+              "prerequisiteRefs": [
+                "breadth.progress.location-access"
+              ],
+              "verification": "derived-rule"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.master_angler.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.master_angler.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.goal.master_angler",
+      "kind": "all",
+      "goal": "master_angler",
+      "requires": [
+        "breadth.requirement.master_angler"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.master_angler.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.master_angler.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.requirement.master_angler",
+      "kind": "all",
+      "requires": [
+        "breadth.action.master_angler"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.master_angler.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.master_angler.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.action.master_angler",
+      "kind": "action",
+      "requires": [
+        "materialized.requirement.master_angler"
+      ],
+      "task": {
+        "text": "Catch every missing eligible type."
+      },
+      "breadth": {
+        "completionLogic": "eligible distinct fishCaught keys >= eligible registry fish count",
+        "runtimeStatus": "materialized children; runtime reader pending; no live verification",
+        "platformRef": "data/platform-mapping.json#master_angler",
+        "selection": "Enumerate ItemRegistry.GetObjectTypeDefinition().GetAllData(): ObjectType == Fish and ObjectData.ExcludeFromFishingCollection == false. Missing types lack qualified-ID keys in fishCaught; total catches sum value[0] over eligible entries.",
+        "assets": [
+          "Data/Objects",
+          "Data/Fish",
+          "Data/Locations"
+        ],
+        "limitations": "Do not infer availability from Data/Fish alone. Default and location-specific spawns, runtime exceptions and crab-pot filters need adapters; Magic Bait bypass applies only to supported restrictions, not all gates. Purchased fish do not count.",
+        "atomicDecomposition": {
+          "status": "complete",
+          "mode": "dynamic-enumerator",
+          "source": "ItemRegistry object data + Data/Fish + Data/Locations",
+          "eligibility": "ObjectType == Fish and ExcludeFromFishingCollection == false; preserve qualified item ID; join all location/default spawns without treating Data/Fish presence as availability.",
+          "resultId": "master_angler.fish.{qualifiedItemId}",
+          "requirements": [
+            {
+              "id": "master_angler.eligible-fish",
+              "kind": "fish",
+              "condition": "every eligible fish has a fishCaught key",
+              "tracking": {
+                "value": "Farmer.fishCaught[qualifiedItemId][0]",
+                "dataType": "int32",
+                "source": "ItemRegistry + Farmer.fishCaught",
+                "status": "source-verified"
+              },
+              "routeRefs": [
+                "breadth.progress.fishing-access"
+              ],
+              "prerequisiteRefs": [
+                "breadth.progress.location-access"
+              ],
+              "verification": "derived-rule"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.mother_catch.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.mother_catch.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.goal.mother_catch",
+      "kind": "all",
+      "goal": "mother_catch",
+      "requires": [
+        "breadth.requirement.mother_catch"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.mother_catch.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.mother_catch.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.requirement.mother_catch",
+      "kind": "all",
+      "requires": [
+        "breadth.action.mother_catch"
+      ]
+    },
+    {
+      "trackingRefs": [
+        "snapshot.breadth.mother_catch.satisfied"
+      ],
+      "sourceRefs": [
+        "local-runtime-1.6.15.24354",
+        "https://stardewvalleywiki.com/Achievements"
+      ],
+      "verification": "derived-rule",
+      "completion": {
+        "fact": "breadth.mother_catch.satisfied",
+        "op": "eq",
+        "value": true
+      },
+      "id": "breadth.action.mother_catch",
+      "kind": "action",
+      "requires": [
+        "materialized.requirement.mother_catch"
+      ],
+      "task": {
+        "text": "Repeat an available catch route until eligible history totals 100."
+      },
+      "breadth": {
+        "completionLogic": "sum eligible fishCaught values[0] >= 100",
+        "runtimeStatus": "materialized children; runtime reader pending; no live verification",
+        "platformRef": "data/platform-mapping.json#mother_catch",
+        "selection": "Enumerate ItemRegistry.GetObjectTypeDefinition().GetAllData(): ObjectType == Fish and ObjectData.ExcludeFromFishingCollection == false. Missing types lack qualified-ID keys in fishCaught; total catches sum value[0] over eligible entries.",
+        "assets": [
+          "Data/Objects",
+          "Data/Fish",
+          "Data/Locations"
+        ],
+        "limitations": "Do not infer availability from Data/Fish alone. Default and location-specific spawns, runtime exceptions and crab-pot filters need adapters; Magic Bait bypass applies only to supported restrictions, not all gates. Purchased fish do not count.",
+        "atomicDecomposition": {
+          "status": "complete",
+          "mode": "dynamic-enumerator",
+          "source": "ItemRegistry object data + Data/Fish + Data/Locations",
+          "eligibility": "ObjectType == Fish and ExcludeFromFishingCollection == false; preserve qualified item ID; join all location/default spawns without treating Data/Fish presence as availability.",
+          "resultId": "mother_catch.fish.{qualifiedItemId}",
+          "requirements": [
+            {
+              "id": "mother_catch.eligible-fish",
+              "kind": "fish",
+              "condition": "sum value[0] over eligible fish >= 100",
+              "tracking": {
+                "value": "Farmer.fishCaught[qualifiedItemId][0]",
+                "dataType": "int32",
+                "source": "ItemRegistry + Farmer.fishCaught",
+                "status": "source-verified"
+              },
+              "routeRefs": [
+                "breadth.progress.fishing-access"
+              ],
+              "prerequisiteRefs": [
+                "breadth.progress.location-access"
+              ],
+              "verification": "derived-rule"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

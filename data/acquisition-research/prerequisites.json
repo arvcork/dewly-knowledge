@@ -1,0 +1,223 @@
+{
+  "schemaVersion": "1.0.0",
+  "gameVersion": "1.6.15.24354",
+  "nodes": [
+    {
+      "id": "acq.prereq.animal-housing",
+      "kind": "prerequisite-contract",
+      "description": "Correct coop/barn upgrade with capacity and animal available",
+      "trackingStatus": "contract-only; runtime fact binding unverified",
+      "unknownPolicy": "unknown blocks actionable availability"
+    },
+    {
+      "id": "acq.prereq.animal-mature-fed",
+      "kind": "prerequisite-contract",
+      "description": "Mature, fed animal with adequate conditions; product not guaranteed",
+      "trackingStatus": "contract-only; runtime fact binding unverified",
+      "unknownPolicy": "unknown blocks actionable availability"
+    },
+    {
+      "id": "acq.prereq.artifact-spots",
+      "kind": "prerequisite-contract",
+      "description": "Observed diggable artifact spots in eligible location",
+      "trackingStatus": "contract-only; runtime fact binding unverified",
+      "unknownPolicy": "unknown blocks actionable availability"
+    },
+    {
+      "id": "acq.prereq.artifact-trove",
+      "kind": "prerequisite-contract",
+      "description": "Accessible Artifact Trove, potentially trade 5 Omni Geodes at Desert Trader",
+      "trackingStatus": "contract-only; runtime fact binding unverified",
+      "unknownPolicy": "unknown blocks actionable availability"
+    },
+    {
+      "id": "acq.prereq.bone-node-access",
+      "kind": "prerequisite-contract",
+      "description": "Observed breakable bone node",
+      "trackingStatus": "contract-only; runtime fact binding unverified",
+      "unknownPolicy": "unknown blocks actionable availability"
+    },
+    {
+      "id": "acq.prereq.clint-open",
+      "kind": "prerequisite-contract",
+      "description": "Blacksmith service available, 25g fee and route-specific item accessible",
+      "trackingStatus": "contract-only; runtime fact binding unverified",
+      "unknownPolicy": "unknown blocks actionable availability"
+    },
+    {
+      "id": "acq.prereq.combat-access",
+      "kind": "prerequisite-contract",
+      "description": "Relevant monster accessible in current or reachable location",
+      "trackingStatus": "contract-only; runtime fact binding unverified",
+      "unknownPolicy": "unknown blocks actionable availability"
+    },
+    {
+      "id": "acq.prereq.desert-access",
+      "kind": "prerequisite-contract",
+      "description": "Desert unlocked and accessible",
+      "trackingStatus": "contract-only; runtime fact binding unverified",
+      "unknownPolicy": "unknown blocks actionable availability"
+    },
+    {
+      "id": "acq.prereq.fishing-treasure",
+      "kind": "prerequisite-contract",
+      "description": "Fishing rod, suitable water, treasure chest catch and opening",
+      "trackingStatus": "contract-only; runtime fact binding unverified",
+      "unknownPolicy": "unknown blocks actionable availability"
+    },
+    {
+      "id": "acq.prereq.frozen-geode",
+      "kind": "prerequisite-contract",
+      "description": "Frozen Geode available; e.g. Mines floors 41-79, fishing treasure",
+      "trackingStatus": "contract-only; runtime fact binding unverified",
+      "unknownPolicy": "unknown blocks actionable availability"
+    },
+    {
+      "id": "acq.prereq.fruit-tree-sapling",
+      "kind": "prerequisite-contract",
+      "description": "Appropriate purchasable/available fruit tree sapling",
+      "trackingStatus": "contract-only; runtime fact binding unverified",
+      "unknownPolicy": "unknown blocks actionable availability"
+    },
+    {
+      "id": "acq.prereq.fruit-tree-space",
+      "kind": "prerequisite-contract",
+      "description": "Valid non-overlapping clear 3x3 fruit tree growth area",
+      "trackingStatus": "contract-only; runtime fact binding unverified",
+      "unknownPolicy": "unknown blocks actionable availability"
+    },
+    {
+      "id": "acq.prereq.fuel-and-ore",
+      "kind": "prerequisite-contract",
+      "description": "Enough unreserved ore and coal for this smelting batch",
+      "trackingStatus": "contract-only; runtime fact binding unverified",
+      "unknownPolicy": "unknown blocks actionable availability"
+    },
+    {
+      "id": "acq.prereq.furnace",
+      "kind": "prerequisite-contract",
+      "description": "Owned or accessible Furnace; recipe via Clint after Copper Ore, craft with 20 Copper Ore and 25 Stone",
+      "trackingStatus": "contract-only; runtime fact binding unverified",
+      "unknownPolicy": "unknown blocks actionable availability"
+    },
+    {
+      "id": "acq.prereq.geode",
+      "kind": "prerequisite-contract",
+      "description": "Geode available; see Mines floors 1-39, farm tilling, fishing treasure",
+      "trackingStatus": "contract-only; runtime fact binding unverified",
+      "unknownPolicy": "unknown blocks actionable availability"
+    },
+    {
+      "id": "acq.prereq.geode-crusher-ready",
+      "kind": "prerequisite-contract",
+      "description": "Observed accessible Geode Crusher, recipe from Cave Patrol; crafting requires 2 Gold Bars, 50 Stone, 1 Diamond",
+      "trackingStatus": "contract-only; runtime fact binding unverified",
+      "unknownPolicy": "unknown blocks actionable availability"
+    },
+    {
+      "id": "acq.prereq.hoe",
+      "kind": "prerequisite-contract",
+      "description": "Usable Hoe in current location",
+      "trackingStatus": "contract-only; runtime fact binding unverified",
+      "unknownPolicy": "unknown blocks actionable availability"
+    },
+    {
+      "id": "acq.prereq.island-access",
+      "kind": "prerequisite-contract",
+      "description": "Ginger Island accessible",
+      "trackingStatus": "contract-only; runtime fact binding unverified",
+      "unknownPolicy": "unknown blocks actionable availability"
+    },
+    {
+      "id": "acq.prereq.machine-cheese-press",
+      "kind": "prerequisite-contract",
+      "description": "Owned, reachable and unoccupied cheese press",
+      "trackingStatus": "contract-only; runtime fact binding unverified",
+      "unknownPolicy": "unknown blocks actionable availability"
+    },
+    {
+      "id": "acq.prereq.machine-keg",
+      "kind": "prerequisite-contract",
+      "description": "Owned, reachable and unoccupied keg",
+      "trackingStatus": "contract-only; runtime fact binding unverified",
+      "unknownPolicy": "unknown blocks actionable availability"
+    },
+    {
+      "id": "acq.prereq.machine-mayonnaise-machine",
+      "kind": "prerequisite-contract",
+      "description": "Owned, reachable and unoccupied mayonnaise machine",
+      "trackingStatus": "contract-only; runtime fact binding unverified",
+      "unknownPolicy": "unknown blocks actionable availability"
+    },
+    {
+      "id": "acq.prereq.machine-preserves-jar",
+      "kind": "prerequisite-contract",
+      "description": "Owned, reachable and unoccupied preserves jar",
+      "trackingStatus": "contract-only; runtime fact binding unverified",
+      "unknownPolicy": "unknown blocks actionable availability"
+    },
+    {
+      "id": "acq.prereq.magma-geode",
+      "kind": "prerequisite-contract",
+      "description": "Magma Geode available; e.g. Mines floors 81-120, fishing treasure",
+      "trackingStatus": "contract-only; runtime fact binding unverified",
+      "unknownPolicy": "unknown blocks actionable availability"
+    },
+    {
+      "id": "acq.prereq.mature-correct-tree",
+      "kind": "prerequisite-contract",
+      "description": "Living mature tree of required species",
+      "trackingStatus": "contract-only; runtime fact binding unverified",
+      "unknownPolicy": "unknown blocks actionable availability"
+    },
+    {
+      "id": "acq.prereq.mine-access",
+      "kind": "prerequisite-contract",
+      "description": "Mines or Skull Cavern level accessible",
+      "trackingStatus": "contract-only; runtime fact binding unverified",
+      "unknownPolicy": "unknown blocks actionable availability"
+    },
+    {
+      "id": "acq.prereq.omni-geode",
+      "kind": "prerequisite-contract",
+      "description": "Omni Geode available; e.g. Mines, Skull Cavern, shop stock, panning",
+      "trackingStatus": "contract-only; runtime fact binding unverified",
+      "unknownPolicy": "unknown blocks actionable availability"
+    },
+    {
+      "id": "acq.prereq.pickaxe",
+      "kind": "prerequisite-contract",
+      "description": "Usable Pickaxe",
+      "trackingStatus": "contract-only; runtime fact binding unverified",
+      "unknownPolicy": "unknown blocks actionable availability"
+    },
+    {
+      "id": "acq.prereq.secret-notes-unlocked",
+      "kind": "prerequisite-contract",
+      "description": "Magnifying Glass / Secret Notes ability unlocked",
+      "trackingStatus": "contract-only; runtime fact binding unverified",
+      "unknownPolicy": "unknown blocks actionable availability"
+    },
+    {
+      "id": "acq.prereq.skull-cavern-access",
+      "kind": "prerequisite-contract",
+      "description": "Skull Cavern unlocked and reachable",
+      "trackingStatus": "contract-only; runtime fact binding unverified",
+      "unknownPolicy": "unknown blocks actionable availability"
+    },
+    {
+      "id": "acq.prereq.tapper",
+      "kind": "prerequisite-contract",
+      "description": "Tapper or Heavy Tapper available, crafted and attached to an eligible tree",
+      "trackingStatus": "contract-only; runtime fact binding unverified",
+      "unknownPolicy": "unknown blocks actionable availability"
+    },
+    {
+      "id": "acq.prereq.valid-machine-input",
+      "kind": "prerequisite-contract",
+      "description": "Observed machine accepts the specific input per current content rules",
+      "trackingStatus": "contract-only; runtime fact binding unverified",
+      "unknownPolicy": "unknown blocks actionable availability"
+    }
+  ]
+}

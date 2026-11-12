@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "0.1.0",
+  "category": "farming",
+  "provenance": "Supplied source assertions, not newly verified gameplay rules.",
+  "entries": [
+    {
+      "id": "polyculture",
+      "name": "Polyculture",
+      "sourceRequirement": "Ship 15 of each required crop.",
+      "sourceDefinitionRef": "data/sources/original/trophy-50-coverage.json#/trophies/28",
+      "sourceDependencyRef": "data/sources/original/trophy-dependency-graph.json#/graph/polyculture",
+      "verification": "source-import-only"
+    },
+    {
+      "id": "monoculture",
+      "name": "Monoculture",
+      "sourceRequirement": "Ship 300 of one crop.",
+      "sourceDefinitionRef": "data/sources/original/trophy-50-coverage.json#/trophies/29",
+      "sourceDependencyRef": "data/sources/original/trophy-dependency-graph.json#/graph/monoculture",
+      "verification": "source-import-only"
+    }
+  ]
+}
